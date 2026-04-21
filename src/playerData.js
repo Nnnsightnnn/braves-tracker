@@ -1,8 +1,11 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 20, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 21, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 15-7 start, five-game winning streak, leading NL East by 5.
-// Opened 2026 with league-best pitching (top-4 rotation: 2.36 ERA combined).
-// On the road in Washington Apr 20-23. Strider/Murphy rehabbing, Kim on IL.
+// Season context: 16-7, six-game winning streak, leading NL East by 5 games.
+// Swept Phillies 3-0 in Philly (first time at Citizens Bank Park in 10 years).
+// Beat Nationals 9-4 in Washington opener Apr 20 (Olson HR & 3 RBI, Elder 6.2/6K).
+// López back from suspension (reduced to 5 games); starts Apr 21 vs Foster Griffin.
+// Strider (oblique) and Murphy (hip) moved rehab assignments to Triple-A Gwinnett.
+// Kim sim game Apr 23, rehab near — projected return mid-to-late May.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended"
 // injuryNote: short description shown on card when not active
@@ -19,10 +22,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, sb: null, bb: null, so: null, games: null },
-    statNote: "Early 2026 Statcast: 87.3 EV, 44.3% hard-hit, .330 wOBA, .395 xwOBA. Seasonal AVG/HR pending full-season refresh.",
+    statNote: "Early 2026 Statcast: 87.3 EV, 44.3% hard-hit, .330 wOBA, .395 xwOBA. Left Apr 20 vs WSH after being HBP twice — X-rays negative, day-to-day.",
     form: 7.5,
-    status: "active",
-    injuryNote: null,
+    status: "day-to-day",
+    injuryNote: "Hit by pitch twice vs WSH on Apr 20 (4th and 6th innings). X-rays negative; day-to-day.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
     contract: { years: 8, total: 100000000, guaranteed: 100000000, apy: 12500000, throughYear: 2028 },
     career: [
@@ -38,9 +41,9 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .290, obp: null, slg: null, ops: null, hr: 3, rbi: 7, sb: 0, bb: 6, so: null, games: 13, doubles: 4 },
-    statNote: ".290 with 3 HR, 4 2B, 7 RBI, 6 BB in 31 ABs through Apr 17 — safely in 11 of first 13 games.",
-    form: 8.5,
+    stats: { avg: .290, obp: null, slg: null, ops: null, hr: 4, rbi: 10, sb: 0, bb: 6, so: null, games: 14, doubles: 4 },
+    statNote: "3 RBI vs WSH Apr 20 — game-tying HR off Irvin in the 4th, then a key hit in the 5-run 6th. 4 HR on the year.",
+    form: 8.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
@@ -99,9 +102,9 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: 3, rbi: 7, sb: null, bb: null, so: null, games: null },
-    statNote: "3 HR and 7 RBI through mid-April — back in rhythm after the 2025 injury-plagued season.",
-    form: 7.2,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: 3, rbi: 8, sb: null, bb: null, so: null, games: null },
+    statNote: "RBI double vs PHI Apr 19 in the sweep-clincher; RBI single in the 9-4 win at WSH Apr 20. Back in rhythm after '25.",
+    form: 7.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33783.png",
@@ -119,9 +122,9 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, sb: null, games: null, wrcPlus: 51 },
-    statNote: "Cold April — 51 wRC+ in the first weeks. Rebounded Apr 19 with 3 hits including a HR in 4-2 Phillies win.",
-    form: 6.2,
+    stats: { avg: .235, obp: null, slg: null, ops: null, hr: 4, rbi: 7, sb: 1, games: 20, wrcPlus: 51 },
+    statNote: "12-for-51 (.235) with 4 HR, 7 RBI in first 20 games. Apr 19 HR + 3 hits vs PHI; RBI hit in 9-4 rout of WSH Apr 20. Bat warming up.",
+    form: 6.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -139,9 +142,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Starting C while Murphy rehabs — swinging bat well in April.",
-    form: 6.8,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: 2, games: null },
+    statNote: "2 RBI in Apr 20 win at WSH. Starting C while Murphy rehabs — swinging bat well in April.",
+    form: 7.1,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -181,7 +184,7 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Holding down SS while Ha-Seong Kim rehabs his finger tendon. Defense-first profile.",
+    statNote: "Sharing SS reps with Dubón while Kim rehabs finger tendon. Defense-first profile.",
     form: 6.4,
     status: "active",
     injuryNote: null,
@@ -223,8 +226,8 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇭🇳 Honduras", age: 31, experience: 8,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Super-utility — rotates through 2B/SS/LF/CF while Kim is out.",
-    form: 6.6,
+    statNote: "Primary SS while Kim rehabs; rotates through 2B/LF/CF as needed. Mateo also getting sporadic SS reps.",
+    form: 6.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
@@ -245,9 +248,9 @@ export const PLAYERS = [
     rotationSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
-    stats: { era: null, whip: null, ip: null, k: null, bb: null, hr: null, w: null, l: null, games: null, starts: null },
-    statNote: "Ace. 7 K over 7 IP in 3-1 Phillies win Apr 18. Extended: $27M for 2027 + $30M club option 2028.",
-    form: 8.8,
+    stats: { era: 2.79, whip: null, ip: null, k: 29, bb: null, hr: null, w: 4, l: 1, games: 5, starts: 5 },
+    statNote: "4-1, 2.79 ERA, 29 K in 5 starts. Passed HOF Tom Glavine on all-time Ks list (2,608) vs PHI Apr 18 — 7 K / 7 IP in 3-1 W.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/30948.png",
@@ -267,11 +270,11 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 32, experience: 10,
-    stats: { era: 1.15, whip: null, ip: null, k: null, bb: null, hr: null, w: null, l: null, games: 3, starts: 3 },
-    statNote: "1.15 ERA through three starts, then SUSPENDED 7 games for brawling with Jorge Soler. Returns late April.",
-    form: 8.2,
-    status: "suspended",
-    injuryNote: "MLB suspended 7 games for brawl with Jorge Soler. Expected back late April.",
+    stats: { era: 1.15, whip: null, ip: null, k: null, bb: null, hr: null, w: 1, l: 0, games: 3, starts: 3 },
+    statNote: "Suspension reduced 7→5 on appeal; returned Apr 14 vs MIA. Back in the rotation — starts Apr 21 at WSH vs Foster Griffin.",
+    form: 8.4,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
     contract: { years: 3, total: 30000000, guaranteed: 30000000, apy: 10000000, throughYear: 2026 },
     career: [
@@ -308,9 +311,9 @@ export const PLAYERS = [
     rotationSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
-    stats: { era: 0.77, whip: 1.03, ip: 23.1, k: null, bb: null, w: 2, l: 1, games: null, starts: null },
-    statNote: "Cy Young pace so far — 0.77 ERA / 1.03 WHIP in 23.1 IP. Starts Apr 20 at WSH vs Jake Irvin.",
-    form: 9.1,
+    stats: { era: null, whip: null, ip: 30, k: null, bb: null, w: 3, l: 1, games: null, starts: 5 },
+    statNote: "6 K over 6.2 IP in 9-4 win at WSH Apr 20 — now 3-1. Holding Cy-Young-adjacent pace through first five starts.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4301067.png",
@@ -540,10 +543,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "Rehab assignment started Apr 16 — targeting early-May return. Rotation spot locked when healthy.",
+    statNote: "Rehab moved up to Triple-A Gwinnett Apr 21. Threw 50 pitches in first rehab start, bumping to ~65 next time. 2-3 more before rejoining rotation.",
     form: 0,
     status: "il-15",
-    injuryNote: "Left oblique strain. Rehab assignment began Apr 16; expected back early May.",
+    injuryNote: "Left oblique strain. Rehab assignment continuing at Triple-A Gwinnett; expected back early May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
     career: [
@@ -560,10 +563,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 7,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Rehab assignment began Apr 14 at High-A — targeting first-half-of-May return.",
+    statNote: "Rehab moved up from High-A Rome to Triple-A Gwinnett on Apr 21. Targeting first-half-of-May return.",
     form: 0,
     status: "il-60",
-    injuryNote: "Right hip labral tear (offseason surgery). Expected back first half of May.",
+    injuryNote: "Right hip labral tear (offseason surgery). Rehab assignment now at Triple-A Gwinnett; expected back first half of May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
     career: [
@@ -581,10 +584,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇰🇷 South Korea", age: 30, experience: 5,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Hasn't faced live pitching as of late March — returning first half of May.",
+    statNote: "Taking BP and scheduled for a simulated game Apr 23. Rehab assignment expected within 1-2 weeks; projected return mid-to-late May.",
     form: 0,
     status: "il-60",
-    injuryNote: "Torn tendon right middle finger. Return projected first half of May.",
+    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game Apr 23; rehab assignment close. Return projected mid-to-late May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
     career: [
@@ -739,57 +742,58 @@ export const TEAM_LOGOS = {
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-04-20",
+  date: "2026-04-21",
   time: "6:45 PM ET",
   opp: "WSH",
   home: false,
   venue: "Nationals Park · Washington, DC",
   tv: "FanDuel Sports Network South",
   probables: {
-    atl: { pitcher: "Bryce Elder", record: "2-1", era: 0.77 },
-    opp: { pitcher: "Jake Irvin", record: "1-2", era: 6.16 },
+    atl: { pitcher: "Reynaldo López", record: "1-0", era: 1.15 },
+    opp: { pitcher: "Foster Griffin", record: null, era: null },
   },
-  note: "Opener of a 3-game series. Braves enter on 5-game win streak; first road series of the Nationals set.",
+  note: "Game 2 of a 3-game series. Braves riding a 6-game winning streak after a 9-4 romp in the opener.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
-  { date: "2026-04-19", opp: "PHI", home: true, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep complete." },
-  { date: "2026-04-18", opp: "PHI", home: true, atlScore: 3, oppScore: 1, result: "W", note: "Sale 7 IP / 7 K — ace performance." },
-  { date: "2026-04-17", opp: "PHI", home: true, atlScore: 9, oppScore: 0, result: "W", note: "Riley 2 HR (3R + solo), Pérez 6 scoreless." },
+  { date: "2026-04-20", opp: "WSH", home: false, atlScore: 9, oppScore: 4, result: "W", note: "Olson game-tying HR, 3 RBI; Elder 6.2 IP / 6 K; 5-run 6th inning. 6th straight W." },
+  { date: "2026-04-19", opp: "PHI", home: false, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep at Citizens Bank Park — first there in 10 yrs." },
+  { date: "2026-04-18", opp: "PHI", home: false, atlScore: 3, oppScore: 1, result: "W", note: "Sale 7 IP / 7 K — passed Glavine (2,608 career Ks)." },
+  { date: "2026-04-17", opp: "PHI", home: false, atlScore: 9, oppScore: 0, result: "W", note: "Riley 2 HR (3R + solo), Pérez 6 scoreless." },
   { date: "2026-04-15", opp: "MIA", home: true, atlScore: 6, oppScore: 3, result: "W", note: "Elder into 6th; three Braves go deep." },
-  { date: "2026-04-14", opp: "MIA", home: true, atlScore: 5, oppScore: 2, result: "W", note: "Bullpen bridges to Iglesias." },
+  { date: "2026-04-14", opp: "MIA", home: true, atlScore: 5, oppScore: 2, result: "W", note: "Bullpen bridges to Iglesias; López returns from suspension." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 15, l: 7,  pct: .682, gb: 0,   streak: "W5" },
-  { team: "NYM", name: "New York Mets",          w: 12, l: 10, pct: .545, gb: 3,   streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 11, l: 11, pct: .500, gb: 4,   streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 10, l: 12, pct: .455, gb: 5,   streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 13, pct: .381, gb: 6.5, streak: "L3" },
+  { team: "ATL", name: "Atlanta Braves",         w: 16, l: 7,  pct: .696, gb: 0,   streak: "W6"  },
+  { team: "MIA", name: "Miami Marlins",          w: 11, l: 12, pct: .478, gb: 5,   streak: "W1"  },
+  { team: "WSH", name: "Washington Nationals",   w: 10, l: 13, pct: .435, gb: 6,   streak: "L1"  },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 14, pct: .364, gb: 7.5, streak: "L6"  },
+  { team: "NYM", name: "New York Mets",          w: 7,  l: 15, pct: .318, gb: 8.5, streak: "L11" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-20T08:00:00-04:00",
+  generatedAt: "2026-04-21T08:45:00-04:00",
   summary:
-    "As of April 20, the Braves are 15-7 and leading the NL East by five games after sweeping the Phillies at Truist Park. They open a three-game set tonight in Washington with Bryce Elder (2-1, 0.77 ERA) on the mound opposite Jake Irvin. The top four starters are carrying a combined 2.36 ERA; Reynaldo López is serving a seven-game suspension for last week's brawl with Jorge Soler. On the rehab front, Spencer Strider (oblique) started his rehab assignment April 16 and Sean Murphy (hip) is working back at High-A — both are targeting an early-May return. Ha-Seong Kim is still weeks away.",
+    "The Braves are 16-7 and up 5 games in the NL East after ripping a 9-4 win in Washington Monday night to extend their winning streak to six. Matt Olson drove in three (including a game-tying HR in the 4th), Bryce Elder struck out six in 6.2 innings, and Drake Baldwin added two RBI in a five-run sixth. Ronald Acuña Jr. was HBP twice and left early — X-rays negative, day-to-day. Reynaldo López is back on the bump tonight at 6:45 PM ET vs Foster Griffin after returning from a reduced 5-game suspension. Spencer Strider (oblique) and Sean Murphy (hip) both bumped their rehab assignments up to Triple-A Gwinnett Monday; Ha-Seong Kim is lined up for a simulated game April 23. Division-wise, the Mets have lost 11 straight and sit 8.5 GB at 7-15, while the Phillies dropped to 8-14 after Chicago blasted them Monday.",
   keyTopics: [
-    { category: "games",      title: "Braves sweep Phillies, take 5-game NL East lead",         detail: "Three-game sweep wrapped Apr 19 with a 4-2 win behind Michael Harris II's HR and a 3-hit night. Atlanta now 15-7." },
-    { category: "games",      title: "Bryce Elder's Cy Young start rolls into DC",              detail: "Elder enters the Apr 20 opener with a 0.77 ERA / 1.03 WHIP in 23.1 IP; Mets' faithful starting to notice." },
-    { category: "injuries",   title: "Strider begins rehab assignment",                         detail: "Left-oblique rehab kicked off Apr 16; targeted return is early May. Rotation spot is his when healthy." },
-    { category: "injuries",   title: "Sean Murphy rehabbing at High-A",                         detail: "Rehab assignment began Apr 14. Return projected first half of May — Drake Baldwin continues starting behind the plate." },
-    { category: "injuries",   title: "Ha-Seong Kim still weeks away",                           detail: "Torn finger tendon; hadn't faced live pitching as of late March. Nick Allen covering SS." },
-    { category: "roster",     title: "Reynaldo López suspended 7 games",                        detail: "MLB handed down the ban for the Jorge Soler brawl. López had a 1.15 ERA in 3 starts; back late April." },
-    { category: "roster",     title: "Ian Hamilton replaces Osvaldo Bido",                      detail: "Bido DFA'd; Hamilton selected from Triple-A Gwinnett to fill the bullpen slot." },
-    { category: "contracts",  title: "Sale extension terms confirmed",                          detail: "$27M salary locked in for 2027 plus a $30M club option for 2028." },
-    { category: "roster",     title: "Martín Pérez rewarding the March flyer",                  detail: "Six scoreless in the 9-0 Phillies rout Apr 17 — contract was purchased Mar 30 and he's earned a rotation role." },
-    { category: "general",    title: "Top four starters sitting on 2.36 ERA",                   detail: "Sale / López / Holmes / Elder have combined for one of the best pitching opens in MLB." },
-    { category: "offense",    title: "Olson steady, Harris warming up",                         detail: "Olson .290/3 HR/7 RBI through Apr 17; Harris (51 wRC+ early) hit a HR Apr 19 signaling a turn." },
-    { category: "standings",  title: "Five-game NL East lead by April 20",                      detail: "Mets 3 GB, Marlins 4, Nationals 5, Phillies 6.5. Tonight's opener against WSH is the first road test." },
+    { category: "games",     title: "Braves rout Nationals 9-4, win streak hits six",            detail: "Matt Olson tied it with a 4th-inning HR off Jake Irvin, Atlanta broke it open with a 5-run 6th. Olson 3 RBI, Baldwin 2, Elder 6.2 IP / 6 K." },
+    { category: "injuries",  title: "Acuña HBP twice, day-to-day",                               detail: "Acuña left Monday's game in the 6th after being plunked in the 4th and 6th. X-rays negative; Braves listed him day-to-day." },
+    { category: "injuries",  title: "Strider & Murphy promoted to Gwinnett",                     detail: "Both leave High-A Rome for Triple-A on Apr 21. Strider threw 50 pitches and will push toward 65 next; still targeting an early-May return." },
+    { category: "roster",    title: "López returns to the mound tonight",                        detail: "Suspension for the Jorge Soler brawl reduced 7→5 on appeal. 1.15 ERA in 3 starts; opposes Foster Griffin at Nationals Park 6:45 PM ET." },
+    { category: "games",     title: "Phillies sweep was at Citizens Bank Park",                  detail: "First 3-game sweep in Philadelphia in 10 years. Harris HR + 3 hits Sunday night; Sale's Apr 18 gem made it two in a row." },
+    { category: "general",   title: "Sale passes Glavine on all-time Ks list",                   detail: "7-K effort vs PHI Apr 18 moved Sale past HOFer Tom Glavine (2,608). Sale now 4-1 with a 2.79 ERA through 5 starts." },
+    { category: "standings", title: "Mets drop 11th straight, now 8.5 GB",                       detail: "NY is 7-15 — longest April skid in franchise history. Braves lead PHI by 7.5, WSH 6, MIA 5 and NYM 8.5." },
+    { category: "injuries",  title: "Ha-Seong Kim sim game Thursday",                            detail: "Kim is taking BP and will face live pitching in a simulated game Apr 23. Rehab assignment expected within 1-2 weeks; return projected mid-to-late May." },
+    { category: "roster",    title: "Danny Young moved to 60-day IL",                            detail: "LHP transferred to 60-day on Apr 11 after Tommy John rehab stall. Could return after the All-Star break at earliest." },
+    { category: "offense",   title: "Harris warming up, Olson rolling",                          detail: "Harris is 12-for-51 (.235) with 4 HR and hit a 2-run HR Apr 17 and a 3-hit night Apr 19. Olson has a 4-HR, 10-RBI April and sits on a 1.015 OPS clip." },
+    { category: "general",   title: "Bullpen shut the door again in DC",                         detail: "Bummer/Kinley/Lee/Suarez/Iglesias combined for 4.1 scoreless Sunday and handled the back end Monday. Relief corps has been elite in the streak." },
+    { category: "contracts", title: "Sale 2027 option officially locked in",                     detail: "Extension terms: $27M salary in 2027 plus a $30M club option for 2028. Front office continues to prioritize cost-certain aces." },
   ],
   sources: [
-    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "Bettors Insider",
+    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "SI Braves", "Yahoo Sports",
   ],
 };
