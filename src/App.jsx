@@ -426,6 +426,20 @@ function PlayerCard({ player, expanded, onToggle }) {
                 color: BRAVES_CREAM, background: `${BRAVES_CREAM}22`, fontWeight: 800,
               }}>CL</span>
             )}
+            {player.assignment === "aaa" && (
+              <span style={{
+                fontSize: 9, padding: "2px 7px", borderRadius: 4, letterSpacing: 0.8,
+                color: "#b8d4ff", background: "#3b82f622",
+                border: "1px solid #3b82f655", fontWeight: 800,
+              }}>AAA</span>
+            )}
+            {player.assignment === "rehab" && (
+              <span style={{
+                fontSize: 9, padding: "2px 7px", borderRadius: 4, letterSpacing: 0.8,
+                color: "#ffd166", background: "#f59e0b22",
+                border: "1px solid #f59e0b55", fontWeight: 800,
+              }}>REHAB @ AAA</span>
+            )}
           </div>
         </div>
         {isAvailable && player.form > 0 ? (
@@ -589,17 +603,26 @@ function BioBox({ label, value }) {
 }
 
 // ─── RosterSection ──────────────────────────────────────────────────────────
-function RosterSection({ title, players, expandedId, setExpandedId }) {
+function RosterSection({ title, subtitle, players, expandedId, setExpandedId }) {
   if (!players.length) return null;
   return (
     <div style={{ marginBottom: 18 }}>
       <div style={{
         fontSize: 12, color: BRAVES_CREAM, fontWeight: 700,
-        textTransform: "uppercase", letterSpacing: 1.5, marginBottom: 10,
-        borderBottom: `1px solid ${BRAVES_CREAM}33`, paddingBottom: 6,
+        textTransform: "uppercase", letterSpacing: 1.5, marginBottom: subtitle ? 4 : 10,
+        borderBottom: subtitle ? "none" : `1px solid ${BRAVES_CREAM}33`,
+        paddingBottom: subtitle ? 0 : 6,
       }}>
         {title} <span style={{ color: "#7f95b5", marginLeft: 6, fontWeight: 600 }}>({players.length})</span>
       </div>
+      {subtitle && (
+        <div style={{
+          fontSize: 11, color: "#8ea4c2", marginBottom: 10, lineHeight: 1.4,
+          borderBottom: `1px solid ${BRAVES_CREAM}33`, paddingBottom: 8,
+        }}>
+          {subtitle}
+        </div>
+      )}
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
@@ -790,15 +813,35 @@ function LiveRSSFeed() {
 }
 
 // ─── Views ──────────────────────────────────────────────────────────────────
+//
+// Assignment model:
+//   "mlb"   → on the active roster with the big club (shown in Lineup/Rotation/Bullpen)
+//   "aaa"   → healthy depth stashed at Triple-A Gwinnett (shown in Triple-A Depth)
+//   "rehab" → on IL + currently on a minor-league rehab assignment (shown in IL with REHAB badge)
+//
 function DashboardView({ expandedId, setExpandedId }) {
   const lineup = PLAYERS
-    .filter((p) => p.positionGroup === "batter" && !p.status.startsWith("il") && p.status !== "departed")
+    .filter((p) =>
+      p.positionGroup === "batter" &&
+      !p.status.startsWith("il") &&
+      p.status !== "departed" &&
+      p.assignment !== "aaa" && p.assignment !== "aa"
+    )
     .sort((a, b) => (a.lineupSpot ?? 99) - (b.lineupSpot ?? 99));
   const rotation = PLAYERS
-    .filter((p) => p.position === "SP" && !p.status.startsWith("il"))
+    .filter((p) =>
+      p.position === "SP" &&
+      !p.status.startsWith("il") &&
+      p.assignment !== "aaa" && p.assignment !== "aa"
+    )
     .sort((a, b) => (a.rotationSpot ?? 99) - (b.rotationSpot ?? 99));
   const bullpen = PLAYERS.filter((p) =>
-    (p.position === "RP" || p.position === "CP") && !p.status.startsWith("il")
+    (p.position === "RP" || p.position === "CP") &&
+    !p.status.startsWith("il") &&
+    p.assignment !== "aaa" && p.assignment !== "aa"
+  );
+  const aaaDepth = PLAYERS.filter((p) =>
+    (p.assignment === "aaa" || p.assignment === "aa") && p.status !== "departed"
   );
   const il = PLAYERS.filter((p) => p.status.startsWith("il"));
 
@@ -811,6 +854,15 @@ function DashboardView({ expandedId, setExpandedId }) {
       <RosterSection title="Lineup & Position Players" players={lineup} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Starting Rotation" players={rotation} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Bullpen" players={bullpen} expandedId={expandedId} setExpandedId={setExpandedId} />
+      {aaaDepth.length > 0 && (
+        <RosterSection
+          title="Triple-A Depth · Gwinnett"
+          subtitle="Healthy 40-man depth optioned to Triple-A. First recall candidates in an emergency."
+          players={aaaDepth}
+          expandedId={expandedId}
+          setExpandedId={setExpandedId}
+        />
+      )}
       <RosterSection title="Injured List" players={il} expandedId={expandedId} setExpandedId={setExpandedId} />
     </div>
   );
@@ -818,14 +870,21 @@ function DashboardView({ expandedId, setExpandedId }) {
 
 function RotationView({ expandedId, setExpandedId }) {
   const rotation = PLAYERS
-    .filter((p) => p.position === "SP")
+    .filter((p) => p.position === "SP" && p.assignment !== "aaa" && p.assignment !== "aa")
     .sort((a, b) => {
       const ra = a.rotationSpot ?? 99;
       const rb = b.rotationSpot ?? 99;
       if (ra !== rb) return ra - rb;
       return a.status.localeCompare(b.status);
     });
-  const bullpen = PLAYERS.filter((p) => p.position === "RP" || p.position === "CP");
+  const bullpen = PLAYERS.filter((p) =>
+    (p.position === "RP" || p.position === "CP") && p.assignment !== "aaa" && p.assignment !== "aa"
+  );
+  const aaaPitchers = PLAYERS.filter((p) =>
+    p.positionGroup === "pitcher" &&
+    (p.assignment === "aaa" || p.assignment === "aa") &&
+    p.status !== "departed"
+  );
 
   return (
     <div>
@@ -838,12 +897,21 @@ function RotationView({ expandedId, setExpandedId }) {
         </div>
         <div style={{ fontSize: 14, color: "#cfd8e3", lineHeight: 1.6 }}>
           The Braves' top four rotation arms (Sale / López / Holmes / Elder) opened the year with a combined 2.36 ERA.
-          López is serving a 7-game suspension for the Soler brawl; Strider is working his rehab assignment and targets
-          an early-May return. Robert Suarez and Raisel Iglesias anchor the back of the bullpen.
+          Strider is working his rehab assignment at Triple-A Gwinnett and targets an early-May return.
+          Robert Suarez closes while Iglesias is on the 15-day IL with right shoulder inflammation.
         </div>
       </div>
       <RosterSection title="Rotation" players={rotation} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Bullpen" players={bullpen} expandedId={expandedId} setExpandedId={setExpandedId} />
+      {aaaPitchers.length > 0 && (
+        <RosterSection
+          title="Triple-A Arms · Gwinnett"
+          subtitle="Recall candidates — 40-man depth currently stashed at Triple-A."
+          players={aaaPitchers}
+          expandedId={expandedId}
+          setExpandedId={setExpandedId}
+        />
+      )}
     </div>
   );
 }

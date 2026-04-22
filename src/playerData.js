@@ -9,7 +9,12 @@
 // Strider (oblique) and Murphy (hip) rehabbing at Triple-A Gwinnett.
 // Kim sim game Apr 23, rehab assignment imminent — projected return mid-to-late May.
 //
-// Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended"
+// Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
+// Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
+//   mlb   = on the 26/40-man active roster with the big club
+//   aaa   = optioned or stashed at Triple-A Gwinnett (recall candidate)
+//   aa    = lower-level depth (rare; used for high-profile prospects only)
+//   rehab = on IL + currently on a minor-league rehab assignment
 // injuryNote: short description shown on card when not active
 
 export const PLAYERS = [
@@ -29,6 +34,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
+    assignment: "mlb",
     contract: { years: 8, total: 100000000, guaranteed: 100000000, apy: 12500000, throughYear: 2028 },
     career: [
       { years: "2018–", team: "Atlanta Braves", type: "MLB · 2023 NL MVP · 4x All-Star" },
@@ -49,6 +55,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
+    assignment: "mlb",
     contract: { years: 8, total: 168000000, guaranteed: 168000000, apy: 21000000, throughYear: 2029 },
     career: [
       { years: "2022–", team: "Atlanta Braves", type: "MLB · 2x All-Star · 2023 HR title (54)" },
@@ -70,6 +77,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34982.png",
+    assignment: "mlb",
     contract: { years: 10, total: 212000000, guaranteed: 212000000, apy: 21200000, throughYear: 2032 },
     career: [
       { years: "2019–", team: "Atlanta Braves", type: "MLB · 2x All-Star · 2x Silver Slugger" },
@@ -90,6 +98,7 @@ export const PLAYERS = [
     status: "departed",
     injuryNote: "Signed elsewhere in FA. Not on 2026 Braves roster.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/30205.png",
+    assignment: "mlb",
     contract: null,
     career: [
       { years: "2020–2025", team: "Atlanta Braves", type: "MLB · 2023 WS · 2x All-Star" },
@@ -110,6 +119,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33783.png",
+    assignment: "mlb",
     contract: { years: 7, total: 35000000, guaranteed: 35000000, apy: 5000000, throughYear: 2027 },
     career: [
       { years: "2017–", team: "Atlanta Braves", type: "MLB · 2x All-Star · 2021 WS champ" },
@@ -130,6 +140,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
+    assignment: "mlb",
     contract: { years: 8, total: 72000000, guaranteed: 72000000, apy: 9000000, throughYear: 2030 },
     career: [
       { years: "2022–", team: "Atlanta Braves", type: "MLB · 2022 NL ROY · Gold Glove" },
@@ -150,6 +161,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2025–", team: "Atlanta Braves", type: "MLB · 3rd-round 2022 draft (Missouri State)" },
@@ -170,6 +182,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31117.png",
+    assignment: "mlb",
     contract: { years: 3, total: 42000000, guaranteed: 42000000, apy: 14000000, throughYear: 2027 },
     career: [
       { years: "2025–", team: "Atlanta Braves", type: "MLB · 2024 NL All-Star" },
@@ -191,6 +204,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40338.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2025–", team: "Atlanta Braves", type: "MLB" },
@@ -212,6 +226,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33341.png",
+    assignment: "mlb",
     contract: { years: 1, total: 7000000, guaranteed: 7000000, apy: 7000000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -233,6 +248,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
+    assignment: "mlb",
     contract: { years: 2, total: 8500000, guaranteed: 8500000, apy: 4250000, throughYear: 2027 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -256,6 +272,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/30948.png",
+    assignment: "mlb",
     contract: { years: 2, total: 54000000, guaranteed: 38000000, apy: 27000000, throughYear: 2027 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB · 2024 NL Cy Young" },
@@ -278,6 +295,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
+    assignment: "mlb",
     contract: { years: 3, total: 30000000, guaranteed: 30000000, apy: 10000000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB · 2024 NL All-Star" },
@@ -299,6 +317,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33840.png",
+    assignment: "mlb",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB" },
@@ -319,6 +338,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4301067.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2022–", team: "Atlanta Braves", type: "MLB · 2023 NL All-Star" },
@@ -339,6 +359,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40981.png",
+    assignment: "mlb",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -360,6 +381,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
+    assignment: "mlb",
     contract: { years: 1, total: 2000000, guaranteed: 0, apy: 2000000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · 2022 AL All-Star" },
@@ -383,6 +405,7 @@ export const PLAYERS = [
     status: "il-15",
     injuryNote: "Right shoulder inflammation. 15-day IL backdated to Apr 20 — minimum return window ~May 5. Suarez takes over the 9th in the interim.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33618.png",
+    assignment: "mlb",
     contract: { years: 1, total: 16000000, guaranteed: 16000000, apy: 16000000, throughYear: 2026 },
     career: [
       { years: "2022–", team: "Atlanta Braves", type: "MLB · 3x 30-save season" },
@@ -403,6 +426,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4148749.png",
+    assignment: "mlb",
     contract: { years: 3, total: 45000000, guaranteed: 45000000, apy: 15000000, throughYear: 2028 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · 2x All-Star" },
@@ -424,6 +448,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36131.png",
+    assignment: "mlb",
     contract: { years: 2, total: 13000000, guaranteed: 13000000, apy: 6500000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB" },
@@ -445,6 +470,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/41455.png",
+    assignment: "mlb",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
     career: [
       { years: "2021–", team: "Atlanta Braves", type: "MLB · 2021 WS champ" },
@@ -465,6 +491,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34166.png",
+    assignment: "mlb",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -486,6 +513,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40021.png",
+    assignment: "mlb",
     contract: { years: 1, total: 3000000, guaranteed: 3000000, apy: 3000000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -507,6 +535,7 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/41127.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -528,9 +557,54 @@ export const PLAYERS = [
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5291189.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut" },
+    ],
+  },
+  {
+    id: "dodd",
+    name: "Dylan Dodd",
+    number: 64,
+    position: "RP",
+    positionGroup: "pitcher",
+    bullpenRole: "long",
+    bats: "L", throws: "L",
+    nationality: "🇺🇸 USA", age: 28, experience: 3,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
+    statNote: "Recalled from Triple-A Gwinnett Apr 21 to fill Iglesias' roster spot. 3 scoreless IP in his only MLB outing earlier this month (Apr 12 vs CLE).",
+    form: 6.8,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/4416462.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
+    career: [
+      { years: "2023–", team: "Atlanta Braves", type: "MLB" },
+    ],
+  },
+
+  // ── TRIPLE-A DEPTH (recall candidates on 40-man, optioned to Gwinnett) ─────
+  {
+    id: "munoz-rolddy",
+    name: "Rolddy Muñoz",
+    number: 78,
+    position: "RP",
+    positionGroup: "pitcher",
+    bullpenRole: "middle",
+    bats: "R", throws: "R",
+    nationality: "🇩🇴 Dominican Republic", age: 26, experience: 2,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
+    statNote: "Power righty — 97-98 mph FB, slider-heavy. 7.2 scoreless IP / 7 K through first 5 at Gwinnett. Optioned back down when Dodd was recalled Apr 21; next man up in a bullpen emergency.",
+    form: 6.5,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/5131982.png",
+    assignment: "aaa",
+    contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
+    career: [
+      { years: "2025–", team: "Atlanta Braves", type: "MLB · MLB debut 2025" },
     ],
   },
 
@@ -550,6 +624,7 @@ export const PLAYERS = [
     status: "il-15",
     injuryNote: "Left oblique strain. Rehab assignment continuing at Triple-A Gwinnett; expected back early May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
+    assignment: "rehab",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
     career: [
       { years: "2021–", team: "Atlanta Braves", type: "MLB · 2x All-Star · 2023 NL Ks leader" },
@@ -570,6 +645,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Right hip labral tear (offseason surgery). Rehab assignment now at Triple-A Gwinnett; expected back first half of May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
+    assignment: "rehab",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB · 2023 NL All-Star · Gold Glove" },
@@ -591,6 +667,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game Apr 23; rehab assignment close. Return projected mid-to-late May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
+    assignment: "mlb",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -612,6 +689,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Tommy John surgery (Jun 2025). Return: late 2026 or 2027.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4917640.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB" },
@@ -632,6 +710,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Right elbow inflammation; post-arthroscopic surgery Feb 23. Targeted return: late June / July.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4740117.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB · 2023 R1 pick" },
@@ -652,6 +731,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Arthroscopic elbow surgery. Targeted return: late June / July.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4424862.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB" },
@@ -672,6 +752,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Left knee surgery. No timetable for return.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33760.png",
+    assignment: "mlb",
     contract: { years: 3, total: 26000000, guaranteed: 26000000, apy: 8666666, throughYear: 2026 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB · 2018 AL All-Star" },
@@ -692,6 +773,7 @@ export const PLAYERS = [
     status: "il-60",
     injuryNote: "Tommy John (May 2025). Transferred to 60-day IL Apr 11.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40903.png",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB" },
