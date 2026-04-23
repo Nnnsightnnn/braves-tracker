@@ -1,13 +1,15 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 22, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 23, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 16-8, leading NL East by 5 games — Nats snapped the 6-game streak Tues.
-// Washington blew out ATL 11-4 on Apr 21 — López couldn't escape the 2nd (4 ER / 1 IP);
-// Baldwin & Eli White homered but the bullpen had to cover 7.
-// CLOSER OUT: Raisel Iglesias to 15-day IL (right shoulder inflammation, backdated Apr 20);
-// Dylan Dodd recalled from Gwinnett; Robert Suarez sliding into closer role.
-// Acuña (HBP x2 Apr 20) back in lineup Apr 21 — X-rays negative.
-// Strider (oblique) and Murphy (hip) rehabbing at Triple-A Gwinnett.
-// Kim sim game Apr 23, rehab assignment imminent — projected return mid-to-late May.
+// Season context: 17-8, leading NL East by 5 games — rallied past WSH 8-6 Wed, 7 W in last 8.
+// Harris II went 2-HR / 3-RBI, Olson (#8), Baldwin also deep; Acuña tying sac fly in the 2nd.
+// PITCHING SHAKEUP: JR Ritchie (MLB Pipeline's #2 Braves prospect) recalled from Gwinnett
+//   to make his MLB debut vs WSH Thu Apr 23 (1:05 PM ET) — 0.99 ERA over 5 AAA starts.
+// Carlos Carrasco selected for long relief; Fuentes optioned back to Gwinnett.
+// Dylan Dodd to 15-day IL (oblique strain) — Carrasco filling his bullpen spot.
+// CLOSER OUT: Raisel Iglesias on 15-day IL (right shoulder inflammation, backdated Apr 20);
+// Robert Suarez handling the 9th.
+// Strider tossed a near-flawless rehab start at Triple-A Gwinnett Apr 21; Murphy also at AAA.
+// Kim sim game scheduled Apr 23 — rehab assignment imminent, return projected mid-to-late May.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -28,9 +30,9 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, sb: null, bb: null, so: null, games: 23 },
-    statNote: ".719 OPS through 23 games; .290/.840 OPS run in the 2 weeks before the Apr 20 HBP scare. Back in the leadoff spot Apr 21 after X-rays came back negative.",
-    form: 7.5,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, sb: null, bb: null, so: null, games: 24 },
+    statNote: "Game-tying sac fly in the Apr 22 three-run 2nd to cap the comeback vs WSH. Back leading off after the Apr 20 double HBP scare; X-rays clean. .719 OPS baseline with the bat still searching for its top gear.",
+    form: 7.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
@@ -49,9 +51,9 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .383, obp: null, slg: null, ops: null, hr: 7, rbi: 15, sb: 0, bb: 6, so: null, games: 16, doubles: 3 },
-    statNote: "Carrying the offense: 23-for-60 (.383) with 7 HR, 3 2B, 2 3B, 15 RBI, 15 R in 16 games this month. Game-tying HR Apr 20 vs WSH; team-high six high-leverage WPA games.",
-    form: 9.2,
+    stats: { avg: .383, obp: null, slg: null, ops: null, hr: 8, rbi: 18, sb: 0, bb: 6, so: null, games: 17, doubles: 3 },
+    statNote: "Three-run bomb off Littell in the 4th of the Apr 22 W at WSH — 8th HR of April, 18 RBI for the month. Still carrying the offense at .383 / team-best WPA profile.",
+    form: 9.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
@@ -134,9 +136,9 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .235, obp: null, slg: null, ops: null, hr: 4, rbi: 7, sb: 1, games: 20, wrcPlus: 51 },
-    statNote: "12-for-51 (.235) with 4 HR, 7 RBI in first 20 games. Apr 19 HR + 3 hits vs PHI; RBI hit in 9-4 rout of WSH Apr 20. Bat warming up.",
-    form: 6.8,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: 6, rbi: 10, sb: 1, games: 21, wrcPlus: null },
+    statNote: "Two-homer, 3-RBI night in the Apr 22 8-6 W at WSH — 2R off Littell in the 2nd, solo shot in the 3rd. 7th career multi-HR game; 3rd against Washington. Bat officially back.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -155,9 +157,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: 1, rbi: 3, games: null },
-    statNote: "438-ft HR to CF + RBI single in Apr 21 L at WSH. 2 RBI in Apr 20 win. Starting C while Murphy rehabs — bat has stayed hot all through April.",
-    form: 7.4,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: 3, rbi: 5, games: null },
+    statNote: "HR in the Apr 22 8-6 W at WSH — 3rd of the month. Also launched a 438-ft shot in the Apr 21 L and homered Apr 20. Bat locked in while Murphy rehabs.",
+    form: 8.2,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -388,6 +390,27 @@ export const PLAYERS = [
       { years: "2012–2025", team: "Various (TEX, BOS, MIN, PIT, CHW)", type: "MLB" },
     ],
   },
+  {
+    id: "ritchie",
+    name: "JR Ritchie",
+    number: 48,
+    position: "SP",
+    positionGroup: "pitcher",
+    rotationSpot: 7,
+    bats: "R", throws: "R",
+    nationality: "🇺🇸 USA", age: 22, experience: 0,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
+    statNote: "Called up from Triple-A Gwinnett for his MLB debut vs WSH on Apr 23 (1:05 PM ET). MLB Pipeline's #2 Braves prospect — 3-1 with a 0.99 ERA / 28 K in 27.1 IP across 5 AAA starts this year. Heavy ground-ball profile; 35th overall pick in 2022.",
+    form: 8.0,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
+    career: [
+      { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut Apr 23, 2026" },
+    ],
+  },
 
   // ── BULLPEN ─────────────────────────────────────────────────────────────────
   {
@@ -420,9 +443,9 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 4,
-    stats: { era: null, whip: null, ip: 9.2, k: null, bb: null, sv: 1, hold: null, games: null },
-    statNote: "Promoted to closer Apr 22 after Iglesias hit the IL. Already has a save when Iglesias was unavailable; 1 ER allowed in 9.2 IP this season.",
-    form: 8.5,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: 2, hold: null, games: null },
+    statNote: "Full-time closer since Apr 22. Has converted the save chance since taking over; dominant profile (1 ER / 9.2 IP as a setup man).",
+    form: 8.7,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4148749.png",
@@ -530,10 +553,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
-    statNote: "Called up from Triple-A Gwinnett in the Bido DFA swap.",
-    form: 6.5,
-    status: "active",
-    injuryNote: null,
+    statNote: "Designated for assignment Apr 22 to clear a roster spot for Didier Fuentes' spot start. Off the 40-man.",
+    form: 0,
+    status: "departed",
+    injuryNote: "DFA'd Apr 22, 2026 — no longer on the Braves 40-man roster.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/41127.png",
     assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
@@ -546,18 +569,18 @@ export const PLAYERS = [
     id: "fuentes",
     name: "Didier Fuentes",
     number: 68,
-    position: "RP",
+    position: "SP",
     positionGroup: "pitcher",
     bullpenRole: "long",
     bats: "R", throws: "R",
-    nationality: "🇨🇴 Colombia", age: 21, experience: 1,
-    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
-    statNote: "Long-relief rookie — 1.64 ERA with Ritchie at Triple-A earned him the Opening Day spot.",
-    form: 6.9,
+    nationality: "🇨🇴 Colombia", age: 20, experience: 1,
+    stats: { era: null, whip: null, ip: 7, k: null, bb: null, sv: null, hold: null, games: null },
+    statNote: "Recalled Apr 22 for an emergency spot start vs WSH (youngest SP in the majors this year at 20y 309d). Went 3 IP / 7 H / 4 ER — Braves still won 8-6. Optioned back to Gwinnett Apr 23 when JR Ritchie was called up.",
+    form: 6.2,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5291189.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut" },
@@ -573,15 +596,37 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 28, experience: 3,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
-    statNote: "Recalled from Triple-A Gwinnett Apr 21 to fill Iglesias' roster spot. 3 scoreless IP in his only MLB outing earlier this month (Apr 12 vs CLE).",
-    form: 6.8,
-    status: "active",
-    injuryNote: null,
+    statNote: "Apr 22 relief outing at WSH — 1 ER allowed, then came away with an oblique issue. Placed on the 15-day IL Apr 23; Carrasco selected to take his roster spot.",
+    form: 0,
+    status: "il-15",
+    injuryNote: "Left oblique strain suffered in Apr 22 appearance vs WSH. 15-day IL Apr 23 — return window late May at earliest.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4416462.png",
     assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB" },
+    ],
+  },
+  {
+    id: "carrasco",
+    name: "Carlos Carrasco",
+    number: 59,
+    position: "RP",
+    positionGroup: "pitcher",
+    bullpenRole: "long",
+    bats: "R", throws: "R",
+    nationality: "🇻🇪 Venezuela", age: 39, experience: 16,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
+    statNote: "Contract selected Apr 23 to cover long relief behind Ritchie's debut. Carrying a 1.71 ERA with an 18:5 K:BB over 21 IP across 4 appearances at Gwinnett this season. 17th MLB season.",
+    form: 6.6,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/30976.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
+    career: [
+      { years: "2025–", team: "Atlanta Braves", type: "MLB (2nd stint)" },
+      { years: "2009–2024", team: "Various (CLE, NYM, NYY)", type: "MLB · 2017 AL 18-win season" },
     ],
   },
 
@@ -619,10 +664,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "Rehab moved up to Triple-A Gwinnett Apr 21. Threw 50 pitches in first rehab start, bumping to ~65 next time. 2-3 more before rejoining rotation.",
+    statNote: "Near-flawless Triple-A Gwinnett rehab start Apr 21 — touched 95 mph. On track for ~65 pitches next time out, then likely 2 more before rejoining the rotation in early May.",
     form: 0,
     status: "il-15",
-    injuryNote: "Left oblique strain. Rehab assignment continuing at Triple-A Gwinnett; expected back early May.",
+    injuryNote: "Left oblique strain. Rehab assignment continuing at Triple-A Gwinnett; target return early May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     assignment: "rehab",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
@@ -662,10 +707,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇰🇷 South Korea", age: 30, experience: 5,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Taking BP and scheduled for a simulated game Apr 23. Rehab assignment expected within 1-2 weeks; projected return mid-to-late May.",
+    statNote: "Simulated game scheduled for Apr 23. Rehab assignment expected within 1-2 weeks once he clears the sim game; projected return mid-to-late May.",
     form: 0,
     status: "il-60",
-    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game Apr 23; rehab assignment close. Return projected mid-to-late May.",
+    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game today (Apr 23); rehab assignment close. Return projected mid-to-late May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
     assignment: "mlb",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
@@ -826,21 +871,22 @@ export const TEAM_LOGOS = {
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-04-22",
-  time: "6:45 PM ET",
+  date: "2026-04-23",
+  time: "1:05 PM ET",
   opp: "WSH",
   home: false,
   venue: "Nationals Park · Washington, DC",
   tv: "FanDuel Sports Network South",
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "1-1", era: 2.21 },
-    opp: { pitcher: "Zack Littell", record: "0-2", era: 7.11 },
+    atl: { pitcher: "JR Ritchie", record: "0-0", era: null },
+    opp: { pitcher: "Cade Cavalli", record: "0-1", era: 4.12 },
   },
-  note: "Rubber game after Nats snapped the 6-game streak with an 11-4 beatdown Tuesday. Braves counter López's short night with Pérez, who's been steady at the back of the rotation.",
+  note: "Series finale and a massive debut moment — JR Ritchie (#2 Braves prospect) gets the ball for his first MLB start after a 0.99 ERA through 5 starts at Gwinnett. Sale pushed back a day after Fuentes' emergency spot start. Braves going for 8 W in 9 games.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-04-22", opp: "WSH", home: false, atlScore: 8, oppScore: 6, result: "W", note: "Rally from 4-1 down — Harris 2 HR / 3 RBI, Olson 3-run HR (#8), Baldwin HR, Acuña tying sac fly. Fuentes' 3 IP spot start (4 ER) bailed out by the offense. 7 W in last 8." },
   { date: "2026-04-21", opp: "WSH", home: false, atlScore: 4, oppScore: 11, result: "L", note: "López can't escape the 2nd (1 IP, 5 H, 4 ER). Baldwin 438-ft HR, Eli White HR. Streak snapped at 6; Luis García Jr. 4 hits for WSH." },
   { date: "2026-04-20", opp: "WSH", home: false, atlScore: 9, oppScore: 4, result: "W", note: "Olson game-tying HR, 3 RBI; Elder 6.2 IP / 6 K; 5-run 6th inning. 6th straight W." },
   { date: "2026-04-19", opp: "PHI", home: false, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep at Citizens Bank Park — first there in 10 yrs." },
@@ -852,33 +898,33 @@ export const RESULTS = [
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 16, l: 8,  pct: .667, gb: 0,   streak: "L1"  },
-  { team: "MIA", name: "Miami Marlins",          w: 11, l: 13, pct: .458, gb: 5,   streak: "L1"  },
-  { team: "WSH", name: "Washington Nationals",   w: 11, l: 13, pct: .458, gb: 5,   streak: "W1"  },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 15, pct: .348, gb: 7.5, streak: "L7"  },
-  { team: "NYM", name: "New York Mets",          w: 7,  l: 16, pct: .304, gb: 8.5, streak: "L12" },
+  { team: "ATL", name: "Atlanta Braves",         w: 17, l: 8,  pct: .680, gb: 0,   streak: "W1"  },
+  { team: "MIA", name: "Miami Marlins",          w: 12, l: 13, pct: .480, gb: 5,   streak: "W1"  },
+  { team: "WSH", name: "Washington Nationals",   w: 11, l: 14, pct: .440, gb: 6,   streak: "L1"  },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 16, pct: .333, gb: 8.5, streak: "L8"  },
+  { team: "NYM", name: "New York Mets",          w: 8,  l: 16, pct: .333, gb: 8.5, streak: "W1"  },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-22T08:42:00-04:00",
+  generatedAt: "2026-04-23T09:00:00-04:00",
   summary:
-    "The Braves (16-8, 1st NL East, +5) had their 6-game winning streak slammed shut in Washington Tuesday — the Nationals jumped on Reynaldo López for 3 first-inning runs and knocked him out in the 2nd (1 IP, 5 H, 4 ER, 3 BB) on the way to an 11-4 thumping. Drake Baldwin launched a 438-foot HR to center and Eli White added a solo shot, but the offense couldn't dig out. Bigger news: closer Raisel Iglesias hit the 15-day IL (right shoulder inflammation, backdated to Apr 20) after his fastball velocity dipped from 94.8 to 93 mph; Dylan Dodd was recalled from Gwinnett and Robert Suarez — the offseason 3yr/$45M signing — takes over the 9th. Ronald Acuña Jr. returned to the leadoff spot Apr 21 after negative X-rays on his double HBP. Rubber game tonight at 6:45 PM ET — Martín Pérez (1-1, 2.21) vs Zack Littell (0-2, 7.11). Around the division: Nats moved to 11-13 with the win, Marlins also 11-13 (L1), Phillies L7 and Mets L12 sink the bottom.",
+    "The Braves (17-8, 1st NL East, +5) rallied back in Washington on Wednesday — Michael Harris II homered twice and drove in three, Matt Olson added a 3-run #8 and Drake Baldwin also went deep as ATL overcame a 4-1 hole to win 8-6 (7th W in 8 games). The biggest news today is the rotation: top prospect JR Ritchie (MLB Pipeline's #2 Braves prospect) gets the call for his MLB debut this afternoon vs the Nationals (1:05 PM ET), pushing Chris Sale back a day. To make roster space, Didier Fuentes (Apr 22 emergency spot starter, 3 IP / 4 ER but a winner) was optioned back to Gwinnett, Carlos Carrasco was selected from Triple-A for long relief, and Dylan Dodd hit the 15-day IL with an oblique strain suffered in last night's game. Iglesias remains on the IL (shoulder), with Robert Suarez locked in as closer. Spencer Strider was near-flawless in his Apr 21 rehab start at Triple-A and is on track for an early-May return. Around the NL East, the Marlins (12-13) caught Washington (11-14), and the Phillies (8-16, L8) and Mets (8-16, W1) sit tied for last.",
   keyTopics: [
-    { category: "injuries",  title: "Iglesias to 15-day IL — Suarez takes the 9th",               detail: "Right shoulder inflammation, backdated to Apr 20 (min return ~May 5). FB velo dropped from 94.8 → 93 mph last outing. Robert Suarez promoted to closer; had been 1 ER / 9.2 IP in setup." },
-    { category: "games",     title: "Nationals snap ATL's win streak 11-4",                       detail: "López gave up 3 runs before recording an out and was pulled in the 2nd (1 IP, 5 H, 4 ER, 3 BB). James Wood homered, Luis García Jr. had 4 hits. Braves managed just 2 HRs (Baldwin, Eli White)." },
-    { category: "roster",    title: "Dylan Dodd recalled from Triple-A",                          detail: "Lefty reliever recalled from Gwinnett to fill Iglesias' roster spot. Second stint already this month — threw 3 scoreless in relief Apr 12 vs Cleveland in his last Atlanta look." },
-    { category: "injuries",  title: "Acuña back in the lineup after HBP scare",                   detail: "Returned to the leadoff spot Apr 21 vs WSH — X-rays on his left hand came back clean after being plunked twice by Jake Irvin on Monday. Carrying a .719 OPS through 23 games." },
-    { category: "games",     title: "López's rough return from suspension",                       detail: "ERA ballooned from 1.15 → 4.35 in one start. Command evaporated early; Braves need this not to linger as Strider is still weeks away from rejoining the rotation." },
-    { category: "offense",   title: "Olson still carrying the offense",                           detail: "23-for-60 (.383) this month with 7 HR, 3 2B, 2 3B, 15 RBI, 15 R. Team leads MLB in batting (.274), is 2nd in runs (5.7/G) and 4th in HR (30)." },
-    { category: "injuries",  title: "Strider & Murphy rehabbing at Gwinnett",                     detail: "Strider (L oblique) pushed to 50 pitches, bumping to ~65 next — early-May return still the target. Murphy (hip labrum) also at Triple-A; targeting first half of May." },
-    { category: "injuries",  title: "Ha-Seong Kim sim game Thursday",                             detail: "Kim taking BP and lined up for a simulated game Apr 23. Rehab assignment expected within 1-2 weeks; return projected mid-to-late May." },
-    { category: "standings", title: "Mets hit 12-game skid, Phillies L7",                         detail: "NYM fell to 7-16 (0-10 L10), matching franchise worst April; PHI now 8-15 after a 7th straight loss. ATL leads MIA/WSH by 5, PHI by 7.5, NYM by 8.5." },
-    { category: "games",     title: "Pérez takes the ball in rubber game",                        detail: "Martín Pérez (1-1, 2.21 ERA) opposes Zack Littell (0-2, 7.11) at Nationals Park tonight. Pérez threw 6 scoreless in the 9-0 rout of Philly Apr 17." },
-    { category: "general",   title: "Sale still sitting above Glavine",                           detail: "Chris Sale (4-1, 2.79 ERA, 29 K in 5 starts) drew the ball for Thursday in the series finale against Cade Cavalli. Passed Tom Glavine (2,608) on all-time strikeouts last week." },
-    { category: "roster",    title: "Danny Young moved to 60-day IL (context)",                   detail: "LHP was transferred to the 60-day on Apr 11 — Tommy John rehab stall. Earliest possible return remains after the All-Star break." },
+    { category: "roster",    title: "JR Ritchie called up for MLB debut",                          detail: "Braves' #2 prospect Ritchie starts the series finale vs WSH on Apr 23 (1:05 PM ET) in his first MLB game. 3-1 with a 0.99 ERA and 28 K in 27.1 IP across 5 Triple-A Gwinnett starts. Fuentes optioned in the corresponding move; Sale pushed back a day." },
+    { category: "games",     title: "Braves rally past Nats 8-6 — 7th W in 8",                    detail: "Harris II went deep twice (3 RBI), Olson cracked a 3-run #8 in the 4th, Baldwin added a HR, and Acuña's 2nd-inning sac fly tied it. Down 4-1 early after Fuentes' 3 IP / 4 ER debut outing, ATL's offense flipped the game on Zack Littell." },
+    { category: "roster",    title: "Dylan Dodd to 15-day IL (oblique)",                          detail: "Dodd came out of his Apr 22 appearance at WSH (1 ER in relief) with a left oblique strain. Placed on the 15-day IL Apr 23; Carlos Carrasco selected from Gwinnett to fill the roster spot." },
+    { category: "roster",    title: "Carlos Carrasco contract selected",                           detail: "The 39-year-old RHP rejoins ATL's MLB roster in his 17th big-league season, lined up for long relief behind Ritchie tonight. 1.71 ERA, 18:5 K:BB over 21 IP at Triple-A this year." },
+    { category: "injuries",  title: "Strider near-flawless in Triple-A rehab start",               detail: "Touched 95 mph and dominated in his Apr 21 rehab outing at Gwinnett. On a ~65-pitch build-up for his next start; 2 more rehab starts likely before rejoining the big-league rotation in early May." },
+    { category: "offense",   title: "Harris II locked in",                                         detail: "7th career multi-HR game (3rd vs Washington). 2-run shot off Littell in the 2nd, solo HR in the 3rd. Raises his season HR total to 6 and his recent form is trending sharply after a slow April start." },
+    { category: "offense",   title: "Olson still mashing — 8 HR, 18 RBI for April",                detail: "3-run HR in the 4th at WSH — his 8th of the month. Batting a team-leading .383 in April; the run has turned the Braves offense into a top-3 MLB unit (.274 AVG, 5.7 R/G)." },
+    { category: "injuries",  title: "Iglesias on 15-day IL, Suarez steady at closer",              detail: "Right shoulder inflammation (backdated to Apr 20) remains the diagnosis — MRI clean of structural damage. Suarez has handled the 9th since Apr 22; 1 ER / 9.2 IP this season as a setup-turned-closer." },
+    { category: "injuries",  title: "Ha-Seong Kim sim game today",                                 detail: "Kim scheduled to face live pitching in a sim game Apr 23 — a rehab assignment is expected within 1-2 weeks if it goes well. Projected return to Atlanta mid-to-late May." },
+    { category: "injuries",  title: "Sean Murphy still rehabbing at Gwinnett",                     detail: "C has been with the Stripers alongside Strider; expected back in the first half of May from his hip labrum repair." },
+    { category: "standings", title: "NL East: Marlins catch Nats, Phillies L8",                   detail: "MIA beat Tampa to climb to 12-13; WSH slipped to 11-14. Phillies dropped their 8th straight to sink to 8-16, tied with the Mets (now on a W1) for last. Braves' lead holds at 5 games." },
+    { category: "roster",    title: "Ian Hamilton designated for assignment",                     detail: "Braves DFA'd Hamilton Apr 22 to recall Fuentes for the spot start. With Ritchie and Carrasco now added, Hamilton is officially off the 40-man." },
   ],
   sources: [
-    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "Fangraphs", "Atlanta News First",
+    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "Baseball America", "Atlanta News First",
   ],
 };
