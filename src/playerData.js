@@ -1,15 +1,17 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 23, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 24, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 17-8, leading NL East by 5 games — rallied past WSH 8-6 Wed, 7 W in last 8.
-// Harris II went 2-HR / 3-RBI, Olson (#8), Baldwin also deep; Acuña tying sac fly in the 2nd.
-// PITCHING SHAKEUP: JR Ritchie (MLB Pipeline's #2 Braves prospect) recalled from Gwinnett
-//   to make his MLB debut vs WSH Thu Apr 23 (1:05 PM ET) — 0.99 ERA over 5 AAA starts.
-// Carlos Carrasco selected for long relief; Fuentes optioned back to Gwinnett.
-// Dylan Dodd to 15-day IL (oblique strain) — Carrasco filling his bullpen spot.
-// CLOSER OUT: Raisel Iglesias on 15-day IL (right shoulder inflammation, backdated Apr 20);
-// Robert Suarez handling the 9th.
-// Strider tossed a near-flawless rehab start at Triple-A Gwinnett Apr 21; Murphy also at AAA.
-// Kim sim game scheduled Apr 23 — rehab assignment imminent, return projected mid-to-late May.
+// Season context: 18-8, leading NL East by 5 games — JR Ritchie dazzled in 7 IP / 2 ER / 7 K
+// MLB debut Apr 23, beating the Nationals 7-2. 8th W in 9 games; 5th straight series win.
+// Ritchie allowed a James Wood HR on his first big-league pitch, then retired 19 of 22.
+// First Braves pitcher EVER with 7+ IP, ≤2 R, and 7+ K in an MLB debut. Ozzie Albies
+// homered and drove in 4 to break a 2-2 tie with a 4-run 7th.
+// Home to the free-falling Phillies tonight (Apr 24, 7:15 PM ET, Truist Park): Grant Holmes
+// (1-1, 3.32) vs Andrew Painter (1-1, 4.42). PHI has lost 9 straight, tied for worst record in MLB.
+// Iglesias (shoulder) still on the 15-day IL; Suarez closing. Dylan Dodd on 15-day IL
+// (thoracic spine inflammation, backdated Apr 22). Strider near-flawless in 4.1 IP / 8 K
+// / 98 mph rehab start at Gwinnett Apr 21; target return first week of May.
+// Sean Murphy catching Strider on rehab at Gwinnett; Kim completed sim game Apr 23 and is
+// expected to begin a minor-league rehab assignment next week. Hamilton DFA'd Apr 22.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -115,9 +117,9 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: 3, rbi: 8, sb: null, bb: null, so: null, games: null, wOBA: .300, iso: .130 },
-    statNote: ".300 wOBA / .130 ISO, 3 HR and 7 RBI. RBI double in the PHI sweep; RBI single in the 9-4 win at WSH Apr 20.",
-    form: 7.5,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: 4, rbi: 12, sb: null, bb: null, so: null, games: null, wOBA: .310, iso: .150 },
+    statNote: "HR and 4 RBI in the Apr 23 7-2 W at WSH — broke a 2-2 tie by driving in three of the four runs in the top of the 7th. Also pitched in RBIs Apr 20 (9-4 W at WSH) and the PHI sweep. Bat trending up sharply behind Olson and Harris.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33783.png",
@@ -399,9 +401,9 @@ export const PLAYERS = [
     rotationSpot: 7,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
-    stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "Called up from Triple-A Gwinnett for his MLB debut vs WSH on Apr 23 (1:05 PM ET). MLB Pipeline's #2 Braves prospect — 3-1 with a 0.99 ERA / 28 K in 27.1 IP across 5 AAA starts this year. Heavy ground-ball profile; 35th overall pick in 2022.",
-    form: 8.0,
+    stats: { era: 2.57, whip: null, ip: 7, k: 7, bb: 2, w: 1, l: 0, games: 1, starts: 1 },
+    statNote: "Sensational MLB debut Apr 23 at WSH: 7 IP / 2 ER / 7 K / 2 BB on 89 pitches (54 strikes). Gave up a HR to James Wood on his first career pitch then retired 19 of the next 22. First Braves pitcher EVER with ≥7 IP / ≤2 R / ≥7 K in an MLB debut. MLB Pipeline's #2 Braves prospect slots into the rotation behind Sale/López/Holmes.",
+    form: 9.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
@@ -664,10 +666,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "Near-flawless Triple-A Gwinnett rehab start Apr 21 — touched 95 mph. On track for ~65 pitches next time out, then likely 2 more before rejoining the rotation in early May.",
+    statNote: "Dazzling Triple-A Gwinnett rehab start Apr 21 — 4.1 IP / 1 H / 1 BB / 8 K on 65 pitches, FB velo topping 98.1 mph (7 of 9 hardest after the 2nd). Next rehab outing targeting ~80 pitches Sunday Apr 26; return window closing on first week of May.",
     form: 0,
     status: "il-15",
-    injuryNote: "Left oblique strain. Rehab assignment continuing at Triple-A Gwinnett; target return early May.",
+    injuryNote: "Left oblique strain. Rehab continuing at Triple-A Gwinnett — targeting ~80 pitches next outing, return expected early May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     assignment: "rehab",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
@@ -685,10 +687,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 7,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Rehab moved up from High-A Rome to Triple-A Gwinnett on Apr 21. Targeting first-half-of-May return.",
+    statNote: "Continuing Triple-A Gwinnett rehab — caught Strider's Apr 21 start and is batterymate again for Strider's next outing. Targeting first-half-of-May return.",
     form: 0,
     status: "il-60",
-    injuryNote: "Right hip labral tear (offseason surgery). Rehab assignment now at Triple-A Gwinnett; expected back first half of May.",
+    injuryNote: "Right hip labral tear (offseason surgery). Rehab at Triple-A Gwinnett; catching Strider's rehab starts. Expected back first half of May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
     assignment: "rehab",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
@@ -707,10 +709,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇰🇷 South Korea", age: 30, experience: 5,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Simulated game scheduled for Apr 23. Rehab assignment expected within 1-2 weeks once he clears the sim game; projected return mid-to-late May.",
+    statNote: "Cleared his Apr 23 simulated game vs live pitching. A formal minor-league rehab assignment is expected to start next week; projected return to Atlanta mid-to-late May.",
     form: 0,
     status: "il-60",
-    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game today (Apr 23); rehab assignment close. Return projected mid-to-late May.",
+    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game cleared Apr 23; rehab assignment expected to begin next week. Return projected mid-to-late May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
     assignment: "mlb",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
@@ -871,22 +873,23 @@ export const TEAM_LOGOS = {
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-04-23",
-  time: "1:05 PM ET",
-  opp: "WSH",
-  home: false,
-  venue: "Nationals Park · Washington, DC",
-  tv: "FanDuel Sports Network South",
+  date: "2026-04-24",
+  time: "7:15 PM ET",
+  opp: "PHI",
+  home: true,
+  venue: "Truist Park · Atlanta, GA",
+  tv: "Apple TV+",
   probables: {
-    atl: { pitcher: "JR Ritchie", record: "0-0", era: null },
-    opp: { pitcher: "Cade Cavalli", record: "0-1", era: 4.12 },
+    atl: { pitcher: "Grant Holmes", record: "1-1", era: 3.32 },
+    opp: { pitcher: "Andrew Painter", record: "1-1", era: 4.42 },
   },
-  note: "Series finale and a massive debut moment — JR Ritchie (#2 Braves prospect) gets the ball for his first MLB start after a 0.99 ERA through 5 starts at Gwinnett. Sale pushed back a day after Fuentes' emergency spot start. Braves going for 8 W in 9 games.",
+  note: "Home opener of a 3-game set vs a Phillies club riding a 9-game losing streak (8-17, MLB-worst run differential). Grant Holmes (17 K in 21.2 IP; 1.11 WHIP) draws Phillies rookie phenom Andrew Painter, who is 1-1 with a 4.42 ERA through his first 4 MLB starts. Braves enter on an 8-W-in-9 run.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
-  { date: "2026-04-22", opp: "WSH", home: false, atlScore: 8, oppScore: 6, result: "W", note: "Rally from 4-1 down — Harris 2 HR / 3 RBI, Olson 3-run HR (#8), Baldwin HR, Acuña tying sac fly. Fuentes' 3 IP spot start (4 ER) bailed out by the offense. 7 W in last 8." },
+  { date: "2026-04-23", opp: "WSH", home: false, atlScore: 7, oppScore: 2, result: "W", note: "JR Ritchie dazzles in MLB debut — 7 IP / 2 ER / 7 K on 89 pitches after allowing a HR on his first-ever big-league pitch. Albies HR + 4 RBI breaks a 2-2 tie with 4-run 7th. 8th W in 9; 5th straight series win." },
+  { date: "2026-04-22", opp: "WSH", home: false, atlScore: 8, oppScore: 6, result: "W", note: "Rally from 4-1 down — Harris 2 HR / 3 RBI, Olson 3-run HR (#8), Baldwin HR, Acuña tying sac fly. Fuentes' 3 IP spot start (4 ER) bailed out by the offense." },
   { date: "2026-04-21", opp: "WSH", home: false, atlScore: 4, oppScore: 11, result: "L", note: "López can't escape the 2nd (1 IP, 5 H, 4 ER). Baldwin 438-ft HR, Eli White HR. Streak snapped at 6; Luis García Jr. 4 hits for WSH." },
   { date: "2026-04-20", opp: "WSH", home: false, atlScore: 9, oppScore: 4, result: "W", note: "Olson game-tying HR, 3 RBI; Elder 6.2 IP / 6 K; 5-run 6th inning. 6th straight W." },
   { date: "2026-04-19", opp: "PHI", home: false, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep at Citizens Bank Park — first there in 10 yrs." },
@@ -898,33 +901,34 @@ export const RESULTS = [
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 17, l: 8,  pct: .680, gb: 0,   streak: "W1"  },
-  { team: "MIA", name: "Miami Marlins",          w: 12, l: 13, pct: .480, gb: 5,   streak: "W1"  },
-  { team: "WSH", name: "Washington Nationals",   w: 11, l: 14, pct: .440, gb: 6,   streak: "L1"  },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 16, pct: .333, gb: 8.5, streak: "L8"  },
-  { team: "NYM", name: "New York Mets",          w: 8,  l: 16, pct: .333, gb: 8.5, streak: "W1"  },
+  { team: "ATL", name: "Atlanta Braves",         w: 18, l: 8,  pct: .692, gb: 0,   streak: "W2"  },
+  { team: "MIA", name: "Miami Marlins",          w: 13, l: 13, pct: .500, gb: 5,   streak: "W1"  },
+  { team: "WSH", name: "Washington Nationals",   w: 11, l: 15, pct: .423, gb: 7,   streak: "L2"  },
+  { team: "NYM", name: "New York Mets",          w: 9,  l: 16, pct: .360, gb: 8.5, streak: "W1"  },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 8,  l: 17, pct: .320, gb: 9.5, streak: "L9"  },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-23T09:00:00-04:00",
+  generatedAt: "2026-04-24T10:15:00-04:00",
   summary:
-    "The Braves (17-8, 1st NL East, +5) rallied back in Washington on Wednesday — Michael Harris II homered twice and drove in three, Matt Olson added a 3-run #8 and Drake Baldwin also went deep as ATL overcame a 4-1 hole to win 8-6 (7th W in 8 games). The biggest news today is the rotation: top prospect JR Ritchie (MLB Pipeline's #2 Braves prospect) gets the call for his MLB debut this afternoon vs the Nationals (1:05 PM ET), pushing Chris Sale back a day. To make roster space, Didier Fuentes (Apr 22 emergency spot starter, 3 IP / 4 ER but a winner) was optioned back to Gwinnett, Carlos Carrasco was selected from Triple-A for long relief, and Dylan Dodd hit the 15-day IL with an oblique strain suffered in last night's game. Iglesias remains on the IL (shoulder), with Robert Suarez locked in as closer. Spencer Strider was near-flawless in his Apr 21 rehab start at Triple-A and is on track for an early-May return. Around the NL East, the Marlins (12-13) caught Washington (11-14), and the Phillies (8-16, L8) and Mets (8-16, W1) sit tied for last.",
+    "The Braves (18-8, 1st NL East, +5) are humming — JR Ritchie's dream debut powered a 7-2 win at Washington on Thursday, the 8th W in their last 9 and a 5th straight series clinched. Ritchie surrendered a James Wood HR on his first MLB pitch and then retired 19 of the next 22: 7 IP / 2 ER / 7 K / 2 BB, becoming the first Braves pitcher EVER to go 7+ IP, ≤2 R and ≥7 K in a debut. Ozzie Albies homered and drove in four, breaking a 2-2 tie with a 4-run 7th. Attention now turns to Truist Park, where Atlanta opens a three-game weekend set tonight (7:15 PM ET, Apple TV+) vs the free-falling Phillies, who have lost 9 straight and own the worst run differential in the majors. Grant Holmes (1-1, 3.32 ERA, 17 K in 21.2 IP) draws Phillies rookie Andrew Painter (1-1, 4.42). On the medical side: Spencer Strider's Apr 21 rehab start was outstanding (4.1 IP / 8 K / 98.1 mph topping velo); a roughly 80-pitch Apr 26 outing lines him up for an early-May return. Sean Murphy is batterymate again and on the same timeline. Ha-Seong Kim cleared his Apr 23 sim game and will start a minor-league rehab assignment next week. Raisel Iglesias (shoulder) and Dylan Dodd (thoracic spine) remain on the 15-day IL; Robert Suarez is closing and Carlos Carrasco was added for long relief. Around the division, Miami (13-13) sits 2nd, Washington (11-15) is 3rd on a 2-game skid, the Mets (9-16) snuck past the Phillies (8-17, L9) into 4th.",
   keyTopics: [
-    { category: "roster",    title: "JR Ritchie called up for MLB debut",                          detail: "Braves' #2 prospect Ritchie starts the series finale vs WSH on Apr 23 (1:05 PM ET) in his first MLB game. 3-1 with a 0.99 ERA and 28 K in 27.1 IP across 5 Triple-A Gwinnett starts. Fuentes optioned in the corresponding move; Sale pushed back a day." },
-    { category: "games",     title: "Braves rally past Nats 8-6 — 7th W in 8",                    detail: "Harris II went deep twice (3 RBI), Olson cracked a 3-run #8 in the 4th, Baldwin added a HR, and Acuña's 2nd-inning sac fly tied it. Down 4-1 early after Fuentes' 3 IP / 4 ER debut outing, ATL's offense flipped the game on Zack Littell." },
-    { category: "roster",    title: "Dylan Dodd to 15-day IL (oblique)",                          detail: "Dodd came out of his Apr 22 appearance at WSH (1 ER in relief) with a left oblique strain. Placed on the 15-day IL Apr 23; Carlos Carrasco selected from Gwinnett to fill the roster spot." },
-    { category: "roster",    title: "Carlos Carrasco contract selected",                           detail: "The 39-year-old RHP rejoins ATL's MLB roster in his 17th big-league season, lined up for long relief behind Ritchie tonight. 1.71 ERA, 18:5 K:BB over 21 IP at Triple-A this year." },
-    { category: "injuries",  title: "Strider near-flawless in Triple-A rehab start",               detail: "Touched 95 mph and dominated in his Apr 21 rehab outing at Gwinnett. On a ~65-pitch build-up for his next start; 2 more rehab starts likely before rejoining the big-league rotation in early May." },
-    { category: "offense",   title: "Harris II locked in",                                         detail: "7th career multi-HR game (3rd vs Washington). 2-run shot off Littell in the 2nd, solo HR in the 3rd. Raises his season HR total to 6 and his recent form is trending sharply after a slow April start." },
-    { category: "offense",   title: "Olson still mashing — 8 HR, 18 RBI for April",                detail: "3-run HR in the 4th at WSH — his 8th of the month. Batting a team-leading .383 in April; the run has turned the Braves offense into a top-3 MLB unit (.274 AVG, 5.7 R/G)." },
-    { category: "injuries",  title: "Iglesias on 15-day IL, Suarez steady at closer",              detail: "Right shoulder inflammation (backdated to Apr 20) remains the diagnosis — MRI clean of structural damage. Suarez has handled the 9th since Apr 22; 1 ER / 9.2 IP this season as a setup-turned-closer." },
-    { category: "injuries",  title: "Ha-Seong Kim sim game today",                                 detail: "Kim scheduled to face live pitching in a sim game Apr 23 — a rehab assignment is expected within 1-2 weeks if it goes well. Projected return to Atlanta mid-to-late May." },
-    { category: "injuries",  title: "Sean Murphy still rehabbing at Gwinnett",                     detail: "C has been with the Stripers alongside Strider; expected back in the first half of May from his hip labrum repair." },
-    { category: "standings", title: "NL East: Marlins catch Nats, Phillies L8",                   detail: "MIA beat Tampa to climb to 12-13; WSH slipped to 11-14. Phillies dropped their 8th straight to sink to 8-16, tied with the Mets (now on a W1) for last. Braves' lead holds at 5 games." },
-    { category: "roster",    title: "Ian Hamilton designated for assignment",                     detail: "Braves DFA'd Hamilton Apr 22 to recall Fuentes for the spot start. With Ritchie and Carrasco now added, Hamilton is officially off the 40-man." },
+    { category: "result",      title: "JR Ritchie dazzles in MLB debut — Braves beat Nats 7-2",       detail: "Braves' #2 prospect allowed a James Wood HR on his first big-league pitch, then retired 19 of the next 22. Final: 7 IP / 2 ER / 7 K / 2 BB on 89 pitches (54 strikes). First pitcher in Braves history to throw 7+ IP with ≤2 R and ≥7 K in his MLB debut." },
+    { category: "result",      title: "Albies HR + 4 RBI cracks open a 2-2 tie",                      detail: "Ozzie Albies broke a 2-2 tie with a 4-run top of the 7th at Nationals Park, homering and driving in 4 to back Ritchie. Braves' 8th win in their last 9 games and 5th consecutive series victory." },
+    { category: "rotation",    title: "Tonight: Holmes vs Painter at Truist Park (7:15 ET)",          detail: "Grant Holmes (1-1, 3.32 ERA, 17 K / 21.2 IP, 1.11 WHIP) faces Phillies phenom Andrew Painter (1-1, 4.42). First of three vs a PHI club riding a 9-game skid and the MLB-worst run differential." },
+    { category: "injury",      title: "Strider cruises in 2nd Triple-A rehab outing",                 detail: "4.1 scoreless IP with 1 H, 1 BB, 8 K on 65 pitches at Gwinnett; FB velo topped out at 98.1 mph. Next rehab start targeted for ~80 pitches on Apr 26 — return window now firmly first week of May." },
+    { category: "injury",      title: "Ha-Seong Kim clears sim game — rehab assignment next week",    detail: "Kim completed his scheduled Apr 23 simulated game against live pitching. Alex Anthopoulos said a formal minor-league rehab assignment is expected to begin next week; return to Atlanta still projected mid-to-late May." },
+    { category: "injury",      title: "Iglesias on 15-day IL; Suarez locked in as closer",            detail: "Right shoulder inflammation — MRI showed no structural damage. Eligible to return May 5. Robert Suarez has inherited the 9th and is carrying 1 ER / 9.2 IP for the season as a setup-turned-closer." },
+    { category: "injury",      title: "Dylan Dodd to 15-day IL (thoracic spine inflammation)",        detail: "Retroactive to Apr 22. Dodd felt the issue after his Apr 22 relief outing at WSH (1 ER in 1 IP). Carlos Carrasco's contract was selected from Gwinnett to fill the 40-man spot and cover long relief." },
+    { category: "transaction", title: "Carlos Carrasco's contract selected",                          detail: "The 39-year-old RHP (17th MLB season) was promoted from Gwinnett Apr 23 after posting a 1.71 ERA and 18:5 K:BB across 21 IP / 4 AAA appearances. Deployed for long relief behind Ritchie in the series finale." },
+    { category: "transaction", title: "Didier Fuentes optioned back to Gwinnett",                     detail: "The 20-year-old — youngest starter in MLB this year — was optioned after his Apr 22 spot start (3 IP / 4 ER in a Braves W). Corresponding move: Ritchie's contract selected for his debut Apr 23." },
+    { category: "lineup",      title: "Murphy catching Strider's rehab starts",                      detail: "Sean Murphy (hip labral repair) has moved to Gwinnett and is catching Strider's rehab outings. Both are targeting first-half-of-May returns; Murphy is building up at-bats alongside his defensive work." },
+    { category: "milestone",   title: "Olson still MLB's hottest bat — 8 HR, 18 RBI in April",        detail: "Matt Olson added a 3-run #8 on Apr 22 at WSH and is hitting a team-leading .383 in April. Team offense ranks top-3 in MLB at 5.7 R/G, with Harris (6 HR) and Baldwin (3 HR in April) riding along." },
+    { category: "standings",   title: "NL East: Braves +5 as Phillies skid reaches 9",                detail: "Atlanta 18-8; Miami 13-13 (5 GB); Washington 11-15 (7 GB, L2); Mets 9-16 (8.5 GB) after their 10-8 win over Minnesota Apr 23; Phillies 8-17 (9.5 GB, L9) alone in the cellar with MLB's worst run differential (-50)." },
+    { category: "narrative",   title: "Rotation takes shape while Strider/Schwellenbach recover",     detail: "With Sale, López, Holmes, Elder and Suárez/Pérez in the top five, Ritchie now slots in as a 6th option. The rotation stabilizes just as Strider nears return in early May; Schwellenbach (elbow) and Waldrep (elbow) still targeting late June / July." },
   ],
   sources: [
-    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "Baseball America", "Atlanta News First",
+    "MLB.com", "ESPN", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "Washington Post", "Atlanta News First", "Bleacher Nation", "Baseball-Reference",
   ],
 };
