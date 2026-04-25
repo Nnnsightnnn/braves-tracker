@@ -6,6 +6,7 @@
     <title>Atlanta Braves Tracker</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://nnnsightnnn.github.io/tracker-shared/live-scores.css" />
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
@@ -16,7 +17,9 @@
     </style>
   </head>
   <body>
+    <div id="score-box" style="max-width: 900px; margin: 1rem auto; padding: 0 1rem;"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/live-scores-init.js"></script>
   </body>
 </html>
