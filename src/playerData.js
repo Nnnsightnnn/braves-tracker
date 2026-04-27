@@ -1,21 +1,21 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 26, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 27, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 19-9, leading NL East by ~5 games — still the best record in the
-// majors despite an 8-5 walk-off loss in 10 innings to Philadelphia Saturday night
-// that snapped the Phillies' 10-game losing streak. Bryce Elder (3-1, 1.93 ERA after
-// the start) gave Atlanta seven solid innings — 3 R / 6 H / 2 K / 1 BB — and exited
-// with a 4-3 lead before Dylan Lee surrendered the tying run in the 8th (Schwarber
-// leadoff triple, Harper sac fly) and José Suarez (LP) coughed up a 4-run 10th
-// capped by a Bryce Harper tiebreaking single. Harper finished with 4 RBI; Zack
-// Wheeler returned strong (5 IP / 2 R / 3 H / 6 K). Atlanta now goes for the rubber
-// game today (Apr 26, 1:35 PM ET, Truist Park, NBC/Peacock) with Chris Sale (4-1,
-// 2.79) opposing Aaron Nola (1-2, 5.06). Brian Snitker is being inducted into the
-// Braves Hall of Fame today before first pitch. Spencer Strider gets the ball at
-// Triple-A Gwinnett tonight for an ~80-pitch rehab start — final tune-up before
-// rejoining the rotation, tentatively next weekend at Coors Field. Sean Murphy
-// continues to catch his rehab outings; Ha-Seong Kim begins a minor-league rehab
-// assignment this week. Iglesias (shoulder, eligible May 5), Dodd (oblique), and
-// Schwellenbach/Waldrep (elbow) all still on the IL.
+// Season context: 20-9, first MLB team to 20 wins, leading NL East by ~5.5 games
+// after taking the rubber game from Philadelphia 6-2 on Sunday at Truist Park.
+// Chris Sale (5-1, 2.40 after the start) was vintage — 6 shutout IP / 1 H / 9 K on
+// 88 pitches — and notched his 150th career win. Matt Olson detonated a 3-run HR
+// off Aaron Nola in the 1st (his 9th of April, 21 RBI), Eli White added a 2-run
+// shot in the 2nd, and Acuña went 2-for-3 with a stolen base. Schwarber's late
+// 2-run HR off the bullpen kept Philly off the goose egg. Atlanta is now 10-2 in
+// its last 12, riding a Brian Snitker Hall of Fame induction high into a 3-game
+// home set with Detroit (Apr 28-30). Tuesday's opener: Martín Pérez (1-1, 2.70)
+// vs Casey Mize (2-1, 2.51) at 7:15 PM ET. Spencer Strider's third rehab outing
+// at Triple-A Gwinnett went well (5 IP / 1 R / 7 K / 82 pitches; 95.2 mph avg
+// FB, 96.9 peak) — he's lined up for his 2026 MLB debut next weekend at Coors
+// Field. Sean Murphy moves his rehab assignment to Triple-A Gwinnett on Tuesday;
+// Ha-Seong Kim begins his minor-league rehab assignment this week. Iglesias
+// (shoulder, eligible May 5), Dodd (oblique), Schwellenbach/Waldrep (elbow),
+// and Joe Jiménez/Joey Wentz/Smith-Shawver/Danny Young all still on the IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -36,9 +36,9 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: 4, rbi: null, sb: null, bb: null, so: null, games: 25 },
-    statNote: "2-run HR off Painter in the 4th of the Apr 24 5-3 W vs PHI — chased a 96 mph fastball and gave Atlanta its first lead before Harris's pinch-hit knockout punch in the 6th. Bat starting to find its top gear; the Apr 20 double-HBP scare is fully behind him.",
-    form: 8.2,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: 4, rbi: null, sb: null, bb: null, so: null, games: 26 },
+    statNote: "2-for-3 with two runs scored and a stolen base in Sunday's 6-2 rubber-game W over PHI. Apr 24 2-run HR off Painter still his last bomb; bat is firmly back in top gear after the Apr 20 double-HBP scare.",
+    form: 8.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
@@ -57,8 +57,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .383, obp: null, slg: null, ops: null, hr: 8, rbi: 18, sb: 0, bb: 6, so: null, games: 17, doubles: 3 },
-    statNote: "Three-run bomb off Littell in the 4th of the Apr 22 W at WSH — 8th HR of April, 18 RBI for the month. Still carrying the offense at .383 / team-best WPA profile.",
+    stats: { avg: .388, obp: null, slg: null, ops: null, hr: 9, rbi: 21, sb: 0, bb: 6, so: null, games: 18, doubles: 3 },
+    statNote: "First-inning 3-run HR off Aaron Nola in Sunday's 6-2 W vs PHI — 9th HR (now leading MLB), 21 April RBI, fourth career HR off Nola. Hitting .388, still authoring the team-best WPA profile.",
     form: 9.4,
     status: "active",
     injuryNote: null,
@@ -274,9 +274,9 @@ export const PLAYERS = [
     rotationSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
-    stats: { era: 2.79, whip: null, ip: null, k: 29, bb: null, hr: null, w: 4, l: 1, games: 5, starts: 5 },
-    statNote: "4-1, 2.79 ERA, 29 K in 5 starts. Passed HOF Tom Glavine on all-time Ks list (2,608) vs PHI Apr 18 — 7 K / 7 IP in 3-1 W.",
-    form: 9.0,
+    stats: { era: 2.40, whip: null, ip: null, k: 38, bb: null, hr: null, w: 5, l: 1, games: 6, starts: 6 },
+    statNote: "5-1, 2.40 ERA, 38 K in 6 starts. Notched 150th career win Apr 26 vs PHI — 6 shutout IP / 1 H / 9 K (season-high) on 88 pitches in a 6-2 W. Passed HOF Tom Glavine on all-time Ks list (2,608) Apr 18.",
+    form: 9.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/30948.png",
@@ -877,21 +877,22 @@ export const TEAM_LOGOS = {
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-04-26",
-  time: "1:35 PM ET",
-  opp: "PHI",
+  date: "2026-04-28",
+  time: "7:15 PM ET",
+  opp: "DET",
   home: true,
   venue: "Truist Park · Atlanta, GA",
-  tv: "Peacock (national)",
+  tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Chris Sale", record: "4-1", era: 2.79 },
-    opp: { pitcher: "Aaron Nola", record: "1-2", era: 5.06 },
+    atl: { pitcher: "Martín Pérez", record: "1-1", era: 2.70 },
+    opp: { pitcher: "Casey Mize", record: "2-1", era: 2.51 },
   },
-  note: "Rubber game of the weekend set with the series tied 1-1 after Saturday night's 8-5 (10) walk-off loss snapped the Phillies' 10-game skid. Chris Sale (4-1, 2.79 ERA, 29 K) goes for the series win; he passed Tom Glavine (2,608 career Ks) on Apr 18 and is shaping up like the staff ace again. Aaron Nola (1-2, 5.06) has struggled out of the gate and gives Atlanta's lineup a get-right opportunity. Pregame: Brian Snitker is being inducted into the Braves Hall of Fame.",
+  note: "Off-day Monday after a 2-1 series win over Philadelphia. Atlanta opens a 3-game home set with Detroit (Apr 28-30) — Tigers reigning AL Central champs come in led by Tarik Skubal (slated for Game 2 on Apr 29) and a hot Spencer Torkelson (HR in 5 straight). Tuesday's opener pits lefty Martín Pérez (1-1, 2.70) against Casey Mize (2-1, 2.51, 32 K). Pérez has been a steady #4 with a 1.10 WHIP across 5 starts.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-04-26", opp: "PHI", home: true,  atlScore: 6, oppScore: 2, result: "W", note: "Sale's 150th career W and a season-high 9 K across 6 shutout IP / 1 H on 88 pitches. Olson 3-run HR off Nola in the 1st (#9, 4th career off Nola), Eli White 2-run HR in the 2nd. Acuña 2-3, R, SB. Schwarber 2-run HR off the pen in the 8th avoided the shutout. ATL takes the series 2-1 — first MLB team to 20 wins; 10-2 in last 12. Pregame: Brian Snitker inducted into the Braves Hall of Fame." },
   { date: "2026-04-25", opp: "PHI", home: true,  atlScore: 5, oppScore: 8, result: "L", note: "10-inning walk-off L — Bryce Harper (4 RBI) lined a tiebreaking single in the 10th off José Suárez (LP); Marsh added a 2-run insurance knock. Elder solid (7 IP / 6 H / 3 R / 2 K / 1 BB) and left with a 4-3 lead before Dylan Lee gave up Schwarber's leadoff triple and Harper's tying sac fly in the 8th. Wheeler (5 IP / 2 R / 3 H / 6 K) looked sharp in his 2026 debut. Phillies' 10-game losing streak ends." },
   { date: "2026-04-24", opp: "PHI", home: true,  atlScore: 5, oppScore: 3, result: "W", note: "Pinch-hitter Michael Harris II (scratched pregame with quad tightness) hammered a 2-run go-ahead double off Painter in the 6th, scoring Smith and Dubón. Acuña 2-run HR; Holmes (W, 2-1) 6 IP, allowed Trea Turner & Bryce Harper HRs. Phillies' 10th straight loss." },
   { date: "2026-04-23", opp: "WSH", home: false, atlScore: 7, oppScore: 2, result: "W", note: "JR Ritchie dazzles in MLB debut — 7 IP / 2 ER / 7 K on 89 pitches after allowing a HR on his first-ever big-league pitch. Albies HR + 4 RBI breaks a 2-2 tie with 4-run 7th. 8th W in 9; 5th straight series win." },
@@ -901,38 +902,37 @@ export const RESULTS = [
   { date: "2026-04-19", opp: "PHI", home: false, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep at Citizens Bank Park — first there in 10 yrs." },
   { date: "2026-04-18", opp: "PHI", home: false, atlScore: 3, oppScore: 1, result: "W", note: "Sale 7 IP / 7 K — passed Glavine (2,608 career Ks)." },
   { date: "2026-04-17", opp: "PHI", home: false, atlScore: 9, oppScore: 0, result: "W", note: "Riley 2 HR (3R + solo), Pérez 6 scoreless." },
-  { date: "2026-04-15", opp: "MIA", home: true,  atlScore: 6, oppScore: 3, result: "W", note: "Elder into 6th; three Braves go deep." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 19, l: 9,  pct: .679, gb: 0,    streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 14, l: 14, pct: .500, gb: 5,    streak: "L1" },
-  { team: "WSH", name: "Washington Nationals",   w: 12, l: 16, pct: .429, gb: 7,    streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 9,  l: 18, pct: .333, gb: 9.5,  streak: "L2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 9,  l: 18, pct: .333, gb: 9.5,  streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 20, l: 9,  pct: .690, gb: 0,    streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 14, l: 15, pct: .483, gb: 6,    streak: "L2" },
+  { team: "WSH", name: "Washington Nationals",   w: 13, l: 16, pct: .448, gb: 7,    streak: "W2" },
+  { team: "NYM", name: "New York Mets",          w: 9,  l: 19, pct: .321, gb: 10.5, streak: "L3" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 9,  l: 19, pct: .321, gb: 10.5, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-26T09:00:00-04:00",
+  generatedAt: "2026-04-27T09:00:00-04:00",
   summary:
-    "The Braves (19-9, 1st NL East, +5) still own the best record in the majors but dropped Saturday's middle game of the home set with Philadelphia 8-5 in 10 innings — the loss that finally ended the Phillies' 10-game skid. Bryce Harper had four RBI, capped by a 10th-inning tiebreaking single off José Suárez (LP); Brandon Marsh tacked on insurance. Bryce Elder was solid (7 IP / 6 H / 3 R / 2 K / 1 BB) and exited with a 4-3 lead before Dylan Lee gave up Schwarber's leadoff triple and Harper's tying sac fly in the 8th. Zack Wheeler's 2026 debut went better than feared — 5 IP / 2 R / 3 H / 6 K / 3 BB. Today (Sun Apr 26, 1:35 PM ET, Truist Park, Peacock): Chris Sale (4-1, 2.79) faces Aaron Nola (1-2, 5.06) in the rubber game; Brian Snitker is being inducted into the Braves Hall of Fame pregame. Spencer Strider takes the ball at Triple-A Gwinnett tonight for his final ~80-pitch rehab tune-up — Atlanta tentatively has him slotted into next weekend's Coors Field rotation slot. Sean Murphy is again the catcher for the rehab outing and is on the same first-half-of-May return arc. Ha-Seong Kim begins a formal minor-league rehab assignment this week after clearing his Apr 23 simulated game. Iglesias (right shoulder, eligible May 5), Dodd (left oblique), Schwellenbach (elbow) and Waldrep (elbow) all remain on the IL. Around the division: Miami 14-14 (5 GB), Washington 12-16 (7 GB), Mets 9-18 after losing 5-3 to MIN (9.5 GB), Phillies 9-18 streak-busters (9.5 GB).",
+    "The Braves are 20-9 and the first MLB team to 20 wins after taking the rubber game from Philadelphia 6-2 on Sunday at Truist Park — a Brian Snitker Hall of Fame induction afternoon punctuated by Chris Sale's 150th career W (6 shutout IP / 1 H / 9 K on 88 pitches). Matt Olson detonated a 3-run first-inning HR off Aaron Nola (his 9th, MLB-leading; 4th career off Nola) and Eli White followed with a 2-run shot in the 2nd to put Atlanta up 5-0 before Schwarber's late 2-run HR off the pen avoided the shutout. Atlanta has now won 10 of its last 12 and finished a brutal NL East gauntlet (PHI/WSH/PHI) at 7-2. The team is off Monday and opens a 3-game home set with Detroit Tuesday: Martín Pérez (1-1, 2.70) vs Casey Mize (2-1, 2.51) at 7:15 PM ET. Tarik Skubal is lined up for Game 2 (Apr 29). Spencer Strider's third rehab start (Apr 26 at Triple-A Gwinnett) was a 5 IP / 1 R / 7 K / 82 pitches outing with the four-seamer averaging 95.2 mph and topping at 96.9 — he's set up to make his 2026 MLB debut at Coors Field this coming weekend (Apr 30 if the slot holds, otherwise May 1-3). Sean Murphy moves his rehab assignment from High-A Rome to Triple-A Gwinnett on Tuesday; Ha-Seong Kim begins a formal minor-league rehab assignment this week. Iglesias (shoulder, eligible May 5), Dodd (oblique), Schwellenbach/Waldrep (elbow), Joe Jiménez, Joey Wentz, AJ Smith-Shawver and Danny Young all remain on the IL. Around the division: Miami 14-15 (6 GB), Washington 13-16 (7 GB), Mets 9-19 (10.5 GB) and Phillies 9-19 (10.5 GB) — the bottom of the NL East has cracked wide open.",
   keyTopics: [
-    { category: "result",      title: "Phillies snap 10-game skid in 10 innings, 8-5",                 detail: "Bryce Harper drove in four — including the tiebreaking single in the top of the 10th off José Suárez — and Brandon Marsh tacked on insurance to end Philadelphia's longest losing streak since 1999. Atlanta led 4-3 after seven before Schwarber's leadoff triple and Harper's sac fly off Dylan Lee tied it in the 8th." },
-    { category: "rotation",    title: "Today: Sale vs Nola, 1:35 PM (Peacock)",                        detail: "Chris Sale (4-1, 2.79 ERA, 29 K) goes for the series win against Aaron Nola (1-2, 5.06). Sale passed Tom Glavine (2,608 career Ks) on Apr 18 and has been the staff's steadiest hand since Strider's oblique injury. Pregame: Brian Snitker enters the Braves Hall of Fame." },
-    { category: "milestone",   title: "Brian Snitker inducted into the Braves Hall of Fame",           detail: "The longtime manager and 2021 World Series winner is being honored at Truist Park before today's game. Snitker, who climbed from minor-league lifer to skipper, called it 'finding a new normal' as he reflects on a career that delivered Atlanta's most recent title." },
-    { category: "injury",      title: "Strider draws final 80-pitch tune-up at Gwinnett tonight",      detail: "After his near-flawless Apr 22 rehab outing (4 IP / 1 H / 8 K, 98 mph FB peak), Strider takes the ball one more time at Triple-A. The plan: ~80 pitches and then a slot in next weekend's Coors Field series — first MLB outing of 2026 since the spring oblique strain." },
-    { category: "injury",      title: "Sean Murphy still on Strider's exact timeline",                 detail: "Murphy (right hip labral surgery) is again the batterymate at Gwinnett tonight, building defensive workload and at-bats. Both Murphy and Strider target a first-half-of-May return to Atlanta; Drake Baldwin continues handling MLB catching duty." },
-    { category: "injury",      title: "Kim begins formal rehab assignment this week",                  detail: "Ha-Seong Kim's torn right-middle-finger tendon (Jan surgery) cleared its Apr 23 sim game and a minor-league rehab assignment opens this week. Return to Atlanta projected mid-to-late May." },
-    { category: "injury",      title: "Iglesias 15-day IL — Suarez locks down the 9th",                detail: "Raisel Iglesias's right shoulder MRI showed no structural damage; he's eligible to return May 5. Robert Suarez (1 ER / 9.2 IP and 2 saves) has been seamless in the closer role since Apr 22." },
-    { category: "injury",      title: "Dodd on the 15-day IL with left oblique strain",                detail: "Lefty Dylan Dodd remains on the IL after his Apr 22 relief outing at WSH; Carlos Carrasco was selected from Gwinnett to backfill the 40-man spot and cover long relief behind the rotation." },
-    { category: "milestone",   title: "Olson .383 / 8 HR / 18 RBI · Elder ERA up to 1.93",             detail: "Matt Olson keeps fueling the offense — .383 with 8 HR / 18 RBI through 17 games. Elder's ERA ticks up from a sterling 1.50 to 1.93 after Saturday's no-decision, but he's still pitching like an All-Star with a 3-1 record across six starts." },
-    { category: "narrative",   title: "Ritchie now firmly the 5th starter post-debut",                 detail: "JR Ritchie's electric MLB debut Apr 23 at WSH (7 IP / 2 ER / 7 K on 89 pitches; first Braves pitcher ever ≥7 IP / ≤2 R / ≥7 K in a debut) earns him a permanent rotation slot behind Sale/López/Holmes/Elder until Strider returns and bumps the depth chart." },
-    { category: "standings",   title: "NL East: Braves still +5 despite Saturday's loss",              detail: "Atlanta 19-9 (best in MLB); Miami 14-14 (5 GB); Washington 12-16 (7 GB); Mets 9-18 L2 after a 5-3 home L to the Twins (9.5 GB); Phillies 9-18 W1 finally back in the win column (9.5 GB)." },
-    { category: "narrative",   title: "Rotation depth holds with Strider one start away",              detail: "Sale, López, Holmes, Elder, Ritchie and Pérez give Atlanta six MLB-ready starters; Suárez slides to long relief once Strider returns. Schwellenbach and Waldrep are still tracking late June / July from elbow surgery — the staff blueprint is in focus by mid-May." },
+    { category: "result",      title: "Sale's 150th career W — 6 shutout IP, 9 K — seals 6-2 over PHI",   detail: "Chris Sale shut down the Phillies for the second time in nine days, allowing one hit with a season-high nine punchouts on 88 pitches. Olson 3-run HR off Nola in the 1st (#9), Eli White 2-run HR in the 2nd, Acuña 2-3 / R / SB. Schwarber 2-run HR in the 8th off the pen avoided the shutout. ATL takes the series 2-1 and is now first to 20 W in the majors." },
+    { category: "milestone",   title: "First MLB team to 20 wins; 10-2 in last 12",                       detail: "Atlanta becomes the first MLB club to 20 wins in 2026 (20-9, .690), capping a 7-2 run through the toughest stretch of the early schedule. Snitker got his Hall of Fame induction at Truist Park pregame — and his team responded with a complete-team win." },
+    { category: "rotation",    title: "Tuesday opener: Pérez vs Mize, 7:15 PM ET",                        detail: "Off-day Monday, then a 3-game home set with Detroit. Lefty Martín Pérez (1-1, 2.70 ERA, 1.10 WHIP) opens against Casey Mize (2-1, 2.51, 32 K). The Tigers come in as reigning AL Central champs riding Spencer Torkelson's 5-game HR streak." },
+    { category: "rotation",    title: "Skubal lined up for Game 2 vs Atlanta on Apr 29",                  detail: "Detroit's Cy Young front-runner is on track to start the middle game of the series Wednesday at Truist Park. Atlanta will counter with Reynaldo López, fresh off his uneven 1-IP outing at WSH. Bobblecard giveaway night for Sale." },
+    { category: "injury",      title: "Strider's Apr 26 rehab: 5 IP / 1 R / 7 K / 82 pitches",            detail: "Third rehab outing at Triple-A Gwinnett went exactly to plan — 50 strikes on 82 pitches with the four-seamer averaging 95.2 mph and peaking at 96.9 mph. He's lined up for his 2026 MLB debut at Coors Field this coming weekend, his first big-league outing since the spring oblique strain." },
+    { category: "injury",      title: "Sean Murphy moves rehab to Triple-A Gwinnett Tuesday",             detail: "Murphy (right hip labral surgery) bumps up from High-A Rome to Gwinnett on Apr 28 — the next-to-last step before activation. Drake Baldwin continues to start at MLB until Murphy is back; first-half-of-May target still holds." },
+    { category: "injury",      title: "Ha-Seong Kim begins formal rehab assignment this week",            detail: "Kim's right middle-finger tendon (Jan surgery) cleared his Apr 23 sim game and starts a minor-league rehab assignment this week. Return to Atlanta projected mid-to-late May." },
+    { category: "injury",      title: "Iglesias eligible May 5; Suarez anchoring the 9th",                detail: "Raisel Iglesias (right shoulder, no structural damage on MRI) is eligible to return May 5. Robert Suarez has been spotless as the closer (1 ER / 9.2 IP, 2 saves since Apr 22) and will likely keep the role on a matchup basis once Iglesias is back." },
+    { category: "injury",      title: "Dodd, Schwellenbach, Waldrep, Wentz still on the IL",              detail: "Dylan Dodd (left oblique) remains shelved; Spencer Schwellenbach and Hurston Waldrep are tracking late-June/July returns from elbow procedures; Joey Wentz and AJ Smith-Shawver continue to rehab. Carlos Carrasco is the long-relief swing piece on the active roster." },
+    { category: "milestone",   title: "Olson MLB-leading 9 HR, 21 RBI, .388",                             detail: "First-inning 3-run HR off Aaron Nola gave Olson the MLB lead in homers (9). His 21 RBI also tops the Braves; he leads the team in WPA and is the heart of the hottest offense in baseball through April." },
+    { category: "standings",   title: "NL East: Atlanta +6 over MIA; bottom three crack open",            detail: "ATL 20-9 (best in MLB); MIA 14-15 (6 GB); WSH 13-16 (7 GB); NYM 9-19 (10.5 GB); PHI 9-19 (10.5 GB). The bottom three teams in the division are now all sub-.450 with the Mets and Phillies tied for last." },
+    { category: "narrative",   title: "Rotation blueprint coming into focus by mid-May",                  detail: "Sale, López, Holmes, Elder and Ritchie (now firmly the 5th starter after his electric Apr 23 debut) give Atlanta a high-floor rotation; Pérez slides to swingman / spot-start once Strider rejoins. Schwellenbach and Waldrep stay on the long-term horizon — the staff finally has the depth Snitker has wanted since 2024." },
   ],
   sources: [
-    "MLB.com", "ESPN", "Washington Post", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Inquirer", "NBC Sports", "Baseball-Reference",
+    "MLB.com", "ESPN", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Bleacher Nation", "Yahoo Sports", "Sports Illustrated", "Baseball-Reference", "Heavy.com", "Washington Times",
   ],
 };
