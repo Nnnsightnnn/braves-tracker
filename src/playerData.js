@@ -882,6 +882,69 @@ export const TEAM_LOGOS = {
   HOU: "https://a.espncdn.com/i/teamlogos/mlb/500/hou.png",
 };
 
+// ─── UPCOMING SCHEDULE ─────────────────────────────────────────────────────────
+// The next ~5 scheduled games used by the rotation map / probable-pitchers strip.
+// Skill maintains this each daily run: drop today's game once it moves to RESULTS,
+// add a new tail entry. atlSP.id should match a PLAYERS entry so the avatar can
+// render; use null for true TBAs. daysRest is calendar days since last MLB start.
+export const UPCOMING_SCHEDULE = [
+  {
+    date: "2026-04-28",
+    weekday: "Tue",
+    time: "7:15 PM ET",
+    opp: "DET",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "1-1", era: 2.70, daysRest: 5, hand: "L" },
+    oppSP: { name: "Casey Mize", record: "2-1", era: 2.51, hand: "R" },
+    note: "Series opener · Mize allowed only 2 runs across his last 18.1 IP",
+  },
+  {
+    date: "2026-04-29",
+    weekday: "Wed",
+    time: "7:15 PM ET",
+    opp: "DET",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "Tarik Skubal", record: null, era: null, hand: "L" },
+    note: "Skubal night vs back-to-back AL Cy Young winner; López-to-pen leaves Game 2 starter TBA",
+  },
+  {
+    date: "2026-04-30",
+    weekday: "Thu",
+    time: "12:15 PM ET",
+    opp: "DET",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: 2.57, daysRest: 7, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Series finale · day game · Ritchie's third MLB start",
+  },
+  {
+    date: "2026-05-01",
+    weekday: "Fri",
+    time: "8:40 PM ET",
+    opp: "COL",
+    home: false,
+    venue: "Coors Field",
+    atlSP: { id: "strider", name: "Spencer Strider", record: null, era: null, daysRest: 5, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Strider's projected 2026 MLB debut · first big-league outing since spring oblique strain",
+  },
+  {
+    date: "2026-05-02",
+    weekday: "Sat",
+    time: "8:10 PM ET",
+    opp: "COL",
+    home: false,
+    venue: "Coors Field",
+    atlSP: { id: "sale", name: "Chris Sale", record: "5-1", era: 2.40, daysRest: 6, hand: "L" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Sale takes the ball at altitude · coming off his 150th career W",
+  },
+];
+
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
   date: "2026-04-28",
