@@ -1,21 +1,28 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 27, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 28, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 20-9, first MLB team to 20 wins, leading NL East by ~5.5 games
+// Season context: 20-9, first MLB team to 20 wins, leading NL East by ~6 games
 // after taking the rubber game from Philadelphia 6-2 on Sunday at Truist Park.
-// Chris Sale (5-1, 2.40 after the start) was vintage — 6 shutout IP / 1 H / 9 K on
-// 88 pitches — and notched his 150th career win. Matt Olson detonated a 3-run HR
-// off Aaron Nola in the 1st (his 9th of April, 21 RBI), Eli White added a 2-run
-// shot in the 2nd, and Acuña went 2-for-3 with a stolen base. Schwarber's late
-// 2-run HR off the bullpen kept Philly off the goose egg. Atlanta is now 10-2 in
-// its last 12, riding a Brian Snitker Hall of Fame induction high into a 3-game
-// home set with Detroit (Apr 28-30). Tuesday's opener: Martín Pérez (1-1, 2.70)
-// vs Casey Mize (2-1, 2.51) at 7:15 PM ET. Spencer Strider's third rehab outing
-// at Triple-A Gwinnett went well (5 IP / 1 R / 7 K / 82 pitches; 95.2 mph avg
-// FB, 96.9 peak) — he's lined up for his 2026 MLB debut next weekend at Coors
-// Field. Sean Murphy moves his rehab assignment to Triple-A Gwinnett on Tuesday;
-// Ha-Seong Kim begins his minor-league rehab assignment this week. Iglesias
-// (shoulder, eligible May 5), Dodd (oblique), Schwellenbach/Waldrep (elbow),
-// and Joe Jiménez/Joey Wentz/Smith-Shawver/Danny Young all still on the IL.
+// Atlanta opens a 3-game home set with Detroit tonight (Apr 28, 7:15 PM ET):
+// Martín Pérez (1-1, 2.70) vs Casey Mize (2-1, 2.51, 32 K). Reigning AL Central
+// champ Tigers come in with Spencer Torkelson on a 5-game HR streak. Tarik
+// Skubal (back-to-back AL Cy Young) lined up for Game 2 on Wednesday — Atlanta
+// will counter with a TBA arm after manager Walt Weiss officially moved
+// Reynaldo López to the bullpen "for now" to fix mechanical flaws in his
+// delivery (slider whiff rate down 11+%, opposing wOBA on the pitch from .220
+// to .440). Pérez, Ritchie and Elder will start the Detroit series — López
+// expected back to the rotation once the mechanical reset is complete.
+// Spencer Strider's third rehab outing at Triple-A Gwinnett (Apr 26) was 5 IP
+// / 4 H / 2 ER / 2 BB / 7 K on 82 pitches with the four-seamer averaging
+// 95.2 mph and topping at 96.9 — 17 swings-and-misses. He skips the Detroit
+// series and is lined up for his 2026 MLB debut at Coors Field this weekend
+// (Apr 30-May 3). Sean Murphy moves his rehab to Triple-A Gwinnett today
+// (Tuesday Apr 28) after wrapping up at High-A Rome — first-half-of-May
+// activation target intact. Ha-Seong Kim begins his rehab assignment TONIGHT
+// at Double-A Columbus Clingstones (the franchise's first-ever MLB rehab
+// assignment) — six-game homestand vs Montgomery starts Apr 28; Kim is on a
+// faster-than-expected track and could be back to Atlanta mid-to-late May.
+// Iglesias (shoulder, eligible May 5), Dodd (oblique), Schwellenbach/Waldrep
+// (elbow), Joe Jiménez/Joey Wentz/Smith-Shawver/Danny Young all still IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -292,14 +299,14 @@ export const PLAYERS = [
     id: "lopez",
     name: "Reynaldo López",
     number: 40,
-    position: "SP",
+    position: "RP",
     positionGroup: "pitcher",
-    rotationSpot: 2,
+    rotationSpot: null,
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 32, experience: 10,
-    stats: { era: 4.35, whip: null, ip: null, k: null, bb: null, hr: null, w: 1, l: 1, games: 4, starts: 4 },
-    statNote: "Brutal Apr 21 at WSH — 1 IP, 5 H, 4 ER, 3 BB; didn't record an out in the 2nd. ERA jumped from 1.15 to 4.35 in one start. Was on a 4-game upswing before.",
-    form: 6.2,
+    stats: { era: 3.74, whip: null, ip: null, k: null, bb: null, hr: null, w: 1, l: 1, games: 4, starts: 4 },
+    statNote: "Walt Weiss officially moved López to the bullpen \"for now\" on Apr 27 to work out mechanical flaws in his delivery — his slider's whiff rate is down 11+% from 2024 and opposing wOBA on the pitch has jumped from .220 to .440. Brutal Apr 21 at WSH (1 IP, 5 H, 4 ER, 3 BB) was the breaking point. Pérez/Ritchie/Elder start the Detroit series; Weiss expects him back to the rotation once the reset is done.",
+    form: 5.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
@@ -670,10 +677,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "Takes the ball today (Sun Apr 26) at Triple-A Gwinnett for his final ~80-pitch rehab tune-up after his near-flawless Apr 22 outing (4 IP / 1 H / 8 K, 98 mph FB peak; Sean Murphy catching). Atlanta has him tentatively slotted to rejoin the rotation during next weekend's Coors Field series — first MLB outing of 2026.",
+    statNote: "Third and likely final rehab start (Apr 26 at Triple-A Gwinnett): 5 IP / 4 H / 2 ER / 2 BB / 7 K on 82 pitches (50 strikes, 17 swings-and-misses), four-seamer 95.2 mph average / 96.9 peak. Sean Murphy caught him again. Skips the Detroit series; Atlanta has him lined up to debut this weekend at Coors Field (Apr 30-May 3) — first MLB outing of 2026.",
     form: 0,
     status: "il-15",
-    injuryNote: "Left oblique strain. Rehab continuing at Triple-A Gwinnett — final ~80-pitch tune-up today (Apr 26); return targeted for next weekend at Coors Field.",
+    injuryNote: "Left oblique strain. Final rehab tune-up complete (Apr 26 at Gwinnett: 5 IP / 2 ER / 7 K). 2026 MLB debut targeted for the Apr 30-May 3 series at Coors Field.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     assignment: "rehab",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
@@ -691,10 +698,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 7,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Catching Strider's rehab outings at Gwinnett — batterymate again for tonight's ~80-pitch tune-up. Building back at-bats and defensive workload; targeting a first-half-of-May return to Atlanta.",
+    statNote: "Officially moved his rehab assignment from High-A Rome to Triple-A Gwinnett on Apr 28 — caught Strider's third rehab start (Apr 26) and is up to seven innings behind the dish. Final step before activation; first-half-of-May target for return to Atlanta still on track.",
     form: 0,
     status: "il-60",
-    injuryNote: "Right hip labral tear (offseason surgery). Rehab at Triple-A Gwinnett; catching Strider's rehab starts. Expected back first half of May.",
+    injuryNote: "Right hip labral tear (Sep 2025 surgery). Rehab moved up to Triple-A Gwinnett on Apr 28; catching Strider's rehab outings. Expected back first half of May.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
     assignment: "rehab",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
@@ -713,12 +720,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇰🇷 South Korea", age: 30, experience: 5,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Cleared his Apr 23 simulated game vs live pitching. A formal minor-league rehab assignment is expected to start next week; projected return to Atlanta mid-to-late May.",
+    statNote: "Begins his major-league rehab assignment TONIGHT (Apr 28) with the Double-A Columbus Clingstones — the first MLB rehab assignment in Clingstones franchise history. Six-game homestand vs Montgomery Biscuits opens Tuesday. Originally projected to return in June; he's been on a faster-than-expected track since the Apr 23 sim game cleared. Return to Atlanta now projected for mid-to-late May.",
     form: 0,
     status: "il-60",
-    injuryNote: "Torn tendon right middle finger (Jan surgery). Sim game cleared Apr 23; rehab assignment expected to begin next week. Return projected mid-to-late May.",
+    injuryNote: "Torn tendon right middle finger (Jan 2026 surgery — slipped on ice in South Korea). Rehab assignment begins Apr 28 at Double-A Columbus Clingstones (six-game homestand vs Montgomery). Mid-to-late May Atlanta return projected.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
-    assignment: "mlb",
+    assignment: "rehab",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -887,7 +894,7 @@ export const NEXT_GAME = {
     atl: { pitcher: "Martín Pérez", record: "1-1", era: 2.70 },
     opp: { pitcher: "Casey Mize", record: "2-1", era: 2.51 },
   },
-  note: "Off-day Monday after a 2-1 series win over Philadelphia. Atlanta opens a 3-game home set with Detroit (Apr 28-30) — Tigers reigning AL Central champs come in led by Tarik Skubal (slated for Game 2 on Apr 29) and a hot Spencer Torkelson (HR in 5 straight). Tuesday's opener pits lefty Martín Pérez (1-1, 2.70) against Casey Mize (2-1, 2.51, 32 K). Pérez has been a steady #4 with a 1.10 WHIP across 5 starts.",
+  note: "Tuesday opener of a 3-game home set with Detroit. Tigers come in as reigning AL Central champs with Spencer Torkelson on a 5-game HR streak; Tarik Skubal lined up for Game 2 (Wed Apr 29). Pérez (1-1, 2.70, 1.10 WHIP) draws Casey Mize (2-1, 2.51, 32 K, 1.15 WHIP) at 7:15 PM ET. Mize has allowed only 2 runs across his last 18.1 IP. Walt Weiss has Pérez/Ritchie/Elder lined up for the series after officially moving Reynaldo López to the bullpen \"for now\" on Apr 27 — a TBA arm covers Game 2 opposite Skubal.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -915,24 +922,25 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-27T09:00:00-04:00",
+  generatedAt: "2026-04-28T09:00:00-04:00",
   summary:
-    "The Braves are 20-9 and the first MLB team to 20 wins after taking the rubber game from Philadelphia 6-2 on Sunday at Truist Park — a Brian Snitker Hall of Fame induction afternoon punctuated by Chris Sale's 150th career W (6 shutout IP / 1 H / 9 K on 88 pitches). Matt Olson detonated a 3-run first-inning HR off Aaron Nola (his 9th, MLB-leading; 4th career off Nola) and Eli White followed with a 2-run shot in the 2nd to put Atlanta up 5-0 before Schwarber's late 2-run HR off the pen avoided the shutout. Atlanta has now won 10 of its last 12 and finished a brutal NL East gauntlet (PHI/WSH/PHI) at 7-2. The team is off Monday and opens a 3-game home set with Detroit Tuesday: Martín Pérez (1-1, 2.70) vs Casey Mize (2-1, 2.51) at 7:15 PM ET. Tarik Skubal is lined up for Game 2 (Apr 29). Spencer Strider's third rehab start (Apr 26 at Triple-A Gwinnett) was a 5 IP / 1 R / 7 K / 82 pitches outing with the four-seamer averaging 95.2 mph and topping at 96.9 — he's set up to make his 2026 MLB debut at Coors Field this coming weekend (Apr 30 if the slot holds, otherwise May 1-3). Sean Murphy moves his rehab assignment from High-A Rome to Triple-A Gwinnett on Tuesday; Ha-Seong Kim begins a formal minor-league rehab assignment this week. Iglesias (shoulder, eligible May 5), Dodd (oblique), Schwellenbach/Waldrep (elbow), Joe Jiménez, Joey Wentz, AJ Smith-Shawver and Danny Young all remain on the IL. Around the division: Miami 14-15 (6 GB), Washington 13-16 (7 GB), Mets 9-19 (10.5 GB) and Phillies 9-19 (10.5 GB) — the bottom of the NL East has cracked wide open.",
+    "Atlanta returns from a Monday off-day at 20-9 — the best record in MLB and first to 20 W — and opens a marquee 3-game home set with Detroit tonight (7:15 PM ET, Truist Park). Martín Pérez (1-1, 2.70, 1.10 WHIP) draws Casey Mize (2-1, 2.51, 32 K) in the opener; Tarik Skubal looms for Game 2. The lead-in story today is a rotation reset: manager Walt Weiss officially moved Reynaldo López to the bullpen \"for now\" on Apr 27 to fix mechanical flaws in his delivery — his slider's whiff rate is down 11+% from 2024 and opposing wOBA on the pitch has spiked from .220 to .440. Pérez, Ritchie and Elder will start the Detroit series; a TBA arm covers Game 2 opposite Skubal. On the rehab side, Spencer Strider wrapped his third (and likely final) tune-up Sunday at Triple-A Gwinnett — 5 IP / 4 H / 2 ER / 2 BB / 7 K on 82 pitches, 50 strikes, 17 swings-and-misses, four-seamer 95.2 avg / 96.9 peak — and is lined up to make his 2026 MLB debut this weekend at Coors Field (Apr 30-May 3). Sean Murphy bumped his rehab from High-A Rome up to Triple-A Gwinnett today; he's caught Strider's rehab starts and is up to seven innings behind the dish, with a first-half-of-May activation still on the table. Ha-Seong Kim begins his rehab tonight at Double-A Columbus — the first MLB rehab assignment in Clingstones franchise history — and is on a faster-than-expected track for a mid-to-late May return. Raisel Iglesias is eligible to return from the shoulder IL May 5; Suarez keeps the 9th. Around the division: Miami 14-15 (6 GB), Washington 13-16 (7 GB), Mets 9-19 (10.5 GB), Phillies 9-19 (10.5 GB) — the bottom four are all sub-.500.",
   keyTopics: [
-    { category: "result",      title: "Sale's 150th career W — 6 shutout IP, 9 K — seals 6-2 over PHI",   detail: "Chris Sale shut down the Phillies for the second time in nine days, allowing one hit with a season-high nine punchouts on 88 pitches. Olson 3-run HR off Nola in the 1st (#9), Eli White 2-run HR in the 2nd, Acuña 2-3 / R / SB. Schwarber 2-run HR in the 8th off the pen avoided the shutout. ATL takes the series 2-1 and is now first to 20 W in the majors." },
-    { category: "milestone",   title: "First MLB team to 20 wins; 10-2 in last 12",                       detail: "Atlanta becomes the first MLB club to 20 wins in 2026 (20-9, .690), capping a 7-2 run through the toughest stretch of the early schedule. Snitker got his Hall of Fame induction at Truist Park pregame — and his team responded with a complete-team win." },
-    { category: "rotation",    title: "Tuesday opener: Pérez vs Mize, 7:15 PM ET",                        detail: "Off-day Monday, then a 3-game home set with Detroit. Lefty Martín Pérez (1-1, 2.70 ERA, 1.10 WHIP) opens against Casey Mize (2-1, 2.51, 32 K). The Tigers come in as reigning AL Central champs riding Spencer Torkelson's 5-game HR streak." },
-    { category: "rotation",    title: "Skubal lined up for Game 2 vs Atlanta on Apr 29",                  detail: "Detroit's Cy Young front-runner is on track to start the middle game of the series Wednesday at Truist Park. Atlanta will counter with Reynaldo López, fresh off his uneven 1-IP outing at WSH. Bobblecard giveaway night for Sale." },
-    { category: "injury",      title: "Strider's Apr 26 rehab: 5 IP / 1 R / 7 K / 82 pitches",            detail: "Third rehab outing at Triple-A Gwinnett went exactly to plan — 50 strikes on 82 pitches with the four-seamer averaging 95.2 mph and peaking at 96.9 mph. He's lined up for his 2026 MLB debut at Coors Field this coming weekend, his first big-league outing since the spring oblique strain." },
-    { category: "injury",      title: "Sean Murphy moves rehab to Triple-A Gwinnett Tuesday",             detail: "Murphy (right hip labral surgery) bumps up from High-A Rome to Gwinnett on Apr 28 — the next-to-last step before activation. Drake Baldwin continues to start at MLB until Murphy is back; first-half-of-May target still holds." },
-    { category: "injury",      title: "Ha-Seong Kim begins formal rehab assignment this week",            detail: "Kim's right middle-finger tendon (Jan surgery) cleared his Apr 23 sim game and starts a minor-league rehab assignment this week. Return to Atlanta projected mid-to-late May." },
-    { category: "injury",      title: "Iglesias eligible May 5; Suarez anchoring the 9th",                detail: "Raisel Iglesias (right shoulder, no structural damage on MRI) is eligible to return May 5. Robert Suarez has been spotless as the closer (1 ER / 9.2 IP, 2 saves since Apr 22) and will likely keep the role on a matchup basis once Iglesias is back." },
-    { category: "injury",      title: "Dodd, Schwellenbach, Waldrep, Wentz still on the IL",              detail: "Dylan Dodd (left oblique) remains shelved; Spencer Schwellenbach and Hurston Waldrep are tracking late-June/July returns from elbow procedures; Joey Wentz and AJ Smith-Shawver continue to rehab. Carlos Carrasco is the long-relief swing piece on the active roster." },
-    { category: "milestone",   title: "Olson MLB-leading 9 HR, 21 RBI, .388",                             detail: "First-inning 3-run HR off Aaron Nola gave Olson the MLB lead in homers (9). His 21 RBI also tops the Braves; he leads the team in WPA and is the heart of the hottest offense in baseball through April." },
-    { category: "standings",   title: "NL East: Atlanta +6 over MIA; bottom three crack open",            detail: "ATL 20-9 (best in MLB); MIA 14-15 (6 GB); WSH 13-16 (7 GB); NYM 9-19 (10.5 GB); PHI 9-19 (10.5 GB). The bottom three teams in the division are now all sub-.450 with the Mets and Phillies tied for last." },
-    { category: "narrative",   title: "Rotation blueprint coming into focus by mid-May",                  detail: "Sale, López, Holmes, Elder and Ritchie (now firmly the 5th starter after his electric Apr 23 debut) give Atlanta a high-floor rotation; Pérez slides to swingman / spot-start once Strider rejoins. Schwellenbach and Waldrep stay on the long-term horizon — the staff finally has the depth Snitker has wanted since 2024." },
+    { category: "rotation",    title: "López officially moved to bullpen 'for now' to fix mechanics",      detail: "Walt Weiss confirmed Apr 27 that Reynaldo López is heading to the bullpen to work out a mechanical flaw — his slider's whiff rate is down 11+% from 2024 and opposing wOBA on the pitch has jumped from .220 to .440. Pérez/Ritchie/Elder cover the Detroit series; López expected back to the rotation after the reset." },
+    { category: "rotation",    title: "Tuesday opener: Pérez vs Mize, 7:15 PM ET",                        detail: "Atlanta opens a 3-game home set with Detroit tonight. Lefty Martín Pérez (1-1, 2.70 ERA, 1.10 WHIP) draws Casey Mize (2-1, 2.51, 32 K) — Mize has allowed only 2 runs across his last 18.1 IP. Tigers come in as reigning AL Central champs with Spencer Torkelson on a 5-game HR streak." },
+    { category: "rotation",    title: "Skubal lined up for Game 2 Wednesday at Truist",                   detail: "Detroit's back-to-back AL Cy Young winner is on track to start the middle game of the series. With López to the pen, Atlanta will name a TBA arm opposite Skubal. Bobblecard giveaway night for Chris Sale." },
+    { category: "injury",      title: "Strider's final rehab tune-up: 5 IP / 2 ER / 7 K / 82 pitches",    detail: "Third rehab start (Apr 26, Gwinnett) was the dress rehearsal — 5 IP / 4 H / 2 ER / 2 BB / 7 K on 82 pitches with 17 swings-and-misses, four-seamer averaging 95.2 mph and peaking at 96.9 mph. Skips the Detroit series; lined up for his 2026 MLB debut at Coors Field this weekend (Apr 30-May 3)." },
+    { category: "injury",      title: "Murphy bumps rehab up to Triple-A Gwinnett today",                 detail: "Sean Murphy (right hip labral surgery, Sep 2025) officially moved his rehab assignment from High-A Rome to Gwinnett on Apr 28 — the next-to-last step before activation. He's up to 7 innings behind the dish and has caught Strider's rehab outings. First-half-of-May Atlanta target still holds; Drake Baldwin keeps starting at MLB in the meantime." },
+    { category: "injury",      title: "Ha-Seong Kim starts rehab TONIGHT at Double-A Columbus",           detail: "Kim's right middle-finger tendon (Jan surgery — slipped on ice in South Korea) is healed enough to begin a major-league rehab assignment with the Double-A Columbus Clingstones tonight, opening their six-game homestand vs Montgomery. It's the first-ever MLB rehab assignment for the Clingstones franchise. Originally a June return; now projected mid-to-late May." },
+    { category: "injury",      title: "Iglesias eligible May 5; Suarez anchoring the 9th",                detail: "Raisel Iglesias (right shoulder inflammation; MRI clean for structural damage) is eligible to return from the 15-day IL on May 5. Robert Suarez has been spotless as the fill-in closer (1 ER / 9.2 IP, 2 saves since Apr 22) and figures to share the 9th once Iglesias returns." },
+    { category: "injury",      title: "Long-term IL: Dodd, Schwellenbach, Waldrep, Wentz, Smith-Shawver", detail: "Dylan Dodd (left oblique) remains shelved; Spencer Schwellenbach and Hurston Waldrep are tracking late-June/July returns from elbow procedures; Joey Wentz, AJ Smith-Shawver and Danny Young (Tommy John, summer ETA) round out the deep IL. Carlos Carrasco continues as the long-relief swing piece." },
+    { category: "result",      title: "Sunday recap: Sale's 150th W seals 6-2 over PHI",                  detail: "Chris Sale went 6 shutout IP / 1 H / 9 K on 88 pitches for his 150th career W; Olson 3-run HR off Nola in the 1st (his 9th, MLB-leading), Eli White 2-run HR in the 2nd. Atlanta took the series 2-1, capping a 7-2 run through the PHI/WSH/PHI gauntlet. Brian Snitker was inducted into the Braves Hall of Fame pregame." },
+    { category: "milestone",   title: "First MLB team to 20 wins; 10-2 in last 12",                       detail: "Atlanta sits at 20-9 (.690) — first to 20 W in the majors. The team has won 10 of its last 12, the rotation has settled in (despite the López wrinkle), and the offense leads MLB in HRs and WPA on the back of Olson and Acuña." },
+    { category: "milestone",   title: "Olson MLB-leading 9 HR, 21 RBI, .388",                             detail: "Olson's first-inning 3-run HR off Nola gave him the MLB lead in homers (9). His 21 RBI also tops the Braves; he leads the team in WPA and has been the heart of the hottest offense in baseball through April." },
+    { category: "standings",   title: "NL East: Atlanta +6 over MIA; bottom four sub-.500",               detail: "ATL 20-9 (best in MLB); MIA 14-15 (6 GB); WSH 13-16 (7 GB); NYM 9-19 (10.5 GB); PHI 9-19 (10.5 GB). The Mets and Phillies remain tied for last and the entire bottom four is sub-.500 — the easiest division in baseball through one month." },
+    { category: "narrative",   title: "Rotation blueprint shifts: Strider in, López to pen",              detail: "With Strider returning at Coors Field and López getting a mechanical reset in the bullpen, the rotation lines up Sale / Strider / Holmes / Elder / Pérez or Ritchie by mid-May. The depth still has Schwellenbach, Waldrep and Smith-Shawver in the long-term horizon — and Murphy's bat returns soon to give Baldwin a breather." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Bleacher Nation", "Yahoo Sports", "Sports Illustrated", "Baseball-Reference", "Heavy.com", "Washington Times",
+    "MLB.com", "ESPN", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Bleacher Nation", "Yahoo Sports", "Sports Illustrated", "Baseball-Reference", "Heavy.com", "Fox Sports", "OurSports Central",
   ],
 };
