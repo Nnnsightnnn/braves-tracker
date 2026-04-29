@@ -8,6 +8,7 @@ import {
   TEAM_LOGOS,
   NEWS_DIGEST,
   NL_EAST_STANDINGS,
+  UPCOMING_SCHEDULE,
 } from "./playerData.js";
 
 // ─── Atlanta Braves Tracker ─────────────────────────────────────────────────
@@ -602,6 +603,212 @@ function BioBox({ label, value }) {
   );
 }
 
+// ─── UpcomingScheduleCard (rotation map · probable pitchers · next 5 games) ─
+function UpcomingScheduleCard({ schedule }) {
+  if (!schedule || !schedule.length) return null;
+  const fmtRecord = (sp) => {
+    const parts = [];
+    if (sp.record) parts.push(sp.record);
+    if (sp.era != null) parts.push(`${sp.era.toFixed(2)} ERA`);
+    return parts.join(" · ");
+  };
+  return (
+    <div style={{
+      background: BRAVES_CARD, borderRadius: 14, padding: "14px 18px", marginBottom: 16,
+      border: `1px solid ${BRAVES_NAVY}55`,
+    }}>
+      <div style={{
+        display: "flex", alignItems: "baseline", justifyContent: "space-between",
+        marginBottom: 4, gap: 12, flexWrap: "wrap",
+      }}>
+        <div style={{
+          fontSize: 11, color: BRAVES_CREAM, fontWeight: 700,
+          textTransform: "uppercase", letterSpacing: 1.5,
+        }}>
+          Probable Pitchers · Next {schedule.length} Games
+        </div>
+        <div style={{ fontSize: 10, color: "#7f95b5", display: "flex", gap: 12 }}>
+          <span><span style={{ color: BRAVES_CREAM }}>■</span> home</span>
+          <span><span style={{ color: BRAVES_RED }}>■</span> road</span>
+        </div>
+      </div>
+      <div style={{ fontSize: 11, color: "#8ea4c2", marginBottom: 10, lineHeight: 1.4 }}>
+        Rotation map for the next turn through the staff. Updated daily by the tracker skill.
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+        {schedule.map((g) => {
+          const oppLogo = TEAM_LOGOS[g.opp];
+          const accentColor = g.home ? BRAVES_CREAM : BRAVES_RED;
+          const atlLine = fmtRecord(g.atlSP);
+          const oppLine = fmtRecord(g.oppSP);
+          return (
+            <div key={g.date} style={{
+              display: "grid",
+              gridTemplateColumns: "70px auto 1fr auto",
+              gap: 12, alignItems: "center",
+              padding: "10px 12px",
+              background: BRAVES_PANEL,
+              borderLeft: `4px solid ${accentColor}`,
+              borderRadius: 6,
+            }}>
+              {/* date column */}
+              <div style={{ fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace", color: "#cfd8e3" }}>
+                <div style={{ fontSize: 10, color: "#8ea4c2", textTransform: "uppercase", letterSpacing: 1 }}>{g.weekday}</div>
+                <div style={{ fontSize: 14, fontWeight: 700, lineHeight: 1.2 }}>{g.date.slice(5).replace("-", "/")}</div>
+                <div style={{ fontSize: 9, color: "#8ea4c2", marginTop: 1 }}>{g.time}</div>
+              </div>
+
+              {/* opp logo + label */}
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                {oppLogo && (
+                  <img src={oppLogo} alt={g.opp} style={{
+                    width: 36, height: 36, background: "#ffffff10",
+                    borderRadius: 8, padding: 4,
+                  }} />
+                )}
+                <div>
+                  <div style={{ fontSize: 10, color: "#8ea4c2", textTransform: "uppercase", letterSpacing: 1 }}>{g.home ? "vs" : "@"}</div>
+                  <div style={{ fontSize: 14, fontWeight: 800, color: "#fff" }}>{g.opp}</div>
+                </div>
+              </div>
+
+              {/* matchup */}
+              <div style={{ minWidth: 0 }}>
+                <div style={{ fontSize: 13, color: "#fff", fontWeight: 600, lineHeight: 1.4 }}>
+                  <span style={{ color: BRAVES_CREAM }}>
+                    {g.atlSP.name}
+                    {g.atlSP.hand && (
+                      <span style={{
+                        color: "#8ea4c2", fontSize: 10, marginLeft: 4,
+                        fontWeight: 700, padding: "1px 4px", background: "#ffffff10", borderRadius: 3,
+                      }}>{g.atlSP.hand}HP</span>
+                    )}
+                  </span>
+                  <span style={{ color: "#8ea4c2", margin: "0 6px", fontWeight: 400 }}>vs</span>
+                  <span style={{ color: "#fff" }}>
+                    {g.oppSP.name}
+                    {g.oppSP.hand && (
+                      <span style={{
+                        color: "#8ea4c2", fontSize: 10, marginLeft: 4,
+                        fontWeight: 700, padding: "1px 4px", background: "#ffffff10", borderRadius: 3,
+                      }}>{g.oppSP.hand}HP</span>
+                    )}
+                  </span>
+                </div>
+                <div style={{ fontSize: 11, color: "#8ea4c2", marginTop: 2 }}>
+                  {atlLine && <span style={{ color: "#cfd8e3" }}>{atlLine}</span>}
+                  {g.atlSP.daysRest != null && (
+                    <span style={{ marginLeft: 8 }}>{g.atlSP.daysRest}d rest</span>
+                  )}
+                  {oppLine && (
+                    <span style={{ marginLeft: 12, color: "#7f95b5" }}>opp: {oppLine}</span>
+                  )}
+                </div>
+                {g.note && (
+                  <div style={{ fontSize: 11, color: "#a8b8d0", marginTop: 4, lineHeight: 1.4 }}>
+                    {g.note}
+                  </div>
+                )}
+              </div>
+
+              {/* venue */}
+              <div style={{ fontSize: 10, color: "#7f95b5", textAlign: "right", whiteSpace: "nowrap" }}>
+                {g.venue}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// ─── LineupCard (tonight's batting order, 1-9) ──────────────────────────────
+function LineupCard({ batters, opp, home, oppPitcherHand }) {
+  if (!batters || !batters.length) return null;
+  const fmtAvg = (avg) => avg == null ? null : avg.toFixed(3).replace(/^0\./, ".");
+  return (
+    <div style={{
+      background: BRAVES_CARD, borderRadius: 14, padding: "14px 18px", marginBottom: 16,
+      border: `1px solid ${BRAVES_NAVY}55`,
+    }}>
+      <div style={{
+        display: "flex", alignItems: "baseline", justifyContent: "space-between",
+        marginBottom: 10, gap: 12, flexWrap: "wrap",
+      }}>
+        <div style={{
+          fontSize: 11, color: BRAVES_CREAM, fontWeight: 700,
+          textTransform: "uppercase", letterSpacing: 1.5,
+        }}>
+          Tonight's Lineup
+        </div>
+        <div style={{ fontSize: 11, color: "#8ea4c2" }}>
+          {opp && <>{home ? "vs" : "@"} {opp}</>}
+          {oppPitcherHand && (
+            <span style={{ marginLeft: 8, color: "#7f95b5" }}>
+              vs {oppPitcherHand}HP
+            </span>
+          )}
+        </div>
+      </div>
+      <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+        {batters.map((p) => {
+          const posColor = POS_COLORS[p.position] || "#888";
+          const stats = p.stats || {};
+          const avg = fmtAvg(stats.avg);
+          const homers = stats.hr != null ? `${stats.hr} HR` : null;
+          const rbi = stats.rbi != null ? `${stats.rbi} RBI` : null;
+          const tail = [homers, rbi].filter(Boolean).join(" · ");
+          const statLine = [avg, tail].filter(Boolean).join(" · ") || "—";
+          return (
+            <div key={p.id} style={{
+              display: "grid",
+              gridTemplateColumns: "28px 42px 1fr auto",
+              alignItems: "center", gap: 10,
+              padding: "8px 10px",
+              background: BRAVES_PANEL,
+              borderRadius: 6,
+              borderLeft: `3px solid ${posColor}`,
+            }}>
+              <div style={{
+                fontSize: 16, fontWeight: 900, color: BRAVES_CREAM,
+                fontFamily: "ui-monospace, SFMono-Regular, Menlo, monospace", textAlign: "center",
+              }}>{p.lineupSpot}</div>
+              <div style={{
+                fontSize: 11, fontWeight: 800, color: "#fff",
+                background: posColor, padding: "3px 6px",
+                borderRadius: 4, textAlign: "center", letterSpacing: 0.5,
+              }}>{p.position}</div>
+              <div style={{ minWidth: 0 }}>
+                <div style={{
+                  fontSize: 14, fontWeight: 700, color: "#fff",
+                  whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+                }}>
+                  {p.name}
+                  {p.bats && (
+                    <span style={{
+                      marginLeft: 8, fontSize: 9, color: "#8ea4c2", fontWeight: 700,
+                      padding: "1px 4px", background: "#ffffff08", borderRadius: 3,
+                    }}>
+                      bats {p.bats}
+                    </span>
+                  )}
+                </div>
+                <div style={{ fontSize: 11, color: "#8ea4c2", marginTop: 1 }}>
+                  {statLine}
+                </div>
+              </div>
+              <div style={{ fontSize: 11, color: "#7f95b5", whiteSpace: "nowrap" }}>
+                #{p.number}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 // ─── RosterSection ──────────────────────────────────────────────────────────
 function RosterSection({ title, subtitle, players, expandedId, setExpandedId }) {
   if (!players.length) return null;
@@ -820,6 +1027,15 @@ function LiveRSSFeed() {
 //   "rehab" → on IL + currently on a minor-league rehab assignment (shown in IL with REHAB badge)
 //
 function DashboardView({ expandedId, setExpandedId }) {
+  const lineupBatters = PLAYERS
+    .filter((p) =>
+      p.positionGroup === "batter" &&
+      p.lineupSpot != null &&
+      !p.status.startsWith("il") &&
+      p.status !== "departed" &&
+      p.assignment !== "aaa" && p.assignment !== "aa"
+    )
+    .sort((a, b) => a.lineupSpot - b.lineupSpot);
   const lineup = PLAYERS
     .filter((p) =>
       p.positionGroup === "batter" &&
@@ -848,10 +1064,17 @@ function DashboardView({ expandedId, setExpandedId }) {
   return (
     <div>
       <NextGameCard />
+      <LineupCard
+        batters={lineupBatters}
+        opp={NEXT_GAME?.opp}
+        home={NEXT_GAME?.home}
+        oppPitcherHand={UPCOMING_SCHEDULE?.[0]?.oppSP?.hand}
+      />
+      <UpcomingScheduleCard schedule={UPCOMING_SCHEDULE} />
       <StandingsCard />
       <RecentResultsStrip />
       <NewsDigestSection />
-      <RosterSection title="Lineup & Position Players" players={lineup} expandedId={expandedId} setExpandedId={setExpandedId} />
+      <RosterSection title="Position Players · Roster Detail" players={lineup} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Starting Rotation" players={rotation} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Bullpen" players={bullpen} expandedId={expandedId} setExpandedId={setExpandedId} />
       {aaaDepth.length > 0 && (
@@ -896,11 +1119,12 @@ function RotationView({ expandedId, setExpandedId }) {
           Pitching Staff · 2026
         </div>
         <div style={{ fontSize: 14, color: "#cfd8e3", lineHeight: 1.6 }}>
-          The Braves' top four rotation arms (Sale / López / Holmes / Elder) opened the year with a combined 2.36 ERA.
-          Strider is working his rehab assignment at Triple-A Gwinnett and targets an early-May return.
-          Robert Suarez closes while Iglesias is on the 15-day IL with right shoulder inflammation.
+          Sale / Holmes / Elder anchor a top of the rotation that's been the steadiest in baseball through April.
+          Reynaldo López was moved to the bullpen on Apr 27 to reset mechanical flaws — Pérez and Ritchie cover the back end while Spencer Strider lines up to debut at Coors Field this weekend.
+          Robert Suarez closes while Iglesias (right shoulder inflammation) is eligible to return May 5.
         </div>
       </div>
+      <UpcomingScheduleCard schedule={UPCOMING_SCHEDULE} />
       <RosterSection title="Rotation" players={rotation} expandedId={expandedId} setExpandedId={setExpandedId} />
       <RosterSection title="Bullpen" players={bullpen} expandedId={expandedId} setExpandedId={setExpandedId} />
       {aaaPitchers.length > 0 && (
