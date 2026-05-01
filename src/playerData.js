@@ -1,30 +1,32 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated Apr 30, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 1, 2026) ──────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 22-9 (.710) — still the best record in the NL — after a
-// 4-3 WALK-OFF win over Detroit in Wednesday night's marquee Game 2.
-// Matt Olson clubbed a 2-run, 397-ft walk-off HR (#9) into the Atlanta
-// bullpen off ex-Brave Kenley Jansen in the 9th, after Ozzie Albies opened
-// the frame with a walk. The blast spoiled a dominant Tarik Skubal start
-// (7 IP / 5 H / 2 ER / 0 BB / 7 K, 91 pitches) — the only damage Skubal
-// allowed was Albies's 2-run HR (#7) in the 1st. JR Ritchie (ND) labored
-// into the 6th in his second MLB start, hurt by a pickoff-throw error.
-// Reynaldo López (W, 2-1) was the difference, working 2 scoreless / 0 H /
-// 2 K in his second pen outing of the reset. Atlanta has won nine straight
-// over Detroit and clinched the series. This afternoon (Thu Apr 30,
-// 12:15 PM ET) Bryce Elder (3-1, 1.93) takes the matinee finale; Detroit
-// counters with Framber Valdez (2-1, FA signing this offseason). Atlanta
-// then flies west for the Coors Field series — Holmes Friday, Sale
-// Saturday, Strider's 2026 MLB debut Sunday. Strider's final rehab tune-up
-// Apr 26 at Gwinnett went 5 IP / 4 H / 2 ER / 2 BB / 7 K on 82 pitches
-// (95.2 mph FB avg / 96.9 peak, 17 SwStr). Carlos Carrasco was DFA'd Apr
-// 29 to clear the spot when Dylan Lee returned from the paternity list;
-// Didier Fuentes stays up as long-relief depth. Sean Murphy holds at
-// Gwinnett another 4-5 days for at-bats. Ha-Seong Kim is in Day 3 of his
-// Double-A Columbus rehab (mid-May target). Raisel Iglesias has resumed
-// throwing and is targeting his May 5 IL eligibility. Hurston Waldrep
-// throws his first post-surgery bullpen this week (June return targeted).
-// Dodd (oblique), Schwellenbach (elbow), Joe Jiménez (knee), Smith-Shawver
-// and Danny Young (TJ) round out the longer-term IL.
+// Season context: 22-10 (.688) — still the best record in the NL by 6 games —
+// after Detroit avoided the sweep in Thursday's matinee finale, beating
+// Atlanta 5-2 behind a 4-run 8th inning off Joel Payamps. Bryce Elder (ND)
+// was excellent through 6: 6 IP / 6 H / 1 ER / 3 BB / 5 K, exiting with a
+// 2-1 lead. Joel Payamps gave up Carpenter's leadoff triple to start the
+// 8th and Vierling's tying double chased him; Aaron Bummer entered, walked
+// McGonigle, and Gleyber Torres's go-ahead sac fly made it 3-2. José
+// Suárez (LP) walked two in the 9th, Yastrzemski misplayed Vierling's
+// third hit for an error that scored Pérez, and Dingler's double iced it
+// at 5-2. Atlanta took the series 2-1 anyway and its 10-game streak vs
+// DET ended; the Tigers leave Atlanta still atop the AL Central at 16-16. Tonight (Fri May 1,
+// 8:40 PM ET) Atlanta opens a weekend series at Coors Field — Grant Holmes
+// (2-1, 3.21 ERA after the Apr 24 W vs PHI) faces COL LHP José Quintana
+// (1-2, 4.91). Sale goes Saturday; Spencer Strider's 2026 MLB debut is
+// official for Sunday's series finale at altitude. Strider's last rehab
+// start Apr 26 at Gwinnett went 5 IP / 2 ER / 7 K on 82 pitches (95.2 mph
+// FB avg / 96.9 peak, 17 SwStr); his three rehab outings totaled 12.2 IP /
+// 18 K / 2 ER. Roster picture: Carlos Carrasco DFA'd Apr 29 (Dylan Lee
+// back from paternity); Fuentes stays up as long-relief depth. Sean Murphy
+// holds at Gwinnett another 4-5 days for at-bats. Ha-Seong Kim continues
+// his Double-A Columbus rehab (mid-May Atlanta target). Raisel Iglesias
+// has resumed throwing — minimum-IL stay still in play, May 5 first
+// eligible. Hurston Waldrep throws his first post-surgery bullpen this
+// week with a June return targeted; Schwellenbach (elbow) still has not
+// resumed throwing (second-half hopes, no firm timeline). Dodd (oblique),
+// Joe Jiménez (knee), Smith-Shawver and Danny Young (TJ) round out the
+// longer-term IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -66,9 +68,9 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .388, obp: null, slg: null, ops: null, hr: 9, rbi: 24, sb: 0, bb: 6, so: null, games: 20, doubles: 3 },
-    statNote: "WALK-OFF KING — clubbed a 2-run, 397-ft walk-off HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen on the 5th pitch of the AB to clinch Wednesday's 4-3 W and the Tigers series. Still leads MLB with 9 HR (April), now 24 RBI, .388 AVG. Sac fly RBI in Tuesday's 5-2 series-opener W vs DET also drove in Acuña.",
-    form: 9.6,
+    stats: { avg: .388, obp: null, slg: null, ops: null, hr: 9, rbi: 24, sb: 0, bb: 6, so: null, games: 21, doubles: 3 },
+    statNote: "Quiet day in the matinee 5-2 L Thu (avoided-sweep loss to DET) but Wed's 2-run, 397-ft walk-off HR (#9) into the Atlanta bullpen off Kenley Jansen still tells the season story: MLB HR co-leader at 9, 24 RBI, .388 AVG, the engine of Atlanta's 22-10 start.",
+    form: 9.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
@@ -349,9 +351,9 @@ export const PLAYERS = [
     rotationSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
-    stats: { era: 1.93, whip: null, ip: 37, k: null, bb: null, w: 3, l: 1, games: null, starts: 6 },
-    statNote: "Saturday at Truist: 7 IP / 6 H / 3 R / 2 K / 1 BB vs PHI; left with a 4-3 lead and a no-decision in the eventual 8-5 (10) loss. ERA ticks up from a sterling 1.50 to 1.93 — still elite-tier. Cy-Young-adjacent pace through 6 starts.",
-    form: 8.4,
+    stats: { era: 1.88, whip: null, ip: 43, k: null, bb: null, w: 3, l: 1, games: null, starts: 7 },
+    statNote: "Thu 12:15 PM matinee vs DET: 6 IP / 6 H / 1 ER / 3 BB / 5 K, no-decision after exiting with a 2-1 lead in the 5-2 loss (the bullpen lost it). ERA holds at sub-1.90 — Cy-Young-adjacent through 7 starts. The DBacks/Tigers stretch has been the best statistical run by a Braves SP this season.",
+    form: 8.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4301067.png",
@@ -546,8 +548,8 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 31, experience: 6,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
-    statNote: "Strike-thrower — middle-to-late-inning rotational piece.",
-    form: 6.8,
+    statNote: "Wore the loss-type outing Thu in DET's series-finale W (5-2) — Carpenter leadoff triple to start the 8th, Vierling tying double, walk to McGonigle, exited with the lead gone. Still a strike-thrower in the middle-to-late mix.",
+    form: 6.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40021.png",
@@ -891,17 +893,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-04-30",
-    weekday: "Thu",
-    time: "12:15 PM ET",
-    opp: "DET",
-    home: true,
-    venue: "Truist Park",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "3-1", era: 1.93, daysRest: 5, hand: "R" },
-    oppSP: { name: "Framber Valdez", record: "2-1", era: null, hand: "L" },
-    note: "Series finale · day game · Elder vs DET's record-breaking $115M offseason signing Valdez",
-  },
-  {
     date: "2026-05-01",
     weekday: "Fri",
     time: "8:40 PM ET",
@@ -909,8 +900,8 @@ export const UPCOMING_SCHEDULE = [
     home: false,
     venue: "Coors Field",
     atlSP: { id: "holmes", name: "Grant Holmes", record: "2-1", era: 3.21, daysRest: 7, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Coors Field opener · Holmes coming off the Apr 24 W vs PHI",
+    oppSP: { name: "José Quintana", record: "1-2", era: 4.91, hand: "L" },
+    note: "Coors Field opener · Holmes coming off the Apr 24 W vs PHI · big -210 ATL favorite per the books",
   },
   {
     date: "2026-05-02",
@@ -941,30 +932,42 @@ export const UPCOMING_SCHEDULE = [
     opp: "SEA",
     home: false,
     venue: "T-Mobile Park",
-    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    atlSP: { id: "perez", name: "Martín Pérez", record: "2-1", era: null, daysRest: 6, hand: "L" },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Three-game series at Seattle opens · long road trip continues",
+    note: "Three-game series at Seattle opens · long road trip continues · Pérez lined up after his Apr 28 W vs DET",
+  },
+  {
+    date: "2026-05-05",
+    weekday: "Tue",
+    time: "9:40 PM ET",
+    opp: "SEA",
+    home: false,
+    venue: "T-Mobile Park",
+    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: null, daysRest: 6, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Ritchie's 3rd MLB start · ND vs DET on Apr 29 in his second outing",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-04-30",
-  time: "12:15 PM ET",
-  opp: "DET",
-  home: true,
-  venue: "Truist Park · Atlanta, GA",
+  date: "2026-05-01",
+  time: "8:40 PM ET",
+  opp: "COL",
+  home: false,
+  venue: "Coors Field · Denver, CO",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Bryce Elder", record: "3-1", era: 1.93 },
-    opp: { pitcher: "Framber Valdez", record: "2-1", era: null },
+    atl: { pitcher: "Grant Holmes", record: "2-1", era: 3.21 },
+    opp: { pitcher: "José Quintana", record: "1-2", era: 4.91 },
   },
-  note: "Series-finale matinee — Atlanta sits 22-9 (best in NL) after Matt Olson's 2-run, 397-ft walk-off HR off Kenley Jansen in the 9th clinched a 4-3 W and the Tigers series Wednesday night. This afternoon: Bryce Elder (3-1, 1.93 ERA — Cy-Young-adjacent through 6 starts) returns on 5 days' rest opposite Framber Valdez (2-1), Detroit's record-setting 3-yr/$115M offseason signing. After this, Atlanta heads to Coors Field for a weekend series with the Rockies — Holmes Friday, Sale Saturday, Spencer Strider's official 2026 MLB debut Sunday.",
+  note: "Coors Field opener — Atlanta (22-10, best record in the NL) flies west still 6 GM up on MIA after Detroit avoided the sweep Thu in a 5-2 matinee L (Elder ND, 6 IP / 1 ER; Payamps gave up the lead in the 8th). Tonight: Grant Holmes (2-1, 3.21 ERA) on 7 days' rest after his Apr 24 W vs Philadelphia, opposite Rockies LHP José Quintana (1-2, 4.91). Books have ATL at -210 in the opener. Sale lines up Saturday; Spencer Strider's 2026 MLB debut is locked in for Sunday's series finale at altitude after three Triple-A Gwinnett rehab starts (12.2 IP / 18 K / 2 ER).",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
-  { date: "2026-04-29", opp: "DET", home: true,  atlScore: 4, oppScore: 3, result: "W", note: "WALK-OFF — Matt Olson clubbed a 2-run, 397-ft HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen on the 5th pitch of the AB, after Albies opened the 9th with a walk. Spoiled a dominant Tarik Skubal start (7 IP / 5 H / 2 ER / 0 BB / 7 K, 91 pitches) — Albies 2-run HR (#7) in the 1st was Atlanta's only damage off the AL Cy Young. JR Ritchie pitched into the 6th in his second MLB start (ND); a pickoff-throw error on McGonigle in the 2nd let DET tie it. Reynaldo López (W, 2-1) was the difference: 2 scoreless / 0 H / 2 K out of the pen in the 8th–9th. Atlanta clinches the series and extends its winning streak vs Detroit to 9 games. Tigers closer Jansen has now allowed walk-off HRs in back-to-back outings." },
+  { date: "2026-04-30", opp: "DET", home: true,  atlScore: 2, oppScore: 5, result: "L", note: "Tigers avoid the sweep with a 4-run 8th. Bryce Elder (ND) was excellent: 6 IP / 6 H / 1 ER / 3 BB / 5 K, exiting with a 2-1 lead. Joel Payamps gave up Carpenter's leadoff triple to start the 8th and Vierling's tying double chased him; Aaron Bummer relieved, walked McGonigle, then Gleyber Torres's go-ahead sac fly made it 3-2. José Suárez (LP) walked Pérez and Hao-Yu Lee in the 9th, Yastrzemski misplayed Vierling's third hit for an error, and Dingler's double iced it at 5-2. Atlanta still takes the series 2-1; the 10-game ATL streak vs DET ends. Tigers finish April 14-13 and stay atop the AL Central at 16-16 on the trip." },
+  { date: "2026-04-29", opp: "DET", home: true,  atlScore: 4, oppScore: 3, result: "W", note: "WALK-OFF — Matt Olson clubbed a 2-run, 397-ft HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen on the 5th pitch of the AB, after Albies opened the 9th with a walk. Spoiled a dominant Tarik Skubal start (7 IP / 5 H / 2 ER / 0 BB / 7 K, 91 pitches) — Albies 2-run HR (#7) in the 1st was Atlanta's only damage off the AL Cy Young. JR Ritchie pitched into the 6th in his second MLB start (ND); a pickoff-throw error on McGonigle in the 2nd let DET tie it. Reynaldo López (W, 2-1) was the difference: 2 scoreless / 0 H / 2 K out of the pen in the 8th–9th. Tigers closer Jansen has now allowed walk-off HRs in back-to-back outings." },
   { date: "2026-04-28", opp: "DET", home: true,  atlScore: 5, oppScore: 2, result: "W", note: "Martín Pérez (W, 2-1) tossed 5 scoreless on 2 H / 4 BB / 5 K in the series opener vs the AL Central champs — first W over Detroit since Aug 25, 2019. Yastrzemski/Acuña hit back-to-back doubles in the 3rd, Acuña scored on Olson's sac fly for a 2-0 lead, and Albies smashed a 2-run HR (#6, 377 ft, 98.5 mph EV) off Tyler Holton in the 8th to put it away. DET RHP Casey Mize (LP, 2-2) left after 2.1 IP with right groin tightness. Atlanta improves to 21-9, tied with LAD for best in MLB." },
   { date: "2026-04-26", opp: "PHI", home: true,  atlScore: 6, oppScore: 2, result: "W", note: "Sale's 150th career W and a season-high 9 K across 6 shutout IP / 1 H on 88 pitches. Olson 3-run HR off Nola in the 1st (#9, 4th career off Nola), Eli White 2-run HR in the 2nd. Acuña 2-3, R, SB. Schwarber 2-run HR off the pen in the 8th avoided the shutout. ATL takes the series 2-1 — first MLB team to 20 wins; 10-2 in last 12. Pregame: Brian Snitker inducted into the Braves Hall of Fame." },
   { date: "2026-04-25", opp: "PHI", home: true,  atlScore: 5, oppScore: 8, result: "L", note: "10-inning walk-off L — Bryce Harper (4 RBI) lined a tiebreaking single in the 10th off José Suárez (LP); Marsh added a 2-run insurance knock. Elder solid (7 IP / 6 H / 3 R / 2 K / 1 BB) and left with a 4-3 lead before Dylan Lee gave up Schwarber's leadoff triple and Harper's tying sac fly in the 8th. Wheeler (5 IP / 2 R / 3 H / 6 K) looked sharp in his 2026 debut. Phillies' 10-game losing streak ends." },
@@ -973,38 +976,38 @@ export const RESULTS = [
   { date: "2026-04-22", opp: "WSH", home: false, atlScore: 8, oppScore: 6, result: "W", note: "Rally from 4-1 down — Harris 2 HR / 3 RBI, Olson 3-run HR (#8), Baldwin HR, Acuña tying sac fly. Fuentes' 3 IP spot start (4 ER) bailed out by the offense." },
   { date: "2026-04-21", opp: "WSH", home: false, atlScore: 4, oppScore: 11, result: "L", note: "López can't escape the 2nd (1 IP, 5 H, 4 ER). Baldwin 438-ft HR, Eli White HR. Streak snapped at 6; Luis García Jr. 4 hits for WSH." },
   { date: "2026-04-20", opp: "WSH", home: false, atlScore: 9, oppScore: 4, result: "W", note: "Olson game-tying HR, 3 RBI; Elder 6.2 IP / 6 K; 5-run 6th inning. 6th straight W." },
-  { date: "2026-04-19", opp: "PHI", home: false, atlScore: 4, oppScore: 2, result: "W", note: "Harris HR + 3 hits. Sweep at Citizens Bank Park — first there in 10 yrs." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 22, l: 9,  pct: .710, gb: 0,    streak: "W3" },
-  { team: "MIA", name: "Miami Marlins",          w: 15, l: 16, pct: .484, gb: 6.5,  streak: "W2" },
-  { team: "WSH", name: "Washington Nationals",   w: 14, l: 17, pct: .452, gb: 7.5,  streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 10, l: 19, pct: .345, gb: 11,   streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 10, l: 20, pct: .333, gb: 11.5, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 22, l: 10, pct: .688, gb: 0,    streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 16, l: 16, pct: .500, gb: 6,    streak: "W3" },
+  { team: "WSH", name: "Washington Nationals",   w: 15, l: 17, pct: .469, gb: 7,    streak: "W2" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 11, l: 19, pct: .367, gb: 10,   streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 10, l: 21, pct: .323, gb: 11.5, streak: "L13" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-04-30T09:00:00-04:00",
+  generatedAt: "2026-05-01T09:00:00-04:00",
   summary:
-    "Atlanta is 22-9 and still owns the best record in the NL after Matt Olson's 2-run, 397-ft walk-off HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen finished a 4-3 W over Detroit on Wednesday night, clinched the series, and extended Atlanta's winning streak vs the Tigers to nine games. The blast spoiled a dominant Tarik Skubal start (7 IP / 5 H / 2 ER / 0 BB / 7 K, 91 pitches) — Albies's 2-run HR (#7) off Skubal in the 1st was Atlanta's only earlier damage. JR Ritchie (ND) labored into the 6th in his second MLB start; a pickoff-throw error on McGonigle in the 2nd let DET tie it. Reynaldo López (W, 2-1, 3.27 ERA) was the difference, working 2 scoreless / 0 H / 2 K out of the pen in the 8th–9th — his second outing of the Walt Weiss reset and a clear sign the slider work is taking. This afternoon (Thu Apr 30, 12:15 PM ET) Bryce Elder (3-1, 1.93) takes the matinee finale opposite Detroit's record-setting offseason signing Framber Valdez (3 yr / $115M, 2-1). Atlanta then heads west to Coors Field where the rotation lines up Holmes Friday, Sale Saturday, Spencer Strider's 2026 MLB debut Sunday — three rehab starts at Gwinnett produced 2 ER / 18 K over 12.2 IP, FB up to 96.9 mph. Roster move Wed: Carlos Carrasco DFA'd when Dylan Lee returned from the paternity list; Didier Fuentes stays up as long-relief depth. Sean Murphy holds at Gwinnett another 4-5 days for at-bats. Ha-Seong Kim is mid-rehab at Double-A Columbus (mid-May Atlanta target). Raisel Iglesias has resumed throwing and is targeting his May 5 IL eligibility; Hurston Waldrep throws his first post-surgery bullpen this week with a June return target. Around the division: MIA 15-16 (6.5 GB) on a 2-game W streak, WSH 14-17 (7.5 GB), PHI 10-19 (11 GB), NYM 10-20 last at 11.5 GB.",
+    "Atlanta opens May at 22-10 — still the best record in the NL by 6 games — after Detroit avoided the sweep in Thursday's matinee 5-2 finale. Bryce Elder was excellent (6 IP / 6 H / 1 ER / 3 BB / 5 K) and exited with a 2-1 lead, but the bullpen lost it in a 4-run 8th: Joel Payamps gave up Carpenter's leadoff triple and Vierling's tying double, Aaron Bummer walked McGonigle in relief, and Gleyber Torres's go-ahead sac fly made it 3-2. José Suárez (LP) walked two in the 9th, Yastrzemski misplayed Vierling's third hit for an error scoring Pérez, and Dingler's RBI double iced it at 5-2. Atlanta still took the series 2-1 — the headline note from the homestand is Wednesday's Olson walk-off HR off ex-Brave Kenley Jansen — but the 10-game ATL streak vs DET ended. Tonight (Fri May 1, 8:40 PM ET) the road trip opens at Coors Field with Grant Holmes (2-1, 3.21) opposite Rockies LHP José Quintana (1-2, 4.91); Atlanta is a -210 favorite. Sale lines up Saturday and Spencer Strider's 2026 MLB debut is locked in for Sunday at altitude after three Triple-A Gwinnett rehab starts (12.2 IP / 18 K / 2 ER, FB to 96.9 mph). Roster picture: Carrasco DFA'd Apr 29; Fuentes stays as long-relief depth. Murphy holds at Gwinnett another 4-5 days for more at-bats. Iglesias has resumed throwing — first eligible May 5 and minimum-IL stay still in play. Kim continues his Double-A Columbus rehab (mid-May target). Waldrep throws his first post-surgery bullpen this week (June return); Schwellenbach (elbow) still hasn't resumed throwing — second-half hopes only. Around the division: MIA 16-16 (6 GB, W3) is now alone in 2nd; WSH 15-17 (7 GB, W2); PHI 11-19 (10 GB, W1) snapped a slide; NYM 10-21 (11.5 GB) ride a brutal 13-game L streak.",
   keyTopics: [
-    { category: "result",      title: "Olson walk-off HR off Jansen — 4-3 W, series clinched",            detail: "Matt Olson clubbed a 2-run, 397-ft HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen on the 5th pitch of the AB to walk off Wednesday's 4-3 W over Detroit. Albies opened the 9th with a walk; Olson finished it. Spoiled a dominant Skubal start (7 IP / 2 ER / 7 K, 0 BB) and stretched Atlanta's winning streak vs DET to nine. Reynaldo López (W, 2-1) worked 2 scoreless out of the pen for the W. Jansen has now allowed walk-off HRs in back-to-back outings." },
-    { category: "rotation",    title: "Today: Elder vs Valdez closes the Tigers series",                  detail: "Bryce Elder (3-1, 1.93 ERA — Cy-Young-adjacent through 6 starts) takes the 12:15 PM ET matinee finale at Truist Park opposite Detroit's record-breaking 3-yr / $115M offseason signing Framber Valdez (2-1). Elder returns on 5 days' rest after the Apr 25 no-decision vs PHI." },
-    { category: "injury",      title: "Strider's 2026 MLB debut officially set for Sunday at Coors",      detail: "Walt Weiss confirmed Tuesday that Spencer Strider's rehab is complete and he'll start in the Rockies series finale this weekend (Sun, May 3). Three Triple-A Gwinnett rehab starts produced just 2 ER over 12.2 IP with 18 K. The Apr 26 dress rehearsal was 5 IP / 2 ER / 7 K on 82 pitches, FB 95.2 mph avg / 96.9 peak, with 17 swings-and-misses. Holmes (Fri) and Sale (Sat) line up ahead of him." },
-    { category: "transaction", title: "Carlos Carrasco DFA'd; Fuentes stays up",                          detail: "Atlanta DFA'd RHP Carlos Carrasco on Wednesday in the corresponding move when Dylan Lee was reinstated from the paternity list. Didier Fuentes — recalled Apr 28 when Lee went on paternity — stays on the active roster as long-relief / emergency-start depth behind the bullpen." },
-    { category: "rotation",    title: "López's pen reset is working — 2 scoreless to win it",             detail: "Reynaldo López's second bullpen appearance of his Walt Weiss-mandated mechanical reset went 2 IP / 0 H / 2 K — and earned him the W (2-1, 3.27 ERA) on Wednesday. The slider whiff rate has been the focus; the early returns out of the pen suggest the reset is taking. Weiss has said López projects back to the rotation once the work is done." },
-    { category: "injury",      title: "Murphy holds at Gwinnett for more at-bats",                        detail: "Weiss said Murphy (right hip labral surgery, Sep 2025) will stay on his Triple-A rehab assignment another 4-5 days before being reevaluated — the team wants more reps at the plate before activation. He's up to 7 innings behind the dish and has caught Strider's rehab outings; first-half-of-May Atlanta return still possible." },
-    { category: "injury",      title: "Kim midway through Double-A Columbus rehab",                      detail: "Ha-Seong Kim is in his major-league rehab assignment with the Double-A Columbus Clingstones — the franchise's first-ever MLB rehab assignment, on a six-game homestand. He went 1-for-2 with a SB at SS in the opener Tuesday. Weiss said Kim will need \"a couple of weeks\" of at-bats before the Braves consider promoting him; mid-May Atlanta target stands." },
-    { category: "injury",      title: "Iglesias throwing again; targeting May 5 eligibility",             detail: "Closer Raisel Iglesias has resumed throwing and his shoulder inflammation has subsided. He's expected back from the 15-day IL on May 5 (when first eligible) or shortly after. Robert Suarez has been spotless as the fill-in (1 ER / 9.2 IP, 2 saves since Apr 22) and Lopez's 2-IP relief W in the 9th is another lever for Weiss." },
-    { category: "injury",      title: "Waldrep first bullpen this week; June return targeted",            detail: "Hurston Waldrep (right elbow inflammation; post-arthroscopic surgery Feb 23) is set to throw his first bullpen session this week, per Weiss. Targeted return for game action remains June." },
-    { category: "milestone",   title: "Olson — MLB HR co-leader, walk-off hero, .388 / 9 / 24",           detail: "Matt Olson is now tied for the MLB HR lead at 9, has 24 RBI, and is hitting .388. After his walk-off bomb Wednesday — his second WPA-defining swing of the homestand after the sac fly Tuesday — he's posting the team-best WPA profile and has been the engine of the 22-9 start." },
-    { category: "standings",   title: "NL East: ATL +6.5 over MIA; PHI/NYM still bottom feeders",         detail: "ATL 22-9 (.710, best in NL); MIA 15-16 (6.5 GB) on a 2-game W streak; WSH 14-17 (7.5 GB); PHI 10-19 (11 GB); NYM 10-20 (11.5 GB) on a fresh L. Bottom four all sub-.500 — the Braves' division remains the easiest path in baseball through the first month." },
-    { category: "narrative",   title: "Harris back, bat scorching; depth getting healthier",              detail: "Michael Harris II returned to the lineup Apr 26 after the Apr 24 quad scare and is back on form (.462 / 5 HR / 13 RBI in the 12 games before the quad tightened). With Strider's debut Sunday, Murphy and Iglesias both targeting early-May returns, and Kim a couple weeks behind, the roster keeps trending toward full strength as May opens." },
+    { category: "result",      title: "Tigers avoid sweep 5-2; ATL bullpen blows late lead",               detail: "Detroit scored four in the 8th to flip a 2-1 deficit into a 3-2 lead and tacked on two in the 9th. Bryce Elder (ND) gave up just 1 ER over 6 IP. Joel Payamps allowed Carpenter's leadoff triple and Vierling's tying double; Bummer walked McGonigle, and Torres's sac fly went ahead. Yastrzemski's error in the 9th and Dingler's RBI double iced it. Atlanta still took the series 2-1, but the 10-game ATL streak vs DET ends." },
+    { category: "rotation",    title: "Tonight: Holmes opens at Coors; ATL -210",                          detail: "Grant Holmes (2-1, 3.21 ERA) takes the ball in the Friday 8:40 PM ET opener at Coors Field on 7 days' rest after his Apr 24 W vs PHI. The Rockies counter with LHP José Quintana (1-2, 4.91). Books like ATL heavily at -210; the over/under is shaped around altitude. ATL is 22-10 and a 6-game divisional lead despite Thursday's slip." },
+    { category: "rotation",    title: "Strider's 2026 MLB debut: Sunday at altitude",                      detail: "Walt Weiss has confirmed Spencer Strider will start the Rockies series finale Sunday — first big-league outing since the spring oblique strain. Three Triple-A Gwinnett rehab starts produced 12.2 IP / 18 K / 2 ER; the Apr 26 dress rehearsal was 5 IP / 2 ER / 7 K on 82 pitches with 17 swings-and-misses, FB 95.2 mph avg / 96.9 peak. Coors as the debut venue is bold; the team is comfortable enough with his stuff to risk it." },
+    { category: "rotation",    title: "Sale (Sat) bridges Holmes and Strider in the COL series",          detail: "Chris Sale (5-1, 2.40) goes Saturday at Coors coming off his 150th career W last week vs PHI. The lefty has been one of the steadiest arms on the staff — 9 K, 1 H over 6 shutout IP in his most recent start." },
+    { category: "injury",      title: "Iglesias throwing again; first eligible May 5",                     detail: "Closer Raisel Iglesias has resumed throwing and the right shoulder inflammation has subsided. The Braves remain optimistic about a minimum-IL stint with May 5 the first eligible date. Robert Suarez (1 ER / 9.2 IP, 2 saves since Apr 22) has been spotless as the fill-in closer." },
+    { category: "injury",      title: "Murphy stays at Gwinnett — needs more reps",                        detail: "Weiss said Murphy (right hip labral surgery, Sep 2025) will spend another 4-5 days on his Triple-A rehab assignment to bank at-bats — he's been hitless in early plate appearances and the team wants more swings before activation. First-half-of-May Atlanta return still in play; Sean Maton continues to start most games behind the dish." },
+    { category: "injury",      title: "Kim continues Double-A Columbus rehab; mid-May target",             detail: "Ha-Seong Kim is in the middle of his Columbus Clingstones rehab assignment — the first MLB rehab in franchise history. Weiss reiterated Kim will need \"a couple of weeks\" of game action before promotion; mid-May Atlanta target stands." },
+    { category: "injury",      title: "Waldrep first post-surgery bullpen this week",                      detail: "Hurston Waldrep (right elbow loose-bodies removal, Feb 23) is set to throw his first bullpen session this week, per GM Alex Anthopoulos. June return for game action still the target. The depth is healthy enough to be patient." },
+    { category: "injury",      title: "Schwellenbach: still no throwing, no firm timeline",                detail: "Spencer Schwellenbach (right elbow bone-spur surgery, February) has yet to resume throwing as of this week. The team continues to hope for second-half availability without committing to a date — the rotation's depth has bought him runway." },
+    { category: "transaction", title: "Carrasco DFA'd Apr 29; Fuentes stays as long-relief depth",         detail: "Atlanta DFA'd RHP Carlos Carrasco when Dylan Lee was reinstated from the paternity list Wednesday. Didier Fuentes — recalled Apr 28 — stays on the active roster as long-relief/emergency-start depth behind the bullpen." },
+    { category: "milestone",   title: "Olson .388 / 9 / 24, MLB HR co-leader through April",               detail: "Matt Olson finished April with 9 HR, 24 RBI, a .388 AVG, and the MLB HR co-lead. The walk-off bomb off Kenley Jansen Wednesday was his second WPA-defining swing of the homestand. Quiet day in Thursday's loss but he's been the team-best WPA profile and the engine of the 22-10 start." },
+    { category: "standings",   title: "NL East: ATL +6 over MIA; NYM on a 13-game skid",                   detail: "ATL 22-10 (.688); MIA 16-16 (6 GB) jumps to outright 2nd on its W3 streak; WSH 15-17 (7 GB) wins again; PHI 11-19 (10 GB) snaps the slide with a 6-5 W over SF; NYM 10-21 (11.5 GB) drops a 5-4 game to WSH for their 13th straight L. The bottom four are all sub-.500 — Atlanta's division remains the easiest path in baseball through April." },
+    { category: "narrative",   title: "Healthy May ahead: Iglesias, Strider, Murphy, Kim",                 detail: "Atlanta opens May with the cavalry getting closer. Strider debuts Sunday, Iglesias is throwing and could activate as soon as May 5, Murphy is days away from a Gwinnett wrap-up, and Kim is targeting mid-May. The roster the Braves field at the All-Star break could look meaningfully different — and better — than the 22-10 group that just split a homestand." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Detroit News", "Washington Post", "Sports Illustrated", "Baseball-Reference", "Heavy.com", "Fox Sports", "RotoWire", "FanDuel",
+    "MLB.com", "ESPN", "AJC", "Atlanta News First", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Detroit News", "Washington Post", "Sports Illustrated", "Baseball-Reference", "Heavy.com", "Fox Sports", "RotoWire", "FanDuel", "ClutchPoints", "Bless You Boys",
   ],
 };
