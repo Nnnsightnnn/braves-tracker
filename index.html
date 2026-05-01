@@ -3,115 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atlanta Braves Tracker</title>
+    <title>Atlanta &amp; Baseball Tracker — Heritage Scorebook</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://nnnsightnnn.github.io/tracker-shared/live-scores.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500;1,8..60,600;1,8..60,700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <style>
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0d1b2a; }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #0d1b2a; }
-      ::-webkit-scrollbar-thumb { background: #CE112455; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #CE112488; }
-
-      /* ─── Live score box — Braves template overrides ──────────────────────
-         Re-skins the shared `.ls-*` classes (live-scores.css) so the score
-         widget visually matches the in-app cards (StandingsCard, RecentResults,
-         etc.): BRAVES_CARD bg, navy border, gold uppercase label, panel sub-rows.
-       */
-      #score-box { padding: 0 16px; }
-      #score-box .ls-card {
-        background: #162238;
-        border: 1px solid #13274F88;
-        border-left: 4px solid #13274F;
-        border-radius: 14px;
-        padding: 14px 18px;
-        color: #ffffff;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        box-shadow: 0 4px 18px #0006;
-      }
-      #score-box .ls-card[data-state="pre"]  { border-left-color: #EAAA00; }
-      #score-box .ls-card[data-state="in"]   { border-left-color: #CE1141; }
-      #score-box .ls-card[data-state="post"] { border-left-color: #13274F; }
-
-      #score-box .ls-status {
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        text-transform: uppercase;
-        color: #EAAA00;
-        margin-bottom: 12px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-
-      #score-box .ls-teams {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-      }
-      #score-box .ls-team {
-        background: #1b2b47;
-        border-radius: 10px;
-        padding: 10px 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      #score-box .ls-abbr {
-        font-weight: 800;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        color: #ffffff;
-      }
-      #score-box .ls-score {
-        font-weight: 800;
-        font-size: 20px;
-        color: #EAAA00;
-        font-variant-numeric: tabular-nums;
-        min-width: 32px;
-        text-align: right;
-      }
-
-      #score-box .ls-live {
-        width: 9px;
-        height: 9px;
-        background: #CE1141;
-        box-shadow: 0 0 8px #CE114188;
-        border-radius: 50%;
-        animation: ls-pulse 1.2s infinite;
-        display: inline-block;
-      }
-
-      #score-box .ls-events {
-        list-style: none;
-        margin: 12px 0 0;
-        padding: 10px 12px 8px;
-        background: #1b2b47;
-        border-radius: 10px;
-        font-size: 11.5px;
-        color: #aec4e0;
-      }
-      #score-box .ls-events li {
-        padding: 3px 0;
-        border-bottom: 1px solid #13274F55;
-      }
-      #score-box .ls-events li:last-child { border-bottom: 0; }
-
-      #score-box .ls-empty {
-        background: #162238;
-        border: 1px solid #13274F55;
-        border-left: 3px solid #EAAA00;
-        border-radius: 14px;
-        padding: 14px 18px;
-        color: #7f95b5;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-      }
+      /* score-box widget is from the shared trackers template; hidden in the heritage redesign
+         (TicketStub now owns the next-game presentation). The script still mounts so it can
+         be re-enabled by removing this rule. */
+      #score-box { display: none !important; }
     </style>
   </head>
   <body>

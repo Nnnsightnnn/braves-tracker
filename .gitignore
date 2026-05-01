@@ -1,5 +1,6 @@
 node_modules
 dist
+dist-*/
 .DS_Store
 .claude/
 *.local
@@ -7,3 +8,5 @@ SKILL.md
 CLAUDE.md
 SCOPE.md
 PUBLISH.md
+REDESIGN-BRIEF.md
+.design-package/
