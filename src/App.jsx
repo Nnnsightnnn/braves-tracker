@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import {
   PLAYERS,
   NEXT_GAME,
@@ -288,11 +288,17 @@ function Schedule() {
   );
 }
 
-function LineupList({ batters }) {
+function LineupList({ batters, onSelect }) {
   return (
     <div className="lineup-list">
       {batters.map((p) => (
-        <div className="row" key={p.id}>
+        <button
+          type="button"
+          className="row"
+          key={p.id}
+          onClick={() => onSelect && onSelect(p)}
+          aria-label={`View ${p.name} details`}
+        >
           <span className="spot">{p.lineupSpot}</span>
           <span className="pos">{p.position}</span>
           <span className="player">
@@ -306,7 +312,7 @@ function LineupList({ batters }) {
           <span className="stat">
             <span className="v">{fmt.num(p.stats.hr)}</span><span className="k">hr</span>
           </span>
-        </div>
+        </button>
       ))}
     </div>
   );
@@ -324,7 +330,7 @@ function Portrait({ player }) {
   return <div className="portrait">{initials(player.name)}</div>;
 }
 
-function PlayerCard({ p, kind, leader }) {
+function PlayerCard({ p, kind, leader, onSelect }) {
   // kind: 'batter' | 'pitcher' | 'reliever' | 'il'
   const stats = useMemo(() => {
     const s = p.stats || {};
@@ -373,8 +379,16 @@ function PlayerCard({ p, kind, leader }) {
     middle: "Middle Relief",
   }[p.bullpenRole] || "Relief";
 
+  const clickable = typeof onSelect === "function";
   return (
-    <article className={"card" + (leader ? " leader-card" : "")}>
+    <article
+      className={"card" + (leader ? " leader-card" : "") + (clickable ? " clickable" : "")}
+      onClick={clickable ? () => onSelect(p) : undefined}
+      onKeyDown={clickable ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(p); } } : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      role={clickable ? "button" : undefined}
+      aria-label={clickable ? `View ${p.name} details` : undefined}
+    >
       <div className="name-banner">
         <span>{p.name}</span>
         <span className="num">№ {p.number}</span>
@@ -414,7 +428,7 @@ function PlayerCard({ p, kind, leader }) {
   );
 }
 
-function FieldView({ batters }) {
+function FieldView({ batters, onSelect }) {
   const todayOppHand = UPCOMING_SCHEDULE?.[0]?.oppSP?.hand;
   const oppName = UPCOMING_SCHEDULE?.[0]?.oppSP?.name?.split(" ").slice(-1)[0] || "";
   return (
@@ -426,7 +440,7 @@ function FieldView({ batters }) {
             label="Tonight's Lineup"
             meta={todayOppHand ? `vs ${todayOppHand}HP ${oppName}` : "tonight"}
           />
-          <LineupList batters={batters} />
+          <LineupList batters={batters} onSelect={onSelect} />
           <SectionHead label="Recent Results" meta="last eight games" />
           <RecentResults />
         </div>
@@ -441,35 +455,186 @@ function FieldView({ batters }) {
   );
 }
 
-function RosterView({ batters, ilList, leaderId }) {
+function RosterView({ batters, ilList, leaderId, onSelect }) {
   return (
     <div className="view">
       <SectionHead label="Position Players" meta="active roster · nine in the order" />
       <div className="cards">
         {batters.map((p) => (
-          <PlayerCard key={p.id} p={p} kind="batter" leader={p.id === leaderId} />
+          <PlayerCard key={p.id} p={p} kind="batter" leader={p.id === leaderId} onSelect={onSelect} />
         ))}
       </div>
       <SectionHead label="Injured List" meta={`${ilList.length} on the books`} />
       <div className="cards">
         {ilList.map((p) => (
-          <PlayerCard key={p.id} p={p} kind="il" />
+          <PlayerCard key={p.id} p={p} kind="il" onSelect={onSelect} />
         ))}
       </div>
     </div>
   );
 }
 
-function RotationView({ rotation, bullpen }) {
+function RotationView({ rotation, bullpen, onSelect }) {
   return (
     <div className="view">
       <SectionHead label="Starting Rotation" meta="six-deep with Strider returning Sunday" />
       <div className="cards">
-        {rotation.map((p) => <PlayerCard key={p.id} p={p} kind="pitcher" />)}
+        {rotation.map((p) => <PlayerCard key={p.id} p={p} kind="pitcher" onSelect={onSelect} />)}
       </div>
       <SectionHead label="Bullpen" meta="Suarez closing while Iglesias rests" />
       <div className="cards">
-        {bullpen.map((p) => <PlayerCard key={p.id} p={p} kind="reliever" />)}
+        {bullpen.map((p) => <PlayerCard key={p.id} p={p} kind="reliever" onSelect={onSelect} />)}
+      </div>
+    </div>
+  );
+}
+
+// ─── Player Modal ───────────────────────────────────────────────────────
+// Opens when a lineup row or roster card is clicked. Renders the full
+// scorebook player profile: name banner, portrait, position chip, stat
+// note, and a richer ledger than the card grid (full slash + counting).
+function inferPlayerKind(p) {
+  if (p?.positionGroup === "pitcher") {
+    if (p.bullpenRole) return "reliever";
+    return "pitcher";
+  }
+  return "batter";
+}
+
+function PlayerModal({ player, onClose }) {
+  useEffect(() => {
+    if (!player) return undefined;
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [player, onClose]);
+
+  if (!player) return null;
+  const p = player;
+  const kind = inferPlayerKind(p);
+  const s = p.stats || {};
+
+  // Build a comprehensive ledger by kind.
+  let cells;
+  if (kind === "batter") {
+    cells = [
+      { k: "AVG",  v: fmt.avg(s.avg) },
+      { k: "OBP",  v: fmt.avg(s.obp) },
+      { k: "SLG",  v: fmt.avg(s.slg) },
+      { k: "OPS",  v: fmt.avg(s.ops) },
+      { k: "HR",   v: fmt.num(s.hr) },
+      { k: "RBI",  v: fmt.num(s.rbi) },
+      { k: "SB",   v: fmt.num(s.sb) },
+      { k: "BB",   v: fmt.num(s.bb) },
+      { k: "SO",   v: fmt.num(s.so) },
+      { k: "G",    v: fmt.num(s.games) },
+    ];
+  } else if (kind === "pitcher") {
+    const wl = (s.w == null && s.l == null) ? "—" : `${s.w ?? "—"}–${s.l ?? "—"}`;
+    cells = [
+      { k: "ERA",  v: fmt.era(s.era) },
+      { k: "WHIP", v: fmt.whip(s.whip) },
+      { k: "W–L",  v: wl },
+      { k: "IP",   v: fmt.ip(s.ip) },
+      { k: "K",    v: fmt.num(s.k) },
+      { k: "BB",   v: fmt.num(s.bb) },
+      { k: "GS",   v: fmt.num(s.starts) },
+      { k: "G",    v: fmt.num(s.games) },
+    ];
+  } else {
+    // reliever
+    const wl = (s.w == null && s.l == null) ? "—" : `${s.w ?? "—"}–${s.l ?? "—"}`;
+    cells = [
+      { k: "ERA",  v: fmt.era(s.era) },
+      { k: "WHIP", v: fmt.whip(s.whip) },
+      { k: "IP",   v: fmt.ip(s.ip) },
+      { k: "K",    v: fmt.num(s.k) },
+      { k: "BB",   v: fmt.num(s.bb) },
+      { k: "SV",   v: fmt.num(s.sv) },
+      { k: "HD",   v: fmt.num(s.hold) },
+      { k: "W–L",  v: wl },
+    ];
+  }
+
+  const roleLabel = {
+    closer: "Closer",
+    lhp: "Lefty Specialist",
+    long: "Long Relief",
+    middle: "Middle Relief",
+  }[p.bullpenRole] || (kind === "reliever" ? "Relief" : null);
+
+  const handsLine = [
+    p.bats ? `Bats ${p.bats}` : null,
+    p.throws ? `Throws ${p.throws}` : null,
+  ].filter(Boolean).join(" · ");
+
+  return (
+    <div
+      className="player-modal-backdrop"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label={`${p.name} player details`}
+    >
+      <div className="player-modal" onClick={(e) => e.stopPropagation()}>
+        <button type="button" className="modal-close" onClick={onClose} aria-label="Close player details">×</button>
+        <div className="modal-banner">
+          <span className="modal-name">{p.name}</span>
+          <span className="modal-num">№ {p.number}</span>
+        </div>
+        <div className="modal-frame">
+          <Portrait player={p} />
+          <div className="modal-meta">
+            <div className="modal-pos-chip">
+              <span>{p.position}</span>
+              {handsLine && <span className="bar" />}
+              {handsLine && <span className="hands">{handsLine}</span>}
+              {roleLabel && kind === "reliever" && <span className="bar" />}
+              {roleLabel && kind === "reliever" && <span className="hands">{roleLabel}</span>}
+            </div>
+            {p.lineupSpot != null && (
+              <div className="modal-tag">Batting #{p.lineupSpot} in tonight's order</div>
+            )}
+            {p.rotationSpot != null && (
+              <div className="modal-tag">No. {p.rotationSpot} in the rotation</div>
+            )}
+            {(p.status && p.status !== "active") && (
+              <div className="modal-tag tag-status">
+                {p.status.toUpperCase().replace("IL-", "IL · ")}
+                {((p.injuryNote || "") + (p.statNote || "")).toLowerCase().includes("rehab") ? " · REHAB" : ""}
+              </div>
+            )}
+            {p.nationality && <div className="modal-line"><span className="label">From</span> {p.nationality}</div>}
+            {p.age != null && <div className="modal-line"><span className="label">Age</span> {p.age}{p.experience != null ? ` · ${p.experience} yrs MLB` : ""}</div>}
+            {p.statNote && <p className="modal-note">{p.statNote}</p>}
+            {p.injuryNote && p.statNote !== p.injuryNote && (
+              <p className="modal-note injury">{p.injuryNote}</p>
+            )}
+          </div>
+        </div>
+        <div className="modal-ledger">
+          {cells.map((c) => (
+            <div className="modal-cell" key={c.k}>
+              <span className="modal-label">{c.k}</span>
+              <span className="modal-value">{c.v}</span>
+            </div>
+          ))}
+        </div>
+        {Array.isArray(p.career) && p.career.length > 0 && (
+          <div className="modal-career">
+            <div className="modal-career-head">Career</div>
+            <ul>
+              {p.career.map((row, i) => (
+                <li key={i}><strong>{row.years}</strong> · {row.team} <span className="career-type">{row.type}</span></li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -542,6 +707,7 @@ function Colophon() {
 
 export default function BravesTracker() {
   const [view, setView] = useState("field");
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   // ── derive view-models from PLAYERS ──────────────────────────────────
   const batters = useMemo(
@@ -592,11 +758,12 @@ export default function BravesTracker() {
     <div className="page" data-screen-label={`view-${view}`}>
       <Nameplate />
       <Nav view={view} setView={setView} tonightLabel={tonightLabel} />
-      {view === "field"    && <FieldView batters={batters} />}
-      {view === "roster"   && <RosterView batters={batters} ilList={ilList} leaderId={leaderId} />}
-      {view === "rotation" && <RotationView rotation={rotation} bullpen={bullpen} />}
+      {view === "field"    && <FieldView batters={batters} onSelect={setSelectedPlayer} />}
+      {view === "roster"   && <RosterView batters={batters} ilList={ilList} leaderId={leaderId} onSelect={setSelectedPlayer} />}
+      {view === "rotation" && <RotationView rotation={rotation} bullpen={bullpen} onSelect={setSelectedPlayer} />}
       {view === "beat"     && <BeatView />}
       <Colophon />
+      <PlayerModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />
     </div>
   );
 }
