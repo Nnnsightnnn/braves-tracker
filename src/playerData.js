@@ -1,24 +1,24 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 4, 2026) ──────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 5, 2026) ──────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 25-10 (.714) — best 35-game start in 134 years, MLB's best
-// record by 1.5 over LAD, 8.5 GM up on MIA in NL East — after sweeping COL at
-// Coors. Sunday's 11-6 finale split-personality: Spencer Strider's rocky 2026
-// MLB debut (3.1 IP / 5 BB / 6 K, 423-ft Rumfield HR in the 3rd) was bailed
-// out by JONAH HEIM's career-high-tying 5 RBI day (420-ft HR off Quintana,
-// bases-loaded sac fly, 2-out 2-run double in the 9th). Jorge Mateo went
-// back-to-back with Heim for HR #2. Pregame: Acuña placed on 10-day IL with
-// Grade 1 left hamstring strain (Sat MRI confirmed); Jose Azocar selected
-// from Triple-A Gwinnett to fill the spot. Hunter Stratton optioned Sat night
-// to clear room for Strider's activation. Saturday's 9-1 was a Sale clinic
-// (7 IP / 11 K, MLB-leading 6th W); Friday was the franchise-tying largest
-// comeback at Coors (down 6-0, won 8-6 on Harris's pinch-hit 9th-inning HR).
-// Now: 3-game set in Seattle starting Monday — Ritchie (1-0, 2.92), a Seattle
-// native, opens vs Mariners RHP Logan Gilbert at 9:40 PM ET. Iglesias eligible
-// Tuesday May 5; Murphy continues Gwinnett rehab; Kim mid-rehab at Double-A
-// Columbus targeting mid-May. Waldrep set for first post-surgery bullpen this
-// week (June return); Schwellenbach (elbow) still not throwing. Dodd
-// (oblique), Joe Jiménez (knee), Smith-Shawver and Danny Young (TJ) round
-// out the longer-term IL.
+// Season context: 25-11 (.694) — still atop the NL East by 7.5 over MIA, best
+// in MLB by ½ over LAD, after dropping the Seattle opener 5-4 in stunning
+// fashion. Atlanta led 4-0 on solo HRs from Baldwin (leadoff, #9), Albies (#8)
+// and OLSON (his 428-ft 300th career HR off Logan Gilbert — 166th player to
+// reach 300), and Riley (#5) — but the Mariners answered with five in the
+// bottom of the 6th: Ritchie walked the first two, Raley turned on a 3-run
+// HR, and Crawford added a 2-run go-ahead HR off the pen. Ritchie line: 5 IP
+// / 4 H / 3 ER / 6 BB / 2 K (47-of-93 strikes), ND. PRE-GAME: SEAN MURPHY
+// REINSTATED FROM 60-DAY IL (.333 / 4 RBI on Gwinnett rehab); Jonah Heim DFA'd
+// in the corresponding move and TRADED MAY 5 to the Athletics for cash —
+// 24 hours after his career-high-tying 5-RBI Sunday at Coors. Tuesday: Bryce
+// Elder (3-1, 1.88) vs George Kirby (4-2, 3.00) at 9:40 PM ET; Raisel Iglesias
+// expected to be activated from the 15-day IL pre-game with no rehab outing
+// needed. Acuña remains on the 10-day IL with the Grade 1 hamstring strain
+// (good MRI news, return window 2-4 weeks). Kim continues Columbus rehab
+// targeting mid-May. Waldrep set for first post-surgery bullpen this week
+// (June return); Schwellenbach (elbow) still not throwing. Dodd (oblique),
+// Joe Jiménez (knee), Smith-Shawver and Danny Young (TJ) round out the
+// longer-term IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -60,8 +60,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .298, obp: .371, slg: .629, ops: 1.000, hr: 11, rbi: 31, sb: 0, bb: 16, so: 36, games: 34, doubles: 3 },
-    statNote: "HR #11 off Brennan Bernardino in Saturday's 9-1 blowout at Coors — went deep again to keep his MLB HR co-lead. Now .298/.371/.629, 1.000 OPS, 11 HR / 31 RBI through 34 G — still a top-five OPS hitter in baseball. Three straight games with a HR (Friday #10 off Kinley in the 8-6 comeback, Wednesday's walk-off vs DET, Saturday at altitude). The engine of Atlanta's MLB-best 24-10 start.",
+    stats: { avg: .298, obp: .369, slg: .631, ops: 1.000, hr: 12, rbi: 32, sb: 0, bb: 16, so: 37, games: 35, doubles: 3 },
+    statNote: "300 CAREER HOME RUNS — Olson became the 166th player in MLB history to reach 300 with a 428-ft solo blast to LCF off Logan Gilbert in the 6th inning Monday at T-Mobile Park (back-to-back with Albies, on consecutive pitches). #12 of the season; 1.000 OPS still intact. The Mariners answered with 5 in the bottom of the same inning to flip a 4-0 game into a 5-4 L. .298/.369/.631 with 12 HR / 32 RBI through 35 G — top-three in baseball by OPS, and the engine of Atlanta's MLB-best start.",
     form: 9.6,
     status: "active",
     injuryNote: null,
@@ -82,9 +82,9 @@ export const PLAYERS = [
     lineupSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 29, experience: 8,
-    stats: { avg: .194, obp: .278, slg: .333, ops: .611, hr: 4, rbi: 18, sb: 2, bb: 12, so: 34, games: 33 },
-    statNote: "First HR in two weeks — solo shot at Coors Saturday in the 9-1 W, his 4th of the season. Slash line ticks up to .194/.278/.333 (.611 OPS) but the average is still the issue; the bat needs the altitude trip to catalyze a turnaround. 18 RBI through 33 G with the power continuing to flash in spurts.",
-    form: 7.8,
+    stats: { avg: .197, obp: .280, slg: .343, ops: .623, hr: 5, rbi: 19, sb: 2, bb: 12, so: 35, games: 34 },
+    statNote: "BACK-TO-BACK BIG SWING DAYS — solo HR (#5) Monday in Seattle, his second straight game with a bomb after Saturday's #4 at Coors. Slash ticks up to .197/.280/.343 (.623 OPS), 19 RBI through 34 G; the average still needs to climb but the power streak is the most encouraging look from the cold start. The Mariners' 5-run 6th eclipsed his blast, but the swing is finally heating with the calendar.",
+    form: 8.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34982.png",
@@ -124,8 +124,8 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: .321, obp: .366, slg: .537, ops: .903, hr: 7, rbi: 21, sb: 0, bb: 9, so: 17, games: 33, wOBA: .315, iso: .160 },
-    statNote: "Quiet 1-for-5 in Friday's 8-6 comeback at Coors but reached and scored an early run. 2-run HR (#7) off Skubal in the 1st of Apr 29's walk-off W — Atlanta's only damage off the back-to-back AL Cy Young winner — still the signature swing of the homestand; he walked to lead off the 9th and scored on Olson's walk-off bomb. Bat firmly trending up behind Olson and Harris.",
+    stats: { avg: .318, obp: .363, slg: .544, ops: .907, hr: 8, rbi: 22, sb: 0, bb: 9, so: 18, games: 34, wOBA: .315, iso: .160 },
+    statNote: "BACK-TO-BACK WITH OLSON — solo HR (#8) off Logan Gilbert leading off the 6th in Seattle, immediately followed by Olson's 300th career HR on the next pitch. The third straight game Albies has scored or driven in a run; eight HRs, 22 RBI, .907 OPS through 34 G. The Mariners' 5-run answer in the bottom of the 6th obscured the power, but Albies's bat is locked in.",
     form: 9.0,
     status: "active",
     injuryNote: null,
@@ -166,9 +166,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .322, obp: .395, slg: .550, ops: .945, hr: 8, rbi: 29, sb: 1, bb: 14, so: 29, games: 33 },
-    statNote: "GAME-WRECKER AT COORS — 3-for-4 with a 1st-inning 2-run HR off Brennan Bernardino, 4 RBI, and a triple short of the cycle in Saturday's 9-1 rout. Single-game career-high tying 3 hits. Now slashing .322/.395/.550 with 8 HR / 29 RBI through 33 G; bat is locked in as the everyday catcher with Murphy still on rehab. Three multi-hit games in the last week.",
-    form: 9.2,
+    stats: { avg: .319, obp: .392, slg: .553, ops: .945, hr: 9, rbi: 30, sb: 1, bb: 14, so: 30, games: 34 },
+    statNote: "LEADOFF HR IN SEATTLE — Baldwin set the tone with a 1st-inning HR (#9) to CF off Logan Gilbert, the first of Atlanta's four solo HRs in Monday's 5-4 L. Now .319/.392/.553 with 9 HR / 30 RBI through 34 G — even with Murphy reinstated from the IL Monday, Baldwin's bat keeps him in the everyday catcher conversation; expect a Baldwin/Murphy tandem rather than a strict starter/backup split.",
+    form: 9.3,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -276,15 +276,15 @@ export const PLAYERS = [
     bats: "S", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 6,
     stats: { avg: .244, obp: .293, slg: .415, ops: .708, hr: 2, rbi: 9, sb: 0, bb: 4, so: 12, games: 12 },
-    statNote: "FIVE-RBI MASTERPIECE AT COORS SUNDAY — Heim went deep in the 2nd (back-to-back with Mateo), added a bases-loaded sac fly in the 5th, then a 2-out 2-run double in the 9th capped the 11-6 sweep-clincher. Career-high-tying 5 RBI; 420+ ft HR off Quintana on a hanging curve. Backup catcher signing now flashing the bat that won him the 2023 AL All-Star nod with TEX. Splits time with Drake Baldwin while Murphy rehabs.",
-    form: 9.0,
-    status: "active",
-    injuryNote: null,
+    statNote: "DFA'd 24 HOURS AFTER A CAREER-HIGH 5 RBI — Heim was designated for assignment Monday May 4 when Sean Murphy was reinstated from the IL, then traded to the Athletics for cash considerations Tuesday May 5. The numbers tell the brutal story: a 5-RBI Sunday at Coors (#2 HR off Quintana, bases-loaded sac fly, 9th-inning 2-run double) didn't save him — Atlanta committed to a Baldwin-Murphy catching tandem the moment Murphy passed his rehab check. Final Atlanta line: .244/.293/.415, 2 HR / 9 RBI in 12 G. Off to Sacramento.",
+    form: 0,
+    status: "departed",
+    injuryNote: "DFA'd May 4, 2026 — traded to the Athletics for cash on May 5. No longer on the Braves 40-man roster.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33842.png",
     assignment: "mlb",
     contract: { years: 1, total: 1250000, guaranteed: 1250000, apy: 1250000, throughYear: 2026 },
     career: [
-      { years: "2026–", team: "Atlanta Braves", type: "MLB" },
+      { years: "2026", team: "Atlanta Braves", type: "MLB · 12 G" },
       { years: "2020–2025", team: "Texas Rangers", type: "MLB · 2023 WS champ · 2023 AL All-Star · Gold Glove" },
     ],
   },
@@ -476,9 +476,9 @@ export const PLAYERS = [
     rotationSpot: 7,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
-    stats: { era: 2.92, whip: 1.30, ip: 12.1, k: 11, bb: 6, w: 1, l: 0, games: 2, starts: 2 },
-    statNote: "Pitched into the 6th in his second MLB start (Wed Apr 29 vs DET, ND in the 4-3 walk-off W) — Riley Greene solo HR in the 3rd flipped a 2-0 lead, then a Ritchie pickoff-throw error on McGonigle in the 2nd put a runner across to tie it. Charged with 3 R (2 ER) on 4 H / 3 BB / 4 K on 89 pitches. Sensational debut Apr 23 at WSH (7 IP / 2 ER / 7 K / 2 BB) is still a Braves franchise first.",
-    form: 8.4,
+    stats: { era: 3.63, whip: 1.50, ip: 17.1, k: 13, bb: 12, w: 1, l: 0, games: 3, starts: 3 },
+    statNote: "HOMECOMING WITH GROWING PAINS — Seattle native Ritchie battled command in front of family at T-Mobile Park: 5 IP / 4 H / 3 ER / 6 BB / 2 K, ND in Atlanta's 5-4 L. Threw just 47 of 93 pitches for strikes; opened the 6th by walking the first two batters before serving up a 3-run HR to Luke Raley. Crawford's 2-run go-ahead HR off the bullpen in the bottom of the 6th flipped the 4-0 lead. ERA up to 3.63, WHIP 1.50 over 17.1 IP. Debut Apr 23 at WSH (7 IP / 2 ER / 7 K) is still the line-of-the-month for him.",
+    form: 7.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
@@ -500,10 +500,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 36, experience: 11,
     stats: { era: 0.00, whip: 0.69, ip: 8.2, k: 11, bb: 1, sv: 5, hold: null, games: 8 },
-    statNote: "Resumed throwing this week — Walt Weiss said pre-game Apr 28 that the shoulder inflammation has subsided and he expects Iglesias back when first eligible (May 5) or shortly after. Pre-IL line was spotless: 0.00 ERA on 5 H / 11 K / 1 BB and 5 saves over 8.2 IP.",
-    form: 0,
-    status: "il-15",
-    injuryNote: "Right shoulder inflammation (no structural damage on MRI). 15-day IL backdated to Apr 20. Throwing again as of late April; Weiss targeting his May 5 eligibility date or shortly after. Suarez handling the 9th in the meantime.",
+    statNote: "EXPECTED TO BE ACTIVATED TUESDAY MAY 5 in Seattle — Walt Weiss confirmed Monday that Iglesias will rejoin the bullpen on his first eligible date, no rehab outing required. Pre-IL line was spotless: 0.00 ERA, 0.69 WHIP, 5 H / 11 K / 1 BB and 5 saves over 8.2 IP. With the bullpen sapped after Monday's 5-4 L, his return is unusually well-timed; Robert Suarez (3 SV / 0.71 ERA as the temp closer) likely slides back into a setup look.",
+    form: 7.5,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33618.png",
     assignment: "mlb",
     contract: { years: 1, total: 16000000, guaranteed: 16000000, apy: 16000000, throughYear: 2026 },
@@ -806,12 +806,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 7,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "Walt Weiss said pre-game Apr 28 that Murphy will stay on his Triple-A Gwinnett rehab another 4-5 days for additional at-bats before being reevaluated. Caught Strider's third rehab start (Apr 26) and is up to 7 innings behind the dish. First-half-of-May Atlanta return still in play but no longer locked in.",
-    form: 0,
-    status: "il-60",
-    injuryNote: "Right hip labral tear (Sep 2025 surgery). Rehab assignment continues at Triple-A Gwinnett — staying down another 4-5 days for at-bats before being reevaluated. First-half-of-May Atlanta return still possible.",
+    statNote: "ACTIVATED FROM IL MAY 4 — back behind the dish in Seattle batting 7th and catching JR Ritchie in his 2026 debut. Murphy finished his Gwinnett rehab on a tear: 8-for-24 (.333) with 2 doubles, 4 RBI, 6 R, 3 BB:5 K, and a 6-game on-base streak. Heim was DFA'd in the corresponding move (later traded to OAK for cash). Now anchors a Baldwin/Murphy catching tandem with Baldwin still hot at the plate (.322/.395/.550, 9 HR).",
+    form: 7.0,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB · 2023 NL All-Star · Gold Glove" },
@@ -997,26 +997,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-04",
-    weekday: "Mon",
-    time: "9:40 PM ET",
-    opp: "SEA",
-    home: false,
-    venue: "T-Mobile Park",
-    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: 2.92, daysRest: 5, hand: "R" },
-    oppSP: { name: "Logan Gilbert", record: "1-3", era: 4.03, hand: "R" },
-    note: "Seattle native Ritchie's 3rd MLB start in front of hometown crowd · Gilbert returns from his own IL stint earlier this season",
-  },
-  {
     date: "2026-05-05",
     weekday: "Tue",
     time: "9:40 PM ET",
     opp: "SEA",
     home: false,
     venue: "T-Mobile Park",
-    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "2-1", era: 2.22, daysRest: 7, hand: "L" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Pérez lined up after his Apr 28 W vs DET · Iglesias first eligible to be activated from 15-day IL today",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "3-1", era: 1.88, daysRest: 7, hand: "R" },
+    oppSP: { name: "George Kirby", record: "4-2", era: 3.00, hand: "R" },
+    note: "Elder's sub-1.90 ERA vs Kirby's 4-start run of ≤2 ER · Iglesias expected to be activated from the IL pre-game",
   },
   {
     date: "2026-05-06",
@@ -1025,9 +1014,9 @@ export const UPCOMING_SCHEDULE = [
     opp: "SEA",
     home: false,
     venue: "T-Mobile Park",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "3-1", era: 1.88, daysRest: 7, hand: "R" },
+    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "2-1", era: 2.22, daysRest: 8, hand: "L" },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Day-game getaway · Elder's sub-1.90 ERA gets a Pacific NW test · cross-country road trip ends",
+    note: "Day-game getaway · cross-country road trip ends · Pérez bumped a day after the Tue Elder slot",
   },
   {
     date: "2026-05-08",
@@ -1051,25 +1040,37 @@ export const UPCOMING_SCHEDULE = [
     oppSP: { name: "TBA", record: null, era: null, hand: null },
     note: "Holmes bouncing back from the Coors beating · LAD series continues",
   },
+  {
+    date: "2026-05-10",
+    weekday: "Sun",
+    time: "1:35 PM ET",
+    opp: "LAD",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: 3.63, daysRest: 6, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Ritchie bounces back from the Seattle command issues · LAD series finale at Truist · Mother's Day matinee",
+  },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-04",
+  date: "2026-05-05",
   time: "9:40 PM ET",
   opp: "SEA",
   home: false,
   venue: "T-Mobile Park · Seattle, WA",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "JR Ritchie", record: "1-0", era: 2.92 },
-    opp: { pitcher: "Logan Gilbert", record: "1-3", era: 4.03 },
+    atl: { pitcher: "Bryce Elder", record: "3-1", era: 1.88 },
+    opp: { pitcher: "George Kirby", record: "4-2", era: 3.00 },
   },
-  note: "FROM THE ROCKIES TO THE NORTHWEST — Atlanta (25-10, the franchise's best 35-game start since 1892) opens a three-game series at T-Mobile Park after sweeping Colorado at altitude. Seattle native JR Ritchie (1-0, 2.92) makes his 3rd MLB start in front of a hometown crowd, opposite Mariners RHP Logan Gilbert (1-3, 4.03). Heim rides a career-high-tying 5-RBI day; Olson is the MLB HR co-leader (#11); Sale leads the NL with 49 K. Acuña Jr. is on the 10-day IL with a Grade 1 hamstring strain (placed Sun May 3); Iglesias (shoulder) eligible to be activated Tuesday. Cross-country trip with no off day before Sale's marquee turn vs LAD on Friday.",
+  note: "BOUNCE-BACK SPOT IN SEATTLE — Atlanta (25-11) opens game two at T-Mobile after Monday's 5-4 stunner: 4-0 lead behind solo HRs from Baldwin, Albies, OLSON (300th career), and Riley evaporated in a 5-run Mariners 6th, capped by JP Crawford's go-ahead 2-run HR. Now Bryce Elder (3-1, 1.88) takes the ball — sub-1.90 ERA across 7 starts, the closest thing to a Sale-tier surrogate in the rotation — opposite Mariners RHP George Kirby (4-2, 3.00), who hasn't allowed more than 2 ER in his last four starts. Iglesias expected to be activated from the 15-day IL pre-game; Murphy back behind the dish in a Baldwin/Murphy tandem with Heim DFA'd Monday and traded to OAK for cash Tuesday. Acuña remains on the 10-day IL.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-04", opp: "SEA", home: false, atlScore: 4, oppScore: 5, result: "L", note: "MARINERS WALK BACK A 4-0 LEAD — Atlanta jumped Logan Gilbert with FOUR solo HRs (Drake Baldwin leadoff to CF, Albies and Olson back-to-back to start the 6th, Austin Riley right after) — but Olson's blast was historic on its own: a 428-ft shot to LCF that made him the 166th player to 300 career home runs. Then the bottom of the 6th unspooled it: JR Ritchie (ND) walked the first two and Luke Raley turned on a 3-run HR; Crawford added a go-ahead 2-run HR off the pen for the 5-4 lead Seattle never gave back. Final pitching line for Ritchie: 5 IP / 4 H / 3 ER / 6 BB / 2 K (47-of-93 strikes). Atlanta drops to 25-11, ending a 3-game W streak. Pregame: Sean Murphy reinstated from the 60-day IL after his Gwinnett rehab (.333 / 4 RBI); Jonah Heim DFA'd in the corresponding move. (Heim later traded to OAK for cash Tuesday.)" },
   { date: "2026-05-03", opp: "COL", home: false, atlScore: 11, oppScore: 6, result: "W", note: "SWEEP COMPLETE, STRIDER SURVIVES — Atlanta's offense bailed out a rocky 2026 debut from Spencer Strider in an 11-6 series-clinching win at Coors. Strider (ND): 3.1 IP / 4 H / 3 ER / 5 BB / 6 K, gave up a 423-ft leadoff HR to TJ Rumfield in the 3rd; the five walks tied a career high. JONAH HEIM was the headline bat: career-high-tying 5 RBI on a 2nd-inning 420-ft HR off Quintana (back-to-back with Jorge Mateo's #2), a bases-loaded sac fly in the 5th, and a 2-out 2-run double in the 9th. Mateo's 2-run HR. Atlanta now 25-10 — the franchise's best 35-game start in 134 years, best in the modern era. Pregame: Acuña placed on the 10-day IL with a Grade 1 hamstring strain (MRI), Azocar selected from Triple-A Gwinnett; Stratton optioned to Gwinnett (Sat night) to clear the spot for Strider's activation." },
   { date: "2026-05-02", opp: "COL", home: false, atlScore: 9, oppScore: 1, result: "W", note: "SALE DOMINATES AT ALTITUDE, BALDWIN ALMOST CYCLES — Atlanta's MLB-best record climbs to 24-10 in a 9-1 rout at Coors. Chris Sale (W, 6-1) was masterful: 7 IP / 3 H / 1 ER / 11 K — MLB-leading 6th W and a Coors line that's almost unheard of. Drake Baldwin (3-for-4, 4 RBI) opened the scoring with a 2-run HR (#8) off COL LHP Brennan Bernardino (LP, 2-1) in the 1st, then doubled and singled — a triple short of the cycle. Olson #11 (now MLB co-leader) and Riley #4 added insurance. Lone scare: Ronald Acuña Jr. exited in the 2nd inning with left hamstring tightness after pulling up halfway down the line on a grounder; he walked off gingerly and will undergo an MRI. Atlanta now 14 of last 17, 7.5+ GM up on MIA in the NL East and best record in MLB by 1.5 over LAD." },
   { date: "2026-05-01", opp: "COL", home: false, atlScore: 8, oppScore: 6, result: "W", note: "INSTANT CLASSIC AT COORS — Atlanta erased a 6-0 deficit with EIGHT UNANSWERED runs, capped by Michael Harris II's pinch-hit 2-run HR off Tyler Kinley in the 9th. Tied for the franchise's largest comeback ever at Coors Field. Holmes got bullied by altitude (4 IP / 4 ER / 6 H, ND); Quintana matched zeros for COL through 4. The Braves scratched a run in the 7th, then exploded for 4 in the 8th — Mauricio Dubón's BASES-LOADED TRIPLE the dagger that tied it 6-6, with Olson's #10 HR fueling the cushion. Didier Fuentes (W, 1-0) went 2 scoreless out of the pen (5th–6th, 3 K). Pierce Johnson worked a clean 9th for his first save. Atlanta moves to 23-10 and 7.5 GM up on MIA. Pregame: Suárez and Payamps DFA'd; Stratton and Molina recalled/selected from Triple-A Gwinnett." },
@@ -1079,40 +1080,38 @@ export const RESULTS = [
   { date: "2026-04-26", opp: "PHI", home: true,  atlScore: 6, oppScore: 2, result: "W", note: "Sale's 150th career W and a season-high 9 K across 6 shutout IP / 1 H on 88 pitches. Olson 3-run HR off Nola in the 1st (#9, 4th career off Nola), Eli White 2-run HR in the 2nd. Acuña 2-3, R, SB. Schwarber 2-run HR off the pen in the 8th avoided the shutout. ATL takes the series 2-1 — first MLB team to 20 wins; 10-2 in last 12. Pregame: Brian Snitker inducted into the Braves Hall of Fame." },
   { date: "2026-04-25", opp: "PHI", home: true,  atlScore: 5, oppScore: 8, result: "L", note: "10-inning walk-off L — Bryce Harper (4 RBI) lined a tiebreaking single in the 10th off José Suárez (LP); Marsh added a 2-run insurance knock. Elder solid (7 IP / 6 H / 3 R / 2 K / 1 BB) and left with a 4-3 lead before Dylan Lee gave up Schwarber's leadoff triple and Harper's tying sac fly in the 8th. Wheeler (5 IP / 2 R / 3 H / 6 K) looked sharp in his 2026 debut. Phillies' 10-game losing streak ends." },
   { date: "2026-04-24", opp: "PHI", home: true,  atlScore: 5, oppScore: 3, result: "W", note: "Pinch-hitter Michael Harris II (scratched pregame with quad tightness) hammered a 2-run go-ahead double off Painter in the 6th, scoring Smith and Dubón. Acuña 2-run HR; Holmes (W, 2-1) 6 IP, allowed Trea Turner & Bryce Harper HRs. Phillies' 10th straight loss." },
-  { date: "2026-04-23", opp: "WSH", home: false, atlScore: 7, oppScore: 2, result: "W", note: "JR Ritchie dazzles in MLB debut — 7 IP / 2 ER / 7 K on 89 pitches after allowing a HR on his first-ever big-league pitch. Albies HR + 4 RBI breaks a 2-2 tie with 4-run 7th. 8th W in 9; 5th straight series win." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 25, l: 10, pct: .714, gb: 0,    streak: "W3" },
-  { team: "MIA", name: "Miami Marlins",          w: 16, l: 18, pct: .471, gb: 8.5,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 15, l: 20, pct: .429, gb: 10,   streak: "L3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 15, l: 19, pct: .441, gb: 9.5,  streak: "W4" },
-  { team: "NYM", name: "New York Mets",          w: 11, l: 23, pct: .324, gb: 13.5, streak: "L3" },
+  { team: "ATL", name: "Atlanta Braves",         w: 25, l: 11, pct: .694, gb: 0,    streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 17, l: 18, pct: .486, gb: 7.5,  streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 16, l: 19, pct: .457, gb: 8.5,  streak: "W4" },
+  { team: "WSH", name: "Washington Nationals",   w: 15, l: 21, pct: .417, gb: 10,   streak: "L4" },
+  { team: "NYM", name: "New York Mets",          w: 12, l: 23, pct: .343, gb: 12.5, streak: "W1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-04T09:00:00-04:00",
+  generatedAt: "2026-05-05T09:00:00-04:00",
   summary:
-    "ATLANTA SWEEPS COLORADO BUT LOSES ACUÑA — the Braves head to Seattle at 25-10 (.714), the franchise's best 35-game start in 134 years and best record in MLB. Sunday's 11-6 sweep-clincher at Coors had a split personality: Spencer Strider's 2026 MLB debut was rocky (3.1 IP / 4 H / 3 ER / 5 BB / 6 K, allowing a 423-ft leadoff HR to TJ Rumfield in the 3rd) but the offense detonated for him. JONAH HEIM was the headliner — a career-high-tying 5 RBI on a 420-ft HR off Quintana (back-to-back with Jorge Mateo's #2), a bases-loaded sac fly in the 5th, and a 2-out 2-run double in the 9th. THE BAD NEWS LANDED PREGAME: Ronald Acuña Jr. was placed on the 10-day IL with a Grade 1 left hamstring strain after Saturday's MRI; OF José Azocar was selected from Triple-A Gwinnett to fill the spot. Hunter Stratton was optioned Saturday night to clear room for Strider's activation. Eli White and Azocar absorb RF reps in Acuña's absence. Saturday's prequel was a Sale clinic (7 IP / 11 K, MLB-leading 6th W) and a Drake Baldwin near-cycle (3-for-4, HR #8, 4 RBI). Friday gave us the franchise-tying largest comeback at Coors (down 6-0, won 8-6). Now: a three-game set in Seattle starting Monday — JR Ritchie (1-0, 2.92), a Seattle native, faces Mariners RHP Logan Gilbert (1-3, 4.03) at 9:40 PM ET. Iglesias (shoulder) becomes eligible to be activated Tuesday; Murphy continues his Gwinnett rehab; Kim is mid-rehab at Double-A Columbus targeting mid-May. Around the division: MIA 16-18 (8.5 GB), PHI 15-19 (9.5 GB, W4), WSH 15-20 (10 GB, L3), NYM 11-23 (13.5 GB, L3) — the cushion only grows.",
+    "MARINERS WALK BACK A 4-0 LEAD, BUT OLSON HITS 300 AND MURPHY IS BACK — Atlanta drops the Seattle opener 5-4 to fall to 25-11 (.694), still atop the NL East by 7.5 over MIA and best in MLB by a hair over LAD. The historic moment: Matt Olson became the 166th player to 300 career home runs with a 428-ft solo HR to LCF off Logan Gilbert in the 6th, back-to-back with Albies's #8. Drake Baldwin opened the night with a leadoff HR (#9); Austin Riley added a solo bomb (#5) — four solo HRs and a 4-0 lead. The bottom of the 6th unspooled it: JR Ritchie (ND) walked the first two batters and Luke Raley pulled a 3-run HR; JP Crawford added a 2-run go-ahead HR off the pen for the 5-4 final. Ritchie line: 5 IP / 4 H / 3 ER / 6 BB / 2 K (47-of-93 strikes). PRE-GAME ROSTER MOVES: Sean Murphy was reinstated from the 60-day IL after a sharp Gwinnett rehab finish (.333, 4 RBI, 6-game on-base streak); Jonah Heim was DFA'd in the corresponding move and TRADED TUESDAY MAY 5 to the Athletics for cash — 24 hours after his career-high-tying 5-RBI Sunday at Coors. Today: Bryce Elder (3-1, 1.88) takes the ball at T-Mobile vs Mariners RHP George Kirby (4-2, 3.00) at 9:40 PM ET; Raisel Iglesias is expected to be activated from the 15-day IL pre-game, restoring the closer setup with no rehab outing required. Acuña Jr. remains on the 10-day IL with the Grade 1 hamstring strain (good MRI news, return window 2-4 weeks). Kim continues his Double-A Columbus rehab targeting mid-May. Around the division: MIA 17-18 (7.5 GB, W1); PHI 16-19 (8.5 GB, W4 — climbing); WSH 15-21 (10 GB, L4); NYM 12-23 (12.5 GB, W1).",
   keyTopics: [
-    { category: "result",      title: "11-6 W at Coors — Atlanta sweeps, Heim's 5 RBI",                       detail: "Sunday's series-clinching W ran the road trip to 3-0 and Atlanta's record to 25-10 (best 35-game start since 1892). Jonah Heim ripped a 420-ft 2-run HR off Quintana (#2), added a bases-loaded sac fly in the 5th, and capped it with a 2-out 2-run double in the 9th — a career-high-tying 5 RBI. Jorge Mateo's #2 HR came on the very next pitch after Heim's. Strider survived a rough debut thanks to that offense." },
-    { category: "injury",      title: "ACUÑA on 10-DAY IL — Grade 1 hamstring strain",                        detail: "Saturday's MRI came back Sunday: Grade 1 strain of the left hamstring. Walt Weiss: 'Not too serious, but serious enough that we had to put him on the list.' 10-day IL placement, retroactive. He had appeared in all 34 ATL games this season after being limited to 144 G across 2024-25 (post-ACL). Eli White and José Azocar (called up as the corresponding move from Gwinnett) absorb RF reps." },
-    { category: "rotation",    title: "STRIDER'S DEBUT WAS ROCKY — 3.1 IP, 5 BB, 6 K, ND",                    detail: "First big-league outing since the spring oblique strain didn't go to plan: TJ Rumfield led off the 3rd with a 423-ft HR; Strider walked five (tied a career high — also at Coors, June 4 2022) and faced 19 batters with 12 'three-true-outcome' results. The 96+ FB stuff was there but command lagged after the long layoff. Atlanta's offense bailed him out of an L. Next turn lined up vs SEA on the road." },
-    { category: "milestone",   title: "Best 35-game start in 134 years",                                       detail: "At 25-10, Atlanta has its best 35-game start since 1892 and the best in the modern era. Best record in MLB by 1.5 games over the Dodgers; 8.5 up on second-place MIA in the NL East. The combination of starting pitching (Sale, Elder, Pérez all sub-2.50 ERA) and HR power (Olson, Baldwin, Albies, Harris) has been ahead of expectations." },
-    { category: "transaction", title: "Azocar selected, Stratton optioned",                                    detail: "Two corresponding moves around Sunday: OF José Azocar (career .244/.290/.319 over 385 AB with SD/NYM) was selected from Triple-A Gwinnett to fill Acuña's roster spot; Hunter Stratton was optioned to Gwinnett following Saturday's game to clear room for Spencer Strider's activation. Both Stratton and Rolddy Muñoz are now the next-up bullpen arms at Triple-A." },
-    { category: "milestone",   title: "Olson MLB HR co-leader (#11), 1.000 OPS",                              detail: "Matt Olson stayed at #11 Sunday after his Saturday Coors blast and remains the MLB co-leader. .298/.371/.629 with a 1.000 OPS, 31 RBI through 34 G — top-three in the sport by OPS. He's the engine of the 25-10 start." },
-    { category: "milestone",   title: "Sale leads NL with 49 K, ERA at 2.14",                                  detail: "Saturday's 7 IP / 11 K / 1 ER masterpiece at altitude was the kind of road outing aces are measured by. Sale's 49 K lead the NL; ERA 2.14, WHIP 0.83, MLB-leading 6 W. Lined up to face the Dodgers on Friday in the homestand opener." },
-    { category: "lineup",      title: "Heim's case for more starts as Murphy rehabs",                         detail: "Drake Baldwin (.322/.395/.550) has been the everyday catcher, but Heim's Sunday — a career-high-tying 5 RBI in his 12th game — gives Walt Weiss a clearer second-catcher rotation. Heim signed for $1.25M in February largely as Murphy insurance; he's been a meaningful threat behind the dish defensively (Gold Glove with TEX in 2023) and is now slashing .244/.293/.415 with 2 HR / 9 RBI." },
-    { category: "injury",      title: "Iglesias eligible Tuesday — minimum-IL stint in play",                  detail: "Closer Raisel Iglesias's right shoulder inflammation has subsided and he's back throwing. May 5 is the first eligible date for activation; Atlanta is optimistic. Robert Suarez has handled the closer role spotlessly (3 SV, 0.71 ERA, 0.87 WHIP) since taking over Apr 22 and will continue at least through Monday." },
-    { category: "injury",      title: "Murphy stays at Gwinnett a few more days",                              detail: "Weiss confirmed pre-game Apr 28 that Murphy (right hip labral surgery, Sep 2025) needs additional at-bats before activation. First-half-of-May Atlanta return still in play; the Heim signing has eased the pressure to rush him back. Heim's Sunday only widens that runway." },
-    { category: "injury",      title: "Kim's Columbus rehab continues; mid-May target",                        detail: "Ha-Seong Kim is mid-rehab at Double-A Columbus (right middle finger torn tendon, Jan 2026 surgery) — the first MLB rehab assignment in Clingstones history. Weiss reiterated 'a couple of weeks' of game action before promotion; mid-May Atlanta target holds. Mauricio Dubón has been excellent as the bridge SS." },
-    { category: "narrative",   title: "Heim/Mateo back-to-back HRs the underdog story",                        detail: "Two veteran offseason signings most fans had pegged as low-leverage depth — Heim ($1.25M) and Mateo ($1M) — went back-to-back deep on Quintana in the 2nd inning Sunday. Heim's then drove in 5; Mateo is now hitting .286/.318/.476 with 2 HR / 5 RBI / 3 SB across 16 G. The 'depth wins' theme keeps repeating." },
-    { category: "standings",   title: "NL East: ATL +8.5 on MIA; PHI now on a 4-game W streak",                detail: "ATL 25-10 (.714); MIA 16-18 (8.5 GB); PHI 15-19 (9.5 GB, W4) — the Phillies climbing fast on a 4-game roll; WSH 15-20 (10 GB, L3); NYM 11-23 (13.5 GB, L3) — slide deepens. Atlanta also leads all of MLB by 1.5 over LAD." },
-    { category: "rotation",    title: "Monday at SEA: Ritchie's homecoming start",                              detail: "Seattle native JR Ritchie (1-0, 2.92) gets his 3rd MLB start in front of family Monday at T-Mobile Park, 9:40 PM ET. Mariners counter with RHP Logan Gilbert (1-3, 4.03). Ritchie's MLB debut Apr 23 at WSH (7 IP / 2 ER / 7 K) is still the line-of-the-month for the rookie; ND vs DET on Apr 29 in his second start." },
+    { category: "result",      title: "L 4-5 at SEA — Mariners' 5-run 6th flips a 4-0 game",                  detail: "Atlanta's 4-0 lead through five evaporated in a single inning: Ritchie walked the first two of the 6th and Luke Raley turned on a 3-run HR; JP Crawford's 2-run go-ahead HR off the pen completed the rally for the 5-4 final. The Braves managed only 4 hits all night (all four were HRs) and dropped to 25-11 — still the franchise's best 36-game start in over a century." },
+    { category: "milestone",   title: "OLSON HITS 300 — 166th player to the milestone",                       detail: "428-ft solo HR to LCF off Logan Gilbert in the 6th, back-to-back with Albies and on consecutive pitches. Olson's #12 of 2026 puts him at 300 career — the 166th player in MLB history. Slash now .298/.369/.631, 1.000 OPS, 32 RBI in 35 G; still in the top three in baseball by OPS. The Parkview HS (GA) product joined a small list of Braves to reach 300 career HRs in uniform." },
+    { category: "transaction", title: "HEIM DFA'd then TRADED TO OAKLAND — 24 hours after a 5-RBI day",        detail: "Atlanta designated Jonah Heim for assignment Monday May 4 to make room for Sean Murphy's activation, then traded him to the Athletics for cash considerations Tuesday May 5. He becomes one of the rarest stat lines of the year: career-high-tying 5 RBI on Sunday, off the 40-man on Monday, on a new team Tuesday. Atlanta commits cleanly to a Baldwin/Murphy catching tandem." },
+    { category: "transaction", title: "MURPHY ACTIVATED FROM IL — finishes rehab .333 / 4 RBI",                detail: "Sean Murphy was reinstated from the 60-day IL Monday and slotted in catching JR Ritchie batting 7th in his 2026 debut. He hit .333 (8-for-24) at Triple-A Gwinnett with 2 doubles, 4 RBI, 6 R, 3 BB / 5 K, and reached base in his final six rehab games. Right hip labral surgery (Sep 2025) is officially behind him; expect a Baldwin/Murphy tandem rather than a strict starter/backup split given Baldwin's .945 OPS." },
+    { category: "injury",      title: "IGLESIAS EXPECTED TO BE ACTIVATED TODAY — no rehab needed",            detail: "Walt Weiss told reporters Monday that closer Raisel Iglesias will be activated from the 15-day IL Tuesday in Seattle, no rehab outing required. The MRI confirmed no structural damage in the right shoulder and Iglesias has been throwing aggressively for two weeks. Pre-IL line was spotless (0.00 ERA, 5 SV, 11 K / 1 BB across 8.2 IP). Robert Suarez slides back to setup duty after a flawless month covering the 9th." },
+    { category: "rotation",    title: "Tuesday: Bryce Elder vs George Kirby",                                  detail: "Elder (3-1, 1.88) — sub-1.90 ERA across 7 starts, ≤1 R in four of them — opposite Mariners RHP George Kirby (4-2, 3.00), who hasn't allowed more than 2 ER in his last four starts. 9:40 PM ET first pitch at T-Mobile Park, FanDuel Sports Network Southeast. The kind of pitching duel the rest of the league will be watching." },
+    { category: "rotation",    title: "Ritchie's homecoming command issues — 6 BB, 2 K in 5 IP",               detail: "The Seattle native walked six and threw just 47 of 93 pitches for strikes in front of family at T-Mobile. He kept zeros up through five before the 6th-inning collapse: two walks, then Raley's 3-run HR. ERA up to 3.63, WHIP to 1.50 across 17.1 IP / 3 starts. Elder/Pérez can absorb a soft start; the rookie's debut Apr 23 line (7 IP / 2 ER / 7 K) is still the headline number." },
+    { category: "injury",      title: "Acuña Jr. — good MRI news on the hamstring",                            detail: "Sunday MRI confirmed a Grade 1 left hamstring strain — the best possible read after Saturday's grimace. Acuña remains on the 10-day IL (placed May 3, retroactive); typical Grade 1 returns are 2-4 weeks. Eli White and José Azocar absorb RF reps; the offense has handled the absence (Olson's 300, Albies's #8, Baldwin's #9 all in one Mariners game)." },
+    { category: "milestone",   title: "Sale's 49 K still leads the NL; ERA 2.14",                              detail: "Saturday's 7 IP / 11 K / 1 ER at Coors keeps Sale at 49 K (NL leader), 2.14 ERA, 0.83 WHIP, 6 W (MLB co-leader). Lined up Friday for the marquee Dodgers homestand opener at Truist after the Thursday travel day; the next-most-watched start of his season so far." },
+    { category: "lineup",      title: "Four solo HRs but no big inning",                                       detail: "Atlanta's only four hits Monday were four solo HRs — Baldwin leadoff (#9), Albies/Olson back-to-back to start the 6th (#8 and the 300th), Riley right after (#5). Gilbert struck out the side around them; the Braves had zero traffic on the bases through five and went 0-for-4 with RISP. The lone-shot offense pattern is unsustainable; Acuña's bat will help when he returns." },
+    { category: "injury",      title: "Kim continues Double-A Columbus rehab; mid-May target",                  detail: "Ha-Seong Kim's right middle finger torn tendon (Jan 2026 surgery) rehab continues at Double-A Columbus — the first MLB rehab in Clingstones franchise history. Weiss has held to 'a couple of weeks' of game at-bats before a promotion; mid-May Atlanta target still in play. Dubón continues as the bridge SS and is hitting .283/.332/.455." },
+    { category: "narrative",   title: "Baldwin/Murphy tandem — both are starters",                              detail: "Baldwin (.319/.392/.553, 9 HR, 30 RBI) has the better season line; Murphy is the proven Gold Glove receiver and pitcher whisperer. Heim's DFA forces Weiss into a true two-catcher split rather than a starter/backup hierarchy — expect ~50/50 starts with Baldwin getting some DH days when Murphy catches." },
+    { category: "standings",   title: "NL East: ATL +7.5 on MIA after the L; PHI W4",                          detail: "ATL 25-11 (.694); MIA 17-18 (7.5 GB, W1); PHI 16-19 (8.5 GB, W4 — climbing fastest); WSH 15-21 (10 GB, L4); NYM 12-23 (12.5 GB, W1 — snapped a slide). Atlanta still leads all of MLB by ½ over LAD." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "Heavy.com", "Fox Sports", "RotoWire", "ClutchPoints", "Bleacher Nation", "AP", "House That Hank Built", "Yardbarker", "Larry Brown Sports", "Brave Today",
+    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "Heavy.com", "Fox Sports", "RotoWire", "FanGraphs", "Lookout Landing", "AP", "Atlanta News First", "Yardbarker", "DraftKings Network", "Gwinnett Daily Post", "Washington Times", "Heavy.com",
   ],
 };
