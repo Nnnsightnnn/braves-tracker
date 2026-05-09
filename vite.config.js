@@ -1,10 +1,24 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import apiExtract from './vite-plugin-api-extract.js'
 
 export default defineConfig({
   base: '/braves-tracker/',
   plugins: [
     react(),
+    apiExtract({
+      tracker: 'braves',
+      team: { name: 'Atlanta Braves', abbreviation: 'ATL' },
+      league: 'MLB',
+      sources: [
+        { from: './src/playerData.js', exportName: 'PLAYERS',             resource: 'roster' },
+        { from: './src/playerData.js', exportName: 'NEWS_DIGEST',         resource: 'news-digest' },
+        { from: './src/playerData.js', exportName: 'RESULTS',             resource: 'results' },
+        { from: './src/playerData.js', exportName: 'NEXT_GAME',           resource: 'next-game' },
+        { from: './src/playerData.js', exportName: 'UPCOMING_SCHEDULE',   resource: 'upcoming-schedule' },
+        { from: './src/playerData.js', exportName: 'NL_EAST_STANDINGS',   resource: 'standings' },
+      ],
+    }),
     {
       name: 'rss-proxy',
       configureServer(server) {
