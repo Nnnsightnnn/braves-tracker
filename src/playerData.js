@@ -1,21 +1,24 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 8, 2026) ──────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 10, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// Season context: 26-12 (.684) — still MLB-best, leading the NL East by 9.0
-// games over a logjam of three teams (PHI/MIA/WSH all 17-21) after Thursday's
-// results elsewhere. TONIGHT IS THE MARQUEE OPENER: Chris Sale (6-1, 2.14,
-// NL-leading 49 K) takes the ball at DODGER STADIUM (10:10 PM ET, FanDuel
-// Sports Network Southeast / SportsNet LA) opposite RHP Emmet Sheehan, who's
-// coming off a 4-ER (2 HR) loss in St. Louis with 8 K and 0 BB. The defending
-// champ Dodgers (24-15) host Atlanta for three at Chavez Ravine after Atlanta
-// wrapped a 3-3 west-coast first leg in Seattle (lost the rubber match 3-1
-// to Bryan Woo's 9-K masterclass on Wed). Acuña Jr. remains on the 10-day IL
-// (Grade 1 left hamstring, mid-to-late-May target); Harris II continues DH-only
-// for the back-half of his ~7-day quad nursing window; Murphy still easing back
-// in; Iglesias secure as closer (6 SV in 6 chances); Dodd's Triple-A Gwinnett
-// rehab outing went well but the Braves have NOT activated him yet — he could
-// be reinstated this weekend. Olson (NL-leading 13 HR, .302/.372/.647, 1.019
-// OPS, 33 RBI) and Albies (.322, 8 HR, 23 RBI, .915 OPS) drive the offense.
-// Today is a GAME DAY — first pitch 7:10 PT / 10:10 PM ET.
+// HEAVY WEEKEND IN ATLANTA — Hall of Fame manager BOBBY COX died Saturday at 84
+// (Marietta, GA · stroke recovery + heart issues · 2,401 W, 4th all-time, 14
+// straight division titles 1991–2005, 1995 WS, HOF 2014). Three days earlier,
+// founding owner TED TURNER passed at 87 (Lewy body dementia · CNN/TBS founder
+// who made the Braves America's Team). Both honored in a pregame moment of
+// silence at Dodger Stadium Saturday night. Then Spencer Strider (W, 1-0)
+// turned the day around with a season-saving 6 IP / 1 H / 0 ER / 8 K / 2 BB
+// gem on 90 pitches (15 whiffs) and Atlanta thumped Blake Snell for 5 ER in
+// 3 IP of his season debut to win 7-2 — snapping an 8-game losing streak at
+// Dodger Stadium. Albies and Olson each had 2-RBI singles in the 2nd; Riley,
+// Harris II, Baldwin all chipped in. Andy Pages prevented the shutout with
+// a 2-run HR off the pen in the 9th. Atlanta now 27-13 (.675, MLB-best),
+// 9.0 GB up on a 3-way 18-22 logjam (WSH/PHI/MIA). TODAY: Bryce Elder (3-1,
+// 2.02) faces Justin Wrobleski (5-0, 1.25, NL ERA leader) in the series
+// finale at 4:10 PM ET (1:10 PM PT) — Mother's Day matinee at Chavez Ravine.
+// Acuña Jr. still on the 10-day IL (Grade 1 left hamstring) but Weiss
+// continues to target Wed May 13 vs WSH (first IL-eligible day) for a return.
+// Dodd's rehab clean at Gwinnett — activation likely this week.
+// Today is a GAME DAY — first pitch 1:10 PT / 4:10 PM ET.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -57,8 +60,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .295, obp: .366, slg: .631, ops: .997, hr: 13, rbi: 33, sb: 0, bb: 16, so: 39, games: 38, doubles: 3 },
-    statNote: "QUIET NIGHT VS SHEEHAN AT DODGER STADIUM — Olson went hitless in the 3-1 L Friday, finally cooling against the LAD lefty-killing pen (Vesia, Hurt, Klein, Stewart, Scott). Still NL-leading with 13 HR / 33 RBI / .997 OPS / .295/.366/.631 through 38 G. The 9th-inning go-ahead bomb in Seattle Tuesday (#13, off Andrés Muñoz) and Monday's 300th-career-HR night (off Logan Gilbert) remain the centerpieces of his May. Saturday's matchup vs Roki Sasaki at Chavez Ravine sets up a bounce-back spot.",
+    stats: { avg: .296, obp: .366, slg: .624, ops: .990, hr: 13, rbi: 35, sb: 0, bb: 16, so: 39, games: 39, doubles: 3 },
+    statNote: "2-RUN SINGLE OFF SNELL IN THE 2ND — Olson followed Albies with another 2-RBI single off Blake Snell to make it 5-0 in the 2nd, capping a 3-inning, 5-ER chase of the LAD lefty in his season debut. Now NL-leading with 13 HR / 35 RBI / .990 OPS / .296/.366/.624 through 39 G; still the team's most productive bat. The 9th-inning go-ahead bomb in Seattle (May 5, #13 off Andrés Muñoz) and the May 4 300th-career-HR night (off Logan Gilbert) remain his May centerpieces. Sunday's matchup vs Justin Wrobleski (5-0, 1.25, NL-best ERA) is the toughest test of the homestand.",
     form: 9.6,
     status: "active",
     injuryNote: null,
@@ -79,8 +82,8 @@ export const PLAYERS = [
     lineupSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 29, experience: 8,
-    stats: { avg: .200, obp: .283, slg: .344, ops: .627, hr: 5, rbi: 20, sb: 2, bb: 12, so: 37, games: 37 },
-    statNote: "PROVIDED ATL'S ONLY RUN AT DODGER STADIUM FRIDAY — Riley's 2nd-inning RBI single (off Sheehan, scoring Albies) gave Atlanta its lone tally in the 3-1 L. Sheehan immediately responded with consecutive K's to limit the damage. Still grinding at .200/.283/.344 (.627 OPS), 5 HR / 20 RBI through 37 G. The bat is showing slow life — the May 5 / May 7 walks and a clean RBI single Friday point the right direction even if the average hasn't moved.",
+    stats: { avg: .203, obp: .284, slg: .345, ops: .629, hr: 5, rbi: 21, sb: 2, bb: 12, so: 37, games: 38 },
+    statNote: "RBI SINGLE BACK-TO-BACK NIGHTS — After the Friday RBI single (the only ATL run in Game 1), Riley added another RBI in the 7-2 W Saturday — driving in a run during the 5-spot 2nd-inning rally off Blake Snell. Two clean run-producers in two nights at Dodger Stadium. Still grinding at .203/.284/.345 (.629 OPS), 5 HR / 21 RBI through 38 G. The bat is showing slow life — the May 5/May 7 walks plus the Dodgers RBI knocks point the right direction even if the average hasn't moved much.",
     form: 8.0,
     status: "active",
     injuryNote: null,
@@ -121,8 +124,8 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: .313, obp: .358, slg: .533, ops: .891, hr: 8, rbi: 23, sb: 0, bb: 9, so: 20, games: 37, wOBA: .315, iso: .160 },
-    statNote: "DREW THE WALK AHEAD OF RILEY'S RBI SINGLE FRIDAY — Albies came around to score Atlanta's only run in the 3-1 L at Dodger Stadium after reaching against Sheehan. Slash holds at .313/.358/.533 (.891 OPS), 8 HR / 23 RBI through 37 G — still the steadiest top-of-order presence with Acuña sidelined. Saturday's Strider-Sasaki middle game lines up nicely for the Braves switch-hitter at sea level.",
+    stats: { avg: .315, obp: .360, slg: .534, ops: .894, hr: 8, rbi: 25, sb: 0, bb: 9, so: 20, games: 38, wOBA: .315, iso: .160 },
+    statNote: "2-RUN SINGLE OFF SNELL IN THE 2ND SATURDAY — Albies stretched out to drive in two with a bases-loaded single off Blake Snell in the 2nd inning of Atlanta's 7-2 W at LAD, kicking off the 5-run frame that ended Snell's season debut three innings in. Slash up to .315/.360/.534 (.894 OPS), 8 HR / 25 RBI through 38 G — still the steadiest top-of-order presence with Acuña sidelined. He had also drawn the walk ahead of Riley's RBI single Friday. Sunday's Wrobleski (5-0, 1.25) start looks tougher in the series finale.",
     form: 9.0,
     status: "active",
     injuryNote: null,
@@ -142,8 +145,8 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .345, obp: .376, slg: .578, ops: .954, hr: 7, rbi: 22, sb: 2, bb: 6, so: 18, games: 32, wrcPlus: null },
-    statNote: "BACK IN CF AND 4-FOR-4 BATTING CLEANUP AT DODGER STADIUM — Harris was the lone bright spot in the 3-1 L Friday, going 4-for-4 with the quad healthy enough to handle CF after a week of DH-only usage. Hit cleanup for just the 10th time in his career. Slash now .345/.376/.578 (.954 OPS), 7 HR / 22 RBI in 32 G — back atop the team in average and OPS as Olson cooled. Quad is looking like a non-issue going into the rest of the LAD weekend.",
+    stats: { avg: .342, obp: .374, slg: .574, ops: .948, hr: 7, rbi: 23, sb: 2, bb: 6, so: 18, games: 33, wrcPlus: null },
+    statNote: "RBI IN THE 7-2 W SATURDAY — Harris drove in a run (his 23rd) in the 5-spot 2nd inning that ended Snell's season debut, building on the 4-for-4 cleanup return Friday. Quad clearly behind him now — playing CF on back-to-back nights with no restrictions. Slash holds at .342/.374/.574 (.948 OPS), 7 HR / 23 RBI in 33 G — still atop the team in average and OPS. Activity level back to normal; Weiss has comfortably removed the DH-only window.",
     form: 9.8,
     status: "active",
     injuryNote: null,
@@ -163,8 +166,8 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .315, obp: .388, slg: .547, ops: .935, hr: 9, rbi: 30, sb: 1, bb: 14, so: 31, games: 35 },
-    statNote: "BACK BEHIND THE DISH AS MURPHY EASES IN — Baldwin caught Elder's 9-K Tuesday gem and went 0-for-3, dropping the line to .315/.388/.547 (.935 OPS), 9 HR / 30 RBI through 35 G. Monday's leadoff HR (#9) off Gilbert is still the mark of the series. With Murphy back from the 60-day IL but on the bench Wednesday after going 0-for-3 Monday, Baldwin remains the primary catcher of a true tandem rather than a backup-now arrangement.",
+    stats: { avg: .314, obp: .386, slg: .544, ops: .930, hr: 9, rbi: 31, sb: 1, bb: 14, so: 31, games: 36 },
+    statNote: "RBI BEHIND STRIDER'S 8-K GEM SATURDAY — Baldwin caught Strider's 6 IP / 1 H / 0 ER / 8 K masterclass in the 7-2 W Saturday and chipped in a run-scoring hit during the 5-spot 2nd off Snell. Slash holds at .314/.386/.544 (.930 OPS), 9 HR / 31 RBI through 36 G. With Murphy still phasing back in (post-hip surgery), Baldwin remains the primary catcher of a tandem — he's caught 7 of the last 9, including all 3 LAD games (so far).",
     form: 9.3,
     status: "active",
     injuryNote: null,
@@ -804,8 +807,8 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
-    stats: { era: 8.10, whip: 2.70, ip: 3.1, k: 6, bb: 5, w: 0, l: 0, games: 1, starts: 1 },
-    statNote: "TONIGHT AT DODGER STADIUM — Strider gets the ball Saturday vs LAD's Roki Sasaki (1-3, 5.97) at 9:10 PM ET, his second start of 2026 after the rocky Coors debut May 3 (3.1 IP / 4 H / 3 ER / 5 BB / 6 K, ND in the 11-6 sweep-clinching W). The five walks tied a career high; stuff was there (96+ FB) but command lagged after the long oblique-strain layoff. Atlanta swapped him into the Saturday slot ahead of Ritchie to align his work week — Holmes/Ritchie pushed back to the WSH homestand.",
+    stats: { era: 2.89, whip: 1.29, ip: 9.1, k: 14, bb: 7, w: 1, l: 0, games: 2, starts: 2 },
+    statNote: "STRIDES BACK — Spencer Strider (W, 1-0) was extraordinary in the 7-2 W at Dodger Stadium Saturday: 6 IP / 1 H (Will Smith first-inning single) / 0 ER / 2 BB / 8 K on 90 pitches and 15 whiffs (a season high), shutting down the defending-champ Dodgers lineup in his second start of 2026. Total reset from the May 3 Coors debut (3.1 IP / 3 ER / 5 BB) — command was back, the slider had finishing depth, and the four-seamer was 96-97 again. Season line drops to 2.89 ERA / 1.29 WHIP across 9.1 IP, 14:7 K:BB.",
     form: 6.0,
     status: "active",
     injuryNote: null,
@@ -1017,17 +1020,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-09",
-    weekday: "Sat",
-    time: "9:10 PM ET",
-    opp: "LAD",
-    home: false,
-    venue: "Dodger Stadium",
-    atlSP: { id: "strider", name: "Spencer Strider", record: "0-0", era: 8.10, daysRest: 6, hand: "R" },
-    oppSP: { name: "Roki Sasaki", record: "1-3", era: 5.97, hand: "R" },
-    note: "TONIGHT — Strider's 2nd 2026 start after the rocky Coors debut · Sasaki (1-3, 5.97) coming off command issues · ATL swapped Strider into Sat slot ahead of Ritchie",
-  },
-  {
     date: "2026-05-10",
     weekday: "Sun",
     time: "4:10 PM ET",
@@ -1035,8 +1027,8 @@ export const UPCOMING_SCHEDULE = [
     home: false,
     venue: "Dodger Stadium",
     atlSP: { id: "elder", name: "Bryce Elder", record: "3-1", era: 2.02, daysRest: 6, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Elder on regular rest after the 9-K Seattle masterpiece · LAD series finale · Mother's Day matinee on the West Coast",
+    oppSP: { name: "Justin Wrobleski", record: "5-0", era: 1.25, hand: "L" },
+    note: "TODAY — series rubber match · Elder on 6 days rest after the 9-K Seattle gem · Wrobleski (5-0, NL-best 1.25 ERA) leads NL in ERA but only 15 K in 36 IP · Mother's Day matinee on the West Coast",
   },
   {
     date: "2026-05-12",
@@ -1045,9 +1037,9 @@ export const UPCOMING_SCHEDULE = [
     opp: "WSH",
     home: true,
     venue: "Truist Park",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "2-1", era: 4.50, daysRest: 12, hand: "R" },
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "2-1", era: 4.50, daysRest: 13, hand: "R" },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Truist HOMESTAND OPENER vs WSH — Holmes finally gets the ball after the Strider/Pérez schedule churn · 12 days since Holmes's last MLB outing (Coors May 1) · possible Acuña activation day",
+    note: "Truist HOMESTAND OPENER vs WSH — Holmes finally gets the ball after the Strider/Pérez schedule churn · 13 days since Holmes's last MLB outing (Coors May 1) · possible Acuña activation day",
   },
   {
     date: "2026-05-13",
@@ -1056,29 +1048,41 @@ export const UPCOMING_SCHEDULE = [
     opp: "WSH",
     home: true,
     venue: "Truist Park",
-    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: 3.63, daysRest: 12, hand: "R" },
+    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-0", era: 3.63, daysRest: 14, hand: "R" },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Ritchie's first start since Apr 29 vs DET — pushed back when Strider was slotted into the LAD Saturday game · sea-level Truist after the rocky Seattle homecoming",
+    note: "Ritchie's first start since Apr 29 vs DET — pushed back when Strider was slotted into the LAD Saturday game · sea-level Truist after the rocky Seattle homecoming · likely Acuña-return day",
+  },
+  {
+    date: "2026-05-14",
+    weekday: "Thu",
+    time: "7:20 PM ET",
+    opp: "WSH",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "sale", name: "Chris Sale", record: "6-2", era: 2.20, daysRest: 5, hand: "L" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Sale closes the WSH series — comes off the tough-luck L at Dodger Stadium (7 IP / 2 ER / 7 K / 0 BB) · NL-leading 56 K through 8 starts · gets WSH (last in NL East at 18-22) at Truist",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-09",
-  time: "9:10 PM ET",
+  date: "2026-05-10",
+  time: "4:10 PM ET",
   opp: "LAD",
   home: false,
   venue: "Dodger Stadium · Los Angeles, CA",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Spencer Strider", record: "0-0", era: 8.10 },
-    opp: { pitcher: "Roki Sasaki", record: "1-3", era: 5.97 },
+    atl: { pitcher: "Bryce Elder", record: "3-1", era: 2.02 },
+    opp: { pitcher: "Justin Wrobleski", record: "5-0", era: 1.25 },
   },
-  note: "TONIGHT — STRIDER vs SASAKI AT CHAVEZ RAVINE — Atlanta (26-13, .684, still MLB-best) looks to even the series at Dodger Stadium after Friday's 3-1 L (Sale tough-luck, Freeman 100th-as-a-Dodger HR). Spencer Strider (0-0, 8.10) makes his second start of 2026 — the Braves swapped him into the Saturday slot ahead of JR Ritchie to align his throw day, with Holmes/Ritchie pushed back to the WSH homestand. Roki Sasaki (1-3, 5.97 ERA, 1.67 WHIP, 26 K / 15 BB across 28.2 IP) opposes — the Dodgers right-hander has scuffled with command and reportedly was open to a minor-league assignment. Acuña Jr. has 'a very good chance' to be back Wednesday at Truist (first IL-eligible day) per Weiss; Harris II returned to CF Friday and went 4-for-4; Murphy back behind the plate Saturday vs the RH Sasaki. First pitch 6:10 PT / 9:10 PM ET — Game 2 of 3.",
+  note: "TODAY — ELDER vs WROBLESKI AT CHAVEZ RAVINE, RUBBER MATCH — Atlanta (27-13, .675, still MLB-best) closes the LAD series after Saturday's emotional 7-2 W (Strider 6 IP / 1 H / 0 ER / 8 K · Albies & Olson 2-RBI singles · Riley/Harris II/Baldwin all chip in · Pages 9th-inning HR off the pen prevents the shutout · pregame moment of silence for HOF manager BOBBY COX who passed Saturday at 84). Bryce Elder (3-1, 2.02 ERA, 1.06 WHIP, 49 IP, 45 K / 16 BB through 8 starts) draws Justin Wrobleski (5-0, 1.25 ERA, 1.00 WHIP, 36 IP) — the Dodgers LHP leads NL in ERA but has just 15 K all year (zero in his last 6 IP). Acuña Jr. still ticketed to be back Wednesday May 13 vs WSH (first IL-eligible day) per Weiss. Mother's Day matinee in LA · first pitch 1:10 PT / 4:10 PM ET · Game 3 of 3.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-09", opp: "LAD", home: false, atlScore: 7, oppScore: 2, result: "W", note: "STRIDER STRIDES BACK, BRAVES SNAP 8-GAME LAD STADIUM SKID — On a heavy night honoring HOF manager BOBBY COX (died Saturday at 84) and founding owner TED TURNER (passed May 6 at 87) with a pregame moment of silence, Spencer Strider (W, 1-0) responded with the start of the season: 6 IP / 1 H (Will Smith 1st-inning single) / 0 ER / 2 BB / 8 K on 90 pitches with 15 whiffs (a season-high). Atlanta hammered Blake Snell (LP, 0-1) for 5 ER in his season debut: with the bases loaded in the 2nd, Albies stretched out for a 2-RBI single, then Olson followed with another 2-RBI single, then Riley/Harris II/Baldwin chipped in for a 5-0 lead. Snell out after 3 IP / 6 H / 4 ER / 2 BB / 5 K, 77 pitches. The Atlanta bullpen took it home (Iglesias did not pitch). Andy Pages broke up the shutout with a 2-run HR off the pen in the 9th. Atlanta improves to 27-13 (.675, still MLB-best), snaps an 8-game losing streak at Dodger Stadium, and evens the series 1-1 ahead of Sunday's Elder/Wrobleski rubber match." },
   { date: "2026-05-08", opp: "LAD", home: false, atlScore: 1, oppScore: 3, result: "L", note: "FREEMAN HOMERS, OHTANI DRIVES IN GO-AHEAD RUN — The Dodgers won the series opener 3-1, dropping Atlanta to 26-13. Chris Sale (LP, 6-2) was excellent in defeat: 7 IP / 5 H / 3 R / 2 ER / 7 K / 0 BB. Austin Riley's 2nd-inning RBI single off Emmet Sheehan gave Atlanta a brief 1-0 lead before Sheehan struck out the next two. Kyle Tucker's bloop RBI double in the bottom of the 2nd tied it. With two outs in the 5th, Miguel Rojas reached on an error and Shohei Ohtani lined an RBI single up the middle to put LAD ahead 2-1. Freddie Freeman led off the 6th with a 413-ft HR to CF (#4) — his 100th career HR as a Dodger, joining 36 others to do so in franchise history. Sheehan: 4.2 IP / 6 H / 1 ER / 1 BB / 7 K. The LAD bullpen (Vesia W 1-0, Hurt, Klein, Stewart, Tanner Scott SV #3) shut ATL down for the final 4.1 innings. Michael Harris II went 4-for-4 batting cleanup in his return to CF (just the 10th cleanup start of his career). Atlanta dropped its 8th straight game at Dodger Stadium. Pregame: Carlos Carrasco re-signed to a minor-league deal and reported to Triple-A Gwinnett." },
   { date: "2026-05-06", opp: "SEA", home: false, atlScore: 1, oppScore: 3, result: "L", note: "FIRST SERIES LOSS OF 2026 — Bryan Woo (W, 2-2) shut Atlanta down in the rubber match: 6 IP / 1 H / 2 BB / 9 K (tied his season-high) on a season-high 98 pitches (66 strikes). Mauricio Dubón's two-out single in the 4th was the Braves' ONLY hit off Woo; ATL finished with 4 H, 2 BB, and 12 K total. Pereda led off the 3rd with a single, Leo Rivas doubled, and J.P. Crawford walked to load the bases — Cal Raleigh's 6-4-3 DP scored the first run, and Cole Young (3-for-4, 2 doubles) added an RBI 2B in the same inning. Julio Rodríguez crushed a solo HR (#5) in the 6th off Pérez. José Ferrer pitched a 1-2-3 9th for his 2nd save. Martín Pérez (LP, 2-2): 5.2 IP / 5 H / 2 ER / 3 BB / 5 K — quality start wasted. Atlanta drops to 26-12; the eight-series win streak (and 10-0-1 series mark to open the year) is over. Pregame roster move: SS/IF JIM JARVIS selected from Triple-A Gwinnett for his MLB debut (started SS, batted 9th); José Azocar DFA'd in the corresponding move." },
   { date: "2026-05-05", opp: "SEA", home: false, atlScore: 3, oppScore: 2, result: "W", note: "OLSON WALKS BACK SEATTLE — Matt Olson led off the 9th with a 110-mph, 412-ft tiebreaking HR (NL-leading #13) into the LCF seats off Mariners closer Andrés Muñoz on a hung 2-1 slider, lifting Atlanta past Seattle 3-2 and to 26-11. Bryce Elder (ND): 6 IP / 2 H / 2 ER / 3 BB / 9 K (season-high) — only blemish a Cal Raleigh solo HR. George Kirby (ND for SEA): 7 IP / 5 H / 2 ER / 1 BB / 5 K. Robert Suarez (W, 3-0) tossed a clean 8th. Pre-game roster moves: Raisel Iglesias activated from the 15-day IL (Carrasco DFA'd in the corresponding move); Iglesias closed the 9th for his 6th save in his first appearance back. Dylan Dodd began a Triple-A Gwinnett rehab assignment; he could rejoin the bullpen by Friday's LAD opener. Walt Weiss also confirmed Michael Harris II will be DH-only for the next ~week to nurse the left quad without an IL trip." },
@@ -1088,39 +1092,38 @@ export const RESULTS = [
   { date: "2026-05-01", opp: "COL", home: false, atlScore: 8, oppScore: 6, result: "W", note: "INSTANT CLASSIC AT COORS — Atlanta erased a 6-0 deficit with EIGHT UNANSWERED runs, capped by Michael Harris II's pinch-hit 2-run HR off Tyler Kinley in the 9th. Tied for the franchise's largest comeback ever at Coors Field. Holmes got bullied by altitude (4 IP / 4 ER / 6 H, ND); Quintana matched zeros for COL through 4. The Braves scratched a run in the 7th, then exploded for 4 in the 8th — Mauricio Dubón's BASES-LOADED TRIPLE the dagger that tied it 6-6, with Olson's #10 HR fueling the cushion. Didier Fuentes (W, 1-0) went 2 scoreless out of the pen (5th–6th, 3 K). Pierce Johnson worked a clean 9th for his first save. Atlanta moves to 23-10 and 7.5 GM up on MIA. Pregame: Suárez and Payamps DFA'd; Stratton and Molina recalled/selected from Triple-A Gwinnett." },
   { date: "2026-04-30", opp: "DET", home: true,  atlScore: 2, oppScore: 5, result: "L", note: "Tigers avoid the sweep with a 4-run 8th. Bryce Elder (ND) was excellent: 6 IP / 6 H / 1 ER / 3 BB / 5 K, exiting with a 2-1 lead. Joel Payamps gave up Carpenter's leadoff triple to start the 8th and Vierling's tying double chased him; Aaron Bummer relieved, walked McGonigle, then Gleyber Torres's go-ahead sac fly made it 3-2. José Suárez (LP) walked Pérez and Hao-Yu Lee in the 9th, Yastrzemski misplayed Vierling's third hit for an error, and Dingler's double iced it at 5-2. Atlanta still takes the series 2-1; the 10-game ATL streak vs DET ends. Tigers finish April 14-13 and stay atop the AL Central at 16-16 on the trip." },
   { date: "2026-04-29", opp: "DET", home: true,  atlScore: 4, oppScore: 3, result: "W", note: "WALK-OFF — Matt Olson clubbed a 2-run, 397-ft HR (#9) into the Atlanta bullpen off ex-Brave Kenley Jansen on the 5th pitch of the AB, after Albies opened the 9th with a walk. Spoiled a dominant Tarik Skubal start (7 IP / 5 H / 2 ER / 0 BB / 7 K, 91 pitches) — Albies 2-run HR (#7) in the 1st was Atlanta's only damage off the AL Cy Young. JR Ritchie pitched into the 6th in his second MLB start (ND); a pickoff-throw error on McGonigle in the 2nd let DET tie it. Reynaldo López (W, 2-1) was the difference: 2 scoreless / 0 H / 2 K out of the pen in the 8th–9th. Tigers closer Jansen has now allowed walk-off HRs in back-to-back outings." },
-  { date: "2026-04-28", opp: "DET", home: true,  atlScore: 5, oppScore: 2, result: "W", note: "Martín Pérez (W, 2-1) tossed 5 scoreless on 2 H / 4 BB / 5 K in the series opener vs the AL Central champs — first W over Detroit since Aug 25, 2019. Yastrzemski/Acuña hit back-to-back doubles in the 3rd, Acuña scored on Olson's sac fly for a 2-0 lead, and Albies smashed a 2-run HR (#6, 377 ft, 98.5 mph EV) off Tyler Holton in the 8th to put it away. DET RHP Casey Mize (LP, 2-2) left after 2.1 IP with right groin tightness. Atlanta improves to 21-9, tied with LAD for best in MLB." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 26, l: 13, pct: .667, gb: 0,    streak: "L2" },
-  { team: "WSH", name: "Washington Nationals",   w: 18, l: 21, pct: .462, gb: 8,    streak: "W2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 17, l: 22, pct: .436, gb: 9,    streak: "L2" },
-  { team: "MIA", name: "Miami Marlins",          w: 17, l: 22, pct: .436, gb: 9,    streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 15, l: 23, pct: .395, gb: 10.5, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 27, l: 13, pct: .675, gb: 0,    streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 18, l: 22, pct: .450, gb: 9,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 18, l: 22, pct: .450, gb: 9,    streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 18, l: 22, pct: .450, gb: 9,    streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 15, l: 24, pct: .385, gb: 11.5, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-09T09:00:00-04:00",
+  generatedAt: "2026-05-10T09:00:00-04:00",
   summary:
-    "STRIDER vs SASAKI TONIGHT AT CHAVEZ RAVINE AFTER FRIDAY'S 3-1 OPENING-NIGHT L — The Dodgers took the LAD-ATL series opener 3-1 Friday night despite a strong Chris Sale outing (LP, 6-2: 7 IP / 5 H / 3 R / 2 ER / 7 K / 0 BB). Freddie Freeman led off the 6th with his 100th career HR as a Dodger (#4, 413 ft to CF — joining 36 others to do so), Shohei Ohtani drove in the go-ahead run on a 2-out, 5th-inning RBI single after a Rojas error, and Kyle Tucker's 2nd-inning bloop RBI double tied things up after Austin Riley's RBI single off Sheehan. The Dodgers bullpen (Vesia W, Hurt, Klein, Stewart, Tanner Scott SV #3) shut Atlanta down for the final 4.1. Michael Harris II went 4-for-4 batting cleanup in his return to CF — quad-strain DH-only window over. Atlanta's 8th straight L at Dodger Stadium dropped them to 26-13 (.667). For Game 2, Atlanta swapped Spencer Strider (0-0, 8.10) into the Saturday slot ahead of JR Ritchie to align his throw day; he draws Roki Sasaki (1-3, 5.97 ERA, 1.67 WHIP, 26 K / 15 BB) — the Dodgers RHP who reportedly has been open to a minor-league assignment. WALT WEISS SAID FRIDAY ACUÑA HAS A 'VERY GOOD CHANCE' TO BE BACK WEDNESDAY — May 13, the first IL-eligible day, vs WSH at Truist. He was on the field doing agility work at Dodger Stadium with 'a few boxes left to check.' NL EAST LEAD HOLDS AT 8.0 GB OVER WSH (18-21, W2 over MIA) — Phillies fell 9-7 in 11 to COL (Crawford rookie HR pushed it to extras), Marlins lost 3-2 at home to WSH, Mets edged ARI 4-3 at Chase. Standings now: ATL 26-13, WSH 18-21 (-8.0), PHI 17-22 (-9.0), MIA 17-22 (-9.0), NYM 15-23 (-10.5). Olson (NL-leading 13 HR, .295/.366/.631, .997 OPS, 33 RBI) hitless Friday but still atop the NL leaderboard; Harris II's 4-for-4 makes him the new team batting leader at .345.",
+    "BOBBY COX, 84 — HOF Atlanta Braves manager and 14-straight-division-titles architect, died Saturday in Marietta, GA from complications of a 2019 stroke and longstanding heart issues. Cox finished his career with 2,401 W (4th all-time behind Mack/La Russa/McGraw), 5 NL pennants, the 1995 World Series title, and Hall of Fame enshrinement in 2014. His passing came three days after founding owner Ted Turner died at 87 (Lewy body dementia, May 6) — the same Ted Turner whose ownership tenure produced the 14-year run that Cox managed. Pregame at Dodger Stadium Saturday: a moment of silence for both. Then BRAVES W 7-2 OVER LAD — the most fitting tribute possible. SPENCER STRIDER (W, 1-0) was season-saving: 6 IP / 1 H / 0 ER / 2 BB / 8 K on 90 pitches and 15 whiffs, total reset from the May 3 Coors debut. Atlanta hammered Blake Snell (LP, 0-1) for 5 ER in 3 IP of his season debut: bases-loaded 2-RBI singles from Albies AND Olson started a 5-spot in the 2nd. Riley, Harris II, Baldwin all chipped in. Andy Pages's 9th-inning 2-run HR off the pen broke up the shutout. Atlanta snapped an 8-game LAD Stadium losing streak and improved to 27-13 (.675, MLB-best). TODAY — RUBBER MATCH at 4:10 PM ET: Bryce Elder (3-1, 2.02) vs Justin Wrobleski (5-0, NL-best 1.25 ERA — but 15 K all year, zero in his last 6 IP). NL EAST LEAD HOLDS AT 9.0 GB — three-way tie for 2nd at 18-22 (MIA, PHI, WSH). MIA W 8-7 over WSH (Marsee 3-run HR in 8th, Edwards game-tying HR in 7th). PHI W 9-3 over COL (Bohm 2 HR / 4 RBI; Schwarber 3-run HR; Harper pulled in 1st with migraine). NYM L 1-2 to ARI (Kelly 7 IP). Acuña Jr. still ticketed for Wed May 13 vs WSH (first IL-eligible day) per Weiss; Dodd's Gwinnett rehab is clean — activation likely this week.",
   keyTopics: [
-    { category: "result",      title: "L 1-3 at LAD Fri — Freeman 100th-as-Dodger HR, Ohtani RBI single decide it",         detail: "Sale (LP, 6-2): 7 IP / 5 H / 3 R / 2 ER / 7 K / 0 BB — quality start wasted. Riley's 2nd-inning RBI single gave ATL a brief 1-0 lead before Sheehan struck out the next two. Tucker's bloop RBI double tied it. With 2 outs in the 5th, Rojas reached on an error and Ohtani lined an RBI single up the middle. Freeman led off the 6th with a 413-ft solo HR (#4) — his 100th as a Dodger. Sheehan: 4.2 IP / 6 H / 1 ER / 1 BB / 7 K (W: Vesia 1-0, SV: Tanner Scott #3). Atlanta's 8th straight L at Dodger Stadium." },
-    { category: "rotation",    title: "TONIGHT — Strider (0-0, 8.10) vs Sasaki (1-3, 5.97) at Dodger Stadium",                detail: "Spencer Strider gets the ball Saturday at 9:10 PM ET — his 2nd start of 2026 after the rocky Coors debut May 3. ATL swapped him into the Saturday slot ahead of JR Ritchie to align his throw week, with Holmes/Ritchie pushed to the WSH homestand (Tue/Wed). Sasaki (1-3, 5.97 ERA, 1.67 WHIP, 26 K / 15 BB across 28.2 IP) opposes — the Dodgers RHP has scuffled with command and reportedly has been open to a minor-league assignment. First pitch 6:10 PT / 9:10 PM ET on FDSSE." },
-    { category: "injury",      title: "Acuña 'very good chance' to return Wednesday May 13 — first IL-eligible day",         detail: "Walt Weiss said pre-game Friday that Acuña has a 'very good chance' to be back in the lineup Wednesday May 13 vs WSH — the earliest day he's eligible to come off the 10-day IL (Grade 1 left hamstring). Acuña was seen on the field doing agility work at Dodger Stadium and has 'a few boxes left to check.' MRI results were positive and revealed no significant damage. Eli White / Bairon Velandia / Jorge Mateo continue to split RF reps." },
-    { category: "lineup",      title: "Harris II back in CF, 4-for-4 batting cleanup — quad window over",                    detail: "Michael Harris II returned to center field Friday and went 4-for-4 batting cleanup for just the 10th time in his career — clear sign the left quad has settled enough to get him back in the field after a week of DH-only usage. Slash now .345/.376/.578 (.954 OPS), 7 HR / 22 RBI in 32 G — back atop the team in average and OPS as Olson cooled. Removing the 'day-to-day' label going forward unless the quad flares again." },
-    { category: "standings",   title: "NL East lead holds at 8.0 GB — WSH up to 2nd at 18-21",                                detail: "Atlanta's 26-13 record stays comfortably ahead. WSH won 3-2 at MIA (W2) to climb to 18-21 — now 8.0 back. PHI fell 9-7 in 11 at home to COL (Crawford rookie HR pushed it to extras after a 6-0 PHI hole; Goodman 4 H / HR for COL) — drop to 17-22 (L2). MIA L 3-2 to WSH at home (L1). NYM beat ARI 4-3 at Chase (W1). Standings: ATL 26-13, WSH 18-21 (-8), PHI 17-22 (-9), MIA 17-22 (-9), NYM 15-23 (-10.5)." },
-    { category: "transaction", title: "Carrasco re-signed to MiLB deal — back to Gwinnett for stint #4",                     detail: "Carlos Carrasco cleared waivers after Tuesday's DFA and re-signed with Atlanta on a minor-league deal Friday, reporting to Triple-A Gwinnett for his fourth org stint of the season. The 39-year-old veteran has effectively become Atlanta's 41st man — summoned in MLB emergencies, then waived and re-signed. Logged 2.1 IP / 1 H / 0 ER / 2 K across his last two MLB games before the May 5 cut. Iglesias's IL activation that week needed the 40-man spot." },
-    { category: "narrative",   title: "Three-game showdown at LAD — Atlanta's stiffest test of the year",                    detail: "ATL (26-13, MLB-best) at LAD (25-15, Ohtani-Freeman-Betts-Yamamoto) at Chavez Ravine for the weekend. The Dodgers have been Atlanta's October stone wall (10-3 in postseason play vs ATL all time) and have now beaten the Braves eight straight at Dodger Stadium across regular-season visits. Game 2 (Strider/Sasaki) Saturday, Game 3 (Elder/TBA) Sunday afternoon — Mother's Day matinee on the West Coast." },
-    { category: "milestone",   title: "Olson hitless Friday but still NL HR leader (13)",                                    detail: "Olson went 0-fer in his first action vs the LAD bullpen mix Friday, dropping his slash to .295/.366/.631 (.997 OPS) but holding onto the NL HR lead at 13 through 38 G. The 33 RBI is also NL top-tier; Saturday's spot vs Sasaki (1.67 WHIP, command issues) sets up a clear bounce-back opportunity. The 9th-inning go-ahead bomb in Seattle Tuesday and Monday's 300th-career HR remain the May centerpiece." },
-    { category: "milestone",   title: "Sale's NL-leading 56 K — 7 IP / 7 K / 0 BB at Dodger Stadium kept the streak going",  detail: "Sale's strikeout lead grew despite the L Friday: 7 K / 0 BB at Chavez Ravine pushes him to 56 K across 49 IP, NL-leading and top-15 in MLB. ERA up just slightly to 2.20, WHIP holds at 0.82. He's allowed two earned runs or fewer in seven of his eight starts. Tough-luck 6-2 record because Atlanta has scored 2 or fewer runs in three of his eight starts." },
-    { category: "milestone",   title: "Harris II takes over team batting lead — .345/.376/.578",                              detail: "After the 4-for-4 Friday, Michael Harris II's slash line jumps to .345/.376/.578 (.954 OPS), 7 HR / 22 RBI in 32 G — passing both Albies (.313) and Baldwin (.315) for the team batting lead. Albies still leads in hits (45) and is steady at .313/.358/.533 (.891 OPS), 8 HR / 23 RBI in 37 G. With Acuña likely back Wednesday, the lineup is staring at full strength again before the WSH homestand winds down." },
-    { category: "transaction", title: "Murphy back behind the plate Saturday vs RH Sasaki",                                  detail: "Sean Murphy sat Friday vs Sheehan (LHP) — Drake Baldwin caught and Dominic Smith took the DH at-bats. With Sasaki (RHP) on the mound Saturday, Murphy is expected back behind the plate as Walt Weiss continues phasing him in around the post-hip-surgery recovery rather than rushing a 50/50 split with Baldwin. He hit .333 (8-for-24) at Gwinnett before activation; the catching room remains Baldwin-first through May." },
-    { category: "transaction", title: "Dodd's Gwinnett rehab clean — activation expected this weekend / early next week",     detail: "LHP Dylan Dodd (left thoracic spine inflammation, 15-day IL since Apr 23) made a clean rehab outing for Triple-A Gwinnett Tuesday but the Braves did NOT reinstate him before the LAD opener. Likely target is the rest of the LAD weekend or the WSH homestand opener Tuesday. Restores a third lefty in the bullpen alongside Bummer and Lee. Corresponding move TBD — Stratton or Molina the likely option-down candidates." },
-    { category: "injury",      title: "Kim's Triple-A rehab continuing; mid-May Atlanta debut still in play",                detail: "Ha-Seong Kim's right middle finger torn tendon (Jan 2026 surgery) rehab is now at Triple-A Gwinnett after the Apr 28 transfer up from Double-A Columbus. Weiss still targeting mid-May for the activation. Dubón continues to bridge at SS; Mateo and Jarvis split the secondary middle-IF reps. With Acuña possibly back May 13, the next two roster reshuffles are queued up." },
+    { category: "narrative",   title: "Bobby Cox dies at 84 — 2,401-W manager who built the Braves dynasty",                  detail: "Hall of Fame manager Bobby Cox passed away Saturday May 9 in Marietta, GA at 84 — complications from a 2019 stroke and ongoing heart issues. Cox managed the Braves to 14 straight division titles (1991–2005), 5 NL pennants, the 1995 World Series title, and finished with 2,401 wins (4th all-time behind Connie Mack, Tony La Russa, and John McGraw). HOF inductee 2014. The Atlanta clubhouse, Truist Park, and the entire baseball world are in mourning. Pregame moment of silence at Dodger Stadium Saturday — paired with the same tribute for owner Ted Turner who passed three days earlier. AJC's Mark Bradley: 'He was the Braves.'" },
+    { category: "result",      title: "W 7-2 at LAD Sat — Strider 6 IP / 1 H / 0 ER / 8 K, snaps 8-game LAD Stadium skid",   detail: "Spencer Strider (W, 1-0) was extraordinary in his second start of 2026: 6 IP / 1 H (Will Smith 1st-inning single) / 0 ER / 2 BB / 8 K on 90 pitches with 15 whiffs (a season high). Atlanta hammered Blake Snell (LP, 0-1) in his season debut for 5 ER in 3 IP: bases-loaded 2-RBI singles from Albies and Olson kicked off a 5-spot in the 2nd. Riley, Harris II, Baldwin all drove in runs. Andy Pages broke up the shutout with a 2-run HR off the pen in the 9th. Atlanta's first W at Dodger Stadium since 2024 — snaps the 8-game regular-season skid in LA." },
+    { category: "rotation",    title: "TODAY — Elder (3-1, 2.02) vs Wrobleski (5-0, 1.25) at Dodger Stadium, rubber match",   detail: "Bryce Elder takes the ball for Atlanta in the LAD series finale Sunday at 4:10 PM ET on regular rest after the 9-K Seattle masterpiece (May 5: 6 IP / 2 H / 2 ER / 9 K). Justin Wrobleski (5-0, 1.25 ERA, 1.00 WHIP, 36 IP) opposes — the Dodgers LHP leads NL in ERA but has just 15 K all year and zero in his last 6 scoreless IP. Mother's Day matinee on the West Coast. ATL (27-13) trying to win the series outright; Sale opens the WSH homestand Thursday." },
+    { category: "narrative",   title: "Ted Turner, 87 — founder of CNN, owner who made the Braves America's Team",            detail: "Three days before Cox's passing, founding owner Ted Turner died at his Florida estate at 87 (Lewy body dementia). Turner bought the Braves in 1976, broadcast every game on his fledgling Atlanta superstation WTBS, and built the financial runway that eventually funded the 14-year Cox dynasty. CNN, the first 24-hour cable news channel, was Turner's other revolution. Owned the Braves through the 1995 WS title before merging with Time Warner in '96. Pregame Saturday: separate moment of silence at Dodger Stadium." },
+    { category: "milestone",   title: "Strider's reset — 6 IP / 1 H / 0 ER / 8 K, 15 whiffs in his 2nd 2026 start",          detail: "Spencer Strider's bounce-back was season-defining. After the rocky May 3 Coors debut (3.1 IP / 3 ER / 5 BB / 8.10 ERA) raised real concerns about his post-elbow-and-oblique command, Saturday answered them all: command back, slider had finishing depth, four-seamer 96-97. 15 whiffs is his season high; eight strikeouts on 90 pitches. Season line drops to 2.89 ERA / 1.29 WHIP across 9.1 IP, 14:7 K:BB. Next turn lines up for Friday or Saturday in the WSH/STL homestand." },
+    { category: "standings",   title: "NL East lead at 9.0 GB — three-way tie for 2nd at 18-22",                              detail: "Atlanta 27-13 (.675, MLB-best). MIA W 8-7 over WSH (Marsee 3-run HR in 8th, Edwards game-tying HR in 7th — Marlins rally from down 4). PHI W 9-3 over COL (Bohm 2 HR/4 RBI; Schwarber 3-run HR; Harper pulled in 1st with a migraine). NYM L 1-2 to ARI (Merrill Kelly 7 IP). New standings: ATL 27-13, MIA 18-22 (-9), PHI 18-22 (-9), WSH 18-22 (-9), NYM 15-24 (-11.5). Three-team logjam for 2nd place; NYM's 4-game slide pushes them deeper into the basement." },
+    { category: "injury",      title: "Acuña Jr. still on track for Wed May 13 — first IL-eligible day",                       detail: "Manager Walt Weiss reaffirmed pre-game Saturday that Acuña has a 'very good chance' to be back in the lineup Wednesday May 13 vs WSH at Truist — the earliest day he's eligible to come off the 10-day IL (Grade 1 left hamstring). Acuña was on the field again Saturday in LA going through agility work and Weiss said the on-field tests are 'looking good.' Eli White / Bairon Velandia / Jorge Mateo continue to split RF reps. White had a clean defensive night Saturday." },
+    { category: "lineup",      title: "Albies + Olson 2-RBI singles in the 2nd — five-run frame ends Snell's debut",          detail: "The decisive sequence Saturday came in the 2nd. Drake Baldwin walked, Riley singled, Harris II singled to load the bases. Then Albies stretched out for a 2-RBI single off Snell to make it 2-0. Olson followed with another 2-RBI single up the middle for 4-0. Riley/Baldwin/Harris II added a fifth run before Snell was lifted at 77 pitches with 5 runs (4 ER) on his ledger. Albies now .315/.360/.534 (.894 OPS), 8 HR / 25 RBI; Olson 13 HR / 35 RBI / .990 OPS — still NL HR leader." },
+    { category: "transaction", title: "Dodd's Gwinnett rehab clean — activation likely this week",                            detail: "LHP Dylan Dodd (left thoracic spine inflammation, 15-day IL since Apr 23) finished his Triple-A Gwinnett rehab assignment cleanly with a scoreless outing earlier in the week. The Braves did not reinstate him before the LAD weekend, but he's expected to be activated for the WSH homestand opener Tuesday May 12. Restores a third lefty in the bullpen alongside Bummer and Lee. Corresponding move TBD — Hunter Stratton or Anthony Molina the likely option-down candidates." },
+    { category: "milestone",   title: "Strider snaps 8-game ATL losing streak at Dodger Stadium",                              detail: "Atlanta hadn't won a regular-season game at Dodger Stadium since 2024 — eight straight Ls in LA stretching across 2024 and 2025 visits, plus Friday's 3-1 series-opener loss. Saturday's 7-2 W (combined with the emotional Cox/Turner pregame) makes this the most cathartic LAD road W of the Walt Weiss era. The Dodgers had also gone 10-3 vs Atlanta in postseason play all time. ATL still trying to win an LAD road series for the first time since June 2022 — Sunday's Elder vs Wrobleski result decides it." },
+    { category: "milestone",   title: "Olson NL HR leader at 13, 35 RBI; Albies up to 25 RBI",                                 detail: "Olson's 2-RBI single keeps him atop the NL HR leaderboard (13) and pushes him to 35 RBI (NL top-tier) through 39 G — slash now .296/.366/.624 (.990 OPS). Albies's 2-RBI single bumps him to 25 RBI in 38 G with a .315/.360/.534 (.894 OPS) line — still the most consistent table-setter behind Acuña's absence. Sunday's Wrobleski (5-0, 1.25 ERA, but only 15 K all year and zero in his last 6 IP) is a contact-pitcher matchup that should favor the lineup's average if not its power." },
+    { category: "lineup",      title: "Harris II 4-for-4 Fri + RBI Sat — quad clearly behind him",                            detail: "Michael Harris II had the breakout LAD weekend — 4-for-4 batting cleanup Friday in his first CF start back after the DH-only quad-recovery week, plus an RBI in the 5-spot 2nd inning Saturday. Slash sits at .342/.374/.574 (.948 OPS), 7 HR / 23 RBI in 33 G — still atop the team in OPS. Weiss has effectively closed the day-to-day quad chapter. With Acuña likely back Wednesday, Atlanta's full-strength outfield is days away." },
+    { category: "narrative",   title: "Sunday's rubber match decides Atlanta's first LAD road series since '22",               detail: "Atlanta hasn't won a regular-season series at Dodger Stadium since June 2022 — three full LA visits (2023, 2024, 2025) without one, plus the 2018 NLDS and 2020 NLCS series losses. Sunday's Elder vs Wrobleski is the rubber match that ends the drought or extends it. ATL bullpen is at full strength behind Iglesias (0.00 ERA, 6 SV) and Suarez (0.66 ERA, 3 SV) for late-game leverage; LAD pen has been weighed down by Snell's short start and the 9-inning marathon Friday." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "True Blue LA", "Dodger Blue", "Dodgers Beat", "Washington Post", "WRAL", "Sporting Tribune", "Athlon Sports", "ClutchPoints", "SI", "Heavy.com",
+    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "True Blue LA", "Dodgers Nation", "Dodger Blue", "Washington Post", "NBC News", "11Alive", "WSB-TV", "GPB", "FanSided", "World Baseball Network", "Lancaster Online", "True Blue LA", "Yahoo Sports MLB", "ClutchPoints",
   ],
 };
