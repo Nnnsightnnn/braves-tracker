@@ -1,25 +1,25 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 15, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 16, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// THU MAY 14 — IAN HAPP'S 8TH-INNING SHOT, CUBS AVOID THE SWEEP — Atlanta dropped
-// the Cubs series finale 2-0 at Truist but still won the 3-game set 2-1. Chris
-// Sale (LP, 6-3) was again great in a tough-luck L: 6 IP / 5 H / 1 UNEARNED R /
-// 2 BB / 8 K. Ben Brown (ND for CHC) opened with 4 IP / 1 H / 7 K on 65 pitches
-// in his 2nd straight start out of the bullpen; Hoby Milner (W, 1-0) took the
-// 2 scoreless middle innings, Phil Maton and Jacob Webb shutout frames, Daniel
-// Palencia 2 K in the 9th for SV #3. The only damage off Sale came in the 5th
-// (Rojas error + Cubs pressure scratched out the unearned run); Ian Happ's
-// 424-ft leadoff HR off the Chop House restaurant in the 8th made it 2-0. ATL
-// shut out for the 2nd time this season — five hits total. PRE-GAME (Wed/Thu
-// rolling): Walt Weiss confirmed Acuña Jr. WILL NOT be activated this
-// homestand (continues through BOS weekend series); Schwellenbach cleared to
-// begin throwing; Waldrep started bullpens at the Florida complex; Eli White
-// likely activated Monday; Murphy still ~8 weeks. Atlanta now 30-14 (.682,
-// still MLB-best). NL East THU: PHI W 3-1 at BOS (Schwarber MLB-leading HR #18),
-// WSH L 1-15 at CIN, MIA L 0-6 at MIN, NYM W 7-3 vs DET. Standings: ATL 30-14
-// (lead 9.0 GB), PHI 21-23 (-9.0), WSH 21-24 (-9.5), MIA 20-25 (-10.5), NYM
-// 18-25 (-11.5) — PHI leapfrogs into 2nd, WSH slides. FRI MAY 15 7:15 PM ET:
-// Spencer STRIDER (1-0, 2.89) vs LHP Connelly EARLY (3-2, 3.16) — BOS opens
-// the 3-game weekend set at Truist.
+// FRI MAY 15 — YASTRZEMSKI WALKS OFF THE RED SOX IN 10 — Atlanta beat Boston 3-2
+// at Truist Park on Mike Yastrzemski's RBI double to LCF in the bottom of the
+// 10th, scoring Ha-Seong Kim (the automatic runner) for the MLB-leading 31st W.
+// Drake Baldwin opened the scoring with a solo HR #12 to RF off Connelly Early
+// in the 1st; Michael Harris II followed with a solo HR #8 (L-vs-L) off Early
+// in the 4th. Mickey Gasper RBI single off Strider in the 6th made it 2-1,
+// then Marcelo Mayer's solo HR off Tyler Kinley in the 7th tied it 2-2 — the
+// game stayed knotted into extras. Strider (ND): 5.1 IP / 3 H / 1 ER / 3 BB /
+// 4 K on 84 pitches in his 3rd 2026 start (ERA dips to 2.45). Sandy León made
+// his first start at catcher (Murphy IL) and threw out TWO Red Sox base
+// stealers, including a back-pick to end the 9th. Suárez (W, 5-0) tossed a
+// clean 10th to extend his perfect record. Yastrzemski's walk-off was his
+// 7th career walk-off hit — and a poetic moment for Carl's grandson against
+// the Boston franchise his grandfather played 23 years for. Atlanta improves
+// to 31-14 (.689, still MLB-best, W1). NL East FRI: PHI W 11-9 (10) at PIT
+// (now 22-23, W2), WSH W vs BAL (22-24, W1), MIA L vs TBR (20-26, L2), NYM L
+// 2-5 vs NYY (18-26, L1). Standings: ATL 31-14, PHI 22-23 (-9.0), WSH 22-24
+// (-9.5), MIA 20-26 (-11.5), NYM 18-26 (-12.5). SAT MAY 16 7:15 PM ET: Bryce
+// ELDER (4-1, 1.81) vs LHP Payton TOLLE (1-2, 2.78) — middle game of the BOS
+// weekend set at Truist Park.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -146,8 +146,8 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .337, obp: .369, slg: .568, ops: .937, hr: 7, rbi: 23, sb: 2, bb: 6, so: 19, games: 34, wrcPlus: null },
-    statNote: "FULL CF, FULL HEALTH — Three straight starts in CF at Dodger Stadium with no quad limitations confirms the late-April scare is behind him. 1-for-5 Sunday vs Wrobleski to round out the LAD series; slash holds at .337/.369/.568 (.937 OPS), 7 HR / 23 RBI in 34 G — still atop the team in OPS. With Acuña likely back Wednesday, the full-strength outfield finally arrives mid-week.",
+    stats: { avg: .333, obp: .365, slg: .576, ops: .941, hr: 8, rbi: 24, sb: 2, bb: 6, so: 20, games: 35, wrcPlus: null },
+    statNote: "HR #8 OFF EARLY (L-vs-L) — 7-GAME HIT STREAK — Harris II followed Baldwin's 1st-inning HR with a solo shot of his own off LHP Connelly Early in the 4th of Friday's 3-2 walk-off W vs BOS — his first home run off a left-hander since 2025 and his 8th HR of 2026. 1-for-4 on the night extends his hit streak to 7 games. Slash holds at .333/.365/.576 (.941 OPS), 8 HR / 24 RBI through 35 G — still atop the team in OPS among everyday position players (Olson 1.003, Baldwin .958 ahead). With Acuña still out, Harris remains the centerpiece bat in the middle of the order.",
     form: 9.8,
     status: "active",
     injuryNote: null,
@@ -167,9 +167,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .314, obp: .385, slg: .564, ops: .949, hr: 11, rbi: 32, sb: 1, bb: 14, so: 33, games: 39 },
-    statNote: "HR #11 IN HIS 1ST START AS UN-ASTERISKED PRIMARY CATCHER — Baldwin homered off Shota Imanaga in the 4th inning of Wednesday's 4-1 W over the Cubs (4th of the year off a left-hander), opening the scoring in his first start since Sean Murphy hit the 10-day IL with a fractured left middle finger. Slash now sits at .314/.385/.564 (.949 OPS), 11 HR / 32 RBI through 39 G — Baldwin has caught both Cubs games of the series. Backup is 37-year-old veteran Sandy León (re-signed Tuesday). With Murphy out ~8 weeks, Baldwin profiles for 5-of-7 starts behind the plate and the All-Star case is now the loudest among NL catchers.",
-    form: 9.4,
+    stats: { avg: .313, obp: .383, slg: .575, ops: .958, hr: 12, rbi: 33, sb: 1, bb: 14, so: 34, games: 40 },
+    statNote: "HR #12 IN THE 1ST OFF EARLY — DH'D AS LEÓN CAUGHT — Baldwin opened the scoring Friday night vs BOS with a solo HR to RF off LHP Connelly Early in the bottom of the 1st (his 5th HR vs a LHP this year). Atlanta gave Sandy León the catcher's mask in his first start so Baldwin could DH and stay in the lineup — Baldwin went 1-for-4. Slash now .313/.383/.575 (.958 OPS), 12 HR / 33 RBI across 40 G. With Murphy out ~8 weeks, Baldwin profiles for 5-of-7 days behind the plate (DH on the off-days like Friday) and the All-Star case is now unambiguously loudest among NL catchers.",
+    form: 9.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -232,9 +232,9 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 35, experience: 8,
-    stats: { avg: .230, obp: .297, slg: .355, ops: .652, hr: 1, rbi: 10, sb: 1, bb: 8, so: 27, games: 32, doubles: 5 },
-    statNote: "BACK-TO-BACK CLUTCH NIGHTS — PINCH-HIT GO-AHEAD RBI DOUBLE WED — Yastrzemski came off the bench in Wednesday's 4-1 W to drill a pinch-hit go-ahead RBI double off Cubs RP Phil Maton in the bottom of the 8th, immediately after Shota Imanaga was pulled. It came on the heels of Tuesday's signature night (2-for-2, FIRST HR of 2026, 3 RBI). The 35-year-old's slash has climbed from .207/.278/.272 (.550 OPS) Sunday to .230/.297/.355 (.652 OPS), 1 HR / 10 RBI through 32 G. With Acuña ruled out this homestand and Eli White still concussed, Yastrzemski is the de facto RF — and the timing of his bat finally showing up could not be better.",
-    form: 8.0,
+    stats: { avg: .238, obp: .305, slg: .368, ops: .673, hr: 1, rbi: 11, sb: 1, bb: 8, so: 28, games: 33, doubles: 6 },
+    statNote: "WALKS IT OFF IN 10 — 7TH CAREER WALK-OFF HIT — Yastrzemski drilled a 10th-inning RBI double to LCF off BOS RP Steven Matz with 0 outs Friday night, scoring automatic runner Ha-Seong Kim from 2nd to give Atlanta a 3-2 walk-off W in the BOS series opener. Yaz fouled two sac-bunt attempts before drilling the game-winner — his 7th career walk-off hit. Poetic given his grandfather (Carl) was a Red Sox legend for 23 years. Slash climbs to .238/.305/.368 (.673 OPS), 1 HR / 11 RBI / 6 2B across 33 G. With Acuña still out and Eli White concussed, Yaz remains the everyday RF — and is now 4-for-his-last-9 with 3 RBI across the last three games.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33341.png",
@@ -367,9 +367,9 @@ export const PLAYERS = [
     lineupSpot: null,
     bats: "S", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 37, experience: 12,
-    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "SIGNED A BIG-LEAGUE DEAL TUE — Atlanta signed the 37-year-old veteran catcher to a major-league contract Tuesday to replace Sean Murphy on the active roster (fractured left middle finger, ~8 weeks out). León had been catching in the Mexican Pacific League this offseason and last appeared in the majors with the 2025 Braves (5 G). 2018 WS champ with Boston, career .197/.262/.300 across 11 MLB seasons (BOS / WSH / MIA / CLE / MIN / TEX / ATL). Strict defense-and-game-call backup — Drake Baldwin is the unambiguous primary catcher behind the plate.",
-    form: 5.0,
+    stats: { avg: .000, obp: .000, slg: .000, ops: .000, hr: 0, rbi: 0, games: 1, so: 1 },
+    statNote: "FIRST START AS A BRAVE — TWO RUNNERS THROWN OUT — León made his first start at catcher Friday night vs BOS (Baldwin DH'd) and was a defensive difference-maker: he threw out TWO Red Sox base stealers — one a back-pick to end the 9th — and helped Strider escape multiple counts. 0-for-3 with a K at the plate hitting 8th. The 2018 WS champ (with BOS — a poetic detail) is officially defense-and-game-call-only behind the plate while Baldwin handles the bulk of starts, but his back-pick night in his Atlanta debut justifies the MLB deal in one game.",
+    form: 6.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32101.png",
@@ -396,7 +396,7 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
     stats: { era: 1.96, whip: 0.80, ip: 55.0, k: 64, bb: 11, hr: null, w: 6, l: 3, games: 9, starts: 9 },
-    statNote: "ANOTHER TOUGH-LUCK L (6-3) — Sale was excellent again in defeat Thursday in the Cubs finale: 6 IP / 5 H / 1 UNEARNED R / 2 BB / 8 K vs Ben Brown's bullpen day. The lone run was the product of a Miguel Rojas-style infield miscue in the 5th — ERA dipped (1.96) but the L pushed the record to 6-3. Atlanta managed just 5 hits off five Cubs arms (Brown 4 IP / 1 H / 7 K, Milner W / 2 IP, Maton, Webb, Palencia SV); Ian Happ's 424-ft leadoff HR off the Chop House in the 8th made it 2-0 and the Braves were shut out for the 2nd time this year. Season line: 1.96 ERA / 0.80 WHIP / NL-leading 64 K across 9 starts. Lines up for the Tuesday opener at WSH on regular rest.",
+    statNote: "LINES UP FOR THE TUESDAY WSH ROAD OPENER — Sale watched Friday's walk-off W from the bench on regular rest. NL strikeout leader (64 K / 55 IP) and staff anchor — 1.96 ERA / 0.80 WHIP across 9 starts. Over his last 4 turns (vs LAD twice, the May 2 Coors gem, and the Thursday no-run-support L) he has allowed 4 ER over 26 IP for a 1.38 ERA but is only 1-1 in that stretch because the offense hasn't backed him. Tuesday at WSH would be the road-trip opener after the BOS series finale Sunday and Monday's off day.",
     form: 9.5,
     status: "active",
     injuryNote: null,
@@ -462,7 +462,7 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
     stats: { era: 1.81, whip: 1.04, ip: 54.2, k: 53, bb: 20, w: 4, l: 1, games: 9, starts: 9 },
-    statNote: "(W, 4-1) ELDER STIFLES THE DODGERS SUNDAY — 5⅔ IP / 1 H / 0 ER / 8 K / 4 BB at Chavez Ravine in the 7-2 series-clinching W. The lone hit was a Will Smith line-out single that fell. Elder threw 95 pitches and was pulled after walking three straight with two outs in the 6th — the runners stranded. Season ERA drops to 1.81 (best on the staff) across 9 starts; the 8 K's tied his season high. Next turn lines up for the weekend after the Cubs series on regular rest.",
+    statNote: "TAKES THE BALL SAT NIGHT vs BOS — 7:15 PM ET TONIGHT — Elder (4-1, 1.81 ERA, 1.04 WHIP, 53 K / 54.2 IP across 9 starts — staff-best ERA) starts the middle game of the BOS weekend set on regular rest after Sunday's Mother's Day gem at LAD (5⅔ IP / 1 H / 0 ER / 8 K). Opposite is BOS rookie LHP Payton Tolle (1-2, 2.78 ERA, 27 K / 0.88 WHIP) — the highest K/9 starter (11.7) on the Red Sox staff. With Acuña out and Yastrzemski's bat finally heating up, Atlanta enters with a chance to clinch the BOS series with a game to spare.",
     form: 9.4,
     status: "active",
     injuryNote: null,
@@ -570,9 +570,9 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 4,
-    stats: { era: 0.61, whip: 0.81, ip: 14.2, k: 15, bb: 2, sv: 3, hold: 1, games: 15, w: 4, l: 0 },
-    statNote: "(W, 4-0) — Suarez tossed a clean 8th in Wednesday's 4-1 W over the Cubs (1 IP / 0 H / 0 R / 1 K) to set up Iglesias's SV #8 and pick up his 4th W of the year. Now 14.2 IP across 15 G with a 0.61 ERA, 0.81 WHIP, 15 K / 2 BB and 3 SV from his fill-in closer stretch during Iglesias's IL stint. The closer-quality setup arm is the second-most-trusted high-leverage piece in the NL behind Iglesias himself.",
-    form: 8.9,
+    stats: { era: 0.56, whip: 0.81, ip: 16.0, k: 17, bb: 2, sv: 3, hold: 1, games: 17, w: 5, l: 0 },
+    statNote: "(W, 5-0) WALK-OFF SETUP IN THE 10TH FRI — Suarez tossed a clean 10th vs BOS Friday night (1 IP / 0 H / 0 R / 2 K) to stand as the pitcher of record when Yastrzemski drilled the walk-off RBI 2B in the bottom half. Now 5-0 on the year with a 0.56 ERA / 0.81 WHIP / 17 K-to-2 BB across 16 IP and 17 G — Atlanta is undefeated when he appears. The closer-quality 8th-inning arm has been the most consistent piece of the back-end alongside Iglesias.",
+    form: 9.2,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4148749.png",
@@ -635,9 +635,9 @@ export const PLAYERS = [
     bullpenRole: "middle",
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 35, experience: 7,
-    stats: { era: 1.80, whip: 1.20, ip: 15.0, k: 15, bb: 7, sv: 0, hold: null, games: 16, w: 3, l: 1 },
-    statNote: "BLEW THE 1-0 LEAD IN THE TOP 5TH WED — Kinley relieved JR Ritchie with one out in the top of the 5th of Wednesday's 4-1 W and gave up the game-tying RBI single to Nico Hoerner before escaping without further damage. Atlanta's bats picked him up with the 3-run 8th. Season line slips to 16 G, 1.80 ERA, 15 K / 15 IP — still a top-3 NL middle-relief profile from the offseason signing, and one bad swing of inheritance from a near-spotless season.",
-    form: 6.8,
+    stats: { era: 2.25, whip: 1.25, ip: 16.0, k: 16, bb: 7, sv: 0, hold: null, games: 17, w: 3, l: 1 },
+    statNote: "GAVE UP MAYER'S TYING HR IN THE 7TH FRI — Kinley relieved Strider in the top of the 6th of Friday's eventual 3-2 walk-off W vs BOS and gave up the game-tying solo HR to Marcelo Mayer in the 7th (a 392-ft shot to the LF seats) before the offense bailed him out in the 10th. Two leverage swings against him in the last three appearances — the high-K profile is still there (16 K / 16 IP) but the leadoff command has bled a touch. Season line: 17 G, 2.25 ERA, 1.25 WHIP — still a top-tier NL middle-relief signing on a 1-year, $1.5M deal.",
+    form: 6.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34166.png",
@@ -834,9 +834,9 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
-    stats: { era: 2.89, whip: 1.29, ip: 9.1, k: 14, bb: 7, w: 1, l: 0, games: 2, starts: 2 },
-    statNote: "STRIDES BACK — Spencer Strider (W, 1-0) was extraordinary in the 7-2 W at Dodger Stadium Saturday: 6 IP / 1 H (Will Smith first-inning single) / 0 ER / 2 BB / 8 K on 90 pitches and 15 whiffs (a season high), shutting down the defending-champ Dodgers lineup in his second start of 2026. Total reset from the May 3 Coors debut (3.1 IP / 3 ER / 5 BB) — command was back, the slider had finishing depth, and the four-seamer was 96-97 again. Season line drops to 2.89 ERA / 1.29 WHIP across 9.1 IP, 14:7 K:BB.",
-    form: 6.0,
+    stats: { era: 2.45, whip: 1.23, ip: 14.2, k: 18, bb: 10, w: 1, l: 0, games: 3, starts: 3 },
+    statNote: "(ND) FIRST TRUIST START OF 2026 — 5.1 / 1 ER / 4 K vs BOS — Strider got the no-decision in Atlanta's 3-2 walk-off W over Boston Friday night: 5.1 IP / 3 H / 1 ER / 3 BB / 4 K on 84 pitches (50 strikes) before getting the hook for Tyler Kinley with one out in the top of the 6th. The lone run scored on Mickey Gasper's two-out RBI single in the 6th. Not the dominant outing from Saturday at LAD — fastball command came and went, and the velo settled in the 95-96 band rather than the 96-97 he sat at Saturday. But Sandy León (catching for the first time, starting in place of the IL'd Murphy) threw out two Red Sox base stealers to keep things manageable. Season line: 2.45 ERA / 1.23 WHIP across 14.2 IP, 18:10 K:BB. Lines up next for Wed at WSH (or Thu) depending on rest.",
+    form: 7.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
@@ -1047,17 +1047,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-15",
-    weekday: "Fri",
-    time: "7:15 PM ET",
-    opp: "BOS",
-    home: true,
-    venue: "Truist Park",
-    atlSP: { id: "strider", name: "Spencer Strider", record: "1-0", era: 2.89, daysRest: 6, hand: "R" },
-    oppSP: { name: "Connelly Early", record: "3-2", era: 3.16, hand: "L" },
-    note: "Strider on regular rest after the season-best 6 IP / 1 H / 0 ER / 8 K at LAD May 9 · first start at Truist Park of 2026 · vs the Red Sox in a Patriots-Pioneers interleague weekend",
-  },
-  {
     date: "2026-05-16",
     weekday: "Sat",
     time: "7:15 PM ET",
@@ -1065,8 +1054,8 @@ export const UPCOMING_SCHEDULE = [
     home: true,
     venue: "Truist Park",
     atlSP: { id: "elder", name: "Bryce Elder", record: "4-1", era: 1.81, daysRest: 6, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Elder on regular rest after the 5⅔ scoreless / 8-K Mother's Day gem at Dodger Stadium · staff-best 1.81 ERA across 9 starts · Saturday primetime BOS middle game",
+    oppSP: { name: "Payton Tolle", record: "1-2", era: 2.78, hand: "L" },
+    note: "Elder on regular rest after the 5⅔ scoreless / 8-K Mother's Day gem at Dodger Stadium · staff-best 1.81 ERA across 9 starts · vs BOS rookie LHP Tolle (11.7 K/9) · ATL can clinch the series tonight",
   },
   {
     date: "2026-05-17",
@@ -1090,25 +1079,37 @@ export const UPCOMING_SCHEDULE = [
     oppSP: { name: "TBA", record: null, era: null, hand: null },
     note: "Road trip opener vs the 2nd-place Nationals — Sale on regular rest after the Thu 2-0 L (6 IP / 1 UR / 8 K) · NL-leading 64 K across 9 starts · WSH series 3 games before LAD comes to Truist",
   },
+  {
+    date: "2026-05-20",
+    weekday: "Wed",
+    time: "6:45 PM ET",
+    opp: "WSH",
+    home: false,
+    venue: "Nationals Park",
+    atlSP: { id: "strider", name: "Spencer Strider", record: "1-0", era: 2.45, daysRest: 4, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Strider's first road start of 2026 · regular rest after Friday's 5.1 IP / 1 ER / 4 K vs BOS (ND in the walk-off W) · WSH offense will be a test after the BAL series",
+  },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-15",
+  date: "2026-05-16",
   time: "7:15 PM ET",
   opp: "BOS",
   home: true,
   venue: "Truist Park · Atlanta, GA",
-  tv: "Apple TV+ / FDSSE",
+  tv: "BravesVision / FDSSE",
   probables: {
-    atl: { pitcher: "Spencer Strider", record: "1-0", era: 2.89 },
-    opp: { pitcher: "Connelly Early", record: "3-2", era: 3.16 },
+    atl: { pitcher: "Bryce Elder", record: "4-1", era: 1.81 },
+    opp: { pitcher: "Payton Tolle", record: "1-2", era: 2.78 },
   },
-  note: "FRI — INTERLEAGUE WEEKEND OPENS, STRIDER vs EARLY — Atlanta (30-14, .682, MLB-best, L1) opens a 3-game weekend interleague set with Boston (18-25) at Truist Park. Spencer Strider (1-0, 2.89 ERA, 14 K / 9.1 IP) makes his 3rd start of 2026 on regular rest after the season-best 6 IP / 1 H / 0 ER / 8 K at LAD Saturday. Red Sox LHP Connelly Early (3-2, 3.16 ERA, 39 K / 42.2 IP) gets the nod for Boston — he's coming off his best start (7 shutout IP vs TBR, 8 K). Atlanta comes in off the 2-0 series finale L Thursday in which the offense was shut out for just the 2nd time this season — Chris Sale (LP, 6-3) again excellent in defeat (6 IP / 1 UR / 8 K) and Ian Happ's 424-ft 8th-inning HR the dagger. Pre-game: Acuña Jr. confirmed out for this homestand (continues through Sunday's BOS finale) — target now the road trip that follows; Eli White likely activated Monday off the 7-day concussion IL; Schwellenbach cleared to begin throwing soon; Waldrep on bullpens in Florida; Murphy ~8 weeks with the fractured finger. Elder lines up Saturday, Pérez/Holmes Sunday TBD.",
+  note: "SAT — ELDER vs TOLLE, BOS MIDDLE GAME, ATL CAN CLINCH THE SERIES — Atlanta (31-14, .689, MLB-best, W1) plays the middle game of the 3-game BOS weekend interleague set at Truist Park after Friday night's walk-off thriller. Bryce Elder (4-1, 1.81 ERA — staff-best — 1.04 WHIP, 53 K / 54.2 IP) takes the ball on regular rest after Sunday's Mother's Day gem (5⅔ IP / 1 H / 0 ER / 8 K at LAD). Red Sox rookie LHP Payton Tolle (1-2, 2.78 ERA, 0.88 WHIP, 27 K) gets the start opposite — the highest K/9 starter (11.7) on the BOS staff, coming off 7 strong IP and 1 H vs DET. Atlanta wins it to clinch the BOS series with Sunday still to play. Pre-game: Acuña Jr. still out and pointing toward the WSH road trip; Eli White first eligible Monday on the 7-day concussion IL (likely Tuesday's road opener); Schwellenbach beginning the throwing ramp; Waldrep on bullpens in Florida; Murphy ~8 weeks. Holmes lines up for Sunday's finale.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-15", opp: "BOS", home: true, atlScore: 3, oppScore: 2, result: "W", note: "YASTRZEMSKI WALKS OFF THE RED SOX IN 10 — Atlanta beat Boston 3-2 in extra innings on Carl Yastrzemski's grandson Mike Yastrzemski's 10th-inning RBI double to LCF off Steven Matz, scoring automatic runner Ha-Seong Kim from 2nd to give Atlanta its MLB-leading 31st W. Yaz fouled two sac-bunt attempts before drilling the game-winner — his 7th career walk-off hit. The poetry: Carl played for the Red Sox for 23 years. Drake Baldwin (DH'd as Sandy León caught) opened the scoring with HR #12 to RF off Connelly Early in the 1st. Michael Harris II followed with HR #8 (L-vs-L) off Early in the 4th. Mickey Gasper RBI single off Strider in the 6th made it 2-1, then Marcelo Mayer's solo HR off Tyler Kinley tied it 2-2 in the 7th. Strider (ND): 5.1 IP / 3 H / 1 ER / 3 BB / 4 K (84 pitches) in his 3rd 2026 start — season ERA now 2.45. Sandy León's first start as a Brave was a defensive showcase: he threw out TWO Red Sox base stealers (including a back-pick to end the 9th). Robert Suarez (W, 5-0) tossed a clean 10th. Atlanta improves to 31-14, .689 — still MLB-best." },
   { date: "2026-05-14", opp: "CHC", home: true, atlScore: 0, oppScore: 2, result: "L", note: "IAN HAPP HOMERS, CUBS AVOID THE SWEEP — Chris Sale (LP, 6-3) was excellent again in defeat in the Cubs finale: 6 IP / 5 H / 1 UNEARNED R / 2 BB / 8 K. The lone run was scratched out in the top of the 5th on a Cubs pressure inning that included a Rojas-style miscue. Then with the lead clinging at 1-0, Ian Happ led off the 8th with a 424-ft HR off the Chop House restaurant in RF — a dagger that pushed it to 2-0. Atlanta managed just 5 hits across five Cubs arms: Ben Brown (ND) in his second straight start out of the bullpen worked 4 IP / 1 H / 7 K on 65 pitches; Hoby Milner (W, 1-0) 2 scoreless middle innings, Phil Maton and Jacob Webb scoreless frames, Daniel Palencia 2 K in the 9th for SV #3. ATL shut out for the 2nd time this season — and ATL fell to 30-14 (.682, still MLB-best). Braves still won the series 2-1; up next is BOS at Truist Friday-Sunday, with Strider in the opener vs Connelly Early. Pre-game: Acuña Jr. confirmed out for this homestand (i.e., through BOS); Schwellenbach cleared to begin throwing soon; Waldrep on bullpens in Florida." },
   { date: "2026-05-13", opp: "CHC", home: true, atlScore: 4, oppScore: 1, result: "W", note: "BRAVES CLINCH CUBS SERIES IN 8TH-INNING UPRISING — Atlanta beat the Cubs 4-1 to take the 3-game series with a game still to play, sending Chicago to a season-high 4th straight loss and pushing the MLB-best mark to 30-13 (.698). Drake Baldwin opened the scoring with a solo HR (#11) off Shota Imanaga in the bottom of the 4th. Tyler Kinley gave up the 1-1 tie on a Nico Hoerner RBI single in the top of the 5th — but escaped without further damage. The game stayed knotted until Imanaga (LP, 4-3) was pulled in the bottom of the 8th after a Michael Harris II infield single, and Cubs RP Phil Maton was the one who paid: pinch-hitter Mike Yastrzemski drilled a go-ahead RBI double to put Atlanta ahead 2-1, and Mauricio Dubón followed with a 2-run HR (#3) to push it to 4-1. Imanaga's final line: 7 IP / 4 H / 1 ER / 8 K — beaten by the bullpen behind him. JR Ritchie was solid but unspectacular (ND). Robert Suarez (W, 4-0) tossed a clean 8th; Raisel Iglesias 1-2-3 9th for SV #8, STILL 0.00 ERA / 0.50 WHIP on the year. Pregame: Walt Weiss confirmed Ronald Acuña Jr. WILL NOT be activated this homestand (the live-game test box is still unchecked) — target is the road trip that follows the BOS weekend series." },
   { date: "2026-05-12", opp: "CHC", home: true, atlScore: 5, oppScore: 2, result: "W", note: "COMBINED ONE-HITTER, YASTRZEMSKI'S NIGHT, MURPHY OUT — Atlanta (29-13, MLB-best) beat MLB's 2nd-best Cubs 5-2 in the top-of-the-standings showcase on a Grant Holmes (ND) / Didier Fuentes (W, 2-0) / Dylan Lee / Raisel Iglesias (SV #7) combined one-hitter — Alex Bregman's 4th-inning solo HR was the lone Cubs hit. Mike Yastrzemski's 2-run HR to right (his FIRST of 2026) in a 4-run 5th broke a 2-2 tie; Austin Riley's solo HR #6 to LF earlier in the inning tied it. Holmes: 4 IP / 1 H / 2 R / 4 BB / 5 K on 78 pitches; Fuentes 3 scoreless IP; Lee perfect 8th; Iglesias 1-2-3 9th. Colin Rea (LP, 4-2): 5 IP / 7 H / 5 ER. Dominic Smith ND. Pregame: SEAN MURPHY placed on the 10-day IL with a FRACTURED LEFT MIDDLE FINGER (re-imaged Tuesday, ~8 weeks per Weiss); SANDY LEÓN signed to a MLB deal; Jim Jarvis optioned to Gwinnett, José Azócar re-selected to MLB. Atlanta's first home game since the deaths of Bobby Cox (May 9, 84) and Ted Turner (May 6, 87) — pregame tributes." },
@@ -1124,34 +1125,34 @@ export const RESULTS = [
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 30, l: 14, pct: .682, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 21, l: 23, pct: .477, gb: 9.0,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 21, l: 24, pct: .467, gb: 9.5,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 20, l: 25, pct: .444, gb: 10.5, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 18, l: 25, pct: .419, gb: 11.5, streak: "W2" },
+  { team: "ATL", name: "Atlanta Braves",         w: 31, l: 14, pct: .689, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 22, l: 23, pct: .489, gb: 9.0,  streak: "W2" },
+  { team: "WSH", name: "Washington Nationals",   w: 22, l: 24, pct: .478, gb: 9.5,  streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 20, l: 26, pct: .435, gb: 11.5, streak: "L2" },
+  { team: "NYM", name: "New York Mets",          w: 18, l: 26, pct: .409, gb: 12.5, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-15T09:00:00-04:00",
+  generatedAt: "2026-05-16T09:00:00-04:00",
   summary:
-    "IAN HAPP HOMERS, CUBS AVOID THE SWEEP — CHRIS SALE THE LATEST TOUGH-LUCK STARTER, ATLANTA SHUT OUT FOR THE 2ND TIME IN 2026 — Atlanta lost the Cubs series finale 2-0 at Truist Thursday but still won the 3-game set 2-1. Chris Sale (LP, 6-3) was great in defeat: 6 IP / 5 H / 1 UNEARNED R / 2 BB / 8 K vs Ben Brown's bullpen day for Chicago. The lone run came in the top of the 5th after a Rojas-style miscue extended the inning. Then with the lead clinging at 1-0, Ian Happ led off the 8th with a 424-ft HR off the Chop House restaurant in RF — the dagger that made it 2-0. Cubs combined 5-arm shutout: Brown 4 IP / 1 H / 7 K, Hoby Milner (W, 1-0) 2 scoreless, Maton and Webb scoreless frames, Daniel Palencia 2 K for SV #3. Atlanta finished with just 5 hits — shut out for the 2nd time this year. PRE-GAME (Wed/Thu): Walt Weiss confirmed Ronald Acuña Jr. WILL NOT be activated this homestand (continues through the BOS weekend series) — target now the road trip that follows; Schwellenbach cleared to begin throwing soon; Waldrep on bullpens in Florida; Eli White likely activated Monday; Murphy still ~8 weeks. Atlanta now 30-14 (.682, MLB-best, L1). NL East THU: PHI W 3-1 at BOS (Schwarber MLB-leading HR #18 — 2-run shot in the 8th broke a scoreless tie), WSH L 1-15 at CIN, MIA L 0-6 at MIN, NYM W 7-3 vs DET. Standings: ATL 30-14, PHI 21-23 (-9.0), WSH 21-24 (-9.5), MIA 20-25 (-10.5), NYM 18-25 (-11.5) — PHI leapfrogs into 2nd, WSH slides. FRI 7:15 PM: Spencer STRIDER (1-0, 2.89) vs LHP Connelly EARLY (3-2, 3.16) — Red Sox open the 3-game weekend interleague set at Truist.",
+    "YAZ WALKS OFF THE RED SOX IN 10 — A POETIC NIGHT IN ATLANTA — Mike Yastrzemski, grandson of Red Sox legend Carl Yastrzemski, drilled a 10th-inning RBI double to LCF off Steven Matz to score automatic runner Ha-Seong Kim and give Atlanta a 3-2 walk-off W over Boston Friday night at Truist Park — his 7th career walk-off hit and a moment that played like a baseball novella. Earlier Drake Baldwin (DH'd Friday with León catching) opened the scoring with HR #12 to RF off LHP Connelly Early in the 1st, and Michael Harris II followed with HR #8 (L-vs-L) off Early in the 4th to make it 2-0. Mickey Gasper's RBI single off Strider in the 6th made it 2-1, and Marcelo Mayer's solo HR off Tyler Kinley in the 7th tied it. Strider (ND): 5.1 IP / 3 H / 1 ER / 3 BB / 4 K on 84 pitches in his 3rd 2026 start (ERA 2.45). Sandy León's first start as a Brave was a defensive showcase — he threw out TWO Red Sox base stealers (including a back-pick to end the 9th). Robert Suarez (W, 5-0) tossed a clean 10th to stay unbeaten. Atlanta improves to 31-14 (.689, MLB-best, W1). NL East FRI: PHI W 11-9 (10) at PIT (now 22-23, W2 — 5-of-6 since Mattingly replaced Thomson), WSH W vs BAL (22-24, W1), MIA L vs TBR (20-26, L2), NYM L 2-5 vs NYY (18-26, L1). Standings: ATL 31-14, PHI 22-23 (-9.0), WSH 22-24 (-9.5), MIA 20-26 (-11.5), NYM 18-26 (-12.5). SAT 7:15 PM: Bryce ELDER (4-1, 1.81) vs BOS LHP Payton TOLLE (1-2, 2.78) — Atlanta can clinch the BOS series with a game to spare.",
   keyTopics: [
-    { category: "result",      title: "THU: Cubs avoid the sweep 2-0, Sale the latest tough-luck starter",                            detail: "Atlanta lost the Cubs finale 2-0 Thursday — series taken 2-1 but the offense was shut out for the 2nd time this season. Chris Sale (LP, 6-3) was excellent again: 6 IP / 5 H / 1 UNEARNED R / 2 BB / 8 K. The Cubs scratched out the unearned run in the top of the 5th on Cubs pressure that included a Rojas-style miscue. Ian Happ's 424-ft leadoff HR off the Chop House in the 8th was the dagger. Atlanta managed just 5 H total off five Cubs arms: Ben Brown (ND) 4 IP / 1 H / 7 K on 65 pitches, Hoby Milner (W, 1-0) 2 scoreless, Maton & Webb scoreless, Daniel Palencia 2 K for SV #3. Atlanta drops to 30-14 (.682, MLB-best, L1). Still wins the series 2-1 — the Cubs leave Atlanta 27-15." },
-    { category: "rotation",    title: "FRI 7:15 PM — Strider (1-0, 2.89) vs Early (3-2, 3.16) opens the BOS weekend",                  detail: "Spencer Strider makes his 3rd start of 2026 on regular rest after the season-best 6 IP / 1 H / 0 ER / 8 K at LAD Saturday (14 K / 9.1 IP, 2.89 ERA). The first Truist start of the year. Red Sox LHP Connelly Early (3-2, 3.16 ERA, 39 K / 42.2 IP) gets the nod — coming off his best outing (7 shutout IP vs TBR with 8 K). BOS comes in 18-25 after the 3-1 W over the Phillies Thursday (Schwarber MLB-leading HR #18 ended the BOS bullpen scoreless run). Elder lines up Saturday, Holmes/Pérez Sunday." },
-    { category: "injury",      title: "Acuña Jr. WILL NOT be activated this homestand — target now the road trip",                   detail: "Manager Walt Weiss confirmed pre-game Wednesday that Ronald Acuña Jr. (Grade 1 left hamstring strain, on the IL since May 3) will NOT be activated during the current homestand, which continues through the Boston Red Sox series this weekend. The hamstring is 'progressing,' but the live-game / full-speed test box still hasn't been cleanly checked. Target is now the road trip that follows the BOS series — possibly the May 19 opener at WSH. With Yastrzemski's bat finally showing up and Mateo splitting RF reps, the lineup hole has been navigated — but Atlanta's MVP-vote OF still hasn't homered since Apr 24." },
-    { category: "standings",   title: "NL East lead now 9.0 GB — PHI leapfrogs into 2nd, WSH slides on 1-15 blowout L",                 detail: "Atlanta 30-14 (.682, MLB-best). THU NL East: PHI W 3-1 at BOS (Kyle Schwarber's MLB-leading 18th HR, a 2-run shot in the 8th that broke a scoreless tie), WSH L 1-15 at CIN (Reds offense erupted), MIA L 0-6 at MIN (Marlins shut out), NYM W 7-3 vs DET (Mets continue the surge — 2 in a row). Standings: ATL 30-14, PHI 21-23 (-9.0), WSH 21-24 (-9.5), MIA 20-25 (-10.5), NYM 18-25 (-11.5). PHI leapfrogs WSH for 2nd; the division remains decided in May." },
-    { category: "injury",      title: "Schwellenbach to start throwing soon; Waldrep on bullpens in Florida",                       detail: "Quintet of injury updates from Weiss this week: Spencer Schwellenbach should be cleared by doctors to begin throwing imminently — a meaningful step forward in the rehab from arthroscopic elbow surgery, with a late-June/July return on the table; Hurston Waldrep has begun throwing bullpens at the team's Florida complex but isn't yet scheduled for a rehab assignment (June return targeted); Eli White (7-day concussion IL) will likely be activated Monday on first eligibility; Joe Jiménez remains long-term out (knee). Schwellenbach + Waldrep returning would deepen the rotation behind Sale / Strider / Elder / Holmes precisely as the schedule tightens." },
-    { category: "milestone",   title: "Sale ERA dips to 1.96 despite the L — NL-leading 64 K through 9 starts",                        detail: "Chris Sale's no-decision pitching has become a theme — his Thursday line (6 IP / 1 UNEARNED R / 8 K) dropped his ERA to 1.96 / 0.80 WHIP across 55 IP. He's still the NL strikeout leader at 64, and over his last 4 starts (vs LAD twice, the May 2 Coors gem, and Thursday) he has allowed 4 earned runs over 26 IP for a 1.38 ERA — but is just 1-1 in that stretch because the lineup hasn't backed him with run support. The Cy Young profile is intact; the W-L is going to look worse than the underlying."  },
-    { category: "milestone",   title: "Iglesias still 0.00 ERA in 11.2 IP — Lee → Iglesias the deepest 7-8-9 in the NL",              detail: "Raisel Iglesias did not pitch Thursday (the offense never gave the pen a save situation) — but his line stays spotless: 0.00 ERA, 0.50 WHIP, 14 K / 1 BB across 11.2 IP since his IL return May 5, 8-of-8 in SV. The Dylan Lee → Robert Suarez → Iglesias 7-8-9 is the deepest back-end in the NL: Lee 1.15 ERA / 0.51 WHIP / 18 K through 15.2 IP, Suarez 4-0 / 0.61 ERA / 14.2 IP. Even without Joe Jiménez (long-term out), this is the most-trusted bullpen in either league right now." },
-    { category: "lineup",      title: "Atlanta shut out for the 2nd time in 2026 — 5 hits across 5 Cubs arms",                          detail: "The shutout Thursday is just the 2nd of the year for an offense that still leads MLB in runs scored. Five Cubs arms combined for it: Brown 4 IP / 1 H / 7 K, Milner (W) 2 scoreless, Maton and Webb scoreless frames, Palencia SV #3 with 2 K. With Acuña ruled out and the lineup leaning on Yastrzemski / Dubón as the table-setters, the bats had a quiet finale — but it would have been wholly different had Atlanta scratched out one R on Sale's tough-luck line. Strider Friday should bring better matchup energy with the rest of the order intact." },
-    { category: "lineup",      title: "Olson NL HR lead at 14, 1.003 OPS — consecutive-games streak now 825",                          detail: "Matt Olson sat through the shutout Thursday but the NL HR lead stays at 14 (1.003 OPS through 40 G) — first sustained 1.000+ OPS run of his career. The consecutive-games-played streak now stretches to 825 G, 4 short of Eddie Yost's 829 for 10th-longest in MLB history. Olson is on track for his 5th consecutive 30+ HR season, and the slow-start half of his career splits is now firmly behind him." },
-    { category: "milestone",   title: "Baldwin holding .314/.385/.564 — All-Star case loudest among NL catchers",                       detail: "Drake Baldwin's slash (.314/.385/.564, .949 OPS, 11 HR / 32 RBI through 39 G) is the loudest All-Star case in the NL catcher pool. With Sean Murphy out ~8 weeks (fractured left middle finger), Baldwin is the unambiguous primary backstop — Sandy León (signed to a MLB deal Tuesday) is the strict defensive backup. Baldwin caught all 9 in both Cubs games of the Tuesday-Thursday series." },
-    { category: "transaction", title: "León in the dugout, Jarvis to Gwinnett — Baldwin handles 5-of-7 going forward",                detail: "37-year-old veteran Sandy León (signed to a MLB deal Tuesday in the corresponding move when Murphy went to the 10-day IL with a fractured left middle finger) is officially the defense / game-call backup behind Baldwin. León didn't appear in either of the last two Cubs games — Baldwin caught all 9 both times. The expectation is that Baldwin handles 5-of-7 days for the next ~8 weeks while Murphy heals. Jim Jarvis was optioned to Triple-A Gwinnett in the same shuffle; José Azócar was re-selected to the active roster." },
-    { category: "injury",      title: "Eli White likely activated Monday on first 7-day concussion-IL eligibility",                  detail: "Eli White (placed on the 7-day concussion IL Sunday after the highlight wall-collision robbery of Max Muncy in the LAD finale) is on track to be activated Monday — the first day he's eligible. The 31-year-old has been a positive defender out of the OF rotation; his return helps backfill Acuña's absence further. With Yastrzemski now hitting and Mateo serviceable in CF/RF, the outfield is functioning more like a healthy unit than a depleted one." },
-    { category: "narrative",   title: "Cubs leave Atlanta at 28-15, Braves still the clear MLB-best team through 44 G",                 detail: "Atlanta won the series 2-1 against the Cubs — MLB's 2nd-best team coming into the week. The Cubs walked out 28-15 (.651) and 2.5 GB of Atlanta in the overall MLB pecking order. The 9.0-game NL East cushion plus the 2.5-game cushion over the Cubs makes Atlanta the clear MLB-best team through 44 G. The BOS series is interleague at home, then the road trip resumes at WSH and beyond." },
+    { category: "result",      title: "FRI: Yastrzemski walk-off RBI double in the 10th lifts Braves 3-2 over Red Sox",                  detail: "Atlanta beat Boston 3-2 in 10 innings Friday on a Mike Yastrzemski RBI double to LCF off LHP Steven Matz, scoring automatic runner Ha-Seong Kim. Yaz fouled two sac-bunt attempts before drilling the game-winner — his 7th career walk-off hit. The poetic detail: Carl Yastrzemski played for the Red Sox for 23 years; Mike just walked them off in Atlanta. Drake Baldwin opened the scoring with HR #12 to RF off Connelly Early in the 1st (his 5th HR off a LHP this year); Michael Harris II followed with HR #8 off Early in the 4th. Strider (ND): 5.1 / 1 ER / 4 K (3rd 2026 start, ERA dips to 2.45). Robert Suarez (W, 5-0) tossed a clean 10th." },
+    { category: "rotation",    title: "SAT 7:15 PM — Elder (4-1, 1.81) vs Tolle (1-2, 2.78), ATL can clinch the series",                  detail: "Bryce Elder takes the ball on regular rest after Sunday's Mother's Day gem at LAD (5⅔ IP / 1 H / 0 ER / 8 K). Staff-best 1.81 ERA / 1.04 WHIP / 53 K across 9 starts. Opposite is BOS rookie LHP Payton Tolle (1-2, 2.78 ERA, 0.88 WHIP, 27 K) — the highest K/9 starter on the Red Sox staff (11.7 K/9), coming off a 7 IP / 1 H gem vs DET. Atlanta wins it and the BOS series is in the bag with Sunday's finale still to play (Holmes lines up against TBA)." },
+    { category: "milestone",   title: "Yastrzemski's 7th career walk-off hit — and his first vs the Red Sox",                              detail: "Mike Yastrzemski's 10th-inning RBI double Friday was his 7th career walk-off hit — but his first against Boston, the franchise his grandfather Carl played for from 1961-83 and is enshrined in the HOF for. Slash climbs to .238/.305/.368, 6 doubles / 11 RBI / 1 HR across 33 G. The bat has fully arrived — Yaz is now 4-of-his-last-9 with 3 RBI as the de facto everyday RF while Acuña heals and Eli White finishes the concussion protocol." },
+    { category: "transaction", title: "Sandy León's Brave debut: 2 caught-stealings, including a 9th-inning back-pick",                  detail: "37-year-old Sandy León (signed to a MLB deal Tuesday when Murphy hit the 10-day IL) made his first start as a Brave behind the plate Friday and was a defensive difference-maker: he threw out TWO Red Sox base stealers, including a back-pick to end the top of the 9th that erased a runner who would have been the go-ahead run. Baldwin DH'd to keep the bat in the lineup. The 2018 WS champion (with Boston, no less) is officially defense-and-game-call-only, but he justified the MLB contract in one game." },
+    { category: "injury",      title: "Acuña Jr. still pointing toward the WSH road trip — Eli White Monday-eligible",                   detail: "Ronald Acuña Jr. (Grade 1 left hamstring strain, IL since May 3) continues to make progress in agility work but Manager Walt Weiss has held the line: not activated this homestand. The likely target is the road trip that opens at Washington on Tuesday May 19. Eli White (7-day concussion IL since the highlight wall-collision robbery of Max Muncy at LAD) is first-eligible Monday and could rejoin the active roster as the corresponding move for the WSH series opener. Murphy out ~8 weeks with the fractured left middle finger." },
+    { category: "injury",      title: "Schwellenbach starts the throwing ramp soon; Waldrep on bullpens in Florida",                       detail: "Spencer Schwellenbach is days away from being cleared to begin throwing in his rehab from arthroscopic elbow surgery — the first concrete step in what Weiss says is a late-June / July return window. Hurston Waldrep has begun throwing bullpens at the team's Florida complex but isn't yet on a rehab schedule (June targeted). AJ Smith-Shawver (Tommy John June 2025) and Joe Jiménez (knee) remain long-term out. The rotation depth that returns by July 4 (Schwellenbach / Waldrep) would line up perfectly for the second half." },
+    { category: "lineup",      title: "Baldwin (.958 OPS) and Harris II (.941 OPS) both homered off Early — the new core",                detail: "Drake Baldwin (.313/.383/.575, 12 HR / 33 RBI in 40 G) and Michael Harris II (.333/.365/.576, 8 HR / 24 RBI in 35 G) both went deep off BOS LHP Connelly Early in Friday's walk-off W — Baldwin in the 1st (his 5th HR off a LHP), Harris in the 4th (his first L-vs-L HR since 2025). They are the 2nd- and 3rd-best position-player OPS marks on the team behind Olson's 1.003 — and Baldwin is now the unambiguous All-Star case among NL catchers." },
+    { category: "milestone",   title: "Olson 1.003 OPS, NL HR lead at 14, 825-game consecutive-games streak",                                detail: "Matt Olson did not hit Friday but the 1.003 OPS and NL-leading 14 HR profile stays intact through 40 G. The consecutive-games-played streak now stretches to 825 G, just 4 short of Eddie Yost's 829 for 10th-longest in MLB history. On track for a 5th consecutive 30+ HR season and the slow-start half of his career arc is firmly in the past." },
+    { category: "milestone",   title: "Suarez 5-0 and 0.56 ERA — Atlanta undefeated when he appears",                                         detail: "Robert Suarez tossed a clean 10th Friday (1 IP / 0 H / 0 R / 2 K) to stand as the pitcher of record for the Yastrzemski walk-off — now 5-0 on the year with a 0.56 ERA / 0.81 WHIP / 17 K-to-2 BB across 16 IP and 17 G. Atlanta has won every game in which he's appeared. Combined with Iglesias (0.00 ERA / 8-of-8 SV) and Dylan Lee (1.15 ERA), the 7-8-9 back-end of the bullpen remains the deepest in the NL." },
+    { category: "standings",   title: "NL East lead now 9.0 GB — Phillies surge to 2nd, Mets fall to last",                                  detail: "Atlanta 31-14 (.689, MLB-best). FRI NL East: PHI W 11-9 (10) at PIT (now 22-23 — 5 of last 6 since Don Mattingly replaced Rob Thomson as manager, Kerkering's 1st save), WSH W vs BAL (22-24), MIA L vs TBR (20-26), NYM L 2-5 vs NYY (18-26). Standings: ATL 31-14, PHI 22-23 (-9.0), WSH 22-24 (-9.5), MIA 20-26 (-11.5), NYM 18-26 (-12.5). The Mets fall back to 5th — the division stays a one-team race deep into May." },
+    { category: "rotation",    title: "Strider's 3rd 2026 start: 5.1 IP / 1 ER, ERA dips to 2.45 despite the no-decision",                  detail: "Spencer Strider's 3rd start of 2026 wasn't the dominant LAD outing from Saturday but it still pushed the ERA down: 5.1 IP / 3 H / 1 ER / 3 BB / 4 K on 84 pitches (50 strikes). Pulled with 1 out in the top of the 6th for Kinley. The lone run scored on Mickey Gasper's 2-out RBI single in the 6th. Fastball settled in the 95-96 band rather than 96-97; the cutter and slider both had usable bite. Season line now 2.45 ERA / 1.23 WHIP / 18 K across 14.2 IP — back on a 4-day rest path toward Wed at WSH." },
+    { category: "narrative",   title: "Atlanta at 31-14, MLB-best, 9.0 GB up — and clinches a winning record vs BOS",                       detail: "The walk-off W means Atlanta has clinched at least a series split with BOS — and a W tonight would lock the series with a game to spare. Atlanta is 31-14 (.689) — the best record in MLB by 2.5 games and the largest divisional lead in baseball. The 45-game checkpoint puts Atlanta on a 112-win full-season pace; even regression to the mean would still mean a 96-100 W season and the NL East crown."  },
+    { category: "narrative",   title: "Phillies surge to 2nd on the back of Mattingly's hot start (13-4 since takeover)",                  detail: "Philadelphia is 5-of-6 since Don Mattingly replaced Rob Thomson as manager (and 13-4 overall in that stretch), capped by Friday's 11-9 10-inning W at PIT (Kerkering's 1st save). The Phillies have leapfrogged Washington into 2nd place at 22-23 — but they remain 9.0 GB of Atlanta. The Mets continue to slide (now 18-26 in last place) and the Marlins (20-26) have lost 2 straight. Division order: ATL, PHI, WSH, MIA, NYM." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "Heavy", "Athlon Sports", "Bleacher Nation", "DK Network", "Washington Post", "Bolavip US", "Cubs Insider", "Sofascore", "MSN", "Sports Illustrated", "Clutch Points",
+    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "Heavy", "Athlon Sports", "Bleacher Nation", "DK Network", "Washington Post", "Boston.com", "Boston Globe", "WRDW", "MSN", "Sports Illustrated", "Clutch Points",
   ],
 };
