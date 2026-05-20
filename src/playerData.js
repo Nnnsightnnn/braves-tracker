@@ -1,23 +1,23 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 19, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 20, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// MON MAY 18 — RITCHIE & BUMMER EACH ALLOW 6 RUNS, BRAVES SHUT OUT 12-0 BY
-// MARLINS — Atlanta opened the 4-game Miami road trip with a humbling 12-0 L
-// at LoanDepot Park, the lopsided loss of the year. JR Ritchie (LP, 1-1):
-// 4 IP / 6 H / 6 ER / 1 BB / 4 K — ERA up to 4.91. Aaron Bummer was wrecked
-// in relief (1 IP / 3 H / 5 BB / 6 R — Javier Sanoja GRAND SLAM, Xavier
-// Edwards back-to-back HR), ERA ballooning to 7.63. Just 4 hits, 0 HR on the
-// night; the bottom of the Marlins' rotation (their #5 starter day) handed
-// Atlanta its first shutout loss since Apr 22. Record drops to 32-16 (.667),
-// L1, but ATL still owns MLB's best mark. BIG NEWS PRE-GAME: ACUÑA JR.
-// ACTIVATED FROM 10-DAY IL AHEAD OF SCHEDULE — Weiss moved the plan up a day
-// after Acuña tested clean Monday; he was NOT in Monday's lineup but is
-// expected to start Tuesday at LoanDepot. ELI WHITE also activated from
-// the concussion IL in the corresponding move (Azócar optioned to Gwinnett).
-// TUESDAY MAY 19 4:10 PM ET: AFTERNOON GETAWAY GAME 2 OF 4 AT LOANDEPOT —
-// MARTÍN PÉREZ (2-2, 2.38) vs MIA LHP BRAXTON GARRETT, LHP-vs-LHP matchup.
+// TUE MAY 19 — ACUÑA JR. RETURNS, BRAVES BOUNCE BACK 8-4 OVER MARLINS — In
+// his first game back from the 10-day IL (left hamstring), Ronald Acuña Jr.
+// doubled, walked twice, and scored three times leading off at DH as Atlanta
+// snapped Monday's 12-0 shutout L with an 8-4 W at LoanDepot. Martín Pérez
+// (W, 3-2) was electric: 6 IP / career-high 10 K (slider working both sides
+// of the plate), ERA down to 2.18. Matt Olson 2 H / 2 BB / 3 RBI; Michael
+// Harris II HR (#9) + single; Mauricio Dubón 3 H including the go-ahead
+// 8th-inning RBI single; Ozzie Albies sac fly. Record improves to 33-16
+// (.673, still MLB-best). FLURRY OF ROSTER MOVES PRE-GAME: AARON BUMMER
+// RELEASED ($9.5M still owed); DRAKE BALDWIN PLACED ON 10-DAY IL (RIGHT
+// OBLIQUE STRAIN — MRI in Atlanta), JR RITCHIE OPTIONED TO TRIPLE-A GWINNETT
+// after Monday's 12-0 disaster, DYLAN DODD ACTIVATED FROM THE 10-DAY IL,
+// VICTOR MEDEROS RECALLED FROM GWINNETT, and Atlanta SELECTED VETERAN C
+// CHADWICK TROMP from Gwinnett to pair with Sandy León behind the plate.
+// WEDNESDAY MAY 20 6:40 PM ET: CHRIS SALE (6-3, 1.96) RETURNS TO THE MOUND
+// AFTER 13 DAYS REST vs MIA RHP JANSON JUNK — Game 3 of 4 at LoanDepot.
 // Murphy still ~8 weeks out (fractured finger); Schwellenbach cleared to
-// throw soon; Waldrep on bullpens in Florida; Dodd's Gwinnett rehab continues
-// (possible activation Friday vs LAD).
+// begin throwing; Waldrep on bullpens in Florida.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -38,9 +38,9 @@ export const PLAYERS = [
     lineupSpot: null,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: .238, obp: .349, slg: .368, ops: .717, hr: 2, rbi: 9, sb: 6, bb: 19, so: 32, games: 34 },
-    statNote: "ACTIVATED FROM 10-DAY IL AHEAD OF SCHEDULE (MON 5/18) — TUESDAY START EXPECTED — Atlanta reinstated Acuña from the IL Monday afternoon — a day earlier than the internal plan after he tested clean in pre-game work. He was NOT in Monday's starting lineup (the team wanted one more visual check on his movement on LoanDepot's turf), but Weiss confirmed he is expected to start Tuesday's getaway-day 4:10 PM game vs Braxton Garrett. Acuña hasn't homered since Apr 24, but Riley's Sunday 3-run HR and Yastrzemski's birthday HR kept the lineup going while he was out. The original plan was to wait for Friday's homestand vs LAD (grass) — Atlanta moved up after he aced the Monday agility checks. 13 G missed total.",
-    form: 5.5,
+    stats: { avg: .246, obp: .366, slg: .380, ops: .746, hr: 2, rbi: 9, sb: 6, bb: 21, so: 32, games: 35 },
+    statNote: "RETURNS — DOUBLES, WALKS TWICE, SCORES 3 IN 8-4 W AT MIAMI — In his first game back from the 10-day IL (left hamstring), Acuña started at DH and led off Tuesday's Game 2 at LoanDepot, going 1-for-2 with a double, two walks, and three runs scored as Atlanta bounced back 8-4 over the Marlins. The Acuña-Dubón-Olson top of the order looked like the 2026 plan again — Acuña drew leadoff walks in the 1st and 6th and scored both times. Movement on the basepaths looked unencumbered. Weiss said pre-game Acuña will be DH-only for a stretch as he ramps back up; outfield work resumes later this week. Slash climbs to .246/.366/.380, 2 HR / 9 RBI / 6 SB across 35 G.",
+    form: 7.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
@@ -59,8 +59,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .299, obp: .367, slg: .636, ops: 1.003, hr: 14, rbi: 36, sb: 0, bb: 16, so: 40, games: 40, doubles: 3 },
-    statNote: "HR #14 OFF WROBLESKI SUNDAY — Olson got the second of Atlanta's two homers off Wrobleski in the 7-2 W to close the LAD series, extending his NL HR lead to 14 and pushing his slash to .299/.367/.636 (1.003 OPS) — first time over 1.000 OPS this year. 36 RBI / 40 G / NL-leader bat for the second straight month. Three multi-hit games in the LAD series; the 6-game LA road trip ends with Olson having homered in 4 of the 7 trip games (Coors finale, Seattle walk-off Tuesday, Saturday's 2-RBI single, Sunday HR).",
+    stats: { avg: .298, obp: .371, slg: .627, ops: .998, hr: 14, rbi: 39, sb: 0, bb: 18, so: 40, games: 42, doubles: 3 },
+    statNote: "3 RBI / 2 H / 2 BB IN THE 8-4 BOUNCE-BACK W AT MIAMI — Olson stayed locked in Tuesday: 2-for-3 with a sac fly RBI behind Acuña, a 2-run single in the 8th to put Atlanta up 8-3, and two walks. The disciplined approach against Garrett (LP) and the MIA pen drove home three runs and pushed the season RBI count to 39. Slash holds at .298/.371/.627 (.998 OPS) — still NL HR co-leader at 14 and the NL FanGraphs WAR leader. Atlanta is 14-2 in games he drives in a run.",
     form: 9.6,
     status: "active",
     injuryNote: null,
@@ -123,9 +123,9 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: .314, obp: .359, slg: .530, ops: .889, hr: 8, rbi: 25, sb: 0, bb: 9, so: 21, games: 39, wOBA: .315, iso: .160 },
-    statNote: "QUIET SUN AT CHAVEZ RAVINE — Albies went 0-for-4 vs Wrobleski in the LAD series finale Sunday but the table was already set: Saturday's bases-loaded 2-RBI single off Snell remains the big LA moment. Slash holds at .314/.359/.530 (.889 OPS), 8 HR / 25 RBI through 39 G. Off-day Monday, then home for the first time in nearly two weeks Tuesday vs the Cubs.",
-    form: 9.0,
+    stats: { avg: .311, obp: .356, slg: .526, ops: .882, hr: 8, rbi: 26, sb: 0, bb: 9, so: 22, games: 41, wOBA: .315, iso: .160 },
+    statNote: "SAC FLY RBI IN THE 1ST — DRIVES IN THE FIRST RUN OF THE BOUNCE-BACK W — Albies cashed in Acuña's leadoff walk and stolen base with a sac fly to RF in the 1st of Tuesday's 8-4 W vs MIA, opening the scoring after Atlanta loaded the bases on Garrett's command issues. The contact ability was on point: 0-for-2 with 2 productive outs and a walk. Slash holds at .311/.356/.526 (.882 OPS), 8 HR / 26 RBI through 41 G.",
+    form: 8.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33783.png",
@@ -144,9 +144,9 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .333, obp: .365, slg: .576, ops: .941, hr: 8, rbi: 24, sb: 2, bb: 6, so: 20, games: 35, wrcPlus: null },
-    statNote: "HR #8 OFF EARLY (L-vs-L) — 7-GAME HIT STREAK — Harris II followed Baldwin's 1st-inning HR with a solo shot of his own off LHP Connelly Early in the 4th of Friday's 3-2 walk-off W vs BOS — his first home run off a left-hander since 2025 and his 8th HR of 2026. 1-for-4 on the night extends his hit streak to 7 games. Slash holds at .333/.365/.576 (.941 OPS), 8 HR / 24 RBI through 35 G — still atop the team in OPS among everyday position players (Olson 1.003, Baldwin .958 ahead). With Acuña still out, Harris remains the centerpiece bat in the middle of the order.",
-    form: 9.8,
+    stats: { avg: .333, obp: .362, slg: .583, ops: .945, hr: 9, rbi: 26, sb: 2, bb: 6, so: 22, games: 37, wrcPlus: null },
+    statNote: "HR #9 + 2-OUT RBI SINGLE IN BOUNCE-BACK W — Harris II turned on a Braxton Garrett pitch in the 2nd of Tuesday's 8-4 W at LoanDepot and crushed it for HR #9 to push it to 4-0. Later added a 2-out RBI single in the 1st to plate Olson (after Albies' sac fly) for a 2-0 lead. 2-for-5 / 2 RBI / HR — his 5th multi-RBI game in the last 9. Slash holds at .333/.362/.583 (.945 OPS), 9 HR / 26 RBI / 37 G. With Acuña back as DH-only, Harris continues to handle the middle of the order alongside Olson.",
+    form: 9.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -166,10 +166,10 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
     stats: { avg: .312, obp: .380, slg: .569, ops: .949, hr: 12, rbi: 35, sb: 1, bb: 14, so: 35, games: 41 },
-    statNote: "2-RBI 2-OUT SINGLE IN THE 3RD vs TOLLE — Baldwin drove in Atlanta's only runs of Saturday night's 3-2 L vs BOS with a 2-out, 2-strike single up the middle off rookie LHP Payton Tolle in the 3rd, briefly putting Atlanta ahead 2-0 (his 35th and 34th RBI of the year). Tolle then settled in for a career-high 8 strong IP. 1-for-4 on the night caps a Friday HR/Saturday hit BOS series. Slash holds at .312/.380/.569 (.949 OPS), 12 HR / 35 RBI across 41 G. Behind the plate full-time now with Murphy on the 10-day IL and Baldwin's All-Star case among NL catchers grows louder every week.",
-    form: 9.5,
-    status: "active",
-    injuryNote: null,
+    statNote: "PLACED ON 10-DAY IL — RIGHT OBLIQUE STRAIN — MRI PENDING — Atlanta placed Baldwin on the 10-day IL pre-game Tuesday with a right oblique strain; he returned to Atlanta from Miami for an MRI Tuesday afternoon. Severity unknown until imaging comes back, but oblique strains typically cost 4-8 weeks for catchers. A brutal blow on top of the Sean Murphy fracture — Atlanta now turns to a Sandy León / Chadwick Tromp tandem behind the plate. The All-Star catching case is on pause; the 2026 season line freezes at .312/.380/.569 (.949 OPS), 12 HR / 35 RBI across 41 G — still the NL's best catcher line by OPS.",
+    form: 0,
+    status: "il-10",
+    injuryNote: "RIGHT OBLIQUE STRAIN — placed on 10-day IL on May 19 (retroactive to May 18). Returned to Atlanta on Tuesday for an MRI to determine severity. Timeline unknown pending imaging; oblique strains for catchers typically run 4-8 weeks.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
     assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
@@ -231,8 +231,8 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 35, experience: 8,
     stats: { avg: .244, obp: .311, slg: .393, ops: .704, hr: 2, rbi: 12, sb: 1, bb: 8, so: 29, games: 34, doubles: 6 },
-    statNote: "BIRTHDAY LEADOFF HR vs BELLO (27th) — Yastrzemski celebrated his 27th birthday Sunday afternoon at Truist with a leadoff HR to right (#2 of '26) off Brayan Bello to lead off the 4th, extending a 3-0 lead to 4-0 in the 8-1 series-clinching W over BOS. Slash climbs to .244/.311/.393 (.704 OPS), 2 HR / 12 RBI / 6 2B across 34 G. Three nights of memorable swings in a row vs BOS: Friday walk-off, quiet Saturday, birthday HR Sunday. Still the everyday RF with Acuña on the IL and White on the concussion list; Eli White is first-eligible today (Mon) for the Miami road trip.",
-    form: 9.0,
+    statNote: "BENCHED FOR THE LHP — DUBÓN STARTED IN LF — Yastrzemski (L) sat for Tuesday's LHP-vs-LHP matchup (Pérez vs Garrett); Mauricio Dubón handled LF and made it count with a 3-hit night. With Acuña back as DH and Eli White in concussion-protocol RF reps, Yaz's playing time is going to be matchup-dependent now. Slash holds at .244/.311/.393 (.704 OPS), 2 HR / 12 RBI / 6 2B across 34 G. Will likely return to the lineup Wednesday vs MIA RHP Janson Junk.",
+    form: 8.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33341.png",
@@ -252,9 +252,9 @@ export const PLAYERS = [
     lineupSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇭🇳 Honduras", age: 31, experience: 8,
-    stats: { avg: .293, obp: .339, slg: .493, ops: .832, hr: 3, rbi: 23, sb: 0, bb: 6, so: 21, games: 34, triples: 1, doubles: 7 },
-    statNote: "HR #3 + 2-RBI 8TH WEDNESDAY — DAGGER ON MATON — Dubón crushed a 2-run HR off Cubs RP Phil Maton in the bottom of the 8th of Wednesday's 4-1 W, two batters after Yastrzemski's pinch-hit go-ahead RBI double — pushing it from a 1-1 tie to a 4-1 dagger. Slash climbs to .293/.339/.493 (.832 OPS), 23 RBI through 34 G. Back-to-back swing-of-the-week candidates with Sunday's 3-RBI double at LAD. He's now the everyday SS even with Hyeseong Kim active (Weiss is easing Kim in via UT reps) — one of the best in-season value-adds in the NL.",
-    form: 8.6,
+    stats: { avg: .306, obp: .349, slg: .500, ops: .849, hr: 3, rbi: 24, sb: 0, bb: 6, so: 22, games: 35, triples: 1, doubles: 7 },
+    statNote: "3 HITS + GO-AHEAD 8TH-INNING RBI SINGLE IN BOUNCE-BACK W — Started in LF (in for Yaz vs LHP Garrett) and went 3-for-5 with the go-ahead RBI single in the top of the 8th of Tuesday's 8-4 W, breaking a 3-3 tie and setting up Olson's 2-run single to put the game away. Slash climbs to .306/.349/.500 (.849 OPS), 24 RBI through 35 G. Three games in a row he has been the most impactful position-player swing for Atlanta. Weiss can now plug him at SS, LF, or RF on any matchup day — one of the best in-season value-adds in the NL.",
+    form: 9.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
@@ -382,6 +382,29 @@ export const PLAYERS = [
       { years: "2012–2020", team: "WSH / BOS", type: "MLB · 2018 WS champ (BOS)" },
     ],
   },
+  {
+    id: "tromp",
+    name: "Chadwick Tromp",
+    number: 41,
+    position: "C",
+    positionGroup: "batter",
+    lineupSpot: null,
+    bats: "R", throws: "R",
+    nationality: "🇦🇼 Aruba", age: 31, experience: 5,
+    stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
+    statNote: "CONTRACT SELECTED TUE — TANDEM WITH SANDY LEÓN BEHIND THE PLATE — Atlanta selected Tromp's contract from Triple-A Gwinnett pre-game Tuesday in the same flurry that placed Drake Baldwin on the 10-day IL (right oblique strain). The 31-year-old veteran will share catching duties with Sandy León while both Murphy (~8 weeks, fractured finger) and Baldwin (MRI pending) are out. Gwinnett line was a respectable .261 / 3 HR across 16 G. Power-over-hit profile with above-average framing — gives Weiss a legit 1A/1B catching tandem until Baldwin's MRI comes back.",
+    form: 6.0,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/35358.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
+    career: [
+      { years: "2026–", team: "Atlanta Braves", type: "MLB" },
+      { years: "2024–2025", team: "Atlanta Braves org", type: "MLB / AAA" },
+      { years: "2020–2023", team: "Various (SF, NYY org)", type: "MLB · debut 2020" },
+    ],
+  },
 
   // ── STARTING ROTATION ───────────────────────────────────────────────────────
   {
@@ -394,7 +417,7 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
     stats: { era: 1.96, whip: 0.80, ip: 55.0, k: 64, bb: 11, hr: null, w: 6, l: 3, games: 9, starts: 9 },
-    statNote: "LINES UP FOR WEDNESDAY AT MIAMI (#3 OF THE MIA SERIES) — Sale watched the entire BOS series from the bench on extra rest. The rotation cycle for the 4-game Marlins road set is Ritchie / Pérez / SALE / Strider, putting the ace on the mound Wed May 20 at 6:40 PM at LoanDepot Park vs RHP Janson Junk. NL strikeout leader (64 K / 55 IP) and staff anchor — 1.96 ERA / 0.80 WHIP across 9 starts. Over his last 4 turns he has allowed 4 ER across 26 IP for a 1.38 ERA but is only 1-1 in that stretch because the offense hasn't backed him.",
+    statNote: "STARTS WED 6:40 PM AT MIAMI vs JANSON JUNK — Sale takes the ball Wednesday at LoanDepot for his first start in 13 days (since the 5/7 LAD ND). 6-3 / 1.96 ERA / 0.80 WHIP / NL-leading 64 K across 9 starts; ATL is 8-1 in his outings. Over his last 4 turns he has allowed 4 ER in 26 IP for a 1.38 ERA. Long-rest version of the ace returns to face one of the worst lineups in MLB by wRC+; expectation is a 6-7-inning shut-down outing to set up Strider Thursday.",
     form: 9.5,
     status: "active",
     injuryNote: null,
@@ -502,9 +525,9 @@ export const PLAYERS = [
     rotationSpot: 6,
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
-    stats: { era: 2.38, whip: 1.03, ip: 34.0, k: 24, bb: 12, w: 2, l: 2, games: 7, starts: 5 },
-    statNote: "TUESDAY 4:10 PM AT LOANDEPOT — LHP-vs-LHP vs BRAXTON GARRETT — Pérez gets the ball for the afternoon getaway-day Game 2 of the Miami series on full rest (last out: Wed 5/13 at SEA, hard-luck L). Opposite is Marlins LHP Braxton Garrett making one of his first starts back from the IL (5 ER in 1.1 IP vs MIN in his lone outing 5/14). 2-2 / 2.38 ERA / 1.03 WHIP / 24:12 K:BB across 7 G / 5 starts — quietly the most efficient innings-eater in the rotation behind Sale. Atlanta needs a stop-the-bleeding outing after Monday's 12-0 loss.",
-    form: 7.6,
+    stats: { era: 2.18, whip: 1.00, ip: 40.0, k: 34, bb: 13, w: 3, l: 2, games: 8, starts: 6 },
+    statNote: "(W, 3-2) CAREER-HIGH 10 K — BOUNCE-BACK MASTERPIECE — Pérez was the story of Tuesday's 8-4 W at Miami: 6 IP / 4 H / 3 ER / 1 BB / 10 K (career-high) on 91 pitches. The slider was nasty both sides of the plate; eight of the ten Ks came on the slider. Pérez set Atlanta up to win after Monday's 12-0 humiliation. Season line drops to 3-2 / 2.18 ERA / 1.00 WHIP / 34:13 K:BB across 8 G / 6 starts — quietly the staff's most reliable arm behind Sale, and the $2M signing of the offseason is paying off in a major way. Atlanta needs another 5-6 IP from him in the next turn.",
+    form: 9.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -525,12 +548,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
     stats: { era: 4.91, whip: 1.58, ip: 26.0, k: 20, bb: 14, w: 1, l: 1, games: 5, starts: 5 },
-    statNote: "(LP, 1-1) BLOWN UP IN MIAMI — 6 ER IN 4 IP — Ritchie took the worst MLB beating of his career Monday night at LoanDepot, lasting just 4 IP and surrendering 6 ER on 6 H and 1 BB with 4 K in Atlanta's 12-0 L. The Marlins teed off early; Atlanta never got back into it. Season ERA climbs from 3.07 → 4.91 across 5 starts / 26 IP. The rookie's first real MLB rough night — a sober reminder that the rotation is leaning on a 22-year-old until Schwellenbach / Waldrep return. Likely next turn lines up for the Sat/Sun WSH road game.",
-    form: 7.6,
+    statNote: "OPTIONED TO TRIPLE-A GWINNETT — Ritchie was optioned back to Triple-A Gwinnett pre-game Tuesday in the corresponding move that recalled Victor Mederos. The 22-year-old's 4.91 ERA across 5 MLB starts (his worst outing was Monday's 6-ER blow-up in 4 IP) leaves him as 6th-starter depth — the rotation is now Sale / Strider / Pérez / Holmes / Elder with a long-relief mix. Ritchie will rebuild at Gwinnett and could be back when the schedule tightens; the long-term ceiling hasn't changed despite Monday's beat-down.",
+    form: 5.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut Apr 23, 2026" },
@@ -591,10 +614,10 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 32, experience: 9,
     stats: { era: 7.63, whip: 1.85, ip: 11.1, k: 9, bb: 9, sv: 0, hold: null, games: 15, w: 0, l: 1 },
-    statNote: "DISASTER OUTING IN MIAMI — 6 R / 5 BB IN 1 IP — Bummer was the bullpen scapegoat in Monday's 12-0 L: 1 IP / 3 H / 5 BB / 6 R, allowing back-to-back HR to Javier Sanoja (GRAND SLAM) and Xavier Edwards to blow the game open. Season ERA explodes from 4.35 → 7.63 across 15 G / 11.1 IP. The leadoff command that has bled all month gave up the ghost entirely Monday night — Atlanta needs Dodd back from rehab and Lee staying healthy more than ever now to absorb the LH leverage innings.",
-    form: 6.5,
-    status: "active",
-    injuryNote: null,
+    statNote: "RELEASED — ATLANTA EATS $9.5M REMAINING ON THE 2-YEAR DEAL — Atlanta released Bummer pre-game Tuesday after Monday's catastrophic 6 R / 5 BB outing in 1 IP. Final Atlanta line: 11.1 IP / 7.63 ERA / 1.85 WHIP across 15 G / 0-1 record. The team will remain on the hook for the entirety of the 2-year, $13M contract (earned $3.5M last year; being paid $9.5M this season). A stunning end after he was a leverage piece in '24-'25; the leadoff-command issues that bled all April never came back. Atlanta turns to a Lee / Dodd LH bullpen pair going forward.",
+    form: 0,
+    status: "departed",
+    injuryNote: "RELEASED May 19, 2026. Off the 40-man roster. Atlanta on the hook for the remaining $9.5M of the 2-year, $13M deal.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36131.png",
     assignment: "mlb",
     contract: { years: 2, total: 13000000, guaranteed: 13000000, apy: 6500000, throughYear: 2026 },
@@ -720,13 +743,13 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 28, experience: 3,
-    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
-    statNote: "REHAB ASSIGNMENT BEGINS — Atlanta announced Tuesday May 5 that Dodd will start a rehab assignment with Triple-A Gwinnett (left thoracic spine inflammation since Apr 23). If it goes cleanly, the LH long man could rejoin the bullpen by Friday's series opener at Truist vs LAD, restoring a third lefty alongside Bummer and Lee.",
-    form: 0,
-    status: "il-15",
-    injuryNote: "Left thoracic spine inflammation. 15-day IL since Apr 23. Triple-A Gwinnett rehab assignment began May 5; possible activation by the Friday LAD series opener.",
+    stats: { era: 5.40, whip: 1.50, ip: 5.0, k: 5, bb: 2, sv: 0, hold: null, games: 4, w: 0, l: 0 },
+    statNote: "ACTIVATED FROM THE 10-DAY IL TUE — BACK IN THE BULLPEN — Atlanta activated Dodd from the IL pre-game Tuesday (in the same flurry that released Bummer and recalled Mederos). Dodd's Gwinnett rehab line was clean: 4.2 IP / 4 H / 1 ER / 1 BB / 5 K across 4 rehab outings. Returns to slot in as the LH long man / multi-inning reliever alongside Dylan Lee — Atlanta now has the only two healthy LH arms in the bullpen. Did not appear Tuesday; available for Wednesday vs MIA.",
+    form: 6.5,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4416462.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB" },
@@ -796,6 +819,28 @@ export const PLAYERS = [
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
       { years: "2024–2025", team: "Colorado Rockies", type: "MLB · Rule 5 pick from TB 2023" },
+    ],
+  },
+  {
+    id: "mederos",
+    name: "Victor Mederos",
+    number: 73,
+    position: "RP",
+    positionGroup: "pitcher",
+    bullpenRole: "long",
+    bats: "R", throws: "R",
+    nationality: "🇨🇺 Cuba", age: 24, experience: 1,
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: null, hold: null, games: null },
+    statNote: "RECALLED FROM TRIPLE-A GWINNETT TUE — LONG-RELIEF DEPTH AFTER MONDAY'S BLOWOUT — Atlanta recalled Mederos from Gwinnett pre-game Tuesday to provide a fresh multi-inning arm after Monday's 12-0 loss drained the pen (Ritchie was optioned in the corresponding move). The 24-year-old's Gwinnett line: 24.1 IP / 4.81 ERA / 1.48 WHIP / 21 K across his '26 Triple-A starts. Slots in as long man / spot starter; with Atlanta's rotation now 5 deep (Sale-Strider-Pérez-Holmes-Elder), Mederos is the next-up bridge if Schwellenbach/Waldrep's returns slip past June. Did not appear Tuesday.",
+    form: 6.5,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/5127102.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
+    career: [
+      { years: "2026–", team: "Atlanta Braves", type: "MLB" },
+      { years: "2023–2025", team: "Los Angeles Angels", type: "MLB · debut 2023" },
     ],
   },
 
@@ -1045,26 +1090,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-19",
-    weekday: "Tue",
-    time: "4:10 PM ET",
-    opp: "MIA",
-    home: false,
-    venue: "LoanDepot Park",
-    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "2-2", era: 2.38, daysRest: 6, hand: "L" },
-    oppSP: { name: "Braxton Garrett", record: "0-1", era: 33.75, hand: "L" },
-    note: "Afternoon getaway-day Game 2 of 4 at LoanDepot · Pérez on full rest after last Wed's hard-luck L at SEA · LHP-vs-LHP matchup with Garrett making his 2nd start back from the IL (allowed 5 ER in 1.1 IP vs MIN in his lone outing 5/14) · Atlanta needs a stop-the-bleeding outing after Monday's 12-0 L · ACUÑA JR. expected to return to the lineup tonight",
-  },
-  {
     date: "2026-05-20",
     weekday: "Wed",
     time: "6:40 PM ET",
     opp: "MIA",
     home: false,
     venue: "LoanDepot Park",
-    atlSP: { id: "sale", name: "Chris Sale", record: "6-3", era: 1.96, daysRest: 6, hand: "L" },
+    atlSP: { id: "sale", name: "Chris Sale", record: "6-3", era: 1.96, daysRest: 13, hand: "L" },
     oppSP: { name: "Janson Junk", record: null, era: null, hand: "R" },
-    note: "Sale's first start in 13 days · NL-leading 64 K across 9 starts (1.96 ERA / 0.80 WHIP) · ace finally back on the mound after the BOS-series rest cycle · ATL is 8-1 in Sale's 9 starts",
+    note: "Sale's first start in 13 days · NL-leading 64 K across 9 starts (1.96 ERA / 0.80 WHIP) · ace finally back on the mound after the BOS-series rest cycle · ATL is 8-1 in Sale's 9 starts · expectation is a 6-7-inning shut-down outing to lock the series",
   },
   {
     date: "2026-05-21",
@@ -1074,8 +1108,8 @@ export const UPCOMING_SCHEDULE = [
     home: false,
     venue: "LoanDepot Park",
     atlSP: { id: "strider", name: "Spencer Strider", record: "1-0", era: 2.45, daysRest: 6, hand: "R" },
-    oppSP: { name: "Sandy Alcantara", record: null, era: null, hand: "R" },
-    note: "Series finale at LoanDepot · Strider vs former Cy Young Sandy Alcantara · ATL completes the road trip with this matchup before flying to WSH for the weekend",
+    oppSP: { name: "Sandy Alcantara", record: "3-2", era: 3.53, hand: "R" },
+    note: "Series finale at LoanDepot · Strider vs former Cy Young Sandy Alcantara (3-2, 3.53, 45 K) · ATL completes the road trip with this matchup before flying to WSH for the weekend",
   },
   {
     date: "2026-05-22",
@@ -1086,27 +1120,39 @@ export const UPCOMING_SCHEDULE = [
     venue: "Nationals Park",
     atlSP: { id: "holmes", name: "Grant Holmes", record: "3-1", era: 3.79, daysRest: 5, hand: "R" },
     oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "WSH road weekend opener · Holmes on regular rest after Sunday's 6 shutout IP series-clincher vs BOS · WSH (22-26, L1) is the 3rd-place team in the NL East · Atlanta heads to DC after the 4-game Miami set wraps Thursday",
+    note: "WSH road weekend opener · Holmes on regular rest after Sunday's 6 shutout IP series-clincher vs BOS · WSH (22-27, L2) is the 3rd-place team in the NL East · Atlanta heads to DC after the 4-game Miami set wraps Thursday",
+  },
+  {
+    date: "2026-05-23",
+    weekday: "Sat",
+    time: "7:05 PM ET",
+    opp: "WSH",
+    home: false,
+    venue: "Nationals Park",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "4-2", era: 2.01, daysRest: 7, hand: "R" },
+    oppSP: { name: "TBD", record: null, era: null, hand: null },
+    note: "Elder on extra rest after Saturday's hard-luck 3-2 L vs BOS · still 2.01 ERA across 10 starts · WSH weekend Game 2",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-19",
-  time: "4:10 PM ET",
+  date: "2026-05-20",
+  time: "6:40 PM ET",
   opp: "MIA",
   home: false,
   venue: "LoanDepot Park · Miami, FL",
   tv: "BravesVision / FanDuel Sports Florida",
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "2-2", era: 2.38 },
-    opp: { pitcher: "Braxton Garrett", record: "0-1", era: 33.75 },
+    atl: { pitcher: "Chris Sale", record: "6-3", era: 1.96 },
+    opp: { pitcher: "Janson Junk", record: null, era: null },
   },
-  note: "TUE 4:10 PM — GAME 2 OF 4 AT LOANDEPOT — Atlanta (32-16, .667, MLB-best, L1) is desperate for a bounce-back after Monday night's brutal 12-0 shutout L vs Miami. Martín Pérez (2-2, 2.38 ERA, 1.03 WHIP, 24 K / 34 IP across 7 G / 5 starts) gets the ball on full rest after his 5/13 SEA no-decision. Opposite is MIA LHP Braxton Garrett, making just his 2nd start back from the IL (5 ER / 1.1 IP vs MIN in his lone outing 5/14). LHP-vs-LHP matchup is a stylistic stop-the-bleeding setup for the Braves. Pre-game watch list: RONALD ACUÑA JR. EXPECTED TO RETURN TO THE LINEUP TONIGHT — he was activated from the 10-day IL Monday a day ahead of schedule after acing his pre-game work, but not in Monday's starting lineup; Weiss confirmed he should be back in RF Tuesday. ELI WHITE also activated from concussion IL Monday (Azócar optioned to Gwinnett). Murphy still ~8 weeks out (fractured finger); Schwellenbach cleared to begin throwing; Waldrep on Florida-complex bullpens; Dodd's Gwinnett rehab continues with possible activation Friday vs LAD.",
+  note: "WED 6:40 PM — GAME 3 OF 4 AT LOANDEPOT — Atlanta (33-16, .673, MLB-best, W1) sends NL Cy Young winner CHRIS SALE to the mound for his first start in 13 days vs MIA RHP Janson Junk. Sale (6-3, 1.96 ERA, 0.80 WHIP, NL-LEADING 64 K) gets the long-rest treatment after the BOS rest cycle; over his last 4 turns he has allowed 4 ER in 26 IP for a 1.38 ERA. ATL is 8-1 in his 9 starts. The Braves bounced back from Monday's 12-0 humiliation with an 8-4 W Tuesday behind a Pérez 10-K masterpiece and Acuña's return — they now look to win the series. ROSTER FLURRY TUESDAY: AARON BUMMER RELEASED, DRAKE BALDWIN to 10-day IL (right oblique strain, MRI pending), RITCHIE optioned to Gwinnett, DYLAN DODD activated from IL, VICTOR MEDEROS recalled from AAA, and Atlanta SELECTED VETERAN C CHADWICK TROMP — turning the catching tandem into León/Tromp. Murphy still ~8 weeks out (fractured finger); Schwellenbach cleared to begin throwing; Waldrep on Florida-complex bullpens.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-19", opp: "MIA", home: false, atlScore: 8, oppScore: 4, result: "W", note: "ACUÑA RETURNS, PÉREZ'S 10 K, BRAVES BOUNCE BACK 8-4 — Atlanta snapped Monday's 12-0 shutout L with a clean 8-4 W at LoanDepot Tuesday afternoon, improving to 33-16 (.673, MLB-best, W1). RONALD ACUÑA JR. returned from the 10-day IL leading off at DH, going 1-for-2 with a double, two walks, and three runs scored — the dynamic top-of-order energy was back in the lineup for the first time since May 2. Martín Pérez (W, 3-2) was the story: 6 IP / 4 H / 3 ER / 1 BB / 10 K (career-high) on 91 pitches, with the slider working both sides of the plate (8 of his 10 Ks came on the slider). Braxton Garrett (LP) loaded the bases with no outs to start the game; Ozzie Albies cashed in with a sac fly RBI and Michael Harris II followed with a 2-out RBI single for a 2-0 lead. Harris II later added HR #9 in the 2nd to make it 4-0. Miami chipped back to 4-3 with a 3-spot in the bottom of the 1st (Xavier Edwards leadoff HR, Kyle Stowers 2-RBI double). Mauricio Dubón broke the 3-3 tie with a go-ahead RBI single in the 8th, Matt Olson followed with a 2-run single, and Acuña scored from 2nd on a wild pitch. Olson finished 2-for-3 with 3 RBI / 2 BB. Dubón had 3 hits starting in LF for Yastrzemski. PRE-GAME ROSTER FLURRY: Aaron Bummer RELEASED ($9.5M still owed); Drake Baldwin to the 10-day IL (right oblique strain, MRI pending); JR Ritchie optioned to Gwinnett; Dylan Dodd activated from the IL; Victor Mederos recalled from Gwinnett; Chadwick Tromp contract selected to pair with Sandy León behind the plate." },
   { date: "2026-05-18", opp: "MIA", home: false, atlScore: 0, oppScore: 12, result: "L", note: "RITCHIE & BUMMER EACH ALLOW 6 RUNS — BRAVES SHUT OUT 12-0 BY MARLINS — Atlanta opened the 4-game LoanDepot road trip with a humiliating 12-0 L, the lopsided loss of the year. JR Ritchie (LP, 1-1) gave up 6 ER on 6 H and 1 BB across 4 IP (4 K), his worst MLB outing — season ERA jumps from 3.07 → 4.91. Aaron Bummer was a complete disaster in long relief: 1 IP / 3 H / 5 BB / 6 R, surrendering back-to-back HR to Javier Sanoja (GRAND SLAM) and Xavier Edwards. ERA up to 7.63 / WHIP 1.85. Atlanta's offense was silent against the Marlins' rotation back-end — just 4 hits, 0 HR, no extra-base hits. The Braves drop to 32-16 (.667, still MLB-best, L1). Big pre-game news: RONALD ACUÑA JR. ACTIVATED FROM THE 10-DAY IL AHEAD OF SCHEDULE — Weiss moved the plan up a day after Monday's clean pre-game work; he was NOT in the starting lineup but is expected to start Tuesday at LoanDepot vs Braxton Garrett. ELI WHITE also activated from the concussion IL (José Azócar optioned to Gwinnett in the corresponding move). Atlanta needs Pérez to stop the bleeding Tuesday afternoon (4:10 PM ET)." },
   { date: "2026-05-17", opp: "BOS", home: true, atlScore: 8, oppScore: 1, result: "W", note: "RILEY 3-RUN HR, HOLMES 6 SHUTOUT IP, BRAVES WIN SERIES 8-1 — Atlanta routed Boston 8-1 Sunday afternoon at Truist Park to take the series 2-1 and improve to 32-15 (.681, MLB-best, W1). The dagger came early: with two outs in the 1st, Austin Riley turned on a Brayan Bello pitch and crushed it 431 ft to LF for a 3-run HR (#7). Mike Yastrzemski celebrated his 27th birthday with a leadoff HR to right (#2 of '26) off Bello in the 4th. Atlanta led 5-0 through 2 innings and never let it close. Grant Holmes (W, 3-1): a clinical 6 IP / 5 H / 0 ER / 1 BB / 4 K — sixth quality start in his 9 — ERA tumbles from 4.35 to 3.79. Brayan Bello (LP, 2-5): 5 IP / 8 H / 7 ER / 3 BB — the rotation's weakest link gave Atlanta exactly the matchup it needed. The back-end pen (Iglesias, Suarez) got the day off. Attendance: 37,800. Atlanta is now 13-of-15 in series this year (12 W, 1 split, 1 L) and unbeaten in home series. Off-day Monday before the 4-game Marlins road trip opens Monday night at LoanDepot Park (Ritchie vs Meyer). Pre-game watch list: Eli White first-eligible Monday from the concussion IL — likely activated for Miami; Acuña Jr. likely held out of the Miami trip because of LoanDepot's turf, new target is Friday's homestand opener vs LAD." },
   { date: "2026-05-16", opp: "BOS", home: true, atlScore: 2, oppScore: 3, result: "L", note: "CONTRERAS' 100th-PITCH 2-RUN HR ENDS IT — Boston evened the series 1-1 with a 3-2 Saturday-night W at Truist as Willson Contreras drilled a 426-ft, two-out, two-strike 2-run HR to deep LF off Bryce Elder's 100th pitch of the night in the bottom of the 8th, breaking a 1-1 tie. Elder (LP, 4-2): a near-pristine 8 IP / 6 H / 3 ER / 1 BB / 3 K — beaten by a single bad-luck swing on the final pitch (ERA up to 2.01, still 2nd on the staff). Drake Baldwin's 2-out, 2-RBI single up the middle off rookie LHP Payton Tolle in the 3rd briefly put Atlanta ahead 2-0; Trevor Story answered with a 4th-inning solo HR off Elder. Boston's TOLLE (W, 2-2) was the breakout: a career-high 8 IP / 4 H / 2 ER / 1 BB / 3 K on 6 swing-and-misses. Garrett Whitlock pitched a 1-2-3 9th for SV #4. Atlanta drops to 31-15 (.689, MLB-best, L1) — heads into Sunday's series-deciding finale at home with Holmes vs Bello." },
@@ -1123,33 +1169,33 @@ export const RESULTS = [
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 32, l: 16, pct: .667, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 25, l: 23, pct: .521, gb: 7.0,  streak: "W5" },
-  { team: "WSH", name: "Washington Nationals",   w: 22, l: 26, pct: .458, gb: 10.0, streak: "L2" },
-  { team: "NYM", name: "New York Mets",          w: 21, l: 26, pct: .447, gb: 10.5, streak: "W3" },
-  { team: "MIA", name: "Miami Marlins",          w: 21, l: 27, pct: .438, gb: 11.0, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 33, l: 16, pct: .673, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 26, l: 23, pct: .531, gb: 7.0,  streak: "W6" },
+  { team: "WSH", name: "Washington Nationals",   w: 22, l: 27, pct: .449, gb: 11.0, streak: "L3" },
+  { team: "NYM", name: "New York Mets",          w: 22, l: 26, pct: .458, gb: 10.5, streak: "W4" },
+  { team: "MIA", name: "Miami Marlins",          w: 21, l: 28, pct: .429, gb: 12.0, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-19T09:00:00-04:00",
+  generatedAt: "2026-05-20T09:00:00-04:00",
   summary:
-    "RITCHIE & BUMMER EACH ALLOW 6 RUNS — BRAVES SHUT OUT 12-0 IN MIAMI OPENER — Atlanta opened the 4-game LoanDepot road trip with a humiliating 12-0 L, the worst loss of the year. JR Ritchie (LP, 1-1): 4 IP / 6 H / 6 ER / 1 BB / 4 K — ERA balloons from 3.07 → 4.91. Aaron Bummer wrecked in 1 IP of relief (3 H / 5 BB / 6 R — Javier Sanoja GRAND SLAM, Xavier Edwards HR), ERA up to 7.63. Just 4 hits, 0 HR for the offense. Record drops to 32-16 (.667, L1), but ATL still holds MLB's best mark and a 7.0 GB lead in the NL East. BIG NEWS PRE-GAME: RONALD ACUÑA JR. ACTIVATED FROM 10-DAY IL AHEAD OF SCHEDULE — Weiss moved the plan up a day after Monday's clean agility work. Acuña was NOT in Monday's lineup but is EXPECTED TO START TUESDAY at LoanDepot. ELI WHITE also activated from concussion IL (Azócar optioned to Gwinnett). TONIGHT (TUE 4:10 PM): Martín Pérez (2-2, 2.38) vs MIA LHP Braxton Garrett — Atlanta needs a stop-the-bleeding outing. Standings: ATL 32-16, PHI 25-23 (-7.0, W5 after Stott 2-run HR beats CIN 5-4), WSH 22-26 (-10.0, L2), NYM 21-26 (-10.5, W3 after the 16-7 wild 10-run 12th vs WSH — first NL team to score 10+ in extra inning since 1919 Reds), MIA 21-27 (-11.0, W1). Murphy still ~8 weeks out (fractured finger); Schwellenbach cleared to begin throwing; Waldrep on Florida bullpens; Dodd's Gwinnett rehab continues with possible activation Friday vs LAD.",
+    "ACUÑA RETURNS, PÉREZ'S 10 K, BRAVES BOUNCE BACK 8-4 OVER MARLINS — Atlanta snapped Monday's 12-0 shutout L with a clean 8-4 W at LoanDepot Tuesday afternoon, improving to 33-16 (.673, MLB-best, W1). RONALD ACUÑA JR. returned from the 10-day IL leading off at DH, going 1-for-2 with a double, two walks, and 3 R — the dynamic top-of-order energy is back. MARTÍN PÉREZ (W, 3-2) was the story: 6 IP / 4 H / 3 ER / 1 BB / CAREER-HIGH 10 K. Olson 2-for-3 / 3 RBI / 2 BB; Harris II HR #9 + RBI single; Albies sac fly RBI; Dubón 3 H including the go-ahead 8th-inning RBI single. PRE-GAME ROSTER FLURRY: AARON BUMMER RELEASED ($9.5M still owed); DRAKE BALDWIN to 10-day IL with RIGHT OBLIQUE STRAIN (MRI pending — potential 4-8 week absence); JR RITCHIE optioned to Gwinnett; DYLAN DODD activated from the IL; VICTOR MEDEROS recalled; CHADWICK TROMP contract selected to share catching duties with Sandy León. Atlanta's NL East lead grows back to 7.0 GB. Standings: ATL 33-16, PHI 26-23 (-7.0, W6), NYM 22-26 (-10.5, W4), WSH 22-27 (-11.0, L3), MIA 21-28 (-12.0, L1). TONIGHT (WED 6:40 PM): CHRIS SALE (6-3, 1.96) returns to the mound after 13 days rest vs MIA RHP Janson Junk. Murphy still ~8 weeks out (fractured finger); Schwellenbach cleared to begin throwing; Waldrep on Florida bullpens.",
   keyTopics: [
-    { category: "result",      title: "MON: Braves SHUT OUT 12-0 by Marlins in road trip opener — worst loss of '26",                       detail: "Atlanta got steamrolled in Miami Monday night. JR Ritchie (LP, 1-1) allowed 6 ER on 6 H and 1 BB across just 4 IP (4 K) — by far his worst MLB outing. Aaron Bummer came on in long relief and was a complete disaster: 1 IP / 3 H / 5 BB / 6 R, including a Javier Sanoja GRAND SLAM and a follow-up Xavier Edwards HR. The Braves managed just 4 hits and zero HR against MIA's rotation back-end. Record drops to 32-16 (.667, still MLB-best, L1). Atlanta's first shutout L in nearly a month." },
-    { category: "transaction", title: "ACUÑA JR. ACTIVATED FROM 10-DAY IL AHEAD OF SCHEDULE — Tuesday return expected",                    detail: "Pre-game Monday, Atlanta reinstated Ronald Acuña Jr. from the 10-day IL — a day earlier than the internal plan after Acuña aced his agility checks. He was NOT in Monday's starting lineup (Weiss wanted one more visual on his comfort with LoanDepot's turf), but the manager confirmed Acuña is expected to be back in the RF lineup for Tuesday's 4:10 PM getaway-day game vs LHP Braxton Garrett. 13 G missed total; original target was Friday's homestand vs LAD." },
-    { category: "transaction", title: "Eli White activated from concussion IL — Azócar optioned to Gwinnett",                              detail: "OF Eli White was activated from the 7-day concussion IL Monday, returning to the roster after the May 10 highlight wall-collision robbery of Max Muncy at LAD that put him into concussion protocol. José Azócar was optioned to Triple-A Gwinnett in the corresponding move. White restores the speed-and-defense fourth-OF profile and gives Weiss the depth he needs while Acuña ramps back up." },
-    { category: "rotation",    title: "TONIGHT 4:10 PM: Pérez (2-2, 2.38) vs Garrett (0-1, 33.75) — afternoon getaway-day stop-the-bleeding spot",  detail: "Martín Pérez gets the ball Tuesday afternoon on full rest after his 5/13 SEA no-decision. Opposite is Marlins LHP Braxton Garrett making just his 2nd start back from the IL (5 ER in 1.1 IP vs MIN in his lone 5/14 outing). LHP-vs-LHP setup is exactly the kind of game Atlanta wants after Monday's 12-0 collapse. Pérez is 2-2 with a 2.38 ERA / 1.03 WHIP / 24:12 K:BB through 7 G / 5 starts — the most efficient innings-eater behind Sale." },
-    { category: "rotation",    title: "Ritchie ERA jumps from 3.07 → 4.91 — rookie's first real MLB rough night",                          detail: "JR Ritchie was tagged for 6 ER on 6 H in 4 IP Monday — his worst MLB start by a wide margin. The 22-year-old rookie's season line falls to 1-1 / 4.91 ERA / 1.58 WHIP / 20 K across 26 IP / 5 starts. A sober reminder that Atlanta is leaning on a rookie 5th starter until Schwellenbach or Waldrep return from rehab in late June / July. Likely next turn lines up for the Sat/Sun WSH road game." },
-    { category: "rotation",    title: "Bummer DISASTER — 6 R / 5 BB in 1 IP — ERA explodes to 7.63",                                       detail: "Aaron Bummer's leadoff-command issues became a full meltdown Monday: 1 IP / 3 H / 5 BB / 6 R, surrendering back-to-back HR to Sanoja (grand slam) and Edwards. Season ERA jumps from 4.35 → 7.63, WHIP to 1.85. The LH leverage role is in question — Atlanta now needs Dodd activated from rehab and Lee staying healthy more than ever. Bummer's 98-game ATL track record will keep him on the roster, but the trust window is closing." },
-    { category: "injury",      title: "Murphy ~8 weeks (fracture); Schwellenbach cleared to throw; Waldrep on Florida bullpens",            detail: "Sean Murphy (fractured left middle finger from Hyeseong Kim's bat on the May 10 catcher's interference play) remains out ~8 weeks — post-All-Star break is the realistic timetable. Spencer Schwellenbach (arthroscopic elbow surgery) was cleared by team doctors to begin throwing — the first concrete step in a late-June / July return. Hurston Waldrep (post-arthroscopic elbow surgery in Feb) is on bullpens at the Florida complex; June rehab-assignment target remains. Dylan Dodd's Gwinnett rehab continues; activation projects for the Friday LAD homestand opener." },
-    { category: "narrative",   title: "Phillies surge: 25-23 — W5 streak under Mattingly, NL East GAP NARROWS to 7.0",                     detail: "Philadelphia beat the Reds 5-4 Monday on a Bryson Stott 8th-inning 2-run HR, extending the W streak to 5 and the record to 25-23 — Don Mattingly's club is now 16-4 since he replaced Rob Thomson on April 28. The NL East gap has closed from 8.0 GB at the start of yesterday to 7.0 GB now. With Atlanta's L1 vs the PHI W5, the division race subplot is getting louder by the day. ATL hosts PHI June 2-4 at Truist." },
-    { category: "lineup",      title: "Baldwin .949 OPS, 12 HR / 35 RBI — All-Star starting catcher case strengthens",                      detail: "Drake Baldwin holds at .312/.380/.569 (.949 OPS), 12 HR / 35 RBI across 41 G — the loudest All-Star case for an NL starting catcher. With Murphy on the IL ~8 weeks and Sandy León catching only off-days, Baldwin is the unambiguous everyday backstop. He didn't catch Monday's loss (León drew the start), but his bat anchored the BOS series with Friday's 1st-inning HR and Saturday's 2-RBI single." },
-    { category: "milestone",   title: "Olson 1.003 OPS, NL HR co-lead at 14 — consecutive-games streak nearing top-10 all-time",            detail: "Matt Olson sits at 14 HR / 36 RBI / 1.003 OPS through 40 G — still NL HR co-leader and NL FanGraphs WAR leader. He is 4 G shy of Eddie Yost's 829 for the 10th-longest consecutive-games-played streak in MLB history (currently 825 G). Season-long bat ranks 3rd in MLB by wRC+ (178), tied with Aaron Judge. The 12-0 L Monday did nothing to dent his pace — he was 0-for-3 with the rest of the lineup also silenced by MIA's pitching." },
-    { category: "milestone",   title: "Suarez 5-0 / 0.56 ERA · Iglesias 8-for-8 SV / 0.00 ERA — back-end pen still the deepest in the NL",  detail: "Robert Suarez sits at 5-0 / 0.56 ERA / 0.81 WHIP across 16 IP / 17 G — Atlanta is 17-for-17 when he appears. Raisel Iglesias remains 8-for-8 in saves with a 0.00 ERA / 0.50 WHIP across 11.2 IP since his IL return. Combined with Dylan Lee (1.15 ERA), the 7-8-9 sequence in the back-end is the deepest in the NL. Neither pitched Monday — Bummer's meltdown meant the game was out of hand before high-leverage. They'll be ready Tuesday." },
-    { category: "standings",   title: "NL East: ATL 32-16, PHI 25-23 (-7.0, W5), WSH 22-26 (-10.0, L2), NYM 21-26 (-10.5, W3), MIA 21-27 (-11.0, W1)",  detail: "Atlanta's NL East lead shrinks from 8.0 to 7.0 GB after Monday's L coupled with the Phillies' W5. Washington dropped a wild 16-7 game to the Mets, where NYM scored 10 runs in the 12th inning — the first NL team to score 10+ in any extra frame since the 1919 Reds (10 in the 13th vs Brooklyn). Carson Benge had an RBI single AND a 2-run double in the 10-run 12th. Miami picked up its 12-0 W to push to 21-27 (W1). The division race is the loudest subplot in the NL — Mattingly's Phillies are the legitimate threat." },
+    { category: "result",      title: "TUE: Braves bounce back 8-4 over Marlins — Acuña returns with 1 H / 2 BB / 3 R",                   detail: "Atlanta snapped Monday's 12-0 shutout L with a clean 8-4 W at LoanDepot. Ronald Acuña Jr. — in his first game back from the 10-day IL — led off at DH and reached 3 times (double, 2 BB, 3 R). Albies sac fly RBI in the 1st; Harris II RBI single in the 1st and a solo HR (#9) in the 2nd for a 4-0 lead. Miami clawed back to 3-3 with Edwards' leadoff HR and Stowers' 2-RBI double in the 1st. Dubón's go-ahead 8th-inning RBI single broke the tie; Olson's 2-run single put it away. Atlanta improves to 33-16 (.673, MLB-best, W1)." },
+    { category: "transaction", title: "AARON BUMMER RELEASED — Atlanta eats $9.5M of the 2-year deal after Monday's meltdown",            detail: "After Monday's catastrophic 6 R / 5 BB / 1 IP outing, Atlanta released LHP Aaron Bummer pre-game Tuesday. Final Atlanta line: 11.1 IP / 7.63 ERA / 1.85 WHIP across 15 G. The team will remain on the hook for the entirety of the 2-year, $13M contract — $9.5M still owed this season. A stunning fall after he was a leverage piece in '24-'25; the leadoff-command issues never came back. Atlanta's LH bullpen now relies on Dylan Lee (1.15 ERA) and the just-returned Dylan Dodd." },
+    { category: "injury",      title: "DRAKE BALDWIN to 10-DAY IL — RIGHT OBLIQUE STRAIN, MRI PENDING",                                   detail: "Atlanta placed Drake Baldwin on the 10-day IL pre-game Tuesday with a right oblique strain (retroactive to May 18). Baldwin returned to Atlanta from Miami for an MRI Tuesday afternoon; severity unknown until imaging comes back. Oblique strains for catchers typically run 4-8 weeks. Baldwin's All-Star case is on pause: he holds .312/.380/.569 (.949 OPS), 12 HR / 35 RBI through 41 G. Atlanta now relies on a Sandy León / Chadwick Tromp tandem behind the plate with Sean Murphy still ~8 weeks out." },
+    { category: "transaction", title: "PÉREZ: CAREER-HIGH 10 K — quiet $2M signing of the offseason looks like the buy of the year",       detail: "Martín Pérez (W, 3-2) delivered the bounce-back masterpiece: 6 IP / 4 H / 3 ER / 1 BB / 10 K (career-high) on 91 pitches. The slider was nasty both sides of the plate — 8 of his 10 Ks came on the slider. Season line drops to 3-2 / 2.18 ERA / 1.00 WHIP / 34:13 K:BB across 8 G / 6 starts. The $2M offseason signing is now the staff's second-most-reliable arm behind Sale. With Schwellenbach / Waldrep on the IL, Pérez's reliability is keeping the rotation afloat." },
+    { category: "transaction", title: "Chadwick Tromp contract SELECTED — Mederos RECALLED — Ritchie OPTIONED — Dodd ACTIVATED",            detail: "Atlanta's roster flurry Tuesday: C Chadwick Tromp contract selected from Gwinnett (joins Sandy León as the catching tandem with Baldwin on the IL); RHP Victor Mederos recalled from Gwinnett (long-relief depth); RHP JR Ritchie optioned to Gwinnett after Monday's 12-0 blowup (4.91 ERA across 5 MLB starts); LHP Dylan Dodd activated from the 10-day IL (clean 4-game Gwinnett rehab). Atlanta's rotation now stabilizes around Sale-Strider-Pérez-Holmes-Elder until Schwellenbach/Waldrep return." },
+    { category: "rotation",    title: "TONIGHT (WED 6:40 PM): SALE (6-3, 1.96) RETURNS vs MIA RHP JANSON JUNK",                            detail: "Chris Sale gets the ball Wednesday for his first start in 13 days after the BOS rest cycle. NL-leading 64 K across 9 starts (1.96 ERA / 0.80 WHIP); Atlanta is 8-1 in his outings. Over his last 4 turns: 4 ER in 26 IP for a 1.38 ERA. The long-rest version of the ace returns to face one of the worst lineups in MLB by wRC+; expectation is a 6-7-inning shut-down outing to lock the series with Strider lined up Thursday vs Sandy Alcantara." },
+    { category: "lineup",      title: "Olson stays hot — 3 RBI Tue, NL HR co-lead at 14, season RBI to 39",                                detail: "Matt Olson went 2-for-3 with 2 BB and 3 RBI in Tuesday's bounce-back W: sac fly in the 1st behind Acuña's leadoff walk, a 2-run single in the 8th, and disciplined two-walks night. Slash holds at .298/.371/.627 (.998 OPS) — still NL HR co-leader at 14 and the NL FanGraphs WAR leader. Tuesday made Atlanta 14-2 in games he drives in a run. The Olson / Acuña / Harris II middle is back to full firepower for the first time since May 1." },
+    { category: "lineup",      title: "Harris II HR #9 + RBI single in the 8-4 W — slash holds at .333/.945 OPS",                          detail: "Michael Harris II turned on a Braxton Garrett pitch in the 2nd of Tuesday's W and crushed HR #9. Earlier added a 2-out RBI single in the 1st to plate Olson. 2-for-5 / 2 RBI / HR night — his 5th multi-RBI game in the last 9. Slash holds at .333/.362/.583 (.945 OPS), 9 HR / 26 RBI / 37 G. With Acuña back as DH-only, Harris continues to handle the middle of the order alongside Olson." },
+    { category: "injury",      title: "Murphy ~8 weeks (finger fracture); Schwellenbach cleared to throw; Waldrep on Florida bullpens",   detail: "Sean Murphy (fractured left middle finger from Hyeseong Kim's bat) remains out ~8 weeks — post-All-Star break realistic. Spencer Schwellenbach (arthroscopic elbow) cleared to begin throwing — first step in a late-June / July return. Hurston Waldrep (post-elbow surgery) on Florida-complex bullpens; June rehab-assignment target. Eli White (concussion) is active. Joe Jiménez still no timeline (knee). AJ Smith-Shawver and Danny Young 60-day IL (TJ). Now Drake Baldwin is the newest IL name (right oblique, MRI pending)." },
+    { category: "narrative",   title: "Phillies extend W streak to 6 — NL East gap holds at 7.0 GB",                                       detail: "Philadelphia kept rolling Tuesday, pushing Don Mattingly's Phillies record to 26-23 (W6) since he replaced Rob Thomson on Apr 28 — now 17-4 in their last 21. Atlanta's W keeps the division gap at 7.0 GB. The Mattingly Phillies are emerging as the legitimate NL East threat with Stott / Schwarber / Castellanos all clicking. ATL hosts PHI June 2-4 at Truist." },
+    { category: "milestone",   title: "Pérez's 10 K is the most by an Atlanta LHP starter in '26 and the staff's 4th double-digit-K game", detail: "Martín Pérez's 10 K Tuesday is the highest single-game K total by an Atlanta LHP starter this year (Chris Sale has 9 in two starts). It's the staff's 4th double-digit-K game of 2026 (Sale 3, Pérez 1). Pérez's slider has now generated 56% of his career-high K total — a real change-of-shape from his low-K profile in TEX / BOS / MIN. Pitching coach Rick Kranitz called it 'the most complete outing he's had in three years.'" },
+    { category: "standings",   title: "NL East: ATL 33-16, PHI 26-23 (-7.0, W6), NYM 22-26 (-10.5, W4), WSH 22-27 (-11.0, L3), MIA 21-28 (-12.0, L1)",  detail: "Atlanta's bounce-back W keeps the division lead at 7.0 GB over the surging Phillies (W6) and at 10.5+ on the rest of the field. The Mets keep climbing with a W4 streak. Washington lost again (L3). Miami's 12-0 W Monday is bookended by Tuesday's 8-4 L (L1). The Braves' division-lead cushion stays comfortable but the Phillies are the only team with a top-10 wRC+ and a top-10 staff ERA among NL East challengers — they're real." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "Heavy", "Sports Illustrated", "Clutch Points", "The Washington Post", "DraftKings Network", "Bleacher Nation",
+    "MLB.com", "ESPN", "AJC", "Battery Power", "MLB Trade Rumors", "CBS Sports", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "AP", "Atlanta News First", "Yardbarker", "Fox Sports", "RotoWire", "FantasyPros", "Heavy", "Sports Illustrated", "Clutch Points", "BVM Sports", "DraftKings Network", "Bleacher Nation",
   ],
 };
