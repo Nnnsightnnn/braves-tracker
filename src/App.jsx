@@ -1,4 +1,6 @@
+// built by nnnsightnnn — signal from noise
 import { useState, useMemo, useEffect } from "react";
+import BrandCredit from "./components/BrandCredit.jsx";
 import {
   PLAYERS,
   NEXT_GAME,
@@ -764,6 +766,7 @@ export default function BravesTracker() {
       {view === "beat"     && <BeatView />}
       <Colophon />
       <PlayerModal player={selectedPlayer} onClose={() => setSelectedPlayer(null)} />
+      <BrandCredit />
     </div>
   );
 }
