@@ -1,20 +1,21 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 23, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated May 24, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI MAY 22 — TROMP WALKS IT OFF IN THE 11TH — BRAVES STUN NATIONALS 5-4 —
-// Atlanta opened its homestand with a wild extra-innings comeback, beating
-// Washington 5-4 in 11 on Chadwick Tromp's two-out walk-off RBI single that
-// scored Eli White from second. Trailing 4-2 after CJ Abrams' 2-run double
-// in the 10th, the Braves rallied: Tromp's RBI single scored
-// Ha-Seong Kim and Mauricio Dubón's single tied it 4-4 in the bottom of the
-// 10th. Bryce Elder was sharp — 6 IP / 1 R / 5 H / 4 K / 1 BB, no decision
-// — and Tyler Kinley (W, 4-2) tossed a perfect 11th. The win lifts Atlanta
-// to a MLB-best 36-16 (.692, W4). Ronald Acuña Jr. returned to the lineup
-// leading off and in RF, playing through a left thumb bone bruise.
-// SATURDAY MAY 23 4:10 PM ET: WSH series Game 2 at Truist Park — GRANT
-// HOLMES (3-1, 3.79) vs WSH RHP JAKE IRVIN (1-4, 5.59). Roster: Carlos
-// Carrasco recalled as a fresh bullpen arm, Victor Mederos optioned to
-// Gwinnett. Catching corps thin: Baldwin (oblique) and Murphy (finger) both
-// on the IL; Schwellenbach throwing; Waldrep on Florida-complex bullpens.
+// SAT MAY 23 — NATIONALS BLANK BRAVES 2-0 — ONE-HIT NIGHT SNAPS THE STREAK —
+// Atlanta wasted a career-best 10-strikeout outing from Grant Holmes and was
+// held to a single hit in a 2-0 loss to Washington, ending a four-game
+// winning streak. Holmes went 5 IP / 6 H / 2 R / 2 BB / 10 K but surrendered
+// solo home runs to Dylan Crews and Jorbit Vivas — the only runs of a game
+// delayed 41 minutes by rain in the 2nd. Nationals RHP Jake Irvin held the
+// Braves hitless over 5 before leaving with an apparent injury; Michael
+// Harris II's leadoff single in the 7th off Brad Lord was Atlanta's only
+// hit, and Richard Lovelady finished a combined one-hitter for his 4th save.
+// The loss drops Atlanta to 36-17 (.679) — still 8.5 games up in the NL
+// East. SUNDAY MAY 24 4:10 PM ET: WSH series finale (rubber game) at Truist
+// Park — MARTÍN PÉREZ (3-2, 2.18) vs WSH LHP FOSTER GRIFFIN (5-2, 4.02).
+// Roster: OF José Azócar designated for assignment when Eli White was
+// reinstated from the concussion IL. Catching corps still thin — Baldwin
+// (oblique) and Murphy (finger) on the IL; Schwellenbach throwing; Waldrep
+// on Florida-complex bullpens.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -340,10 +341,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 30, experience: 5,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "RE-SELECTED TUE — Azócar cleared waivers, elected free agency May 8, re-signed a minor-league deal with Atlanta May 11, and was selected back to the MLB roster Tuesday in the Sean Murphy / Sandy León shuffle (Jarvis optioned to Gwinnett). The fourth-OF / pinch-runner profile is back — particularly valuable while Acuña remains on the IL and Eli White is on the concussion list. Three quick weeks of travel for the speed-and-defense piece.",
-    form: 6.0,
-    status: "active",
-    injuryNote: null,
+    statNote: "DESIGNATED FOR ASSIGNMENT — OUTFIELD LOGJAM CLEARS — Atlanta designated Azócar for assignment on May 20 when Eli White was reinstated from the 7-day concussion injured list, the corresponding move to open a roster spot. With White healthy and Acuña back from the IL, the fourth-OF / pinch-runner profile was the odd man out after another short stint. Carried in data for historical reference only — no longer on the Braves roster.",
+    form: 0,
+    status: "departed",
+    injuryNote: "Designated for assignment May 20, 2026 when Eli White was reinstated from the concussion IL. No longer on the Braves 40-man roster.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35058.png",
     assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
@@ -458,8 +459,8 @@ export const PLAYERS = [
     rotationSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
-    stats: { era: 3.79, whip: 1.32, ip: 46.1, k: 36, bb: 22, w: 3, l: 1, games: 9, starts: 9 },
-    statNote: "(W, 3-1) 6 SHUTOUT IP IN THE 8-1 SERIES-CLINCHER vs BOS — Holmes was electric Sunday at Truist: 6 IP / 5 H / 0 ER / 1 BB / 4 K to outduel Brayan Bello in the BOS series-deciding finale. Backed by Austin Riley's 1st-inning 3-run HR (#7) and Mike Yastrzemski's leadoff HR (#2) in the 4th, Holmes never let the Red Sox get above the 5-0 deficit they faced through 2 innings. Season ERA drops from 4.35 to 3.79; W-L flips to 3-1; staff now 8-1 in his 9 starts. The combined 1-hitter from Tuesday's CHC start is now bookended by Sunday's masterpiece. Next turn lines up for Saturday's 4:10 PM ET home game vs Washington on regular rest.",
+    stats: { era: 3.77, whip: 1.35, ip: 51.1, k: 46, bb: 24, w: 3, l: 2, games: 10, starts: 10 },
+    statNote: "(L, 3-2) CAREER-HIGH 10 K WASTED — BRAVES SHUT OUT 2-0 — Holmes was excellent in a hard-luck defeat Saturday vs Washington: 5 IP / 6 H / 2 ER / 2 BB / 10 K, a career-high strikeout total. Both runs scored on solo home runs — to Dylan Crews and Jorbit Vivas — and Atlanta's bats gave him nothing in a one-hit, 2-0 loss. The season line holds steady at 3.77 ERA / 1.35 WHIP across 10 starts; the staff falls to 8-2 in his outings. A tough-luck loss that snapped Atlanta's four-game winning streak — Holmes lines up to pitch in the Colorado series later in the week.",
     form: 8.6,
     status: "active",
     injuryNote: null,
@@ -1110,17 +1111,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-23",
-    weekday: "Sat",
-    time: "4:10 PM ET",
-    opp: "WSH",
-    home: true,
-    venue: "Truist Park",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "3-1", era: 3.79, daysRest: 6, hand: "R" },
-    oppSP: { name: "Jake Irvin", record: "1-4", era: 5.59, hand: "R" },
-    note: "WSH series Game 2 · Holmes on regular rest after the May 17 six-shutout-IP series-clincher vs BOS · opposite struggling WSH RHP Jake Irvin (1-4, 5.59) · Atlanta (36-16) riding a 4-game winning streak",
-  },
-  {
     date: "2026-05-24",
     weekday: "Sun",
     time: "4:10 PM ET",
@@ -1128,8 +1118,8 @@ export const UPCOMING_SCHEDULE = [
     home: true,
     venue: "Truist Park",
     atlSP: { id: "perez-martin", name: "Martín Pérez", record: "3-2", era: 2.18, daysRest: 5, hand: "L" },
-    oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "WSH series finale · Pérez on regular rest after his career-high 10-K masterpiece at Miami · 2.18 ERA / 1.00 WHIP across 8 G",
+    oppSP: { name: "Foster Griffin", record: "5-2", era: 4.02, hand: "L" },
+    note: "WSH series finale · rubber game after a Friday walk-off win and a Saturday 2-0 shutout loss · Pérez on regular rest off his career-high 10-K masterpiece at Miami · opposite Nationals LHP Foster Griffin",
   },
   {
     date: "2026-05-25",
@@ -1140,7 +1130,7 @@ export const UPCOMING_SCHEDULE = [
     venue: "Truist Park",
     atlSP: { id: "sale", name: "Chris Sale", record: "7-3", era: 1.89, daysRest: 5, hand: "L" },
     oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "Projected · opens a Colorado series at Truist after the Washington weekend · Sale on regular rest · matchup details to be confirmed",
+    note: "Projected · opens a three-game Colorado series at Truist after the Washington weekend · Sale on regular rest after his 7-IP, 8-K win at Miami · matchup details to be confirmed",
   },
   {
     date: "2026-05-26",
@@ -1153,25 +1143,37 @@ export const UPCOMING_SCHEDULE = [
     oppSP: { name: "TBD", record: null, era: null, hand: null },
     note: "Projected · COL series Game 2 at Truist · Strider on regular rest, building toward full strength in his 5th start since the IL return",
   },
+  {
+    date: "2026-05-27",
+    weekday: "Wed",
+    time: "TBD",
+    opp: "COL",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "4-2", era: 1.97, daysRest: 5, hand: "R" },
+    oppSP: { name: "TBD", record: null, era: null, hand: null },
+    note: "Projected · COL series finale at Truist · Elder on regular rest after his 6-IP, 1-run no-decision vs Washington · staff's No. 2 in ERA behind Sale",
+  },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-23",
+  date: "2026-05-24",
   time: "4:10 PM ET",
   opp: "WSH",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "BravesVision",
   probables: {
-    atl: { pitcher: "Grant Holmes", record: "3-1", era: 3.79 },
-    opp: { pitcher: "Jake Irvin", record: "1-4", era: 5.59 },
+    atl: { pitcher: "Martín Pérez", record: "3-2", era: 2.18 },
+    opp: { pitcher: "Foster Griffin", record: "5-2", era: 4.02 },
   },
-  note: "SAT 4:10 PM — WASHINGTON SERIES GAME 2 — Atlanta (36-16, .692, MLB-best, W4) goes for its 5th straight win and a series-clinching chance against the Washington Nationals (23-29), sending GRANT HOLMES (3-1, 3.79) against struggling Nationals RHP JAKE IRVIN (1-4, 5.59). Holmes takes the ball on regular rest after his May 17 gem vs Boston — 6 shutout innings to clinch that series — and the staff is 8-1 in his starts. The Braves arrive off a wild 5-4, 11-inning walk-off win Friday night, capped by Chadwick Tromp's two-out RBI single after a two-run rally in the 10th. Watch list: Ronald Acuña Jr. is back in the lineup playing through a left thumb bone bruise; the catching corps stays thin with Baldwin (oblique) and Murphy (finger) on the IL; Carlos Carrasco was recalled for bullpen depth with Victor Mederos optioned to Gwinnett.",
+  note: "SUN 4:10 PM — WASHINGTON SERIES FINALE (RUBBER GAME) — Atlanta (36-17, .679) goes for the series win in the Sunday rubber game against the Washington Nationals (24-29) after a split of the first two — a Friday walk-off win and a Saturday 2-0 shutout loss. The Braves send LHP MARTÍN PÉREZ (3-2, 2.18), coming off a career-high 10-strikeout masterpiece at Miami, against Nationals LHP FOSTER GRIFFIN (5-2, 4.02). Atlanta's bats will look to wake up after being held to one hit Saturday in a game that snapped a four-game winning streak. Watch list: Ronald Acuña Jr. continues to play through a left thumb bone bruise; the catching corps stays thin with Baldwin (oblique) and Murphy (finger) on the IL; OF José Azócar was designated for assignment when Eli White returned from the concussion IL. After this the Braves open a three-game home series vs Colorado.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-23", opp: "WSH", home: true, atlScore: 0, oppScore: 2, result: "L", note: "NATIONALS BLANK BRAVES 2-0 — ATLANTA HELD TO ONE HIT, STREAK SNAPPED — Washington beat Atlanta 2-0 Saturday at Truist Park in a combined one-hitter, ending the Braves' four-game winning streak. Grant Holmes (LP, 3-2) was excellent in a hard-luck defeat: 5 IP / 6 H / 2 ER / 2 BB / 10 K — a career-high strikeout total — but both runs scored on solo home runs, to Dylan Crews and Jorbit Vivas. The game was delayed 41 minutes by rain in the middle of the 2nd. Nationals RHP Jake Irvin (W, 2-4) held the Braves hitless over 5 innings before exiting with an apparent injury — he grimaced after his final out in the 5th, went back out for 6th-inning warmups, and was lifted without throwing another pitch. Brad Lord followed with three innings; Michael Harris II's leadoff single to center in the 7th off Lord was Atlanta's only hit. Richard Lovelady worked a perfect 9th for his 4th save. Atlanta's offense, which had erupted for a walk-off a night earlier, went quiet — no extra-base hits, shut out for the 3rd time this season. The Braves slip to 36-17 (.679, L1) but keep an 8.5-game NL East lead. Pre-game roster note: OF José Azócar was designated for assignment, with Eli White active off the concussion IL." },
   { date: "2026-05-22", opp: "WSH", home: true, atlScore: 5, oppScore: 4, result: "W", note: "TROMP WALKS IT OFF IN THE 11TH — BRAVES STUN NATIONALS 5-4 — Atlanta opened its homestand with a wild extra-innings comeback Friday night at Truist Park, beating Washington 5-4 in 11 innings on Chadwick Tromp's two-out, walk-off RBI single that scored automatic runner Eli White from second. It was the Braves' MLB-best 36th win and a 4th straight, lifting them to 36-16 (.692, W4). Bryce Elder was sharp — 6 IP / 5 H / 1 R / 1 BB / 4 K — and left with the game tied 1-1; the bullpen kept it knotted 2-2 through nine. Washington struck first in extras: CJ Abrams ripped a 2-run double in the top of the 10th to make it 4-2. Atlanta answered immediately — Tromp singled home Ha-Seong Kim and Mauricio Dubón followed with an RBI single to shallow left to tie it 4-4. Tyler Kinley (W, 4-2) tossed a perfect 11th, and Tromp ended it in the bottom half. Paxton Schultz (0-2) took the loss for Washington. Ronald Acuña Jr. returned to the lineup leading off and in right field, playing through a left thumb bone bruise. The Braves used an opener-led pitching plan against them — Richard Lovelady opened, Miles Mikolas threw 5 scoreless in bulk — but couldn't hold the late lead. Roster note: Carlos Carrasco was recalled and Victor Mederos optioned to Gwinnett." },
   { date: "2026-05-21", opp: "MIA", home: false, atlScore: 9, oppScore: 3, result: "W", note: "HARRIS II GOES DEEP TWICE, STRIDER FANS NINE — BRAVES BEAT MARLINS 9-3, TAKE 3 OF 4 — Atlanta closed the Miami road trip with a 9-3 win Thursday night at LoanDepot, taking three of four in the series for their 14th win in 16 series and improving to 35-16 (.686, MLB-best, W3). Michael Harris II carried the offense: a two-run HR (#10, a 389-ft shot to right-center off Sandy Alcantara in the 1st) and a 404-ft solo HR (#11) in the 9th — three HRs and six hits across the four-game series. Spencer Strider (W, 2-0) was excellent: 6.1 IP / 4 H / 3 R / 2 BB / 9 K, a season-high strikeout total; all three runs charged to him scored on solo HRs (one to Owen Caissie, two to Kyle Stowers). Mike Yastrzemski added a one-out, 418-ft solo HR (#3) to dead center in the 2nd and a run-scoring double in the 6th. Ronald Acuña Jr. had two hits, including an RBI single that made it 5-2 in the 5th, but exited in the 6th as a precaution with left thumb pain (X-rays negative, day-to-day) — Eli White replaced him in RF. Atlanta padded the lead in the 8th on pinch-hitter Mauricio Dubón's two-run single off Cade Gibson. Sandy Alcantara (LP, 3-3) gave up 6 R on 9 H over 6 IP. The Braves return home to open a weekend series vs Washington." },
   { date: "2026-05-20", opp: "MIA", home: false, atlScore: 9, oppScore: 1, result: "W", note: "SALE DOMINATES, RILEY & DOM SMITH GO DEEP — BRAVES ROUT MARLINS 9-1, CLINCH SERIES — Atlanta hammered Miami 9-1 Wednesday night at LoanDepot to take the series with a game still to play, improving to 34-16 (.680, MLB-best, W2). Chris Sale (W, 7-3) was vintage: 7 IP / 4 H / 1 R / 1 BB / 8 K, retiring the final nine Marlins he faced and not allowing a hit over his last three innings — his first career win over Miami (he had been 0-2 with a 5.30 ERA in three prior tries) and a snap of his personal two-start skid. The lone Marlins run scored in the 1st on Heriberto Hernández's sacrifice fly after a leadoff walk to Xavier Edwards. Austin Riley broke out of an 0-for-8 series with a 415-ft 3-run HR (#8), turning on Janson Junk's first-pitch sweeper to push it to 3-1. Dominic Smith provided the rest: a 3-run HR in the 6th and a 'little league homer' in the 8th — a hanging-curve gapper to right-center that turned into a run when the Marlins' relay throw sailed wide. Ozzie Albies and Michael Harris II each singled twice; Ronald Acuña Jr. added a hit in his second game back. The bullpen finished it without the high-leverage arms. Atlanta has won 5 of its last 6 and lines up Spencer Strider opposite Sandy Alcantara in Thursday's finale." },
@@ -1181,38 +1183,37 @@ export const RESULTS = [
   { date: "2026-05-16", opp: "BOS", home: true, atlScore: 2, oppScore: 3, result: "L", note: "CONTRERAS' 100th-PITCH 2-RUN HR ENDS IT — Boston evened the series 1-1 with a 3-2 Saturday-night W at Truist as Willson Contreras drilled a 426-ft, two-out, two-strike 2-run HR to deep LF off Bryce Elder's 100th pitch of the night in the bottom of the 8th, breaking a 1-1 tie. Elder (LP, 4-2): a near-pristine 8 IP / 6 H / 3 ER / 1 BB / 3 K — beaten by a single bad-luck swing on the final pitch (ERA up to 2.01, still 2nd on the staff). Drake Baldwin's 2-out, 2-RBI single up the middle off rookie LHP Payton Tolle in the 3rd briefly put Atlanta ahead 2-0; Trevor Story answered with a 4th-inning solo HR off Elder. Boston's TOLLE (W, 2-2) was the breakout: a career-high 8 IP / 4 H / 2 ER / 1 BB / 3 K on 6 swing-and-misses. Garrett Whitlock pitched a 1-2-3 9th for SV #4. Atlanta drops to 31-15 (.689, MLB-best, L1) — heads into Sunday's series-deciding finale at home with Holmes vs Bello." },
   { date: "2026-05-15", opp: "BOS", home: true, atlScore: 3, oppScore: 2, result: "W", note: "YASTRZEMSKI WALKS OFF THE RED SOX IN 10 — Atlanta beat Boston 3-2 in extra innings on Carl Yastrzemski's grandson Mike Yastrzemski's 10th-inning RBI double to LCF off Steven Matz, scoring automatic runner Ha-Seong Kim from 2nd to give Atlanta its MLB-leading 31st W. Yaz fouled two sac-bunt attempts before drilling the game-winner — his 7th career walk-off hit. The poetry: Carl played for the Red Sox for 23 years. Drake Baldwin (DH'd as Sandy León caught) opened the scoring with HR #12 to RF off Connelly Early in the 1st. Michael Harris II followed with HR #8 (L-vs-L) off Early in the 4th. Mickey Gasper RBI single off Strider in the 6th made it 2-1, then Marcelo Mayer's solo HR off Tyler Kinley tied it 2-2 in the 7th. Strider (ND): 5.1 IP / 3 H / 1 ER / 3 BB / 4 K (84 pitches) in his 3rd 2026 start — season ERA now 2.45. Sandy León's first start as a Brave was a defensive showcase: he threw out TWO Red Sox base stealers (including a back-pick to end the 9th). Robert Suarez (W, 5-0) tossed a clean 10th. Atlanta improves to 31-14, .689 — still MLB-best." },
   { date: "2026-05-14", opp: "CHC", home: true, atlScore: 0, oppScore: 2, result: "L", note: "IAN HAPP HOMERS, CUBS AVOID THE SWEEP — Chris Sale (LP, 6-3) was excellent again in defeat in the Cubs finale: 6 IP / 5 H / 1 UNEARNED R / 2 BB / 8 K. The lone run was scratched out in the top of the 5th on a Cubs pressure inning that included a Rojas-style miscue. Then with the lead clinging at 1-0, Ian Happ led off the 8th with a 424-ft HR off the Chop House restaurant in RF — a dagger that pushed it to 2-0. Atlanta managed just 5 hits across five Cubs arms: Ben Brown (ND) in his second straight start out of the bullpen worked 4 IP / 1 H / 7 K on 65 pitches; Hoby Milner (W, 1-0) 2 scoreless middle innings, Phil Maton and Jacob Webb scoreless frames, Daniel Palencia 2 K in the 9th for SV #3. ATL shut out for the 2nd time this season — and ATL fell to 30-14 (.682, still MLB-best). Braves still won the series 2-1; up next is BOS at Truist Friday-Sunday, with Strider in the opener vs Connelly Early. Pre-game: Acuña Jr. confirmed out for this homestand (i.e., through BOS); Schwellenbach cleared to begin throwing soon; Waldrep on bullpens in Florida." },
-  { date: "2026-05-13", opp: "CHC", home: true, atlScore: 4, oppScore: 1, result: "W", note: "BRAVES CLINCH CUBS SERIES IN 8TH-INNING UPRISING — Atlanta beat the Cubs 4-1 to take the 3-game series with a game still to play, sending Chicago to a season-high 4th straight loss and pushing the MLB-best mark to 30-13 (.698). Drake Baldwin opened the scoring with a solo HR (#11) off Shota Imanaga in the bottom of the 4th. Tyler Kinley gave up the 1-1 tie on a Nico Hoerner RBI single in the top of the 5th — but escaped without further damage. The game stayed knotted until Imanaga (LP, 4-3) was pulled in the bottom of the 8th after a Michael Harris II infield single, and Cubs RP Phil Maton was the one who paid: pinch-hitter Mike Yastrzemski drilled a go-ahead RBI double to put Atlanta ahead 2-1, and Mauricio Dubón followed with a 2-run HR (#3) to push it to 4-1. Imanaga's final line: 7 IP / 4 H / 1 ER / 8 K — beaten by the bullpen behind him. JR Ritchie was solid but unspectacular (ND). Robert Suarez (W, 4-0) tossed a clean 8th; Raisel Iglesias 1-2-3 9th for SV #8, STILL 0.00 ERA / 0.50 WHIP on the year. Pregame: Walt Weiss confirmed Ronald Acuña Jr. WILL NOT be activated this homestand (the live-game test box is still unchecked) — target is the road trip that follows the BOS weekend series." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 36, l: 16, pct: .692, gb: 0,    streak: "W4" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 26, l: 25, pct: .510, gb: 9.5,  streak: "L2" },
-  { team: "NYM", name: "New York Mets",          w: 23, l: 28, pct: .451, gb: 12.5, streak: "L1" },
-  { team: "WSH", name: "Washington Nationals",   w: 23, l: 29, pct: .442, gb: 13.0, streak: "L2" },
-  { team: "MIA", name: "Miami Marlins",          w: 22, l: 30, pct: .423, gb: 14.0, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 36, l: 17, pct: .679, gb: 0,    streak: "L1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 27, l: 25, pct: .519, gb: 8.5,  streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 24, l: 29, pct: .453, gb: 12.0, streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 23, l: 29, pct: .442, gb: 12.5, streak: "L2" },
+  { team: "MIA", name: "Miami Marlins",          w: 23, l: 30, pct: .434, gb: 13.0, streak: "W2" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-23T08:45:00-04:00",
+  generatedAt: "2026-05-24T04:45:00-04:00",
   summary:
-    "TROMP WALKS IT OFF IN THE 11TH — BRAVES STUN NATIONALS 5-4 — Atlanta opened its homestand with a wild extra-innings comeback Friday night at Truist Park, beating Washington 5-4 in 11 on CHADWICK TROMP's two-out, walk-off RBI single that scored Eli White from second. Trailing 4-2 after CJ Abrams' 2-run double in the top of the 10th, the Braves rallied in the bottom half — Tromp singled home Ha-Seong Kim and MAURICIO DUBÓN tied it 4-4 — before TYLER KINLEY (W, 4-2) threw a perfect 11th and Tromp ended it. BRYCE ELDER was sharp in a no-decision: 6 IP / 5 H / 1 R / 1 BB / 4 K. The win is Atlanta's MLB-best 36th and a 4th straight, moving the Braves to 36-16 (.692, W4). RONALD ACUÑA JR. returned to the lineup leading off and in right field, playing through a left thumb bone bruise. NL East: ATL 36-16, PHI 26-25 (-9.5, L2), NYM 23-28 (-12.5, L1), WSH 23-29 (-13.0, L2), MIA 22-30 (-14.0, W1). SATURDAY (4:10 PM): WSH series Game 2 at Truist Park — GRANT HOLMES (3-1, 3.79) vs WSH RHP JAKE IRVIN (1-4, 5.59). Roster: Carlos Carrasco was recalled for bullpen depth and Victor Mederos optioned to Gwinnett. Catching corps stays thin with Baldwin (oblique) and Murphy (finger) on the IL; Schwellenbach is throwing and Waldrep is on Florida-complex bullpens.",
+    "NATIONALS BLANK BRAVES 2-0 — ONE-HIT NIGHT SNAPS THE STREAK — Atlanta wasted a career-best 10-strikeout outing from GRANT HOLMES and was held to a single hit in a 2-0 loss to Washington on Saturday at Truist Park, ending a four-game winning streak. Holmes went 5 IP / 6 H / 2 ER / 2 BB / 10 K but surrendered solo home runs to DYLAN CREWS and JORBIT VIVAS — the only runs of a game delayed 41 minutes by rain in the 2nd. Nationals RHP JAKE IRVIN held the Braves hitless over five innings before leaving with an apparent injury; MICHAEL HARRIS II's leadoff single in the 7th off Brad Lord was Atlanta's only hit, and Richard Lovelady closed a combined one-hitter for his 4th save. The Braves slip to 36-17 (.679) but keep a commanding 8.5-game NL East lead. NL East: ATL 36-17, PHI 27-25 (-8.5, W1), WSH 24-29 (-12.0, W1), NYM 23-29 (-12.5, L2), MIA 23-30 (-13.0, W2). SUNDAY (4:10 PM): WSH series finale and rubber game at Truist Park — MARTÍN PÉREZ (3-2, 2.18) vs WSH LHP FOSTER GRIFFIN (5-2, 4.02). Roster: OF José Azócar was designated for assignment when Eli White was reinstated from the concussion IL. The catching corps stays thin with Baldwin (oblique) and Murphy (finger) on the IL; Schwellenbach is throwing and Waldrep is on Florida-complex bullpens.",
   keyTopics: [
-    { category: "result",      title: "FRI: Tromp walks it off in the 11th — Braves stun Nationals 5-4",                                detail: "Atlanta opened its homestand with a 5-4, 11-inning comeback win over Washington on Chadwick Tromp's two-out, walk-off RBI single that scored automatic runner Eli White from second. It was the Braves' MLB-best 36th win and a 4th in a row, moving them to 36-16 (.692, W4). Paxton Schultz (0-2) took the loss for the Nationals." },
-    { category: "result",      title: "Two-run 10th: Tromp and Dubón erase a late deficit",                                             detail: "Washington went ahead 4-2 on CJ Abrams' two-run double in the top of the 10th, but Atlanta answered immediately. Tromp singled home automatic runner Ha-Seong Kim, and Mauricio Dubón followed with an RBI single to shallow left to tie it 4-4 — keeping the comeback alive for Tromp's 11th-inning walk-off." },
-    { category: "milestone",   title: "Tromp's two-RBI night — the unlikely walk-off hero",                                             detail: "Selected from Triple-A Gwinnett on May 19 to help cover for the injured catchers, Chadwick Tromp delivered the biggest night of his Braves tenure: a tying RBI single in the 10th and a two-out, walk-off RBI single in the 11th. The journeyman backstop's two-hit, two-RBI line won Atlanta its 36th game." },
-    { category: "rotation",    title: "Elder sharp in a no-decision — 6 IP, 1 run",                                                      detail: "Bryce Elder turned in another quality start Friday: 6 IP / 5 H / 1 R / 1 BB / 4 K, leaving with the game tied 1-1. His season line ticks to 1.97 ERA / 1.05 WHIP / 4-2 across 11 starts — 2nd on the staff in ERA behind Chris Sale, with elite strike-throwing (22 BB in 68.2 IP)." },
-    { category: "rotation",    title: "Kinley's perfect 11th earns the win",                                                            detail: "Tyler Kinley (W, 4-2) tossed a 1-2-3 top of the 11th to hold the tie and stand as the pitcher of record for Tromp's walk-off. The clean frame trims his season line to 2.12 ERA / 1.18 WHIP across 18 games — a steadying outing for the veteran middle reliever." },
-    { category: "injury",      title: "Acuña plays through a left thumb bone bruise",                                                   detail: "Ronald Acuña Jr. was right back in the lineup Friday — leading off and in right field — a day after exiting Thursday's win with thumb pain. Imaging showed a left thumb bone bruise with no fracture; Walt Weiss said he expects Acuña to be fine, and the star was lobbying to play the moment Thursday's game ended. He is being managed day-to-day around the bruise but remains active." },
-    { category: "transaction", title: "Braves recall Carlos Carrasco, option Victor Mederos",                                          detail: "Atlanta selected Carlos Carrasco's contract from Triple-A Gwinnett on May 21 to add a fresh long-relief arm, optioning Victor Mederos in the corresponding move. It is the 39-year-old Carrasco's third stint with the big club this season. Mederos went out on a high note — a couple of scoreless mop-up frames in his May 20 MLB debut — and stays on the 40-man as recall-ready depth." },
-    { category: "rotation",    title: "TODAY (SAT 4:10 PM): Holmes vs Irvin in WSH Game 2",                                             detail: "The Braves go for their 5th straight win and a series-clinching chance Saturday, sending Grant Holmes (3-1, 3.79) against struggling Nationals RHP Jake Irvin (1-4, 5.59). Holmes is on regular rest after his May 17 six-shutout-inning gem vs Boston; Atlanta is 8-1 in his nine starts this season." },
-    { category: "standings",   title: "NL East: ATL 36-16, PHI 26-25 (-9.5), NYM 23-28 (-12.5), WSH 23-29 (-13.0), MIA 22-30 (-14.0)",  detail: "Atlanta's four-game winning streak pushes the division lead to 9.5 games over Philadelphia, which fell 1-0 to Cleveland on a ninth-inning pinch-hit homer. The Marlins beat the Mets 2-1 to climb out of the cellar's deepest hole; Washington slips to 23-29 after the loss in Atlanta. The Braves own the best record in MLB." },
+    { category: "result",      title: "SAT: Nationals blank Braves 2-0 — one-hit night ends the streak",                               detail: "Washington beat Atlanta 2-0 Saturday at Truist Park in a combined one-hitter, snapping the Braves' four-game winning streak. Atlanta's only hit was a Michael Harris II leadoff single in the 7th; the offense managed no extra-base hits and was shut out for the third time this season. The loss drops the Braves to 36-17 (.679, L1)." },
+    { category: "milestone",   title: "Holmes strikes out a career-high 10 in a hard-luck loss",                                        detail: "Grant Holmes (LP, 3-2) was excellent in defeat: 5 IP / 6 H / 2 ER / 2 BB / 10 K, a career-high strikeout total. Both runs scored on solo home runs — to Dylan Crews and Jorbit Vivas — and Atlanta's bats gave him nothing. His season line holds at 3.77 ERA / 1.35 WHIP across 10 starts." },
+    { category: "result",      title: "Braves bats go quiet — held to one hit at home",                                                detail: "A night after erupting for an 11-inning walk-off, Atlanta's offense was silenced. Nationals RHP Jake Irvin held the Braves hitless over five innings, Brad Lord worked three, and Richard Lovelady finished a perfect 9th for his 4th save. The shutout was Atlanta's third of the year." },
+    { category: "transaction", title: "Braves designate José Azócar, reinstate Eli White from concussion IL",                          detail: "Atlanta designated outfielder José Azócar for assignment when Eli White was reinstated from the 7-day concussion injured list. With White healthy and Ronald Acuña Jr. back from the IL, the speed-and-defense fourth outfielder was squeezed off a crowded outfield picture after another short stint." },
+    { category: "rotation",    title: "TODAY (SUN 4:10 PM): Pérez vs Foster Griffin in the WSH rubber game",                            detail: "The Braves go for the series win in Sunday's rubber game, sending LHP Martín Pérez (3-2, 2.18) — coming off a career-high 10-strikeout masterpiece at Miami — against Nationals LHP Foster Griffin (5-2, 4.02). Atlanta will look for the bats to wake up after the one-hit Saturday." },
+    { category: "narrative",   title: "Irvin's no-hit bid ends with an apparent injury",                                               detail: "Nationals starter Jake Irvin (W, 2-4) had not allowed a hit through five innings before grimacing after his final out in the 5th. He returned for 6th-inning warmups but was lifted without throwing another pitch — an injury scare that handed the no-hit bid to the bullpen, which carried it until Harris II's 7th-inning single." },
+    { category: "injury",      title: "Acuña plays through a left thumb bone bruise",                                                   detail: "Ronald Acuña Jr. continues to play through a left thumb bone bruise suffered when he exited Thursday's win at Miami. Imaging showed no fracture, and Walt Weiss said he expects the star to be fine; Acuña is being managed day-to-day around the bruise but remains in the lineup." },
     { category: "injury",      title: "Catching corps thin — Baldwin (oblique) and Murphy (finger) both out",                           detail: "Drake Baldwin (right oblique strain, 10-day IL) and Sean Murphy (fractured left middle finger, ~8 weeks) are both sidelined, leaving Atlanta leaning on a Sandy León / Chadwick Tromp catching tandem with waiver claim Maverick Handley as Triple-A depth. Baldwin's season is frozen at .312/.380/.569 (.949 OPS) with 12 HR / 35 RBI." },
     { category: "injury",      title: "Rehab roundup — Schwellenbach throwing, Waldrep on Florida bullpens",                            detail: "Spencer Schwellenbach (arthroscopic elbow) has been cleared to begin a throwing program, a first step toward a late-June / July return. Hurston Waldrep (post-elbow surgery), now on the 60-day IL, is throwing bullpens at the Florida complex with a June rehab-assignment target. Joe Jiménez (knee) still has no timeline; AJ Smith-Shawver and Danny Young remain on the 60-day IL." },
-    { category: "narrative",   title: "Braves 36-16, MLB-best — riding a four-game winning streak",                                      detail: "Atlanta is the only team in baseball at .690-plus and rolling at the right time, with a 9.5-game division cushion. After the Washington weekend the Braves host Colorado before a softer stretch gives way to the early-June head-to-head with the Phillies. They have yet to lose a series at full strength in 2026." },
+    { category: "transaction", title: "Carrasco up, Mederos optioned — bullpen depth shuffle",                                         detail: "Atlanta selected Carlos Carrasco's contract from Triple-A Gwinnett on May 21 for a fresh long-relief arm, optioning Victor Mederos in the corresponding move. It is the 39-year-old Carrasco's third stint with the big club this season; Mederos stays on the 40-man as recall-ready depth after a strong May 20 MLB debut." },
+    { category: "standings",   title: "NL East: ATL 36-17, lead holds at 8.5 over Philadelphia",                                        detail: "Atlanta's loss trims the division cushion only slightly: the Braves lead Philadelphia (27-25, beat Cleveland 3-0) by 8.5 games, with Washington (24-29), the Mets (23-29) and Miami (23-30) well back. Atlanta still owns one of the best records in baseball at .679." },
+    { category: "narrative",   title: "Braves 36-17 — among baseball's best despite a quiet night",                                     detail: "One flat offensive night doesn't change the picture: Atlanta sits at 36-17 with a commanding NL East lead and a deep, healthy pitching staff. After the Washington finale the Braves host Colorado for three before the schedule builds toward an early-June head-to-head with the Phillies." },
   ],
   sources: [
-    "MLB.com", "ESPN", "AP", "Atlanta Voice", "Atlanta News First", "Times Free Press", "AJC", "Battery Power", "MLB Trade Rumors", "Baseball-Reference", "FanGraphs", "Yahoo Sports", "CBS Sports", "FOX Sports", "Yardbarker", "BVM Sports",
+    "MLB.com", "ESPN", "AP", "AJC", "Chattanooga Times Free Press", "Washington Post", "Battery Power", "House That Hank Built", "MLB Trade Rumors", "Baseball-Reference", "FanGraphs", "Yahoo Sports", "CBS Sports", "FOX Sports", "Sports Illustrated", "Yardbarker",
   ],
 };
