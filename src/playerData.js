@@ -894,8 +894,8 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
-    stats: { era: 2.77, whip: 1.10, ip: 26.0, k: 33, bb: 13, w: 2, l: 0, games: 5, starts: 5 },
-    statNote: "STARTS THE CINCINNATI FINALE TODAY (SUN 1:40 PM ET) — Strider draws the ball for the series finale at Great American Ball Park on regular rest, opposite Reds LHP Nick Lodolo, with Atlanta chasing a road sweep after reaching 40 wins. He's coming off a 5-IP, 6-K no-decision at Fenway (back-to-back 1st-inning HRs, then 14 retired in a row). Season line: 2-0 / 2.77 ERA / 1.10 WHIP / 33 K in 26.0 IP across 5 starts. The IL-returnee keeps looking like a frontline arm — velocity holding, slider biting, command sharper every time out.",
+    stats: { era: 3.19, whip: 1.21, ip: 31.0, k: 41, bb: 15, w: 3, l: 1, games: 6, starts: 6 },
+    statNote: "TAKES THE LOSS IN CINCINNATI DESPITE 8 K — Strider was solid but beaten in Sunday's 6-4 series finale at Great American Ball Park: 5 IP / 7 H / 3 R (3 ER) / 2 BB / 8 K (LP, 3-1), as Eugenio Suárez and JJ Bleday homered and the Reds avoided the sweep. He's coming off a 5-IP, 6-K no-decision at Fenway before this. Season line: 3-1 / 3.19 ERA / 1.21 WHIP / 41 K in 31.0 IP across 6 starts. The IL-returnee still looks like a frontline arm — velocity holding and the slider biting — and lines up to start the Toronto series finale Thursday.",
     form: 8.6,
     status: "active",
     injuryNote: null,
@@ -1101,6 +1101,7 @@ export const TEAM_LOGOS = {
   BOS: "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
   CIN: "https://a.espncdn.com/i/teamlogos/mlb/500/cin.png",
   CHC: "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
+  TOR: "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
 };
 
 // ─── UPCOMING SCHEDULE ─────────────────────────────────────────────────────────
@@ -1110,57 +1111,58 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-05-31",
-    weekday: "Sun",
-    time: "1:40 PM ET",
-    opp: "CIN",
-    home: false,
-    venue: "Great American Ball Park",
-    atlSP: { id: "strider", name: "Spencer Strider", record: "2-0", era: 2.77, daysRest: 5, hand: "R" },
-    oppSP: { name: "Nick Lodolo", record: "1-1", era: 5.57, hand: "L" },
-    note: "TODAY · CIN series finale at Great American Ball Park · Atlanta chases a road sweep after reaching 40 wins · Strider on regular rest after the 5-IP, 6-K no-decision at Fenway · opposite Reds LHP Nick Lodolo",
-  },
-  {
     date: "2026-06-02",
     weekday: "Tue",
-    time: "7:20 PM ET",
-    opp: "TBD",
+    time: "7:15 PM ET",
+    opp: "TOR",
     home: true,
     venue: "Truist Park",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "4-3", era: 2.63, daysRest: 7, hand: "R" },
-    oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "Atlanta returns home for a homestand opener · Elder on regular rest looking to bounce back from the 8-0 Fenway blow-up · opponent TBD pending schedule confirmation",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "4-3", era: 2.50, daysRest: 6, hand: "R" },
+    oppSP: { name: "Kevin Gausman", record: "4-3", era: 3.23, hand: "R" },
+    note: "Homestand opener vs Toronto at Truist Park · Elder on regular rest looking to bounce back from the 8-0 Fenway blow-up that nudged his ERA to 2.50 · opposite Blue Jays RHP Kevin Gausman (4-3, 3.23)",
   },
   {
     date: "2026-06-03",
     weekday: "Wed",
-    time: "7:20 PM ET",
-    opp: "TBD",
+    time: "7:15 PM ET",
+    opp: "TOR",
     home: true,
     venue: "Truist Park",
     atlSP: { id: "sale", name: "Chris Sale", record: "8-3", era: 2.02, daysRest: 6, hand: "L" },
     oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "Homestand continues at Truist Park · Sale lines up on regular rest after his 8-K Fenway homecoming win · opponent TBD pending schedule confirmation",
+    note: "Homestand continues vs Toronto at Truist Park · Sale lines up on regular rest after his 8-K Fenway homecoming win · Blue Jays starter TBD",
+  },
+  {
+    date: "2026-06-04",
+    weekday: "Thu",
+    time: "12:20 PM ET",
+    opp: "TOR",
+    home: true,
+    venue: "Truist Park",
+    atlSP: { id: "strider", name: "Spencer Strider", record: "3-1", era: 3.19, daysRest: 4, hand: "R" },
+    oppSP: { name: "TBD", record: null, era: null, hand: null },
+    note: "Series finale vs Toronto (day game) · Strider back out after taking the loss in Cincinnati despite 8 K over 5 IP · Blue Jays starter TBD",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-05-31",
-  time: "1:40 PM ET",
-  opp: "CIN",
-  home: false,
-  venue: "Great American Ball Park · Cincinnati, OH",
-  tv: "Bally Sports / MLB.TV",
+  date: "2026-06-02",
+  time: "7:15 PM ET",
+  opp: "TOR",
+  home: true,
+  venue: "Truist Park · Atlanta, GA",
+  tv: "FanDuel Sports Network Southeast / MLB.TV",
   probables: {
-    atl: { pitcher: "Spencer Strider", record: "2-0", era: 2.77 },
-    opp: { pitcher: "Nick Lodolo", record: "1-1", era: 5.57 },
+    atl: { pitcher: "Bryce Elder", record: "4-3", era: 2.50 },
+    opp: { pitcher: "Kevin Gausman", record: "4-3", era: 3.23 },
   },
-  note: "SUN 1:40 PM ET — CINCINNATI SERIES FINALE — Fresh off a 5-2 win in which RONALD ACUÑA JR. homered twice (his third straight game deep) to power Atlanta to a league-first 40 wins, MLB-best Atlanta (40-19, .678, W3) goes for the road sweep at Great American Ball Park. SPENCER STRIDER (2-0, 2.77 ERA) takes the ball on regular rest, opposite Reds LHP NICK LODOLO (1-1, 5.57 ERA). Watch list: the catching corps is still thin with Baldwin (oblique) and Murphy (finger) on the IL and a León / Tromp tandem behind the plate; the NL East lead sits at 9.5 games. Atlanta returns home to open a homestand Tuesday with Bryce Elder lined up.",
+  note: "TUE 7:15 PM ET — HOMESTAND OPENER vs TORONTO — After a Monday off-day, MLB-best Atlanta (40-20, .667, L1) returns to Truist Park to open an interleague series with the Blue Jays, coming off a 6-4 loss in Cincinnati on Sunday that cost the road sweep. BRYCE ELDER (4-3, 2.50 ERA) takes the ball looking to rebound from the 8-0 Fenway blow-up, opposite Blue Jays RHP KEVIN GAUSMAN (4-3, 3.23 ERA). Watch list: the catching corps is still thin with Baldwin (oblique) and Murphy (finger) on the IL and a León / Tromp tandem behind the plate; the NL East lead sits at 9.0 games. Sale and Strider line up to follow in the series.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-05-31", opp: "CIN", home: false, atlScore: 4, oppScore: 6, result: "L", note: "REDS AVOID THE SWEEP — SUÁREZ HOMERS, LODOLO OUTDUELS STRIDER, CINCINNATI HOLDS ON 6-4 — Atlanta's win streak ended Sunday at Great American Ball Park as the Reds took the finale 6-4, denying the road sweep and dropping the MLB-best Braves to 40-20 (.667, L1). EUGENIO SUÁREZ broke out with his first homer since April 15 and JJ BLEDAY also went deep as NICK LODOLO (W, 2-1) limited Atlanta to three earned over 6.2 innings. RONALD ACUÑA JR. kept his power surge alive, ambushing Lodolo's first pitch of the game for his franchise-best 39th career leadoff HR — his fifth homer in four games — but the bats went quiet after. SPENCER STRIDER (LP, 3-1) was solid in defeat: 5 IP / 7 H / 3 R (3 ER) / 2 BB / 8 K. Atlanta threatened in the ninth but couldn't complete the comeback, stranding the tying run. The Braves still lead the NL East by 9.0 games and head home for a Monday off-day before opening a homestand vs Toronto on Tuesday." },
   { date: "2026-05-30", opp: "CIN", home: false, atlScore: 5, oppScore: 2, result: "W", note: "ACUÑA TWO MORE HOMERS — BRAVES REACH 40 WINS, CLINCH CINCINNATI SERIES 5-2 — Atlanta became the first team in baseball to 40 wins Saturday night at Great American Ball Park, beating the Reds 5-2 to clinch the series and improve to MLB-best 40-19 (.678, W3). RONALD ACUÑA JR. homered for a third straight game, hitting a pair of solo shots: a game-tying blast to right-center off Brady Singer in the 3rd (#5) and a two-out insurance HR off Lyon Richardson in the 9th (#6). He also stole two bases. JORGE MATEO put Atlanta ahead 3-2 with a solo HR to the second deck in left off Singer in the 5th (#3), and MATT OLSON followed with a solo shot off Brock Burke in the 7th (#16) to make it 4-2. MARTÍN PÉREZ (W, 4-3) was solid in the clincher — 5 IP / 4 H / 2 R / 3 BB / 2 K — and RAISEL IGLESIAS closed a perfect 9th for his 10th save, keeping his ERA at 0.00. Reds RHP BRADY SINGER (LP, 2-5) took the loss. Atlanta goes for the road sweep Sunday afternoon behind Spencer Strider." },
   { date: "2026-05-29", opp: "CIN", home: false, atlScore: 8, oppScore: 3, result: "W", note: "HARRIS II 3 RBI, ACUÑA LEADOFF HR — BRAVES OPEN CINCINNATI SERIES WITH AN 8-3 WIN — Atlanta took the road-series opener 8-3 Friday night at Great American Ball Park, moving to MLB-best 39-19 (.684, W2). MICHAEL HARRIS II went 3-for-5 with three RBI — including a two-run single off Caleb Ferguson that pushed it to 8-3 — to cap a torrid week. RONALD ACUÑA JR. set the tone immediately, leading off the game with a solo HR (#4, his 38th career leadoff homer) for a second straight game with a home run after his Fenway grand slam. DOMINIC SMITH added three hits and scored twice; MIKE YASTRZEMSKI doubled in a run and JORGE MATEO chipped in an RBI single. GRANT HOLMES drew a no-decision in a workmanlike start — the only damage was solo HRs by JJ Bleday and Nathaniel Lowe that briefly trimmed it to 4-2 in the 4th — and the bullpen slammed the door, with DIDIER FUENTES (W, 4-0) tossing 1.1 innings of one-hit relief. Reds RHP CHRIS PADDACK (LP, 0-7) stayed winless, charged with four earned over five innings, as Cincinnati fell further back. Atlanta goes for the series clinch Saturday." },
   { date: "2026-05-28", opp: "BOS", home: false, atlScore: 10, oppScore: 2, result: "W", note: "SALE'S FENWAY HOMECOMING, ACUÑA GRAND SLAM — BRAVES TROUNCE RED SOX 10-2, AVOID SWEEP — Atlanta salvaged the Boston series with a 10-2 rout Thursday at Fenway Park, improving to MLB-best 38-19 (.667, W1). CHRIS SALE (W, 8-3) was excellent in a charged return to the park where he won the 2018 World Series: 5 IP / 6 H / 2 R / 3 BB / 8 K, running his record to 3-0 against the Red Sox since Boston traded him to Atlanta before 2024. The game broke open in the 6th: with the score tied 2-2, pinch-hitter MIKE YASTRZEMSKI — grandson of Red Sox great Carl Yastrzemski — drew a bases-loaded walk to force in the go-ahead run, and RONALD ACUÑA JR. followed by clearing the Green Monster off Greg Weissert for his 4th career grand slam (HR #3, his first since April 24). MICHAEL HARRIS II launched a solo HR (#12) and OZZIE ALBIES added a two-run shot (#9) in a 3-hit day. The last-place Red Sox (23-32) wrapped a 1-5 homestand and fell to 9-19 at Fenway. Atlanta heads to Cincinnati for a weekend road series." },
@@ -1171,36 +1173,35 @@ export const RESULTS = [
   { date: "2026-05-22", opp: "WSH", home: true, atlScore: 5, oppScore: 4, result: "W", note: "TROMP WALKS IT OFF IN THE 11TH — BRAVES STUN NATIONALS 5-4 — Atlanta opened its homestand with a wild extra-innings comeback Friday night at Truist Park, beating Washington 5-4 in 11 innings on Chadwick Tromp's two-out, walk-off RBI single that scored automatic runner Eli White from second. It was the Braves' MLB-best 36th win and a 4th straight, lifting them to 36-16 (.692, W4). Bryce Elder was sharp — 6 IP / 5 H / 1 R / 1 BB / 4 K — and left with the game tied 1-1; the bullpen kept it knotted 2-2 through nine. Washington struck first in extras: CJ Abrams ripped a 2-run double in the top of the 10th to make it 4-2. Atlanta answered immediately — Tromp singled home Ha-Seong Kim and Mauricio Dubón followed with an RBI single to shallow left to tie it 4-4. Tyler Kinley (W, 4-2) tossed a perfect 11th, and Tromp ended it in the bottom half. Paxton Schultz (0-2) took the loss for Washington. Ronald Acuña Jr. returned to the lineup leading off and in right field, playing through a left thumb bone bruise. The Braves used an opener-led pitching plan against them — Richard Lovelady opened, Miles Mikolas threw 5 scoreless in bulk — but couldn't hold the late lead. Roster note: Carlos Carrasco was recalled and Victor Mederos optioned to Gwinnett." },
   { date: "2026-05-21", opp: "MIA", home: false, atlScore: 9, oppScore: 3, result: "W", note: "HARRIS II GOES DEEP TWICE, STRIDER FANS NINE — BRAVES BEAT MARLINS 9-3, TAKE 3 OF 4 — Atlanta closed the Miami road trip with a 9-3 win Thursday night at LoanDepot, taking three of four in the series for their 14th win in 16 series and improving to 35-16 (.686, MLB-best, W3). Michael Harris II carried the offense: a two-run HR (#10, a 389-ft shot to right-center off Sandy Alcantara in the 1st) and a 404-ft solo HR (#11) in the 9th — three HRs and six hits across the four-game series. Spencer Strider (W, 2-0) was excellent: 6.1 IP / 4 H / 3 R / 2 BB / 9 K, a season-high strikeout total; all three runs charged to him scored on solo HRs (one to Owen Caissie, two to Kyle Stowers). Mike Yastrzemski added a one-out, 418-ft solo HR (#3) to dead center in the 2nd and a run-scoring double in the 6th. Ronald Acuña Jr. had two hits, including an RBI single that made it 5-2 in the 5th, but exited in the 6th as a precaution with left thumb pain (X-rays negative, day-to-day) — Eli White replaced him in RF. Atlanta padded the lead in the 8th on pinch-hitter Mauricio Dubón's two-run single off Cade Gibson. Sandy Alcantara (LP, 3-3) gave up 6 R on 9 H over 6 IP. The Braves return home to open a weekend series vs Washington." },
   { date: "2026-05-20", opp: "MIA", home: false, atlScore: 9, oppScore: 1, result: "W", note: "SALE DOMINATES, RILEY & DOM SMITH GO DEEP — BRAVES ROUT MARLINS 9-1, CLINCH SERIES — Atlanta hammered Miami 9-1 Wednesday night at LoanDepot to take the series with a game still to play, improving to 34-16 (.680, MLB-best, W2). Chris Sale (W, 7-3) was vintage: 7 IP / 4 H / 1 R / 1 BB / 8 K, retiring the final nine Marlins he faced and not allowing a hit over his last three innings — his first career win over Miami (he had been 0-2 with a 5.30 ERA in three prior tries) and a snap of his personal two-start skid. The lone Marlins run scored in the 1st on Heriberto Hernández's sacrifice fly after a leadoff walk to Xavier Edwards. Austin Riley broke out of an 0-for-8 series with a 415-ft 3-run HR (#8), turning on Janson Junk's first-pitch sweeper to push it to 3-1. Dominic Smith provided the rest: a 3-run HR in the 6th and a 'little league homer' in the 8th — a hanging-curve gapper to right-center that turned into a run when the Marlins' relay throw sailed wide. Ozzie Albies and Michael Harris II each singled twice; Ronald Acuña Jr. added a hit in his second game back. The bullpen finished it without the high-leverage arms. Atlanta has won 5 of its last 6 and lines up Spencer Strider opposite Sandy Alcantara in Thursday's finale." },
-  { date: "2026-05-19", opp: "MIA", home: false, atlScore: 8, oppScore: 4, result: "W", note: "ACUÑA RETURNS, PÉREZ'S 10 K, BRAVES BOUNCE BACK 8-4 — Atlanta snapped Monday's 12-0 shutout L with a clean 8-4 W at LoanDepot Tuesday afternoon, improving to 33-16 (.673, MLB-best, W1). RONALD ACUÑA JR. returned from the 10-day IL leading off at DH, going 1-for-2 with a double, two walks, and three runs scored — the dynamic top-of-order energy was back in the lineup for the first time since May 2. Martín Pérez (W, 3-2) was the story: 6 IP / 4 H / 3 ER / 1 BB / 10 K (career-high) on 91 pitches, with the slider working both sides of the plate (8 of his 10 Ks came on the slider). Braxton Garrett (LP) loaded the bases with no outs to start the game; Ozzie Albies cashed in with a sac fly RBI and Michael Harris II followed with a 2-out RBI single for a 2-0 lead. Harris II later added HR #9 in the 2nd to make it 4-0. Miami chipped back to 4-3 with a 3-spot in the bottom of the 1st (Xavier Edwards leadoff HR, Kyle Stowers 2-RBI double). Mauricio Dubón broke the 3-3 tie with a go-ahead RBI single in the 8th, Matt Olson followed with a 2-run single, and Acuña scored from 2nd on a wild pitch. Olson finished 2-for-3 with 3 RBI / 2 BB. Dubón had 3 hits starting in LF for Yastrzemski. PRE-GAME ROSTER FLURRY: Aaron Bummer RELEASED ($9.5M still owed); Drake Baldwin to the 10-day IL (right oblique strain, MRI pending); JR Ritchie optioned to Gwinnett; Dylan Dodd activated from the IL; Victor Mederos recalled from Gwinnett; Chadwick Tromp contract selected to pair with Sandy León behind the plate." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 40, l: 19, pct: .678, gb: 0,    streak: "W3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 30, l: 28, pct: .517, gb: 9.5,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 30, l: 29, pct: .508, gb: 10.0, streak: "W2" },
-  { team: "MIA", name: "Miami Marlins",          w: 26, l: 33, pct: .441, gb: 14.0, streak: "L3" },
-  { team: "NYM", name: "New York Mets",          w: 25, l: 33, pct: .431, gb: 14.5, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 40, l: 20, pct: .667, gb: 0,    streak: "L1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 30, l: 28, pct: .517, gb: 9.0,  streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 30, l: 29, pct: .508, gb: 9.5,  streak: "W2" },
+  { team: "MIA", name: "Miami Marlins",          w: 26, l: 33, pct: .441, gb: 13.5, streak: "L3" },
+  { team: "NYM", name: "New York Mets",          w: 25, l: 33, pct: .431, gb: 14.0, streak: "W1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-05-31T08:45:00-04:00",
+  generatedAt: "2026-06-01T08:45:00-04:00",
   summary:
-    "ACUÑA TWO MORE HOMERS — BRAVES REACH 40 WINS, CLINCH CINCINNATI SERIES — Atlanta beat the Reds 5-2 Saturday night at Great American Ball Park to become the first team in baseball to 40 wins (40-19, .678, W3) and lock up the series. RONALD ACUÑA JR. homered for a third straight game — a game-tying solo shot off Brady Singer in the 3rd (#5) and a two-out insurance blast off Lyon Richardson in the 9th (#6) — and added two steals. JORGE MATEO put Atlanta ahead with a solo HR to the second deck (#3) and MATT OLSON tacked on his NL-leading 16th. MARTÍN PÉREZ (W, 4-3) gave up 2 R / 4 H over 5 IP and RAISEL IGLESIAS closed a perfect 9th for his 10th save, keeping his ERA at 0.00. TODAY SUN 1:40 PM ET — Atlanta goes for the road sweep, SPENCER STRIDER (2-0, 2.77) vs Reds LHP NICK LODOLO (1-1, 5.57). The NL East lead sits at 9.5 games. Catching corps still thin: Baldwin (oblique) and Murphy (finger) on the IL; Schwellenbach throwing; Waldrep on Florida-complex bullpens.",
+    "REDS AVOID THE SWEEP — BRAVES OFF MONDAY, OPEN HOMESTAND vs TORONTO TUESDAY — Atlanta dropped Sunday's Cincinnati finale 6-4 as Eugenio Suárez and JJ Bleday homered and Nick Lodolo (W, 2-1) outdueled Spencer Strider (LP, 3-1, 8 K), snapping the win streak and missing the road sweep. The MLB-best Braves still sit 40-20 (.667) atop the NL East by 9.0 games. RONALD ACUÑA JR. led off the game with his franchise-best 39th career leadoff HR — a fifth homer in four games — but the bats went quiet after. Atlanta is off Monday, then opens a three-game interleague homestand vs the Blue Jays Tuesday at 7:15 PM ET, BRYCE ELDER (4-3, 2.50) vs Kevin Gausman (4-3, 3.23), with Sale and Strider lined up to follow. Catching corps still thin: Baldwin (oblique) and Murphy (finger) on the IL; Schwellenbach throwing; Waldrep on Florida-complex bullpens.",
   keyTopics: [
-    { category: "result",      title: "SAT: Braves beat Reds 5-2 to clinch the Cincinnati series",                                       detail: "Atlanta won 5-2 Saturday at Great American Ball Park, taking the series and improving to an MLB-best 40-19 (.678, W3). Ronald Acuña Jr. homered twice, Jorge Mateo and Matt Olson each added solo shots, Martín Pérez (W, 4-3) gave up two runs over five innings, and Raisel Iglesias closed it out for save #10." },
-    { category: "milestone",   title: "Braves first to 40 wins — fastest in baseball",                                                   detail: "Saturday's win made Atlanta the first team in MLB to reach 40 victories in 2026, at 40-19 (.678). The Braves own the best record in the majors and have built the largest division lead of any team while navigating a thinned-out catching corps and rotation." },
-    { category: "milestone",   title: "Acuña homers in a third straight game — two more at Cincinnati",                                  detail: "Ronald Acuña Jr. hit a pair of solo homers Saturday (#5 and #6) and stole two bases, extending his power surge to three consecutive games after his Fenway grand slam and Friday's leadoff shot. The run buries any lingering concern about the left thumb bone bruise he managed earlier in May." },
-    { category: "rotation",    title: "TODAY SUN: Strider goes for the sweep vs Nick Lodolo",                                            detail: "Spencer Strider (2-0, 2.77) takes the ball Sunday at 1:40 PM ET in the Cincinnati finale, opposite Reds LHP Nick Lodolo (1-1, 5.57). Strider has looked like a frontline arm since returning from the IL; a win would complete a road sweep and push Atlanta past 41 victories." },
-    { category: "narrative",   title: "Olson stays atop the NL home-run race — #16",                                                     detail: "Matt Olson homered off Brock Burke in the 7th (#16) to pad the lead Saturday, holding his spot as the NL home-run and FanGraphs WAR leader. His line sits at .298/.371/.633 (1.004 OPS), 16 HR / 42 RBI — the steady middle-of-the-order force all season." },
-    { category: "narrative",   title: "Iglesias still spotless — 10-for-10 in saves, 0.00 ERA",                                          detail: "Raisel Iglesias slammed the door on win No. 40 with a perfect 9th for his 10th save, keeping his season ERA at 0.00 (0.47 WHIP, 15 K / 1 BB across 12.2 IP). The Dylan Lee → Iglesias bridge remains the deepest, most reliable back end in the NL." },
-    { category: "standings",   title: "NL East: ATL 40-19, lead at 9.5 games",                                                           detail: "Atlanta holds the best record in baseball and the largest division lead at 40-19 (.678). The cushion is 9.5 over Philadelphia (30-28), with Washington (30-29) 10.0 back, Miami (26-33) 14.0 back, and the Mets (25-33) 14.5 back." },
+    { category: "result",      title: "SUN: Reds beat Braves 6-4, avoid the sweep",                                                      detail: "Cincinnati took Sunday's finale 6-4 at Great American Ball Park, ending Atlanta's win streak and denying the road sweep. Eugenio Suárez (first HR since April 15) and JJ Bleday went deep, Nick Lodolo (W, 2-1) allowed three earned over 6.2 innings, and the Braves stranded the tying run in the ninth. Atlanta falls to an MLB-best 40-20 (.667, L1)." },
+    { category: "milestone",   title: "Acuña's 39th career leadoff HR — 5 homers in 4 games",                                          detail: "Ronald Acuña Jr. ambushed Lodolo's first pitch of the game Sunday for his franchise-record 39th career leadoff home run, his fifth homer in a four-game span after the Fenway grand slam and back-to-back Cincinnati shots. The power surge buries any lingering concern about the left thumb bone bruise he managed earlier in May." },
+    { category: "rotation",    title: "Strider takes the loss despite 8 strikeouts",                                                     detail: "Spencer Strider (LP, 3-1) was solid in defeat Sunday — 5 IP / 7 H / 3 R / 2 BB / 8 K — but Suárez and Bleday's homers were enough for Cincinnati. His season line moves to 3-1 / 3.19 ERA / 1.21 WHIP / 41 K across 6 starts; the IL-returnee still looks like a frontline arm and lines up for the Toronto finale Thursday." },
+    { category: "lineup",      title: "Off Monday — Braves rest before the Toronto homestand",                                          detail: "Atlanta has a scheduled off-day Monday to travel home after the Boston/Cincinnati road trip. The club returns to Truist Park Tuesday to open a three-game interleague set vs the Blue Jays, the first homestand since the Washington series that handed the Braves their only home series loss of the year." },
+    { category: "rotation",    title: "TUE: Elder opens vs Blue Jays' Kevin Gausman",                                                    detail: "Bryce Elder (4-3, 2.50) draws the homestand opener Tuesday at 7:15 PM ET against Toronto RHP Kevin Gausman (4-3, 3.23). Elder looks to bounce back from the 8-0 Fenway blow-up that nudged his ERA to 2.50 — still one of the best marks in the rotation behind a strong 1.08 WHIP and 61 K." },
+    { category: "narrative",   title: "Olson stays atop the NL home-run race — #16",                                                     detail: "Matt Olson sits as the NL home-run and FanGraphs WAR leader at 16 HR, his line around .298/.371/.633 (1.004 OPS) with 42 RBI — the steady middle-of-the-order force all season as Atlanta navigates injuries around him." },
+    { category: "narrative",   title: "Iglesias still spotless — 10-for-10 in saves, 0.00 ERA",                                          detail: "Raisel Iglesias remains perfect on the season: 10 saves in 10 chances and a 0.00 ERA (0.47 WHIP, 15 K / 1 BB across 12.2 IP). The Dylan Lee → Iglesias bridge is the deepest, most reliable back end in the NL — though Sunday's loss never got to him." },
+    { category: "standings",   title: "NL East: ATL 40-20, lead at 9.0 games",                                                           detail: "Atlanta holds the best record in baseball and the largest division lead at 40-20 (.667). The cushion is 9.0 over Philadelphia (30-28), with Washington (30-29) 9.5 back, Miami (26-33) 13.5 back, and the Mets (25-33) 14.0 back." },
     { category: "injury",      title: "Catching corps still thin — Baldwin (oblique) and Murphy (finger) out",                          detail: "Drake Baldwin (right oblique strain, 10-day IL) and Sean Murphy (fractured left middle finger, up to ~8 weeks) remain sidelined. Sandy León / Chadwick Tromp continue to split duties with Maverick Handley as Triple-A depth. Baldwin's frozen line: .312/.380/.569 (.949 OPS), 12 HR / 35 RBI." },
     { category: "injury",      title: "Rehab roundup — Schwellenbach throwing, Waldrep on Florida bullpens",                             detail: "Spencer Schwellenbach (arthroscopic elbow) is into a throwing program targeting a late-June / July return. Hurston Waldrep (post-elbow surgery, 60-day IL) is throwing bullpens at the Florida complex with a June rehab-assignment target. Joe Jiménez (knee) has no firm timeline; AJ Smith-Shawver and Danny Young remain on the 60-day IL." },
-    { category: "transaction", title: "Bullpen depth: Carrasco DFA'd Friday, Molina up for length",                                     detail: "Atlanta designated Carlos Carrasco for assignment Friday — the third time this season the 39-year-old has cycled off the 40-man — and recalled RHP Anthony Molina from Triple-A Gwinnett to add bullpen length while the rotation reinforcements (Schwellenbach, Waldrep) work back." },
-    { category: "rotation",    title: "Sale's Fenway homecoming gem still resonates — NL-leading strikeouts",                            detail: "Chris Sale (8-3) remains the rotation's anchor after his 8-K win in his charged Fenway return, where he won the 2018 World Series. His 2.02 ERA, 0.87 WHIP and NL-leading strikeout total have Atlanta at 10-1 in his starts since the 2024 trade made him a Brave; he lines up to pitch the homestand this week." },
-    { category: "narrative",   title: "Road trip humming — Braves chasing a Cincinnati sweep",                                          detail: "After salvaging the Fenway finale and taking the first two in Cincinnati, Atlanta has won three straight on the road and protected a comfortable division cushion. A Strider win Sunday would complete a sweep before the club returns home for a homestand opening Tuesday." },
+    { category: "transaction", title: "Bullpen depth: Carrasco DFA'd, Molina up for length",                                           detail: "Atlanta designated Carlos Carrasco for assignment last week — the third time this season the 39-year-old has cycled off the 40-man — and recalled RHP Anthony Molina from Triple-A Gwinnett to add bullpen length while the rotation reinforcements (Schwellenbach, Waldrep) work back." },
+    { category: "rotation",    title: "Sale's Fenway homecoming gem still resonates — NL-leading strikeouts",                            detail: "Chris Sale (8-3) remains the rotation's anchor after his 8-K win in his charged Fenway return, where he won the 2018 World Series. His 2.02 ERA, 0.87 WHIP and NL-leading strikeout total have Atlanta at 10-1 in his starts since the 2024 trade made him a Brave; he lines up to start Wednesday vs Toronto." },
   ],
   sources: [
     "MLB.com", "ESPN", "AP", "AJC", "Battery Power", "FOX Sports", "Field Level Media", "MLB Trade Rumors", "Baseball-Reference", "FanGraphs", "Yahoo Sports", "CBS Sports", "RotoWire", "Redleg Nation",
