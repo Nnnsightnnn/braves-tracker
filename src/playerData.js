@@ -1,17 +1,20 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated May 31, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 7, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SAT MAY 30 — ACUÑA TWO MORE HOMERS, BRAVES REACH 40 WINS — Atlanta beat the
-// Reds 5-2 at Great American Ball Park to clinch the series and become the
-// first team in MLB to 40 wins (40-19, .678, W3). RONALD ACUÑA JR. homered for
-// a third straight game — a game-tying solo shot off Brady Singer (L, 2-5) in
-// the 3rd (#5) and a two-out insurance HR off Lyon Richardson in the 9th (#6) —
-// and stole two bases. JORGE MATEO went deck-deep for a 3-2 lead (#3) and MATT
-// OLSON followed with #16 to make it 4-2. MARTÍN PÉREZ (W, 4-3) gave up 2 R / 4 H
-// over 5 IP and RAISEL IGLESIAS closed a perfect 9th for save #10.
-// SUN MAY 31 1:40 PM ET — Atlanta goes for the road sweep in the Cincinnati
-// finale: SPENCER STRIDER (2-0, 2.77) vs Reds LHP NICK LODOLO (1-1, 5.57).
-// Catching corps still thin — Baldwin (oblique) and Murphy (finger) on the
-// IL; Schwellenbach throwing; Waldrep on Florida-complex bullpens.
+// SAT JUN 6 — DOMINIC SMITH'S 2-RUN SHOT, STRIDER WINS, BRAVES CLINCH PIRATES
+// SERIES 6-3 — Atlanta beat Pittsburgh 6-3 at Truist Park to take the series and
+// push baseball's best record to 44-21 (.677, W2). The Braves led 3-0 through
+// three before the Pirates pulled even in the 5th on Brandon Lowe's sac fly off
+// Strider; Atlanta answered immediately as ACUÑA and OLSON singled, pulled a
+// double steal, and OZZIE ALBIES lifted a go-ahead sac fly before DOMINIC SMITH
+// lined a two-run homer just inside the left-field foul pole. SPENCER STRIDER
+// (W, 4-1) went 5 IP / 3 R / 3 K. RAISEL IGLESIAS worked the 9th for save #13 —
+// his 31st straight conversion since July 28, 2025, the majors' longest active
+// streak.
+// SUN JUN 7 1:35 PM ET — Atlanta goes for a series sweep in the Pirates finale:
+// BRYCE ELDER (5-3, 2.75) vs Pittsburgh top prospect RHP BUBBA CHANDLER.
+// Catching corps still thin — Baldwin (oblique, June 16–21 target) and Murphy
+// (finger) on the IL; Schwellenbach throwing; Waldrep on a Florida-complex
+// rehab; Wynns/León covering the plate.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -32,8 +35,8 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: .252, obp: .375, slg: .433, ops: .808, hr: 6, rbi: 19, sb: 14, bb: 22, so: 33, games: 46 },
-    statNote: "2-FOR-4, A WALK AND AN RBI IN THE PIRATES-OPENER WIN — Acuña went 2-for-4 with a walk and an RBI in Friday's 6-3 win over Pittsburgh, extending the on-base motor (.375 OBP) that keeps him the catalyst at the top of baseball's best lineup. The legs remain fully back at 14 steals, and the average is climbing again toward .252 after the late-May power binge (homers in three straight games May 28–30).",
+    stats: { avg: .251, obp: .373, slg: .431, ops: .804, hr: 6, rbi: 19, sb: 15, bb: 22, so: 33, games: 47 },
+    statNote: "IGNITES THE GO-AHEAD RALLY IN THE PIRATES CLINCHER — Acuña singled and swiped his 15th base on a 5th-inning double steal Saturday, coming around to score on Albies' go-ahead sac fly in the 6-3 series-clinching win over Pittsburgh. The on-base motor (.373 OBP) keeps him the catalyst at the top of baseball's best lineup, and the legs remain fully back at 15 steals after the late-May power binge (homers in three straight games May 28–30).",
     form: 8.9,
     status: "active",
     injuryNote: null,
@@ -53,8 +56,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .271, obp: .345, slg: .553, ops: .898, hr: 17, rbi: 47, sb: 0, bb: 18, so: 43, games: 49, doubles: 4 },
-    statNote: "TWO HITS AND A RUN IN THE PIRATES-OPENER WIN — Olson had two of Atlanta's hits and came around to score in Friday's 6-3 victory over Pittsburgh, steady as ever behind Acuña and Dubón. He still owns the NL HR lead (17) with 47 RBI and a .898 OPS — the relentless middle-of-the-order anchor for baseball's best record.",
+    stats: { avg: .270, obp: .344, slg: .549, ops: .893, hr: 17, rbi: 47, sb: 0, bb: 18, so: 43, games: 50, doubles: 4 },
+    statNote: "SINGLES AND SCORES IN THE PIRATES CLINCHER — Olson singled and came around on the 5th-inning double steal to set up the go-ahead run in Saturday's 6-3 series-clinching win over Pittsburgh, steady as ever behind Acuña and Dubón. He still owns the NL HR lead (17) with 47 RBI and a near-.900 OPS — the relentless middle-of-the-order anchor for baseball's best record.",
     form: 9.3,
     status: "active",
     injuryNote: null,
@@ -117,8 +120,8 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: .313, obp: .358, slg: .540, ops: .898, hr: 10, rbi: 32, sb: 0, bb: 9, so: 24, games: 48, wOBA: .315, iso: .165 },
-    statNote: "3-RUN HOMER (#10) PUTS THE CLINCHER AWAY — Albies had his fingerprints all over Wednesday's 7-3 series-clinching win over Toronto: a two-out double in the 3rd that set the table for Dubón's go-ahead three-run homer, then his own three-run shot (#10) off LHP Adam Macko in the 7th to blow it open. Now 10 HR / 32 RBI on the season with the OPS holding near .900 — the switch-hitting second baseman remains one of the steadiest bats in the order behind Olson and Harris II.",
+    stats: { avg: .311, obp: .356, slg: .536, ops: .892, hr: 10, rbi: 33, sb: 0, bb: 9, so: 24, games: 49, wOBA: .315, iso: .165 },
+    statNote: "GO-AHEAD SAC FLY IN THE PIRATES CLINCHER — Albies drove in the run that put Atlanta back in front for good in Saturday's 6-3 series-clinching win over Pittsburgh, lifting a 5th-inning sacrifice fly to score Acuña off the double steal before Dominic Smith's two-run homer broke it open. Now 10 HR / 33 RBI on the season with the OPS holding near .890 — the switch-hitting second baseman remains one of the steadiest bats in the order behind Olson and Harris II.",
     form: 9.3,
     status: "active",
     injuryNote: null,
@@ -586,8 +589,8 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 36, experience: 11,
-    stats: { era: 0.92, whip: 0.55, ip: 14.2, k: 17, bb: 1, sv: 12, hold: null, games: 14 },
-    statNote: "SV #12 — A PERFECT 12-FOR-12 — Iglesias worked a clean 9th Friday to lock down the 6-3 win over Pittsburgh, his 12th save in as many chances. The ledger is still elite: a 0.92 ERA, 0.55 WHIP across 14.2 IP since his IL return, 17 K / 1 BB, perfect in save situations. The Dylan Lee → Iglesias bridge is the deepest, most reliable back end in the NL, and the top-3 NL reliever case only grows.",
+    stats: { era: 0.86, whip: 0.51, ip: 15.2, k: 18, bb: 1, sv: 13, hold: null, games: 15 },
+    statNote: "SV #13 — 31 STRAIGHT CONVERSIONS, MLB's LONGEST ACTIVE STREAK — Iglesias closed out Saturday's 6-3 win over Pittsburgh for his 13th save in as many chances, extending his consecutive-save-conversion streak to 31 dating to July 28, 2025 — the longest active run in the majors. The ledger is untouchable: 0.86 ERA, 0.51 WHIP across 15.2 IP since his IL return, 18 K / 1 BB, perfect in save situations. The deepest, most reliable back end in the NL.",
     form: 8.6,
     status: "active",
     injuryNote: null,
@@ -916,8 +919,8 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
-    stats: { era: 3.19, whip: 1.21, ip: 31.0, k: 41, bb: 15, w: 3, l: 1, games: 6, starts: 6 },
-    statNote: "STARTS TODAY — MIDDLE GAME vs PITTSBURGH (SAT 4:10 PM ET) — Strider gets the ball in the second game of the Pirates set after taking a hard-luck loss in Cincinnati (5 IP / 7 H / 3 R / 8 K) despite the strikeouts. Season line: 3-1 / 3.19 ERA / 1.21 WHIP / 41 K in 31.0 IP across 6 starts. The IL-returnee still looks like a frontline arm — velocity holding and the slider biting — and draws RHP Braxton Ashcraft (5-2, 2.77), Pittsburgh's hottest starter.",
+    stats: { era: 3.50, whip: 1.22, ip: 36.0, k: 44, bb: 17, w: 4, l: 1, games: 7, starts: 7 },
+    statNote: "W #4 — STEADIES UP AFTER PITTSBURGH TIES IT — Strider grabbed the win in Saturday's 6-3 series-clincher over the Pirates: 5 IP / 3 R / 3 K, surrendering the tying run on Brandon Lowe's 5th-inning sac fly before Atlanta retook the lead in the bottom half and never looked back. Season line now 4-1 / 3.50 ERA / 1.22 WHIP / 44 K in 36.0 IP across 7 starts. The IL-returnee remains a frontline arm — velocity holding and the slider biting — even on a night the strikeouts dipped.",
     form: 8.6,
     status: "active",
     injuryNote: null,
@@ -1134,17 +1137,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-06",
-    weekday: "Sat",
-    time: "4:10 PM ET",
-    opp: "PIT",
-    home: true,
-    venue: "Truist Park",
-    atlSP: { id: "strider", name: "Spencer Strider", record: "3-1", era: 3.19, daysRest: 6, hand: "R" },
-    oppSP: { name: "Braxton Ashcraft", record: "5-2", era: 2.77, hand: "R" },
-    note: "Middle game vs Pittsburgh · Strider back out after taking the loss in Cincinnati despite 8 K over 5 IP · Ashcraft has been the Bucs' hottest arm at 5-2, 2.77",
-  },
-  {
     date: "2026-06-07",
     weekday: "Sun",
     time: "1:35 PM ET",
@@ -1153,27 +1145,39 @@ export const UPCOMING_SCHEDULE = [
     venue: "Truist Park",
     atlSP: { id: "elder", name: "Bryce Elder", record: "5-3", era: 2.75, daysRest: 5, hand: "R" },
     oppSP: { name: "Bubba Chandler", record: null, era: null, hand: "R" },
-    note: "Series finale vs Pittsburgh · Elder on regular rest after the bounce-back W over Toronto · Top prospect Bubba Chandler goes for the Bucs",
+    note: "Series finale vs Pittsburgh · Atlanta goes for the sweep after Strider's series-clinching win · Elder on regular rest after the bounce-back W over Toronto · Top prospect Bubba Chandler goes for the Bucs",
+  },
+  {
+    date: "2026-06-09",
+    weekday: "Tue",
+    time: "8:10 PM ET",
+    opp: "CWS",
+    home: false,
+    venue: "Rate Field · Chicago",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "4-2", era: null, daysRest: 6, hand: "R" },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Interleague series opener at the White Sox after a Monday off-day · Holmes lines up to take the ball following his six-inning win over Toronto",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-06",
-  time: "4:10 PM ET",
+  date: "2026-06-07",
+  time: "1:35 PM ET",
   opp: "PIT",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "FanDuel Sports Network Southeast / MLB.TV",
   probables: {
-    atl: { pitcher: "Spencer Strider", record: "3-1", era: 3.19 },
-    opp: { pitcher: "Braxton Ashcraft", record: "5-2", era: 2.77 },
+    atl: { pitcher: "Bryce Elder", record: "5-3", era: 2.75 },
+    opp: { pitcher: "Bubba Chandler", record: null, era: null },
   },
-  note: "TODAY 4:10 PM ET — STRIDER vs ASHCRAFT, PIRATES MIDDLE GAME — MLB-best Atlanta (43-21, .682, W1) goes for the series win after Friday's 6-3 opener, fueled by MAURICIO DUBÓN's homer in a third straight game (a career first) and three RBI. SPENCER STRIDER (3-1, 3.19) draws Pittsburgh's hottest arm, RHP BRAXTON ASHCRAFT (5-2, 2.77); Elder closes the set Sunday (1:35) opposite top prospect Bubba Chandler. RAISEL IGLESIAS is a perfect 12-for-12 in saves (0.92 ERA). Watch list: catcher AUSTIN WYNNS (acquired from the Angels, Tromp DFA'd) pairs with Sandy León while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead is back to 9.5; Atlanta is 18-2-1 in series this season.",
+  note: "TODAY 1:35 PM ET — ELDER vs CHANDLER, PIRATES FINALE, SWEEP ON THE LINE — MLB-best Atlanta (44-21, .677, W2) goes for the sweep after Saturday's 6-3 series-clincher, when DOMINIC SMITH's two-run homer and OZZIE ALBIES' go-ahead sac fly backed SPENCER STRIDER's win. BRYCE ELDER (5-3, 2.75) takes the ball on regular rest opposite Pittsburgh top prospect RHP BUBBA CHANDLER. RAISEL IGLESIAS is a perfect 13-for-13 in saves (0.86 ERA) and has now converted 31 straight dating to July 2025 — the majors' longest active streak. Watch list: catcher AUSTIN WYNNS (acquired from the Angels, Tromp DFA'd) pairs with Sandy León while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead sits at 9.5; Atlanta is 19-2-1 in series this season.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-06-06", opp: "PIT", home: true, atlScore: 6, oppScore: 3, result: "W", note: "DOMINIC SMITH'S TWO-RUN SHOT, STRIDER WINS — BRAVES CLINCH THE PIRATES SERIES 6-3 — Atlanta took the series with a 6-3 win Saturday at Truist Park, pushing baseball's best record to 44-21 (.677, W2). The Braves built a 3-0 lead through three before Pittsburgh pulled even in the 5th on BRANDON LOWE's sacrifice fly off Strider. Atlanta answered right back: RONALD ACUÑA JR. and MATT OLSON singled, pulled off a double steal, and OZZIE ALBIES lifted a go-ahead sacrifice fly to right before DOMINIC SMITH lined a two-run homer just inside the left-field foul pole. SPENCER STRIDER (W, 4-1) went 5 IP / 3 R / 3 K to grab the win, and RAISEL IGLESIAS worked a clean 9th for his 13th save in as many chances — his 31st consecutive save conversion since July 28, 2025, the majors' longest active streak. The win pushed Atlanta to 19-2-1 in series this season; Elder goes for the sweep Sunday vs Bubba Chandler." },
   { date: "2026-06-05", opp: "PIT", home: true, atlScore: 6, oppScore: 3, result: "W", note: "DUBÓN HOMERS IN A THIRD STRAIGHT GAME — BRAVES OPEN PIRATES SERIES WITH A 6-3 WIN — Atlanta took the series opener Friday night at Truist Park, pushing baseball's best record to 43-21 (.682, W1). MAURICIO DUBÓN was the story: 2-for-4 with three RBI and two runs, homering for the third consecutive game for the first time in his eight-year career. His two-run, 405-foot shot to left tied it at 3 in the 3rd (#6), and his double put Atlanta ahead 4-3 in the 5th. RONALD ACUÑA JR. went 2-for-4 with a walk and an RBI, and MATT OLSON added two hits and a run. MARTÍN PÉREZ (W, 4-3) gave the Braves five innings and three runs before the bullpen blanked MLB's fourth-highest-scoring offense over the final four frames. RAISEL IGLESIAS worked a clean 9th for his 12th save in as many chances, lowering his ERA to 0.92. Strider goes for the series win Saturday." },
   { date: "2026-06-04", opp: "TOR", home: true, atlScore: 2, oppScore: 7, result: "L", note: "SWEEP BID SNUFFED OUT BY A DEBUTANT — DALLAS AND FIVE RELIEVERS FOUR-HIT THE BRAVES, 7-2 — Toronto salvaged the series finale Thursday night at Truist Park, ending Atlanta's sweep bid and its own four-game losing streak as the MLB-best Braves slipped to 42-21 (.667, L1). Rookie CHAD DALLAS (W, 1-0), recalled from Triple-A Buffalo, allowed one run on two hits over 3 2/3 innings in his MLB debut behind opener Mason Fluharty, and six Toronto pitchers combined on a FOUR-HITTER. CHRIS SALE (LP, 8-4) was pecked to death: 5.2 IP / season-high 10 H / 3 R / 2 BB / 6 K, the damage a three-run 3rd on MYLES STRAW's two-run single and CHARLES McADOO's RBI knock — though his four-seamer averaged 97 mph for a second straight start. MATT OLSON's sac fly (3rd) and MAURICIO DUBÓN's solo homer off Braydon Fisher in the 8th (#5, back-to-back games with a HR) were the only Atlanta runs. REYNALDO LÓPEZ was tagged for four in the 9th (Lukes and Straw RBI singles, Heineman two-run double) as Toronto piled up 16 hits; Straw drove in three, Guerrero Jr. and Clement had three hits each. LOUIS VARLAND got the final four outs for his 9th save. Roster notes: catcher AUSTIN WYNNS (acquired from the Angels for cash; Tromp DFA'd) debuted in the 8th. Pérez opens the Pittsburgh series Friday." },
   { date: "2026-06-03", opp: "TOR", home: true, atlScore: 7, oppScore: 3, result: "W", note: "DUBÓN AND ALBIES GO DEEP — BRAVES CLINCH THE SERIES 7-3, OWN CORBIN AGAIN — Atlanta beat Toronto 7-3 Wednesday night at Truist Park to clinch the series and push baseball's best record to 42-20 (.677, W2) — the Braves are now 17-2-1 in series this season. Toronto briefly led 2-1 on NATHAN LUKES' homer off Grant Holmes in the 3rd, but Atlanta answered immediately: with two outs, MATT OLSON singled, OZZIE ALBIES doubled him to third, and MAURICIO DUBÓN launched a go-ahead three-run homer (#4) into the Braves' bullpen behind the center-field wall for a 4-2 lead. Olson (3 hits) singled and scored again in the 7th on ALBIES' three-run homer (#10) off LHP Adam Macko. GRANT HOLMES (W, 4-2) gave the Braves six solid innings: 6 IP / 5 H / 2 R / 2 BB / 4 K. Brandon Valenzuela's 9th-inning homer off Tyler Kinley was Toronto's only late answer. PATRICK CORBIN (LP, 2-2) was charged with four runs over five innings — his 12TH CONSECUTIVE LOSS to Atlanta, the first pitcher to drop 12 straight decisions to one team since Mark Buehrle vs the Yankees (2004–14). Sale goes for the sweep Thursday night." },
@@ -1183,36 +1187,35 @@ export const RESULTS = [
   { date: "2026-05-29", opp: "CIN", home: false, atlScore: 8, oppScore: 3, result: "W", note: "HARRIS II 3 RBI, ACUÑA LEADOFF HR — BRAVES OPEN CINCINNATI SERIES WITH AN 8-3 WIN — Atlanta took the road-series opener 8-3 Friday night at Great American Ball Park, moving to MLB-best 39-19 (.684, W2). MICHAEL HARRIS II went 3-for-5 with three RBI — including a two-run single off Caleb Ferguson that pushed it to 8-3 — to cap a torrid week. RONALD ACUÑA JR. set the tone immediately, leading off the game with a solo HR (#4, his 38th career leadoff homer) for a second straight game with a home run after his Fenway grand slam. DOMINIC SMITH added three hits and scored twice; MIKE YASTRZEMSKI doubled in a run and JORGE MATEO chipped in an RBI single. GRANT HOLMES drew a no-decision in a workmanlike start — the only damage was solo HRs by JJ Bleday and Nathaniel Lowe that briefly trimmed it to 4-2 in the 4th — and the bullpen slammed the door, with DIDIER FUENTES (W, 4-0) tossing 1.1 innings of one-hit relief. Reds RHP CHRIS PADDACK (LP, 0-7) stayed winless, charged with four earned over five innings, as Cincinnati fell further back. Atlanta goes for the series clinch Saturday." },
   { date: "2026-05-28", opp: "BOS", home: false, atlScore: 10, oppScore: 2, result: "W", note: "SALE'S FENWAY HOMECOMING, ACUÑA GRAND SLAM — BRAVES TROUNCE RED SOX 10-2, AVOID SWEEP — Atlanta salvaged the Boston series with a 10-2 rout Thursday at Fenway Park, improving to MLB-best 38-19 (.667, W1). CHRIS SALE (W, 8-3) was excellent in a charged return to the park where he won the 2018 World Series: 5 IP / 6 H / 2 R / 3 BB / 8 K, running his record to 3-0 against the Red Sox since Boston traded him to Atlanta before 2024. The game broke open in the 6th: with the score tied 2-2, pinch-hitter MIKE YASTRZEMSKI — grandson of Red Sox great Carl Yastrzemski — drew a bases-loaded walk to force in the go-ahead run, and RONALD ACUÑA JR. followed by clearing the Green Monster off Greg Weissert for his 4th career grand slam (HR #3, his first since April 24). MICHAEL HARRIS II launched a solo HR (#12) and OZZIE ALBIES added a two-run shot (#9) in a 3-hit day. The last-place Red Sox (23-32) wrapped a 1-5 homestand and fell to 9-19 at Fenway. Atlanta heads to Cincinnati for a weekend road series." },
   { date: "2026-05-27", opp: "BOS", home: false, atlScore: 0, oppScore: 8, result: "L", note: "FENWAY THUMPING — ELDER HAMMERED FOR 6 R, EARLY SHUTS OUT BRAVES 8-0 — Atlanta was shut out 8-0 Wednesday night at Fenway in the series-tying loss, the lopsided defeat of the road trip. BRYCE ELDER (LP, 4-3) had by far his worst start of 2026: 3.1 IP / 9 H / 6 R (6 ER) / 3 BB / 1 K, knocked out in a six-run 4th inning that featured a Masataka Yoshida throwing-error run, RBI singles from Isiah Kiner-Falefa, two-run singles from Ceddanne Rafaela and Wilyer Abreu, and capped by a Jarren Duran 400-ft solo HR (#8). Duran went 4-for-5; Rafaela 3-for-5 with 2 RBI. CONNELLY EARLY (W, 5-2) was dominant for Boston in his career-high 7 IP / 4 H / 3 BB / 7 K shutout outline. Atlanta managed just four hits — one each for Olson, Harris II, Albies and Dubón — and was retired in order in five of nine innings. The 15-hit blow-up snaps Atlanta's three-W-in-four-games stretch and drops the Braves to 37-19 (.661, L1); Boston ends a five-game losing streak. Series finale Thursday afternoon — Sale's Fenway homecoming." },
-  { date: "2026-05-26", opp: "BOS", home: false, atlScore: 7, oppScore: 6, result: "W", note: "FENWAY THRILLER — OLSON HR #15 TIES IT, BRAVES SURGE IN 6TH, HOLD ON 7-6 — Atlanta survived a wild back-and-forth Tuesday at Fenway Park to take the series opener 7-6. SPENCER STRIDER opened by surrendering back-to-back HRs to Jarren Duran and Ceddanne Rafaela in the 1st before locking in to retire 14 in a row — he finished 5 IP / 3 H / 2 R / 2 BB / 6 K. MATT OLSON tied it 2-2 with a 2-run HR (#15) off Ranger Suárez in the 5th. In the 6th, Atlanta chased Suárez (LP) — three straight reached, GREG WEISSERT allowed both inherited runners to score, and the Braves built a 5-2 lead. Boston rallied in the 9th: ISIAH KINER-FALEFA cracked a solo HR and added a two-run single to pull within one, but RAISEL IGLESIAS retired Rafaela and Wilyer Abreu on grounders for save #15. Suárez gave up as many runs in this start as he had in his previous seven combined. Atlanta improves to 37-18 (.673, W1); Boston falls to its 4th straight L at Fenway." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 43, l: 21, pct: .672, gb: 0,    streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 32, l: 29, pct: .525, gb: 9.5,  streak: "W2" },
-  { team: "WSH", name: "Washington Nationals",   w: 31, l: 32, pct: .492, gb: 11.5, streak: "L4" },
-  { team: "MIA", name: "Miami Marlins",          w: 29, l: 34, pct: .460, gb: 13.5, streak: "W4" },
-  { team: "NYM", name: "New York Mets",          w: 27, l: 35, pct: .435, gb: 15.0, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 44, l: 21, pct: .677, gb: 0,    streak: "W2" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 34, l: 30, pct: .531, gb: 9.5,  streak: "W2" },
+  { team: "WSH", name: "Washington Nationals",   w: 33, l: 32, pct: .508, gb: 11.0, streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 30, l: 35, pct: .462, gb: 14.0, streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 28, l: 35, pct: .444, gb: 15.0, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-06T04:45:00-04:00",
+  generatedAt: "2026-06-07T04:45:00-04:00",
   summary:
-    "DUBÓN CAN'T STOP HOMERING — BRAVES TAKE THE PIRATES OPENER 6-3 — MLB-best Atlanta (43-21, .682, W1) opened the weekend set with a 6-3 win over Pittsburgh Friday at Truist Park, powered by MAURICIO DUBÓN, who homered for a THIRD STRAIGHT GAME — the first such streak of his eight-year career — and drove in three. His 405-foot, two-run shot tied it in the 3rd (#6) and his double put Atlanta ahead in the 5th. RONALD ACUÑA JR. went 2-for-4 with a walk and an RBI; MARTÍN PÉREZ (W, 4-3) gave five innings and three runs before the bullpen blanked the Bucs over the final four, RAISEL IGLESIAS closing for save #12 (a perfect 12-for-12, 0.92 ERA). Today SPENCER STRIDER (3-1, 3.19) draws Pittsburgh's hottest arm, BRAXTON ASHCRAFT (5-2, 2.77), at 4:10 PM ET; Elder closes Sunday vs top prospect Bubba Chandler. The NL East lead is back to 9.5 over Philadelphia (32-29). New catcher AUSTIN WYNNS (acquired from the Angels, Tromp DFA'd) pairs with Sandy León while Baldwin (June 16–21 target) and Murphy mend.",
+    "DOMINIC SMITH GOES DEEP, STRIDER WINS — BRAVES CLINCH THE PIRATES SERIES 6-3 — MLB-best Atlanta (44-21, .677, W2) took the series Saturday at Truist Park, building a 3-0 lead before Pittsburgh tied it in the 5th on Brandon Lowe's sac fly off Strider. The Braves answered immediately: RONALD ACUÑA JR. and MATT OLSON singled, pulled a double steal, OZZIE ALBIES lifted a go-ahead sac fly, and DOMINIC SMITH lined a two-run homer just inside the left-field foul pole. SPENCER STRIDER (W, 4-1) went 5 IP / 3 R / 3 K; RAISEL IGLESIAS closed for save #13 — his 31st straight conversion since July 2025, the majors' longest active streak (0.86 ERA, 13-for-13). Today BRYCE ELDER (5-3, 2.75) goes for the sweep at 1:35 PM ET vs Pittsburgh top prospect BUBBA CHANDLER. The NL East lead sits at 9.5 over Philadelphia (34-30). Catcher AUSTIN WYNNS (acquired from the Angels, Tromp DFA'd) pairs with Sandy León while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend.",
   keyTopics: [
-    { category: "result",      title: "Braves take the Pirates opener 6-3 behind Dubón's three RBI",                                      detail: "Atlanta beat Pittsburgh 6-3 Friday at Truist Park to open the weekend series and push baseball's best record to 43-21. Mauricio Dubón went 2-for-4 with three RBI and two runs, Acuña added two hits and an RBI, and Martín Pérez (4-3) gave five innings before the bullpen blanked the Bucs over the final four." },
-    { category: "narrative",   title: "Dubón homers in a THIRD straight game — a career first",                                            detail: "Dubón's 405-foot two-run shot to left tied it at 3 in the 3rd (HR #6) and his double put Atlanta ahead 4-3 in the 5th. It's the first time in his eight-year career he's homered in three consecutive games. With Ha-Seong Kim scuffling, Weiss keeps riding the red-hot super-utility man — now 36 RBI — at shortstop." },
-    { category: "rotation",    title: "TODAY: Strider vs Ashcraft in the Pirates middle game",                                            detail: "Spencer Strider (3-1, 3.19) draws the 4:10 PM ET start Saturday opposite Pittsburgh's hottest arm, RHP Braxton Ashcraft (5-2, 2.77). Strider takes the ball after a hard-luck loss in Cincinnati (5 IP, 8 K). Elder closes the set Sunday at 1:35 vs top prospect Bubba Chandler with a series win on the line." },
-    { category: "narrative",   title: "Iglesias is perfect — 12-for-12 in saves, 0.92 ERA",                                              detail: "Raisel Iglesias worked a clean 9th Friday for his 12th save in as many chances, lowering his ERA to 0.92 across 14.2 IP since his IL return (17 K, 1 BB). The back end of Atlanta's bullpen remains the deepest, most reliable in the NL — a top-3 NL reliever case that only grows." },
-    { category: "standings",   title: "NL East: ATL 43-21, lead back to 9.5 over Philadelphia",                                          detail: "Atlanta owns baseball's best record at 43-21 (.682) and pushed the division cushion back to 9.5 with Friday's win. Philadelphia (32-29) is the nearest chaser; Washington (31-32) sits 11.5 back, Miami (29-34) 13.5, and the Mets (27-35) 15.0 out." },
-    { category: "transaction", title: "New catcher Austin Wynns settling in; Tromp DFA'd",                                              detail: "Atlanta acquired veteran catcher Austin Wynns from the Angels for cash this week and DFA'd Chadwick Tromp in the corresponding move. Wynns pairs with Sandy León to cover the plate until Drake Baldwin (oblique) and Sean Murphy (finger) return from the IL." },
+    { category: "result",      title: "Braves clinch the Pirates series 6-3 behind Smith's two-run shot",                                detail: "Atlanta beat Pittsburgh 6-3 Saturday at Truist Park to take the series and push baseball's best record to 44-21. After the Pirates tied it in the 5th, Acuña and Olson singled and double-stole, Albies drove in the go-ahead run on a sac fly, and Dominic Smith lined a two-run homer just inside the left-field foul pole." },
+    { category: "rotation",    title: "Strider grabs win #4 in the clincher",                                                            detail: "Spencer Strider (4-1) went 5 IP / 3 R / 3 K, allowing only Brandon Lowe's tying sac fly before Atlanta retook the lead in the bottom of the 5th. The IL-returnee is at 3.50 ERA / 44 K in 36.0 IP across seven starts — velocity holding even on a night the strikeouts dipped." },
+    { category: "milestone",   title: "Iglesias: 31 straight save conversions, MLB's longest active streak",                            detail: "Raisel Iglesias worked a clean 9th Saturday for his 13th save in as many chances and his 31st consecutive save conversion dating to July 28, 2025 — the longest active streak in the majors. He's at 0.86 ERA, 0.51 WHIP across 15.2 IP since his IL return (18 K, 1 BB)." },
+    { category: "rotation",    title: "TODAY: Elder vs Chandler, sweep on the line",                                                     detail: "Bryce Elder (5-3, 2.75) takes the ball at 1:35 PM ET in the Pirates finale opposite Pittsburgh top prospect RHP Bubba Chandler. Elder is on regular rest after his bounce-back win over Toronto; a win completes a three-game sweep and pushes Atlanta's series mark to 20-2-1." },
+    { category: "standings",   title: "NL East: ATL 44-21, lead at 9.5 over Philadelphia",                                              detail: "Atlanta owns baseball's best record at 44-21 (.677) and a 9.5-game division cushion. Philadelphia (34-30) is the nearest chaser; Washington (33-32) sits 11.0 back, Miami (30-35) 14.0, and the Mets (28-35) 15.0 out." },
+    { category: "narrative",   title: "Dominic Smith's clutch pop off the bench bats",                                                  detail: "Dominic Smith's two-run homer was the decisive blow in the clincher, the latest contribution from a deep, productive bench mix that has kept Atlanta's offense humming through the catching-corps injuries. Smith continues to rake in spot DH and corner reps." },
+    { category: "transaction", title: "Catcher Austin Wynns settling in; Tromp DFA'd",                                                  detail: "Atlanta acquired veteran catcher Austin Wynns from the Angels for cash this week and DFA'd Chadwick Tromp in the corresponding move. Wynns pairs with Sandy León to cover the plate until Drake Baldwin (oblique) and Sean Murphy (finger) return from the IL." },
     { category: "injury",      title: "Baldwin targets the June 16–21 homestand",                                                        detail: "Drake Baldwin (right oblique strain, 10-day IL) could be activated during the June 16–21 homestand, per Walt Weiss. His frozen line — .312/.380/.569 (.949 OPS), 12 HR / 35 RBI — was a down-ballot MVP pace. Sean Murphy (fractured finger) remains hopeful for the All-Star break." },
     { category: "injury",      title: "Waldrep's rehab is rolling — two no-hit FCL innings",                                              detail: "Hurston Waldrep (post-elbow surgery, 60-day IL) opened his rehab assignment in the rookie-level Florida Complex League with two scoreless, hitless innings (two walks). He remains the closest of the injured starters to returning — a June/July rotation slot is live." },
     { category: "injury",      title: "Smith-Shawver to face live hitters; Schwellenbach throwing",                                       detail: "AJ Smith-Shawver (Tommy John, June 2025) has been throwing bullpens and faces live hitters next, per Weiss. Spencer Schwellenbach (elbow) has begun throwing on flat ground, keeping a late-June/July window in play. Their returns could eventually free Grant Holmes for leverage relief." },
-    { category: "injury",      title: "Jiménez had a second knee surgery — season in doubt",                                              detail: "Walt Weiss revealed this week that reliever Joe Jiménez underwent another surgery on his left knee 3-to-4 weeks ago — his second procedure. There is no timetable, and a 2026 return looks increasingly unlikely for the veteran setup man." },
-    { category: "lineup",      title: "Dubón forcing his way into everyday shortstop reps",                                               detail: "With Ha-Seong Kim struggling at the plate, Weiss is leaning on the red-hot Mauricio Dubón at shortstop, with Jorge Mateo mixing in. Dubón started there again Friday and homered for the third straight game. Kim's glove keeps him in the picture, but the bat has to come around." },
-    { category: "narrative",   title: "Still baseball's best: 43-21, 18-2-1 in series, 9.5-game cushion",                                 detail: "Atlanta owns MLB's best record and an 18-2-1 series mark, weathering IL stints from Baldwin, Murphy, Schwellenbach, Smith-Shawver, Waldrep and Jiménez. The Iglesias-led bullpen back end (12-for-12 saves, 0.92 ERA) remains the steadiest in the league." },
+    { category: "injury",      title: "Jiménez had a second knee surgery — season in doubt",                                              detail: "Walt Weiss revealed recently that reliever Joe Jiménez underwent another surgery on his left knee — his second procedure. There is no timetable, and a 2026 return looks increasingly unlikely for the veteran setup man." },
+    { category: "narrative",   title: "Still baseball's best: 44-21, 19-2-1 in series, 9.5-game cushion",                                 detail: "Atlanta owns MLB's best record and a 19-2-1 series mark, weathering IL stints from Baldwin, Murphy, Schwellenbach, Smith-Shawver, Waldrep and Jiménez. The Iglesias-led bullpen back end (13-for-13 saves, 0.86 ERA) remains the steadiest in the league." },
   ],
   sources: [
     "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs", "RotoWire", "SI.com", "StatMuse",
