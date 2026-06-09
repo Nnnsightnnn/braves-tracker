@@ -1,4 +1,4 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 8, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 9, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
 // SUN JUN 7 — HARRIS II'S PINCH-HIT 3-RUN DOUBLE COMPLETES THE PIRATES SWEEP,
 // 3-2 — Atlanta rallied from a 2-0 deficit at Truist Park to sweep Pittsburgh
@@ -9,8 +9,9 @@
 // threw a scoreless 7th, TYLER KINLEY stranded the bases loaded in the 8th
 // (O'Hearn ground-out), and rookie DIDIER FUENTES stranded two in the 9th for his
 // FIRST CAREER SAVE. The sweep moved Atlanta to 20-2-1 in series this season.
-// MON JUN 8 — OFF-DAY. Next: TUE JUN 9 8:10 PM ET at the White Sox (Rate Field),
-// interleague opener, GRANT HOLMES (4-2) on the ball.
+// MON JUN 8 — OFF-DAY. TUE JUN 9 (TONIGHT) 8:10 PM ET at the White Sox (Rate
+// Field), interleague opener: GRANT HOLMES (4-2, 3.69) vs LHP BRANDON EISERT
+// (1-0, 3.21). Braves carry MLB's best record (45-21, .692, W3) into Chicago.
 // Catching corps still thin — Baldwin (oblique, June 16–21 target) and Murphy
 // (finger) on the IL; Schwellenbach throwing; Waldrep on a Florida-complex
 // rehab; Wynns/León covering the plate.
@@ -1127,6 +1128,7 @@ export const TEAM_LOGOS = {
   CHC: "https://a.espncdn.com/i/teamlogos/mlb/500/chc.png",
   TOR: "https://a.espncdn.com/i/teamlogos/mlb/500/tor.png",
   PIT: "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+  CWS: "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
 };
 
 // ─── UPCOMING SCHEDULE ─────────────────────────────────────────────────────────
@@ -1143,8 +1145,8 @@ export const UPCOMING_SCHEDULE = [
     home: false,
     venue: "Rate Field · Chicago",
     atlSP: { id: "holmes", name: "Grant Holmes", record: "4-2", era: 3.69, daysRest: 6, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Interleague series opener at the White Sox after a Monday off-day · Holmes lines up to take the ball following his six-inning win over Toronto",
+    oppSP: { name: "Brandon Eisert", record: "1-0", era: 3.21, hand: "L" },
+    note: "Interleague series opener (tonight) at the White Sox after a Monday off-day · Holmes vs LHP Brandon Eisert · Atlanta is 9-2 in Holmes' starts",
   },
   {
     date: "2026-06-10",
@@ -1169,9 +1171,9 @@ export const NEXT_GAME = {
   tv: "FanDuel Sports Network Southeast / MLB.TV",
   probables: {
     atl: { pitcher: "Grant Holmes", record: "4-2", era: 3.69 },
-    opp: { pitcher: "TBA", record: null, era: null },
+    opp: { pitcher: "Brandon Eisert", record: "1-0", era: 3.21 },
   },
-  note: "TUE 8:10 PM ET — HOLMES OPENS AT THE WHITE SOX — After a Monday off-day, MLB-best Atlanta (45-21, .692, W3) starts an interleague road series at Rate Field. GRANT HOLMES (4-2, 3.69) takes the ball coming off six solid innings in the win over Toronto; the White Sox starter is TBA. The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on Michael Harris II's pinch-hit, bases-clearing double Sunday — rookie DIDIER FUENTES nailed down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. Catching still thin: Wynns/León cover while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead sits at 9.5; Atlanta is 20-2-1 in series this year.",
+  note: "TUE 8:10 PM ET (TONIGHT) — HOLMES OPENS AT THE WHITE SOX — After a Monday off-day, MLB-best Atlanta (45-21, .692, W3) starts an interleague road series at Rate Field. GRANT HOLMES (4-2, 3.69) takes the ball coming off six solid innings in the win over Toronto, opposite White Sox LHP BRANDON EISERT (1-0, 3.21). The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on Michael Harris II's pinch-hit, bases-clearing double Sunday — rookie DIDIER FUENTES nailed down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. Catching still thin: Wynns/León cover while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead sits at 9.0; Atlanta is 20-2-1 in series this year.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1191,30 +1193,30 @@ export const RESULTS = [
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
   { team: "ATL", name: "Atlanta Braves",         w: 45, l: 21, pct: .682, gb: 0,    streak: "W3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 35, l: 30, pct: .538, gb: 9.5,  streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 36, l: 30, pct: .545, gb: 9.0,  streak: "W1" },
   { team: "WSH", name: "Washington Nationals",   w: 33, l: 33, pct: .500, gb: 12.0, streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 30, l: 35, pct: .462, gb: 14.5, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 28, l: 35, pct: .444, gb: 15.5, streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 31, l: 35, pct: .470, gb: 14.0, streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 29, l: 36, pct: .446, gb: 15.5, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-08T09:30:00-04:00",
+  generatedAt: "2026-06-09T06:35:00-04:00",
   summary:
-    "HARRIS II'S PINCH-HIT 3-RUN DOUBLE COMPLETES THE PIRATES SWEEP, 3-2 — MLB-best Atlanta (45-21, .682, W3) rallied from a 2-0 deficit Sunday at Truist Park to sweep Pittsburgh. With the bases loaded and one out in the 7th and light rain falling, MICHAEL HARRIS II — rested from the start with lingering back discomfort — pinch-hit and cleared the bases on Evan Sisk's first pitch. REYNALDO LÓPEZ (W, 3-1) threw a scoreless 7th, TYLER KINLEY stranded the bases loaded in the 8th, and 20-year-old rookie DIDIER FUENTES stranded two in the 9th for his FIRST CAREER SAVE. The sweep pushed Atlanta to 20-2-1 in series this season and a 9.5-game NL East lead over Philadelphia (35-30). Monday is an off-day; Tuesday the Braves open an interleague road set at the White Sox (8:10 PM ET) behind GRANT HOLMES (4-2). Catching corps still thin — Baldwin (oblique, June 16–21 activation target) and Murphy (finger) on the IL, with Wynns/León covering.",
+    "TONIGHT: HOLMES OPENS THE INTERLEAGUE SET AT THE WHITE SOX — MLB-best Atlanta (45-21, .692, W3) starts a road series at Rate Field Tuesday at 8:10 PM ET after a Monday off-day. GRANT HOLMES (4-2, 3.69) takes the ball opposite White Sox LHP BRANDON EISERT (1-0, 3.21); Atlanta is 9-2 in Holmes' starts. The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on MICHAEL HARRIS II's pinch-hit, bases-clearing double Sunday — rookie DIDIER FUENTES nailed down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. The NL East lead sits at 9.0 over Philadelphia (36-30); Atlanta is 20-2-1 in series this year. Catching corps still thin — Baldwin (oblique, June 16–21 activation target) and Murphy (finger) on the IL, with Wynns/León covering.",
   keyTopics: [
     { category: "result",      title: "Harris II's pinch-hit 3-run double completes the Pirates sweep, 3-2",                            detail: "Trailing 2-0 with the bases loaded and one out in the 7th, Michael Harris II — held out of the starting lineup with back discomfort — pinch-hit and drove Evan Sisk's first pitch into the right-field corner to clear the bases Sunday, lifting Atlanta to a 3-2 win and a three-game sweep. The Braves are now 45-21, baseball's best record." },
     { category: "milestone",   title: "Didier Fuentes nails down his first career save",                                                detail: "The 20-year-old rookie stranded two runners in a scoreless 9th to close out Sunday's 3-2 win — the first save of his career. Fuentes (2.50 ERA, 18 IP) keeps passing every leverage test Weiss hands him, from a multi-inning win at Cincinnati to now sealing a sweep in a save spot." },
     { category: "rotation",    title: "Reynaldo López bounces back with the win",                                                       detail: "Three days after a four-run 9th blew open the Toronto finale, López (W, 3-1) threw a scoreless 7th to earn the win in the sweep clincher, trimming his line to ~4.05 ERA. Weiss still projects him back to the rotation once the mechanical work is finished; outings like this rebuild the leverage trust." },
-    { category: "rotation",    title: "TUE: Holmes opens the interleague set at the White Sox",                                          detail: "After a Monday off-day, Grant Holmes (4-2, 3.69) takes the ball Tuesday at 8:10 PM ET in the series opener at Rate Field; the White Sox starter is TBA. Atlanta is 9-2 in Holmes' outings, and Chris Sale lines up for the Wednesday middle game." },
-    { category: "standings",   title: "NL East: ATL 45-21, lead at 9.5 over Philadelphia",                                              detail: "Atlanta owns baseball's best record at 45-21 (.682) and a 9.5-game division cushion. Philadelphia (35-30) is the nearest chaser; Washington (33-33) sits 12.0 back, Miami (30-35) 14.5, and the Mets (28-35) 15.5 out." },
+    { category: "rotation",    title: "TONIGHT: Holmes opens the interleague set at the White Sox",                                     detail: "After a Monday off-day, Grant Holmes (4-2, 3.69) takes the ball Tuesday at 8:10 PM ET in the series opener at Rate Field, opposite White Sox LHP Brandon Eisert (1-0, 3.21). Atlanta is 9-2 in Holmes' outings, and Chris Sale lines up for the Wednesday middle game." },
+    { category: "standings",   title: "NL East: ATL 45-21, lead at 9.0 over Philadelphia",                                              detail: "Atlanta owns baseball's best record at 45-21 (.682) and a 9.0-game division cushion. Philadelphia (36-30) is the nearest chaser; Washington (33-33) sits 12.0 back, Miami (31-35) 14.0, and the Mets (29-36) 15.5 out." },
     { category: "milestone",   title: "Iglesias: 31 straight save conversions, MLB's longest active streak",                            detail: "Raisel Iglesias is a perfect 13-for-13 in saves with 31 consecutive conversions dating to July 28, 2025 — the longest active streak in the majors. He's at 0.86 ERA, 0.51 WHIP across 15.2 IP since his IL return (18 K, 1 BB), anchoring the NL's steadiest bullpen back end." },
     { category: "injury",      title: "Harris II played through lingering back discomfort",                                            detail: "Manager Walt Weiss kept Michael Harris II out of Saturday's and Sunday's starting lineups with lingering back discomfort — 'he's still feeling it a little bit' — but the center fielder was available off the bench and delivered the sweep-clinching pinch hit. The day-to-day situation bears watching into the White Sox series." },
     { category: "injury",      title: "Baldwin targets the June 16–21 homestand",                                                        detail: "Drake Baldwin (right oblique strain, 10-day IL) could be activated during the June 16–21 homestand, per Weiss, with little rehab time expected. His frozen line — .312/.380/.569, 12 HR / 35 RBI — was a down-ballot MVP pace. Sean Murphy (fractured finger) remains the other catcher on the mend." },
     { category: "injury",      title: "Waldrep rolling on rehab; Schwellenbach, Smith-Shawver progressing",                            detail: "Hurston Waldrep (elbow) tossed two scoreless, hitless FCL rehab innings Monday and is the closest injured starter to returning. Spencer Schwellenbach (elbow) has begun throwing on flat ground; AJ Smith-Shawver (elbow) is throwing bullpens and will face live hitters next." },
     { category: "transaction", title: "Wentz to the 60-day IL; Jiménez has a second knee surgery",                                     detail: "Atlanta placed LHP Joey Wentz (knee) on the 60-day injured list Tuesday. Separately, Weiss revealed reliever Joe Jiménez underwent a second surgery on his left knee 3-to-4 weeks ago — there's no timetable, and a 2026 return looks increasingly unlikely." },
     { category: "transaction", title: "Catching depth: Wynns and León hold the fort",                                                  detail: "Veteran Austin Wynns (acquired from the Angels for cash; Tromp DFA'd in the corresponding move) pairs with Sandy León behind the plate, a defense-first tandem covering until Baldwin and Murphy return from the IL." },
-    { category: "narrative",   title: "Still baseball's best: 45-21, 20-2-1 in series, 9.5-game cushion",                                detail: "Atlanta owns MLB's best record and a 20-2-1 series mark, weathering IL stints across the catching corps and rotation. The depth keeps answering — Sunday it was a rested Harris II off the bench and a rookie closing the door — while the Iglesias-led back end stays perfect in save chances." },
+    { category: "narrative",   title: "Still baseball's best: 45-21, 20-2-1 in series, 9.0-game cushion",                                detail: "Atlanta owns MLB's best record and a 20-2-1 series mark, weathering IL stints across the catching corps and rotation. The depth keeps answering — Sunday it was a rested Harris II off the bench and a rookie closing the door — while the Iglesias-led back end stays perfect in save chances." },
   ],
   sources: [
     "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "Washington Post", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs", "RotoWire",
