@@ -9,9 +9,10 @@
 // threw a scoreless 7th, TYLER KINLEY stranded the bases loaded in the 8th
 // (O'Hearn ground-out), and rookie DIDIER FUENTES stranded two in the 9th for his
 // FIRST CAREER SAVE. The sweep moved Atlanta to 20-2-1 in series this season.
-// MON JUN 8 — OFF-DAY. TUE JUN 9 (TONIGHT) 8:10 PM ET at the White Sox (Rate
-// Field), interleague opener: GRANT HOLMES (4-2, 3.69) vs LHP BRANDON EISERT
-// (1-0, 3.21). Braves carry MLB's best record (45-21, .692, W3) into Chicago.
+// MON JUN 8 — OFF-DAY. TUE JUN 9 (TONIGHT) 7:40 PM ET at the White Sox (Rate
+// Field), interleague opener: GRANT HOLMES (4-2, 3.69) vs the White Sox, who plan
+// to use LHP BRANDON EISERT (1-0, 3.21) as an opener ahead of RHP ERICK FEDDE.
+// Braves carry MLB's best record (45-21, .692, W3) into Chicago.
 // Catching corps still thin — Baldwin (oblique, June 16–21 target) and Murphy
 // (finger) on the IL; Schwellenbach throwing; Waldrep on a Florida-complex
 // rehab; Wynns/León covering the plate.
@@ -1140,18 +1141,18 @@ export const UPCOMING_SCHEDULE = [
   {
     date: "2026-06-09",
     weekday: "Tue",
-    time: "8:10 PM ET",
+    time: "7:40 PM ET",
     opp: "CWS",
     home: false,
     venue: "Rate Field · Chicago",
     atlSP: { id: "holmes", name: "Grant Holmes", record: "4-2", era: 3.69, daysRest: 6, hand: "R" },
-    oppSP: { name: "Brandon Eisert", record: "1-0", era: 3.21, hand: "L" },
-    note: "Interleague series opener (tonight) at the White Sox after a Monday off-day · Holmes vs LHP Brandon Eisert · Atlanta is 9-2 in Holmes' starts",
+    oppSP: { name: "Brandon Eisert (opener)", record: "1-0", era: 3.21, hand: "L" },
+    note: "Interleague series opener (tonight) at the White Sox after a Monday off-day · Holmes vs an Eisert/Fedde bullpen game (Chicago opens with LHP Brandon Eisert before RHP Erick Fedde) · Atlanta is 9-2 in Holmes' starts",
   },
   {
     date: "2026-06-10",
     weekday: "Wed",
-    time: "8:10 PM ET",
+    time: "7:40 PM ET",
     opp: "CWS",
     home: false,
     venue: "Rate Field · Chicago",
@@ -1164,16 +1165,16 @@ export const UPCOMING_SCHEDULE = [
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
   date: "2026-06-09",
-  time: "8:10 PM ET",
+  time: "7:40 PM ET",
   opp: "CWS",
   home: false,
   venue: "Rate Field · Chicago, IL",
-  tv: "FanDuel Sports Network Southeast / MLB.TV",
+  tv: "BravesVision / MLB.TV",
   probables: {
     atl: { pitcher: "Grant Holmes", record: "4-2", era: 3.69 },
-    opp: { pitcher: "Brandon Eisert", record: "1-0", era: 3.21 },
+    opp: { pitcher: "Brandon Eisert (opener, ahead of Erick Fedde)", record: "1-0", era: 3.21 },
   },
-  note: "TUE 8:10 PM ET (TONIGHT) — HOLMES OPENS AT THE WHITE SOX — After a Monday off-day, MLB-best Atlanta (45-21, .692, W3) starts an interleague road series at Rate Field. GRANT HOLMES (4-2, 3.69) takes the ball coming off six solid innings in the win over Toronto, opposite White Sox LHP BRANDON EISERT (1-0, 3.21). The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on Michael Harris II's pinch-hit, bases-clearing double Sunday — rookie DIDIER FUENTES nailed down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. Catching still thin: Wynns/León cover while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead sits at 9.0; Atlanta is 20-2-1 in series this year.",
+  note: "TUE 7:40 PM ET (TONIGHT): HOLMES OPENS AT THE WHITE SOX. After a Monday off-day, MLB-best Atlanta (45-21, .692, W3) starts an interleague road series at Rate Field. GRANT HOLMES (4-2, 3.69) takes the ball coming off six solid innings in the win over Toronto, opposite a Chicago bullpen game: the White Sox plan to open with LHP BRANDON EISERT (1-0, 3.21) before handing the bulk innings to RHP ERICK FEDDE. The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on Michael Harris II's pinch-hit, bases-clearing double Sunday, with rookie DIDIER FUENTES nailing down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. Catching still thin: Wynns and León cover while Baldwin (oblique, June 16–21 target) and Murphy (finger) mend. The NL East lead sits at 9.0; Atlanta is 20-2-1 in series this year.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1201,14 +1202,14 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-09T06:35:00-04:00",
+  generatedAt: "2026-06-09T12:55:00-04:00",
   summary:
-    "TONIGHT: HOLMES OPENS THE INTERLEAGUE SET AT THE WHITE SOX — MLB-best Atlanta (45-21, .692, W3) starts a road series at Rate Field Tuesday at 8:10 PM ET after a Monday off-day. GRANT HOLMES (4-2, 3.69) takes the ball opposite White Sox LHP BRANDON EISERT (1-0, 3.21); Atlanta is 9-2 in Holmes' starts. The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on MICHAEL HARRIS II's pinch-hit, bases-clearing double Sunday — rookie DIDIER FUENTES nailed down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. The NL East lead sits at 9.0 over Philadelphia (36-30); Atlanta is 20-2-1 in series this year. Catching corps still thin — Baldwin (oblique, June 16–21 activation target) and Murphy (finger) on the IL, with Wynns/León covering.",
+    "TONIGHT: HOLMES OPENS THE INTERLEAGUE SET AT THE WHITE SOX. MLB-best Atlanta (45-21, .692, W3) starts a road series at Rate Field Tuesday at 7:40 PM ET after a Monday off-day. GRANT HOLMES (4-2, 3.69) takes the ball opposite a Chicago bullpen game, with the White Sox planning to open with LHP BRANDON EISERT (1-0, 3.21) before RHP ERICK FEDDE; Atlanta is 9-2 in Holmes' starts. The Braves arrive on a season-high-tying heater after sweeping Pittsburgh on MICHAEL HARRIS II's pinch-hit, bases-clearing double Sunday, with rookie DIDIER FUENTES nailing down his first career save. RAISEL IGLESIAS is a perfect 13-for-13 (0.86 ERA) with 31 straight conversions, the majors' longest active streak. The NL East lead sits at 9.0 over Philadelphia (36-30); Atlanta is 20-2-1 in series this year. Catching corps still thin: Baldwin (oblique, June 16–21 activation target) and Murphy (finger) on the IL, with Wynns and León covering.",
   keyTopics: [
     { category: "result",      title: "Harris II's pinch-hit 3-run double completes the Pirates sweep, 3-2",                            detail: "Trailing 2-0 with the bases loaded and one out in the 7th, Michael Harris II — held out of the starting lineup with back discomfort — pinch-hit and drove Evan Sisk's first pitch into the right-field corner to clear the bases Sunday, lifting Atlanta to a 3-2 win and a three-game sweep. The Braves are now 45-21, baseball's best record." },
     { category: "milestone",   title: "Didier Fuentes nails down his first career save",                                                detail: "The 20-year-old rookie stranded two runners in a scoreless 9th to close out Sunday's 3-2 win — the first save of his career. Fuentes (2.50 ERA, 18 IP) keeps passing every leverage test Weiss hands him, from a multi-inning win at Cincinnati to now sealing a sweep in a save spot." },
     { category: "rotation",    title: "Reynaldo López bounces back with the win",                                                       detail: "Three days after a four-run 9th blew open the Toronto finale, López (W, 3-1) threw a scoreless 7th to earn the win in the sweep clincher, trimming his line to ~4.05 ERA. Weiss still projects him back to the rotation once the mechanical work is finished; outings like this rebuild the leverage trust." },
-    { category: "rotation",    title: "TONIGHT: Holmes opens the interleague set at the White Sox",                                     detail: "After a Monday off-day, Grant Holmes (4-2, 3.69) takes the ball Tuesday at 8:10 PM ET in the series opener at Rate Field, opposite White Sox LHP Brandon Eisert (1-0, 3.21). Atlanta is 9-2 in Holmes' outings, and Chris Sale lines up for the Wednesday middle game." },
+    { category: "rotation",    title: "TONIGHT: Holmes opens the interleague set at the White Sox",                                     detail: "After a Monday off-day, Grant Holmes (4-2, 3.69) takes the ball Tuesday at 7:40 PM ET in the series opener at Rate Field. Chicago plans a bullpen game, opening with LHP Brandon Eisert (1-0, 3.21) before handing the bulk innings to RHP Erick Fedde. Atlanta is 9-2 in Holmes' outings, and Chris Sale lines up for the Wednesday middle game." },
     { category: "standings",   title: "NL East: ATL 45-21, lead at 9.0 over Philadelphia",                                              detail: "Atlanta owns baseball's best record at 45-21 (.682) and a 9.0-game division cushion. Philadelphia (36-30) is the nearest chaser; Washington (33-33) sits 12.0 back, Miami (31-35) 14.0, and the Mets (29-36) 15.5 out." },
     { category: "milestone",   title: "Iglesias: 31 straight save conversions, MLB's longest active streak",                            detail: "Raisel Iglesias is a perfect 13-for-13 in saves with 31 consecutive conversions dating to July 28, 2025 — the longest active streak in the majors. He's at 0.86 ERA, 0.51 WHIP across 15.2 IP since his IL return (18 K, 1 BB), anchoring the NL's steadiest bullpen back end." },
     { category: "injury",      title: "Harris II played through lingering back discomfort",                                            detail: "Manager Walt Weiss kept Michael Harris II out of Saturday's and Sunday's starting lineups with lingering back discomfort — 'he's still feeling it a little bit' — but the center fielder was available off the bench and delivered the sweep-clinching pinch hit. The day-to-day situation bears watching into the White Sox series." },
