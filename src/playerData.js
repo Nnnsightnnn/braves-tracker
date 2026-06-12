@@ -1184,42 +1184,53 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-11",
-    weekday: "Thu",
-    time: "7:40 PM ET",
-    opp: "CWS",
-    home: false,
-    venue: "Rate Field · Chicago",
-    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "4-3", era: 3.02, daysRest: 6, hand: "L" },
-    oppSP: { name: "Anthony Kay", record: "5-1", era: 4.40, hand: "L" },
-    note: "Series finale (tonight) at the White Sox, who have taken the first two and won seven straight at home · Pérez (4-3, 3.02) vs LHP Anthony Kay (5-1, 4.40) · Atlanta tries to avoid the sweep and stop a two-game skid before heading to Queens",
-  },
-  {
     date: "2026-06-12",
     weekday: "Fri",
     time: "7:15 PM ET",
     opp: "NYM",
     home: false,
     venue: "Citi Field · New York",
+    atlSP: { id: "strider", name: "Spencer Strider", record: "4-1", era: 3.50, daysRest: 6, hand: "R" },
+    oppSP: { name: "Nolan McLean", record: "3-4", era: 3.98, hand: "R" },
+    note: "Series opener at the Mets (30-38, 15.0 GB), who snapped a three-game skid Thursday on Juan Soto's homer · Strider (4-1, 3.50) on six days' rest after Thursday's Chicago finale was rained out vs RHP Nolan McLean (3-4, 3.98) · Three games Fri-Sun before Atlanta returns home Jun 16",
+  },
+  {
+    date: "2026-06-13",
+    weekday: "Sat",
+    time: "TBA",
+    opp: "NYM",
+    home: false,
+    venue: "Citi Field · New York",
     atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Division-rival series opener at the Mets (29-38, 15.5 GB), losers of three straight · Probables TBA: Strider (last started Jun 6) and Holmes (Jun 9) line up on rest · Three games Fri-Sun before Atlanta returns home Jun 16",
+    note: "Middle game in Queens · Probables TBA: Holmes (last started Jun 9) lines up on regular rest for Atlanta",
+  },
+  {
+    date: "2026-06-14",
+    weekday: "Sun",
+    time: "TBA",
+    opp: "NYM",
+    home: false,
+    venue: "Citi Field · New York",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Series finale at the Mets · Probables TBA: Sale (last started Jun 10) lines up on regular rest · Braves open a homestand Jun 16 with Baldwin's activation in sight",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-11",
-  time: "7:40 PM ET",
-  opp: "CWS",
+  date: "2026-06-12",
+  time: "7:15 PM ET",
+  opp: "NYM",
   home: false,
-  venue: "Rate Field · Chicago, IL",
-  tv: "BravesVision / MLB.TV",
+  venue: "Citi Field · Queens, NY",
+  tv: "Apple TV+",
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "4-3", era: 3.02 },
-    opp: { pitcher: "Anthony Kay", record: "5-1", era: 4.40 },
+    atl: { pitcher: "Spencer Strider", record: "4-1", era: 3.50 },
+    opp: { pitcher: "Nolan McLean", record: "3-4", era: 3.98 },
   },
-  note: "THU 7:40 PM ET (TONIGHT): PEREZ TRIES TO STOP THE SLIDE. The White Sox have taken the first two of the set and won seven straight at home, and now MARTIN PEREZ (4-3, 3.02) gets the finale opposite LHP ANTHONY KAY (5-1, 4.40) as Atlanta (45-23, .662, L2) tries to avoid its first sweep of the season. The lineup does it without RONALD ACUNA JR., placed on the 10-day IL Wednesday with a Grade 1 left hamstring strain; ROWDY TELLEZ is up from Gwinnett to deepen the 1B/DH mix. Atlanta has scored six runs over the two losses in Chicago. After tonight: three at the Mets starting Friday at 7:15 PM ET, then home June 16 with Baldwin's activation in sight. The NL East lead is 8.0 over Philadelphia.",
+  note: "FRI 7:15 PM ET (TONIGHT): STRIDER OPENS THE QUEENS SET AFTER THE RAINOUT. Thursday's finale in Chicago was postponed by rain (makeup Aug 20), so Atlanta (45-23, .662, L2) arrives in New York with an extra day of rest and a two-game skid to shake. SPENCER STRIDER (4-1, 3.50), working on six days' rest, faces rookie RHP NOLAN McLEAN (3-4, 3.98) of the Mets (30-38), who snapped a three-game slide Thursday behind Juan Soto's go-ahead homer in a 5-4 win over St. Louis. The lineup is still without RONALD ACUNA JR. (10-day IL, Grade 1 left hamstring strain); Tellez, Smith, and Yastrzemski keep absorbing the corner at-bats. Three games Fri-Sun, then home June 16 with Baldwin's activation in sight. The NL East lead is 8.0 over idle Philadelphia.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1241,26 +1252,25 @@ export const NL_EAST_STANDINGS = [
   { team: "ATL", name: "Atlanta Braves",         w: 45, l: 23, pct: .662, gb: 0,    streak: "L2" },
   { team: "PHI", name: "Philadelphia Phillies",  w: 37, l: 31, pct: .544, gb: 8.0,  streak: "W1" },
   { team: "WSH", name: "Washington Nationals",   w: 35, l: 34, pct: .507, gb: 10.5, streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 33, l: 35, pct: .485, gb: 12.0, streak: "W3" },
-  { team: "NYM", name: "New York Mets",          w: 29, l: 38, pct: .433, gb: 15.5, streak: "L3" },
+  { team: "MIA", name: "Miami Marlins",          w: 34, l: 35, pct: .493, gb: 11.5, streak: "W4" },
+  { team: "NYM", name: "New York Mets",          w: 30, l: 38, pct: .441, gb: 15.0, streak: "W1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-11T07:05:00-04:00",
+  generatedAt: "2026-06-12T07:31:00-04:00",
   summary:
-    "ACUNA TO THE IL, AND THE BATS GO QUIET IN CHICAGO. Wednesday morning's MRI confirmed a Grade 1 left hamstring strain and Atlanta placed RONALD ACUNA JR. on the 10-day IL pregame, his second hamstring stint of the season, with ROWDY TELLEZ selected from Gwinnett to take the roster spot. The churn ran deeper: TYLER KINLEY hit the 15-day IL with right elbow inflammation (eligible June 23), JAMES KARINCHAK got his first big-league call since 2023, JR RITCHIE was recalled, and CARLOS CARRASCO was DFA'd for a third time. On the field it was a second straight loss: Davis Martin threw six scoreless innings and the White Sox won 2-1, wasting a sharp CHRIS SALE start (5.2 IP, 2 R, 6 K, 13 whiffs). Atlanta's only run was unearned. TONIGHT at 7:40 PM ET, MARTIN PEREZ (4-3, 3.02) faces LHP ANTHONY KAY (5-1, 4.40) as the Braves (45-23, .662) try to avoid their first sweep of the season. The NL East lead is 8.0 over Philadelphia (37-31). IL watch: Baldwin (oblique) still targets the June 16-21 homestand, Murphy is in a splint, and Waldrep starts Thursday for Double-A Columbus.",
+    "RAINED OUT IN CHICAGO, AND STRIDER GETS THE BALL IN QUEENS. Thursday's series finale at Rate Field never started: a long rain delay turned into a postponement, with the makeup folded into the August 20 trip back to Chicago. That leaves the series an 0-2 trip and the skid at two, but it also hands Atlanta (45-23, .662) a reset day and a fully rested SPENCER STRIDER (4-1, 3.50) for TONIGHT'S 7:15 PM ET opener at Citi Field (Apple TV+), opposite rookie RHP NOLAN McLEAN (3-4, 3.98). The Mets (30-38) come in off a 5-4 win over St. Louis behind Juan Soto's go-ahead homer. The lineup is still without RONALD ACUNA JR. (10-day IL, Grade 1 left hamstring), but the IL news trends good: DRAKE BALDWIN faces live BP Thursday and Friday and could start a Gwinnett rehab this weekend, keeping the June 16-21 homestand activation in play, while HURSTON WALDREP builds toward 55 pitches at Double-A Columbus. The NL East lead holds at 8.0 over idle Philadelphia (37-31).",
   keyTopics: [
-    { category: "injury",      title: "Acuña placed on the 10-day IL with a Grade 1 hamstring strain",                                   detail: "Wednesday morning's MRI confirmed a Grade 1 strain of the left hamstring, the same one that cost Ronald Acuña Jr. 13 games in May, and Atlanta placed him on the 10-day IL before the game. The club has not set a return date, but the May precedent points to roughly two weeks. His line freezes at .251/.373/.421 with 6 HR and 15 SB through 48 games." },
-    { category: "result",      title: "Davis Martin blanks Atlanta over six, White Sox win 2-1",                                         detail: "Chicago took the second game of the set 2-1 Wednesday behind Davis Martin's six scoreless innings, its seventh straight home win. Chris Sale (LP, 8-5) was sharp in defeat: 5.2 IP, 6 H, 2 R, 6 K with 13 whiffs, both runs scoring in the 4th. Atlanta's lone run was unearned, Jorge Mateo scoring from first in the 7th on Miguel Vargas' error, and Bryan Hudson closed for his third save." },
-    { category: "transaction", title: "Rowdy Tellez selected from Gwinnett to take Acuña's spot",                                        detail: "The 8-year veteran gets his first MLB call of 2026 after hitting .228 with 17 HR, 49 RBI, and a 123 wRC+ in 207 PA at Triple-A. Tellez signed a minor league deal a week before Opening Day and gives the lineup a true left-handed power bat for 1B/DH duty. RHP Jhancarlos Lara was DFA'd to clear the 40-man spot." },
-    { category: "injury",      title: "Kinley to the 15-day IL with right elbow inflammation",                                           detail: "Tyler Kinley landed on the 15-day IL Wednesday, retroactive to June 8, and is eligible to return June 23 if the inflammation proves mild. The loss stings: he had been one of the pen's steadiest middle-relief pieces at a 2.45 ERA across 20 games on a bargain $1.5M deal." },
-    { category: "transaction", title: "Karinchak up for his first MLB action since 2023; Ritchie recalled, Carrasco DFA'd",              detail: "James Karinchak's contract was selected after the former Cleveland strikeout artist posted a 2.45 ERA, 5 saves, and a 38:10 K:BB over 25.2 IP at Gwinnett. JR Ritchie also returns to cover length, while Carlos Carrasco was DFA'd for the third time this season; he has re-signed after clearing waivers each prior time." },
-    { category: "rotation",    title: "TONIGHT: Pérez vs Anthony Kay with the sweep on the line",                                        detail: "Martín Pérez (4-3, 3.02) gets the finale at 7:40 PM ET Thursday at Rate Field opposite LHP Anthony Kay (5-1, 4.40). Chicago has taken the first two games, and Atlanta has not been swept in a series all season. The Braves have scored six runs total over the two losses." },
-    { category: "standings",   title: "NL East: ATL 45-23, lead trimmed to 8.0 over Philadelphia",                                       detail: "The cushion shrinks for a second straight night: Atlanta (45-23, .662) still owns the NL's best record, but Philadelphia (37-31) beat Toronto 7-4 to close within 8.0. Washington (35-34) lost a 11-10 slugfest to the Giants, Miami (33-35) ran its streak to three with an 8-0 rout of Arizona, and the Mets (29-38) have dropped three straight entering Friday's Braves series." },
-    { category: "narrative",   title: "Quiet bats in Chicago: six runs in two games, first sweep at stake",                              detail: "MLB's best offense has gone cold at Rate Field, managing six runs across the two losses with Wednesday's only run unearned. The slide coincides with Acuña's exit, and the next two weeks will test the depth: Tellez, Dominic Smith, and Mike Yastrzemski absorb the corner at-bats until the lineup gets whole again." },
-    { category: "injury",      title: "Baldwin still targets the June 16-21 homestand",                                                  detail: "Drake Baldwin (right oblique strain, 10-day IL) could be activated during the June 16-21 homestand per Weiss, with little rehab time expected. His frozen line (.312/.380/.569, 12 HR, 35 RBI) remains the NL's best catcher production by OPS. Wynns and León keep covering the plate until then." },
-    { category: "injury",      title: "Waldrep starts Thursday for Double-A Columbus",                                                   detail: "Hurston Waldrep makes his first start for Double-A Columbus Thursday after his rehab assignment was transferred up from the Florida Complex League. He remains the closest injured starter to returning, with a June/July rotation slot the target as the pitch count builds. Schwellenbach is throwing flat ground; Smith-Shawver faces live hitters next." },
+    { category: "result",      title: "Thursday's finale in Chicago rained out, makeup set for August 20",                               detail: "The series finale at Rate Field was postponed after a lengthy rain delay and will be made up August 20, when Atlanta returns to Chicago. The trip ends 0-2 in games played: the Braves never got the chance to avoid a true sweep, and Martin Perez's start slides into the weekend mix. The skid stands at two going into Queens." },
+    { category: "rotation",    title: "TONIGHT: Strider vs rookie Nolan McLean at Citi Field, 7:15 PM ET",                               detail: "Spencer Strider (4-1, 3.50), on six days' rest thanks to the rainout, opens the three-game set at the Mets opposite rookie RHP Nolan McLean (3-4, 3.98). First pitch is 7:15 PM ET on Apple TV+. New York (30-38) snapped a three-game slide Thursday, beating St. Louis 5-4 on Juan Soto's go-ahead homer." },
+    { category: "injury",      title: "Baldwin faces live BP, weekend rehab at Gwinnett in play",                                        detail: "Drake Baldwin (right oblique strain, 10-day IL) was set for live batting practice Thursday and Friday, and if both go well he could begin a short rehab assignment at Gwinnett this weekend. That keeps the June 16-21 homestand activation target firmly intact. His frozen line (.312/.380/.569, 12 HR, 35 RBI) remains the NL's best catcher production by OPS." },
+    { category: "injury",      title: "Acuña settles into IL stint, eligible to return June 20",                                         detail: "Day two of Ronald Acuña Jr.'s 10-day IL stint for the Grade 1 left hamstring strain, his second hamstring stint of the season. The May version cost him 13 games, and the club has not set a return date; he is eligible June 20, during the home Phillies series. His line freezes at .251/.373/.421 with 6 HR and 15 SB through 48 games." },
+    { category: "injury",      title: "Waldrep builds toward 55 pitches at Double-A Columbus",                                           detail: "Hurston Waldrep's rehab continues at Double-A Columbus, where he is stretching out to roughly 55 pitches in his next outing, about the halfway mark before the Braves decide whether he is ready for Atlanta. He remains the closest injured starter to returning. Schwellenbach is throwing flat ground; Smith-Shawver faces live hitters next." },
+    { category: "standings",   title: "NL East: ATL 45-23, lead holds at 8.0 over idle Philadelphia",                                    detail: "With Atlanta and Philadelphia both idle Thursday, the lead stays 8.0. Behind them the division stirred: Miami (34-35) blanked Arizona 2-0 to finish a sweep and run its streak to four, and the Mets (30-38) stopped a three-game slide behind Soto. Washington (35-34) sits 10.5 back after Wednesday's walk-off grand-slam loss in San Francisco." },
+    { category: "transaction", title: "Roster churn settles: Tellez and Karinchak up, Ritchie back, Carrasco DFA'd",                     detail: "Wednesday's moves carry into the weekend: Rowdy Tellez (17 HR at Gwinnett) gives the lineup a left-handed 1B/DH bat while Acuña is out, James Karinchak gets his first MLB action since 2023, and JR Ritchie covers length. Carlos Carrasco was DFA'd for the third time this season; he has re-signed after clearing waivers each prior time." },
+    { category: "injury",      title: "Kinley on the 15-day IL, eligible June 23",                                                       detail: "Tyler Kinley's right elbow inflammation has him on the 15-day IL retroactive to June 8, eligible to return June 23 if the irritation proves mild. He had been one of the pen's steadiest middle-relief pieces at a 2.45 ERA across 20 games on a bargain $1.5M deal." },
+    { category: "narrative",   title: "A reset day for cold bats: six runs over the last two games",                                     detail: "MLB's best offense managed six runs across the two Chicago losses, with Wednesday's only run unearned. The rainout doubles as a breather: an extra day off, a rested Strider, and a Mets pitching staff that allowed 20 runs across the three-game Cardinals set. Tellez, Smith, and Yastrzemski keep absorbing the corner at-bats." },
     { category: "injury",      title: "Murphy in a splint as the finger heals",                                                          detail: "Sean Murphy had the cast removed from his left hand Tuesday and now wears a splint over the fractured middle finger, a checkpoint in the up-to-eight-week timeline set in mid-May. He remains weeks behind Baldwin in the catching corps' return queue." },
     { category: "lineup",      title: "Olson holds the NL homer lead at 19 with 50 RBI",                                                 detail: "Matt Olson's two-homer night Tuesday keeps him atop the NL leaderboard at 19 HR with 50 RBI, among the first in baseball to the 50 mark. With Acuña shelved, the offense runs through Olson, Albies, and Harris II, and his .903 OPS is the anchor the lineup leans on for the next two weeks." },
   ],
