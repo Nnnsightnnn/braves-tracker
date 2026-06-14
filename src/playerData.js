@@ -1,20 +1,20 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 13, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 14, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI JUN 12: STRIDER LEAVES HURT, AND THE SKID HITS THREE. Atlanta (45-24,
-// .652, L3) lost the Citi Field opener 7-5 after SPENCER STRIDER exited in the
-// 4th with right elbow and shoulder soreness, his fastball down to about 88
-// mph; he was charged with 7 R on 6 H in 3-plus IP (LP, 4-2) and went for an
-// MRI that night with no roster decision yet. BO BICHETTE and JUAN SOTO went
-// back-to-back in the 1st (Bichette homered twice off Strider); MATT OLSON's
-// MLB-leading 20th and RBI singles from Smith, Yastrzemski, and Albies were not
-// enough. HURSTON WALDREP was reinstated from the 60-day IL and optioned to
-// Triple-A Gwinnett (healthy depth, next starter up); Maverick Handley was
-// released and Jhancarlos Lara was claimed by Washington. SAT JUN 13 4:10 PM
-// ET: MARTIN PEREZ (4-3, 3.02) vs Mets LHP SEAN MANAEA (1-1, 5.02) trying to
-// stop the slide. The NL East lead is about 7.5 over Philadelphia. IL watch:
-// Acuna (hamstring) eligible Jun 20; Baldwin (oblique) targets the Jun 16-21
-// homestand; Kinley (elbow) on the 15-day IL; Murphy in a splint; Schwellenbach
-// on flat ground; Smith-Shawver facing live hitters next.
+// SAT JUN 13: ELI WHITE LEADS ATLANTA BACK. The Braves (46-24, .657, W1) snapped
+// a three-game skid with a 3-1 win at Citi Field. ELI WHITE matched a career high
+// with three hits, doubling in a run in the 2nd, homering in the 4th, and doubling
+// again in the 7th. MICHAEL HARRIS II added a 392-foot homer in the 8th, and
+// MARTIN PEREZ (W, 5-3, 2.90) held the Mets to one run over 5.1 innings for his
+// third straight winning start. The heavier story broke pregame: SPENCER STRIDER
+// was placed on the 15-day IL with right elbow inflammation after Friday's MRI
+// showed a sprained UCL, with no decision on possible Tommy John surgery until he
+// is evaluated by Dr. Keith Meister in Arlington. SUN JUN 14 1:40 PM ET: BRYCE
+// ELDER (5-3, 2.75) vs Mets RHP FREDDY PERALTA (4-5) in the series finale. DRAKE
+// BALDWIN began a Triple-A Gwinnett rehab assignment Saturday, with activation
+// eyed for the Jun 16-21 homestand. The NL East lead is about 8 over Philadelphia.
+// IL watch: Acuna (hamstring) eligible Jun 20; Strider (elbow, UCL sprain) on the
+// 15-day IL; Kinley (elbow) eligible Jun 23; Murphy in a splint; Schwellenbach on
+// flat ground; Smith-Shawver facing live hitters next.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -141,9 +141,9 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .333, obp: .361, slg: .619, ops: .980, hr: 12, rbi: 33, sb: 2, bb: 6, so: 23, games: 41, wrcPlus: null },
-    statNote: "BACK IN THE LINEUP, BACK ISSUE CLEARED: Harris II returned to center field Tuesday in Chicago (batting second) after the back tightness that kept him out of weekend starts was deemed not serious, and he scored on Olson's first-inning homer. The bat stays among the NL's hottest at .333/.361/.619 (.980 OPS) with 12 HR / 33 RBI, fresh off the pinch-hit, bases-clearing double that swept Pittsburgh on Sunday.",
-    form: 9.5,
+    stats: { avg: .333, obp: .361, slg: .622, ops: .983, hr: 13, rbi: 34, sb: 2, bb: 6, so: 23, games: 42, wrcPlus: null },
+    statNote: "392-FOOT HOMER OFF THE SECOND DECK IN THE 3-1 WIN: Harris II launched a 392-foot solo shot off the right-field advertising signage in the 8th inning Saturday at Citi Field, the insurance run in Atlanta's series-skid-snapping win over the Mets (#13). The center fielder, fully past the back tightness that cost him a few weekend starts earlier in the month, stays among the NL's hottest bats at .333/.361/.622 (.983 OPS) with 13 HR / 34 RBI. With Acuna on the IL, he and Olson anchor the order.",
+    form: 9.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -163,12 +163,12 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
     stats: { avg: .312, obp: .380, slg: .569, ops: .949, hr: 12, rbi: 35, sb: 1, bb: 14, so: 35, games: 41 },
-    statNote: "ACTIVATION TARGET: JUNE 16–21 HOMESTAND — Baldwin's return is coming into focus: he could be activated from the 10-day IL during the team's June 16–21 homestand, roughly in line with the mid-June window Anthopoulos sketched. The frozen line — .312/.380/.569 (.949 OPS), 12 HR / 35 RBI across 41 G — was a down-ballot MVP-caliber season and still the NL's best catcher production by OPS. The León / Tromp tandem holds the fort until then.",
+    statNote: "REHAB ASSIGNMENT UNDERWAY AT GWINNETT: Cleared for game action, Baldwin reported to Triple-A Gwinnett on Saturday to begin a minor-league rehab assignment, the clearest signal yet that activation is near. The target remains the June 16-21 homestand, with only a short tune-up expected. The frozen line (.312/.380/.569, .949 OPS, 12 HR / 35 RBI across 41 G) is still the NL's best catcher production by OPS. Leon and Wynns hold the fort until he is back.",
     form: 0,
     status: "il-10",
-    injuryNote: "RIGHT OBLIQUE STRAIN — placed on 10-day IL on May 19 (retroactive to May 18). Targeting activation during the June 16–21 homestand, with little rehab time expected to be needed.",
+    injuryNote: "RIGHT OBLIQUE STRAIN, placed on 10-day IL on May 19 (retroactive to May 18). Began a rehab assignment at Triple-A Gwinnett on Jun 13; activation targeted for the June 16-21 homestand with little rehab time expected.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
-    assignment: "mlb",
+    assignment: "rehab",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2025–", team: "Atlanta Braves", type: "MLB · 3rd-round 2022 draft (Missouri State)" },
@@ -566,9 +566,9 @@ export const PLAYERS = [
     rotationSpot: 6,
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
-    stats: { era: 3.02, whip: 1.10, ip: 56.2, k: 40, bb: 19, w: 4, l: 3, games: 13, starts: 9 },
-    statNote: "WINS THE PIRATES OPENER — 5 IP, 3 R BEFORE THE PEN SLAMMED THE DOOR — Pérez (now 4-3, 3.02) gave Atlanta five innings and three runs Friday in the 6-3 win over Pittsburgh, handing a 4-3 lead to a bullpen that blanked MLB's fourth-highest-scoring offense over the final four frames. The $2M offseason signing remains one of the staff's best bargains and lines up to face the Pirates again next time through.",
-    form: 8.0,
+    stats: { era: 2.90, whip: 1.10, ip: 62.0, k: 44, bb: 19, w: 5, l: 3, games: 14, starts: 10 },
+    statNote: "(W, 5-3) THIRD STRAIGHT WINNING START STOPS THE SKID: Perez held the Mets to one run over 5.1 innings Saturday at Citi Field (4 K), grabbing the win in the 3-1 victory that snapped Atlanta's second three-game losing streak of the season. It was his longest winning run since three in a row for Texas in 2022. The $2M offseason signing has been one of the staff's best bargains, and his value only climbs with Strider down: 2.90 ERA, 1.10 WHIP across 62.0 IP.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -964,10 +964,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: 4.85, whip: 1.31, ip: 39.0, k: 47, bb: 18, w: 4, l: 2, games: 8, starts: 8 },
-    statNote: "ROUGH NIGHT AND AN INJURY SCARE IN QUEENS (LP): Strider was tagged for seven runs on six hits in three-plus innings Friday at Citi Field, including a back-to-back first-inning blast by Bo Bichette and Juan Soto plus a second Bichette homer, then left in the 4th with right elbow and shoulder soreness as his velocity sagged to roughly 88 mph from his usual 95. He took the loss to fall to 4-2, and the club sent him for MRI imaging that night with no roster decision announced. Season line: 4.85 ERA, 1.31 WHIP, 47 K in 39.0 IP across 8 starts.",
+    statNote: "ON THE 15-DAY IL, UCL SPRAIN, SURGERY DECISION PENDING: Friday's MRI revealed a sprained ulnar collateral ligament in the right elbow, and Atlanta placed Strider on the 15-day IL Saturday with right elbow inflammation. No decision on possible season-ending Tommy John surgery is expected until he is evaluated by Dr. Keith Meister in Arlington. The news lands hard given the 2024 internal-brace procedure that cost him nearly a full year; his velocity had sagged to about 88 mph before he exited Friday. Season line frozen: 4.85 ERA, 1.31 WHIP, 47 K in 39.0 IP across 8 starts.",
     form: 3.8,
-    status: "day-to-day",
-    injuryNote: "RIGHT ELBOW AND SHOULDER SORENESS, MRI PENDING. Exited Friday's start at the Mets in the 4th inning after his fastball dropped to about 88 mph. Underwent imaging Friday night with no IL decision announced as of Saturday. The velocity dip is alarming given the 2024 internal-brace elbow surgery that cost him nearly a full season.",
+    status: "il-15",
+    injuryNote: "SPRAINED RIGHT UCL, placed on the 15-day IL Sat Jun 13 (right elbow inflammation). Friday's MRI confirmed the ligament sprain after he left his Mets start in the 4th with his fastball down to about 88 mph. Awaiting evaluation by Dr. Keith Meister in Arlington before any call on Tommy John surgery; a long absence is a real risk given the 2024 internal-brace elbow surgery.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     assignment: "mlb",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
@@ -1182,46 +1182,47 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-13",
-    weekday: "Sat",
-    time: "4:10 PM ET",
-    opp: "NYM",
-    home: false,
-    venue: "Citi Field · New York",
-    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "4-3", era: 3.02, daysRest: 7, hand: "L" },
-    oppSP: { name: "Sean Manaea", record: "1-1", era: 5.02, hand: "L" },
-    note: "Middle game in Queens, with Atlanta (45-24) trying to stop a three-game skid the morning after Strider left hurt. Martín Pérez (4-3, 3.02), on a week of rest, faces Mets LHP Sean Manaea (1-1, 5.02). First pitch 4:10 PM ET.",
-  },
-  {
     date: "2026-06-14",
     weekday: "Sun",
-    time: "TBA",
+    time: "1:40 PM ET",
     opp: "NYM",
     home: false,
     venue: "Citi Field · New York",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "5-3", era: 2.75, daysRest: 5, hand: "R" },
+    oppSP: { name: "Freddy Peralta", record: "4-5", era: null, hand: "R" },
+    note: "Series finale in Queens, with Atlanta (46-24) going for the split a day after snapping its skid. Bryce Elder (5-3, 2.75) faces Mets RHP Freddy Peralta (4-5). First pitch 1:40 PM ET.",
+  },
+  {
+    date: "2026-06-16",
+    weekday: "Tue",
+    time: "TBA",
+    opp: "TBA",
+    home: true,
+    venue: "Truist Park · Atlanta",
     atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Series finale at the Mets, Atlanta probable TBA after the rainout and Strider injury scrambled the rotation. The Braves open a homestand June 16 with Baldwin's activation in sight.",
+    note: "Homestand opener at Truist Park after a Monday off-day, with Drake Baldwin's activation from his Gwinnett rehab assignment in sight and the rotation reshuffled around Strider's IL stint.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-13",
-  time: "4:10 PM ET",
+  date: "2026-06-14",
+  time: "1:40 PM ET",
   opp: "NYM",
   home: false,
   venue: "Citi Field · Queens, NY",
   tv: null,
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "4-3", era: 3.02 },
-    opp: { pitcher: "Sean Manaea", record: "1-1", era: 5.02 },
+    atl: { pitcher: "Bryce Elder", record: "5-3", era: 2.75 },
+    opp: { pitcher: "Freddy Peralta", record: "4-5", era: null },
   },
-  note: "SAT 4:10 PM ET: PEREZ TRIES TO STOP THE SLIDE IN QUEENS. Atlanta (45-24, .652, L3) has dropped three straight and arrives Saturday a day after SPENCER STRIDER left his start with right elbow and shoulder soreness (MRI pending). Veteran lefty MARTIN PEREZ (4-3, 3.02), on a week of rest, gets the ball against Mets LHP SEAN MANAEA (1-1, 5.02), who is working back into form. The lineup is still without RONALD ACUNA JR. (10-day IL, Grade 1 left hamstring, eligible June 20); Tellez, Smith, and Yastrzemski keep covering the corner at-bats. The NL East lead remains comfortable at roughly 7.5 over Philadelphia, with Atlanta home June 16 and DRAKE BALDWIN's activation in sight.",
+  note: "SUN 1:40 PM ET: ELDER GOES FOR THE SERIES SPLIT IN QUEENS. Atlanta (46-24, .657, W1) snapped a three-game skid Saturday behind Eli White's three hits and Martin Perez's third straight winning start, and now hands the ball to BRYCE ELDER (5-3, 2.75) in the finale against Mets RHP FREDDY PERALTA (4-5). The rotation is suddenly thin after SPENCER STRIDER landed on the 15-day IL with a sprained UCL, putting more weight on Elder, Sale, and Holmes. The lineup is still without RONALD ACUNA JR. (10-day IL, hamstring, eligible June 20), but DRAKE BALDWIN started a Triple-A rehab assignment Saturday and could be activated for the June 16-21 homestand. The NL East lead sits at about 8 over Philadelphia.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-06-13", opp: "NYM", home: false, atlScore: 3, oppScore: 1, result: "W", note: "ELI WHITE'S THREE-HIT NIGHT SNAPS THE SKID, BRAVES BEAT THE METS 3-1: Atlanta halted its second three-game losing streak of the season Saturday at Citi Field, pushing baseball's best record to 46-24 (.657, W1). ELI WHITE matched a career high with three hits, lacing an RBI double in the 2nd, homering in the 4th, and doubling again in the 7th, his fifth career three-hit game and first since May 17, 2025. MICHAEL HARRIS II added a 392-foot solo homer off the right-field second-deck signage in the 8th for insurance (#13). MARTIN PEREZ (W, 5-3) was the difference on the mound: one run over 5.1 innings with four strikeouts, his third straight winning start and longest such run since 2022 with Texas. The back of the bullpen slammed the door. Bo Bichette stayed hot for New York (2-for-3, .389 over his last nine) but the Mets managed only Mark Vientos' sixth-inning RBI single. Pregame, the Braves placed SPENCER STRIDER on the 15-day IL (sprained UCL) and sent DRAKE BALDWIN to Triple-A Gwinnett to begin a rehab assignment." },
   { date: "2026-06-12", opp: "NYM", home: false, atlScore: 5, oppScore: 7, result: "L", note: "STRIDER LEAVES HURT, BACK-TO-BACK BOMBS SINK ATLANTA 7-5: The Braves dropped a third straight Friday at Citi Field, and the final score was the smaller worry. SPENCER STRIDER (LP, 4-2) was tagged for seven runs on six hits in three-plus innings, then exited in the 4th with right elbow and shoulder soreness after his fastball sagged to about 88 mph; he went for MRI imaging that night. BO BICHETTE and JUAN SOTO went back-to-back in the 1st, and Bichette added a second homer off Strider. MATT OLSON answered with his MLB-leading 20th, and DOMINIC SMITH, MIKE YASTRZEMSKI, and OZZIE ALBIES each chipped in RBI singles, but Atlanta never climbed out of the early hole. Rookie Nolan McLean gave the Mets four innings (2 R, 6 K, 4 BB) and closer DEVIN WILLIAMS got the final four outs for his 10th save. First pitch followed a 76-minute rain delay; Atlanta falls to 45-24 but keeps a comfortable NL East lead." },
   { date: "2026-06-10", opp: "CWS", home: false, atlScore: 1, oppScore: 2, result: "L", note: "MARTIN BLANKS THE BRAVES, SALE'S GEM WASTED IN A 2-1 LOSS: Davis Martin (W, 9-2) threw six scoreless innings Wednesday at Rate Field and the White Sox edged Atlanta 2-1, taking the first two of the set behind a seventh straight home win and moving into first in the AL Central. CHRIS SALE (LP, 8-5) deserved far better: 5.2 IP / 6 H / 1 BB / 6 K with 13 whiffs and 66 of 103 pitches for strikes, the only damage two runs in the 4th. Atlanta's lone run was unearned: in the 7th, JORGE MATEO sprinted home from first when Miguel Vargas couldn't handle OZZIE ALBIES' grounder to third off Sean Newcomb. The offense managed little else in a second straight quiet night, and Bryan Hudson closed the 9th for his third save. Pregame, the roster churned: Acuña (hamstring) to the 10-day IL with Tellez selected, Kinley (elbow) to the 15-day IL with Karinchak selected, Ritchie recalled, and Carrasco DFA'd. Pérez tries to avoid the sweep Thursday." },
   { date: "2026-06-09", opp: "CWS", home: false, atlScore: 5, oppScore: 6, result: "L", note: "A DEBUT WALK-OFF STUNS ATLANTA IN 10: The White Sox beat the Braves 6-5 Tuesday night at Rate Field on BRADEN MONTGOMERY's two-out, two-run homer off RAISEL IGLESIAS (L, 0-1) in the bottom of the 10th, a 343-foot poke just over the left-field wall. Montgomery, called up from Triple-A Charlotte hours earlier, became just the fifth player in MLB history to hit a walk-off HR in his debut (first since 2015) and finished 2-for-5 with 3 RBI. The loss ended Iglesias' 31-game save-conversion streak, the majors' longest active run. Atlanta led 4-0 early on MATT OLSON's two homers off Erick Fedde (#18, #19; 3 RBI, now 50 on the season), but GRANT HOLMES lasted just 3.2 IP and Chicago chipped back through Miguel Vargas' two-run shot and RBI singles by Montgomery and Jacob Gonzalez. MAURICIO DUBON's first-pitch RBI single off Grant Taylor (W, 2-0) put Atlanta up 5-4 in the 10th before the bottom half. The bigger scare: RONALD ACUNA JR. exited in the 4th with left hamstring tightness (same hamstring as May's strain), day-to-day with an MRI pending. Sale tries to even the set Wednesday." },
@@ -1231,35 +1232,35 @@ export const RESULTS = [
   { date: "2026-06-04", opp: "TOR", home: true, atlScore: 2, oppScore: 7, result: "L", note: "SWEEP BID SNUFFED OUT BY A DEBUTANT — DALLAS AND FIVE RELIEVERS FOUR-HIT THE BRAVES, 7-2 — Toronto salvaged the series finale Thursday night at Truist Park, ending Atlanta's sweep bid and its own four-game losing streak as the MLB-best Braves slipped to 42-21 (.667, L1). Rookie CHAD DALLAS (W, 1-0), recalled from Triple-A Buffalo, allowed one run on two hits over 3 2/3 innings in his MLB debut behind opener Mason Fluharty, and six Toronto pitchers combined on a FOUR-HITTER. CHRIS SALE (LP, 8-4) was pecked to death: 5.2 IP / season-high 10 H / 3 R / 2 BB / 6 K, the damage a three-run 3rd on MYLES STRAW's two-run single and CHARLES McADOO's RBI knock — though his four-seamer averaged 97 mph for a second straight start. MATT OLSON's sac fly (3rd) and MAURICIO DUBÓN's solo homer off Braydon Fisher in the 8th (#5, back-to-back games with a HR) were the only Atlanta runs. REYNALDO LÓPEZ was tagged for four in the 9th (Lukes and Straw RBI singles, Heineman two-run double) as Toronto piled up 16 hits; Straw drove in three, Guerrero Jr. and Clement had three hits each. LOUIS VARLAND got the final four outs for his 9th save. Roster notes: catcher AUSTIN WYNNS (acquired from the Angels for cash; Tromp DFA'd) debuted in the 8th. Pérez opens the Pittsburgh series Friday." },
   { date: "2026-06-03", opp: "TOR", home: true, atlScore: 7, oppScore: 3, result: "W", note: "DUBÓN AND ALBIES GO DEEP — BRAVES CLINCH THE SERIES 7-3, OWN CORBIN AGAIN — Atlanta beat Toronto 7-3 Wednesday night at Truist Park to clinch the series and push baseball's best record to 42-20 (.677, W2) — the Braves are now 17-2-1 in series this season. Toronto briefly led 2-1 on NATHAN LUKES' homer off Grant Holmes in the 3rd, but Atlanta answered immediately: with two outs, MATT OLSON singled, OZZIE ALBIES doubled him to third, and MAURICIO DUBÓN launched a go-ahead three-run homer (#4) into the Braves' bullpen behind the center-field wall for a 4-2 lead. Olson (3 hits) singled and scored again in the 7th on ALBIES' three-run homer (#10) off LHP Adam Macko. GRANT HOLMES (W, 4-2) gave the Braves six solid innings: 6 IP / 5 H / 2 R / 2 BB / 4 K. Brandon Valenzuela's 9th-inning homer off Tyler Kinley was Toronto's only late answer. PATRICK CORBIN (LP, 2-2) was charged with four runs over five innings — his 12TH CONSECUTIVE LOSS to Atlanta, the first pitcher to drop 12 straight decisions to one team since Mark Buehrle vs the Yankees (2004–14). Sale goes for the sweep Thursday night." },
   { date: "2026-06-02", opp: "TOR", home: true, atlScore: 4, oppScore: 3, result: "W", note: "OLSON'S GO-AHEAD HR #17 BEATS TORONTO — BRAVES OPEN HOMESTAND 4-3 — Atlanta took the series opener 4-3 Tuesday night at Truist Park, pushing baseball's best record to 41-20 (.672, W1). MATT OLSON broke a 3-3 tie in the 6th, turning on a pitch that barely cleared the right-field wall for his MLB-/NL-leading 17th homer. BRYCE ELDER (W, 5-3) bounced back from the Fenway blow-up with 6.2 IP / 6 H / 3 R / 1 K — the only real damage a KAZUMA OKAMOTO two-run homer for Toronto — and left in line for the win. RAISEL IGLESIAS worked around two singles in the 9th for his 11th save in as many chances, keeping his ERA at 0.00. The Blue Jays got a quality start from their opener but couldn't solve the back of Atlanta's bullpen. The Braves go for the series win Wednesday behind Grant Holmes." },
-  { date: "2026-05-31", opp: "CIN", home: false, atlScore: 4, oppScore: 6, result: "L", note: "REDS AVOID THE SWEEP — SUÁREZ HOMERS, LODOLO OUTDUELS STRIDER, CINCINNATI HOLDS ON 6-4 — Atlanta's win streak ended Sunday at Great American Ball Park as the Reds took the finale 6-4, denying the road sweep and dropping the MLB-best Braves to 40-20 (.667, L1). EUGENIO SUÁREZ broke out with his first homer since April 15 and JJ BLEDAY also went deep as NICK LODOLO (W, 2-1) limited Atlanta to three earned over 6.2 innings. RONALD ACUÑA JR. kept his power surge alive, ambushing Lodolo's first pitch of the game for his franchise-best 39th career leadoff HR — his fifth homer in four games — but the bats went quiet after. SPENCER STRIDER (LP, 3-1) was solid in defeat: 5 IP / 7 H / 3 R (3 ER) / 2 BB / 8 K. Atlanta threatened in the ninth but couldn't complete the comeback, stranding the tying run. The Braves still lead the NL East by 9.0 games and head home for a Monday off-day before opening a homestand vs Toronto on Tuesday." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 45, l: 24, pct: .652, gb: 0,    streak: "L3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 37, l: 31, pct: .544, gb: 7.5,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 35, l: 34, pct: .507, gb: 10.0, streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 34, l: 35, pct: .493, gb: 11.0, streak: "W4" },
-  { team: "NYM", name: "New York Mets",          w: 31, l: 38, pct: .449, gb: 14.0, streak: "W2" },
+  { team: "ATL", name: "Atlanta Braves",         w: 46, l: 24, pct: .657, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 38, l: 32, pct: .543, gb: 8.0,  streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 36, l: 35, pct: .507, gb: 9.5,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 35, l: 36, pct: .493, gb: 10.5, streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 31, l: 39, pct: .443, gb: 15.0, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-13T09:26:00-04:00",
+  generatedAt: "2026-06-14T09:40:00-04:00",
   summary:
-    "STRIDER LEAVES HURT, AND THE SKID HITS THREE. Friday's series opener at Citi Field turned alarming in a hurry: SPENCER STRIDER exited in the 4th inning with right elbow and shoulder soreness as his fastball dropped to about 88 mph, and the Mets rolled 7-5 behind back-to-back first-inning homers from Bo Bichette and Juan Soto (Bichette went deep twice off Strider). Atlanta (45-24, .652) sent Strider for an MRI Friday night with no roster decision yet, an unnerving development given his 2024 elbow surgery. MATT OLSON's MLB-leading 20th homer and RBI singles from Smith, Yastrzemski, and Albies were not enough. On the depth front, HURSTON WALDREP was reinstated from the 60-day IL and optioned to Triple-A Gwinnett, healthy at last and the next starter up if the rotation needs one. The bats now turn to MARTIN PEREZ (4-3, 3.02) Saturday at 4:10 PM ET opposite Mets lefty SEAN MANAEA (1-1, 5.02). The lineup is still without RONALD ACUNA JR. (10-day IL, hamstring, eligible June 20), with DRAKE BALDWIN's return targeted for the June 16-21 homestand. The NL East lead sits at roughly 7.5 over Philadelphia.",
+    "STRIDER TO THE IL WITH A UCL SPRAIN, BUT ATLANTA STOPS THE SKID. The lead story is a worrying one: SPENCER STRIDER was placed on the 15-day IL on Saturday with right elbow inflammation after Friday's MRI revealed a sprained ulnar collateral ligament, and there is no decision on possible Tommy John surgery until he is evaluated by Dr. Keith Meister in Arlington. On the field, the Braves (46-24, .657) snapped a three-game skid the same day, beating the Mets 3-1 behind ELI WHITE's career-high-tying three hits (RBI double, homer, double) and a 392-foot MICHAEL HARRIS II homer in the 8th. MARTIN PEREZ (5-3, 2.90) held New York to one run over 5.1 innings for his third straight winning start. Sunday at 1:40 PM ET, BRYCE ELDER (5-3, 2.75) faces Mets RHP FREDDY PERALTA (4-5) in the finale, with the rotation now leaning hard on Elder, Sale, and Holmes. DRAKE BALDWIN began a Triple-A Gwinnett rehab assignment Saturday and could be activated during the June 16-21 homestand. RONALD ACUNA JR. (hamstring) stays on the 10-day IL, eligible June 20. The NL East lead sits at about 8 games over Philadelphia.",
   keyTopics: [
-    { category: "injury",      title: "Strider exits start with elbow and shoulder soreness, MRI pending",                              detail: "Spencer Strider left Friday's start at the Mets in the 4th inning after his fastball sagged to about 88 mph from his usual 95, the Braves citing right elbow and shoulder soreness. He went for MRI imaging that night, with no IL decision announced as of Saturday. The velocity drop is especially worrying given the 2024 internal-brace elbow surgery that cost him nearly a full season." },
-    { category: "result",      title: "Back-to-back bombs sink Atlanta as Mets win 7-5",                                                  detail: "Bo Bichette and Juan Soto went back-to-back in the 1st and Bichette added a second homer off Strider, who was charged with seven runs on six hits in three-plus innings (LP, 4-2). Matt Olson's 20th homer and RBI singles by Dominic Smith, Mike Yastrzemski, and Ozzie Albies cut the margin, but Atlanta never caught up. Devin Williams got the final four outs for his 10th save after a 76-minute rain delay." },
-    { category: "rotation",    title: "Saturday: Pérez vs Sean Manaea at Citi Field, 4:10 PM ET",                                         detail: "Martín Pérez (4-3, 3.02), on a week of rest, gets the ball Saturday trying to stop a three-game skid against Mets LHP Sean Manaea (1-1, 5.02), who is rounding back into form. First pitch is 4:10 PM ET in Queens, with the rotation behind Strider suddenly in flux pending his imaging results." },
-    { category: "transaction", title: "Waldrep reinstated from the 60-day IL, optioned to Triple-A Gwinnett",                          detail: "Atlanta activated Hurston Waldrep from the 60-day injured list Friday and optioned him to Gwinnett, the final step in his return from February elbow surgery. His last rehab outing was four runs over 3.2 innings at Double-A Columbus on Thursday. He is now healthy 40-man depth and the next starter up, a role that matters more after Strider's scare. Catcher Maverick Handley was released and RHP Jhancarlos Lara was claimed by Washington in the surrounding moves." },
-    { category: "injury",      title: "Acuña on the IL, eligible to return June 20",                                                     detail: "Ronald Acuña Jr. remains on the 10-day IL with the Grade 1 left hamstring strain, his second hamstring stint of the season. The club has not set a return date; he is eligible June 20, during the home stretch. His line is frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games." },
-    { category: "injury",      title: "Baldwin nearing return, June 16-21 homestand activation in view",                                  detail: "Manager Walt Weiss reiterated this week that Drake Baldwin (right oblique strain) could be activated during the June 16-21 homestand. Baldwin has been ramping with live batting practice and a short rehab assignment is the next likely step. His frozen line (.312/.380/.569, 12 HR, 35 RBI) is among the best catcher production in the NL by OPS." },
-    { category: "standings",   title: "NL East: ATL 45-24, lead about 7.5 over Philadelphia",                                           detail: "The Friday loss drops Atlanta to 45-24 and the skid to three, but the division cushion stays comfortable at roughly 7.5 games over Philadelphia (37-31). New York climbs to 31-38 with the win yet remains last in the East. Washington (35-34) and Miami (34-35) hold the middle." },
-    { category: "lineup",      title: "Olson reaches 20 homers, keeps the NL lead",                                                      detail: "Matt Olson connected for his MLB- and NL-leading 20th homer Friday, among the first hitters in baseball to the mark, and now sits on 51 RBI with an OPS above .900. With Acuña out, the offense runs through Olson, Albies, and Harris II for the next two weeks." },
-    { category: "narrative",   title: "Three straight losses, and the bats stay quiet",                                                  detail: "Atlanta has now dropped three in a row and scored sparingly in each, with the rainout-shortened Chicago trip bleeding into a flat start in Queens. The lineup awaits reinforcements: Acuña around June 20 and Baldwin during the next homestand. Tellez, Smith, and Yastrzemski keep absorbing the corner at-bats." },
-    { category: "injury",      title: "Kinley on the 15-day IL, eligible June 23",                                                       detail: "Tyler Kinley's right elbow inflammation has him on the 15-day IL retroactive to June 8, eligible to return June 23 if the irritation proves mild. He had been one of the pen's steadiest middle-relief pieces at a 2.45 ERA across 20 games on a bargain $1.5M deal." },
-    { category: "injury",      title: "Murphy in a splint as the fractured finger heals",                                                detail: "Sean Murphy is wearing a splint over the fractured left middle finger, a checkpoint in the up-to-eight-week timeline set in mid-May. He remains weeks behind Baldwin in the catching corps' return queue, with León and the rehabbing tandem covering behind the plate." },
+    { category: "injury",      title: "Strider placed on 15-day IL with a sprained UCL, surgery decision pending",                       detail: "Friday's MRI revealed a sprained ulnar collateral ligament in Spencer Strider's right elbow, and Atlanta placed him on the 15-day IL Saturday with right elbow inflammation. No decision on possible season-ending Tommy John surgery is expected until he is evaluated by Dr. Keith Meister in Arlington. The timing is brutal given the 2024 internal-brace procedure that cost him most of a season." },
+    { category: "result",      title: "Eli White's three-hit night lifts Atlanta to a 3-1 win and snaps the skid",                       detail: "Eli White matched a career high with three hits Saturday at Citi Field, an RBI double in the 2nd, a homer in the 4th, and another double in the 7th, his fifth career three-hit game. Michael Harris II added a 392-foot homer in the 8th, and the win ended Atlanta's second three-game losing streak of the season." },
+    { category: "rotation",    title: "Pérez wins his third straight start, anchors a thinned rotation",                                  detail: "Martín Pérez held the Mets to one run over 5.1 innings with four strikeouts for the win, his third consecutive winning start and his longest such run since 2022 with Texas. His season line drops to 2.90 ERA, 1.10 WHIP across 62.0 IP, and his value spikes with Strider down." },
+    { category: "rotation",    title: "Sunday finale: Elder vs Freddy Peralta at Citi Field, 1:40 PM ET",                                detail: "Bryce Elder (5-3, 2.75) gets the ball in the series finale against Mets RHP Freddy Peralta (4-5), Atlanta going for the split. With Strider on the IL, the rotation now leans on Elder, Chris Sale, and Grant Holmes until reinforcements arrive from the rehab ranks." },
+    { category: "transaction", title: "Baldwin starts a Triple-A Gwinnett rehab assignment",                                            detail: "Cleared for game action, Drake Baldwin reported to Triple-A Gwinnett on Saturday to begin a minor-league rehab assignment, the clearest sign yet that his return from the right oblique strain is near. Activation is targeted for the June 16-21 homestand, with only a short tune-up expected." },
+    { category: "injury",      title: "Acuña remains on the 10-day IL, eligible June 20",                                               detail: "Ronald Acuña Jr. stays on the 10-day IL with the Grade 1 left hamstring strain, his second hamstring stint of the season. He is eligible to return June 20 during the homestand. His line is frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games." },
+    { category: "standings",   title: "NL East: ATL 46-24, lead about 8 over Philadelphia",                                             detail: "The Saturday win pushes Atlanta to 46-24 and keeps baseball's best record, with a comfortable cushion of roughly 8 games over Philadelphia. New York falls to 31-39 and stays last in the East, while Washington and Miami hold the middle." },
+    { category: "lineup",      title: "Harris II stays scorching, reaches 13 homers",                                                   detail: "Michael Harris II's 392-foot shot off the second-deck signage was his 13th homer, and he remains among the NL's hottest bats at .333/.361/.622. Past the back tightness that cost him a few weekend starts earlier in the month, he and Matt Olson anchor the order with Acuña out." },
+    { category: "lineup",      title: "Olson keeps the NL home run lead at 20",                                                         detail: "Matt Olson sits on an MLB- and NL-leading 20 homers with 51 RBI and an OPS above .900, among the first hitters in baseball to the mark. With Acuña on the IL, the offense runs through Olson, Albies, and Harris II." },
+    { category: "injury",      title: "Kinley on the 15-day IL, eligible June 23",                                                       detail: "Tyler Kinley's right elbow inflammation has him on the 15-day IL retroactive to June 8, eligible to return June 23 if the irritation proves mild. He had been one of the pen's steadiest middle-relief pieces at a 2.45 ERA across 20 games." },
+    { category: "injury",      title: "Murphy in a splint as the fractured finger heals",                                                detail: "Sean Murphy is wearing a splint over the fractured left middle finger, a checkpoint in the up-to-eight-week timeline set in mid-May. He remains weeks behind Baldwin in the catching return queue, with León and Wynns covering behind the plate." },
+    { category: "narrative",   title: "Bullpen stays elite as the rotation thins out",                                                  detail: "The back of the Atlanta bullpen, led by Dylan Lee, Robert Suarez, and Raisel Iglesias, remains among the best in baseball and slammed the door again Saturday. That depth becomes even more important now that Strider is down and the starting staff leans on its veterans." },
   ],
   sources: [
     "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "Yahoo Sports", "CBS Sports", "SI.com", "Baseball-Reference", "FanGraphs", "Washington Post",
