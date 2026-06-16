@@ -1,19 +1,20 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 15, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 16, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SUN JUN 14: METS FINISH THE SERIES UPSET. The last-place Mets beat Atlanta 8-1
-// at Citi Field to take two of three, the Braves' second straight series loss.
-// Rookie A.J. EWING fell a triple shy of the cycle (RBI double in a four-run 1st,
-// a single, and a homer), and BRYCE ELDER (LP, 5-4) set season highs for damage,
-// allowing six runs on 10 hits in four-plus innings. The bats went quiet again,
-// managing one run on a day MATT OLSON kept the NL home run lead at 20. Atlanta
-// falls to 46-25 (.648) but still owns baseball's best record and a comfortable
-// NL East lead. MON JUN 15 is an off-day. TUE JUN 16 7:15 PM ET opens a homestand
-// vs the Giants at Truist Park: GRANT HOLMES (4-2, 4.05) faces SF RHP ADRIAN
-// HOUSER (2-6, 5.54). DRAKE BALDWIN is on a Triple-A Gwinnett rehab assignment
-// with activation eyed for this homestand. IL watch: Acuna (hamstring) eligible
-// Jun 20; Strider (elbow, UCL sprain) on the 15-day IL awaiting a surgery decision
-// from Dr. Keith Meister; Kinley (elbow) eligible Jun 23; Murphy in a splint;
-// Schwellenbach on flat ground; Smith-Shawver facing live hitters next.
+// MON JUN 15: BALDWIN BACK. Atlanta activated C DRAKE BALDWIN from the 10-day IL
+// ahead of the Giants series, outrighting C AUSTIN WYNNS to Triple-A Gwinnett in
+// the corresponding move. Baldwin, the NL's leading All-Star vote-getter among
+// catchers (.303/.389/.543, 13 HR, 38 RBI before the oblique strain), homered in
+// his lone Gwinnett rehab game Saturday and is expected back in the lineup Tue.
+// Better news on STRIDER too: the elbow MRI showed no ligament damage, and he was
+// shut down from throwing for about four weeks (inflammation), so no surgery is
+// planned for now. TUE JUN 16 7:15 PM ET opens the homestand vs the Giants at
+// Truist Park: GRANT HOLMES (4-2, 4.05) faces SF RHP ADRIAN HOUSER (2-6, 5.54).
+// Atlanta (46-25, .648) still owns baseball's best record and a comfortable NL
+// East lead after a 4-2 road trip that ended with back-to-back series losses, the
+// latest an 8-1 finale defeat to the last-place Mets. IL watch: Acuna (hamstring)
+// eligible Jun 20; Strider (elbow inflammation) out ~4 weeks, no ligament damage;
+// Kinley (elbow) eligible Jun 23; Murphy in a splint; Schwellenbach on flat
+// ground; Smith-Shawver facing live hitters next.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -162,12 +163,12 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
     stats: { avg: .312, obp: .380, slg: .569, ops: .949, hr: 12, rbi: 35, sb: 1, bb: 14, so: 35, games: 41 },
-    statNote: "REHAB ASSIGNMENT UNDERWAY AT GWINNETT: Cleared for game action, Baldwin reported to Triple-A Gwinnett on Saturday to begin a minor-league rehab assignment, the clearest signal yet that activation is near. The target remains the June 16-21 homestand, with only a short tune-up expected. The frozen line (.312/.380/.569, .949 OPS, 12 HR / 35 RBI across 41 G) is still the NL's best catcher production by OPS. Leon and Wynns hold the fort until he is back.",
-    form: 0,
-    status: "il-10",
-    injuryNote: "RIGHT OBLIQUE STRAIN, placed on 10-day IL on May 19 (retroactive to May 18). Began a rehab assignment at Triple-A Gwinnett on Jun 13; activation targeted for the June 16-21 homestand with little rehab time expected.",
+    statNote: "ACTIVATED FROM THE 10-DAY IL: Atlanta reinstated Baldwin on Monday Jun 15 ahead of the Giants series, ending a stint that began May 19 with a right oblique strain. He homered in his lone Gwinnett rehab game Saturday (amid Sunday's rainout) and the club outrighted Austin Wynns to Triple-A in the corresponding move. The NL's leading All-Star vote-getter among catchers returns as the unquestioned primary backstop and a needed bat for a cold lineup; he is expected back in the order Tuesday. Frozen pre-injury line (.312/.380/.569, .949 OPS, 12 HR / 35 RBI across 41 G) is still the position's best OPS in the league.",
+    form: 7.5,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2025–", team: "Atlanta Braves", type: "MLB · 3rd-round 2022 draft (Missouri State)" },
@@ -411,12 +412,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 35, experience: 8,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "ACQUIRED FROM THE ANGELS FOR CASH — INSTANT CATCHING DEPTH — Atlanta added the 35-year-old veteran Wednesday and put him on the active roster Thursday (Chadwick Tromp DFA'd in the corresponding move); he debuted that night, entering the 7-2 loss to Toronto in the 8th inning. With Baldwin (oblique) and Murphy (finger) both on the IL, Wynns pairs with Sandy León as a defense-first, experienced tandem — the 8-year MLB journeyman brings game-calling chops until the regulars return.",
+    statNote: "OUTRIGHTED TO TRIPLE-A GWINNETT: Atlanta removed Wynns from the 40-man roster Monday Jun 15, the corresponding move for Drake Baldwin's activation from the IL. The veteran gave the club two-plus weeks of defense-first catching depth alongside Sandy León while Baldwin (oblique) and Murphy (finger) were down; he clears waivers and stays in the organization as Gwinnett depth, first-in-line if catching injuries strike again.",
     form: 5.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35314.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · acquired from LAA" },
@@ -963,10 +964,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 5,
     stats: { era: 4.85, whip: 1.31, ip: 39.0, k: 47, bb: 18, w: 4, l: 2, games: 8, starts: 8 },
-    statNote: "ON THE 15-DAY IL, UCL SPRAIN, SURGERY DECISION PENDING: Friday's MRI revealed a sprained ulnar collateral ligament in the right elbow, and Atlanta placed Strider on the 15-day IL Saturday with right elbow inflammation. No decision on possible season-ending Tommy John surgery is expected until he is evaluated by Dr. Keith Meister in Arlington. The news lands hard given the 2024 internal-brace procedure that cost him nearly a full year; his velocity had sagged to about 88 mph before he exited Friday. Season line frozen: 4.85 ERA, 1.31 WHIP, 47 K in 39.0 IP across 8 starts.",
+    statNote: "INJURY SCARE EASES: NO LIGAMENT DAMAGE, OUT ABOUT 4 WEEKS: Monday's update was a major relief after Friday's exit, the imaging showed no ligament damage in the right elbow, just inflammation. Atlanta is shutting Strider down from throwing for roughly four weeks, with no surgery planned for now and a ramp-up to follow. It is a far better outcome than the feared UCL tear given the 2024 internal-brace procedure that cost him nearly a full year. Season line frozen: 4.85 ERA, 1.31 WHIP, 47 K in 39.0 IP across 8 starts.",
     form: 3.8,
     status: "il-15",
-    injuryNote: "SPRAINED RIGHT UCL, placed on the 15-day IL Sat Jun 13 (right elbow inflammation). Friday's MRI confirmed the ligament sprain after he left his Mets start in the 4th with his fastball down to about 88 mph. Awaiting evaluation by Dr. Keith Meister in Arlington before any call on Tommy John surgery; a long absence is a real risk given the 2024 internal-brace elbow surgery.",
+    injuryNote: "RIGHT ELBOW INFLAMMATION, placed on the 15-day IL Sat Jun 13 after leaving his Mets start in the 4th with his fastball down to about 88 mph. Monday Jun 15 update: imaging showed NO ligament damage; he is shut down from throwing for about four weeks, with no surgery planned for now and a build-up to follow. A summer return is realistic if the inflammation settles cleanly.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4307825.png",
     assignment: "mlb",
     contract: { years: 6, total: 75000000, guaranteed: 75000000, apy: 12500000, throughYear: 2028 },
@@ -1181,26 +1182,26 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-14",
-    weekday: "Sun",
-    time: "1:40 PM ET",
-    opp: "NYM",
-    home: false,
-    venue: "Citi Field · New York",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "5-3", era: 2.75, daysRest: 5, hand: "R" },
-    oppSP: { name: "Freddy Peralta", record: "4-5", era: null, hand: "R" },
-    note: "Series finale in Queens, with Atlanta (46-24) going for the split a day after snapping its skid. Bryce Elder (5-3, 2.75) faces Mets RHP Freddy Peralta (4-5). First pitch 1:40 PM ET.",
-  },
-  {
     date: "2026-06-16",
     weekday: "Tue",
-    time: "TBA",
-    opp: "TBA",
+    time: "7:15 PM ET",
+    opp: "SF",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "4-2", era: 4.05, daysRest: 7, hand: "R" },
+    oppSP: { name: "Adrian Houser", record: "2-6", era: 5.54, hand: "R" },
+    note: "Homestand opener at Truist Park after a Monday off-day. Grant Holmes (4-2, 4.05) faces Giants RHP Adrian Houser (2-6, 5.54), with Drake Baldwin back in the lineup and the rotation reshuffled around Strider's IL stint. First pitch 7:15 PM ET.",
+  },
+  {
+    date: "2026-06-17",
+    weekday: "Wed",
+    time: "7:15 PM ET",
+    opp: "SF",
     home: true,
     venue: "Truist Park · Atlanta",
     atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Homestand opener at Truist Park after a Monday off-day, with Drake Baldwin's activation from his Gwinnett rehab assignment in sight and the rotation reshuffled around Strider's IL stint.",
+    note: "Game 2 of the three-game set with San Francisco at Truist Park. Probable starters to be announced.",
   },
 ];
 
@@ -1216,7 +1217,7 @@ export const NEXT_GAME = {
     atl: { pitcher: "Grant Holmes", record: "4-2", era: 4.05 },
     opp: { pitcher: "Adrian Houser", record: "2-6", era: 5.54 },
   },
-  note: "TUE 7:15 PM ET: HOMESTAND OPENS VS THE GIANTS AFTER A MONDAY OFF-DAY. Atlanta (46-25, .648) comes home looking to shake off a 4-2 road trip and a second straight series loss, the latest a 8-1 finale defeat to the last-place Mets. GRANT HOLMES (4-2, 4.05) gets the opener against San Francisco RHP ADRIAN HOUSER (2-6, 5.54). The rotation remains thin with SPENCER STRIDER on the 15-day IL (sprained UCL, surgery decision pending), so length from Holmes matters. RONALD ACUNA JR. (10-day IL, hamstring) is eligible June 20, and DRAKE BALDWIN could be activated off his Triple-A rehab assignment during this homestand. The NL East lead is still comfortable at roughly 8 games.",
+  note: "TUE 7:15 PM ET: HOMESTAND OPENS VS THE GIANTS. Atlanta (46-25, .648) comes home looking to shake off a 4-2 road trip and a second straight series loss, the latest an 8-1 finale defeat to the last-place Mets. GRANT HOLMES (4-2, 4.05) gets the opener against San Francisco RHP ADRIAN HOUSER (2-6, 5.54). DRAKE BALDWIN is back, activated from the IL on Monday and expected in the lineup, a needed bat after a cold stretch. The rotation stays thin with SPENCER STRIDER on the 15-day IL (elbow inflammation), though Monday's update was encouraging: no ligament damage, out about four weeks, no surgery planned. RONALD ACUNA JR. (10-day IL, hamstring) is eligible June 20. The NL East lead is still comfortable at roughly 8 games.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1244,24 +1245,24 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-15T09:40:00-04:00",
+  generatedAt: "2026-06-16T09:50:00-04:00",
   summary:
-    "METS FINISH THE UPSET, ATLANTA LIMPS HOME FOR AN OFF-DAY. The last-place Mets routed the Braves 8-1 on Sunday at Citi Field to take two of three, Atlanta's second straight series loss and a third quiet offensive day in a row. Rookie A.J. Ewing finished a triple shy of the cycle, doubling in a run during a four-run 1st before BRYCE ELDER (LP, 5-4) set season highs for damage with six runs on 10 hits in four-plus innings. The bats managed one run, though MATT OLSON kept the NL home run lead at 20. The Braves (46-25, .648) still own baseball's best record and a comfortable NL East lead, and they get a Monday off-day before opening a Truist Park homestand Tuesday at 7:15 PM ET against the Giants, GRANT HOLMES (4-2, 4.05) vs SF RHP ADRIAN HOUSER (2-6, 5.54). Help is near: DRAKE BALDWIN is on a Triple-A Gwinnett rehab assignment with activation eyed for this homestand, and RONALD ACUNA JR. (hamstring) is eligible to return June 20. The rotation stays thin with SPENCER STRIDER on the 15-day IL (sprained UCL) awaiting a surgery decision from Dr. Keith Meister.",
+    "BALDWIN BACK, GIANTS IN TOWN. Atlanta opens a Truist Park homestand Tuesday night (7:15 PM ET) against the Giants after activating catcher DRAKE BALDWIN from the 10-day IL on Monday, with Austin Wynns outrighted to Triple-A in the corresponding move. Baldwin, the NL's leading All-Star vote-getter among catchers, returns from a right oblique strain to reclaim the primary job and give a cold lineup a needed boost; he is expected back in the order Tuesday. GRANT HOLMES (4-2, 4.05) draws the opener against SF RHP ADRIAN HOUSER (2-6, 5.54). There was relief on the SPENCER STRIDER front too: Monday's update showed no ligament damage in the right elbow, with the inflammation set to keep him shut down from throwing for about four weeks and no surgery planned for now. The Braves (46-25, .648) still own baseball's best record and a comfortable NL East lead despite a 4-2 road trip that ended with back-to-back series losses, the latest an 8-1 finale defeat to the last-place Mets. More help is near: RONALD ACUNA JR. (hamstring) is eligible to return June 20.",
   keyTopics: [
-    { category: "result",      title: "Mets rout Atlanta 8-1, take the series two of three",                                            detail: "The last-place Mets handed baseball's best team a second straight series loss Sunday at Citi Field. Atlanta's offense went quiet for a third consecutive day, managing one run, and the Braves slipped to 46-25 before a Monday off-day." },
-    { category: "lineup",      title: "Cold bats: three straight quiet offensive days",                                                  detail: "After scoring 7 and 5 earlier in the trip, Atlanta managed 1, 3, and 1 runs over the final three games of the road swing. The lineup has leaned on Olson, Albies, and Harris II while Acuña (hamstring) and Baldwin (oblique) are out, and the absences are starting to show." },
-    { category: "rotation",    title: "Elder roughed up in the finale, falls to 5-4",                                                    detail: "Bryce Elder allowed six runs on 10 hits in four-plus innings Sunday, both season highs, as the Mets jumped him for four in the 1st. His ERA climbs to 3.27 (1.23 WHIP, 65 K across 82.2 IP). With Strider on the IL, Atlanta needs a quick reset before his next turn during the homestand." },
-    { category: "result",      title: "Off-day Monday, then the Giants come to Truist Park Tuesday",                                     detail: "Atlanta has a Monday off-day to regroup before opening a homestand Tuesday at 7:15 PM ET. Grant Holmes (4-2, 4.05) draws the opener against San Francisco RHP Adrian Houser (2-6, 5.54), the first of a three-game set with the Giants." },
-    { category: "injury",      title: "Strider on the 15-day IL with a sprained UCL, surgery decision pending",                         detail: "Spencer Strider remains on the 15-day IL with right elbow inflammation after an MRI revealed a sprained ulnar collateral ligament. No decision on possible season-ending Tommy John surgery is expected until he is evaluated by Dr. Keith Meister in Arlington, a worrying wait given his 2024 internal-brace procedure." },
-    { category: "transaction", title: "Baldwin on a Triple-A rehab assignment, activation near",                                        detail: "Drake Baldwin continues his minor-league rehab assignment at Triple-A Gwinnett as he works back from a right oblique strain. Activation is targeted for the current June 16-21 homestand with only a short tune-up expected, a welcome lineup boost. His frozen line of .312/.380/.569 is still the NL's best catcher OPS." },
+    { category: "transaction", title: "Baldwin activated from the IL, Wynns outrighted to Triple-A",                                    detail: "Atlanta reinstated Drake Baldwin from the 10-day IL on Monday ahead of the Giants series, outrighting Austin Wynns to Triple-A Gwinnett in the corresponding move. Baldwin, sidelined since May 19 with an oblique strain, homered in his lone Gwinnett rehab game Saturday and is expected back in the lineup Tuesday. His frozen line (.312/.380/.569, .949 OPS) is still the NL's best catcher OPS." },
+    { category: "injury",      title: "Strider update: no ligament damage, out about four weeks",                                       detail: "The feared elbow injury eased Monday: imaging on Spencer Strider showed no ligament damage, just inflammation. He is being shut down from throwing for roughly four weeks with no surgery planned for now, a far better outcome than the dreaded UCL tear given his 2024 internal-brace procedure." },
+    { category: "result",      title: "Giants open a three-game homestand Tuesday night",                                              detail: "Atlanta hosts San Francisco at 7:15 PM ET to begin a homestand after a Monday off-day. Grant Holmes (4-2, 4.05) draws the opener against Giants RHP Adrian Houser (2-6, 5.54), the first of three with the last-place NL West club." },
     { category: "injury",      title: "Acuña eligible to return June 20",                                                               detail: "Ronald Acuña Jr. stays on the 10-day IL with a Grade 1 left hamstring strain, his second hamstring stint of the season, and is eligible to return June 20 during the homestand. His line is frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games." },
     { category: "lineup",      title: "Olson holds the NL home run lead at 20",                                                         detail: "Matt Olson sits on an MLB- and NL-leading 20 homers with 51 RBI and an OPS above .900, among the first hitters in baseball to the mark. He has been the one constant in a lineup that has gone cold with Acuña out." },
-    { category: "standings",   title: "NL East: ATL 46-25, lead still comfortable over Philadelphia",                                   detail: "Even with the series loss, Atlanta keeps baseball's best record and a cushion of roughly 7 to 8 games over second-place Philadelphia. New York climbs to 32-39 but stays last in the East, with Washington and Miami in the middle." },
+    { category: "result",      title: "Mets routed Atlanta 8-1 to close out the road trip",                                             detail: "The last-place Mets handed baseball's best team a second straight series loss Sunday at Citi Field, taking two of three. Atlanta's offense went quiet for a third consecutive day, managing one run, before the team headed home for a Monday off-day at 46-25." },
+    { category: "lineup",      title: "Cold bats: three quiet offensive days ended the trip",                                          detail: "After scoring 7 and 5 earlier in the trip, Atlanta managed just 1, 3, and 1 runs over the final three road games. The lineup leaned on Olson, Albies, and Harris II with Acuña (hamstring) and Baldwin (oblique) out; Baldwin's return Tuesday should help." },
+    { category: "rotation",    title: "Elder roughed up in the finale, fell to 5-4",                                                    detail: "Bryce Elder allowed six runs on 10 hits in four-plus innings Sunday, both season highs, as the Mets jumped him for four in the 1st. His ERA sits at 3.27 (1.23 WHIP, 65 K across 82.2 IP). With Strider down, Atlanta needs a quick reset before his next turn during the homestand." },
+    { category: "standings",   title: "NL East: ATL 46-25, lead still comfortable over Philadelphia",                                   detail: "Even after the series loss, Atlanta keeps baseball's best record and a cushion of roughly 7 to 8 games over second-place Philadelphia. New York stays last in the East despite the weekend series win, with Washington and Miami in the middle." },
     { category: "injury",      title: "Kinley on the 15-day IL, eligible June 23",                                                       detail: "Tyler Kinley's right elbow inflammation has him on the 15-day IL retroactive to June 8, eligible to return June 23 if the irritation proves mild. He had been one of the pen's steadiest middle-relief pieces before the placement." },
-    { category: "injury",      title: "Murphy in a splint as the fractured finger heals",                                                detail: "Sean Murphy is wearing a splint over the fractured left middle finger, a checkpoint in the up-to-eight-week timeline set in mid-May. He remains weeks behind Baldwin in the catching return queue, with León and Wynns covering behind the plate." },
-    { category: "narrative",   title: "Bullpen still elite as the rotation leans on its veterans",                                       detail: "The back of the Atlanta bullpen, led by Robert Suarez, Dylan Lee, and Raisel Iglesias, remains among the best in baseball. That depth matters more than ever with Strider down and the starting staff relying on Sale, Holmes, Elder, and Pérez." },
+    { category: "injury",      title: "Murphy in a splint as the fractured finger heals",                                                detail: "Sean Murphy is wearing a splint over the fractured left middle finger, a checkpoint in the up-to-eight-week timeline set in mid-May. With Baldwin back, León handles the backup duties behind the plate while Murphy works toward a return." },
+    { category: "narrative",   title: "Bullpen still elite as the rotation leans on its veterans",                                       detail: "The back of the Atlanta bullpen, led by Robert Suarez, Dylan Lee, and Raisel Iglesias, remains among the best in baseball. That depth matters more than ever with Strider down and the staff relying on Sale, Holmes, Elder, and Pérez." },
   ],
   sources: [
-    "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "Yahoo Sports", "CBS Sports", "SI.com", "Baseball-Reference", "FanGraphs", "Washington Post",
+    "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "Atlanta News First", "MLB Trade Rumors", "Yahoo Sports", "CBS Sports", "SI.com", "Baseball-Reference", "FanGraphs",
   ],
 };
