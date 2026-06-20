@@ -1,20 +1,19 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 18, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 20, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// THU JUN 18: GIANTS SWEEP THE DOUBLEHEADER. San Francisco took both ends of
-// Wednesday's day-night doubleheader at Truist Park, 7-2 (the resumed rain
-// suspended opener, Robbie Ray dominant in relief) and 7-5 (Carson Whisenhunt
-// beat rookie JR Ritchie; Luis Arraez homered and drove in 4). Atlanta has now
-// dropped three in a row and falls to 46-27, though the NL East lead stays at
-// roughly 6.5 games. Pitching news: STRIDER was transferred to the 60-day IL
-// (right elbow inflammation, no ligament damage, out into mid-August) to clear a
-// 40-man spot, with veteran RHP CARLOS CARRASCO brought back and selected to the
-// roster. Tonight closes the homestand: MARTIN PEREZ (5-3, 2.90) faces SF RHP
-// LANDEN ROUPP (5-7, 4.24) at 7:15 PM ET, Atlanta trying to avoid the sweep
-// before the Brewers come to town. IL watch: Acuna (hamstring) eyeing a late-June
-// return; Murphy (60-day, finger) had the cast removed and is now in a splint,
-// mid-July target; Kinley (elbow) eligible Jun 23; Harris II day-to-day after
-// leaving Tuesday's opener with lower back tightness; Schwellenbach throwing on
-// flat ground; Smith-Shawver facing live hitters next.
+// FRI JUN 19: SKID SNAPPED. Atlanta beat Milwaukee 3-2 at Truist Park to halt a
+// three-game losing streak and a 1-for-7 stretch, handing Brewers phenom JACOB
+// MISIOROWSKI his first loss in two months. MARTIN PEREZ won his fourth straight
+// start (6 IP, 1 R, 5 K); MAURICIO DUBON lined a two-run, go-ahead single in the
+// 6th and MIKE YASTRZEMSKI homered (#4) in the 7th. ELI WHITE saved it in the
+// 9th, throwing out Jackson Chourio at the plate by inches to preserve the 3-2
+// lead. The Braves improve to 47-27, still the best record in baseball and atop
+// the NL East by roughly 7.5 games. Today (Sat Jun 20, 4:10 PM ET): CHRIS SALE
+// (8-5, 2.30) draws Brewers LHP KYLE HARRISON in the middle game, with BRYCE
+// ELDER lined up for Sunday's finale vs Robert Gasser. IL watch: Acuna
+// (hamstring) timeline now slides toward July, Weiss cautious on the recurrence;
+// Harris II (lower back) still day-to-day, did not start Friday; Strider (60-day,
+// elbow) out into mid-August; Murphy (60-day, finger) in a splint, mid-July
+// target; Kinley (elbow) eligible Jun 23.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -142,10 +141,10 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
     stats: { avg: .333, obp: .361, slg: .622, ops: .983, hr: 13, rbi: 34, sb: 2, bb: 6, so: 23, games: 42, wrcPlus: null },
-    statNote: "BACK FEELING BETTER, COULD PLAY THIS WEEKEND: Harris II told reporters Wednesday that his lower back felt better than expected, and Thursday's rainout against the Giants bought him an extra day of rest. There is now at least a chance he is back in the lineup for the weekend series against the Brewers after a bad back limited him to one inning over the prior two games. Still day-to-day with no IL move. The center fielder is among the NL's hottest bats when healthy at .333/.361/.622 (.983 OPS) with 13 HR / 34 RBI.",
+    statNote: "STILL DAY-TO-DAY, SAT OUT THE BREWERS OPENER: Harris II did not start Friday's win over Milwaukee as he continues to manage lower back tightness, even after saying earlier in the week that the back felt better than expected. The Braves are taking it slow with no IL move, and he remains a possibility to return later in the weekend series. The center fielder is among the NL's hottest bats when healthy at .333/.361/.622 (.983 OPS) with 13 HR / 34 RBI.",
     form: 9.0,
     status: "day-to-day",
-    injuryNote: "LOWER BACK TIGHTNESS. Limited to one inning over two games, but said Wednesday the back felt better than expected. Thursday's rainout added a rest day; a return for the weekend Brewers series is possible. Still day-to-day, no IL placement.",
+    injuryNote: "LOWER BACK TIGHTNESS. Did not start Friday's Brewers opener despite saying earlier in the week the back felt better than expected. Still day-to-day with no IL placement; a return later in the weekend series is possible.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
     assignment: "mlb",
     contract: { years: 8, total: 72000000, guaranteed: 72000000, apy: 9000000, throughYear: 2030 },
@@ -227,9 +226,9 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 35, experience: 8,
-    stats: { avg: .254, obp: .320, slg: .430, ops: .750, hr: 3, rbi: 14, sb: 1, bb: 8, so: 29, games: 35, doubles: 7 },
-    statNote: "418-FT HR + RBI DOUBLE IN THE 9-3 WIN — Yastrzemski had his biggest night of the year Thursday at Miami: a one-out, 418-ft solo HR to dead center (#3) off Sandy Alcantara in the 2nd, then a run-scoring double in the 6th. The veteran's slash climbs to .254/.320/.430 (.750 OPS), 3 HR / 14 RBI / 7 2B across 35 G. He has steadied the corner-outfield mix while Acuña works back, and his bat is heating up at the right time.",
-    form: 8.8,
+    stats: { avg: .254, obp: .321, slg: .438, ops: .759, hr: 4, rbi: 15, sb: 1, bb: 8, so: 29, games: 36, doubles: 7 },
+    statNote: "HR #4 IN THE SKID-SNAPPING WIN — Yastrzemski drilled a solo homer to right field in the 7th inning Friday (#4), the insurance run in Atlanta's 3-2 win over Milwaukee that ended a three-game slide. The veteran's slash sits at .254/.321/.438 (.759 OPS), 4 HR / 15 RBI / 7 2B across 36 G. He keeps steadying the corner-outfield mix while Acuña works back, and the bat is heating up at the right time against his former club.",
+    form: 8.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33341.png",
@@ -249,9 +248,9 @@ export const PLAYERS = [
     lineupSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇭🇳 Honduras", age: 31, experience: 8,
-    stats: { avg: .261, obp: .320, slg: .413, ops: .733, hr: 6, rbi: 37, sb: 0, bb: 9, so: 24, games: 43, triples: 1, doubles: 8 },
-    statNote: "GO-AHEAD RBI SINGLE IN THE 10TH: Dubón delivered again Tuesday in Chicago, lining a first-pitch single to shallow right off Grant Taylor to score Albies and put Atlanta up 5-4 in the 10th, before the walk-off undid it in the bottom half. That is 37 RBI from the super-utility man, who keeps holding down shortstop while Ha-Seong Kim ramps up. The hottest two-week stretch of his career (HRs in three straight games Jun 3-6) keeps him in the heart of the order.",
-    form: 9.4,
+    stats: { avg: .261, obp: .320, slg: .412, ops: .732, hr: 6, rbi: 39, sb: 0, bb: 9, so: 24, games: 44, triples: 1, doubles: 8 },
+    statNote: "TWO-RUN GO-AHEAD SINGLE BEATS THE MIZ: Dubón came up biggest Friday, lining a two-run single in the 6th off Jacob Misiorowski to flip a 1-0 deficit into a 2-1 lead in Atlanta's 3-2 win over Milwaukee. That is 39 RBI from the super-utility man, who keeps holding down shortstop while Ha-Seong Kim ramps up. The two-RBI knock against one of the league's hardest throwers was the swing of the night in a skid-snapping victory.",
+    form: 9.2,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
@@ -566,9 +565,9 @@ export const PLAYERS = [
     rotationSpot: 6,
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
-    stats: { era: 2.90, whip: 1.10, ip: 62.0, k: 44, bb: 19, w: 5, l: 3, games: 14, starts: 10 },
-    statNote: "(W, 5-3) THIRD STRAIGHT WINNING START STOPS THE SKID: Perez held the Mets to one run over 5.1 innings Saturday at Citi Field (4 K), grabbing the win in the 3-1 victory that snapped Atlanta's second three-game losing streak of the season. It was his longest winning run since three in a row for Texas in 2022. The $2M offseason signing has been one of the staff's best bargains, and his value only climbs with Strider down: 2.90 ERA, 1.10 WHIP across 62.0 IP.",
-    form: 8.6,
+    stats: { era: 2.78, whip: 1.09, ip: 68.0, k: 49, bb: 19, w: 6, l: 3, games: 15, starts: 11 },
+    statNote: "(W, 6-3) FOURTH STRAIGHT WIN BEATS THE MIZ: Perez out-dueled Brewers phenom Jacob Misiorowski on Friday, holding Milwaukee to one run over six innings with five strikeouts in Atlanta's 3-2 win that snapped a three-game skid. It was his fourth consecutive winning start, his best run since 2022 with Texas, and it dropped Misiorowski for the first time in two months. The $2M offseason signing keeps proving the bargain of the staff, and his value only climbs with Strider down: 2.78 ERA, 1.09 WHIP across 68.0 IP.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -1184,26 +1183,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-19",
-    weekday: "Fri",
-    time: "7:15 PM ET",
-    opp: "MIL",
-    home: true,
-    venue: "Truist Park · Atlanta",
-    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "5-3", era: 2.90, daysRest: 6, hand: "L" },
-    oppSP: { name: "Jacob Misiorowski", record: "8-2", era: 1.34, hand: "R" },
-    note: "Brewers series opener at Truist Park. Bumped a day by Thursday's rainout, Martín Pérez (5-3, 2.90) draws Milwaukee phenom Jacob Misiorowski (8-2, 1.34), one of the league's hardest throwers. Atlanta is trying to snap a three-game skid and a 1-for-7 stretch.",
-  },
-  {
     date: "2026-06-20",
     weekday: "Sat",
-    time: "7:15 PM ET",
+    time: "4:10 PM ET",
     opp: "MIL",
     home: true,
     venue: "Truist Park · Atlanta",
     atlSP: { id: "sale", name: "Chris Sale", record: "8-5", era: 2.30, daysRest: 7, hand: "L" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Middle game of the Brewers series. Chris Sale (8-5, 2.30) gets an extra day of rest from the rainout and takes the ball Saturday. Milwaukee starter to be announced.",
+    oppSP: { name: "Kyle Harrison", record: null, era: null, hand: "L" },
+    note: "Middle game of the Brewers series. Chris Sale (8-5, 2.30), who got an extra rest day from Thursday's rainout, takes the ball Saturday opposite Milwaukee lefty Kyle Harrison. Atlanta looks to build on Friday's skid-snapping win.",
   },
   {
     date: "2026-06-21",
@@ -1212,29 +1200,41 @@ export const UPCOMING_SCHEDULE = [
     opp: "MIL",
     home: true,
     venue: "Truist Park · Atlanta",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "5-4", era: null, daysRest: null, hand: "R" },
+    atlSP: { id: "elder", name: "Bryce Elder", record: "5-4", era: 3.27, daysRest: 8, hand: "R" },
+    oppSP: { name: "Robert Gasser", record: "0-3", era: 4.88, hand: "L" },
+    note: "Series finale with Milwaukee at Truist Park. Bryce Elder (5-4, 3.27) is lined up for Sunday opposite Brewers lefty Robert Gasser (0-3, 4.88), with the Braves chasing a series win.",
+  },
+  {
+    date: "2026-06-22",
+    weekday: "Mon",
+    time: "10:10 PM ET",
+    opp: "SD",
+    home: false,
+    venue: "Petco Park · San Diego",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Series finale with Milwaukee at Truist Park. Bryce Elder (5-4) is lined up for Sunday. Brewers starter to be announced.",
+    note: "West Coast swing opener at Petco Park. Atlanta opens a three-game set with the Padres on Monday night; probable starters to be announced.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-19",
-  time: "7:15 PM ET",
+  date: "2026-06-20",
+  time: "4:10 PM ET",
   opp: "MIL",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: null,
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "5-3", era: 2.90 },
-    opp: { pitcher: "Jacob Misiorowski", record: "8-2", era: 1.34 },
+    atl: { pitcher: "Chris Sale", record: "8-5", era: 2.30 },
+    opp: { pitcher: "Kyle Harrison", record: null, era: null },
   },
-  note: "BREWERS COME TO TOWN, BRAVES TRY TO STOP THE BLEEDING. Thursday's Giants finale was rained out (rescheduled for Aug 31), so Atlanta opens a weekend set with Milwaukee instead. Lefty MARTIN PEREZ (5-3, 2.90), bumped a day by the postponement, draws Brewers phenom JACOB MISIOROWSKI (8-2, 1.34), one of the hardest throwers in the league. First pitch 7:15 PM ET at Truist Park. The Braves have lost six of seven and sit at 46-27, though they still hold a roughly 6.5-game NL East lead. The rainout helps a banged-up club: MICHAEL HARRIS II (lower back) said his back feels better than expected and could return this weekend, and CHRIS SALE picks up an extra rest day before Saturday. RONALD ACUNA JR. (hamstring) is now a long way off per Walt Weiss, and SPENCER STRIDER (60-day IL, elbow, mid-August) remains out.",
+  note: "SALE TRIES TO BUILD ON THE SKID-SNAPPER. After Friday's 3-2 win over Milwaukee halted a three-game slide, ace CHRIS SALE (8-5, 2.30) takes the ball Saturday in the middle game, opposite Brewers lefty KYLE HARRISON. First pitch 4:10 PM ET at Truist Park. The Braves improved to 47-27, still the best record in baseball and atop the NL East by roughly 7.5 games. Sale, who picked up an extra rest day from Thursday's rainout, leads the NL with 92 strikeouts and a 2.30 ERA. MICHAEL HARRIS II (lower back) remains day-to-day after sitting out the opener; RONALD ACUNA JR. (hamstring) is a long way off per Walt Weiss with a timeline now sliding toward July; SPENCER STRIDER (60-day IL, elbow, mid-August) remains out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-06-19", opp: "MIL", home: true, atlScore: 3, oppScore: 2, result: "W", note: "BRAVES SNAP THE SKID, BEAT THE MIZ 3-2 — Atlanta halted a three-game losing streak Friday at Truist Park, knocking off Milwaukee 3-2 and handing Brewers phenom JACOB MISIOROWSKI his first loss in two months. MARTIN PEREZ (W, 6-3) was the steadier ace on the night, holding the Brewers to one run over six innings with five strikeouts for his fourth straight winning start. MAURICIO DUBON provided the swing of the game, lining a two-run single off Misiorowski in the 6th to turn a 1-0 deficit into a 2-1 lead, and MIKE YASTRZEMSKI added a solo homer (#4) to right in the 7th for insurance. The drama came in the 9th: right fielder ELI WHITE threw out Jackson Chourio at the plate by inches to preserve the one-run lead before the bullpen closed it out. The win lifts the Braves to 47-27, the best record in baseball, and keeps the NL East lead near 7.5 games." },
   { date: "2026-06-17", opp: "SF", home: true, atlScore: 5, oppScore: 7, result: "L", note: "GIANTS COMPLETE THE DOUBLEHEADER SWEEP, BRAVES SKID TO THREE STRAIGHT — San Francisco took the nightcap 7-5 Wednesday at Truist Park to sweep the day-night doubleheader and hand Atlanta a third consecutive loss. LUIS ARRAEZ did most of the damage, homering and driving in four, part of a three-homer second inning that buried rookie JR RITCHIE (LP) before he could settle. Giants rookie CARSON WHISENHUNT won the matchup of first-year starters. Atlanta answered late but never caught up; the Braves slip to 46-27, though the NL East lead holds near 6.5 games. Martín Pérez tries to salvage the finale Thursday night." },
   { date: "2026-06-17", opp: "SF", home: true, atlScore: 2, oppScore: 7, result: "L", note: "RAY DOMINATES IN RELIEF AS GIANTS FINISH THE SUSPENDED OPENER 7-2 — The resumption of Tuesday's rain-suspended opener went San Francisco's way Wednesday afternoon, the Giants pulling away for a 7-2 win in Game 1 of the doubleheader. ROBBIE RAY was the difference, allowing just two hits over 6 1/3 scoreless innings out of the bullpen, and RAFAEL DEVERS and JUNG HOO LEE went back-to-back to break it open. Atlanta's runs traced to DRAKE BALDWIN's 473-foot leadoff homer off Adrian Houser, now official as the longest home run in the majors this season. The loss dropped the Braves and set up the sweep in the nightcap." },
   { date: "2026-06-14", opp: "NYM", home: false, atlScore: 1, oppScore: 8, result: "L", note: "METS FINISH THE UPSET, ROUT ATLANTA 8-1: The last-place Mets handed baseball's best team a second straight series loss Sunday at Citi Field, winning the finale 8-1 to take two of three. Rookie A.J. EWING was the wrecking ball, finishing a triple shy of the cycle: he doubled in a run during a four-run 1st inning, singled in the 3rd, and homered in the 5th. BRYCE ELDER (LP, 5-4) set season highs for damage, allowing six runs on 10 hits in four-plus innings before the bullpen mopped up. Atlanta's offense went quiet for a third straight day, managing one run; MATT OLSON kept the NL home run lead at 20 but the lineup could not string anything together with Acuña (hamstring) and Baldwin (oblique) out. The Braves fall to 46-25 (.648) but keep a comfortable NL East lead and head home for a Tuesday homestand opener vs the Giants after a Monday off-day." },
@@ -1244,38 +1244,39 @@ export const RESULTS = [
   { date: "2026-06-09", opp: "CWS", home: false, atlScore: 5, oppScore: 6, result: "L", note: "A DEBUT WALK-OFF STUNS ATLANTA IN 10: The White Sox beat the Braves 6-5 Tuesday night at Rate Field on BRADEN MONTGOMERY's two-out, two-run homer off RAISEL IGLESIAS (L, 0-1) in the bottom of the 10th, a 343-foot poke just over the left-field wall. Montgomery, called up from Triple-A Charlotte hours earlier, became just the fifth player in MLB history to hit a walk-off HR in his debut (first since 2015) and finished 2-for-5 with 3 RBI. The loss ended Iglesias' 31-game save-conversion streak, the majors' longest active run. Atlanta led 4-0 early on MATT OLSON's two homers off Erick Fedde (#18, #19; 3 RBI, now 50 on the season), but GRANT HOLMES lasted just 3.2 IP and Chicago chipped back through Miguel Vargas' two-run shot and RBI singles by Montgomery and Jacob Gonzalez. MAURICIO DUBON's first-pitch RBI single off Grant Taylor (W, 2-0) put Atlanta up 5-4 in the 10th before the bottom half. The bigger scare: RONALD ACUNA JR. exited in the 4th with left hamstring tightness (same hamstring as May's strain), day-to-day with an MRI pending. Sale tries to even the set Wednesday." },
   { date: "2026-06-07", opp: "PIT", home: true, atlScore: 3, oppScore: 2, result: "W", note: "HARRIS II'S PINCH-HIT 3-RUN DOUBLE COMPLETES THE SWEEP — BRAVES RALLY PAST PITTSBURGH 3-2 — Atlanta erased a 2-0 deficit in the 7th to sweep the Pirates Sunday at Truist Park, pushing baseball's best record to 45-21 (.692, W3). With the bases loaded and one out in light rain, MICHAEL HARRIS II — held out of the starting lineup with lingering back discomfort — pinch-hit and drilled Evan Sisk's first pitch into the right-field corner to clear the bases and put the Braves ahead for good. REYNALDO LÓPEZ (W, 3-1) bounced back from his rough Toronto finale with a scoreless 7th; TYLER KINLEY escaped a bases-loaded jam in the 8th, retiring Ryan O'Hearn on a grounder to first; and 20-year-old rookie DIDIER FUENTES stranded two in the 9th for his FIRST CAREER SAVE. The sweep moved Atlanta to 20-2-1 in series this season; the Braves head to Chicago for an interleague set with the White Sox after a Monday off-day." },
   { date: "2026-06-06", opp: "PIT", home: true, atlScore: 6, oppScore: 3, result: "W", note: "DOMINIC SMITH'S TWO-RUN SHOT, STRIDER WINS — BRAVES CLINCH THE PIRATES SERIES 6-3 — Atlanta took the series with a 6-3 win Saturday at Truist Park, pushing baseball's best record to 44-21 (.677, W2). The Braves built a 3-0 lead through three before Pittsburgh pulled even in the 5th on BRANDON LOWE's sacrifice fly off Strider. Atlanta answered right back: RONALD ACUÑA JR. and MATT OLSON singled, pulled off a double steal, and OZZIE ALBIES lifted a go-ahead sacrifice fly to right before DOMINIC SMITH lined a two-run homer just inside the left-field foul pole. SPENCER STRIDER (W, 4-1) went 5 IP / 3 R / 3 K to grab the win, and RAISEL IGLESIAS worked a clean 9th for his 13th save in as many chances — his 31st consecutive save conversion since July 28, 2025, the majors' longest active streak. The win pushed Atlanta to 19-2-1 in series this season; Elder goes for the sweep Sunday vs Bubba Chandler." },
-  { date: "2026-06-05", opp: "PIT", home: true, atlScore: 6, oppScore: 3, result: "W", note: "DUBÓN HOMERS IN A THIRD STRAIGHT GAME — BRAVES OPEN PIRATES SERIES WITH A 6-3 WIN — Atlanta took the series opener Friday night at Truist Park, pushing baseball's best record to 43-21 (.682, W1). MAURICIO DUBÓN was the story: 2-for-4 with three RBI and two runs, homering for the third consecutive game for the first time in his eight-year career. His two-run, 405-foot shot to left tied it at 3 in the 3rd (#6), and his double put Atlanta ahead 4-3 in the 5th. RONALD ACUÑA JR. went 2-for-4 with a walk and an RBI, and MATT OLSON added two hits and a run. MARTÍN PÉREZ (W, 4-3) gave the Braves five innings and three runs before the bullpen blanked MLB's fourth-highest-scoring offense over the final four frames. RAISEL IGLESIAS worked a clean 9th for his 12th save in as many chances, lowering his ERA to 0.92. Strider goes for the series win Saturday." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 46, l: 27, pct: .630, gb: 0,    streak: "L3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 39, l: 33, pct: .542, gb: 6.5,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 38, l: 35, pct: .521, gb: 8.0,  streak: "W3" },
-  { team: "MIA", name: "Miami Marlins",          w: 36, l: 37, pct: .493, gb: 10.0, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 32, l: 40, pct: .444, gb: 13.5, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 47, l: 27, pct: .635, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 40, l: 35, pct: .533, gb: 7.5,  streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 39, l: 37, pct: .513, gb: 9.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 38, l: 38, pct: .500, gb: 10.0, streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 34, l: 41, pct: .453, gb: 13.5, streak: "W2" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-19T09:00:00-04:00",
+  generatedAt: "2026-06-20T09:00:00-04:00",
   summary:
-    "RAINOUT HANDS A REELING TEAM A TIMELY BREAK. Thursday's Giants series finale at Truist Park was postponed by inclement weather and rescheduled for Monday, Aug 31 (6:05 PM ET), sparing a club that has lost six of seven another night without two of its best players. The break reshuffles the rotation in Atlanta's favor: Martín Pérez (5-3, 2.90), who had been lined up for Thursday, now opens the weekend set against Milwaukee on Friday opposite Brewers flamethrower Jacob Misiorowski (8-2, 1.34); Chris Sale gets an extra rest day and goes Saturday, with Bryce Elder slated for Sunday. The biggest upside is health: Michael Harris II said his lower back felt better than expected, and the extra day gives him a real chance to return for the Brewers series. The injury news elsewhere is heavier. Walt Weiss said Ronald Acuña Jr. is a long way from coming back and that the club will be more cautious with this second left-hamstring strain, pushing his timeline toward July. Spencer Strider stays on the 60-day IL (right elbow inflammation, no ligament damage, out into mid-August), Sean Murphy is in a splint after his finger cast came off, and Tyler Kinley (elbow) is eligible to return June 23. Atlanta sits 46-27, still atop the NL East by about 6.5 games.",
+    "SKID SNAPPED, AND THE MIZ TAKES A LOSS. Atlanta beat Milwaukee 3-2 on Friday at Truist Park to end a three-game slide and a 1-for-7 stretch, dealing Brewers phenom Jacob Misiorowski his first loss in two months. Martín Pérez (6-3, 2.78) was the steadier ace, holding the Brewers to one run over six innings with five strikeouts for his fourth straight winning start. Mauricio Dubón delivered the swing of the game, a two-run single off Misiorowski in the 6th that flipped a 1-0 deficit into a 2-1 lead, and Mike Yastrzemski added a solo homer (#4) in the 7th. Right fielder Eli White preserved it in the 9th, throwing out Jackson Chourio at the plate by inches. The win lifts the Braves to 47-27, still the best record in baseball and atop the NL East by roughly 7.5 games. Today (Saturday) brings the middle game: Chris Sale (8-5, 2.30), the NL strikeout leader, faces Brewers lefty Kyle Harrison at 4:10 PM ET, with Bryce Elder lined up for Sunday's finale vs Robert Gasser. On the health front, Michael Harris II (lower back) sat out the opener and remains day-to-day, Ronald Acuña Jr. (hamstring) is a long way off with a timeline now sliding toward July, Spencer Strider stays on the 60-day IL into mid-August, Sean Murphy is in a splint targeting mid-July, and Tyler Kinley (elbow) is eligible to return June 23.",
   keyTopics: [
-    { category: "result",      title: "Giants finale rained out, rescheduled for Aug 31",                                              detail: "Thursday's series finale against San Francisco at Truist Park was postponed by forecasted storms and will be made up Monday, Aug 31 at 6:05 PM ET, a date that had been an off-day for both clubs. The Braves had dropped the first two of the set and have now lost six of seven." },
-    { category: "rotation",    title: "Pérez vs Misiorowski opens the Brewers series Friday",                                          detail: "The postponement bumps Martín Pérez (5-3, 2.90) from Thursday to Friday's opener against Milwaukee, where he draws phenom Jacob Misiorowski (8-2, 1.34), one of the hardest throwers in baseball. First pitch is 7:15 PM ET at Truist Park." },
-    { category: "rotation",    title: "Sale gets an extra day, Elder lines up Sunday",                                                 detail: "The rainout lets Chris Sale (8-5, 2.30) push back to Saturday with an additional rest day, and Bryce Elder is slated for the Sunday finale against the Brewers. The reshuffle keeps Atlanta's top arms on turn while spacing the staff." },
-    { category: "injury",      title: "Acuña a long way off, timeline slides toward July",                                            detail: "Walt Weiss said Thursday that Ronald Acuña Jr. is a long way from returning and that the club will be more cautious with this Grade 1 left-hamstring strain because it is a recurrence in the same spot. That pushes the realistic target past the late-June window first floated, likely into July." },
-    { category: "injury",      title: "Harris II back feels better, could play this weekend",                                          detail: "Michael Harris II said Wednesday his lower back felt better than expected, and Thursday's rainout added a rest day. There is now a real chance the center fielder, hitting .333/.361/.622 with 13 HR when healthy, is back in the lineup for the Brewers series. He stays day-to-day with no IL move." },
+    { category: "result",      title: "Braves snap the skid, beat the Brewers 3-2",                                                    detail: "Atlanta ended a three-game losing streak Friday with a 3-2 home win over Milwaukee, the best record in baseball improving to 47-27. The Braves scratched out just enough offense and leaned on a sharp Martín Pérez and a clutch defensive play to close it." },
+    { category: "narrative",   title: "Pérez out-duels Misiorowski for a fourth straight win",                                         detail: "Martín Pérez (6-3, 2.78) held the Brewers to one run over six innings with five strikeouts, beating Jacob Misiorowski and handing the flamethrowing rookie his first loss in two months. It is Pérez's longest winning run since 2022 with Texas." },
+    { category: "lineup",      title: "Dubón's two-run single is the swing of the game",                                              detail: "Mauricio Dubón lined a two-run single off Misiorowski in the 6th inning to turn a 1-0 deficit into a 2-1 lead, his 39th RBI of the year. The super-utility man keeps producing in the heart of the order while Ha-Seong Kim ramps up." },
+    { category: "milestone",   title: "Eli White throws out Chourio at the plate to save it",                                         detail: "With the tying run trying to score in the 9th, right fielder Eli White gunned down Jackson Chourio at home by inches to preserve the 3-2 lead, the defensive highlight of the night before the bullpen finished the win." },
+    { category: "lineup",      title: "Yastrzemski homers again vs his old club",                                                     detail: "Mike Yastrzemski added a solo home run (#4) to right field in the 7th for insurance against Milwaukee. The veteran keeps heating up in the corner-outfield mix while Acuña works back, now at .254/.321/.438." },
+    { category: "rotation",    title: "Sale vs Kyle Harrison in Saturday's middle game",                                              detail: "Chris Sale (8-5, 2.30), who leads the NL with 92 strikeouts and got an extra rest day from Thursday's rainout, takes the ball Saturday at 4:10 PM ET opposite Brewers lefty Kyle Harrison." },
+    { category: "rotation",    title: "Elder vs Gasser lines up the Sunday finale",                                                   detail: "Bryce Elder (5-4, 3.27) is slated to start Sunday's series finale against the Brewers, opposite Milwaukee lefty Robert Gasser (0-3, 4.88), with Atlanta chasing a series win before a West Coast trip to San Diego." },
+    { category: "injury",      title: "Harris II sits the opener, still day-to-day",                                                  detail: "Michael Harris II did not start Friday's win as he manages lower back tightness, even after saying earlier in the week the back felt better than expected. The Braves are taking it slow with no IL move; a weekend return is still possible." },
+    { category: "injury",      title: "Acuña a long way off, timeline slides toward July",                                            detail: "Walt Weiss reiterated that Ronald Acuña Jr. is a long way from returning and that the club will be more cautious with this recurring Grade 1 left-hamstring strain. The realistic target has slipped past the late-June window, likely into July." },
     { category: "injury",      title: "Strider stays on the 60-day IL, out into mid-August",                                          detail: "Spencer Strider remains on the 60-day injured list with right elbow inflammation and no ligament damage. With no surgery planned, his earliest realistic return is roughly mid-August after a throwing shutdown and ramp-up." },
-    { category: "injury",      title: "Murphy out of the cast, now in a splint",                                                      detail: "Sean Murphy had the cast removed from his fractured left middle finger and is now in a splint. He stays on the 60-day IL with a return targeted around mid-July while Drake Baldwin handles the primary catching duties." },
+    { category: "injury",      title: "Murphy in a splint, targeting mid-July",                                                       detail: "Sean Murphy is now in a splint after the cast came off his fractured left middle finger. He stays on the 60-day IL with a return targeted around mid-July while Drake Baldwin handles the primary catching duties." },
     { category: "injury",      title: "Kinley eligible to return June 23",                                                            detail: "Tyler Kinley's right elbow inflammation has him on the 15-day IL retroactive to June 8, eligible to come off as soon as June 23 if the irritation stays mild. James Karinchak has covered the middle-relief innings in his absence." },
-    { category: "milestone",   title: "Baldwin's 473-foot blast leads the majors",                                                    detail: "Drake Baldwin's first-at-bat-back, 473-foot leadoff homer off Adrian Houser, made official when Wednesday's suspended opener was completed, stands as the longest home run in the majors this season, a bright spot in an otherwise rough week." },
-    { category: "lineup",      title: "Olson holds the NL home run lead at 20",                                                       detail: "Matt Olson leads the majors and the NL with 20 homers, 51 RBI, and an OPS above .900. With Acuña out and Harris II banged up, Olson and Ozzie Albies have carried an offense that went quiet during the six-of-seven slide." },
-    { category: "standings",   title: "NL East: ATL 46-27, lead near 6.5 over Philadelphia",                                          detail: "Even through the rough stretch, Atlanta keeps the best record in baseball and a cushion of roughly 6.5 games over second-place Philadelphia. Washington, Miami, and the Mets fill out the division behind them." },
-    { category: "narrative",   title: "A thinned staff leans harder on the bullpen",                                                  detail: "With Strider on the 60-day IL and Kinley down, the back of the Atlanta bullpen, led by Raisel Iglesias, Robert Suarez, and Dylan Lee, carries extra weight. The rotation depth behind Sale and Pérez is being tested while the offense waits on Acuña and Harris II to get healthy." },
+    { category: "lineup",      title: "Olson holds the NL home run lead at 20",                                                       detail: "Matt Olson leads the majors and the NL with 20 homers, 51 RBI, and an OPS above .900. With Acuña out and Harris II banged up, Olson and Ozzie Albies keep anchoring the lineup." },
+    { category: "standings",   title: "NL East: ATL 47-27, lead near 7.5 over Philadelphia",                                          detail: "Atlanta keeps the best record in baseball and a cushion of roughly 7.5 games over second-place Philadelphia. Washington, Miami, and the Mets fill out the division behind them." },
   ],
   sources: [
-    "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs",
+    "AP", "MLB.com", "ESPN", "FOX Sports", "Battery Power", "AJC", "MLB Trade Rumors", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs", "The Washington Post", "Field Level Media",
   ],
 };
