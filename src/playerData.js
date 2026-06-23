@@ -1,18 +1,18 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 22, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 23, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SUN JUN 21: SWEEP DENIED. Milwaukee salvaged the finale 9-4 at Truist Park,
-// piling up an eight-run second inning. WILLIAM CONTRERAS, the former Brave, went
-// 4-for-5 with a three-run homer and SAL FRELICK added a two-run double off BRYCE
-// ELDER (5-5), who allowed eight runs on 12 hits over six innings. Brewers lefty
-// ROBERT GASSER (1-3) earned his first win since May 2024 with six innings of
-// two-run ball and a career-high seven strikeouts. Atlanta drops to 48-28, still
-// the best record in baseball but 3-7 over its last 10, and atop the NL East by
-// about seven games over Philadelphia. Next up (Mon Jun 22, 10:10 PM ET on ESPN):
-// a West Coast trip opens at Petco Park, GRANT HOLMES (4-3, 4.33) against Padres
-// RHP MICHAEL KING (3.60). IL watch: Acuna (hamstring) timeline still in July,
-// Weiss cautious on the recurrence; Harris II (lower back) back in the mix and
-// likely to avoid the IL; Strider (60-day, elbow) out into mid-August; Murphy
-// (60-day, finger) in a splint, mid-July target; Kinley (elbow) eligible Jun 23.
+// MON JUN 22: SHUT OUT IN SAN DIEGO. The Padres blanked Atlanta 1-0 at Petco Park,
+// the lone run a leadoff homer by MANNY MACHADO (his 14th, 43rd RBI) in the 4th off
+// GRANT HOLMES (L, 4-4). MICHAEL KING (W, 5-6) was the story, holding the Braves to
+// six singles over seven scoreless innings with five strikeouts and no walks for his
+// first win since May 18. MASON MILLER worked the 9th for his NL-leading 21st save,
+// putting two on with two out before striking out MIKE YASTRZEMSKI to end it. Atlanta
+// drops to 48-29, has now lost eight of 11, and was passed by the Dodgers for the best
+// record in the majors, though it still leads the NL East. Next up (Tue Jun 23, 9:40 PM
+// ET): rookie JR RITCHIE (1-2, 4.54) against Padres RHP GRIFFIN CANNING (6.64), who may
+// work behind an opener. IL watch: Acuna (hamstring) timeline still in July, Weiss
+// cautious on the recurrence; Harris II (lower back) back in the mix and avoiding the
+// IL; Strider (60-day, elbow) out into mid-August; Murphy (60-day, finger) in a splint,
+// mid-July target.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -500,9 +500,9 @@ export const PLAYERS = [
     rotationSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
-    stats: { era: 4.05, whip: 1.34, ip: 61.0, k: 52, bb: 28, w: 4, l: 2, games: 12, starts: 12 },
-    statNote: "SHORT NIGHT IN CHICAGO (ND): Holmes couldn't hold a 4-0 lead Tuesday at Rate Field, lasting just 3.2 IP (4 H / 3 R / 2 BB / 2 K, Vargas two-run HR) before the pen took over in the eventual 6-5 extra-inning loss. The line settles at 4.05 ERA / 1.34 WHIP across 12 starts. With Waldrep and Smith-Shawver progressing on rehab, the long-floated shift to a leverage bullpen role gets a little louder after outings like this.",
-    form: 6.5,
+    stats: { era: 3.76, whip: 1.31, ip: 67.0, k: 56, bb: 28, w: 4, l: 4, games: 13, starts: 13 },
+    statNote: "HARD-LUCK LOSS IN SAN DIEGO (L, 4-4): Holmes pitched well enough to win Monday at Petco, but the Braves never scored in a 1-0 defeat. The only blemish was Manny Machado's leadoff homer in the 4th; Holmes gave Atlanta about six innings of one-run ball on 91 pitches (53 strikes, 21 batters faced). The line improves to 3.76 ERA / 1.31 WHIP across 13 starts, but he absorbed the loss with zero run support.",
+    form: 7.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33840.png",
@@ -1205,17 +1205,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-22",
-    weekday: "Mon",
-    time: "10:10 PM ET",
-    opp: "SD",
-    home: false,
-    venue: "Petco Park · San Diego",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "4-3", era: 4.33, daysRest: 6, hand: "R" },
-    oppSP: { name: "Michael King", record: null, era: 3.60, hand: "R" },
-    note: "West Coast swing opener at Petco Park, on ESPN. Grant Holmes (4-3, 4.33) starts the series opener against Padres righty Michael King (3.60), who has allowed at least three runs in five straight outings.",
-  },
-  {
     date: "2026-06-23",
     weekday: "Tue",
     time: "9:40 PM ET",
@@ -1224,7 +1213,7 @@ export const UPCOMING_SCHEDULE = [
     venue: "Petco Park · San Diego",
     atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-2", era: 4.54, daysRest: 5, hand: "R" },
     oppSP: { name: "Griffin Canning", record: null, era: 6.64, hand: "R" },
-    note: "Middle game of the Padres series in San Diego. Rookie JR Ritchie (1-2, 4.54) draws Tuesday opposite Griffin Canning (6.64), who may again work behind an opener.",
+    note: "Middle game of the Padres series in San Diego after Monday's 1-0 shutout loss. Rookie JR Ritchie (1-2, 4.54) draws Tuesday opposite Griffin Canning (6.64), who may again work behind an opener.",
   },
   {
     date: "2026-06-24",
@@ -1241,21 +1230,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-22",
-  time: "10:10 PM ET",
+  date: "2026-06-23",
+  time: "9:40 PM ET",
   opp: "SD",
   home: false,
   venue: "Petco Park · San Diego, CA",
-  tv: "ESPN",
+  tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Grant Holmes", record: "4-3", era: 4.33 },
-    opp: { pitcher: "Michael King", record: null, era: 3.60 },
+    atl: { pitcher: "JR Ritchie", record: "1-2", era: 4.54 },
+    opp: { pitcher: "Griffin Canning", record: null, era: 6.64 },
   },
-  note: "WEST COAST SWING OPENS IN SAN DIEGO. After Milwaukee denied the sweep with a 9-4 finale win, Atlanta heads to Petco Park for three with the Padres, starting Monday's 10:10 PM ET opener on ESPN. GRANT HOLMES (4-3, 4.33) faces Padres righty MICHAEL KING (3.60), who has surrendered at least three runs in five straight starts. The Braves still own baseball's best record at 48-28 and lead the NL East by about seven games over Philadelphia, though they have stumbled to 3-7 over their last 10. MICHAEL HARRIS II (lower back) is back in the mix and now expected to avoid the IL; RONALD ACUNA JR. (hamstring) remains a long way off with the timeline in July; SPENCER STRIDER (60-day IL, elbow) is out into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. Catcher JOEY BART, acquired from Pittsburgh last week, backs up Drake Baldwin.",
+  note: "BACK AT IT IN SAN DIEGO AFTER A 1-0 SHUTOUT. Atlanta was blanked 1-0 in Monday's opener at Petco, Manny Machado's leadoff homer in the 4th the only run as Michael King and the Padres bullpen silenced the bats. The Braves go for a split Tuesday at 9:40 PM ET with rookie JR RITCHIE (1-2, 4.54) on the mound against Padres righty GRIFFIN CANNING (6.64), who may again work behind an opener. The loss dropped Atlanta to 48-29 and a 3-8 stretch over its last 11, and the Dodgers passed the Braves for the best record in the majors, though Atlanta still leads the NL East comfortably. MICHAEL HARRIS II (lower back) is back and avoiding the IL; RONALD ACUNA JR. (hamstring) remains a long way off with a July timeline; SPENCER STRIDER (60-day IL, elbow) is out into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. Catcher JOEY BART, acquired from Pittsburgh last week, backs up Drake Baldwin.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-06-22", opp: "SD", home: false, atlScore: 0, oppScore: 1, result: "L", note: "SHUT OUT AT PETCO, BRAVES FALL 1-0 — San Diego blanked NL East-leading Atlanta 1-0 Monday night to open the series, the only run a leadoff homer by MANNY MACHADO in the 4th, his 14th of the year and 43rd RBI. MICHAEL KING (W, 5-6) was overpowering in his first win since May 18, scattering six singles over seven scoreless innings with five strikeouts and no walks. GRANT HOLMES (L, 4-4) deserved better, giving up just the one run on 91 pitches across about six innings, but he got zero run support. MASON MILLER closed the 9th for his NL-leading 21st save, walking the tightrope with two runners on and two out before striking out MIKE YASTRZEMSKI to end it. Atlanta managed only six hits, all singles, and has now lost eight of 11; the Dodgers passed the Braves for the best record in the majors, though Atlanta (48-29) still leads the NL East." },
   { date: "2026-06-21", opp: "MIL", home: true, atlScore: 4, oppScore: 9, result: "L", note: "BREWERS AVOID THE SWEEP, BURY ATLANTA 9-4 — Milwaukee salvaged the finale Sunday at Truist Park, scoring eight runs in the second inning on the way to a 9-4 win and snapping the Braves' bid for a sweep. WILLIAM CONTRERAS, the former Brave, did the most damage with a 4-for-5 day that included a three-run homer in the big inning, and SAL FRELICK chipped in a two-run double. BRYCE ELDER (L, 5-5) was tagged for eight runs on 12 hits over six innings, unable to contain the early outburst. Brewers lefty ROBERT GASSER (W, 1-3) earned his first win since May 2024, scattering two runs on four hits over six innings with a career-high seven strikeouts. Atlanta managed four runs but never threatened the lead, slipping to 48-28. The Braves keep the best record in baseball and a comfortable NL East lead, but have now gone 3-7 over their last 10 entering a West Coast trip to San Diego." },
   { date: "2026-06-20", opp: "MIL", home: true, atlScore: 4, oppScore: 3, result: "W", note: "ALBIES WALKS IT OFF, BRAVES TAKE THE SERIES — Ozzie Albies homered twice, capping it with a two-run, walk-off blast in the 9th to beat Milwaukee 4-3 Saturday at Truist Park and lock up the series. After MATT OLSON singled off AARON ASHBY (L, 10-1) with one out, Albies drove his 12th homer of the year over the right-field wall, denying Ashby his first save and pinning his first loss on an MLB-leading 10 wins. Albies had already broken up KYLE HARRISON's perfect game, no-hitter, and shutout in one swing with a leadoff homer in the 5th; Harrison settled for 6.1 IP, 4 H, 2 R. CHRIS SALE spun 5.2 innings of two-unearned-run ball but went without a decision after Albies' own fielding error opened a two-run Brewers 6th (Andrew Vaughn RBI single). DYLAN LEE (W, 3-0) worked a scoreless 9th as the fourth Atlanta arm. Newly acquired catcher JOEY BART went 0-for-3 in his Braves debut, the franchise's record eighth catcher used in a season. The win lifts Atlanta to 48-27, still the best record in baseball." },
   { date: "2026-06-19", opp: "MIL", home: true, atlScore: 3, oppScore: 2, result: "W", note: "BRAVES SNAP THE SKID, BEAT THE MIZ 3-2 — Atlanta halted a three-game losing streak Friday at Truist Park, knocking off Milwaukee 3-2 and handing Brewers phenom JACOB MISIOROWSKI his first loss in two months. MARTIN PEREZ (W, 6-3) was the steadier ace on the night, holding the Brewers to one run over six innings with five strikeouts for his fourth straight winning start. MAURICIO DUBON provided the swing of the game, lining a two-run single off Misiorowski in the 6th to turn a 1-0 deficit into a 2-1 lead, and MIKE YASTRZEMSKI added a solo homer (#4) to right in the 7th for insurance. The drama came in the 9th: right fielder ELI WHITE threw out Jackson Chourio at the plate by inches to preserve the one-run lead before the bullpen closed it out. The win lifts the Braves to 47-27, the best record in baseball, and keeps the NL East lead near 7.5 games." },
@@ -1265,38 +1255,37 @@ export const RESULTS = [
   { date: "2026-06-13", opp: "NYM", home: false, atlScore: 3, oppScore: 1, result: "W", note: "ELI WHITE'S THREE-HIT NIGHT SNAPS THE SKID, BRAVES BEAT THE METS 3-1: Atlanta halted its second three-game losing streak of the season Saturday at Citi Field, pushing baseball's best record to 46-24 (.657, W1). ELI WHITE matched a career high with three hits, lacing an RBI double in the 2nd, homering in the 4th, and doubling again in the 7th, his fifth career three-hit game and first since May 17, 2025. MICHAEL HARRIS II added a 392-foot solo homer off the right-field second-deck signage in the 8th for insurance (#13). MARTIN PEREZ (W, 5-3) was the difference on the mound: one run over 5.1 innings with four strikeouts, his third straight winning start and longest such run since 2022 with Texas. The back of the bullpen slammed the door. Bo Bichette stayed hot for New York (2-for-3, .389 over his last nine) but the Mets managed only Mark Vientos' sixth-inning RBI single. Pregame, the Braves placed SPENCER STRIDER on the 15-day IL (sprained UCL) and sent DRAKE BALDWIN to Triple-A Gwinnett to begin a rehab assignment." },
   { date: "2026-06-12", opp: "NYM", home: false, atlScore: 5, oppScore: 7, result: "L", note: "STRIDER LEAVES HURT, BACK-TO-BACK BOMBS SINK ATLANTA 7-5: The Braves dropped a third straight Friday at Citi Field, and the final score was the smaller worry. SPENCER STRIDER (LP, 4-2) was tagged for seven runs on six hits in three-plus innings, then exited in the 4th with right elbow and shoulder soreness after his fastball sagged to about 88 mph; he went for MRI imaging that night. BO BICHETTE and JUAN SOTO went back-to-back in the 1st, and Bichette added a second homer off Strider. MATT OLSON answered with his MLB-leading 20th, and DOMINIC SMITH, MIKE YASTRZEMSKI, and OZZIE ALBIES each chipped in RBI singles, but Atlanta never climbed out of the early hole. Rookie Nolan McLean gave the Mets four innings (2 R, 6 K, 4 BB) and closer DEVIN WILLIAMS got the final four outs for his 10th save. First pitch followed a 76-minute rain delay; Atlanta falls to 45-24 but keeps a comfortable NL East lead." },
   { date: "2026-06-10", opp: "CWS", home: false, atlScore: 1, oppScore: 2, result: "L", note: "MARTIN BLANKS THE BRAVES, SALE'S GEM WASTED IN A 2-1 LOSS: Davis Martin (W, 9-2) threw six scoreless innings Wednesday at Rate Field and the White Sox edged Atlanta 2-1, taking the first two of the set behind a seventh straight home win and moving into first in the AL Central. CHRIS SALE (LP, 8-5) deserved far better: 5.2 IP / 6 H / 1 BB / 6 K with 13 whiffs and 66 of 103 pitches for strikes, the only damage two runs in the 4th. Atlanta's lone run was unearned: in the 7th, JORGE MATEO sprinted home from first when Miguel Vargas couldn't handle OZZIE ALBIES' grounder to third off Sean Newcomb. The offense managed little else in a second straight quiet night, and Bryan Hudson closed the 9th for his third save. Pregame, the roster churned: Acuña (hamstring) to the 10-day IL with Tellez selected, Kinley (elbow) to the 15-day IL with Karinchak selected, Ritchie recalled, and Carrasco DFA'd. Pérez tries to avoid the sweep Thursday." },
-  { date: "2026-06-09", opp: "CWS", home: false, atlScore: 5, oppScore: 6, result: "L", note: "A DEBUT WALK-OFF STUNS ATLANTA IN 10: The White Sox beat the Braves 6-5 Tuesday night at Rate Field on BRADEN MONTGOMERY's two-out, two-run homer off RAISEL IGLESIAS (L, 0-1) in the bottom of the 10th, a 343-foot poke just over the left-field wall. Montgomery, called up from Triple-A Charlotte hours earlier, became just the fifth player in MLB history to hit a walk-off HR in his debut (first since 2015) and finished 2-for-5 with 3 RBI. The loss ended Iglesias' 31-game save-conversion streak, the majors' longest active run. Atlanta led 4-0 early on MATT OLSON's two homers off Erick Fedde (#18, #19; 3 RBI, now 50 on the season), but GRANT HOLMES lasted just 3.2 IP and Chicago chipped back through Miguel Vargas' two-run shot and RBI singles by Montgomery and Jacob Gonzalez. MAURICIO DUBON's first-pitch RBI single off Grant Taylor (W, 2-0) put Atlanta up 5-4 in the 10th before the bottom half. The bigger scare: RONALD ACUNA JR. exited in the 4th with left hamstring tightness (same hamstring as May's strain), day-to-day with an MRI pending. Sale tries to even the set Wednesday." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 48, l: 28, pct: .632, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 41, l: 35, pct: .539, gb: 7.0,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 40, l: 37, pct: .519, gb: 8.5,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 39, l: 38, pct: .506, gb: 9.5,  streak: "W3" },
-  { team: "NYM", name: "New York Mets",          w: 34, l: 42, pct: .447, gb: 14.0, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 48, l: 29, pct: .623, gb: 0,    streak: "L2" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 41, l: 35, pct: .539, gb: 6.5,  streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 40, l: 37, pct: .519, gb: 8.0,  streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 39, l: 38, pct: .506, gb: 9.0,  streak: "W3" },
+  { team: "NYM", name: "New York Mets",          w: 34, l: 42, pct: .447, gb: 13.5, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-22T09:30:00-04:00",
+  generatedAt: "2026-06-23T09:30:00-04:00",
   summary:
-    "BREWERS DENY THE SWEEP, BRAVES OPEN A WEST COAST TRIP. Milwaukee salvaged Sunday's finale 9-4 at Truist Park behind an eight-run second inning, ending Atlanta's bid for a three-game sweep. Former Brave William Contreras went 4-for-5 with a three-run homer and Sal Frelick added a two-run double off Bryce Elder, who fell to 5-5 after allowing eight runs on 12 hits in six innings. Brewers lefty Robert Gasser earned his first win since May 2024 with six innings of two-run ball and a career-high seven strikeouts. The loss drops the Braves to 48-28, still the best record in baseball but just 3-7 over their last 10, with the NL East lead at about seven games over Philadelphia. Atlanta now heads to San Diego, where Grant Holmes (4-3, 4.33) opens a three-game set Monday night on ESPN against a struggling Michael King (3.60). On the health front, Michael Harris II (lower back) is back in the mix and the Braves now expect him to avoid the injured list, Ronald Acuña Jr. (hamstring) remains a long way off into July, Spencer Strider stays on the 60-day IL into mid-August, and Sean Murphy is in a splint targeting mid-July.",
+    "BLANKED IN SAN DIEGO. The Padres shut out NL East-leading Atlanta 1-0 on Monday night at Petco Park, the only run a leadoff homer by Manny Machado in the 4th, his 14th of the year and 43rd RBI. Michael King was dominant in his first win since May 18, holding the Braves to six singles over seven scoreless innings with five strikeouts and no walks, and Mason Miller closed it for his NL-leading 21st save by striking out Mike Yastrzemski with two on to end the game. Grant Holmes (now 4-4) was the hard-luck loser, allowing only the one run across about six innings but getting no run support. Atlanta managed just six hits, all singles, and has now lost eight of its last 11, slipping to 48-29 and getting passed by the Dodgers for the best record in the majors, though the Braves still lead the NL East by 6.5 games over Philadelphia. They go for a split Tuesday at 9:40 PM ET behind rookie JR Ritchie (1-2, 4.54) against Padres righty Griffin Canning (6.64). On the health front, Michael Harris II (lower back) is back and avoiding the IL, Ronald Acuña Jr. (hamstring) remains a long way off into July, Spencer Strider stays on the 60-day IL into mid-August, and Sean Murphy is in a splint targeting mid-July.",
   keyTopics: [
-    { category: "result",      title: "Brewers avoid the sweep, beat Atlanta 9-4",                                                   detail: "Milwaukee scored eight runs in the second inning Sunday and held on for a 9-4 win at Truist Park, salvaging the finale of the three-game set. The Braves fell to 48-28 and have now lost four of their last five." },
-    { category: "rotation",    title: "Elder roughed up in the finale loss",                                                        detail: "Bryce Elder dropped to 5-5 after giving up eight runs on 12 hits over six innings, unable to contain Milwaukee's big second inning. His ERA climbed to 3.71 across 16 starts heading into the West Coast trip." },
-    { category: "narrative",   title: "Braves stumble to 3-7 over their last 10",                                                   detail: "Even with the best record in baseball at 48-28, Atlanta has cooled off, going 3-7 in its last 10 games. The slump comes as the lineup waits on Acuña and manages Harris II's back." },
-    { category: "rotation",    title: "Holmes opens the Padres series Monday on ESPN",                                              detail: "Grant Holmes (4-3, 4.33) starts Monday's 10:10 PM ET opener at Petco Park against Padres righty Michael King (3.60), who has allowed at least three runs in five straight outings. The game airs nationally on ESPN." },
-    { category: "injury",      title: "Harris II back in the mix, likely to avoid the IL",                                          detail: "Michael Harris II worked back into the lineup picture over the weekend after sitting with lower back tightness, and the Braves now believe he can avoid a stint on the injured list. He had been available off the bench while ramping back toward starts." },
-    { category: "injury",      title: "Acuña a long way off, club staying cautious",                                                detail: "Walt Weiss reiterated that Ronald Acuña Jr. is a long way from returning from his Grade 1 left-hamstring strain and that Atlanta will be extra cautious given it is the second injury to that same spot. The realistic target remains in July." },
+    { category: "result",      title: "Padres shut out Atlanta 1-0 in the opener",                                                  detail: "San Diego blanked the Braves 1-0 Monday at Petco Park, the lone run coming on Manny Machado's leadoff homer in the 4th. Atlanta managed only six hits, all singles, and dropped to 48-29." },
+    { category: "rotation",    title: "Holmes takes a hard-luck loss, falls to 4-4",                                                 detail: "Grant Holmes pitched about six innings of one-run ball on 91 pitches but lost 1-0 with zero run support. His ERA improved to roughly 3.76, yet the no-decision-worthy outing went down as a defeat." },
+    { category: "narrative",   title: "Braves cool to 3-8 over their last 11",                                                      detail: "Atlanta has now lost eight of its last 11 games and was passed by the Dodgers for the best record in the majors. The offense has gone quiet, scoring sparingly as it waits on Acuña and steadies the rotation." },
+    { category: "rotation",    title: "Ritchie vs Canning in Tuesday's middle game",                                                detail: "Rookie JR Ritchie (1-2, 4.54) starts Tuesday's 9:40 PM ET game at Petco against Padres righty Griffin Canning (6.64), who may again work behind an opener. Atlanta is trying to avoid a series deficit." },
+    { category: "milestone",   title: "Machado homers and drives in the only run",                                                  detail: "Manny Machado led off the 4th with his 14th home run of the season, into the bullpen beyond center field, for his 43rd RBI. It was all San Diego needed against Holmes and the Braves." },
+    { category: "injury",      title: "Harris II back and avoiding the IL",                                                         detail: "Michael Harris II has returned to the lineup picture after lower back tightness, and the Braves believe he will avoid an injured-list stint. His bat is a needed lift with Acuña still out." },
+    { category: "injury",      title: "Acuña a long way off, club staying cautious",                                                detail: "Walt Weiss has reiterated that Ronald Acuña Jr. is a long way from returning from his Grade 1 left-hamstring strain, with Atlanta extra cautious because it is the second injury to that same spot. The realistic target remains in July." },
     { category: "injury",      title: "Strider stays on the 60-day IL into mid-August",                                             detail: "Spencer Strider remains on the 60-day injured list with right elbow inflammation and no ligament damage. After being shut down for about four weeks, his earliest realistic return is roughly mid-August." },
-    { category: "injury",      title: "Murphy in a splint, targeting mid-July",                                                     detail: "Sean Murphy had the cast removed and is now in a splint to protect his fractured left middle finger. He stays on the 60-day IL with a return targeted around mid-July while Drake Baldwin and Joey Bart handle the catching." },
-    { category: "rotation",    title: "Schwellenbach and Smith-Shawver progressing",                                                detail: "Spencer Schwellenbach (elbow) has begun throwing on flat ground, and AJ Smith-Shawver (elbow) has advanced to facing live hitters in his bullpen work. Both are depth arms Atlanta would welcome back later in the summer." },
-    { category: "lineup",      title: "Olson holds the NL home run lead at 20",                                                     detail: "Matt Olson leads the majors and the NL with 20 homers and 51 RBI while keeping his OPS near .900. With Acuña out, he and Ozzie Albies remain the spine of the order." },
+    { category: "injury",      title: "Murphy in a splint, targeting mid-July",                                                     detail: "Sean Murphy is in a splint to protect his fractured left middle finger and stays on the 60-day IL, with a return targeted around mid-July while Drake Baldwin and Joey Bart handle the catching." },
+    { category: "lineup",      title: "Olson holds the NL home run lead at 20",                                                     detail: "Matt Olson leads the majors and the NL with 20 homers and 52 RBI while keeping his OPS near .900. With Acuña out, he and Ozzie Albies remain the spine of the order." },
     { category: "transaction", title: "Bart settling in as the backup catcher",                                                    detail: "Joey Bart, acquired from Pittsburgh last week for Hunter Stratton, has joined the catching mix behind Drake Baldwin while Sean Murphy is out. The 2018 No. 2 overall pick gives Atlanta added depth at the position." },
-    { category: "standings",   title: "NL East: ATL 48-28, lead about seven over Philadelphia",                                     detail: "Atlanta keeps the best record in baseball and roughly a seven-game cushion over second-place Philadelphia. Washington, Miami, and the last-place Mets fill out the division behind them." },
+    { category: "standings",   title: "NL East: ATL 48-29, lead 6.5 over Philadelphia",                                            detail: "Atlanta still leads the NL East by 6.5 games over second-place Philadelphia, but it no longer owns baseball's best record after the Dodgers moved ahead. Washington, Miami, and the last-place Mets fill out the division." },
   ],
   sources: [
-    "AP", "MLB.com", "ESPN", "FOX Sports", "Sports Illustrated", "Brew Crew Ball", "Washington Post", "Battery Power", "AJC", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs", "Field Level Media",
+    "AP", "MLB.com", "ESPN", "FOX Sports", "Sports Illustrated", "Washington Post", "Battery Power", "AJC", "Yahoo Sports", "CBS Sports", "Baseball-Reference", "FanGraphs", "Field Level Media",
   ],
 };
