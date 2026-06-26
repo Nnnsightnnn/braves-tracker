@@ -1,18 +1,16 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 23, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated June 26, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// MON JUN 22: SHUT OUT IN SAN DIEGO. The Padres blanked Atlanta 1-0 at Petco Park,
-// the lone run a leadoff homer by MANNY MACHADO (his 14th, 43rd RBI) in the 4th off
-// GRANT HOLMES (L, 4-4). MICHAEL KING (W, 5-6) was the story, holding the Braves to
-// six singles over seven scoreless innings with five strikeouts and no walks for his
-// first win since May 18. MASON MILLER worked the 9th for his NL-leading 21st save,
-// putting two on with two out before striking out MIKE YASTRZEMSKI to end it. Atlanta
-// drops to 48-29, has now lost eight of 11, and was passed by the Dodgers for the best
-// record in the majors, though it still leads the NL East. Next up (Tue Jun 23, 9:40 PM
-// ET): rookie JR RITCHIE (1-2, 4.54) against Padres RHP GRIFFIN CANNING (6.64), who may
-// work behind an opener. IL watch: Acuna (hamstring) timeline still in July, Weiss
-// cautious on the recurrence; Harris II (lower back) back in the mix and avoiding the
-// IL; Strider (60-day, elbow) out into mid-August; Murphy (60-day, finger) in a splint,
-// mid-July target.
+// FRI JUN 26: OFF-DAY SHUFFLE, ROTATION RESET. Atlanta was idle Thursday after getting
+// swept in San Diego and opens a three-game set at San Francisco tonight (10:15 PM ET)
+// with the rotation reshuffled: REYNALDO LOPEZ returns to the starting staff Friday on a
+// roughly 60-pitch limit, his first start since late April, as Walt Weiss tries to spark
+// a unit that has scuffled (about a 5.43 ERA in June). TYLER KINLEY was reinstated from
+// the 15-day IL (right elbow inflammation), restoring a trusted middle-relief arm. ROBERT
+// SUAREZ is being watched with a sore right forearm, though the club is optimistic and
+// expects him back in his late-inning role shortly. Atlanta sits 48-31, still atop the NL
+// East by about four and a half games over Philadelphia (44-36). IL watch: Acuna
+// (hamstring) on a July timeline, Weiss cautious on the recurrence; Strider (60-day,
+// elbow) shut down into mid-August; Murphy (60-day, finger) in a splint, mid-July target.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -473,14 +471,14 @@ export const PLAYERS = [
     id: "lopez",
     name: "Reynaldo López",
     number: 40,
-    position: "RP",
+    position: "SP",
     positionGroup: "pitcher",
-    rotationSpot: null,
+    rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 32, experience: 10,
     stats: { era: 4.05, whip: 1.39, ip: 26.2, k: 24, bb: 12, hr: null, w: 3, l: 1, games: 9, starts: 5 },
-    statNote: "(W, 3-1) REDEMPTION — SCORELESS 7TH WINS THE SWEEP — Three days after a four-run 9th blew open the Toronto finale, López bounced back to throw a scoreless 7th in Sunday's 3-2 sweep-clinching win over Pittsburgh, earning the victory after Harris II's pinch-hit bases-clearing double. The clean frame trims his line to ~4.05 ERA / 1.39 WHIP across 9 G. Weiss still projects him back to the rotation once the mechanical work is done; outings like this rebuild the leverage trust.",
-    form: 5.5,
+    statNote: "BACK IN THE ROTATION FRIDAY: Atlanta is moving López back to the starting staff to open the Giants series, his sixth start of the year and first since he was shifted to the bullpen in late April. He is expected to be capped around 60 pitches with a bulk arm behind him as the club eases him into length and tries to steady a rotation that has run a roughly 5.43 ERA in June. The 2024 All-Star carries a 4.05 ERA / 1.39 WHIP across 9 appearances; the leverage work out of the pen rebuilt the trust to hand him this slot.",
+    form: 6.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
@@ -631,8 +629,8 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 4,
     stats: { era: 0.56, whip: 0.81, ip: 16.0, k: 17, bb: 2, sv: 3, hold: 1, games: 17, w: 5, l: 0 },
-    statNote: "(W, 5-0) WALK-OFF SETUP IN THE 10TH FRI — Suarez tossed a clean 10th vs BOS Friday night (1 IP / 0 H / 0 R / 2 K) to stand as the pitcher of record when Yastrzemski drilled the walk-off RBI 2B in the bottom half. Now 5-0 on the year with a 0.56 ERA / 0.81 WHIP / 17 K-to-2 BB across 16 IP and 17 G — Atlanta is undefeated when he appears. The closer-quality 8th-inning arm has been the most consistent piece of the back-end alongside Iglesias.",
-    form: 9.2,
+    statNote: "SORE RIGHT FOREARM, BUT NO ALARM: Suarez has been pitching through a sore right forearm in San Diego, and the Braves remain optimistic, with Weiss downplaying the concern and pointing to a quick return to the late-inning mix rather than an IL stint. Even with the minor issue, the back-end has leaned on him all year: 5-0, 0.56 ERA, 0.81 WHIP, 17 K-to-2 BB across 16 IP and 17 G, and Atlanta is undefeated when he appears. The closer-quality 8th-inning arm remains the most consistent piece of the bullpen alongside Iglesias.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4148749.png",
@@ -696,10 +694,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 35, experience: 7,
     stats: { era: 2.45, whip: 1.20, ip: 18.1, k: 16, bb: 7, sv: 0, hold: 1, games: 20, w: 4, l: 2 },
-    statNote: "TO THE 15-DAY IL WITH RIGHT ELBOW INFLAMMATION: Atlanta placed Kinley on the 15-day IL Wednesday, retroactive to June 8, and he is eligible to return June 23 if the inflammation proves mild. He had been a steady middle-relief piece (2.45 ERA, 20 G, bases-loaded escape in the June 7 sweep clincher) and a top-tier value on a 1-year, $1.5M deal. James Karinchak was selected to cover the innings.",
-    form: 7.6,
-    status: "il-15",
-    injuryNote: "RIGHT ELBOW INFLAMMATION, placed on the 15-day IL Wed Jun 10 (retroactive to Jun 8). Eligible to return June 23. The club called it precautionary pending how the elbow responds to rest.",
+    statNote: "REINSTATED FROM THE 15-DAY IL: Atlanta activated Kinley this week after the right elbow inflammation that cost him about two and a half weeks calmed down, restoring a trusted middle-relief option to a bullpen leaning hard on Lee, Suarez, and Iglesias. Before the IL stint he was a top-tier value on a 1-year, $1.5M deal (2.45 ERA across 20 G, including a bases-loaded escape in the June 7 sweep clincher). The elbow responded to rest as the club hoped.",
+    form: 7.2,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34166.png",
     assignment: "mlb",
     contract: { years: 1, total: 1500000, guaranteed: 0, apy: 1500000, throughYear: 2026 },
@@ -1211,9 +1209,9 @@ export const UPCOMING_SCHEDULE = [
     opp: "SF",
     home: false,
     venue: "Oracle Park · San Francisco",
-    atlSP: { id: "sale", name: "Chris Sale", record: "8-5", era: 2.14, daysRest: 6, hand: "L" },
+    atlSP: { id: "lopez", name: "Reynaldo López", record: "3-1", era: 4.05, daysRest: null, hand: "R" },
     oppSP: { name: "Trevor McDonald", record: null, era: null, hand: "R" },
-    note: "West Coast trip rolls on. After being swept in San Diego, Atlanta opens a three-game set at Oracle Park with ace Chris Sale (8-5, 2.14, MLB-best 99 K) facing Giants rookie Trevor McDonald.",
+    note: "West Coast trip rolls on. After being swept in San Diego, Atlanta opens a three-game set at Oracle Park with Reynaldo López back in the rotation on a roughly 60-pitch limit, his first start since late April, opposite Giants rookie Trevor McDonald. Chris Sale is realigned to start later in the trip.",
   },
   {
     date: "2026-06-27",
@@ -1248,10 +1246,10 @@ export const NEXT_GAME = {
   venue: "Oracle Park · San Francisco, CA",
   tv: "FanDuel Sports Network Southeast / NBCS-BA",
   probables: {
-    atl: { pitcher: "Chris Sale", record: "8-5", era: 2.14 },
+    atl: { pitcher: "Reynaldo López", record: "3-1", era: 4.05 },
     opp: { pitcher: "Trevor McDonald", record: null, era: null },
   },
-  note: "WEST COAST TRIP CONTINUES IN SAN FRANCISCO. Off Thursday after getting swept in San Diego, Atlanta opens a three-game set at Oracle Park on Friday at 10:15 PM ET. Ace CHRIS SALE (8-5, 2.14, MLB-best 99 strikeouts) takes the ball against Giants rookie TREVOR MCDONALD as the Braves try to snap out of a rough stretch that has them at 48-31. They still lead the NL East by roughly five and a half games over Philadelphia. RONALD ACUNA JR. (hamstring) remains weeks away with a July timeline; SPENCER STRIDER (60-day IL, elbow) is shut down into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. JOEY BART, who homered Wednesday, backs up Drake Baldwin behind the plate.",
+  note: "WEST COAST TRIP CONTINUES IN SAN FRANCISCO. Off Thursday after getting swept in San Diego, Atlanta opens a three-game set at Oracle Park on Friday at 10:15 PM ET behind a reshuffled rotation. REYNALDO LOPEZ (3-1, 4.05) returns to the starting staff on a roughly 60-pitch limit, his first start since late April, with a bulk reliever behind him as the club tries to spark a unit that has run about a 5.43 ERA in June. Giants rookie TREVOR MCDONALD goes for San Francisco. Ace CHRIS SALE (8-5, MLB-best 99 K) is realigned to start later in the trip. The Braves sit 48-31 and still lead the NL East by about four and a half games over Philadelphia. RONALD ACUNA JR. (hamstring) remains weeks away with a July timeline; SPENCER STRIDER (60-day IL, elbow) is shut down into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. JOEY BART backs up Drake Baldwin behind the plate.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1271,7 +1269,7 @@ export const RESULTS = [
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
   { team: "ATL", name: "Atlanta Braves",         w: 48, l: 31, pct: .608, gb: 0,    streak: "L4" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 43, l: 36, pct: .544, gb: 5.0,  streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 44, l: 36, pct: .550, gb: 4.5,  streak: "W2" },
   { team: "WSH", name: "Washington Nationals",   w: 40, l: 38, pct: .513, gb: 7.5,  streak: "L1" },
   { team: "MIA", name: "Miami Marlins",          w: 39, l: 39, pct: .500, gb: 8.5,  streak: "L1" },
   { team: "NYM", name: "New York Mets",          w: 34, l: 43, pct: .442, gb: 13.0, streak: "L2" },
@@ -1279,23 +1277,24 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-25T05:30:00-04:00",
+  generatedAt: "2026-06-26T08:30:00-04:00",
   summary:
-    "SWEPT IN SAN DIEGO. The Padres finished off a three-game sweep Wednesday night with a 5-2 win at Petco Park, sending the NL East-leading Braves to a fourth straight loss. Ty France did the damage against Martín Pérez, homering leading off the 3rd, adding a sacrifice fly, and doubling and scoring in a two-run 6th, while JP Sears was cruising on a four-hitter in his season debut until Joey Bart's two-out, two-run homer in the 6th got Atlanta on the board. Pérez (6-4) saw his four-start winning streak end. The Braves have now lost nine of their last 12 and slipped to 48-31, but they still lead the division by about five and a half games over Philadelphia. Atlanta is off Thursday before opening a series in San Francisco on Friday, with ace Chris Sale (8-5, 2.14, MLB-best 99 K) facing Giants rookie Trevor McDonald at 10:15 PM ET. On the health front, Ronald Acuña Jr. (hamstring) remains weeks away with a July target, Spencer Strider (elbow) is shut down into roughly mid-August, Sean Murphy (finger) is in a splint aiming for mid-July, and Spencer Schwellenbach and AJ Smith-Shawver are both progressing in their throwing programs.",
+    "ROTATION RESET IN SAN FRANCISCO. Off Thursday after a three-game sweep in San Diego, the NL East-leading Braves open a series at Oracle Park tonight (10:15 PM ET) with the starting staff reshuffled. Reynaldo López returns to the rotation Friday on a roughly 60-pitch limit, his first start since late April, with a bulk reliever lined up behind him, as Walt Weiss tries to spark a unit that has run about a 5.43 ERA in June. Giants rookie Trevor McDonald opposes him, and ace Chris Sale (8-5, MLB-best 99 K) is realigned to start later in the trip. The bullpen got a boost with Tyler Kinley reinstated from the 15-day IL (right elbow inflammation), while Robert Suarez is being monitored with a sore right forearm the club is optimistic about. Atlanta sits 48-31, still leading the division by about four and a half games over Philadelphia (44-36), and five Braves advanced in All-Star voting. On the health front, Ronald Acuña Jr. (hamstring) remains weeks away with a July target, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for mid-July.",
   keyTopics: [
-    { category: "result",      title: "Padres complete the sweep, beat Atlanta 5-2",                                               detail: "San Diego finished a three-game sweep Wednesday night, Ty France homering, adding a sac fly, and scoring on a two-run 6th. JP Sears won his season debut. The Braves fell to 48-31 and have lost nine of their last 12.", recency: "yesterday" },
-    { category: "milestone",   title: "Joey Bart homers for his first as a Brave",                                                 detail: "Bart provided Atlanta's only offense with a two-out, two-run homer off Sears in the 6th, his first long ball since the trade from Pittsburgh. He is settling in as Drake Baldwin's backup with Sean Murphy out.", recency: "yesterday" },
-    { category: "rotation",    title: "Pérez's four-start winning streak ends",                                                    detail: "Martín Pérez (6-4) was charged with three runs on four hits over four innings with four walks, snapping his run of four straight winning starts. His ERA ticked up to 3.00 but he remains a steadying arm with Strider down.", recency: "yesterday" },
-    { category: "narrative",   title: "Braves drop four straight, nine of 12",                                                     detail: "The sweep extended Atlanta's slide to four losses in a row and nine in its last 12 as the offense has gone quiet on the West Coast trip. The Braves managed just five hits Wednesday and have scored sparingly all week.", recency: "this-week" },
-    { category: "rotation",    title: "Sale opens the Giants series Friday",                                                       detail: "Ace Chris Sale (8-5, 2.14, MLB-best 99 strikeouts) takes the ball Friday at 10:15 PM ET at Oracle Park against Giants rookie Trevor McDonald as Atlanta tries to halt the skid. Bryce Elder and Grant Holmes follow in the series.", recency: "today" },
+    { category: "rotation",    title: "López returns to the rotation Friday",                                                      detail: "Reynaldo López (3-1, 4.05) gets the Friday start at Oracle Park, his sixth of the year and first since late April, on a roughly 60-pitch limit with a bulk arm behind him. Weiss is reshuffling a rotation that has posted about a 5.43 ERA in June.", recency: "today" },
+    { category: "transaction", title: "Kinley reinstated from the 15-day IL",                                                      detail: "Atlanta activated reliever Tyler Kinley after right elbow inflammation cost him about two and a half weeks, restoring a trusted middle-relief option (2.45 ERA over 20 G) to a bullpen leaning on Lee, Suarez, and Iglesias.", recency: "today" },
+    { category: "injury",      title: "Suarez monitored with a sore forearm",                                                     detail: "Robert Suarez (5-0, 0.56 ERA) has been pitching through a sore right forearm, but Weiss downplayed the concern and expects the late-inning arm back in his usual role shortly rather than to the IL.", recency: "today" },
+    { category: "milestone",   title: "Five Braves advance in All-Star voting",                                                    detail: "Five Atlanta players moved on in 2026 All-Star Game voting, with catcher Drake Baldwin among the NL's leading vote-getters at his position alongside the lineup's healthy core. Final results come later in the process.", recency: "today" },
+    { category: "rotation",    title: "Sale realigned, Elder and Webb on Saturday",                                                detail: "Chris Sale (8-5, MLB-best 99 K) is pushed to later in the trip with López taking Friday. Bryce Elder (5-5, 3.71) draws Giants ace Logan Webb (4-5, 3.35) on Saturday, with Grant Holmes lined up for the finale.", recency: "today" },
+    { category: "narrative",   title: "Braves carry a four-game skid into the trip",                                              detail: "The San Diego sweep dropped Atlanta to four straight losses and nine in its last 12, the offense going quiet on the road trip. The Braves managed just five hits in Wednesday's 5-2 finale loss.", recency: "this-week" },
+    { category: "result",      title: "Padres swept Atlanta in San Diego",                                                        detail: "San Diego completed a three-game sweep Wednesday with a 5-2 win, Ty France homering and driving in two while JP Sears won his season debut. Joey Bart's two-run homer was Atlanta's lone offense.", recency: "this-week" },
     { category: "injury",      title: "Acuña still weeks away, July target",                                                       detail: "Ronald Acuña Jr. remains a long way from returning from his Grade 1 left-hamstring strain, with Atlanta extra cautious because it is the second issue to that same spot. The realistic target stays in July.", recency: "ongoing" },
     { category: "injury",      title: "Strider shut down into mid-August",                                                          detail: "Spencer Strider remains on the 60-day injured list with right elbow inflammation and no ligament damage. After being shut down for about four weeks, his earliest realistic return is roughly mid-August.", recency: "ongoing" },
     { category: "injury",      title: "Murphy in a splint, targeting mid-July",                                                     detail: "Sean Murphy had the cast removed and is now in a splint to protect his fractured left middle finger. He stays on the 60-day IL with a return targeted around mid-July while Drake Baldwin and Joey Bart catch.", recency: "ongoing" },
-    { category: "injury",      title: "Schwellenbach, Smith-Shawver progressing",                                                   detail: "Spencer Schwellenbach is throwing and building up, with a speculative August or September return, while AJ Smith-Shawver is throwing high-intensity bullpens and is close to facing live hitters. Neither has a firm date yet.", recency: "ongoing" },
-    { category: "lineup",      title: "Olson and Albies anchor a quiet lineup",                                                    detail: "Matt Olson (.267/.340/.528) and Ozzie Albies (.281) remain the spine of the order with Acuña out, but the group has struggled to string hits together during the road trip. Michael Harris II is up to .310.", recency: "this-week" },
-    { category: "standings",   title: "NL East: ATL 48-31, lead about 5.5 over Philadelphia",                                      detail: "Atlanta still leads the NL East by roughly five and a half games over second-place Philadelphia despite the skid. Washington, Miami, and the last-place Mets fill out the division behind the Braves.", recency: "today" },
+    { category: "lineup",      title: "Olson and Albies anchor a quiet lineup",                                                    detail: "Matt Olson (NL-leading 20 HR) and Ozzie Albies, fresh off a two-homer walk-off vs Milwaukee, remain the spine of the order with Acuña out, but the group has struggled to string hits together on the road trip.", recency: "this-week" },
+    { category: "standings",   title: "NL East: ATL 48-31, lead about 4.5 over Philadelphia",                                     detail: "Atlanta still leads the NL East despite the skid, but a hot Philadelphia (44-36) has trimmed the cushion to about four and a half games. Washington, Miami, and the last-place Mets trail the Braves.", recency: "today" },
   ],
   sources: [
-    "AP", "MLB.com", "ESPN", "FOX Sports", "CBS Sports", "Sports Illustrated", "Battery Power", "Bleacher Nation", "AJC", "Yahoo Sports", "Baseball-Reference", "FanGraphs", "Field Level Media",
+    "AP", "MLB.com", "ESPN", "FOX Sports", "CBS Sports", "Sports Illustrated", "Battery Power", "Bleacher Nation", "AJC", "Yahoo Sports", "MLB Trade Rumors", "Baseball-Reference", "FanGraphs", "Field Level Media",
   ],
 };
