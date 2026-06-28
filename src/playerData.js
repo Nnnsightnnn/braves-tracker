@@ -1289,7 +1289,7 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-28T09:00:00-04:00",
+  generatedAt: "2026-06-28T04:45:00-04:00",
   summary:
     "SHUT OUT IN SAN FRANCISCO. The NL East-leading Braves dropped the middle game of their Giants series 5-0 on Saturday, managing just one hit against Logan Webb, who struck out six and retired the final 16 he faced. Rafael Devers did the damage with two home runs and four RBIs, and Bryce Elder (5-6) took the loss after five runs over four innings. It was the second time in three games Atlanta's offense went quiet, a concern with Ronald Acuña Jr. still out. The Braves slip to 49-32 but keep their four-and-a-half-game division lead because Philadelphia (45-37) also lost, beaten 6-2 by the Mets, who snapped a seven-game skid. Grant Holmes (4-4, 4.17) gets the ball for the finale Sunday at 4:05 PM ET against lefty Robbie Ray (5-6, 4.07), with Atlanta trying to salvage a split before a Monday off-day and a Cardinals homestand. On the health front, Robert Suarez (forearm) is on the 15-day IL, Acuña (hamstring) is weeks away with a July target, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for mid-July.",
   keyTopics: [
