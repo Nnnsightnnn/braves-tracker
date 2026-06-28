@@ -519,9 +519,9 @@ export const PLAYERS = [
     rotationSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
-    stats: { era: 3.71, whip: 1.28, ip: 94.2, k: 75, bb: 28, w: 5, l: 5, games: 16, starts: 16 },
-    statNote: "ROUGHED UP IN THE FINALE LOSS: Elder fell to 5-5 after Sunday's 9-4 defeat to Milwaukee, allowing eight runs on 12 hits over six innings as the Brewers broke it open with an eight-run second. William Contreras went 4-for-5 with a three-run homer and Sal Frelick added a two-run double. The ERA climbs to 3.71 over 94.2 innings across 16 starts. With Strider on the 60-day IL, Atlanta still leans on Elder for length and lines him up again later in the West Coast trip.",
-    form: 5.5,
+    stats: { era: 4.02, whip: 1.29, ip: 98.2, k: 77, bb: 29, w: 5, l: 6, games: 17, starts: 17 },
+    statNote: "SECOND STRAIGHT ROUGH ONE: Elder fell to 5-6 after Saturday's 5-0 loss in San Francisco, charged with five runs on five hits over four innings while Rafael Devers homered twice off him. It followed a rocky finale loss to Milwaukee, and the ERA has climbed to 4.02 over 98.2 innings across 17 starts. With Strider on the 60-day IL, Atlanta still leans on Elder for length, but he will want to settle things down before the rotation realigns at home.",
+    form: 4.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4301067.png",
@@ -1194,6 +1194,7 @@ export const TEAM_LOGOS = {
   CWS: "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
   SF:  "https://a.espncdn.com/i/teamlogos/mlb/500/sf.png",
   MIL: "https://a.espncdn.com/i/teamlogos/mlb/500/mil.png",
+  STL: "https://a.espncdn.com/i/teamlogos/mlb/500/stl.png",
 };
 
 // ─── UPCOMING SCHEDULE ─────────────────────────────────────────────────────────
@@ -1203,28 +1204,6 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-06-26",
-    weekday: "Fri",
-    time: "10:15 PM ET",
-    opp: "SF",
-    home: false,
-    venue: "Oracle Park · San Francisco",
-    atlSP: { id: "lopez", name: "Reynaldo López", record: "3-1", era: 4.05, daysRest: null, hand: "R" },
-    oppSP: { name: "Trevor McDonald", record: null, era: null, hand: "R" },
-    note: "West Coast trip rolls on. After being swept in San Diego, Atlanta opens a three-game set at Oracle Park with Reynaldo López back in the rotation on a roughly 60-pitch limit, his first start since late April, opposite Giants rookie Trevor McDonald. Chris Sale is realigned to start later in the trip.",
-  },
-  {
-    date: "2026-06-27",
-    weekday: "Sat",
-    time: "9:05 PM ET",
-    opp: "SF",
-    home: false,
-    venue: "Oracle Park · San Francisco",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "5-5", era: 3.71, daysRest: 6, hand: "R" },
-    oppSP: { name: "Logan Webb", record: "4-5", era: 3.35, hand: "R" },
-    note: "Bryce Elder (5-5, 3.71) draws the toughest assignment of the series in Giants ace Logan Webb (4-5, 3.35), who has historically given Atlanta trouble.",
-  },
-  {
     date: "2026-06-28",
     weekday: "Sun",
     time: "4:05 PM ET",
@@ -1232,28 +1211,62 @@ export const UPCOMING_SCHEDULE = [
     home: false,
     venue: "Oracle Park · San Francisco",
     atlSP: { id: "holmes", name: "Grant Holmes", record: "4-4", era: 4.17, daysRest: 6, hand: "R" },
-    oppSP: { name: "Robbie Ray", record: "6-6", era: 3.70, hand: "L" },
-    note: "Series finale and getaway day. Grant Holmes (4-4, 4.17) tries to salvage a game on the trip against lefty Robbie Ray (6-6, 3.70).",
+    oppSP: { name: "Robbie Ray", record: "5-6", era: 4.07, hand: "L" },
+    note: "Series finale and getaway day after Saturday's 5-0 shutout. Grant Holmes (4-4, 4.17) tries to salvage the last game of the trip and avoid a series loss against Giants lefty Robbie Ray (5-6, 4.07).",
+  },
+  {
+    date: "2026-06-30",
+    weekday: "Tue",
+    time: "7:15 PM ET",
+    opp: "STL",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Home at last. After a Monday off-day to travel back from the coast, Atlanta opens a three-game set with the St. Louis Cardinals at Truist Park. Probables to be confirmed.",
+  },
+  {
+    date: "2026-07-01",
+    weekday: "Wed",
+    time: "7:15 PM ET",
+    opp: "STL",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Middle game of the Cardinals series at Truist Park. Probables to be confirmed.",
+  },
+  {
+    date: "2026-07-02",
+    weekday: "Thu",
+    time: "12:20 PM ET",
+    opp: "STL",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Cardinals series finale, a day-game getaway at Truist Park. Probables to be confirmed.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-06-27",
-  time: "9:05 PM ET",
+  date: "2026-06-28",
+  time: "4:05 PM ET",
   opp: "SF",
   home: false,
   venue: "Oracle Park · San Francisco, CA",
   tv: "FanDuel Sports Network Southeast / NBCS-BA",
   probables: {
-    atl: { pitcher: "Bryce Elder", record: "5-5", era: 3.71 },
-    opp: { pitcher: "Logan Webb", record: "4-5", era: 3.35 },
+    atl: { pitcher: "Grant Holmes", record: "4-4", era: 4.17 },
+    opp: { pitcher: "Robbie Ray", record: "5-6", era: 4.07 },
   },
-  note: "GAME 2 IN SAN FRANCISCO. After a tidy 3-1 win in Friday's opener, Atlanta sends BRYCE ELDER (5-5, 3.71) against Giants ace LOGAN WEBB (4-5, 3.35) on Saturday at 9:05 PM ET, the toughest matchup of the set; Webb has historically given the Braves trouble. Elder is coming off a rough finale loss to Milwaukee but still gives the rotation length with Strider out. The bullpen got the opener home behind REYNALDO LOPEZ in his return, with DYLAN LEE (W) and RAISEL IGLESIAS (16th save, perfect in 16 chances) closing. The Braves are 49-31, leading the NL East by four and a half games over Philadelphia (45-36). On the injury front, ROBERT SUAREZ landed on the 15-day IL with a sore right forearm; RONALD ACUNA JR. (hamstring) remains weeks away with a July timeline; SPENCER STRIDER (60-day IL, elbow) is shut down into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. HURSTON WALDREP was recalled and gave bulk relief in the opener.",
+  note: "SERIES FINALE AND GETAWAY DAY. Atlanta tries to split the set in San Francisco after Logan Webb shut the Braves out 5-0 on Saturday. GRANT HOLMES (4-4, 4.17) gets the ball Sunday at 4:05 PM ET against Giants lefty ROBBIE RAY (5-6, 4.07). The Braves managed just one hit off Webb a day earlier, so the bats need to wake up; the lineup is still without RONALD ACUNA JR. The Braves are 49-32, leading the NL East by four and a half games over Philadelphia (45-37), which also lost Saturday. On the injury front, ROBERT SUAREZ remains on the 15-day IL with a sore right forearm; ACUNA (hamstring) is weeks away with a July timeline; SPENCER STRIDER (60-day IL, elbow) is shut down into mid-August; SEAN MURPHY (60-day, finger) is in a splint targeting mid-July. A Monday off-day precedes a Cardinals homestand starting Tuesday.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-06-27", opp: "SF", home: false, atlScore: 0, oppScore: 5, result: "L", note: "WEBB SILENCES ATLANTA, GIANTS ROLL 5-0: Logan Webb carved up the Braves on a one-hitter into the eighth Saturday at Oracle Park, striking out six and retiring the final 16 he faced to drop Atlanta 5-0. RAFAEL DEVERS did the rest, homering twice and driving in four to back the Giants ace, who improved to 5-1 lifetime against the Braves. BRYCE ELDER (L, 5-6) labored through the loss, charged with five runs on five hits over four innings, his second straight rough outing. Atlanta's lone hit, soft contact off the bat early, was all the offense it could muster as the bats went quiet for the second time in three games. The Braves slip to 49-32 but keep a four-and-a-half-game NL East lead after Philadelphia also lost; Grant Holmes tries to salvage the finale Sunday." },
   { date: "2026-06-26", opp: "SF", home: false, atlScore: 3, oppScore: 1, result: "W", note: "BULLPEN POTPOURRI CLAMPS DOWN, BRAVES OPEN IN SAN FRANCISCO WITH A 3-1 WIN — Reynaldo López and five relievers combined on a seven-hitter Friday at Oracle Park as Atlanta snapped its four-game skid. LOPEZ, back in the rotation for the first time since late April on a roughly 60-pitch limit, gave up just San Francisco's lone run in the 1st across three innings despite soft velocity and hard contact. OZZIE ALBIES drove in two and MAURICIO DUBON went 2-for-2 with two runs against his former team to provide the offense; MATT OLSON had two hits including his 20th double, Atlanta's only extra-base hit. DYLAN DODD, recall HURSTON WALDREP (2-plus effectively wild innings, 4 K), and DYLAN LEE (W, 4-0) bridged it, and RAISEL IGLESIAS worked a 1-2-3 ninth for his 16th save, staying perfect in 16 chances and pushing his streak to 34 straight converted dating to 2025, the longest active run in the majors. The Braves improve to 49-31 and keep a four-and-a-half-game NL East lead." },
   { date: "2026-06-24", opp: "SD", home: false, atlScore: 2, oppScore: 5, result: "L", note: "PADRES COMPLETE THE SWEEP, BEAT ATLANTA 5-2 — San Diego finished off a three-game sweep Wednesday night at Petco Park, downing the NL East-leading Braves 5-2. TY FRANCE did the damage, homering to left off MARTIN PEREZ leading off the 3rd (his 9th), adding a sacrifice fly in the 4th, and doubling to lead off the 6th before scoring on Samad Taylor's two-run single. JP SEARS (W, 1-0) was cruising on a four-hitter in his season debut until JOEY BART's two-out, two-run homer in the 6th got Atlanta on the board. PEREZ (L, 6-4) ended his four-start winning streak, charged with three runs on four hits over four innings with four strikeouts and four walks. The Braves managed just five hits, dropped their ninth in 12, and slipped to 48-31, though they still lead the NL East by about five and a half games. Atlanta is off Thursday before opening a series in San Francisco." },
   { date: "2026-06-23", opp: "SD", home: false, atlScore: 6, oppScore: 7, result: "L", note: "MACHADO WALKS IT OFF, PADRES STUN ATLANTA 7-6 IN 10 — San Diego dealt the Braves a gut-punch Tuesday at Petco Park, MANNY MACHADO lining a one-out RBI single off RAISEL IGLESIAS (L, 0-2) in the 10th to score Jackson Merrill and give the Padres their sixth walk-off win of the year. Atlanta had dug out of a 5-0 hole, the Padres pushing across five in the 2nd on RBI singles by Rodolfo Durán, Sung-Mun Song, and Fernando Tatis Jr. plus a two-run single from Samad Taylor. OZZIE ALBIES tied it with an RBI double in the 4th and MAURICIO DUBON put Atlanta ahead 6-5 with a solo homer (#7) in the 5th, but TATIS homered in the 7th to even it and MASON MILLER (W, 2-1) slammed the door with two scoreless innings and three strikeouts. The Braves have now lost nine of their last 12 and the first two in San Diego, slipping to 48-30 while still leading the NL East by about six games." },
@@ -1263,33 +1276,32 @@ export const RESULTS = [
   { date: "2026-06-19", opp: "MIL", home: true, atlScore: 3, oppScore: 2, result: "W", note: "BRAVES SNAP THE SKID, BEAT THE MIZ 3-2 — Atlanta halted a three-game losing streak Friday at Truist Park, knocking off Milwaukee 3-2 and handing Brewers phenom JACOB MISIOROWSKI his first loss in two months. MARTIN PEREZ (W, 6-3) was the steadier ace on the night, holding the Brewers to one run over six innings with five strikeouts for his fourth straight winning start. MAURICIO DUBON provided the swing of the game, lining a two-run single off Misiorowski in the 6th to turn a 1-0 deficit into a 2-1 lead, and MIKE YASTRZEMSKI added a solo homer (#4) to right in the 7th for insurance. The drama came in the 9th: right fielder ELI WHITE threw out Jackson Chourio at the plate by inches to preserve the one-run lead before the bullpen closed it out. The win lifts the Braves to 47-27, the best record in baseball, and keeps the NL East lead near 7.5 games." },
   { date: "2026-06-17", opp: "SF", home: true, atlScore: 5, oppScore: 7, result: "L", note: "GIANTS COMPLETE THE DOUBLEHEADER SWEEP, BRAVES SKID TO THREE STRAIGHT — San Francisco took the nightcap 7-5 Wednesday at Truist Park to sweep the day-night doubleheader and hand Atlanta a third consecutive loss. LUIS ARRAEZ did most of the damage, homering and driving in four, part of a three-homer second inning that buried rookie JR RITCHIE (LP) before he could settle. Giants rookie CARSON WHISENHUNT won the matchup of first-year starters. Atlanta answered late but never caught up; the Braves slip to 46-27, though the NL East lead holds near 6.5 games. Martín Pérez tries to salvage the finale Thursday night." },
   { date: "2026-06-17", opp: "SF", home: true, atlScore: 2, oppScore: 7, result: "L", note: "RAY DOMINATES IN RELIEF AS GIANTS FINISH THE SUSPENDED OPENER 7-2 — The resumption of Tuesday's rain-suspended opener went San Francisco's way Wednesday afternoon, the Giants pulling away for a 7-2 win in Game 1 of the doubleheader. ROBBIE RAY was the difference, allowing just two hits over 6 1/3 scoreless innings out of the bullpen, and RAFAEL DEVERS and JUNG HOO LEE went back-to-back to break it open. Atlanta's runs traced to DRAKE BALDWIN's 473-foot leadoff homer off Adrian Houser, now official as the longest home run in the majors this season. The loss dropped the Braves and set up the sweep in the nightcap." },
-  { date: "2026-06-14", opp: "NYM", home: false, atlScore: 1, oppScore: 8, result: "L", note: "METS FINISH THE UPSET, ROUT ATLANTA 8-1: The last-place Mets handed baseball's best team a second straight series loss Sunday at Citi Field, winning the finale 8-1 to take two of three. Rookie A.J. EWING was the wrecking ball, finishing a triple shy of the cycle: he doubled in a run during a four-run 1st inning, singled in the 3rd, and homered in the 5th. BRYCE ELDER (LP, 5-4) set season highs for damage, allowing six runs on 10 hits in four-plus innings before the bullpen mopped up. Atlanta's offense went quiet for a third straight day, managing one run; MATT OLSON kept the NL home run lead at 20 but the lineup could not string anything together with Acuña (hamstring) and Baldwin (oblique) out. The Braves fall to 46-25 (.648) but keep a comfortable NL East lead and head home for a Tuesday homestand opener vs the Giants after a Monday off-day." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 49, l: 31, pct: .613, gb: 0,    streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 45, l: 36, pct: .556, gb: 4.5,  streak: "W3" },
-  { team: "WSH", name: "Washington Nationals",   w: 40, l: 38, pct: .513, gb: 8.0,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 39, l: 39, pct: .500, gb: 9.0,  streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 34, l: 47, pct: .420, gb: 15.5, streak: "L7" },
+  { team: "ATL", name: "Atlanta Braves",         w: 49, l: 32, pct: .605, gb: 0,    streak: "L1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 45, l: 37, pct: .549, gb: 4.5,  streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 40, l: 38, pct: .513, gb: 7.5,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 39, l: 39, pct: .500, gb: 8.5,  streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 35, l: 47, pct: .427, gb: 14.5, streak: "W1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-06-27T09:00:00-04:00",
+  generatedAt: "2026-06-28T09:00:00-04:00",
   summary:
-    "SKID SNAPPED IN SAN FRANCISCO. The NL East-leading Braves stopped a four-game slide Friday night, beating the Giants 3-1 at Oracle Park behind a five-reliever bullpen effort and a return start from Reynaldo López. López gave up only San Francisco's first-inning run across three innings on a roughly 60-pitch limit, Ozzie Albies and Mauricio Dubon drove the offense, and Dylan Lee (now 4-0) earned the win before Raisel Iglesias closed a perfect ninth for his 16th save, staying flawless in 16 chances and stretching his converted-save streak to 34 straight. The win came hours after Atlanta placed late-inning arm Robert Suarez (5-0, 0.56) on the 15-day IL with a sore right forearm and recalled Hurston Waldrep, who gave 2-plus innings of bulk relief. Atlanta sits 49-31 and leads the division by four and a half games over Philadelphia (45-36), which keeps winning. Bryce Elder draws Giants ace Logan Webb in Saturday's middle game. On the health front, Ronald Acuña Jr. (hamstring) remains weeks away with a July target, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for mid-July.",
+    "SHUT OUT IN SAN FRANCISCO. The NL East-leading Braves dropped the middle game of their Giants series 5-0 on Saturday, managing just one hit against Logan Webb, who struck out six and retired the final 16 he faced. Rafael Devers did the damage with two home runs and four RBIs, and Bryce Elder (5-6) took the loss after five runs over four innings. It was the second time in three games Atlanta's offense went quiet, a concern with Ronald Acuña Jr. still out. The Braves slip to 49-32 but keep their four-and-a-half-game division lead because Philadelphia (45-37) also lost, beaten 6-2 by the Mets, who snapped a seven-game skid. Grant Holmes (4-4, 4.17) gets the ball for the finale Sunday at 4:05 PM ET against lefty Robbie Ray (5-6, 4.07), with Atlanta trying to salvage a split before a Monday off-day and a Cardinals homestand. On the health front, Robert Suarez (forearm) is on the 15-day IL, Acuña (hamstring) is weeks away with a July target, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for mid-July.",
   keyTopics: [
-    { category: "result",      title: "Braves snap skid, beat Giants 3-1 in opener",                                              detail: "Atlanta stopped a four-game slide Friday at Oracle Park, López and five relievers combining on a seven-hitter. Albies drove in two and Dubon went 2-for-2 with two runs against his former team.", recency: "yesterday" },
-    { category: "transaction", title: "Suarez to 15-day IL, Waldrep recalled",                                                    detail: "The sore right forearm Robert Suarez (5-0, 0.56 ERA) had pitched through landed him on the 15-day IL before the Giants series. Atlanta recalled Hurston Waldrep, who answered with 2-plus innings and four strikeouts in relief.", recency: "yesterday" },
-    { category: "rotation",    title: "López steady in his return start",                                                          detail: "Reynaldo López made his first start since late April, allowing just the Giants' first-inning run over three innings on a roughly 60-pitch limit. Velocity was down but he bridged the game to a deep bullpen.", recency: "yesterday" },
-    { category: "milestone",   title: "Iglesias perfect for save No. 16",                                                          detail: "Raisel Iglesias worked a 1-2-3 ninth to stay perfect in 16 save chances this season and extend his converted-save streak to 34 in a row dating to 2025, the longest active run in the majors.", recency: "yesterday" },
-    { category: "rotation",    title: "Elder vs. Webb in Saturday's middle game",                                                  detail: "Bryce Elder (5-5, 3.71) draws Giants ace Logan Webb (4-5, 3.35) on Saturday at 9:05 PM ET, the toughest matchup of the set; Webb has historically given Atlanta trouble. Grant Holmes lines up for the finale.", recency: "today" },
-    { category: "standings",   title: "NL East: ATL 49-31, lead 4.5 over Philadelphia",                                            detail: "Atlanta still leads the division, but a hot Philadelphia (45-36, beat the Mets 2-1) keeps the cushion at about four and a half games. Washington, Miami, and the last-place Mets trail well behind.", recency: "today" },
-    { category: "lineup",      title: "Albies and Dubon supply the offense",                                                       detail: "Ozzie Albies drove in two and Mauricio Dubon went 2-for-2 with two runs versus his old club in the opener. Matt Olson added two hits including his 20th double, Atlanta's only extra-base hit on the night.", recency: "yesterday" },
-    { category: "transaction", title: "Kinley back in the middle-relief mix",                                                      detail: "Tyler Kinley remains a fresh option after returning from right elbow inflammation that cost him about two and a half weeks. His 2.45 ERA over 20 games matters more now with Suarez sidelined.", recency: "this-week" },
-    { category: "narrative",   title: "Mets fire Mendoza amid a 7-game skid",                                                      detail: "New York fired manager Carlos Mendoza on Friday and promptly lost again to fall to 34-47, dropping a seventh straight under interim manager Andy Green and leaving the Mets buried in the division.", recency: "yesterday" },
+    { category: "result", title: "Webb shuts out Braves 5-0 in middle game", detail: "Logan Webb carved Atlanta up Saturday at Oracle Park, allowing one hit over seven innings with six strikeouts and retiring the final 16 he faced. The Braves never threatened in the 5-0 loss and have now been shut down twice in three games.", recency: "yesterday" },
+    { category: "result", title: "Devers torches Atlanta with two homers", detail: "Rafael Devers homered twice and drove in four to power the Giants past the Braves on Saturday. Bryce Elder (5-6) wore the loss, charged with five runs on five hits over four innings in his second straight rough outing.", recency: "yesterday" },
+    { category: "transaction", title: "Suarez still on the 15-day IL", detail: "Late-inning arm Robert Suarez (5-0, 0.56 ERA) remains on the 15-day injured list with a sore right forearm, thinning the back of the bullpen in front of Raisel Iglesias. Hurston Waldrep stays up to provide length.", recency: "this-week" },
+    { category: "milestone", title: "Iglesias perfect on 16 of 16 saves", detail: "Raisel Iglesias is a perfect 16-for-16 in save chances this season and has converted 34 in a row dating to 2025, the longest active streak in the majors. He has had little to close lately with the offense scuffling.", recency: "this-week" },
+    { category: "rotation", title: "Holmes vs. Ray in Sunday's finale", detail: "Grant Holmes (4-4, 4.17) gets the ball for the series finale Sunday at 4:05 PM ET, opposite Giants lefty Robbie Ray (5-6, 4.07). Atlanta is trying to avoid a series loss and salvage a split before heading home.", recency: "today" },
+    { category: "standings", title: "NL East: ATL 49-32, lead holds at 4.5", detail: "Atlanta dropped to 49-32 but kept its four-and-a-half-game cushion because Philadelphia (45-37) also lost on Saturday. Washington, Miami, and the last-place Mets remain well back in the division.", recency: "today" },
+    { category: "lineup", title: "Bats go quiet again, one hit off Webb", detail: "Atlanta managed a single hit in Saturday's shutout, the second time in three games the lineup has been silenced. The offense has sputtered without Ronald Acuña Jr. and needs a getaway-day jolt against Robbie Ray.", recency: "yesterday" },
+    { category: "narrative", title: "Off-day Monday, Cardinals up next", detail: "After Sunday's finale, Atlanta gets a Monday off-day to travel back from the coast before opening a three-game homestand against the St. Louis Cardinals at Truist Park starting Tuesday.", recency: "today" },
+    { category: "narrative", title: "Mets snap skid, beat Phillies 6-2", detail: "New York ended a seven-game losing streak Saturday, beating Philadelphia 6-2 behind triples from Francisco Lindor and Juan Soto. The Phillies loss is why Atlanta's division lead held despite its own defeat.", recency: "yesterday" },
     { category: "injury",      title: "Acuña still weeks away, July target",                                                       detail: "Ronald Acuña Jr. remains a long way from returning from his left-hamstring strain, with Atlanta extra cautious because it is the second issue to that same spot. The realistic target stays in July.", recency: "ongoing" },
     { category: "injury",      title: "Strider shut down into mid-August",                                                          detail: "Spencer Strider remains on the 60-day injured list with right elbow inflammation and no ligament damage. After being shut down for about four weeks, his earliest realistic return is roughly mid-August.", recency: "ongoing" },
     { category: "injury",      title: "Murphy in a splint, targeting mid-July",                                                     detail: "Sean Murphy had the cast removed and is now in a splint to protect his fractured left middle finger. He stays on the 60-day IL with a return targeted around mid-July while Drake Baldwin and Joey Bart catch.", recency: "ongoing" },
