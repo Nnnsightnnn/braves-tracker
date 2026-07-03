@@ -1,16 +1,15 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated June 26, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated July 3, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI JUN 26: OFF-DAY SHUFFLE, ROTATION RESET. Atlanta was idle Thursday after getting
-// swept in San Diego and opens a three-game set at San Francisco tonight (10:15 PM ET)
-// with the rotation reshuffled: REYNALDO LOPEZ returns to the starting staff Friday on a
-// roughly 60-pitch limit, his first start since late April, as Walt Weiss tries to spark
-// a unit that has scuffled (about a 5.43 ERA in June). TYLER KINLEY was reinstated from
-// the 15-day IL (right elbow inflammation), restoring a trusted middle-relief arm. ROBERT
-// SUAREZ is being watched with a sore right forearm, though the club is optimistic and
-// expects him back in his late-inning role shortly. Atlanta sits 48-31, still atop the NL
-// East by about four and a half games over Philadelphia (44-36). IL watch: Acuna
-// (hamstring) on a July timeline, Weiss cautious on the recurrence; Strider (60-day,
-// elbow) shut down into mid-August; Murphy (60-day, finger) in a splint, mid-July target.
+// FRI JUL 3: CARDINALS TAKE THE SERIES, METS ARRIVE FOR THE HOLIDAY SET. Atlanta split
+// the middle two with St. Louis, a crisp 5-1 win Wednesday behind REYNALDO LOPEZ (W, 4-1)
+// and four perfect bullpen innings, then an 11-5 rout Thursday in which a 5-3 lead
+// vanished under a seven-run Cardinals seventh (Jordan Walker HR, 4 RBI; Nathan Church
+// tying two-run shot off TYLER KINLEY). The Braves are 50-35 and lead the NL East by
+// 2.5 over Philadelphia (49-39), which lost to Pittsburgh Thursday. Tonight GRANT HOLMES
+// (4-4, 3.96) opens a four-game July 4th-weekend set with the last-place Mets at Truist
+// Park opposite Christian Scott (2-0, 3.20). IL watch: Suarez (forearm) likely out until
+// after the All-Star break; Acuna (hamstring) on a July timeline; Strider (60-day, elbow)
+// shut down into mid-August; Murphy (60-day, finger) in a splint, late-July target.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -116,8 +115,8 @@ export const PLAYERS = [
     lineupSpot: 5,
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
-    stats: { avg: .312, obp: .357, slg: .552, ops: .909, hr: 12, rbi: 36, sb: 0, bb: 9, so: 25, games: 51, wOBA: .320, iso: .180 },
-    statNote: "TWO HOMERS, INCLUDING THE WALK-OFF, BEAT THE BREWERS — Albies authored the swing of the series Saturday, homering twice in a 4-3 win over Milwaukee and ending it with a two-run, walk-off shot in the 9th, his 12th of the year. He had already broken up Kyle Harrison's perfect game, no-hitter, and shutout in one swing with a leadoff homer in the 5th. The one blemish was a fielding error that handed the Brewers two unearned runs in the 6th, which he more than answered for. The switch-hitting second baseman is up to 12 HR / 36 RBI with the OPS back above .900.",
+    stats: { avg: .312, obp: .357, slg: .552, ops: .909, hr: 13, rbi: 38, sb: 0, bb: 9, so: 25, games: 53, wOBA: .320, iso: .180 },
+    statNote: "CARRYING THE OFFENSE: Albies homered and drove in two in Wednesday's 5-1 win over St. Louis, his 13th of the year, backing Reynaldo Lopez's five strong innings. He remains the hottest bat in the lineup by a wide margin, up to 13 HR and 38 RBI with the OPS above .900, and his stretch since June 20 (multi-homer walk-off game vs Milwaukee, RBI single Tuesday, homer Wednesday) has kept a slumping offense afloat.",
     form: 9.4,
     status: "active",
     injuryNote: null,
@@ -476,8 +475,8 @@ export const PLAYERS = [
     rotationSpot: 2,
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 32, experience: 10,
-    stats: { era: 3.93, whip: 1.36, ip: 29.2, k: 24, bb: 12, hr: null, w: 3, l: 1, games: 10, starts: 6 },
-    statNote: "STEADY IN HIS RETURN START (ND): López made his first start since late April in Friday's 3-1 win at Oracle Park, allowing only San Francisco's lone run in the 1st across three innings on a roughly 60-pitch limit. Velocity was down and contact was loud, but he gave Atlanta exactly the bridge it needed before the bullpen took over. No decision, but the outing trims the line to about 3.93 ERA / 1.36 WHIP across 10 appearances. He stays in the rotation mix as the club stretches him back out.",
+    stats: { era: 3.63, whip: 1.24, ip: 34.2, k: 29, bb: 13, hr: null, w: 4, l: 1, games: 11, starts: 7 },
+    statNote: "FIVE STRONG, WIN NO. 4: Lopez was excellent in Wednesday's 5-1 win over St. Louis, holding the Cardinals to one run on two hits with five strikeouts across five innings in his second start since rejoining the rotation. The win moves him to 4-1 and trims the line to about 3.63 ERA / 1.24 WHIP. Fully stretched back out, he looks like a real mid-rotation stabilizer behind Sale.",
     form: 6.5,
     status: "active",
     injuryNote: null,
@@ -607,8 +606,8 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 36, experience: 11,
-    stats: { era: 1.10, whip: 0.88, ip: 19.1, k: 22, bb: 1, sv: 16, hold: null, games: 18, w: 0, l: 2 },
-    statNote: "PERFECT NINTH FOR SAVE NO. 16: Iglesias worked a 1-2-3 ninth in Friday's 3-1 win at San Francisco to stay perfect in 16 save chances this season and extend his converted-save streak to 34 in a row dating to 2025, the longest active run in the majors. The ledger is elite again: about 1.10 ERA, 0.88 WHIP, 22 K against a single walk. With Suarez on the IL, the closer's reliability is more important than ever.",
+    stats: { era: 1.05, whip: 0.86, ip: 20.1, k: 23, bb: 1, sv: 17, hold: null, games: 19, w: 0, l: 2 },
+    statNote: "SAVE NO. 17 CAPS A PERFECT-GAME FINISH: Iglesias closed out Wednesday's 5-1 win over St. Louis with a spotless ninth, the last of four perfect bullpen innings in a game the staff ended by retiring 20 Cardinals in a row. He is 17-for-17 in save chances this season and has converted 35 straight dating to 2025, the longest active run in the majors. With Suarez on the IL, his reliability anchors the back end.",
     form: 8.0,
     status: "active",
     injuryNote: null,
@@ -672,8 +671,8 @@ export const PLAYERS = [
     bullpenRole: "lhp",
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 31, experience: 5,
-    stats: { era: 1.04, whip: 0.46, ip: 17.1, k: 19, bb: 2, sv: 0, hold: null, games: 17, w: 4, l: 0 },
-    statNote: "WINNING ARM IN THE OPENER (W, 4-0) — Lee retired five straight to earn the win in Friday's 3-1 victory at San Francisco, the steadiest link in a five-reliever chain behind López. He is quietly THE best arm in the pen: 17 G, about 1.04 ERA, 0.46 WHIP, 19 K against just 2 BB. With Suarez now on the IL, the Lee to Iglesias bridge is even more central to closing games.",
+    stats: { era: 0.98, whip: 0.44, ip: 18.1, k: 20, bb: 2, sv: 0, hold: null, games: 18, w: 4, l: 0 },
+    statNote: "ANOTHER PERFECT FRAME IN THE 5-1 WIN: Lee worked a spotless eighth Wednesday against St. Louis, part of a bullpen relay (Dodd, Fuentes, Lee, Iglesias) that threw four perfect innings behind Reynaldo Lopez. He remains quietly THE best arm in the pen: 18 G, an ERA under 1.00, a WHIP under 0.50, and 20 K against just 2 BB. With Suarez on the IL, the Lee to Iglesias bridge is central to every close game.",
     form: 8.3,
     status: "active",
     injuryNote: null,
@@ -693,8 +692,8 @@ export const PLAYERS = [
     bullpenRole: "middle",
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 35, experience: 7,
-    stats: { era: 2.45, whip: 1.20, ip: 18.1, k: 16, bb: 7, sv: 0, hold: 1, games: 20, w: 4, l: 2 },
-    statNote: "REINSTATED FROM THE 15-DAY IL: Atlanta activated Kinley this week after the right elbow inflammation that cost him about two and a half weeks calmed down, restoring a trusted middle-relief option to a bullpen leaning hard on Lee, Suarez, and Iglesias. Before the IL stint he was a top-tier value on a 1-year, $1.5M deal (2.45 ERA across 20 G, including a bases-loaded escape in the June 7 sweep clincher). The elbow responded to rest as the club hoped.",
+    stats: { era: 3.72, whip: 1.29, ip: 19.1, k: 16, bb: 8, sv: 0, hold: 1, games: 21, w: 4, l: 3 },
+    statNote: "TAGGED IN THE SEVEN-RUN SEVENTH: Kinley took the loss Thursday against St. Louis, surrendering Nathan Church's tying two-run homer as a 5-3 lead collapsed into an 11-5 defeat in the seven-run seventh. It was his roughest outing since returning from the elbow IL stint and bumps the season line to about 3.72 ERA. Still a trusted middle-relief piece on a 1-year, $1.5M deal, but the inning stung in a division-race game.",
     form: 7.2,
     status: "active",
     injuryNote: null,
@@ -781,8 +780,8 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "R", throws: "R",
     nationality: "🇨🇴 Colombia", age: 20, experience: 1,
-    stats: { era: 2.50, whip: 1.06, ip: 18.0, k: 20, bb: 3, sv: 1, hold: null, games: 9, starts: 1, w: 4, l: 0 },
-    statNote: "FIRST CAREER SAVE SEALS THE SWEEP — The 20-year-old closed out Sunday's 3-2 win over Pittsburgh, stranding two runners in a scoreless 9th for the first save of his career after Harris II's pinch-hit bases-clearing double. The season line dips to 2.50 ERA / 1.06 WHIP across 18 IP — Fuentes keeps passing every leverage test Weiss hands him, from the 1.1-IP win at Cincinnati (May 29) to now nailing down a sweep in a save spot.",
+    stats: { era: 2.37, whip: 1.00, ip: 19.0, k: 21, bb: 3, sv: 1, hold: null, games: 10, starts: 1, w: 4, l: 0 },
+    statNote: "PERFECT FRAME IN THE RELAY: The 20-year-old added a spotless inning to Wednesday's four-inning perfect bullpen chain in the 5-1 win over St. Louis, nudging his season line to about 2.37 ERA / 1.00 WHIP across 19 IP. Fuentes keeps passing every leverage test Weiss hands him, from the May 29 win at Cincinnati to the June save vs Pittsburgh to setup work in a division-race game.",
     form: 9.0,
     status: "active",
     injuryNote: null,
@@ -802,8 +801,8 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 28, experience: 3,
-    stats: { era: 1.54, whip: 0.69, ip: 6.0, k: 6, bb: 2, sv: 0, hold: null, games: 5, w: 0, l: 0 },
-    statNote: "PERFECT INNING IN THE FINALE — Dodd worked a spotless 8th Thursday vs Toronto (1 IP, 0 H, 1 K) in the 7-2 loss, trimming his season line to 1.54 ERA / 0.69 WHIP. Since returning from the IL he's been exactly the LH long-man / multi-inning bridge Atlanta wanted alongside Dylan Lee.",
+    stats: { era: 1.29, whip: 0.57, ip: 7.0, k: 7, bb: 2, sv: 0, hold: null, games: 6, w: 0, l: 0 },
+    statNote: "PART OF THE PERFECT RELAY: Dodd opened the four-inning perfect bullpen chain in Wednesday's 5-1 win over St. Louis, another clean frame that trims his line to about 1.29 ERA / 0.57 WHIP. Since returning from the IL he has been exactly the LH long-man / multi-inning bridge Atlanta wanted alongside Dylan Lee.",
     form: 6.5,
     status: "active",
     injuryNote: null,
@@ -1069,7 +1068,7 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 24, experience: 2,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, w: null, l: null, games: null, starts: null },
-    statNote: "RECALLED, BULK RELIEF IN THE OPENER: Atlanta recalled Waldrep when Robert Suarez went on the 15-day IL, and the 24-year-old delivered 2-plus effectively wild innings in Friday's 3-1 win at San Francisco, four strikeouts on just 55 pitches (28 strikes) with little command but enough weak contact to escape. It was his first MLB action since returning from February elbow surgery. He profiles as multi-inning depth and the next starter up if the rotation needs a body.",
+    statNote: "SPOT START IN THE FINALE, LEFT WITH THE LEAD: Waldrep got the ball Thursday against St. Louis and gave up three early runs, headlined by Jordan Walker's three-run homer in the 1st, but Atlanta's five-run first put him back in front and he departed with a 5-3 lead before the bullpen's seven-run seventh unraveled the 11-5 loss. His first MLB start since returning from February elbow surgery; he profiles as multi-inning depth and the next starter up when the rotation needs a body.",
     form: 6.0,
     status: "active",
     injuryNote: null,
@@ -1204,57 +1203,59 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-07-01",
-    weekday: "Wed",
-    time: "7:15 PM ET",
-    opp: "STL",
-    home: true,
-    venue: "Truist Park · Atlanta",
-    atlSP: { id: "lopez", name: "Reynaldo López", record: "3-1", era: 3.93, daysRest: 5, hand: "R" },
-    oppSP: { name: "Michael McGreevy", record: "3-6", era: 3.12, hand: "R" },
-    note: "Middle game of the Cardinals series at Truist Park, with Atlanta trying to avoid dropping the first two at home. Reynaldo López (3-1, 3.93), building back up since his late-June return, faces St. Louis righty Michael McGreevy (3-6, 3.12).",
-  },
-  {
-    date: "2026-07-02",
-    weekday: "Thu",
-    time: "12:20 PM ET",
-    opp: "STL",
-    home: true,
-    venue: "Truist Park · Atlanta",
-    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Cardinals series finale, a day game at Truist Park. Probables to be confirmed.",
-  },
-  {
     date: "2026-07-03",
     weekday: "Fri",
     time: "7:15 PM ET",
     opp: "NYM",
     home: true,
     venue: "Truist Park · Atlanta",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "4-4", era: 3.96, daysRest: 10, hand: "R" },
+    oppSP: { name: "Christian Scott", record: "2-0", era: 3.20, hand: "R" },
+    note: "Atlanta opens a four-game July 4th-weekend set against the last-place Mets at Truist Park. Grant Holmes (4-4, 3.96), well rested after the rotation shuffle, faces Mets righty Christian Scott (2-0, 3.20).",
+  },
+  {
+    date: "2026-07-04",
+    weekday: "Sat",
+    time: "TBD",
+    opp: "NYM",
+    home: true,
+    venue: "Truist Park · Atlanta",
     atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Atlanta opens a July 4th-weekend homestand against the last-place Mets at Truist Park. Probables to be confirmed.",
+    note: "Independence Day game two of the Mets series at Truist Park. Probables to be confirmed.",
+  },
+  {
+    date: "2026-07-05",
+    weekday: "Sun",
+    time: "TBD",
+    opp: "NYM",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "Game three of the four-game Mets set (series wraps Monday). Probables to be confirmed.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-07-01",
+  date: "2026-07-03",
   time: "7:15 PM ET",
-  opp: "STL",
+  opp: "NYM",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Reynaldo López", record: "3-1", era: 3.93 },
-    opp: { pitcher: "Michael McGreevy", record: "3-6", era: 3.12 },
+    atl: { pitcher: "Grant Holmes", record: "4-4", era: 3.96 },
+    opp: { pitcher: "Christian Scott", record: "2-0", era: 3.20 },
   },
-  note: "TRYING TO AVOID AN 0-2 HOLE AT HOME. Atlanta plays the middle game of its Cardinals series tonight at 7:15 PM ET after dropping Tuesday's opener 5-3, a seventh loss in eight games that dropped the Braves to 49-34 and shaved the NL East lead to two and a half over Philadelphia (48-38). REYNALDO LÓPEZ (3-1, 3.47), stretching back out since his late-June return from a shoulder issue, faces St. Louis righty MICHAEL McGREEVY (3-6, 3.12). The offense is the story: it went 4-13 over its last 17, was held to three or fewer runs 11 times in that span, and left the bases loaded in the eighth Tuesday. AUSTIN RILEY sits at .209 with no homer since May 20, HA-SEONG KIM remains buried in a deep slide, and DRAKE BALDWIN is ice cold since his return, all with RONALD ACUNA JR. (hamstring) still out. On the injury front, ROBERT SUAREZ (forearm) is likely out until after the All-Star break, ACUNA is targeting a July return, SPENCER STRIDER (60-day IL, elbow) is shut down into roughly mid-August, and SEAN MURPHY (60-day, finger) is in a splint aiming for late July.",
+  note: "HOLIDAY SET WITH THE LAST-PLACE METS. Atlanta opens a four-game July 4th-weekend series tonight at 7:15 PM ET at Truist Park after dropping two of three to St. Louis, capped by Thursday's 11-5 rout in which a 5-3 lead disappeared under a seven-run Cardinals seventh. GRANT HOLMES (4-4, 3.96) gets the ball opposite Mets righty CHRISTIAN SCOTT (2-0, 3.20). The Braves are 50-35 with the NL East lead at two and a half over Philadelphia (49-39), which lost to Pittsburgh Thursday, and the Mets (36-51) are 15 back, making this weekend a prime chance to bank wins before the All-Star break. Wednesday showed the blueprint: REYNALDO LOPEZ went five strong and the bullpen was perfect for four innings in a 5-1 win, with OZZIE ALBIES homering again. But the lineup is still thin: AUSTIN RILEY sits near .209, HA-SEONG KIM and DRAKE BALDWIN remain cold, and RONALD ACUNA JR. (hamstring) is still out with a July target. ROBERT SUAREZ (forearm) is likely out until after the All-Star break, SPENCER STRIDER (60-day, elbow) is shut down into roughly mid-August, and SEAN MURPHY (60-day, finger) is in a splint aiming for late July.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-07-02", opp: "STL", home: true, atlScore: 5, oppScore: 11, result: "L", note: "SEVEN-RUN SEVENTH SINKS ATLANTA, CARDINALS TAKE THE SERIES 11-5: A promising Thursday unraveled late at Truist Park as St. Louis erupted for seven in the seventh and won the rubber game 11-5. JORDAN WALKER did the heaviest damage with a homer and four RBI, including a three-run shot off spot starter HURSTON WALDREP in the 1st, and NATHAN CHURCH tied it with a two-run homer off TYLER KINLEY (L, 4-3) before JJ WETHERHOLT's single put the Cardinals ahead for good. Atlanta had answered with five in the first, three of them on DOMINIC SMITH's bases-loaded double that caromed off St. Louis starter DUSTIN MAY's right ankle and knocked him from the game, and Waldrep left holding a 5-3 lead. GORDON GRACEFFO (W, 6-1) worked a scoreless sixth, and the Cardinals handed manager Oliver Marmol a win on his 40th birthday. The Braves fell to 50-35 and have dropped eight of eleven at home." },
+  { date: "2026-07-01", opp: "STL", home: true, atlScore: 5, oppScore: 1, result: "W", note: "LOPEZ AND A PERFECT PEN STOP THE SLIDE, BRAVES WIN 5-1: Atlanta played its cleanest game in weeks Wednesday at Truist Park, holding St. Louis to two hits in a 5-1 win. OZZIE ALBIES homered (his 13th) and drove in two to back REYNALDO LOPEZ (W, 4-1), who allowed one run on two hits with five strikeouts over five innings in his second start since rejoining the rotation. The bullpen, already the best in the majors by ERA, was untouchable: DYLAN DODD, DIDIER FUENTES, and DYLAN LEE threw perfect frames ahead of RAISEL IGLESIAS, who worked a spotless ninth for save No. 17 as Braves pitching retired the final 20 Cardinals in order. Cardinals starter MICHAEL McGREEVY (L, 3-7) took the loss despite six respectable innings. The win lifted Atlanta to 50-34 and snapped a stretch of seven losses in eight games." },
   { date: "2026-06-30", opp: "STL", home: true, atlScore: 3, oppScore: 5, result: "L", note: "CHURCH AND VELÁZQUEZ GO DEEP, CARDINALS BEAT FREE-FALLING BRAVES 5-3: Atlanta's homecoming opened with more of the same Tuesday at Truist Park, as St. Louis sent the Braves to a seventh loss in eight games. NATHAN CHURCH punished MARTÍN PÉREZ (L, 6-5) for a three-run homer and NELSON VELÁZQUEZ added a game-tying solo shot on a 3-2 cutter, backing a strong start from MATTHEW LIBERATORE (W), who struck out nine while walking four over five innings. OZZIE ALBIES had an RBI single for Atlanta, which put together its best threat in the eighth, loading the bases with the tying run aboard before coming up empty. The Braves fell to 49-34, closed out a 9-14 June, and watched the NL East lead shrink to two and a half games over Philadelphia." },
   { date: "2026-06-28", opp: "SF", home: false, atlScore: 2, oppScore: 3, result: "L", note: "RAY OUTDUELS SALE, GIANTS TAKE THE FINALE 3-2: San Francisco salvaged the last two of the series Sunday at Oracle Park, beating Atlanta 3-2 behind a gem from ROBBIE RAY, who allowed just four hits and an unearned run over eight innings. CHRIS SALE matched him for six, striking out 10 and walking one, but was charged with two runs (one earned) on eight hits and left without a decision in a matchup of Cy Young winners. Trailing 3-1 in the 9th, MATT OLSON doubled and scored on two groundouts to pull within one, and pinch-hitter DOMINIC SMITH singled before JORGE MATEO stole second, but CALEB KILIAN struck out MIKE YASTRZEMSKI to lock down his sixth save. The Braves drop to 49-33, losers of six of their last seven, and see the NL East lead trimmed to three and a half after Philadelphia won." },
   { date: "2026-06-27", opp: "SF", home: false, atlScore: 0, oppScore: 5, result: "L", note: "WEBB SILENCES ATLANTA, GIANTS ROLL 5-0: Logan Webb carved up the Braves on a one-hitter into the eighth Saturday at Oracle Park, striking out six and retiring the final 16 he faced to drop Atlanta 5-0. RAFAEL DEVERS did the rest, homering twice and driving in four to back the Giants ace, who improved to 5-1 lifetime against the Braves. BRYCE ELDER (L, 5-6) labored through the loss, charged with five runs on five hits over four innings, his second straight rough outing. Atlanta's lone hit, soft contact off the bat early, was all the offense it could muster as the bats went quiet for the second time in three games. The Braves slip to 49-32 but keep a four-and-a-half-game NL East lead after Philadelphia also lost; Grant Holmes tries to salvage the finale Sunday." },
@@ -1262,33 +1263,31 @@ export const RESULTS = [
   { date: "2026-06-24", opp: "SD", home: false, atlScore: 2, oppScore: 5, result: "L", note: "PADRES COMPLETE THE SWEEP, BEAT ATLANTA 5-2 — San Diego finished off a three-game sweep Wednesday night at Petco Park, downing the NL East-leading Braves 5-2. TY FRANCE did the damage, homering to left off MARTIN PEREZ leading off the 3rd (his 9th), adding a sacrifice fly in the 4th, and doubling to lead off the 6th before scoring on Samad Taylor's two-run single. JP SEARS (W, 1-0) was cruising on a four-hitter in his season debut until JOEY BART's two-out, two-run homer in the 6th got Atlanta on the board. PEREZ (L, 6-4) ended his four-start winning streak, charged with three runs on four hits over four innings with four strikeouts and four walks. The Braves managed just five hits, dropped their ninth in 12, and slipped to 48-31, though they still lead the NL East by about five and a half games. Atlanta is off Thursday before opening a series in San Francisco." },
   { date: "2026-06-23", opp: "SD", home: false, atlScore: 6, oppScore: 7, result: "L", note: "MACHADO WALKS IT OFF, PADRES STUN ATLANTA 7-6 IN 10 — San Diego dealt the Braves a gut-punch Tuesday at Petco Park, MANNY MACHADO lining a one-out RBI single off RAISEL IGLESIAS (L, 0-2) in the 10th to score Jackson Merrill and give the Padres their sixth walk-off win of the year. Atlanta had dug out of a 5-0 hole, the Padres pushing across five in the 2nd on RBI singles by Rodolfo Durán, Sung-Mun Song, and Fernando Tatis Jr. plus a two-run single from Samad Taylor. OZZIE ALBIES tied it with an RBI double in the 4th and MAURICIO DUBON put Atlanta ahead 6-5 with a solo homer (#7) in the 5th, but TATIS homered in the 7th to even it and MASON MILLER (W, 2-1) slammed the door with two scoreless innings and three strikeouts. The Braves have now lost nine of their last 12 and the first two in San Diego, slipping to 48-30 while still leading the NL East by about six games." },
   { date: "2026-06-22", opp: "SD", home: false, atlScore: 0, oppScore: 1, result: "L", note: "SHUT OUT AT PETCO, BRAVES FALL 1-0 — San Diego blanked NL East-leading Atlanta 1-0 Monday night to open the series, the only run a leadoff homer by MANNY MACHADO in the 4th, his 14th of the year and 43rd RBI. MICHAEL KING (W, 5-6) was overpowering in his first win since May 18, scattering six singles over seven scoreless innings with five strikeouts and no walks. GRANT HOLMES (L, 4-4) deserved better, giving up just the one run on 91 pitches across about six innings, but he got zero run support. MASON MILLER closed the 9th for his NL-leading 21st save, walking the tightrope with two runners on and two out before striking out MIKE YASTRZEMSKI to end it. Atlanta managed only six hits, all singles, and has now lost eight of 11; the Dodgers passed the Braves for the best record in the majors, though Atlanta (48-29) still leads the NL East." },
-  { date: "2026-06-21", opp: "MIL", home: true, atlScore: 4, oppScore: 9, result: "L", note: "BREWERS AVOID THE SWEEP, BURY ATLANTA 9-4 — Milwaukee salvaged the finale Sunday at Truist Park, scoring eight runs in the second inning on the way to a 9-4 win and snapping the Braves' bid for a sweep. WILLIAM CONTRERAS, the former Brave, did the most damage with a 4-for-5 day that included a three-run homer in the big inning, and SAL FRELICK chipped in a two-run double. BRYCE ELDER (L, 5-5) was tagged for eight runs on 12 hits over six innings, unable to contain the early outburst. Brewers lefty ROBERT GASSER (W, 1-3) earned his first win since May 2024, scattering two runs on four hits over six innings with a career-high seven strikeouts. Atlanta managed four runs but never threatened the lead, slipping to 48-28. The Braves keep the best record in baseball and a comfortable NL East lead, but have now gone 3-7 over their last 10 entering a West Coast trip to San Diego." },
-  { date: "2026-06-20", opp: "MIL", home: true, atlScore: 4, oppScore: 3, result: "W", note: "ALBIES WALKS IT OFF, BRAVES TAKE THE SERIES — Ozzie Albies homered twice, capping it with a two-run, walk-off blast in the 9th to beat Milwaukee 4-3 Saturday at Truist Park and lock up the series. After MATT OLSON singled off AARON ASHBY (L, 10-1) with one out, Albies drove his 12th homer of the year over the right-field wall, denying Ashby his first save and pinning his first loss on an MLB-leading 10 wins. Albies had already broken up KYLE HARRISON's perfect game, no-hitter, and shutout in one swing with a leadoff homer in the 5th; Harrison settled for 6.1 IP, 4 H, 2 R. CHRIS SALE spun 5.2 innings of two-unearned-run ball but went without a decision after Albies' own fielding error opened a two-run Brewers 6th (Andrew Vaughn RBI single). DYLAN LEE (W, 3-0) worked a scoreless 9th as the fourth Atlanta arm. Newly acquired catcher JOEY BART went 0-for-3 in his Braves debut, the franchise's record eighth catcher used in a season. The win lifts Atlanta to 48-27, still the best record in baseball." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 49, l: 34, pct: .590, gb: 0,    streak: "L3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 48, l: 38, pct: .558, gb: 2.5,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 46, l: 40, pct: .535, gb: 4.5,  streak: "W2" },
-  { team: "WSH", name: "Washington Nationals",   w: 44, l: 43, pct: .506, gb: 7.0,  streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 36, l: 50, pct: .419, gb: 14.5, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 50, l: 35, pct: .588, gb: 0,    streak: "L1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 49, l: 39, pct: .557, gb: 2.5,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 46, l: 42, pct: .523, gb: 5.5,  streak: "L2" },
+  { team: "WSH", name: "Washington Nationals",   w: 45, l: 43, pct: .511, gb: 6.5,  streak: "W3" },
+  { team: "NYM", name: "New York Mets",          w: 36, l: 51, pct: .414, gb: 15.0, streak: "L1" },
 ];
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-01T08:45:00-04:00",
+  generatedAt: "2026-07-03T08:45:00-04:00",
   summary:
-    "FREE FALL CONTINUES AS THE CARDINALS TAKE THE OPENER. The Braves (49-34) dropped Tuesday's homestand opener to St. Louis 5-3, a seventh loss in eight games that closed out a 9-14 June and cut the NL East lead to two and a half over Philadelphia (48-38). Nathan Church tagged Martin Perez for a three-run homer and Nelson Velazquez added a solo shot, and Atlanta squandered its best chance by loading the bases in the eighth and coming up empty. The lineup remains the problem: it has gone 4-13 over its last 17 and scored three or fewer runs 11 times in that stretch, with Austin Riley at .209 and homerless since May 20, Ha-Seong Kim mired in a deep slide, and Drake Baldwin ice cold since his return, all without Ronald Acuna Jr. Tonight Reynaldo Lopez (3-1, 3.93) tries to stop the bleeding in the middle game opposite Cardinals righty Michael McGreevy (3-6, 3.12). The health picture stays heavy: Robert Suarez (forearm, MRI clean) is likely out until after the All-Star break, Acuna (hamstring) is targeting a July return, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for late July.",
+    "SPLIT WITH ST. LOUIS, HOLIDAY SET WITH THE METS UP NEXT. The Braves (50-35) took the middle game from the Cardinals 5-1 on Wednesday behind five strong innings from Reynaldo Lopez and four perfect bullpen frames, then gave the series away Thursday in an 11-5 rout: Jordan Walker homered and drove in four, and a 5-3 Atlanta lead vanished under a seven-run seventh capped by Nathan Church's tying two-run shot off Tyler Kinley. The NL East lead holds at two and a half over Philadelphia (49-39), which lost to Pittsburgh Thursday. Tonight Grant Holmes (4-4, 3.96) opens a four-game July 4th-weekend series with the last-place Mets (36-51) at Truist Park opposite Christian Scott (2-0, 3.20), a prime chance to bank wins before the break. The offense remains uneven: Ozzie Albies is carrying it (homer and two RBI Wednesday, 13 HR), while Austin Riley sits near .209 and Ha-Seong Kim and Drake Baldwin stay cold. Health picture: Robert Suarez (forearm) is likely out until after the All-Star break, Ronald Acuna Jr. (hamstring) targets a July return, Spencer Strider (elbow) is shut down into roughly mid-August, and Sean Murphy (finger) is in a splint aiming for late July.",
   keyTopics: [
-    { category: "result", title: "Cardinals take the opener 5-3", detail: "St. Louis handed Atlanta a seventh loss in eight games Tuesday at Truist Park. Nathan Church hit a three-run homer and Nelson Velazquez a game-tying solo shot off Martin Perez, and the Braves left the bases loaded in the eighth.", recency: "yesterday" },
-    { category: "rotation", title: "Lopez faces McGreevy in the middle game", detail: "Reynaldo Lopez (3-1, 3.93), still building back up since his late-June return, gets the ball tonight at 7:15 PM ET opposite Cardinals righty Michael McGreevy (3-6, 3.12) as Atlanta tries to avoid falling behind 0-2 in the series at home.", recency: "today" },
-    { category: "standings", title: "NL East lead shrinks to 2.5 games", detail: "Atlanta sits 49-34 but the division cushion that was 10.5 games on May 22 is now just two and a half over Philadelphia (48-38). Miami has climbed to within four and a half at 46-40.", recency: "today" },
-    { category: "lineup", title: "Offense stuck in a deep funk", detail: "The Braves have gone 4-13 over their last 17 and been held to three or fewer runs 11 times in that span. Manager Walt Weiss says the group is doing the work and has to keep fighting through it.", recency: "today" },
-    { category: "narrative", title: "Braves close out a 9-14 June", detail: "Tuesday's loss capped Atlanta's worst month of the season, a 9-14 June that erased most of a once-comfortable division lead. The homestand against St. Louis and the July 4th-weekend set with the Mets are a chance to reset.", recency: "yesterday" },
-    { category: "lineup", title: "Riley scuffling at .209", detail: "Austin Riley remains at .209 and has not homered since May 20. The third baseman is central to any lineup turnaround, and Atlanta needs his power back to climb out of the funk.", recency: "today" },
-    { category: "lineup", title: "Kim buried in a deep slide", detail: "Ha-Seong Kim is stuck in a lengthy hitless stretch and batting well under the Mendoza line since his activation. The offseason shortstop signing has yet to find any rhythm at the plate.", recency: "today" },
-    { category: "lineup", title: "Baldwin ice cold since return", detail: "Drake Baldwin homered in his first at-bat off the injured list but has been one of the coldest bats in the lineup since, his average sliding well off its early-season peak. His bat was supposed to help carry the group.", recency: "today" },
+    { category: "result", title: "Seven-run seventh sinks Braves 11-5", detail: "St. Louis took the rubber game Thursday at Truist Park. Jordan Walker homered and drove in four, and after Atlanta scored five in the first (Dominic Smith's three-run double), Nathan Church's tying two-run homer off Tyler Kinley keyed a seven-run seventh.", recency: "yesterday" },
+    { category: "result", title: "Lopez and a perfect pen win 5-1", detail: "Wednesday was the cleanest game in weeks: Reynaldo Lopez (W, 4-1) held the Cardinals to one run on two hits over five innings, Ozzie Albies homered, and Dodd, Fuentes, Lee, and Iglesias combined for four perfect innings as the staff retired the final 20 batters.", recency: "this-week" },
+    { category: "rotation", title: "Holmes opens the Mets series tonight", detail: "Grant Holmes (4-4, 3.96) gets the ball at 7:15 PM ET as Atlanta opens a four-game July 4th-weekend set with last-place New York (36-51) at Truist Park, opposite Mets righty Christian Scott (2-0, 3.20).", recency: "today" },
+    { category: "standings", title: "NL East lead holds at 2.5 games", detail: "Atlanta is 50-35 and Philadelphia stayed two and a half back at 49-39 after losing 6-1 to Pittsburgh on Thursday. Miami has slipped to five and a half back after two losses at Coors Field.", recency: "today" },
+    { category: "narrative", title: "Bullpen elite outside one bad inning", detail: "The pen entered Wednesday with the best ERA in the majors and threw four perfect innings, with Raisel Iglesias converting his 17th save in 17 chances (35 straight dating to 2025). Thursday's seven-run seventh against Kinley was the glaring exception.", recency: "yesterday" },
+    { category: "lineup", title: "Albies carrying an uneven offense", detail: "Ozzie Albies homered and drove in two on Wednesday, his 13th homer, extending a stretch in which he has been the lineup's one consistent producer. Thursday's five-run first showed flashes, but the group still went quiet after the early burst.", recency: "today" },
+    { category: "lineup", title: "Riley scuffling near .209", detail: "Austin Riley has not homered since May 20 and remains central to any lineup turnaround. Atlanta needs his power back to take advantage of the soft holiday schedule.", recency: "today" },
+    { category: "lineup", title: "Kim and Baldwin still searching", detail: "Ha-Seong Kim remains buried well under the Mendoza line since his activation, and Drake Baldwin is still ice cold since his IL return despite the 473-foot homer in his first at-bat back.", recency: "today" },
     { category: "injury", title: "Suarez likely out until after All-Star break", detail: "Robert Suarez had a clean MRI on his right forearm, but the latest word is he likely will not rejoin the bullpen until after the All-Star break, leaving the back end leaning on Iglesias and Lee.", recency: "ongoing" },
     { category: "injury", title: "Acuna targeting a July return", detail: "Ronald Acuna Jr. remains out with a left-hamstring strain, and Weiss has said he is still a long way from returning. Atlanta is being cautious because it is the second issue at that same spot, with a July target.", recency: "ongoing" },
     { category: "injury", title: "Strider shut down into mid-August", detail: "Spencer Strider remains on the 60-day injured list with right elbow inflammation and no ligament damage. After being shut down for about four weeks, his earliest realistic return is roughly mid-August.", recency: "ongoing" },
