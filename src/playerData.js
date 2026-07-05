@@ -1310,7 +1310,7 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-05T05:00:00-04:00",
+  generatedAt: "2026-07-05T05:10:00-04:00",
   summary:
     "FIVE HOMERS, FIVE ALL-STARS. The Braves (52-35) crushed the Mets 14-3 on Saturday night behind home runs from Michael Harris II, Eli White, Mauricio Dubon, Mike Yastrzemski, and Austin Riley, with White driving in four and Riley ending a six-week homer drought. Chris Sale (W, 9-6) won on the same day he was named an All-Star for the 10th time, and 22-year-old JR Ritchie closed with three scoreless innings for his first career save. The All-Star announcements were the day's other headline: Drake Baldwin and Ozzie Albies were elected NL starters by the fans, Sale and Raisel Iglesias made the pitching staff, and Matt Olson is a reserve for the July 14 game in Philadelphia. Atlanta leads Philadelphia (50-39) by 3.0 in the NL East. Today Martin Perez (6-5, 3.27) faces Mets rookie Nolan McLean (5-5, 3.78) at 12:30 PM ET on NBC/Peacock with a series win on the line. Health picture: Robert Suarez (forearm) after the All-Star break, Ronald Acuna Jr. (hamstring) on a July timeline, Spencer Strider (elbow) toward mid-August, Sean Murphy (finger) late July.",
   keyTopics: [
