@@ -1332,7 +1332,7 @@ export const NL_EAST_STANDINGS = [
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-06T04:50:00-04:00",
+  generatedAt: "2026-07-06T10:15:00-04:00",
   summary:
     "A GRAND SLAM SHORT. The Braves (52-36) dropped a wild, rain-delayed Sunday game to the Mets 10-9, falling behind 10-3 before a six-run ninth headlined by Drake Baldwin's grand slam died with the tying run at third. The scarier loss may be Martin Perez: Juan Soto's line drive caught him on the left pitching forearm in the 5th, and while X-rays were negative, Walt Weiss says an IL stint is likely and Perez will miss his next start. The weekend roster churn was heavy. Ha-Seong Kim went to the 10-day IL with finger inflammation (Kyle Farmer reinstated), and Carlos Carrasco was recalled Sunday with JR Ritchie optioned a day after his first career save. Tonight Reynaldo Lopez (4-1, 3.31) faces Freddy Peralta (5-7, 4.81) at 7:15 PM ET with three of four on the line. Atlanta leads Philadelphia (50-40) by 3.0 in the NL East after the Phillies lost 5-2 in Kansas City. Health picture: Robert Suarez (forearm) after the All-Star break, Ronald Acuna Jr. (hamstring) on a July timeline, Spencer Strider (elbow) toward mid-August, Sean Murphy (finger) late July.",
   keyTopics: [
