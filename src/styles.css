@@ -795,6 +795,58 @@ body::after {
   text-transform: lowercase;
 }
 
+/* Front-page photograph — the day's cover image atop the Braves Beat.
+   Framed like a wire photo on cream stock: ink-rule border, aged-paper mat,
+   serif cutline with a small-caps credit. The is-fallback variant (player
+   headshot while the custom cover is still in the darkroom) sits in a
+   narrower portrait frame so a square headshot doesn't stretch. */
+.beat-photo {
+  margin: 0 auto 26px;
+  max-width: 560px;
+}
+.beat-photo .frame {
+  border: 1px solid var(--ink);
+  outline: 1px solid var(--rule-soft);
+  outline-offset: 3px;
+  background: var(--paper-aged);
+  padding: 8px;
+}
+.beat-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: cover;
+  filter: sepia(0.22) contrast(1.04) saturate(0.85);
+}
+.beat-photo.is-fallback {
+  max-width: 340px;
+}
+.beat-photo.is-fallback img {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  background: var(--paper-deep);
+}
+.beat-photo figcaption {
+  margin-top: 8px;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  text-align: center;
+}
+.beat-photo figcaption .cutline { font-style: italic; }
+.beat-photo figcaption .credit {
+  font-style: normal;
+  font-variant-caps: all-small-caps;
+  font-feature-settings: "smcp";
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  color: var(--pencil);
+  white-space: nowrap;
+}
+
 .beat {
   column-count: 2;
   column-gap: 32px;

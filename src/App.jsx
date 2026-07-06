@@ -8,6 +8,7 @@ import {
   NEWS_DIGEST,
   NL_EAST_STANDINGS,
   UPCOMING_SCHEDULE,
+  COVER_PHOTO,
 } from "./playerData.js";
 
 // ─── Atlanta & Baseball Tracker — Heritage Scorebook ────────────────────
@@ -662,6 +663,44 @@ function makeDateline(category, idx) {
   return `${place}, ${md}`;
 }
 
+// BeatPhoto — the day's front-page photograph. Prefers the custom cover at
+// COVER_PHOTO.imageUrl (generated downstream and committed to
+// public/assets/cover/); if that 404s, swaps to the fallback player's
+// headshot; if that also fails, renders nothing. Never a broken image.
+function BeatPhoto() {
+  const cover = COVER_PHOTO;
+  const fallback = useMemo(
+    () => PLAYERS.find((p) => p.id === cover?.fallbackPlayerId)?.image || null,
+    [cover]
+  );
+  const initial = cover?.imageUrl || fallback;
+  const [src, setSrc] = useState(initial);
+  useEffect(() => { setSrc(cover?.imageUrl || fallback); }, [cover, fallback]);
+  if (!cover || !src) return null;
+  const usingFallback = src === fallback && fallback !== cover.imageUrl;
+  return (
+    <figure className={`beat-photo${usingFallback ? " is-fallback" : ""}`}>
+      <div className="frame">
+        <img
+          src={src}
+          alt={cover.cutline || "Front-page photograph"}
+          onError={() => {
+            if (src === cover.imageUrl && fallback && fallback !== cover.imageUrl) {
+              setSrc(fallback);
+            } else {
+              setSrc(null);
+            }
+          }}
+        />
+      </div>
+      <figcaption>
+        <span className="cutline">{cover.cutline}</span>
+        {cover.credit ? <span className="credit"> — {cover.credit}</span> : null}
+      </figcaption>
+    </figure>
+  );
+}
+
 function BeatView() {
   const topics = NEWS_DIGEST?.keyTopics || [];
   const [lede, ...rest] = topics;
@@ -672,6 +711,7 @@ function BeatView() {
         <h2>The Braves Beat</h2>
         <div className="sub">— filed daily from the press box · weather permitting —</div>
       </div>
+      <BeatPhoto />
       <div className="beat">
         <article className="lede">
           <div className="dateline">

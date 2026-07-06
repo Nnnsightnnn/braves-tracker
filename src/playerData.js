@@ -1330,6 +1330,21 @@ export const NL_EAST_STANDINGS = [
   { team: "NYM", name: "New York Mets",          w: 37, l: 53, pct: .411, gb: 16.0, streak: "W1" },
 ];
 
+// ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
+// imageUrl points at the custom cover the antigravity image task saves under
+// public/assets/cover/. Until that file lands (or if it 404s), the BeatPhoto
+// component falls back to the fallbackPlayerId headshot, so the page never
+// shows a broken image. The daily update refreshes this block whenever it
+// queues a new image request in ~/Vault/Notes/image-requests.md.
+export const COVER_PHOTO = {
+  date: "2026-07-06",
+  imageUrl: "/braves-tracker/assets/cover/2026-07-06-baldwin-grand-slam.jpg",
+  fallbackPlayerId: "baldwin",
+  cutline:
+    "One violent swing drags a dead game back to life: Drake Baldwin's 383-foot grand slam, his 15th home run, caps a six-run ninth that fell a run short in Sunday's 10-9 loss to the Mets at Truist Park.",
+  credit: "THE TRACKER PHOTO DESK",
+};
+
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
   generatedAt: "2026-07-06T10:15:00-04:00",
