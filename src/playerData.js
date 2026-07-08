@@ -1,16 +1,17 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated July 5, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated July 8, 2026) ─────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SUN JUL 5: FIVE HOMERS AND FIVE ALL-STARS. Atlanta blew out New York 14-3 Saturday
-// night: MICHAEL HARRIS II (3 hits, HR No. 15), ELI WHITE (solo HR plus a 3-run double,
-// 4 RBI), MAURICIO DUBON, MIKE YASTRZEMSKI, and AUSTIN RILEY all went deep. CHRIS SALE
-// (W, 9-6), named an All-Star for the 10th time just before the game, allowed 3 runs
-// over 4.2 innings; rookie JR RITCHIE threw 3 scoreless for his first career save.
-// All-Star haul: DRAKE BALDWIN and OZZIE ALBIES elected NL starters, SALE and RAISEL
-// IGLESIAS on the pitching staff, MATT OLSON a reserve (ASG Jul 14, Citizens Bank Park).
-// At 52-35 the Braves lead Philadelphia (50-39) by 3.0. Today: MARTIN PEREZ (6-5, 3.27)
-// vs Mets righty NOLAN McLEAN (5-5, 3.78) at 12:30 PM ET on NBC/Peacock.
-// IL watch: Suarez (forearm) after the break; Acuna (hamstring) July; Strider (60-day,
-// elbow) mid-August; Murphy (60-day, finger) in a splint, late-July target.
+// WED JUL 8: O'HEARN BURIES ATLANTA. Pittsburgh mauled the Braves 12-4 Tuesday at PNC
+// Park as RYAN O'HEARN homered three times and drove in a franchise-record 10 runs,
+// starting with a first-inning grand slam. HURSTON WALDREP, in Perez's rotation turn,
+// was shelled for 7 runs on 6 hits (2 HR to O'Hearn) with 5 walks over 3.1 innings, and
+// PAUL SKENES (7-8) snapped a nine-start winless run. It was Atlanta's third straight
+// loss. The roster churned again: OWEN MURPHY was optioned to Triple-A a day after his
+// debut, LHP CONNOR THOMAS was selected, JAMES KARINCHAK recalled, and TYLER KINLEY went
+// on the paternity list. At 52-38 the Braves lead Philadelphia (51-41) by 2.0, with Miami
+// (50-42) now 3 back. Tonight: GRANT HOLMES (5-4, 3.63) vs Pirates righty JARED JONES
+// (1-1, 5.28) at 6:40 PM ET. IL watch: Acuna (hamstring) could start a rehab assignment
+// next week; Suarez (forearm) after the break; Strider (elbow) mid-August; S. Murphy
+// (finger) late July.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -32,10 +33,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
     stats: { avg: .251, obp: .373, slg: .421, ops: .793, hr: 6, rbi: 19, sb: 15, bb: 22, so: 34, games: 48 },
-    statNote: "TIMELINE GETS LONGER: Walt Weiss said Thursday that Acuña is a long way from a return, and that Atlanta will be more cautious than it was with May's strain because this is a recurrence in the same left hamstring. That pushes the realistic target into July rather than the late-June window first floated. Acuña's line freezes at .251/.373/.421 with 6 HR and 15 SB through 48 games.",
+    statNote: "A REHAB DATE FINALLY IN VIEW: Acuña took a full pregame workout at Truist Park on Tuesday, and Walt Weiss said Wednesday that Acuña could begin a minor-league rehab assignment as soon as next week, likely at Double-A Columbus or Triple-A Gwinnett. The best case is three or four rehab games and a return to the big-league lineup out of the All-Star break, though Weiss still cautioned that Acuña is a long way from full go. The line stays frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games.",
     form: 5.0,
     status: "il-10",
-    injuryNote: "GRADE 1 LEFT HAMSTRING STRAIN, on the 10-day IL since Wed Jun 10 (same hamstring as May's strain, 13 games missed). Manager Walt Weiss said Thursday that Acuña is a long way from returning and that the club is being more cautious this time given the recurrence, pointing to several more weeks rather than a late-June return. No firm date set.",
+    injuryNote: "GRADE 1 LEFT HAMSTRING STRAIN (recurrence in the same left hamstring as May's strain), on the 10-day IL since Wed Jun 10. Newest update: Weiss said Wednesday July 8 that a rehab assignment could begin as soon as next week at Columbus or Gwinnett, with a best-case return out of the All-Star break after three or four rehab games. Still no activation date set.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
     assignment: "mlb",
     contract: { years: 8, total: 100000000, guaranteed: 100000000, apy: 12500000, throughYear: 2028 },
@@ -628,12 +629,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
     stats: { era: 9.00, whip: 1.00, ip: 1.0, k: 1, bb: 0, sv: null, hold: null, games: 1, w: 0, l: 1 },
-    statNote: "A DEBUT WITH TEETH MARKS: The 2022 first-rounder had his contract selected Monday and debuted that night in the 10th inning of a tie game. He struck out one, but hit Jared Young with a pitch and gave up Luis Torrens' two-out, two-run double, taking the 7-6 loss. The stuff that earned the call is real: 4.44 ERA, 1.26 WHIP, and 92 strikeouts over 81 innings across Double-A Columbus and Gwinnett this year, two years removed from Tommy John. He and Ritchie will share the long-relief lane through the break.",
+    statNote: "UP FOR A DAY, THEN BACK TO GWINNETT: The 2022 first-rounder's cameo was brief. His contract was selected Monday, he took the 7-6 loss in his debut that night (one inning, a strikeout, a hit batter, and Luis Torrens' two-run double), and Atlanta optioned him back to Triple-A Tuesday to open a roster spot for LHP Connor Thomas. The stuff that earned the call is still real: 4.44 ERA, 1.26 WHIP, and 92 strikeouts over 81 innings across Double-A Columbus and Gwinnett this year, two years removed from Tommy John. He stays first in line for the next arm the staff needs.",
     form: 5.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080750.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut Jul 6, 2026 · 2022 R1 pick" },
@@ -1133,9 +1134,9 @@ export const PLAYERS = [
     rotationSpot: null,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 24, experience: 2,
-    stats: { era: 3.68, whip: null, ip: null, k: null, bb: null, w: 0, l: 0, games: null, starts: 1 },
-    statNote: "TONIGHT: WALDREP VS. SKENES: With Pérez on the IL, Waldrep takes the rotation turn Tuesday at PNC Park opposite Paul Skenes (6-8, 3.62), a brutal draw for his second start back from February elbow surgery. Last Thursday against St. Louis he wobbled early (Jordan Walker's three-run homer) but left holding a 5-3 lead; he carries a 3.68 ERA into the matchup.",
-    form: 6.0,
+    stats: { era: null, whip: null, ip: null, k: 2, bb: 5, w: 0, l: 1, games: null, starts: 2 },
+    statNote: "SHELLED IN PITTSBURGH: Waldrep drew Paul Skenes on Tuesday and it went badly, fast. He gave up 7 runs on 6 hits over 3.1 innings, including two of Ryan O'Hearn's three home runs (a first-inning grand slam and a third-inning solo shot) and walked five, taking the loss in the 12-4 defeat. It was a rough second start back from February elbow surgery filling Pérez's rotation turn, and it leaves his next assignment uncertain with the break approaching.",
+    form: 3.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4740117.png",
@@ -1269,26 +1270,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-07-07",
-    weekday: "Tue",
-    time: "6:40 PM ET",
-    opp: "PIT",
-    home: false,
-    venue: "PNC Park · Pittsburgh",
-    atlSP: { id: "waldrep", name: "Hurston Waldrep", record: "0-0", era: 3.68, daysRest: 4, hand: "R" },
-    oppSP: { name: "Paul Skenes", record: "6-8", era: 3.62, hand: "R" },
-    note: "Opener in Pittsburgh, and it's a heavyweight draw: Hurston Waldrep (0-0, 3.68), taking Pérez's rotation turn, faces Paul Skenes (6-8, 3.62) at PNC Park.",
-  },
-  {
     date: "2026-07-08",
     weekday: "Wed",
     time: "6:40 PM ET",
     opp: "PIT",
     home: false,
     venue: "PNC Park · Pittsburgh",
-    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Middle game at PNC Park. Probables not yet announced.",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "5-4", era: 3.63, daysRest: 5, hand: "R" },
+    oppSP: { name: "Jared Jones", record: "1-1", era: 5.28, hand: "R" },
+    note: "Middle game at PNC Park, and a chance to stop the bleeding: Grant Holmes (5-4, 3.63) faces Pirates righty Jared Jones (1-1, 5.28) with Atlanta on a three-game skid.",
   },
   {
     date: "2026-07-09",
@@ -1316,21 +1306,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-07-07",
+  date: "2026-07-08",
   time: "6:40 PM ET",
   opp: "PIT",
   home: false,
   venue: "PNC Park · Pittsburgh, PA",
   tv: "BravesVision",
   probables: {
-    atl: { pitcher: "Hurston Waldrep", record: "0-0", era: 3.68 },
-    opp: { pitcher: "Paul Skenes", record: "6-8", era: 3.62 },
+    atl: { pitcher: "Grant Holmes", record: "5-4", era: 3.63 },
+    opp: { pitcher: "Jared Jones", record: "1-1", era: 5.28 },
   },
-  note: "WALDREP DRAWS SKENES IN PITTSBURGH. HURSTON WALDREP (0-0, 3.68) takes the injured MARTIN PEREZ's rotation turn at 6:40 PM ET against PAUL SKENES (6-8, 3.62), the toughest possible assignment for his second start back from elbow surgery. Atlanta arrives off Monday's 7-6, ten-inning walk-off loss to the Mets, in which MATT OLSON homered twice (Nos. 23 and 24, including a game-tying two-run shot in the 9th) before LUIS TORRENS' two-run double off debutant OWEN MURPHY decided it. The roster churned again Monday: Perez to the 15-day IL (forearm contusion), CARLOS CARRASCO designated for assignment, JR RITCHIE recalled, and top-ten prospect Owen Murphy's contract selected. At 52-37, Atlanta leads Philadelphia (50-41) by 3.0 after the Phillies were blown out 15-1 in Kansas City. IL watch: ROBERT SUAREZ (forearm) after the break, RONALD ACUNA JR. (hamstring) on a July timeline, SPENCER STRIDER (60-day, elbow) toward mid-August, SEAN MURPHY (60-day, finger) late July.",
+  note: "HOLMES TRIES TO STOP THE SLIDE. GRANT HOLMES (5-4, 3.63) starts the middle game at PNC Park at 6:40 PM ET against Pirates righty JARED JONES (1-1, 5.28), who is working back into a rotation role. Atlanta needs it: the Braves have dropped three in a row after Tuesday's 12-4 rout, in which RYAN O'HEARN homered three times and set a Pittsburgh franchise record with 10 RBIs while HURSTON WALDREP was chased in the 4th. The roster churned once more, with OWEN MURPHY optioned to Triple-A a day after his debut and LHP CONNOR THOMAS selected in his place. At 52-38, Atlanta still leads Philadelphia (51-41) by 2.0, though Miami (50-42) has crept within 3. IL watch: RONALD ACUNA JR. (hamstring) could begin a rehab assignment as soon as next week, ROBERT SUAREZ (forearm) after the break, SPENCER STRIDER (60-day, elbow) toward mid-August, SEAN MURPHY (60-day, finger) late July.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-07-07", opp: "PIT", home: false, atlScore: 4, oppScore: 12, result: "L", note: "O'HEARN'S 10-RBI NIGHT BURIES ATLANTA 12-4: The Pittsburgh series opener turned into a nightmare at PNC Park Tuesday, as RYAN O'HEARN homered three times and set a Pirates franchise record with 10 RBIs. He connected for a grand slam in the 1st, a solo shot in the 3rd, and a three-run blast later, doing most of the damage against HURSTON WALDREP, who was making a spot start in MARTIN PEREZ's rotation turn and was chased in the 4th after 7 runs on 6 hits with 5 walks. PAUL SKENES (W, 7-8) needed just this kind of run support, snapping a personal nine-start winless streak dating to May 12. Atlanta's four runs were an afterthought, and the loss was the club's third in a row heading into a must-steady middle game. The Braves fell to 52-38." },
   { date: "2026-07-06", opp: "NYM", home: true, atlScore: 6, oppScore: 7, result: "L", note: "TORRENS SPOILS THE DEBUT, METS TAKE THE FINALE 7-6 IN TEN: The four-game set ended in a split Monday night at Truist Park, and it stung. MATT OLSON did his part twice over, homering in regulation and then tying the game with a two-run shot in the 9th, his 23rd and 24th of the season to extend his MLB lead. In the 10th, Atlanta handed the ball to OWEN MURPHY, the 2022 first-rounder whose contract was selected hours earlier, and his MLB debut turned cruel: with two outs, after he hit Jared Young with a pitch, LUIS TORRENS lined a two-run double to left that scored ghost runner Bo Bichette and Young. BROOKS RALEY (W, 3-3) and LUKE WEAVER (first save) closed it out, and Murphy (L, 0-1) wore the decision despite striking out one in his lone inning. REYNALDO LOPEZ took a no-decision in the start. Atlanta fell to 52-37 and headed to Pittsburgh having lost two straight." },
   { date: "2026-07-05", opp: "NYM", home: true, atlScore: 9, oppScore: 10, result: "L", note: "GRAND SLAM RALLY FALLS ONE RUN SHORT, METS ESCAPE 10-9: A wild, rain-delayed Sunday at Truist Park ended with the tying run stranded at third. Atlanta jumped ahead 3-1 in the 1st on MICHAEL HARRIS II's two-run single and MAURICIO DUBON's RBI knock, but the Mets hung four on MARTIN PEREZ (L, 6-6) in the 2nd, capped by A.J. Ewing's homer and JUAN SOTO's two-run single. Perez's day got worse in the 5th when Soto's leadoff liner caught him on the left forearm; he threw Soto out, then left the game, with X-rays negative but an IL stint likely. New York piled on five in the 9th against the freshly recalled CARLOS CARRASCO (Tyrone Taylor homer, Bo Bichette two-run double) for a 10-3 lead, and then the bottom of the 9th got absurd: a run on a Brazoban pickoff error, DRAKE BALDWIN's 383-foot grand slam (No. 15), and Harris II's infield RBI single made it 10-9 before DEVIN WILLIAMS struck out DOMINIC SMITH with runners at second and third for his 13th save. NOLAN McLEAN (W, 6-5) settled after the rocky start; the delay lasted 1:47. Atlanta fell to 52-36 with the four-game split on the line Monday." },
   { date: "2026-07-04", opp: "NYM", home: true, atlScore: 14, oppScore: 3, result: "W", note: "FIVE HOMERS, FOURTEEN RUNS, AND A ROOKIE'S FIRST SAVE: Atlanta buried the Mets 14-3 Saturday night at Truist Park in front of 40,168. ELI WHITE opened the scoring with a solo homer into the Mets bullpen in the 2nd and broke it open with a two-out, three-run double in the 3rd that dropped when Francisco Lindor and Tyrone Taylor collided, part of a four-RBI night. MICHAEL HARRIS II had three hits including homer No. 15, and MAURICIO DUBON, MIKE YASTRZEMSKI, and AUSTIN RILEY (his first since May 20, three RBI) also went deep. CHRIS SALE (W, 9-6), an All-Star for the 10th time hours earlier, allowed three runs on seven hits over 4.2 innings; Tyrone Taylor's 4th-inning homer ended Sale's MLB-best 46-inning homerless streak and Mark Vientos added a two-run shot. SEAN MANAEA (L, 1-4) gave up six runs in five innings. Rookie JR RITCHIE closed with three scoreless frames for his first career save. Atlanta improved to 52-35; the Mets, losers of 12 of 14, fell to 36-53, seventeen games under .500." },
@@ -1340,16 +1331,15 @@ export const RESULTS = [
   { date: "2026-06-30", opp: "STL", home: true, atlScore: 3, oppScore: 5, result: "L", note: "CHURCH AND VELÁZQUEZ GO DEEP, CARDINALS BEAT FREE-FALLING BRAVES 5-3: Atlanta's homecoming opened with more of the same Tuesday at Truist Park, as St. Louis sent the Braves to a seventh loss in eight games. NATHAN CHURCH punished MARTÍN PÉREZ (L, 6-5) for a three-run homer and NELSON VELÁZQUEZ added a game-tying solo shot on a 3-2 cutter, backing a strong start from MATTHEW LIBERATORE (W), who struck out nine while walking four over five innings. OZZIE ALBIES had an RBI single for Atlanta, which put together its best threat in the eighth, loading the bases with the tying run aboard before coming up empty. The Braves fell to 49-34, closed out a 9-14 June, and watched the NL East lead shrink to two and a half games over Philadelphia." },
   { date: "2026-06-28", opp: "SF", home: false, atlScore: 2, oppScore: 3, result: "L", note: "RAY OUTDUELS SALE, GIANTS TAKE THE FINALE 3-2: San Francisco salvaged the last two of the series Sunday at Oracle Park, beating Atlanta 3-2 behind a gem from ROBBIE RAY, who allowed just four hits and an unearned run over eight innings. CHRIS SALE matched him for six, striking out 10 and walking one, but was charged with two runs (one earned) on eight hits and left without a decision in a matchup of Cy Young winners. Trailing 3-1 in the 9th, MATT OLSON doubled and scored on two groundouts to pull within one, and pinch-hitter DOMINIC SMITH singled before JORGE MATEO stole second, but CALEB KILIAN struck out MIKE YASTRZEMSKI to lock down his sixth save. The Braves drop to 49-33, losers of six of their last seven, and see the NL East lead trimmed to three and a half after Philadelphia won." },
   { date: "2026-06-27", opp: "SF", home: false, atlScore: 0, oppScore: 5, result: "L", note: "WEBB SILENCES ATLANTA, GIANTS ROLL 5-0: Logan Webb carved up the Braves on a one-hitter into the eighth Saturday at Oracle Park, striking out six and retiring the final 16 he faced to drop Atlanta 5-0. RAFAEL DEVERS did the rest, homering twice and driving in four to back the Giants ace, who improved to 5-1 lifetime against the Braves. BRYCE ELDER (L, 5-6) labored through the loss, charged with five runs on five hits over four innings, his second straight rough outing. Atlanta's lone hit, soft contact off the bat early, was all the offense it could muster as the bats went quiet for the second time in three games. The Braves slip to 49-32 but keep a four-and-a-half-game NL East lead after Philadelphia also lost; Grant Holmes tries to salvage the finale Sunday." },
-  { date: "2026-06-26", opp: "SF", home: false, atlScore: 3, oppScore: 1, result: "W", note: "BULLPEN POTPOURRI CLAMPS DOWN, BRAVES OPEN IN SAN FRANCISCO WITH A 3-1 WIN — Reynaldo López and five relievers combined on a seven-hitter Friday at Oracle Park as Atlanta snapped its four-game skid. LOPEZ, back in the rotation for the first time since late April on a roughly 60-pitch limit, gave up just San Francisco's lone run in the 1st across three innings despite soft velocity and hard contact. OZZIE ALBIES drove in two and MAURICIO DUBON went 2-for-2 with two runs against his former team to provide the offense; MATT OLSON had two hits including his 20th double, Atlanta's only extra-base hit. DYLAN DODD, recall HURSTON WALDREP (2-plus effectively wild innings, 4 K), and DYLAN LEE (W, 4-0) bridged it, and RAISEL IGLESIAS worked a 1-2-3 ninth for his 16th save, staying perfect in 16 chances and pushing his streak to 34 straight converted dating to 2025, the longest active run in the majors. The Braves improve to 49-31 and keep a four-and-a-half-game NL East lead." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 52, l: 37, pct: .584, gb: 0,    streak: "L2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 50, l: 41, pct: .549, gb: 3.0,  streak: "L2" },
-  { team: "MIA", name: "Miami Marlins",          w: 49, l: 42, pct: .538, gb: 4.0,  streak: "W3" },
-  { team: "WSH", name: "Washington Nationals",   w: 47, l: 45, pct: .511, gb: 6.5,  streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 38, l: 53, pct: .418, gb: 15.0, streak: "W2" },
+  { team: "ATL", name: "Atlanta Braves",         w: 52, l: 38, pct: .578, gb: 0,    streak: "L3" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 51, l: 41, pct: .554, gb: 2.0,  streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 50, l: 42, pct: .543, gb: 3.0,  streak: "W4" },
+  { team: "WSH", name: "Washington Nationals",   w: 47, l: 45, pct: .511, gb: 6.0,  streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 38, l: 53, pct: .418, gb: 14.5, streak: "W2" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1369,26 +1359,25 @@ export const COVER_PHOTO = {
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-07T04:46:00-04:00",
+  generatedAt: "2026-07-08T09:35:00-04:00",
   summary:
-    "A CRUEL WELCOME. The Braves (52-37) lost the Mets finale 7-6 in ten innings Monday night, wasting a two-homer game from Matt Olson (Nos. 23 and 24, including a game-tying two-run shot in the 9th) when Luis Torrens lined a two-out, two-run double off Owen Murphy, the 22-year-old 2022 first-rounder pitching in his MLB debut hours after his contract was selected. The series ends in a split, and the roster kept churning: Martin Perez officially hit the 15-day IL with a left forearm contusion, Carlos Carrasco was designated for assignment, and JR Ritchie was recalled a day after being optioned. Tonight brings no mercy: Hurston Waldrep (0-0, 3.68) takes Perez's turn against Paul Skenes (6-8, 3.62) in Pittsburgh at 6:40 PM ET. The cushion held anyway. Philadelphia was demolished 15-1 in Kansas City, so Atlanta leads by 3.0 with the surging Marlins (49-42, winners of three straight) now 4 back. Health picture: Robert Suarez (forearm) after the All-Star break, Ronald Acuna Jr. (hamstring) on a July timeline, Spencer Strider (elbow) toward mid-August, Sean Murphy (finger) late July.",
+    "SKID HITS THREE. The Braves (52-38) opened in Pittsburgh with a 12-4 wipeout Tuesday, and it was one man's night: Ryan O'Hearn homered three times and drove in a Pirates franchise-record 10 runs, starting with a first-inning grand slam. Hurston Waldrep, spot-starting for the injured Martin Perez, was chased in the 4th after 7 runs on 6 hits and 5 walks, and Paul Skenes snapped a nine-start winless streak. It was Atlanta's third straight loss and its worst margin in weeks. The roster churned yet again: Owen Murphy was optioned to Triple-A a day after his debut, lefty Connor Thomas was selected, James Karinchak was recalled, and Tyler Kinley landed on the paternity list. The one bright note came off the field, as Walt Weiss said Ronald Acuna Jr. could begin a rehab assignment as soon as next week, with a best-case return out of the All-Star break. Atlanta still leads Philadelphia (51-41) by 2.0, but Miami (50-42, four straight) has closed within 3. Tonight, Grant Holmes (5-4, 3.63) tries to stop the slide against Jared Jones (1-1, 5.28) at 6:40 PM ET.",
   keyTopics: [
-    { category: "result", title: "Mets walk it off 7-6 in ten, series splits", detail: "Matt Olson tied it with a two-run homer in the 9th, his second of the night and 24th of the season, but Luis Torrens' two-out, two-run double in the 10th off debutant Owen Murphy decided it. Brooks Raley (3-3) won it and Luke Weaver earned his first save; Reynaldo Lopez took a no-decision.", recency: "yesterday" },
-    { category: "transaction", title: "Owen Murphy's contract selected; debut turns cruel", detail: "The 2022 first-rounder and top-ten Braves prospect was called up Monday and pitched the 10th that night: one inning, a strikeout, a hit batter, and Torrens' double, taking the loss. He posted a 4.44 ERA with 92 strikeouts over 81 innings across Columbus and Gwinnett this year and will work long relief alongside Ritchie through the break.", recency: "yesterday" },
-    { category: "injury", title: "Perez officially placed on the 15-day IL", detail: "The left forearm contusion from Juan Soto's July 5 line drive sends Perez (6-6, 3.54) to the shelf. X-rays were negative, so the club expects a bruise-length absence rather than a lost summer, but he misses at least two turns and the earliest return is after the break.", recency: "yesterday" },
-    { category: "transaction", title: "Carrasco DFA'd, Ritchie recalled in the shuffle", detail: "One day after his five-run recall outing, the 39-year-old Carlos Carrasco was designated for assignment to open the 40-man spot for Murphy. JR Ritchie came back up a day after being optioned; Mark Bowman reports he and Murphy will pitch as long men or behind openers through the final week of the half.", recency: "yesterday" },
-    { category: "rotation", title: "Tonight: Waldrep vs. Skenes in Pittsburgh", detail: "Hurston Waldrep (0-0, 3.68) takes the injured Perez's rotation turn at 6:40 PM ET at PNC Park, drawing Paul Skenes (6-8, 3.62) in his second start back from February elbow surgery. It opens a three-game set with a 12:35 PM getaway matinee Thursday.", recency: "today" },
-    { category: "standings", title: "Lead stays 3.0 as the Phillies get flattened 15-1", detail: "Kansas City scored in every inning and tagged Cristopher Sanchez for a career-worst nine earned runs, so Philadelphia (50-41) lost ground it could have gained. Watch Miami: the Marlins (49-42) have won three straight and seven of ten to close within 4. Washington (47-45) is 6.5 back; the Mets (38-53) are 15 out.", recency: "today" },
-    { category: "narrative", title: "Olson is carrying the offense into the break", detail: "Two more homers Monday give Olson an MLB-leading 24 with 57 RBI, and July has been his month: he has homered in three of the last four games. With Acuna still out, he and Baldwin remain the spine of the lineup.", recency: "yesterday" },
+    { category: "result", title: "O'Hearn's 10 RBIs bury Atlanta 12-4", detail: "Ryan O'Hearn homered three times and set a Pirates franchise record with 10 RBIs, opening with a first-inning grand slam. It was the Braves' third straight loss and dropped them to 52-38 to start the Pittsburgh series.", recency: "yesterday" },
+    { category: "rotation", title: "Waldrep shelled in Perez's rotation turn", detail: "Filling in for the injured Martin Perez, Hurston Waldrep gave up 7 runs on 6 hits and 5 walks over 3.1 innings, serving up two of O'Hearn's three homers before being lifted in the 4th. Paul Skenes took advantage to snap a personal nine-start winless streak.", recency: "yesterday" },
+    { category: "transaction", title: "Owen Murphy optioned a day after his debut", detail: "The 2022 first-rounder's stay lasted one game. Atlanta sent Murphy back to Triple-A on Tuesday and selected lefty Connor Thomas, who owns a 1.54 ERA with 29 strikeouts over 35 innings at Gwinnett. James Karinchak was also recalled and Tyler Kinley went on the paternity list.", recency: "yesterday" },
+    { category: "injury", title: "Acuna could start a rehab assignment next week", detail: "Ronald Acuna Jr. took a full pregame workout Tuesday, and Walt Weiss said Wednesday that a minor-league rehab assignment could begin as soon as next week at Columbus or Gwinnett. Best case is three or four rehab games and a return to the lineup out of the All-Star break.", recency: "today" },
+    { category: "rotation", title: "Tonight: Holmes vs. Jared Jones in Pittsburgh", detail: "Grant Holmes (5-4, 3.63) starts the middle game at PNC Park at 6:40 PM ET against Pirates righty Jared Jones (1-1, 5.28), with Atlanta trying to end a three-game skid before a Thursday matinee closes the set.", recency: "today" },
+    { category: "standings", title: "Lead trimmed to 2.0 as Miami closes in", detail: "Philadelphia (51-41) beat the Reds behind Zack Wheeler's 14 strikeouts to pull within 2.0, and Miami (50-42) walked off the Mariners for a fourth straight win to sit 3 back. Washington (47-45) is 6.0 out and the Mets (38-53) trail by 14.5.", recency: "today" },
+    { category: "injury", title: "Perez on the 15-day IL with a forearm contusion", detail: "Martin Perez (6-6, 3.54) is shelved by the left forearm contusion he suffered when Juan Soto lined a ball off his arm July 5. X-rays were negative, so the club expects a short absence, but he misses at least two turns and the earliest return is after the break.", recency: "this-week" },
+    { category: "narrative", title: "Olson is still the engine of the offense", detail: "Matt Olson leads the majors with 24 home runs and 57 RBIs after a two-homer Monday, and with Acuna out he and Drake Baldwin remain the spine of the lineup heading into the break.", recency: "this-week" },
     { category: "milestone", title: "Five Braves headed to the All-Star Game", detail: "Drake Baldwin and Ozzie Albies were elected NL starters, Chris Sale (10th selection) and Raisel Iglesias made the pitching staff, and Matt Olson is a reserve. The game is July 14 at Citizens Bank Park in Philadelphia.", recency: "this-week" },
-    { category: "injury", title: "Kim on the 10-day IL with finger inflammation", detail: "Ha-Seong Kim remains out with right middle finger inflammation, the same finger surgically repaired in January, with Kyle Farmer reinstated to cover shortstop. The IL stint pauses a 5-for-73 (.068) half at the plate.", recency: "this-week" },
-    { category: "injury", title: "Acuna remains on a July timeline", detail: "Ronald Acuna Jr. is still out with the recurrent left-hamstring strain and Walt Weiss continues to preach caution, saying recently that Acuna is a long way from returning. The realistic window remains later in July.", recency: "ongoing" },
-    { category: "injury", title: "Strider tracking toward mid-August", detail: "Spencer Strider stays on the 60-day IL with right elbow inflammation and no ligament damage. The four-week shutdown puts his earliest realistic return around August 17.", recency: "ongoing" },
-    { category: "injury", title: "Murphy in a splint, targeting late July", detail: "Sean Murphy remains on the 60-day IL with the fractured left middle finger, now out of the cast and into a splint. The return target stays around late July while Baldwin and Bart handle the catching.", recency: "ongoing" },
-    { category: "injury", title: "Suarez still slated for after the break", detail: "Robert Suarez (right forearm inflammation) had a clean MRI but is not expected to rejoin the bullpen until after the All-Star break. Iglesias and Lee continue to carry the late innings.", recency: "ongoing" },
-    { category: "narrative", title: "Caminiti dominates in High-A Rome", detail: "Cam Caminiti, the No. 1 Braves prospect per MLB Pipeline, threw six shutout innings Sunday in the Emperors' 2-0 win over Jersey Shore, another data point in a system suddenly feeding the big-league staff (Ritchie, Fuentes, now Owen Murphy).", recency: "this-week" },
+    { category: "injury", title: "Kim on the 10-day IL with finger inflammation", detail: "Ha-Seong Kim remains out with right middle finger inflammation, the same finger surgically repaired in January, and is eligible to return July 11. The stint pauses a 5-for-73 (.068) half; Kyle Farmer is back to cover the infield.", recency: "this-week" },
+    { category: "injury", title: "Strider tracking toward mid-August", detail: "Spencer Strider stays on the 60-day IL with right elbow inflammation and no ligament damage. The four-week shutdown puts his earliest realistic return around mid-August.", recency: "ongoing" },
+    { category: "injury", title: "Sean Murphy targeting late July", detail: "Sean Murphy remains on the 60-day IL with the fractured left middle finger, now out of the cast and into a splint. The return target stays around late July while Baldwin handles the bulk of the catching.", recency: "ongoing" },
+    { category: "injury", title: "Suarez still slated for after the break", detail: "Robert Suarez (right forearm inflammation) had a clean MRI but is not expected to rejoin the bullpen until after the All-Star break. Iglesias and Dylan Lee continue to carry the late innings.", recency: "ongoing" },
   ],
   sources: [
-    "AP", "MLB.com", "ESPN", "FOX Sports", "CBS Sports", "Sports Illustrated", "Battery Power", "Bleacher Nation", "AJC", "Yahoo Sports", "MLB Trade Rumors", "Baseball-Reference", "FanGraphs", "Field Level Media",
+    "AP", "MLB.com", "ESPN", "FOX Sports", "CBS Sports", "Sports Illustrated", "Washington Post", "Battery Power", "Braves Today", "Bleacher Nation", "AJC", "Yahoo Sports", "Baseball-Reference", "FanGraphs",
   ],
 };
