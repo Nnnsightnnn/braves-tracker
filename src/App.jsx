@@ -9,6 +9,7 @@ import {
   NL_EAST_STANDINGS,
   UPCOMING_SCHEDULE,
   COVER_PHOTO,
+  ACTION_PHOTOS,
 } from "./playerData.js";
 
 // ─── Atlanta & Baseball Tracker — Heritage Scorebook ────────────────────
@@ -663,40 +664,62 @@ function makeDateline(category, idx) {
   return `${place}, ${md}`;
 }
 
+// actionPhotoFor — resolve a real baseball action photo for a story category.
+// Rotates through the category's pool keys by article index so repeated
+// categories don't render the same frame twice. Falls back to the default key.
+function actionPhotoFor(category, idx = 0) {
+  const ap = ACTION_PHOTOS;
+  if (!ap || !ap.pool) return null;
+  const keys = (ap.byCategory && ap.byCategory[category]) || [ap.fallbackKey];
+  const key = keys[idx % keys.length] || ap.fallbackKey;
+  const photo = ap.pool[key] || ap.pool[ap.fallbackKey];
+  return photo ? { ...photo, credit: ap.credit } : null;
+}
+
 // BeatPhoto — the day's front-page photograph. Prefers the custom cover at
-// COVER_PHOTO.imageUrl (generated downstream and committed to
-// public/assets/cover/); if that 404s, swaps to the fallback player's
-// headshot; if that also fails, renders nothing. Never a broken image.
-function BeatPhoto() {
+// COVER_PHOTO.imageUrl (the bespoke, generated moment committed to
+// public/assets/cover/); if that 404s, swaps to a real baseball action photo
+// keyed to the lead story's category — never a player headshot, never a broken
+// image.
+function BeatPhoto({ leadCategory }) {
   const cover = COVER_PHOTO;
-  const fallback = useMemo(
-    () => PLAYERS.find((p) => p.id === cover?.fallbackPlayerId)?.image || null,
-    [cover]
-  );
-  const initial = cover?.imageUrl || fallback;
-  const [src, setSrc] = useState(initial);
-  useEffect(() => { setSrc(cover?.imageUrl || fallback); }, [cover, fallback]);
-  if (!cover || !src) return null;
-  const usingFallback = src === fallback && fallback !== cover.imageUrl;
+  const action = useMemo(() => actionPhotoFor(leadCategory, 0), [leadCategory]);
+  const coverSrc = cover?.imageUrl || null;
+  const actionSrc = action?.src || null;
+  const [src, setSrc] = useState(coverSrc || actionSrc);
+  useEffect(() => { setSrc(coverSrc || actionSrc); }, [coverSrc, actionSrc]);
+  if (!src) return null;
+  const usingCover = coverSrc && src === coverSrc;
+  const cutline = usingCover ? cover?.cutline : action?.alt;
+  const credit = usingCover ? cover?.credit : action?.credit;
   return (
-    <figure className={`beat-photo${usingFallback ? " is-fallback" : ""}`}>
+    <figure className="beat-photo">
       <div className="frame">
         <img
           src={src}
-          alt={cover.cutline || "Front-page photograph"}
+          alt={cutline || "Front-page photograph"}
           onError={() => {
-            if (src === cover.imageUrl && fallback && fallback !== cover.imageUrl) {
-              setSrc(fallback);
-            } else {
-              setSrc(null);
-            }
+            if (src === coverSrc && actionSrc && actionSrc !== coverSrc) setSrc(actionSrc);
+            else setSrc(null);
           }}
         />
       </div>
       <figcaption>
-        <span className="cutline">{cover.cutline}</span>
-        {cover.credit ? <span className="credit"> — {cover.credit}</span> : null}
+        <span className="cutline">{cutline}</span>
+        {credit ? <span className="credit"> — {credit}</span> : null}
       </figcaption>
+    </figure>
+  );
+}
+
+// ArticlePhoto — a small in-column action cut beneath a beat headline.
+function ArticlePhoto({ category, idx }) {
+  const photo = useMemo(() => actionPhotoFor(category, idx), [category, idx]);
+  const [ok, setOk] = useState(true);
+  if (!photo || !ok) return null;
+  return (
+    <figure className="cut">
+      <img src={photo.src} alt={photo.alt} loading="lazy" onError={() => setOk(false)} />
     </figure>
   );
 }
@@ -711,7 +734,7 @@ function BeatView() {
         <h2>The Braves Beat</h2>
         <div className="sub">— filed daily from the press box · weather permitting —</div>
       </div>
-      <BeatPhoto />
+      <BeatPhoto leadCategory={lede.category} />
       <div className="beat">
         <article className="lede">
           <div className="dateline">
@@ -728,6 +751,7 @@ function BeatView() {
               <span className="cat"> · {(a.category || "").toUpperCase()}</span>
             </div>
             <h3>{a.title}</h3>
+            <ArticlePhoto category={a.category} idx={i + 1} />
             <p>{a.detail}</p>
           </article>
         ))}

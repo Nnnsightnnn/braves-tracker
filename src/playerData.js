@@ -1357,6 +1357,34 @@ export const COVER_PHOTO = {
   credit: "THE TRACKER PHOTO DESK",
 };
 
+// ─── ACTION PHOTOS — real baseball action imagery for the Braves Beat ─────────────
+// These are free-license (Unsplash / Pexels) baseball action photographs committed
+// under public/assets/action/. They give the Beat real game imagery instead of
+// player headshots: the lead photo prefers COVER_PHOTO.imageUrl (the bespoke,
+// generated moment) and falls back to one of these, and every article in the beat
+// column gets one keyed to its category. `byCategory` lists pool keys in priority
+// order; the resolver rotates through them by article index so repeated categories
+// don't show the same frame twice in a row.
+export const ACTION_PHOTOS = {
+  credit: "FREE-LICENSE SPORTS PHOTO",
+  pool: {
+    batting:   { src: "/braves-tracker/assets/action/action-batting.jpg",   alt: "A hitter turns on a pitch, the ball leaping off the barrel under the lights." },
+    stadium:   { src: "/braves-tracker/assets/action/action-stadium.jpg",   alt: "A packed ballpark seen from high above home plate." },
+    glove:     { src: "/braves-tracker/assets/action/action-glove.jpg",     alt: "A fielder's glove and baseballs resting on the outfield grass." },
+    baseballs: { src: "/braves-tracker/assets/action/action-baseballs.jpg", alt: "Weathered baseballs scattered across sunlit grass." },
+  },
+  byCategory: {
+    result:      ["batting", "stadium"],
+    rotation:    ["glove", "baseballs"],
+    injury:      ["baseballs", "glove"],
+    transaction: ["glove", "batting"],
+    milestone:   ["stadium", "batting"],
+    standings:   ["stadium", "baseballs"],
+    narrative:   ["batting", "stadium"],
+  },
+  fallbackKey: "batting",
+};
+
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
 export const NEWS_DIGEST = {
   generatedAt: "2026-07-09T09:30:00-04:00",

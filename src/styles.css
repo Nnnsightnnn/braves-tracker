@@ -854,6 +854,23 @@ body::after {
 }
 @media (max-width: 700px) { .beat { column-count: 1; } }
 .beat article { break-inside: avoid; margin-bottom: 22px; }
+/* In-column action cut sitting beneath a beat headline. */
+.beat article figure.cut {
+  margin: 2px 0 10px;
+  break-inside: avoid;
+}
+.beat article figure.cut img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  outline: 1px solid var(--rule-soft);
+  outline-offset: 2px;
+  background: var(--paper-deep);
+  filter: sepia(0.22) contrast(1.04) saturate(0.85);
+}
+.beat article.lede figure.cut img { aspect-ratio: 16 / 9; }
 .beat .dateline {
   font-family: var(--font-display);
   font-size: 11px;
