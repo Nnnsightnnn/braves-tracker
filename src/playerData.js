@@ -1392,6 +1392,15 @@ export const ACTION_PHOTOS = {
 };
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
+// Each keyTopic may carry an OPTIONAL `art` for a bespoke generated Braves
+// moment (produced downstream by the Antigravity image task and committed to
+// public/assets/cover/):
+//   art: { imageUrl: "/braves-tracker/assets/cover/{YYYY-MM-DD}-{slug}.jpg",
+//          alt: "<newspaper-voice cutline>", credit: "TRACKER PHOTO DESK" }
+// When `art` is absent, or the file has not landed yet, ArticlePhoto falls back
+// to a toned action frame keyed to the topic's category — so it is always safe
+// to point `art` at a not-yet-generated file. Generated covers are rendered
+// through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
   generatedAt: "2026-07-09T09:30:00-04:00",
   summary:

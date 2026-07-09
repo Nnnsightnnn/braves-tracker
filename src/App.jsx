@@ -676,50 +676,95 @@ function actionPhotoFor(category, idx = 0) {
   return photo ? { ...photo, credit: ap.credit } : null;
 }
 
-// BeatPhoto — the day's front-page photograph. Prefers the custom cover at
-// COVER_PHOTO.imageUrl (the bespoke, generated moment committed to
-// public/assets/cover/); if that 404s, swaps to a real baseball action photo
-// keyed to the lead story's category — never a player headshot, never a broken
-// image.
-function BeatPhoto({ leadCategory }) {
-  const cover = COVER_PHOTO;
-  const action = useMemo(() => actionPhotoFor(leadCategory, 0), [leadCategory]);
-  const coverSrc = cover?.imageUrl || null;
-  const actionSrc = action?.src || null;
-  const [src, setSrc] = useState(coverSrc || actionSrc);
-  useEffect(() => { setSrc(coverSrc || actionSrc); }, [coverSrc, actionSrc]);
-  if (!src) return null;
-  const usingCover = coverSrc && src === coverSrc;
-  const cutline = usingCover ? cover?.cutline : action?.alt;
-  const credit = usingCover ? cover?.credit : action?.credit;
+// BeatDuotoneFilter — an inline SVG duotone (navy shadows -> cream highlights,
+// the same two inks as the paper). Applied via `filter: url(#beat-duotone)` to
+// GENERATED images so a full-colour Braves moment prints in the same house
+// style as the pre-toned action frames. Mounted once when the beat renders.
+function BeatDuotoneFilter() {
   return (
-    <figure className="beat-photo">
+    <svg aria-hidden="true" focusable="false" width="0" height="0" style={{ position: "absolute" }}>
+      <filter id="beat-duotone" colorInterpolationFilters="sRGB">
+        <feColorMatrix
+          type="matrix"
+          values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0"
+        />
+        <feComponentTransfer>
+          <feFuncR type="table" tableValues="0.06 0.95" />
+          <feFuncG type="table" tableValues="0.13 0.90" />
+          <feFuncB type="table" tableValues="0.28 0.81" />
+        </feComponentTransfer>
+      </filter>
+    </svg>
+  );
+}
+
+// beatCandidates — ordered image sources for a beat slot: the bespoke GENERATED
+// Braves moment first (once its file lands in public/assets/cover/), then the
+// toned free-license action frame keyed to the story category. Each carries a
+// `generated` flag so the view can apply the duotone only where it's needed.
+function beatCandidates({ generatedUrl, generatedAlt, generatedCredit, category, idx }) {
+  const list = [];
+  if (generatedUrl) {
+    list.push({ src: generatedUrl, alt: generatedAlt || null, credit: generatedCredit || null, generated: true });
+  }
+  const action = actionPhotoFor(category, idx);
+  if (action) {
+    list.push({ src: action.src, alt: action.alt, credit: action.credit, generated: false });
+  }
+  return list;
+}
+
+// BeatPhoto — the day's front-page photograph. Walks the candidate chain:
+// COVER_PHOTO.imageUrl (bespoke generated moment) -> the lede's own art ->
+// a toned action frame keyed to the lead story. Never a headshot, never broken.
+function BeatPhoto({ lede }) {
+  const cover = COVER_PHOTO;
+  const candidates = useMemo(() => beatCandidates({
+    generatedUrl: cover?.imageUrl || lede?.art?.imageUrl || null,
+    generatedAlt: cover?.cutline || lede?.art?.alt || null,
+    generatedCredit: cover?.credit || lede?.art?.credit || null,
+    category: lede?.category,
+    idx: 0,
+  }), [cover, lede]);
+  const [i, setI] = useState(0);
+  useEffect(() => { setI(0); }, [candidates]);
+  const cur = candidates[i];
+  if (!cur) return null;
+  return (
+    <figure className={`beat-photo${cur.generated ? " is-generated" : ""}`}>
       <div className="frame">
         <img
-          src={src}
-          alt={cutline || "Front-page photograph"}
-          onError={() => {
-            if (src === coverSrc && actionSrc && actionSrc !== coverSrc) setSrc(actionSrc);
-            else setSrc(null);
-          }}
+          src={cur.src}
+          alt={cur.alt || "Front-page photograph"}
+          onError={() => setI((n) => n + 1)}
         />
       </div>
       <figcaption>
-        <span className="cutline">{cutline}</span>
-        {credit ? <span className="credit"> — {credit}</span> : null}
+        <span className="cutline">{cur.alt}</span>
+        {cur.credit ? <span className="credit"> — {cur.credit}</span> : null}
       </figcaption>
     </figure>
   );
 }
 
-// ArticlePhoto — a small in-column action cut beneath a beat headline.
-function ArticlePhoto({ category, idx }) {
-  const photo = useMemo(() => actionPhotoFor(category, idx), [category, idx]);
-  const [ok, setOk] = useState(true);
-  if (!photo || !ok) return null;
+// ArticlePhoto — an in-column cut beneath a beat headline. Prefers the story's
+// own generated moment (topic.art.imageUrl), then falls back to a toned action
+// frame. Hides itself only if every source fails to load.
+function ArticlePhoto({ topic, category, idx }) {
+  const candidates = useMemo(() => beatCandidates({
+    generatedUrl: topic?.art?.imageUrl || null,
+    generatedAlt: topic?.art?.alt || topic?.title || null,
+    generatedCredit: topic?.art?.credit || null,
+    category,
+    idx,
+  }), [topic, category, idx]);
+  const [i, setI] = useState(0);
+  useEffect(() => { setI(0); }, [candidates]);
+  const cur = candidates[i];
+  if (!cur) return null;
   return (
-    <figure className="cut">
-      <img src={photo.src} alt={photo.alt} loading="lazy" onError={() => setOk(false)} />
+    <figure className={`cut${cur.generated ? " is-generated" : ""}`}>
+      <img src={cur.src} alt={cur.alt} loading="lazy" onError={() => setI((n) => n + 1)} />
     </figure>
   );
 }
@@ -730,11 +775,12 @@ function BeatView() {
   if (!lede) return <div className="view"><p>No beat copy filed today.</p></div>;
   return (
     <div className="view">
+      <BeatDuotoneFilter />
       <div className="beat-masthead">
         <h2>The Braves Beat</h2>
         <div className="sub">— filed daily from the press box · weather permitting —</div>
       </div>
-      <BeatPhoto leadCategory={lede.category} />
+      <BeatPhoto lede={lede} />
       <div className="beat">
         <article className="lede">
           <div className="dateline">
@@ -751,7 +797,7 @@ function BeatView() {
               <span className="cat"> · {(a.category || "").toUpperCase()}</span>
             </div>
             <h3>{a.title}</h3>
-            <ArticlePhoto category={a.category} idx={i + 1} />
+            <ArticlePhoto topic={a} category={a.category} idx={i + 1} />
             <p>{a.detail}</p>
           </article>
         ))}

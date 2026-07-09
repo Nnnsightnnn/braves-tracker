@@ -817,8 +817,10 @@ body::after {
   height: auto;
   max-height: 640px;
   object-fit: cover;
-  filter: sepia(0.22) contrast(1.04) saturate(0.85);
 }
+/* Action frames are pre-toned; a GENERATED cover is full colour, so tone it to
+   the same navy->cream duotone at render for a consistent photo-desk look. */
+.beat-photo.is-generated img { filter: url(#beat-duotone) contrast(1.02); }
 .beat-photo.is-fallback {
   max-width: 340px;
 }
@@ -868,8 +870,10 @@ body::after {
   outline: 1px solid var(--rule-soft);
   outline-offset: 2px;
   background: var(--paper-deep);
-  filter: sepia(0.22) contrast(1.04) saturate(0.85);
 }
+/* Generated article moments print in the same navy->cream duotone as the
+   pre-toned action frames. */
+.beat article figure.cut.is-generated img { filter: url(#beat-duotone) contrast(1.02); }
 .beat article.lede figure.cut img { aspect-ratio: 16 / 9; }
 .beat .dateline {
   font-family: var(--font-display);
