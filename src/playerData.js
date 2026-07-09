@@ -1365,24 +1365,30 @@ export const COVER_PHOTO = {
 // column gets one keyed to its category. `byCategory` lists pool keys in priority
 // order; the resolver rotates through them by article index so repeated categories
 // don't show the same frame twice in a row.
+// The frames are toned to a navy->cream duotone with fine grain (the same two
+// inks as the paper) so the whole beat reads as one intentional photo desk
+// instead of mismatched stock.
 export const ACTION_PHOTOS = {
-  credit: "FREE-LICENSE SPORTS PHOTO",
+  credit: "TRACKER PHOTO DESK · FREE-LICENSE FRAME",
   pool: {
-    batting:   { src: "/braves-tracker/assets/action/action-batting.jpg",   alt: "A hitter turns on a pitch, the ball leaping off the barrel under the lights." },
-    stadium:   { src: "/braves-tracker/assets/action/action-stadium.jpg",   alt: "A packed ballpark seen from high above home plate." },
-    glove:     { src: "/braves-tracker/assets/action/action-glove.jpg",     alt: "A fielder's glove and baseballs resting on the outfield grass." },
-    baseballs: { src: "/braves-tracker/assets/action/action-baseballs.jpg", alt: "Weathered baseballs scattered across sunlit grass." },
+    swing:        { src: "/braves-tracker/assets/action/swing.jpg",         alt: "A hitter connects, the ball frozen just off the barrel." },
+    bat:          { src: "/braves-tracker/assets/action/bat.jpg",           alt: "A batter cocks the bat at the plate, eyes locked on the pitcher." },
+    atbat:        { src: "/braves-tracker/assets/action/atbat.jpg",         alt: "A hitter coils into his stance, waiting on the pitch." },
+    pitch:        { src: "/braves-tracker/assets/action/pitch.jpg",         alt: "A pitcher drives toward the plate at full extension." },
+    pitchCocked:  { src: "/braves-tracker/assets/action/pitch-cocked.jpg",  alt: "A pitcher rocks back, arm cocked, the ball hidden behind his glove." },
+    stadiumNight: { src: "/braves-tracker/assets/action/stadium-night.jpg", alt: "Stadium lights blaze over a big-league park at night." },
+    stadiumDusk:  { src: "/braves-tracker/assets/action/stadium-dusk.jpg",  alt: "A packed ballpark under a bruised dusk sky." },
   },
   byCategory: {
-    result:      ["batting", "stadium"],
-    rotation:    ["glove", "baseballs"],
-    injury:      ["baseballs", "glove"],
-    transaction: ["glove", "batting"],
-    milestone:   ["stadium", "batting"],
-    standings:   ["stadium", "baseballs"],
-    narrative:   ["batting", "stadium"],
+    result:      ["swing", "bat"],
+    rotation:    ["pitch", "pitchCocked"],
+    injury:      ["bat", "atbat"],
+    transaction: ["atbat", "pitchCocked"],
+    milestone:   ["stadiumNight", "stadiumDusk"],
+    standings:   ["stadiumDusk", "stadiumNight"],
+    narrative:   ["swing", "atbat", "bat"],
   },
-  fallbackKey: "batting",
+  fallbackKey: "stadiumNight",
 };
 
 // ─── NEWS DIGEST — the recency-biased summary the skill refreshes daily ──────────
