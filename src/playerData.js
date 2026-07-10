@@ -1,17 +1,18 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated July 8, 2026) ─────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated July 10, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// WED JUL 8: O'HEARN BURIES ATLANTA. Pittsburgh mauled the Braves 12-4 Tuesday at PNC
-// Park as RYAN O'HEARN homered three times and drove in a franchise-record 10 runs,
-// starting with a first-inning grand slam. HURSTON WALDREP, in Perez's rotation turn,
-// was shelled for 7 runs on 6 hits (2 HR to O'Hearn) with 5 walks over 3.1 innings, and
-// PAUL SKENES (7-8) snapped a nine-start winless run. It was Atlanta's third straight
-// loss. The roster churned again: OWEN MURPHY was optioned to Triple-A a day after his
-// debut, LHP CONNOR THOMAS was selected, JAMES KARINCHAK recalled, and TYLER KINLEY went
-// on the paternity list. At 52-38 the Braves lead Philadelphia (51-41) by 2.0, with Miami
-// (50-42) now 3 back. Tonight: GRANT HOLMES (5-4, 3.63) vs Pirates righty JARED JONES
-// (1-1, 5.28) at 6:40 PM ET. IL watch: Acuna (hamstring) could start a rehab assignment
-// next week; Suarez (forearm) after the break; Strider (elbow) mid-August; S. Murphy
-// (finger) late July.
+// THU JUL 9: YASTRZEMSKI SLAMS THE DOOR. Atlanta took the rubber game in Pittsburgh
+// 10-5, winning the series and heading into the St. Louis set 3-1 on the trip. MIKE
+// YASTRZEMSKI iced it with a ninth-inning grand slam off Dennis Santana, MATT OLSON
+// led off the game with his 25th homer while tying DALE MURPHY's franchise record of
+// 740 straight games played, and rookie JIM JARVIS added his first career homer (a
+// two-run shot) in a three-hit night. BRYCE ELDER gave up 4 runs in 4 innings and
+// took a no-decision; DYLAN DODD (2-0) worked a perfect fifth for the win. At 54-38
+// the Braves lead Philadelphia (50-40) by 3.0, with Miami (51-42) 3.5 back. Tonight the
+// pre-break road trip continues in St. Louis: CHRIS SALE (9-6, 2.28) vs Cardinals righty
+// KYLE LEAHY (7-4) at 8:15 PM ET, Busch Stadium. IL watch: Acuna (hamstring) lined up to
+// begin a rehab assignment over the break; Suarez (forearm) after the break; Perez
+// (forearm) after the break; Strider (elbow) mid-August; S. Murphy (finger) around
+// July 17.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -53,9 +54,9 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .274, obp: .344, slg: .548, ops: .892, hr: 24, rbi: 57, sb: 0, bb: 21, so: 49, games: 58, doubles: 23 },
-    statNote: "TWO HOMERS, INCLUDING THE 9TH-INNING TIE: Olson did everything he could Monday, launching Nos. 23 and 24 against the Mets, the second a game-tying two-run shot in the 9th, before the Mets walked it off 7-6 in ten. He extends his MLB home run lead to 24 with 57 RBI, and the All-Star reserve heads into Pittsburgh as the hottest bat in the lineup.",
-    form: 9.7,
+    stats: { avg: .274, obp: .344, slg: .549, ops: .893, hr: 25, rbi: 58, sb: 0, bb: 21, so: 49, games: 59, doubles: 23 },
+    statNote: "25TH HOMER, AND A PIECE OF HISTORY: Olson led off Thursday's 10-5 win in Pittsburgh with a first-inning solo shot, his MLB-leading 25th of the year, and in doing so tied Dale Murphy's franchise record of 740 consecutive games played, a streak dating to the start of 2022. He carries the majors' home run lead (25) and 58 RBI into St. Louis as the durable anchor of an Acuna-less lineup.",
+    form: 9.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
@@ -224,9 +225,9 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 35, experience: 8,
-    stats: { avg: .254, obp: .321, slg: .445, ops: .766, hr: 5, rbi: 17, sb: 1, bb: 8, so: 30, games: 38, doubles: 7 },
-    statNote: "JOINS THE HOMER PARADE: Yastrzemski went deep for the fifth time this season in Saturday's 14-3 rout of the Mets, one of five Atlanta home runs, and drove in two. The veteran keeps steadying the corner-outfield mix while Acuña works back, and the bat has real life in it entering the final week before the break.",
-    form: 8.5,
+    stats: { avg: .258, obp: .324, slg: .462, ops: .786, hr: 6, rbi: 21, sb: 1, bb: 8, so: 30, games: 39, doubles: 7 },
+    statNote: "GRAND SLAM PUTS IT AWAY IN PITTSBURGH: Yastrzemski broke a 6-5 game open Thursday with a ninth-inning grand slam off Dennis Santana (his 6th homer, third career slam), the finishing blow in a 10-5 win that clinched the series. The veteran keeps carrying real thump in the corner-outfield mix while Acuna works back, and he heads to St. Louis with four RBI on the night.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33341.png",
@@ -336,8 +337,8 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 0,
     stats: { avg: null, obp: null, slg: null, ops: null, hr: null, rbi: null, games: null },
-    statNote: "RECALLED JUL 2, TELLEZ DFA'D IN THE CORRESPONDING MOVE: Jarvis is back with the big club after one of the organization's best offensive seasons at Gwinnett: .313 with a .406 OBP, an .867 OPS, 6 HR, 36 RBI, and 32 stolen bases. The 25-year-old gives Weiss a speed-and-contact utility infielder off the bench while Ha-Seong Kim scuffles, and his second stint should come with a longer leash than the six-game May cameo.",
-    form: 6.5,
+    statNote: "FIRST CAREER HOMER IN A THREE-HIT NIGHT: Jarvis broke through Thursday in Pittsburgh, launching his first big-league home run (a two-run shot off Cam Sanders) as part of a three-run 4th, and finished 3-for-4 in the 10-5 win. The 25-year-old is seizing the extended look at shortstop and off the bench, a speed-and-contact spark while Acuna is out. He arrived from Gwinnett hitting .313 with a .406 OBP, 6 HR, and 32 steals.",
+    form: 8.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5205951.png",
@@ -542,8 +543,8 @@ export const PLAYERS = [
     rotationSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
-    stats: { era: 4.02, whip: 1.29, ip: 98.2, k: 77, bb: 29, w: 5, l: 6, games: 17, starts: 17 },
-    statNote: "SECOND STRAIGHT ROUGH ONE: Elder fell to 5-6 after Saturday's 5-0 loss in San Francisco, charged with five runs on five hits over four innings while Rafael Devers homered twice off him. It followed a rocky finale loss to Milwaukee, and the ERA has climbed to 4.02 over 98.2 innings across 17 starts. With Strider on the 60-day IL, Atlanta still leans on Elder for length, but he will want to settle things down before the rotation realigns at home.",
+    stats: { era: 4.19, whip: 1.31, ip: 102.2, k: 80, bb: 30, w: 5, l: 6, games: 18, starts: 18 },
+    statNote: "SHORT START, BUT THE PEN BAILED HIM OUT: Elder gave up four runs over four innings in Thursday's series-clinching 10-5 win at Pittsburgh, including back-to-back homers by Bryan Reynolds and Esmerlyn Valdez in the 3rd, and left with a no-decision as Dylan Dodd got the win. The ERA ticks to 4.19 across 18 starts. Atlanta still leans on Elder for length with Perez down, but he will want cleaner innings coming out of the break.",
     form: 4.5,
     status: "active",
     injuryNote: null,
@@ -846,9 +847,9 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 28, experience: 3,
-    stats: { era: 1.29, whip: 0.57, ip: 7.0, k: 7, bb: 2, sv: 0, hold: null, games: 6, w: 0, l: 0 },
-    statNote: "PART OF THE PERFECT RELAY: Dodd opened the four-inning perfect bullpen chain in Wednesday's 5-1 win over St. Louis, another clean frame that trims his line to about 1.29 ERA / 0.57 WHIP. Since returning from the IL he has been exactly the LH long-man / multi-inning bridge Atlanta wanted alongside Dylan Lee.",
-    form: 6.5,
+    stats: { era: 1.13, whip: 0.63, ip: 8.0, k: 8, bb: 2, sv: 0, hold: null, games: 7, w: 2, l: 0 },
+    statNote: "VULTURED THE WIN IN PITTSBURGH: Dodd followed Elder with a perfect fifth Thursday and picked up the victory in the 10-5 win, improving to 2-0 with a sparkling 1.13 ERA. He has been exactly the LH long-man and multi-inning bridge Atlanta wanted alongside Dylan Lee, and his clean work keeps trimming an already tiny line.",
+    form: 8.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4416462.png",
@@ -1270,26 +1271,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-07-09",
-    weekday: "Thu",
-    time: "12:35 PM ET",
-    opp: "PIT",
-    home: false,
-    venue: "PNC Park · Pittsburgh",
-    atlSP: { id: "elder", name: "Bryce Elder", record: "5-6", era: 4.02, daysRest: 5, hand: "R" },
-    oppSP: { name: "Mitch Keller", record: "6-6", era: 5.02, hand: "R" },
-    note: "Getaway-day matinee in Pittsburgh: Bryce Elder (5-6, 4.02) faces Pirates righty Mitch Keller (6-6, 5.02) with Atlanta going for a 2-2 series split before the weekend set in St. Louis that closes the first half.",
-  },
-  {
     date: "2026-07-10",
     weekday: "Fri",
-    time: "TBA",
+    time: "8:15 PM ET",
     opp: "STL",
     home: false,
     venue: "Busch Stadium · St. Louis",
-    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Opener of the final series before the All-Star break, a rematch with the Cardinals a week after they took two of three at Truist Park. Probables and first pitch not yet announced.",
+    atlSP: { id: "sale", name: "Chris Sale", record: "9-6", era: 2.28, daysRest: 6, hand: "L" },
+    oppSP: { name: "Kyle Leahy", record: "7-4", era: null, hand: "R" },
+    note: "Opener of the final series before the All-Star break, a rematch with the Cardinals a week after they took two of three at Truist Park. Chris Sale (9-6, 2.28), a 10th-time All-Star, faces Cardinals righty Kyle Leahy (7-4).",
   },
   {
     date: "2026-07-11",
@@ -1302,25 +1292,37 @@ export const UPCOMING_SCHEDULE = [
     oppSP: { name: "TBA", record: null, era: null, hand: null },
     note: "Middle game of the pre-break set in St. Louis. Probables and first pitch not yet announced.",
   },
+  {
+    date: "2026-07-12",
+    weekday: "Sun",
+    time: "TBA",
+    opp: "STL",
+    home: false,
+    venue: "Busch Stadium · St. Louis",
+    atlSP: { id: null, name: "TBA", record: null, era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: null, era: null, hand: null },
+    note: "First-half finale in St. Louis before the All-Star break. Probables and first pitch not yet announced.",
+  },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-07-09",
-  time: "12:35 PM ET",
-  opp: "PIT",
+  date: "2026-07-10",
+  time: "8:15 PM ET",
+  opp: "STL",
   home: false,
-  venue: "PNC Park · Pittsburgh, PA",
+  venue: "Busch Stadium · St. Louis, MO",
   tv: "BravesVision",
   probables: {
-    atl: { pitcher: "Bryce Elder", record: "5-6", era: 4.02 },
-    opp: { pitcher: "Mitch Keller", record: "6-6", era: 5.02 },
+    atl: { pitcher: "Chris Sale", record: "9-6", era: 2.28 },
+    opp: { pitcher: "Kyle Leahy", record: "7-4", era: null },
   },
-  note: "ELDER GOES FOR THE SERIES SPLIT IN THE GETAWAY MATINEE. BRYCE ELDER (5-6, 4.02) takes the ball for the 12:35 PM ET finale at PNC Park against Pirates righty MITCH KELLER (6-6, 5.02), with Atlanta trying to leave Pittsburgh 2-2 on the trip and carry momentum into the All-Star break. The Braves stopped a three-game skid Wednesday, blanking the Pirates 3-0 behind five scoreless from GRANT HOLMES and JOEY BART's two-out, two-run homer in the 8th that broke up Jared Jones's perfect-game bid. At 53-38, Atlanta leads Philadelphia by roughly 2.5, with Miami lurking. IL watch: RONALD ACUNA JR. (hamstring) is lined up to open a rehab assignment during the break, ROBERT SUAREZ (forearm) after the break, SPENCER STRIDER (60-day, elbow) toward mid-August, SEAN MURPHY (60-day, finger) around July 17.",
+  note: "SALE OPENS THE ST. LOUIS SET WITH A CY YOUNG CASE IN HAND. CHRIS SALE (9-6, 2.28) takes the ball for the 8:15 PM ET opener at Busch Stadium against Cardinals righty KYLE LEAHY (7-4), the first of three in St. Louis before the All-Star break. Sale, a 10th-time All-Star, still leads the NL in strikeouts and ranks near the top in ERA. Atlanta arrives on a two-game win streak after taking the rubber game in Pittsburgh 10-5 behind Mike Yastrzemski's ninth-inning grand slam and Matt Olson's record-tying 25th homer. At 54-38, the Braves lead Philadelphia by 3.0 and Miami by 3.5. IL watch: RONALD ACUNA JR. (hamstring) is lined up to open a rehab assignment during the break, MARTIN PEREZ (forearm) and ROBERT SUAREZ (forearm) both after the break, SPENCER STRIDER (60-day, elbow) toward mid-August, SEAN MURPHY (60-day, finger) around July 17.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-07-09", opp: "PIT", home: false, atlScore: 10, oppScore: 5, result: "W", note: "YASTRZEMSKI'S GRAND SLAM CLINCHES THE SERIES, BRAVES WIN 10-5: Atlanta took the rubber game in Pittsburgh Thursday and left town 3-1 on the trip. MATT OLSON set the tone by leading off the game with his MLB-leading 25th homer, a swing that also tied DALE MURPHY's franchise record of 740 consecutive games played (dating to the start of 2022). Rookie JIM JARVIS added his first career homer, a two-run shot off Cam Sanders in a three-run 4th, and finished with three hits. BRYCE ELDER was charged with four runs in four innings (Bryan Reynolds and Esmerlyn Valdez went back-to-back in the 3rd) and took a no-decision, but DYLAN DODD (W, 2-0) threw a perfect fifth to grab the win. Clinging to a 6-5 lead in the 9th, MIKE YASTRZEMSKI blew it open with a grand slam off Dennis Santana, his third career slam. Atlanta improved to 54-38 and stretched the NL East lead back to 3.0 over Philadelphia." },
   { date: "2026-07-08", opp: "PIT", home: false, atlScore: 3, oppScore: 0, result: "W", note: "BART BREAKS UP THE PERFECT GAME, BRAVES BLANK THE BUCCOS 3-0: Atlanta stopped its three-game skid Wednesday night at PNC Park, and it took a long time to get going. Pirates righty JARED JONES was perfect through six and set down 18 straight before OZZIE ALBIES singled with one out in the 7th to end both the perfect game and the no-hit bid. The game stayed scoreless until the 8th, when JOEY BART, facing his old club, lined a two-out, two-run homer to left off the Pittsburgh bullpen for the lead. DRAKE BALDWIN tacked on an RBI single in the 9th. GRANT HOLMES matched Jones with five scoreless of his own (3 hits, 1 walk, 5 K) but left with the game 0-0 and took a no-decision; the Atlanta bullpen, the best in baseball by ERA, finished the shutout with RAISEL IGLESIAS working a clean 9th for save No. 18. Atlanta improved to 53-38." },
   { date: "2026-07-07", opp: "PIT", home: false, atlScore: 4, oppScore: 12, result: "L", note: "O'HEARN'S 10-RBI NIGHT BURIES ATLANTA 12-4: The Pittsburgh series opener turned into a nightmare at PNC Park Tuesday, as RYAN O'HEARN homered three times and set a Pirates franchise record with 10 RBIs. He connected for a grand slam in the 1st, a solo shot in the 3rd, and a three-run blast later, doing most of the damage against HURSTON WALDREP, who was making a spot start in MARTIN PEREZ's rotation turn and was chased in the 4th after 7 runs on 6 hits with 5 walks. PAUL SKENES (W, 7-8) needed just this kind of run support, snapping a personal nine-start winless streak dating to May 12. Atlanta's four runs were an afterthought, and the loss was the club's third in a row heading into a must-steady middle game. The Braves fell to 52-38." },
   { date: "2026-07-06", opp: "NYM", home: true, atlScore: 6, oppScore: 7, result: "L", note: "TORRENS SPOILS THE DEBUT, METS TAKE THE FINALE 7-6 IN TEN: The four-game set ended in a split Monday night at Truist Park, and it stung. MATT OLSON did his part twice over, homering in regulation and then tying the game with a two-run shot in the 9th, his 23rd and 24th of the season to extend his MLB lead. In the 10th, Atlanta handed the ball to OWEN MURPHY, the 2022 first-rounder whose contract was selected hours earlier, and his MLB debut turned cruel: with two outs, after he hit Jared Young with a pitch, LUIS TORRENS lined a two-run double to left that scored ghost runner Bo Bichette and Young. BROOKS RALEY (W, 3-3) and LUKE WEAVER (first save) closed it out, and Murphy (L, 0-1) wore the decision despite striking out one in his lone inning. REYNALDO LOPEZ took a no-decision in the start. Atlanta fell to 52-37 and headed to Pittsburgh having lost two straight." },
@@ -1330,16 +1332,15 @@ export const RESULTS = [
   { date: "2026-07-02", opp: "STL", home: true, atlScore: 5, oppScore: 11, result: "L", note: "SEVEN-RUN SEVENTH SINKS ATLANTA, CARDINALS TAKE THE SERIES 11-5: A promising Thursday unraveled late at Truist Park as St. Louis erupted for seven in the seventh and won the rubber game 11-5. JORDAN WALKER did the heaviest damage with a homer and four RBI, including a three-run shot off spot starter HURSTON WALDREP in the 1st, and NATHAN CHURCH tied it with a two-run homer off TYLER KINLEY (L, 4-3) before JJ WETHERHOLT's single put the Cardinals ahead for good. Atlanta had answered with five in the first, three of them on DOMINIC SMITH's bases-loaded double that caromed off St. Louis starter DUSTIN MAY's right ankle and knocked him from the game, and Waldrep left holding a 5-3 lead. GORDON GRACEFFO (W, 6-1) worked a scoreless sixth, and the Cardinals handed manager Oliver Marmol a win on his 40th birthday. The Braves fell to 50-35 and have dropped eight of eleven at home." },
   { date: "2026-07-01", opp: "STL", home: true, atlScore: 5, oppScore: 1, result: "W", note: "LOPEZ AND A PERFECT PEN STOP THE SLIDE, BRAVES WIN 5-1: Atlanta played its cleanest game in weeks Wednesday at Truist Park, holding St. Louis to two hits in a 5-1 win. OZZIE ALBIES homered (his 13th) and drove in two to back REYNALDO LOPEZ (W, 4-1), who allowed one run on two hits with five strikeouts over five innings in his second start since rejoining the rotation. The bullpen, already the best in the majors by ERA, was untouchable: DYLAN DODD, DIDIER FUENTES, and DYLAN LEE threw perfect frames ahead of RAISEL IGLESIAS, who worked a spotless ninth for save No. 17 as Braves pitching retired the final 20 Cardinals in order. Cardinals starter MICHAEL McGREEVY (L, 3-7) took the loss despite six respectable innings. The win lifted Atlanta to 50-34 and snapped a stretch of seven losses in eight games." },
   { date: "2026-06-30", opp: "STL", home: true, atlScore: 3, oppScore: 5, result: "L", note: "CHURCH AND VELÁZQUEZ GO DEEP, CARDINALS BEAT FREE-FALLING BRAVES 5-3: Atlanta's homecoming opened with more of the same Tuesday at Truist Park, as St. Louis sent the Braves to a seventh loss in eight games. NATHAN CHURCH punished MARTÍN PÉREZ (L, 6-5) for a three-run homer and NELSON VELÁZQUEZ added a game-tying solo shot on a 3-2 cutter, backing a strong start from MATTHEW LIBERATORE (W), who struck out nine while walking four over five innings. OZZIE ALBIES had an RBI single for Atlanta, which put together its best threat in the eighth, loading the bases with the tying run aboard before coming up empty. The Braves fell to 49-34, closed out a 9-14 June, and watched the NL East lead shrink to two and a half games over Philadelphia." },
-  { date: "2026-06-28", opp: "SF", home: false, atlScore: 2, oppScore: 3, result: "L", note: "RAY OUTDUELS SALE, GIANTS TAKE THE FINALE 3-2: San Francisco salvaged the last two of the series Sunday at Oracle Park, beating Atlanta 3-2 behind a gem from ROBBIE RAY, who allowed just four hits and an unearned run over eight innings. CHRIS SALE matched him for six, striking out 10 and walking one, but was charged with two runs (one earned) on eight hits and left without a decision in a matchup of Cy Young winners. Trailing 3-1 in the 9th, MATT OLSON doubled and scored on two groundouts to pull within one, and pinch-hitter DOMINIC SMITH singled before JORGE MATEO stole second, but CALEB KILIAN struck out MIKE YASTRZEMSKI to lock down his sixth save. The Braves drop to 49-33, losers of six of their last seven, and see the NL East lead trimmed to three and a half after Philadelphia won." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 53, l: 38, pct: .582, gb: 0,    streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 51, l: 41, pct: .554, gb: 2.5,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 50, l: 42, pct: .543, gb: 3.5,  streak: "W4" },
-  { team: "WSH", name: "Washington Nationals",   w: 47, l: 45, pct: .511, gb: 6.5,  streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 38, l: 53, pct: .418, gb: 15.0, streak: "W2" },
+  { team: "ATL", name: "Atlanta Braves",         w: 54, l: 38, pct: .587, gb: 0,    streak: "W2" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 50, l: 40, pct: .556, gb: 3.0,  streak: "-" },
+  { team: "MIA", name: "Miami Marlins",          w: 51, l: 42, pct: .548, gb: 3.5,  streak: "-" },
+  { team: "WSH", name: "Washington Nationals",   w: 48, l: 46, pct: .511, gb: 7.0,  streak: "-" },
+  { team: "NYM", name: "New York Mets",          w: 39, l: 54, pct: .419, gb: 15.5, streak: "-" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1349,11 +1350,11 @@ export const NL_EAST_STANDINGS = [
 // shows a broken image. The daily update refreshes this block whenever it
 // queues a new image request in ~/Vault/Notes/image-requests.md.
 export const COVER_PHOTO = {
-  date: "2026-07-08",
-  imageUrl: "/braves-tracker/assets/cover/2026-07-08-bart-perfect-game-breaker.jpg",
-  fallbackPlayerId: "bart",
+  date: "2026-07-09",
+  imageUrl: "/braves-tracker/assets/cover/2026-07-09-yastrzemski-grand-slam.jpg",
+  fallbackPlayerId: "yastrzemski",
   cutline:
-    "Facing the club that traded him, Joey Bart ends a scoreless standoff with one swing: a two-out, two-run homer in the 8th that broke up Jared Jones's perfect-game bid and carried Atlanta to a 3-0 shutout of the Pirates at PNC Park.",
+    "Clinging to a one-run lead in the 9th at PNC Park, Mike Yastrzemski turned on a Dennis Santana pitch for a grand slam, the third of his career, breaking the game open in a 10-5 win that clinched the series in Pittsburgh.",
   credit: "THE TRACKER PHOTO DESK",
 };
 
@@ -1402,20 +1403,20 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-09T09:30:00-04:00",
+  generatedAt: "2026-07-10T09:44:05-04:00",
   summary:
-    "SKID SNAPPED IN THE SHADE OF A PERFECT GAME. The Braves (53-38) blanked the Pirates 3-0 Wednesday night at PNC Park to end a three-game slide, and they did it the hard way. Pittsburgh righty Jared Jones was perfect through six and had retired 18 straight before Ozzie Albies singled with one out in the 7th to break up both the perfect game and the no-hitter. The score stayed 0-0 until the 8th, when Joey Bart, facing the club that traded him last winter, lined a two-out, two-run homer to left for the lead, and Drake Baldwin added an insurance single in the 9th. Grant Holmes matched Jones with five scoreless (3 hits, 5 K) but left with a no-decision; the bullpen, the best in baseball by ERA, closed it out with Raisel Iglesias getting save No. 18. Now Bryce Elder (5-6, 4.02) goes for the series split in Thursday's 12:35 PM ET matinee against Mitch Keller (6-6, 5.02). Off the field, the biggest news stays Ronald Acuna Jr., who is lined up to begin a minor-league rehab assignment during the All-Star break with a target of rejoining the lineup right after it. Atlanta leads Philadelphia by roughly 2.5 and Miami by about 3.5 in the NL East.",
+    "OLD-SCHOOL POWER CLINCHES PITTSBURGH. The Braves (54-38) beat the Pirates 10-5 Thursday to take the rubber game and leave town 3-1 on the trip, riding a night of home runs. Matt Olson led off the game with his MLB-leading 25th homer, a swing that also tied Dale Murphy's franchise record of 740 consecutive games played, a streak going back to the start of 2022. Rookie Jim Jarvis added his first career homer, a two-run shot in a three-hit night, and Mike Yastrzemski put it away in the 9th with a grand slam off Dennis Santana, his third career slam. Bryce Elder was charged with four runs in four innings and took a no-decision, but Dylan Dodd (2-0) grabbed the win with a perfect fifth. Now the pre-break road trip shifts to St. Louis, where Chris Sale (9-6, 2.28) opens a three-game set Friday at 8:15 PM ET against Cardinals righty Kyle Leahy (7-4). Off the field, the story stays Ronald Acuna Jr., lined up to begin a minor-league rehab assignment during the All-Star break with a target of rejoining the lineup right after it. Atlanta leads Philadelphia by 3.0 and Miami by 3.5 in the NL East.",
   keyTopics: [
-    { category: "result", title: "Bart's 8th-inning homer sinks Pirates 3-0", detail: "Joey Bart broke a scoreless tie with a two-out, two-run homer in the 8th against his former club, and Atlanta blanked Pittsburgh 3-0 to snap a three-game skid and climb to 53-38.", recency: "yesterday" },
-    { category: "narrative", title: "Jones perfect into the 7th before Albies breaks it up", detail: "Pirates starter Jared Jones retired the first 18 Braves and was perfect through six before Ozzie Albies singled with one out in the 7th, ending both the perfect-game bid and the no-hitter. The game did not score until the 8th.", recency: "yesterday" },
-    { category: "rotation", title: "Holmes five scoreless, bullpen finishes the shutout", detail: "Grant Holmes matched Jones with five scoreless innings (3 hits, 1 walk, 5 K) but took a no-decision in a 0-0 game. The relief corps, the majors' best by ERA, held the line and Raisel Iglesias worked a clean 9th for save No. 18.", recency: "yesterday" },
-    { category: "rotation", title: "Today: Elder vs. Mitch Keller in the getaway matinee", detail: "Bryce Elder (5-6, 4.02) starts the 12:35 PM ET finale at PNC Park against Pirates righty Mitch Keller (6-6, 5.02), with Atlanta trying to leave Pittsburgh with a 2-2 split before the All-Star break.", recency: "today" },
-    { category: "injury", title: "Acuna set for a rehab assignment over the break", detail: "Walt Weiss reiterated that Ronald Acuna Jr. (left hamstring) will likely open a minor-league rehab assignment during the All-Star break, probably at Columbus or Gwinnett, with a best case of three or four rehab games and a return to the lineup right after the break.", recency: "today" },
-    { category: "standings", title: "Braves lead the NL East at 53-38", detail: "The win keeps Atlanta comfortably atop the division, roughly 2.5 games up on Philadelphia and about 3.5 on Miami, which has won four straight. Washington sits around 6.5 back and the last-place Mets trail by roughly 15.", recency: "today" },
-    { category: "injury", title: "Perez on the 15-day IL with a forearm contusion", detail: "Martin Perez (6-6, 3.54) is shelved by the left forearm contusion he suffered when Juan Soto lined a ball off his arm July 5. X-rays were negative, so the club expects a short absence, but he misses at least two turns and the earliest return is after the break.", recency: "this-week" },
-    { category: "narrative", title: "Olson is still the engine of the offense", detail: "Matt Olson leads the majors with 24 home runs and 57 RBIs, and with Acuna out he and Drake Baldwin remain the spine of the lineup heading into the break.", recency: "this-week" },
+    { category: "result", title: "Yastrzemski's slam clinches Pittsburgh, 10-5", detail: "Mike Yastrzemski broke a 6-5 game open with a ninth-inning grand slam off Dennis Santana, his third career slam, and Atlanta beat the Pirates 10-5 to win the series and climb to 54-38.", recency: "yesterday", art: { imageUrl: "/braves-tracker/assets/cover/2026-07-09-yastrzemski-grand-slam.jpg", alt: "Mike Yastrzemski watches his ninth-inning grand slam sail into the Pittsburgh night, the swing that clinched the series.", credit: "TRACKER PHOTO DESK" } },
+    { category: "milestone", title: "Olson ties Dale Murphy's 740-game iron streak", detail: "Matt Olson led off Thursday's win with his MLB-leading 25th homer and, in playing his 740th straight game, tied Dale Murphy's franchise record for consecutive games played, a streak dating to the start of 2022.", recency: "yesterday" },
+    { category: "narrative", title: "Jarvis' first career homer caps a three-hit night", detail: "Rookie Jim Jarvis broke through with his first big-league home run, a two-run shot off Cam Sanders in a three-run 4th, and finished 3-for-4 while seizing the extended shortstop look with Acuna out.", recency: "yesterday" },
+    { category: "rotation", title: "Tonight: Sale opens the St. Louis set vs. Leahy", detail: "Chris Sale (9-6, 2.28) takes the ball for Friday's 8:15 PM ET opener at Busch Stadium against Cardinals righty Kyle Leahy (7-4), the first of three in St. Louis before the All-Star break.", recency: "today" },
+    { category: "injury", title: "Acuna set for a rehab assignment over the break", detail: "Walt Weiss reiterated that Ronald Acuna Jr. (left hamstring) will likely open a minor-league rehab assignment during the All-Star break, probably at Columbus or Gwinnett, with a best case of three or four rehab games and a return to the lineup right after the break.", recency: "this-week" },
+    { category: "standings", title: "Braves lead the NL East at 54-38", detail: "The win pushes Atlanta's division lead back to 3.0 games over Philadelphia (50-40) and 3.5 over Miami (51-42). Washington sits 7.0 back and the last-place Mets trail by 15.5.", recency: "today" },
+    { category: "rotation", title: "Dodd quietly the bullpen's most valuable bridge", detail: "Dylan Dodd's perfect fifth Thursday earned the win and dropped his ERA to 1.13, improving him to 2-0. He has been the left-handed multi-inning bridge Atlanta wanted alongside Dylan Lee, part of a relief corps that leads the majors by ERA.", recency: "yesterday" },
+    { category: "injury", title: "Perez out until after the break with a forearm contusion", detail: "Martin Perez (6-6, 3.54) remains on the 15-day IL with the left forearm contusion he suffered when Juan Soto lined a ball off his arm July 5. X-rays were negative, but the earliest return is after the All-Star break.", recency: "this-week" },
     { category: "milestone", title: "Five Braves headed to the All-Star Game", detail: "Drake Baldwin and Ozzie Albies were elected NL starters, Chris Sale (10th selection) and Raisel Iglesias made the pitching staff, and Matt Olson is a reserve. The game is July 14 at Citizens Bank Park in Philadelphia.", recency: "this-week" },
-    { category: "transaction", title: "Owen Murphy optioned after a one-game cameo", detail: "The 2022 first-rounder's debut stay lasted one game before Atlanta sent him back to Triple-A and selected lefty Connor Thomas. The churn reflects how thin the pitching depth is with Perez down and several arms on the IL.", recency: "this-week" },
+    { category: "transaction", title: "Pitching depth churns before the break", detail: "The staff keeps shuffling arms to cover for Perez and the injured relievers: Owen Murphy was optioned after a one-game cameo, lefty Connor Thomas was selected, James Karinchak recalled, and Tyler Kinley went on the paternity list.", recency: "this-week" },
     { category: "injury", title: "Strider tracking toward mid-August", detail: "Spencer Strider stays on the 60-day IL with right elbow inflammation and no ligament damage. The four-week shutdown puts his earliest realistic return around mid-August.", recency: "ongoing" },
     { category: "injury", title: "Sean Murphy targeting mid-to-late July", detail: "Sean Murphy remains on the 60-day IL with the fractured left middle finger, now out of the cast and into a splint, with a return target around July 17. Baldwin handles the bulk of the catching, with Bart backing up.", recency: "ongoing" },
     { category: "injury", title: "Suarez still slated for after the break", detail: "Robert Suarez (right forearm inflammation) had a clean MRI but is not expected to rejoin the bullpen until after the All-Star break. Iglesias and Dylan Lee continue to carry the late innings.", recency: "ongoing" },
