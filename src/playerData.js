@@ -32,10 +32,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
     stats: { avg: .251, obp: .373, slg: .421, ops: .793, hr: 6, rbi: 19, sb: 15, bb: 22, so: 34, games: 48 },
-    statNote: "THE REHAB MOVES TO GWINNETT, AND THE RETURN IS CLOSE: The Stripers announced Friday that Acuña's rehab assignment had been transferred to Triple-A Gwinnett, which opened a three-game set against Toledo at Fifth Third Field July 17-19. He hit .143 (1-for-7) with two walks over three complex-league games starting July 13, but the one hit was a grand slam, and the .904 OPS says the swing is there even if the legs need at-bats. A return to Atlanta is expected early next week. The big-league line stays frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games.",
+    statNote: "EXPECTED BACK IN THE LINEUP THIS WEEK: Mark Bowman reported Sunday that Acuña is expected to return to Atlanta's lineup during the San Diego series, and Walt Weiss has said the activation could come before the homestand ends Thursday. The rehab moved up to Triple-A Gwinnett on July 17 after three complex-league games in which he went 1-for-7 with two walks, the one hit a grand slam, for a .904 OPS. He has been the designated hitter throughout, so outfield innings are the last box, and Weiss has said he will play primarily right field on return. The big-league line stays frozen at .251/.373/.421 with 6 HR and 15 SB through 48 games. It is worth noting that Atlanta's 29-game slide began June 9, the day he went back on the IL.",
     form: 8.2,
     status: "il-10",
-    injuryNote: "GRADE 1 LEFT HAMSTRING STRAIN (recurrence in the same left hamstring as May's strain), on the 10-day IL since Wed Jun 10. REHAB AT TRIPLE-A GWINNETT: the Stripers announced Friday, July 17 that his assignment had been transferred up from the rookie-level FCL Braves, where he went 1-for-7 with two walks and a grand slam over three games beginning July 13. He has been the designated hitter in every rehab appearance, so the last box to check is outfield innings. Return to Atlanta is expected early next week.",
+    injuryNote: "GRADE 1 LEFT HAMSTRING STRAIN (recurrence in the same left hamstring as May's strain), on the 10-day IL since Wed Jun 10. REHAB AT TRIPLE-A GWINNETT since July 17, transferred up from the rookie-level FCL Braves, where he went 1-for-7 with two walks and a grand slam over three games beginning July 13. He has been the designated hitter in every rehab appearance, so the last box to check is outfield innings. RETURN EXPECTED THIS WEEK: Weiss has said activation could come before the homestand ends Thursday, and that Acuña will be used primarily in right field.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/36185.png",
     assignment: "rehab",
     contract: { years: 8, total: 100000000, guaranteed: 100000000, apy: 12500000, throughYear: 2028 },
@@ -74,9 +74,9 @@ export const PLAYERS = [
     lineupSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 29, experience: 8,
-    stats: { avg: .215, obp: .293, slg: .348, ops: .641, hr: 10, rbi: 32, sb: 2, bb: 12, so: 47, games: 53 },
-    statNote: "A SOLO SHOT TO OPEN THE SECOND HALF: Riley went deep in Friday's 15-1 win over Texas, his 10th of the year and his first sign of life since a first half that ended at .209. He added a second hit in the 19-hit night. One game does not fix a .348 slugging percentage, but the lineup needs him to be a middle-of-the-order bat again, and the break may have bought him a reset.",
-    form: 7.2,
+    stats: { avg: .215, obp: .295, slg: .371, ops: .666, hr: 12, rbi: 36, sb: 2, bb: 12, so: 47, games: 98 },
+    statNote: "TWO HOMERS SUNDAY, AND THE SWING LOOKS LIKE IT USED TO: Riley was 3-for-4 with four RBI and two runs in the 8-5 win over Texas, his second multi-homer game of the year. He stayed back on an 0-2 curveball from Nathan Eovaldi in the 2nd and drove it a projected 416 feet into the second deck in left, then lined a 95.1 mph fastball over the center-field wall in the 4th at 109.1 mph off the bat. He hit .207 with nine homers and a .618 OPS over 95 games before the All-Star break and has gone 6-for-12 with three homers in the three games since. \"The first half beat me up pretty good,\" he said. \"Just needed to clear my head.\" Weiss: \"That ball to center was smoked.\"",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34982.png",
@@ -158,9 +158,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .264, obp: .351, slg: .458, ops: .809, hr: 16, rbi: 51, sb: 1, bb: 18, so: 49, games: 58 },
-    statNote: "FIVE RBI AND A 419-FOOT SHOT INTO THE BULLPEN: Baldwin owned the second-half opener, going 3-for-4 with a walk, two runs, and five RBI in the 15-1 rout of Texas. With Atlanta up 2-0 entering the 4th, he drove a three-run homer 419 feet into the Braves bullpen in right-center, his 16th of the year. He was the NL's elected starting catcher on Tuesday and has carried nearly the full catching load with Sean Murphy on the 60-day IL.",
-    form: 9.4,
+    stats: { avg: .278, obp: .363, slg: .489, ops: .852, hr: 18, rbi: 54, sb: 2, bb: 18, so: 49, games: 60 },
+    statNote: "A FIVE-HIT, TWO-HOMER SUNDAY, AND A 10-FOR-14 SERIES: Baldwin's first career five-hit game came in the 8-5 win over Texas, 5-for-5 with his 17th and 18th home runs, two RBI, and a stolen base. He is the first Braves catcher with a five-hit game since Johnny Estrada on May 15, 2004, and the first Brave of any position with two homers in a five-hit game since Ozzie Albies on June 30, 2021. Across the three-game series he went 10-for-14 with three homers and eight RBI. He ranked fourth among NL hitters with a 155 wRC+ before straining his right oblique on May 18, then hit .079 over 16 games after returning June 16. Weiss: \"Baldwin is back to form. I think it's official now.\"",
+    form: 9.7,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -1291,26 +1291,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-07-19",
-    weekday: "Sun",
-    time: "1:35 PM ET",
-    opp: "TEX",
-    home: true,
-    venue: "Truist Park · Atlanta",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "5-4", era: 3.61, daysRest: 10, hand: "R" },
-    oppSP: { name: "Nathan Eovaldi (TBA)", record: null, era: null, hand: "R" },
-    note: "Rubber game of the series after Friday's 15-1 rout and Saturday's 7-6 loss. Grant Holmes closes it out, with Nathan Eovaldi lined up for Texas but dealing with an illness, so the Rangers had not confirmed a starter. San Diego arrives Monday for four.",
-  },
-  {
     date: "2026-07-20",
     weekday: "Mon",
     time: "7:15 PM ET",
     opp: "SD",
     home: true,
     venue: "Truist Park · Atlanta",
-    atlSP: { id: "lopez", name: "Reynaldo Lopez", record: null, era: null, daysRest: null, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "San Diego opens a four-game set at Truist Park. Weiss laid out the next five days as Holmes, Lopez, Bryce Elder, Martin Perez, and Chris Sale, with Perez due back off the IL Tuesday.",
+    atlSP: { id: "elder", name: "Bryce Elder", record: "5-6", era: 4.19, daysRest: 10, hand: "R" },
+    oppSP: { name: "JP Sears", record: null, era: 5.03, hand: "L" },
+    note: "San Diego opens a four-game set at Truist Park. The Padres arrive 49-50 after dropping their second-half opening series to the last-place Royals, and their front office has said publicly it could sell at the Aug. 3 deadline. San Diego swept Atlanta at Petco in June, so this is a measuring stick both ways.",
   },
   {
     date: "2026-07-21",
@@ -1319,9 +1308,9 @@ export const UPCOMING_SCHEDULE = [
     opp: "SD",
     home: true,
     venue: "Truist Park · Atlanta",
-    atlSP: { id: "elder", name: "Bryce Elder", record: null, era: null, daysRest: null, hand: "R" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Martin Perez becomes eligible to come off the 15-day IL today, with a Wednesday start the expectation.",
+    atlSP: { id: "lopez", name: "Reynaldo Lopez", record: null, era: 3.50, daysRest: null, hand: "R" },
+    oppSP: { name: "Walker Buehler", record: null, era: 5.36, hand: "R" },
+    note: "Martin Perez becomes eligible to come off the 15-day IL today, with a Wednesday start the expectation. Buehler has allowed 20 runs over his last 11 innings.",
   },
   {
     date: "2026-07-22",
@@ -1331,28 +1320,40 @@ export const UPCOMING_SCHEDULE = [
     home: true,
     venue: "Truist Park · Atlanta",
     atlSP: { id: "perez-martin", name: "Martin Perez", record: "6-6", era: 3.54, daysRest: null, hand: "L" },
-    oppSP: { name: "TBA", record: null, era: null, hand: null },
-    note: "Perez's expected return from the left forearm contusion he took off a Juan Soto line drive on July 5.",
+    oppSP: { name: "Michael King", record: null, era: null, hand: "R" },
+    note: "Perez's expected return from the left forearm contusion he took off a Juan Soto line drive on July 5. King threw seven shutout innings against Atlanta in June and has allowed four runs over his last 17 innings.",
+  },
+  {
+    date: "2026-07-23",
+    weekday: "Thu",
+    time: "12:15 PM ET",
+    opp: "SD",
+    home: true,
+    venue: "Truist Park · Atlanta",
+    atlSP: { id: "sale", name: "Chris Sale", record: "10-6", era: 2.06, daysRest: 5, hand: "L" },
+    oppSP: { name: "Griffin Canning", record: null, era: 6.67, hand: "R" },
+    note: "Getaway-day finale and the end of the homestand. Sale carries a 2.06 ERA over 18 starts and the strongest NL Cy Young case in the league. Weiss has said Acuna could be back in the lineup before this homestand ends.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-07-19",
-  time: "1:35 PM ET",
-  opp: "TEX",
+  date: "2026-07-20",
+  time: "7:15 PM ET",
+  opp: "SD",
   home: true,
   venue: "Truist Park · Atlanta, GA",
-  tv: "BravesVision / Rangers Sports Network",
+  tv: "BravesVision / Padres.TV / Gray TV",
   probables: {
-    atl: { pitcher: "Grant Holmes", record: "5-4", era: 3.61 },
-    opp: { pitcher: "Nathan Eovaldi (TBA)", record: null, era: null },
+    atl: { pitcher: "Bryce Elder", record: "5-6", era: 4.19 },
+    opp: { pitcher: "JP Sears", record: null, era: 5.03 },
   },
-  note: "HOLMES CLOSES A SERIES THE ROTATION HAS ALREADY DEFINED. Friday belonged to CHRIS SALE, seven scoreless and the 2,700th strikeout of his career in a 15-1 rout. Saturday belonged to everything behind him: OWEN MURPHY lasted 2 2/3 in his first career start, TYLER KINLEY and DYLAN LEE gave back a two-run lead with a four-run 6th, and Texas won 7-6. Atlanta is 56-41 and still leads the NL East, but the club has now lost 20 of 31 dating to June 9 with a rotation ERA of 5.53 over that span, and Sale's Friday gem was the first seven-inning start by a Brave since Sale himself on May 20. This afternoon it is GRANT HOLMES (5-4, 3.61) at 1:35 PM ET against a Texas starter the Rangers had not confirmed, with NATHAN EOVALDI lined up but fighting an illness. San Diego comes in Monday for four. IL watch: STRIDER (60-day, elbow) now a long shot for any 2026 innings after Walt Weiss declined to call a season-ending verdict inaccurate; SCHWELLENBACH (60-day) still has not been sent to Florida to begin a four-to-six-week ramp; MARTIN PEREZ (forearm) eligible Tuesday and likely starting Wednesday; AJ SMITH-SHAWVER threw 4 1/3 scoreless with five strikeouts in a Gwinnett rehab start Saturday and could help by Thursday; ACUNA (hamstring) and KIM (finger) both rehabbing at Triple-A Gwinnett; SEAN MURPHY (60-day, finger) and ROBERT SUAREZ (forearm) still out; MIKE YASTRZEMSKI (elbow) a short absence.",
+  note: "THE BATS CAME BACK BEFORE THE ROTATION DID, AND FOR ONE WEEKEND THAT WAS ENOUGH. Atlanta scored at least six runs in all three games against Texas, took the series two to one, and opens a four-game set with San Diego at 57-41 and three up in the NL East. Sunday was DRAKE BALDWIN and AUSTIN RILEY, four home runs between them: Baldwin 5-for-5 with his 17th and 18th, the first five-hit game by a Braves catcher since Johnny Estrada in 2004, and Riley 3-for-4 with four RBI, his 11th and 12th, one of them 416 feet into the second deck and the other off the bat at 109.1 mph. Riley hit .207 with a .618 OPS across 95 games before the break and is 6-for-12 with three homers since. \"The first half beat me up pretty good,\" he said. \"Just needed to clear my head.\" Tonight it is BRYCE ELDER (5-6, 4.19) against JP SEARS (5.03) at 7:15 PM ET. San Diego arrives 49-50, having just lost a series to the last-place Royals, with its front office openly weighing a sell-off before the Aug. 3 deadline, but the Padres swept Atlanta at Petco last month. IL watch: ACUNA (hamstring) is expected back in the lineup this week, possibly before the homestand ends Thursday; KIM (finger) is rehabbing alongside him at Triple-A Gwinnett; MARTIN PEREZ (forearm) is eligible Tuesday and lined up for Wednesday; AJ SMITH-SHAWVER threw 4 1/3 scoreless at Gwinnett on Saturday; STRIDER (60-day, elbow) is a long shot for any 2026 innings; SCHWELLENBACH (60-day) still has not started his four-to-six-week ramp; SEAN MURPHY (60-day, finger), ROBERT SUAREZ (forearm), and MIKE YASTRZEMSKI (elbow) all remain out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-07-19", opp: "TEX", home: true, atlScore: 8, oppScore: 5, result: "W", note: "FOUR HOMERS FROM TWO BATS, AND THE SERIES: BRAVES 8, RANGERS 5. Atlanta took the rubber game Sunday afternoon at Truist Park in a meeting of first-place clubs, and it belonged entirely to DRAKE BALDWIN and AUSTIN RILEY. Baldwin went 5-for-5 with two home runs, his 17th and 18th, plus two RBI and a stolen base, the first five-hit game by a Braves catcher since Johnny Estrada on May 15, 2004 and the first two-homer, five-hit game by any Brave since Ozzie Albies on June 30, 2021. He finished the series 10-for-14 with three homers and eight RBI. Riley was 3-for-4 with four RBI and two runs, staying back on an 0-2 curveball from NATHAN EOVALDI in the 2nd and driving it a projected 416 feet into the second deck in left, then lining a 95.1 mph fastball over the center-field wall in the 4th at 109.1 mph off the bat. It was his second multi-homer game of the year and his 11th and 12th of the season, and he is 6-for-12 with three homers in the three games since the break after hitting .207 with a .618 OPS across 95 games before it. Atlanta scored at least six runs in all three games against Texas, something it had managed just five times in the final 29 games of the first half. The Braves improved to 57-41 and lead the NL East by three." },
   { date: "2026-07-18", opp: "TEX", home: true, atlScore: 6, oppScore: 7, result: "L", note: "A FOUR-RUN SIXTH UNDOES A FOUR-RUN SECOND: RANGERS 7, BRAVES 6. Atlanta led 5-3 and lost it Saturday afternoon at Truist Park, and the way it happened put the rotation problem back on the table. OWEN MURPHY, 22, made his first career start and lasted 2 2/3, charged with three runs (two earned) on five hits and two walks; JOC PEDERSON, back at his 2021 home, opened the scoring with a 1-2 fastball into the Chop House. Atlanta answered with four in the 2nd, ELI WHITE driving a two-run homer 406 feet into the Hank Aaron Terrace (his 6th), DRAKE BALDWIN adding an RBI single, and OZZIE ALBIES a sacrifice fly. Then the 3rd turned: on a lazy fly to left-center, MAURICIO DUBON collided with MICHAEL HARRIS II and the ball came loose, and Texas followed with four singles, WYATT LANGFORD and BRANDON NIMMO driving in runs. Harris opened the bottom half with a 405-foot homer, his 17th, for a 5-3 lead. It held until the 6th, when TYLER KINLEY (L, 5-4) gave up a leadoff double to Ezequiel Duran and a two-run homer to EVAN CARTER, and DYLAN LEE loaded the bases before NIMMO ripped a first-pitch fastball up the middle for the go-ahead two-run single. Dubon's RBI double in the 7th cut it to 7-6, and JIM JARVIS singled with two outs in the 8th to bring the winning run to the plate, but Baldwin flew out and JACOB LATZ retired the heart of the order in the 9th. MACKENZIE GORE (W, 6-8) got the decision despite five earned. Atlanta fell to 56-41; Texas improved to 50-48." },
   { date: "2026-07-17", opp: "TEX", home: true, atlScore: 15, oppScore: 1, result: "W", note: "SALE'S SEVEN SHUTOUT INNINGS, BALDWIN'S FIVE RBI, AND A 19-HIT ROUT: BRAVES 15, RANGERS 1. Atlanta came out of the All-Star break Friday night at Truist Park and buried Texas. CHRIS SALE (W, 10-6) was untouchable across seven scoreless innings on two hits with six strikeouts, and no Ranger reached third base against him; his fourth strikeout was the 2,700th of his career, leaving him 71 short of Frank Tanana's 2,773. DRAKE BALDWIN did the heaviest damage, going 3-for-4 with a walk, two runs, and five RBI, the big blow a 419-foot three-run homer into the Braves bullpen in right-center in the 4th that broke a 2-0 game open. MATT OLSON (No. 26, still the major-league lead) and AUSTIN RILEY (No. 10) added solo shots. Every Atlanta starter had a hit in a 19-hit night, with Olson, Riley, OZZIE ALBIES, MICHAEL HARRIS II, MAURICIO DUBON, and JIM JARVIS each collecting two. Rangers starter CAL QUANTRILL (L, 3-2) was hammered for six runs on 11 hits in four innings, both season highs, and watched his ERA jump from 3.11 to 3.93. Atlanta improved to 56-40 and pushed its NL East lead to 3.0 games." },
   { date: "2026-07-12", opp: "STL", home: false, atlScore: 4, oppScore: 3, result: "W", note: "WINN THROWS IT AWAY, BRAVES ESCAPE ST. LOUIS 4-3: Atlanta avoided the sweep in Sunday's first-half finale and did it on a Gold Glover's error. With two outs in the 9th, OZZIE ALBIES doubled off JOJO ROMERO (L, 1-3), who then hit MICHAEL HARRIS II with a two-strike pitch; Cardinals manager Oliver Marmol was ejected arguing the failed challenge. MAURICIO DUBON rolled what should have been the third out to shortstop, but MASYN WINN, the 2025 NL Gold Glove winner, threw it away and Albies came all the way around. Atlanta had taken its first lead in the 4th on an overturned call at the plate, AUSTIN RILEY racing home from second on DRAKE BALDWIN's two-out single and getting his left hand in a beat ahead of the tag. BREWER HICKLEN, 30 years old and a career minor leaguer, doubled to left-center in the 6th for his first big-league RBI and first extra-base hit, making it 3-1, before JOSE FERMIN's two-out, two-run single tied it in the bottom half. TYLER KINLEY (W, 5-3) got the final out of the 8th and RAISEL IGLESIAS worked a perfect 9th for save No. 19. Atlanta reached the All-Star break 55-40 and two games up in the NL East." },
@@ -1369,11 +1370,11 @@ export const RESULTS = [
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 56, l: 41, pct: .577, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 54, l: 45, pct: .545, gb: 3.0,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 52, l: 46, pct: .531, gb: 4.5,  streak: "L1" },
-  { team: "WSH", name: "Washington Nationals",   w: 49, l: 49, pct: .500, gb: 7.5,  streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 42, l: 57, pct: .424, gb: 15.0, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 57, l: 41, pct: .582, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 55, l: 45, pct: .550, gb: 3.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 52, l: 47, pct: .525, gb: 5.5,  streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 50, l: 49, pct: .505, gb: 7.5,  streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 42, l: 58, pct: .420, gb: 16.0, streak: "W1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1383,11 +1384,11 @@ export const NL_EAST_STANDINGS = [
 // shows a broken image. The daily update refreshes this block whenever it
 // queues a new image request in ~/Vault/Notes/image-requests.md.
 export const COVER_PHOTO = {
-  date: "2026-07-18",
-  imageUrl: "/braves-tracker/assets/cover/2026-07-18-sale-2700th-k.jpg",
-  fallbackPlayerId: "sale",
+  date: "2026-07-20",
+  imageUrl: "/braves-tracker/assets/cover/2026-07-20-baldwin-five-hits.jpg",
+  fallbackPlayerId: "baldwin",
   cutline:
-    "Chris Sale finishes a strikeout in Friday's second-half opener at Truist Park, where he threw seven scoreless innings on two hits and recorded the 2,700th of his career. It was the first seven-inning start by a Braves pitcher since Sale himself on May 20, a fact that framed the rest of the weekend.",
+    "Drake Baldwin follows a swing at Truist Park on Sunday, when he went 5-for-5 with his 17th and 18th home runs in an 8-5 win over Texas. It was the first five-hit game by a Braves catcher since Johnny Estrada in 2004, and the first two-homer five-hit game by any Brave since Ozzie Albies in 2021.",
   credit: "THE TRACKER PHOTO DESK",
 };
 
@@ -1436,25 +1437,24 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-19T09:05:00-04:00",
+  generatedAt: "2026-07-20T09:10:00-04:00",
   summary:
-    "TWO GAMES INTO THE SECOND HALF, THE ROTATION IS STILL THE WHOLE STORY. Friday was as good as it gets: Chris Sale threw seven scoreless on two hits, recorded the 2,700th strikeout of his career, and Atlanta buried Texas 15-1 behind Drake Baldwin's five RBI and 19 team hits. Saturday was the other half of the ledger. Owen Murphy, 22, lasted 2 2/3 in his first career start, a collision between Mauricio Dubon and Michael Harris II in left-center opened the door to a four-single inning, and after Eli White's two-run homer and Harris's 17th had built a 5-3 lead, Tyler Kinley and Dylan Lee gave back four in the 6th. Rangers 7, Braves 6. Walt Weiss did not dress it up: \"We need to take a step forward with our starting pitching.\" The numbers behind him are worse than the record suggests, a 5.53 rotation ERA while the club has lost 20 of 31 dating to June 9, with Sale's Friday gem the first seven-inning start by a Brave since Sale himself on May 20. And the internal answers keep receding. Asked whether Spencer Strider is done for the year, Weiss said he would not call that inaccurate. Spencer Schwellenbach still has not been sent to Florida to begin a four-to-six-week ramp. Martin Perez is eligible Tuesday, AJ Smith-Shawver threw 4 1/3 scoreless with five strikeouts at Gwinnett on Saturday, and Hurston Waldrep is back in the mix next weekend, but the Aug. 3 deadline is now the likeliest fix. Grant Holmes closes the series at 1:35 PM ET. Atlanta is 56-41 and still leads the NL East.",
+    "THE OFFENSE ANSWERED FIRST. Atlanta scored at least six runs in all three games against Texas, won the series two to one, and comes out of the weekend 57-41 with a three-game lead in the NL East. That is a real change: the Braves had scored six or more in just five of the final 29 games before the break. Sunday's 8-5 win belonged to two bats. Drake Baldwin went 5-for-5 with his 17th and 18th home runs, the first five-hit game by a Braves catcher since Johnny Estrada in 2004 and the first two-homer five-hit game by any Brave since Ozzie Albies in 2021, finishing the series 10-for-14 with three homers and eight RBI. Austin Riley went 3-for-4 with four RBI and two homers, one a projected 416 feet into the second deck off Nathan Eovaldi, the other off the bat at 109.1 mph. Riley hit .207 with a .618 OPS over 95 games before the break and is 6-for-12 with three homers since. \"The first half beat me up pretty good,\" he said. \"Just needed to clear my head.\" Ronald Acuna Jr. is expected back in the lineup this week, possibly before the homestand ends Thursday, which matters because the 29-game slide that defined the first half began the day he went on the IL. The rotation question has not gone away, and the Aug. 3 deadline is still the likeliest fix, but for the first time in six weeks it is not the only story. San Diego opens four at Truist Park tonight, 49-50 and weighing a sell-off, though the Padres swept Atlanta at Petco last month. Bryce Elder (5-6, 4.19) faces JP Sears at 7:15 PM ET.",
   keyTopics: [
-    { category: "result", title: "Rangers 7, Braves 6: a two-run lead lost in the sixth", detail: "Atlanta led 5-3 behind Eli White's two-run homer and Michael Harris II's 17th before Tyler Kinley gave up a leadoff double and a two-run shot to Evan Carter, and Dylan Lee loaded the bases for Brandon Nimmo, who lined a first-pitch fastball up the middle for two. Mauricio Dubon's RBI double in the 7th cut it to one, and Jim Jarvis singled with two outs in the 8th, but Jacob Latz retired the heart of the order in the 9th.", recency: "today" },
-    { category: "rotation", title: "Owen Murphy's first career start lasted 2 2/3", detail: "The 22-year-old allowed three runs (two earned) on five hits and two walks, most of it after Dubon collided with Harris on a routine fly to open the 3rd. Texas whiffed on one of 14 swings against a 92.8 mph fastball and none of eight against the changeup. Murphy had never pitched above High-A before this year and carried a 4.44 ERA over 16 minor-league starts, so the verdict is not damning, just clear: not yet.", recency: "today" },
-    { category: "injury", title: "Weiss will not call it inaccurate to say Strider is done for the season", detail: "Asked directly, the manager answered, \"I would not say it is inaccurate.\" He left room for both Strider and Schwellenbach to pitch again in 2026, but Strider has been out of the rotation for over a month with the right elbow and is not on a throwing progression that gets him back this summer. Plan without him.", recency: "today" },
-    { category: "injury", title: "Schwellenbach still has not been sent to Florida", detail: "He would need four to six weeks to build up to pitch in a game for the first time in more than a year, and Weiss said he does not know when that process will start. A month ago the target was to head down around the All-Star break. It did not happen, and the runway to contribute in 2026 is nearly gone.", recency: "today" },
-    { category: "narrative", title: "A 5.53 rotation ERA and 11-20 since June 9", detail: "Atlanta's starters have averaged under five innings per outing across a 31-game stretch in which the club has lost 20. Sale's seven scoreless Friday was the first seven-inning start by a Brave since Sale on May 20, and only the fourth time in those 31 games that an Atlanta starter finished six. The lineup has been fine. This is the whole problem.", recency: "today" },
-    { category: "rotation", title: "The next five days: Holmes, Lopez, Elder, Perez, Sale", detail: "Weiss laid out the turn through the San Diego series. Martin Perez is not eligible to come off the 15-day IL until Tuesday and will likely start Wednesday. Reynaldo Lopez has been decent since returning to the rotation in late June, and if Perez and Bryce Elder pitch the way they did in April and May, the group stabilizes without a trade.", recency: "today" },
-    { category: "injury", title: "Smith-Shawver throws 4 1/3 scoreless with five strikeouts at Gwinnett", detail: "The rehab start Saturday was his sharpest step yet back from June 2025 Tommy John surgery, and Weiss said he could be available in Atlanta as soon as Thursday or Friday if needed. Given the state of the rotation, that is a live possibility rather than a formality.", recency: "today" },
-    { category: "transaction", title: "Waldrep becomes a rotation option again next weekend", detail: "Optioned July 10 after command problems, Hurston Waldrep is eligible to return next weekend. He carries an 8.44 ERA and an 8.46 FIP over three big-league games this year, though February elbow surgery to remove loose bodies kept him out until June 12, which explains some of the rust.", recency: "today" },
-    { category: "narrative", title: "The deadline is Aug. 3, and the Braves are shopping for starters", detail: "With Strider and Schwellenbach both effectively out of the plan, Atlanta is expected to be among the clubs bidding for the top starting pitchers available. The complication is the market: with so many teams still in contention, it is unclear who will actually be moved. An outfield bat remains the second item on the list.", recency: "this-week" },
-    { category: "milestone", title: "Sale's 2,700th strikeout came in a seven-inning shutout", detail: "The fourth of his six strikeouts Friday was No. 2,700, reached in an outing in which no Texas runner reached third base. He is 71 from Frank Tanana (2,773), sits at 10-6, and holds the strongest NL Cy Young case in the league as he bids for a second award in three seasons.", recency: "this-week" },
-    { category: "result", title: "Friday: 15-1, on 19 hits and five RBI from Baldwin", detail: "Every Atlanta starter had a hit and seven had at least two in the second-half opener. Baldwin's 419-foot three-run homer into the Braves bullpen broke it open, Matt Olson hit his major-league-leading 26th and Austin Riley his 10th, and Cal Quantrill was charged with six runs on 11 hits in four innings. It was the eighth double-digit run game of Atlanta's season.", recency: "this-week" },
-    { category: "injury", title: "Acuna and Kim both rehabbing at Triple-A Gwinnett", detail: "Both assignments were transferred up from the rookie-level FCL Braves on July 17. Acuna went 1-for-7 with two walks in three complex games, but the hit was a grand slam and his OPS was .904; he has been the designated hitter throughout, so outfield innings are the last box. Kim went 2-for-6 with a homer. Both could be back with Atlanta within roughly a week.", recency: "this-week" },
-    { category: "narrative", title: "The bullpen picked the wrong day to crack", detail: "Atlanta entered Saturday with the fifth-best relief ERA in baseball. Kinley had not allowed a run in his previous four appearances, though the long ball keeps finding him: seven home runs in 34 innings. Lee came in with an ERA under 1.00 and could not stop it. With Robert Suarez still not cleared to throw, there is little margin behind Raisel Iglesias.", recency: "today" },
-    { category: "standings", title: "Atlanta is 56-41 and still on top of the NL East", detail: "The Braves hold the division lead over Philadelphia, which lost 6-1 to the Mets on Saturday, with Miami next and Washington and New York further back. The cushion is real but not large, and the schedule now brings San Diego in for four at Truist Park starting Monday.", recency: "today" },
-    { category: "injury", title: "Yastrzemski, Sean Murphy, and Suarez all still out", detail: "Mike Yastrzemski went on the 10-day IL July 11 with left elbow inflammation, described as a short absence. Sean Murphy remains on the 60-day IL with a fractured left middle finger, leaving Drake Baldwin to carry nearly the full catching load with Joey Bart backing up. Robert Suarez has not resumed throwing and is likely a late-July return at best.", recency: "ongoing" },
+    { category: "result", title: "Braves 8, Rangers 5: four homers from two bats, and the series", detail: "Atlanta took the rubber game Sunday at Truist Park in a meeting of first-place clubs. Drake Baldwin and Austin Riley each went deep twice, and the Braves scored at least six runs for the third straight game, something they managed just five times across the final 29 games of the first half. Atlanta improved to 57-41.", recency: "today", art: { imageUrl: "/braves-tracker/assets/cover/2026-07-20-baldwin-five-hits.jpg", alt: "Drake Baldwin follows a swing at Truist Park during his first career five-hit game.", credit: "TRACKER PHOTO DESK" } },
+    { category: "milestone", title: "Baldwin's 5-for-5 is the first five-hit game by a Braves catcher since 2004", detail: "Baldwin homered twice inside his first career five-hit game, the 17th and 18th of his season, and added a stolen base. The last Braves catcher with five hits in a game was Johnny Estrada on May 15, 2004; the last Brave of any position to homer twice in a five-hit game was Ozzie Albies on June 30, 2021. Only Andruw Jones in 2006 and Gary Sheffield in 2003 have otherwise done it for Atlanta this century.", recency: "today" },
+    { category: "narrative", title: "Riley is 6-for-12 with three homers since the break", detail: "He hit .207 with nine home runs and a .618 OPS over 95 games before the All-Star Game, then spent the break in Mississippi with his kids rather than taking swings. Sunday he stayed back on an 0-2 curveball from Nathan Eovaldi and hit it 416 feet into the second deck, then lined a 95.1 mph fastball out to center at 109.1 mph. \"The first half beat me up pretty good. Just needed to clear my head.\"", recency: "today" },
+    { category: "injury", title: "Acuna is expected back in the lineup this week", detail: "Mark Bowman reported Sunday that Acuna is expected to return during the San Diego series, and Weiss has said activation could come before the homestand ends Thursday. He has been the designated hitter throughout the rehab, so outfield innings were the last box; Weiss said he will play primarily right field. Atlanta's 29-game slide began June 9, the day he went back on the IL.", recency: "today" },
+    { category: "rotation", title: "Elder opens the San Diego series tonight", detail: "Bryce Elder (5-6, 4.19) takes the ball at 7:15 PM ET against Padres left-hander JP Sears (5.03). Elder posted a 1.97 ERA through his first 11 starts and has been a different pitcher since, so Atlanta needs the April version back. Reynaldo Lopez follows Tuesday against Walker Buehler, Martin Perez is lined up for Wednesday against Michael King, and Chris Sale closes Thursday.", recency: "today" },
+    { category: "narrative", title: "San Diego arrives 49-50 and openly weighing a sell-off", detail: "The Padres dropped their second-half opening series to the last-place Royals, and AJ Preller has said the club could sell before the Aug. 3 deadline. Their front office has framed this four-game set as season-defining. The complication for Atlanta is that San Diego swept the Braves at Petco Park in June, and Michael King threw seven shutout innings in that series.", recency: "today" },
+    { category: "standings", title: "Atlanta is 57-41 and leads the NL East by three", detail: "Philadelphia fell to 55-45 after losing 6-1 to the Mets on Sunday behind Nolan McLean's 10 strikeouts. Miami dropped to 52-47 and sits 5.5 back, Washington beat the Athletics 5-2 to reach 50-49, and the Mets are 42-58, sixteen games out. The lead is three games with the deadline two weeks away.", recency: "today" },
+    { category: "injury", title: "Kim is rehabbing at Gwinnett alongside Acuna", detail: "Kim's assignment was transferred up from the rookie-level FCL Braves on July 17, where he homered in his first plate appearance and went 2-for-3. His big-league line is 5-for-73 in 27 games with no hit since June 3, so the bar is low, but he has been IL-eligible since July 11 and activation is now a roster decision rather than a medical one.", recency: "this-week" },
+    { category: "injury", title: "Perez is eligible Tuesday and lined up for Wednesday", detail: "He has been on the 15-day IL since July 6 with the left forearm contusion he took off a Juan Soto line drive; X-rays were negative. Perez carries a 3.54 ERA over 18 appearances and 14 starts, and he exceeded expectations for most of the first half. Getting him and Elder back to their April form is the cheapest available fix for the rotation.", recency: "this-week" },
+    { category: "rotation", title: "Smith-Shawver threw 4 1/3 scoreless at Gwinnett on Saturday", detail: "Five strikeouts, and his sharpest step yet coming back from June 2025 Tommy John surgery. Weiss said he could be available in Atlanta as soon as this week if the rotation needs him. Given that Strider is a long shot for any 2026 innings and Schwellenbach has not started his four-to-six-week ramp, that is a live option rather than a formality.", recency: "this-week" },
+    { category: "narrative", title: "The rotation problem has not been solved, only outscored", detail: "Atlanta's starters carried a 5.53 ERA across the 31-game stretch in which the club lost 20, averaging under five innings per outing. Sale's seven scoreless Friday was the first seven-inning start by a Brave since Sale himself on May 20. The weekend's offense papered over it. The Aug. 3 deadline is still the likeliest real fix, with a starter first and an outfield bat second.", recency: "this-week" },
+    { category: "milestone", title: "Sale's 2,700th strikeout came in Friday's seven-inning shutout", detail: "The fourth of his six strikeouts in the 15-1 win was No. 2,700, in an outing where no Texas runner reached third base. He is 71 from Frank Tanana's 2,773, sits at 10-6 with a 2.06 ERA over 18 starts, and holds the strongest NL Cy Young case in the league. He closes the San Diego series Thursday.", recency: "this-week" },
+    { category: "injury", title: "Strider a long shot for 2026, Schwellenbach still not ramping", detail: "Asked Saturday whether it was accurate to say Strider is done for the year, Weiss answered that he would not call that inaccurate. Schwellenbach still has not been sent to Florida to begin the four-to-six-week build-up he needs to pitch in a game for the first time in over a year. Plan without both.", recency: "this-week" },
+    { category: "injury", title: "Sean Murphy, Suarez, and Yastrzemski all still out", detail: "Sean Murphy remains on the 60-day IL with a fractured left middle finger and may not return until August, which leaves Baldwin carrying nearly the full catching load with Joey Bart backing up. Robert Suarez has not resumed throwing. Mike Yastrzemski went on the 10-day IL July 11 with left elbow inflammation and was described as a short absence.", recency: "ongoing" },
   ],
   sources: [
     "AP", "MLB.com", "AJC", "ESPN", "Sports Illustrated", "CBS Sports", "Washington Post", "Battery Power", "Braves Today", "Yardbarker", "FantasyPros", "Yahoo Sports", "Baseball-Reference", "FanGraphs",
