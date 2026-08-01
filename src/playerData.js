@@ -1,16 +1,15 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated July 31, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 1, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI JUL 31, DEADLINE WEEKEND: Atlanta is 64-45, first in the NL East and 7 up on
-// Philadelphia, after rallying past WASHINGTON 5-4 on Thursday night at Truist Park.
-// RONALD ACUNA JR and MIKE YASTRZEMSKI homered, and OZZIE ALBIES broke a 3-3 tie with a
-// two-run single in the 6th on a night the Braves managed just four hits. VICTOR MEDEROS
-// (1-0) got the first win of his career, DYLAN LEE worked a perfect 8th, and RAISEL
-// IGLESIAS closed it for save No. 23 (23-for-23), his second straight night with a save.
-// Eight of Atlanta's last nine games have been decided by one run. Now game two of the
-// four-game set tonight (7:15 PM ET), BRYCE ELDER (6-6, 3.96) opposing Washington's
-// FOSTER GRIFFIN (12-2, 2.76). IL watch: S. MURPHY (finger) sharp on his Gwinnett rehab
-// and nearing activation; KIM (finger) rehabbing; SUAREZ (forearm), JIMENEZ (knee), WENTZ
-// out; STRIDER (elbow) and SCHWELLENBACH not factoring in. Deadline Aug. 3, 6 PM ET.
+// SAT AUG 1, DEADLINE WEEKEND: Atlanta is 65-45, first in the NL East and 8 up on
+// Philadelphia, after beating WASHINGTON 6-2 a second straight night Friday at Truist
+// Park. MICHAEL HARRIS II and MATT OLSON homered, JIM JARVIS went 3-for-3 with two RBI,
+// and MAURICIO DUBON added two hits and two runs. BRYCE ELDER (W) turned in his 12th
+// quality start, one run over six innings, and ELIESER HERNANDEZ threw three scoreless
+// for the first save of his career. Now game three of the four-game set tonight (7:15 PM
+// ET), REYNALDO LOPEZ (4-3, 3.64) opposing Washington's MILES MIKOLAS (3-7, 5.60). IL
+// watch: S. MURPHY (finger) sharp on his Gwinnett rehab and nearing activation; KIM
+// (finger) rehabbing; SUAREZ (forearm), JIMENEZ (knee), WENTZ out; STRIDER (elbow) and
+// SCHWELLENBACH not factoring in. Trade deadline Monday Aug. 3, 6 PM ET.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -52,8 +51,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .271, obp: .344, slg: .547, ops: .891, hr: 27, rbi: 63, sb: 0, bb: 21, so: 52, games: 65, doubles: 23 },
-    statNote: "THE ONLY RUN IN A 1-0 WIN: Olson lined an RBI single in the 6th off Christian Scott to plate the lone run of Wednesday's 1-0 nightcap at Citi Field, giving Chris Sale all the support he needed to salvage the doubleheader split. His consecutive-games streak, which passed Dale Murphy's franchise record of 740 earlier this month, keeps climbing and dates to May 2, 2021 counting his Oakland years, ninth all-time. He leads the Braves in homers (27) and RBI (63).",
+    stats: { avg: .272, obp: .345, slg: .551, ops: .896, hr: 28, rbi: 64, sb: 0, bb: 21, so: 52, games: 66, doubles: 23 },
+    statNote: "NO. 28 IN THE SERIES-BUILDER: Olson hit a long home run in Friday's 6-2 win over Washington, one of two Atlanta homers on a night the Braves pushed their NL East lead to eight. His consecutive-games streak, which passed Dale Murphy's franchise record of 740 earlier this month, keeps climbing and dates to May 2, 2021 counting his Oakland years, ninth all-time. He leads the Braves in homers (28) and RBI (64).",
     form: 9.7,
     status: "active",
     injuryNote: null,
@@ -137,8 +136,8 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .304, obp: .338, slg: .506, ops: .844, hr: 19, rbi: 55, sb: 2, bb: 6, so: 27, games: 56, wrcPlus: null },
-    statNote: "NO. 19 IN THE POWER FINALE: Harris II added a solo homer off Griffin Canning in Thursday's 6-5 win, part of a four-homer Braves afternoon that closed the homestand. He is hitting .304 on the season with a team-leading hit total and plays center every day. The Braves have needed all of it with Acuna out, though that gap is about to close with the star's activation expected this weekend.",
+    stats: { avg: .305, obp: .339, slg: .509, ops: .848, hr: 20, rbi: 56, sb: 2, bb: 6, so: 27, games: 57, wrcPlus: null },
+    statNote: "NO. 20 AND CLIMBING: Harris II hit a long home run in Friday's 6-2 win over Washington, reaching 20 on the year and helping Atlanta stretch its division lead to eight games. He is hitting .305 on the season with a team-leading hit total and plays center every day. With Ronald Acuña Jr. back and mashing atop the order, the middle of the lineup is deepening for the stretch run.",
     form: 9.4,
     status: "active",
     injuryNote: null,
@@ -334,8 +333,8 @@ export const PLAYERS = [
     lineupSpot: null,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 0,
-    stats: { avg: .296, obp: .321, slg: .444, ops: .765, hr: 1, rbi: 3, games: 9 },
-    statNote: "HE PUT THE WINNING RUN AT THE PLATE: Jarvis singled with two outs in the 8th on Saturday, bringing Drake Baldwin up as the go-ahead run, though Baldwin flew out to left on the first pitch. He also had two hits in Friday's 15-1 rout. The 25-year-old is a speed-and-contact spark while Acuna is out, and he arrived from Gwinnett hitting .313 with a .406 OBP, 6 HR, and 32 steals.",
+    stats: { avg: .326, obp: .352, slg: .488, ops: .840, hr: 1, rbi: 5, games: 10 },
+    statNote: "3-FOR-3 WITH TWO RBI IN THE CLINCHER SETUP: Jarvis went 3-for-3 and drove in two runs Friday night in the 6-2 win over Washington, one of the offensive sparks alongside the Harris II and Olson homers. The 25-year-old rookie keeps making the most of his run of playing time, a speed-and-contact bat who arrived from Gwinnett hitting .313 with a .406 OBP, 6 HR, and 32 steals.",
     form: 8.0,
     status: "active",
     injuryNote: null,
@@ -563,8 +562,8 @@ export const PLAYERS = [
     rotationSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 27, experience: 4,
-    stats: { era: 4.14, whip: 1.29, ip: 108.2, k: 84, bb: 31, w: 6, l: 6, games: 19, starts: 19 },
-    statNote: "SIX INNINGS WHEN THE BULLPEN NEEDED THEM: Elder (W, 6-6) gave Atlanta exactly what Monday's 3-2 win over San Diego required, six innings on five hits with four strikeouts and a walk, both runs coming on solo homers (Manny Machado's 20th in the 4th, Ty France's off Danny Young after Elder left). The Braves had used 13 pitchers over the weekend, so length mattered more than dominance. It was his best start in over a month and dropped the ERA to 4.14.",
+    stats: { era: 4.00, whip: 1.27, ip: 114.2, k: 87, bb: 31, w: 7, l: 6, games: 20, starts: 20 },
+    statNote: "12TH QUALITY START, ONE RUN OVER SIX: Elder (W, 7-6) gave Atlanta its 12th quality start of his season Friday night, allowing one run over six innings in the 6-2 win over Washington and out-dueling Nationals lefty Foster Griffin. It was the length an overworked bullpen needed on deadline weekend, and it dropped his ERA to 4.00. The dependable back-of-the-rotation innings are exactly what the Braves are trying to reinforce before Monday's deadline.",
     form: 7.5,
     status: "active",
     injuryNote: null,
@@ -1339,21 +1338,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-07-31",
+  date: "2026-08-01",
   time: "7:15 PM ET",
   opp: "WSH",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "FanDuel Sports Southeast",
   probables: {
-    atl: { pitcher: "Bryce Elder", record: "6-6", era: 3.96 },
-    opp: { pitcher: "Foster Griffin", record: "12-2", era: 2.76 },
+    atl: { pitcher: "Reynaldo López", record: "4-3", era: 3.64 },
+    opp: { pitcher: "Miles Mikolas", record: "3-7", era: 5.60 },
   },
-  note: "GAME TWO WITH WASHINGTON, DEADLINE WEEKEND. Atlanta continues its four-game home set with the Nationals on Friday night after rallying past them 5-4 in the opener, a comeback keyed by homers from Ronald Acuña Jr. and Mike Yastrzemski and Ozzie Albies' go-ahead single. BRYCE ELDER (6-6, 3.96) gets the ball against Washington lefty FOSTER GRIFFIN (12-2, 2.76), one of the surprise arms of the National League this season. The Braves sit 64-45 and 7 up in the NL East with the Aug. 3, 6 PM ET trade deadline three days off, and ALEX ANTHOPOULOS is casting a wide net for a starter, bullpen help, and a bat. RAISEL IGLESIAS is a perfect 23-for-23 in saves, and SEAN MURPHY is nearing activation off his Triple-A rehab. Still out: ROBERT SUAREZ (forearm), JOE JIMENEZ (knee), and the 60-day trio of SPENCER STRIDER, SPENCER SCHWELLENBACH, and JOEY WENTZ.",
+  note: "GAME THREE WITH WASHINGTON, DEADLINE WEEKEND. Atlanta goes for the series clincher Saturday night after beating the Nationals in each of the first two games, most recently a 6-2 win keyed by homers from Michael Harris II and Matt Olson and a 3-for-3, two-RBI night from Jim Jarvis. REYNALDO LOPEZ (4-3, 3.64) gets the ball against Washington right-hander MILES MIKOLAS (3-7, 5.60), who has worked mostly in bulk relief this season. The Braves sit 65-45 and 8 up in the NL East with the Monday Aug. 3, 6 PM ET trade deadline two days off, and ALEX ANTHOPOULOS is casting a wide net for a starter, bullpen help, and a bat. SEAN MURPHY is nearing activation off his Triple-A rehab. Still out: ROBERT SUAREZ (forearm), JOE JIMENEZ (knee), and the 60-day trio of SPENCER STRIDER, SPENCER SCHWELLENBACH, and JOEY WENTZ.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-07-31", opp: "WSH", home: true, atlScore: 6, oppScore: 2, result: "W", note: "HARRIS AND OLSON GO DEEP, BRAVES BEAT WASHINGTON AGAIN: BRAVES 6, NATIONALS 2. Atlanta won a second straight over the Nationals on Friday night at Truist Park to push its NL East lead to eight games. MICHAEL HARRIS II and MATT OLSON hit long home runs, JIM JARVIS went 3-for-3 with two RBI, and MAURICIO DUBON added two hits and two runs scored. BRYCE ELDER (W) recorded his 12th quality start of the season, allowing one run over six innings, and FOSTER GRIFFIN (L) took the loss for Washington. ELIESER HERNANDEZ threw three scoreless innings for the first save of his career. The Braves improved to 65-45 and stayed 8 up in the NL East." },
   { date: "2026-07-30", opp: "WSH", home: true, atlScore: 5, oppScore: 4, result: "W", note: "ACUÑA AND YAZ GO DEEP, BRAVES RALLY PAST WASHINGTON: BRAVES 5, NATIONALS 4. Atlanta erased a three-run deficit Thursday night at Truist Park to open the four-game set. RONALD ACUÑA JR and MIKE YASTRZEMSKI homered, and OZZIE ALBIES broke a 3-3 tie with a two-run single in the 6th that held up on a night the Braves managed just four hits. VICTOR MEDEROS (W, 1-0) picked up the first win of his career with a scoreless inning, DYLAN LEE worked a perfect 8th, and RAISEL IGLESIAS closed it for his 23rd save in as many chances, his second straight night with a save. Eight of Atlanta's last nine games have been decided by one run. The Braves improved to 64-45 and stayed 7 up in the NL East." },
   { date: "2026-07-29", opp: "NYM", home: false, atlScore: 1, oppScore: 0, result: "W", note: "SALE SHOVES, BRAVES SALVAGE THE SPLIT: BRAVES 1, METS 0 (DH GAME 2). Chris Sale (W, 12-6) carried Atlanta to a doubleheader split Wednesday night at Citi Field, striking out nine and holding New York to two hits over six shutout innings without a walk. MATT OLSON drove in the only run with an RBI single in the 6th off CHRISTIAN SCOTT (L, 3-3), who answered with six innings of one-run, seven-strikeout ball of his own. It was Atlanta's first 1-0 win over the Mets since a seven-inning doubleheader game in June 2021. RAISEL IGLESIAS worked a perfect 9th as the fourth Braves pitcher for his 22nd save in 22 chances. The Braves improved to 63-45 and avoided the sweep." },
   { date: "2026-07-29", opp: "NYM", home: false, atlScore: 2, oppScore: 3, result: "L", note: "BENGE BREAKS THE TIE, METS TAKE THE OPENER: METS 3, BRAVES 2 (DH GAME 1). New York won its third straight to open the rain-made doubleheader Wednesday at Citi Field. With the score tied in the 7th, A.J. EWING and FRANCISCO LINDOR drew walks off DYLAN DODD (L, 1-1) and CARSON BENGE doubled home the go-ahead run. FRANCISCO ALVAREZ (RBI double) and Ewing (sacrifice fly) had produced the Mets' first two runs in the 6th. HUASCAR BRAZOBAN (W, 5-2) threw a perfect 7th, and DEVIN WILLIAMS retired the side in the 9th for his 15th save after MATT OLSON grounded into an inning-ending double play as the tying run in the 8th. Atlanta fell to 62-45 before taking the nightcap." },
@@ -1363,16 +1363,15 @@ export const RESULTS = [
   { date: "2026-07-24", opp: "BAL", home: false, atlScore: 7, oppScore: 6, result: "W", note: "OLSON'S THREE-RUN HOMER IN THE 10TH OPENS THE TRIP: BRAVES 7, ORIOLES 6. Atlanta scored four times in the 10th at Camden Yards to steal the series opener. JOEY BART led off the inning with a bloop single to right off ANDREW KITTREDGE (L), moving automatic runner BREWER HICKLEN to third, and Hicklen scored when Orioles second baseman JACKSON HOLLIDAY threw away JIM JARVIS's grounder trying to turn two. After Kittredge struck out the next two, MATT OLSON drove a three-run homer to right-center, his 27th. GRANT HOLMES gave up three runs with five strikeouts over five innings and Baltimore's TREVOR ROGERS went seven (two runs, six strikeouts), but ELIESER HERNANDEZ (W, 1-0) worked three scoreless in his Braves debut to turn the game. DRAKE BALDWIN homered, and CHRISTIAN ENCARNACION-STRAND homered and drove in four for the Orioles, who have lost three of four. Atlanta improved to 61-42 and has won five of six." },
   { date: "2026-07-23", opp: "SD", home: true, atlScore: 6, oppScore: 5, result: "W", note: "SALE STRIKES OUT 11, FOUR HOMERS CARRY THE SERIES: BRAVES 6, PADRES 5. Atlanta closed the homestand Thursday afternoon at Truist Park by taking three of four from San Diego and banking its 60th win. CHRIS SALE (W, 11-6) matched a season high with 11 strikeouts over six innings, charged with three runs on five hits and a walk, all of the damage coming in the 2nd. The Braves answered against Padres bulk reliever GRIFFIN CANNING with the long ball: DOMINIC SMITH drove a three-run homer, and MICHAEL HARRIS II and OZZIE ALBIES added solo shots. DRAKE BALDWIN piled on with his 19th of the year in the 7th. TY FRANCE pulled San Diego within one at 6-5 with a two-run homer in the 8th, but RAISEL IGLESIAS worked a scoreless 9th for his 21st save. Atlanta improved to 60-42 and stayed well clear atop the NL East." },
   { date: "2026-07-22", opp: "SD", home: true, atlScore: 7, oppScore: 6, result: "W", note: "A SIX-RUN EIGHTH, THEN A NINTH-INNING SCARE: BRAVES 7, PADRES 6. Atlanta took the series lead Wednesday night at Truist Park in a game that was 1-1 into the 8th and nearly got away in the 9th. MARTIN PEREZ, activated from the IL earlier in the day, gave the club exactly what the rotation has been missing, four scoreless innings with three strikeouts in his return from the July 6 forearm contusion. The bats broke it open in the 8th: with one out, MAURICIO DUBON singled off WANDY PERALTA (1-1) and JIM JARVIS doubled into the right-field corner to score him from first for a 2-1 lead, BREWER HICKLEN doubled to left to bring in Jarvis, and OZZIE ALBIES, MATT OLSON, AUSTIN RILEY, and DOMINIC SMITH followed with RBI singles off RANDY VASQUEZ. Atlanta collected seven of its 14 hits in the inning. Up 7-1 in the 9th, VICTOR MEDEROS gave up an RBI single to GAVIN SHEETS and a two-run triple to FERNANDO TATIS JR., and RAISEL IGLESIAS surrendered a two-run homer to LUIS RENGIFO before striking out MANNY MACHADO and TY FRANCE to end it for his 20th save. In the corresponding roster move for Perez, JR Ritchie was optioned to Triple-A Gwinnett. Atlanta improved to 59-42 and pushed its NL East lead to four." },
-  { date: "2026-07-21", opp: "SD", home: true, atlScore: 3, oppScore: 8, result: "L", note: "FOUR PADRES HOMERS EVEN THE SERIES: PADRES 8, BRAVES 3. San Diego answered Monday's quiet loss with a power surge Tuesday night at Truist Park, and Atlanta's rotation problem was back in plain view. REYNALDO LOPEZ (L, 4-3) was charged with five runs on nine hits and three walks over 4 1/3 innings, and JR RITCHIE made it worse in relief, serving up home runs to MANNY MACHADO and FERNANDO TATIS JR. Machado went deep twice, his 21st and 22nd; JACKSON MERRILL started the barrage with a solo shot off Lopez to tie it 2-2 in the 4th; and Tatis crushed a 474-foot two-run drive in the 8th, the longest home run in the majors this season, passing the 473-foot shot DRAKE BALDWIN hit earlier in the year. San Diego scored first in the 1st on a TY FRANCE RBI single that brought in Tatis, but Atlanta briefly led 2-1 in the 2nd on JIM JARVIS's RBI triple that scored MAURICIO DUBON and BREWER HICKLEN. That was the extent of the Braves offense. WALKER BUEHLER (W, 6-5) settled in after the shaky start. Atlanta fell to 58-42 and stayed three up in the NL East." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 64, l: 45, pct: .587, gb: 0,    streak: "W2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 57, l: 52, pct: .523, gb: 7.0,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 55, l: 54, pct: .505, gb: 9.0,  streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 55, l: 55, pct: .500, gb: 9.5,  streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 46, l: 63, pct: .422, gb: 18.0, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 65, l: 45, pct: .591, gb: 0,    streak: "W3" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 57, l: 53, pct: .518, gb: 8.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 55, l: 54, pct: .505, gb: 9.5,  streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 55, l: 56, pct: .495, gb: 10.5, streak: "L2" },
+  { team: "NYM", name: "New York Mets",          w: 46, l: 63, pct: .422, gb: 18.5, streak: "L1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1435,21 +1434,21 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-07-31T09:00:00-04:00",
+  generatedAt: "2026-08-01T09:00:00-04:00",
   summary:
-    "BRAVES RALLY PAST WASHINGTON, LEAD GROWS TO 7. Atlanta erased a three-run deficit Thursday night at Truist Park to beat the Nationals 5-4 in the opener of a four-game set. Ronald Acuña Jr. and Mike Yastrzemski homered, and Ozzie Albies broke a 3-3 tie with a two-run single in the 6th on a night the Braves managed just four hits. Victor Mederos got the first win of his career, and Raisel Iglesias closed it for his 23rd save in as many chances, his second straight night with a save. Eight of Atlanta's last nine games have been decided by one run. The Braves sit 64-45, first in the NL East and 7 up on Philadelphia, and send Bryce Elder (6-6, 3.96) against Washington's Foster Griffin (12-2, 2.76) in game two Friday night. The Aug. 3, 6 PM ET trade deadline is three days off, and Alex Anthopoulos is casting a wide net for a starter, bullpen help, and a bat. Sean Murphy is swinging well on his Triple-A rehab and could be activated in early August.",
+    "BRAVES BEAT WASHINGTON AGAIN, LEAD GROWS TO 8. Atlanta won a second straight over the Nationals on Friday night at Truist Park, a 6-2 victory that pushed its NL East lead to eight games over Philadelphia. Michael Harris II and Matt Olson hit long home runs, Jim Jarvis went 3-for-3 with two RBI, and Mauricio Dubon added two hits and two runs scored. Bryce Elder turned in his 12th quality start of the season, one run over six innings, and Elieser Hernandez threw three scoreless for the first save of his career. The Braves sit 65-45, first in the NL East, and send Reynaldo Lopez (4-3, 3.64) against Washington's Miles Mikolas (3-7, 5.60) in game three Saturday night. The trade deadline lands Monday at 6 PM ET, and Alex Anthopoulos is casting a wide net for a starter, bullpen help, and a right-handed bat. Ronald Acuña Jr. is back and producing atop the order, and Sean Murphy is swinging well on his Triple-A rehab with an activation nearing.",
   keyTopics: [
-    { category: "result", title: "Braves rally past Nationals 5-4 in the opener", detail: "Atlanta wiped out a three-run deficit Thursday night, riding homers from Ronald Acuña Jr. and Mike Yastrzemski and Ozzie Albies' go-ahead two-run single in the 6th to a 5-4 win over Washington despite managing only four hits. Victor Mederos (1-0) got his first career win and Raisel Iglesias closed it for his 23rd save.", recency: "yesterday" },
-    { category: "standings", title: "Braves 64-45, lead up to 7", detail: "The comeback win pushes Atlanta to 64-45 and 7 games clear of the Phillies (57-52) atop the NL East. Miami (55-54) sits 9 back, Washington (55-55) is 9.5 out, and the Mets remain 18 behind. Atlanta stays firmly in control of the East heading into deadline weekend.", recency: "today" },
-    { category: "narrative", title: "Game two with Washington, Elder vs Griffin", detail: "Bryce Elder (6-6, 3.96) takes the ball Friday night at Truist Park against Nationals lefty Foster Griffin, a surprise 12-2 with a 2.76 ERA this season. The Braves look to keep padding their division lead through deadline weekend.", recency: "today" },
-    { category: "narrative", title: "Deadline three days out, Anthopoulos hunts a starter", detail: "Alex Anthopoulos says the club can add rotation, bullpen, and a bat, and he is expected to pursue at least one playoff-caliber starter before the Aug. 3, 6 PM ET deadline. He is weighing internal returns against a market that includes several controllable arms.", recency: "this-week" },
-    { category: "narrative", title: "One-run games keep piling up", detail: "Eight of Atlanta's last nine games have been decided by a single run, a stretch that has leaned hard on a bullpen the front office wants to reinforce before the deadline. The Braves have won the majority of them, but the margins underline why depth tops the wish list.", recency: "this-week" },
-    { category: "transaction", title: "Yastrzemski back and producing off the IL", detail: "Mike Yastrzemski, reinstated July 21 from the 10-day IL (left elbow inflammation, out since July 11), homered in Thursday's comeback win. His return adds a left-handed bat to the corner mix behind Acuña as Atlanta stacks the lineup for the stretch run.", recency: "this-week" },
-    { category: "rotation", title: "Rotation's month-long slide fuels the search", detail: "Atlanta starters rank a respectable ninth in the majors with a 3.97 ERA on the season, but over the past month that number has ballooned toward 5.00. Behind Chris Sale, a playoff game two would fall to Reynaldo Lopez, Grant Holmes, Bryce Elder, or Martin Perez, which is why a starter tops the deadline wish list.", recency: "this-week" },
-    { category: "injury", title: "Sean Murphy sharp in rehab, activation nearing", detail: "Murphy (fractured left middle finger, 60-day IL) has multi-hit games in two of his first three Triple-A Gwinnett rehab appearances, including a three-hit night while catching all seven innings of a 7-3 win over Durham. Activation now looks likely in early August, easing the load Drake Baldwin and Joey Bart have carried.", recency: "this-week" },
-    { category: "milestone", title: "Iglesias a perfect 23-for-23 in saves", detail: "Raisel Iglesias converted his 23rd save in as many chances Thursday, his second straight night finishing a game, still the longest active save-conversion streak in the majors dating to 2025. With Robert Suarez out, he and Dylan Lee anchor the back of a stretched bullpen.", recency: "yesterday" },
+    { category: "result", title: "Braves beat Nationals 6-2 for a second straight win", detail: "Michael Harris II and Matt Olson homered, Jim Jarvis went 3-for-3 with two RBI, and Mauricio Dubon added two hits and two runs Friday night as Atlanta beat Washington 6-2 at Truist Park. Bryce Elder allowed one run over six innings for his 12th quality start, and Elieser Hernandez closed it out with three scoreless.", recency: "yesterday" },
+    { category: "standings", title: "Braves 65-45, lead up to 8", detail: "The win pushes Atlanta to 65-45 and eight games clear of the Phillies (57-53) atop the NL East. Miami (55-54) sits 9.5 back, Washington (55-56) is 10.5 out, and the Mets remain well behind. The Braves stay firmly in control of the East heading into the deadline.", recency: "today" },
+    { category: "narrative", title: "Game three with Washington, Lopez vs Mikolas", detail: "Reynaldo Lopez (4-3, 3.64) takes the ball Saturday night at Truist Park against Nationals right-hander Miles Mikolas (3-7, 5.60), who has worked mostly in bulk relief this year. Atlanta goes for a third straight win and the series with two games left in the four-game set.", recency: "today" },
+    { category: "narrative", title: "Trade deadline Monday, Anthopoulos hunts a starter", detail: "The deadline lands Monday at 6 PM ET. Alex Anthopoulos says the club can use a starter, bullpen help, and a right-handed bat, and he is expected to pursue at least one playoff-caliber arm. Reported targets around the market have included Tarik Skubal and Luis Castillo.", recency: "today" },
+    { category: "milestone", title: "Elieser Hernandez notches first career save", detail: "Elieser Hernandez threw three scoreless innings to finish Friday's 6-2 win, the first save of his career and a valuable long relief effort that spared an overworked bullpen on deadline weekend. He has quietly become a useful multi-inning piece since his Braves debut in late July.", recency: "yesterday" },
+    { category: "injury", title: "Acuña back and mashing atop the order", detail: "Ronald Acuña Jr., reinstated July 27 from a 38-game absence with a left hamstring strain, has settled back in as the leadoff man and the power is showing up again. His return deepens a lineup that had leaned on Harris II, Olson, and Drake Baldwin while he was out.", recency: "this-week" },
+    { category: "injury", title: "Sean Murphy sharp in rehab, activation nearing", detail: "Murphy (fractured left middle finger, 60-day IL) has multiple multi-hit games on his Triple-A Gwinnett rehab, including a three-hit night while catching seven innings. Activation now looks likely in early August, easing the load Drake Baldwin has carried behind the plate.", recency: "this-week" },
+    { category: "rotation", title: "Rotation depth still tops the deadline wish list", detail: "Atlanta starters have slid over the past month, and behind Chris Sale a playoff game two would fall to Reynaldo Lopez, Grant Holmes, Bryce Elder, or Martin Perez. That is why a controllable starter tops the front office's list with the deadline two days off.", recency: "this-week" },
+    { category: "milestone", title: "Iglesias a perfect 23-for-23 in saves", detail: "Raisel Iglesias remains a perfect 23-for-23 in save chances, still the longest active save-conversion streak in the majors dating to 2025. With Robert Suarez out, he and Dylan Lee anchor the back of a stretched bullpen the club wants to reinforce.", recency: "this-week" },
     { category: "milestone", title: "Sale at 12-6, Cy Young case keeps building", detail: "Chris Sale carries a 12-6 record and a 2.09 ERA over 20 starts and one of the loudest NL Cy Young cases in the league after his two-hit shutout at Citi Field. He continues to climb the career strikeout list, closing on Frank Tanana (2,773).", recency: "this-week" },
-    { category: "narrative", title: "Andruw Jones honored at Truist Park", detail: "Newly inducted Hall of Famer Andruw Jones was celebrated at Truist Park during the Washington series, a nod to one of the franchise's defining center fielders as the current club chases another division title.", recency: "this-week" },
+    { category: "transaction", title: "Yastrzemski back and adding thump off the IL", detail: "Mike Yastrzemski, reinstated July 21 from the 10-day IL (left elbow inflammation), has homered since returning and gives the corner mix a left-handed bat behind Acuña. His return is one of several the Braves have banked as the roster gets healthy for the stretch run.", recency: "this-week" },
     { category: "injury", title: "Strider, Suarez, Jimenez, and Wentz still out", detail: "Robert Suarez is on the IL with a right forearm issue, leaving Iglesias and Dylan Lee to carry the late innings. Spencer Strider (elbow) is a long shot to pitch again in 2026, Spencer Schwellenbach has not begun his build-up, and Joe Jimenez (knee) and Joey Wentz remain on the 60-day IL.", recency: "ongoing" },
   ],
   sources: [
