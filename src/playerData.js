@@ -1,18 +1,17 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated August 3, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 4, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// MON AUG 3, DEADLINE DAY: Atlanta is 67-45, first in the NL East and 8 up on
-// Philadelphia, after completing a FOUR-GAME SWEEP of WASHINGTON with a 4-2 win Sunday
-// at Truist Park, its first four-game sweep since September 2025. MIKE YASTRZEMSKI
-// homered and drove in two, MATT OLSON hit his 31st, DYLAN DODD (3-1) got the win in
-// relief of spot-starter JR RITCHIE, and RAISEL IGLESIAS closed it for his 24th save in
-// 24 tries. On the market, ALEX ANTHOPOULOS reinforced a battered roster ahead of the
-// 6 PM ET deadline: OF LANE THOMAS and LHP BAILEY FALTER arrived from Kansas City, and
-// RHP TYLER MAHLE came from San Francisco (for reliever Anthony Molina) to patch a
-// rotation missing Strider, Schwellenbach, and now Lopez. IL watch: REYNALDO LOPEZ
-// placed on the 15-day IL (left knee), JR Ritchie recalled in the move; S. MURPHY
-// (finger) sharp on his Gwinnett rehab, activation imminent; KIM (finger) rehabbing;
-// SUAREZ (forearm), JIMENEZ (knee), WENTZ out; STRIDER (elbow) and SCHWELLENBACH not
-// factoring in. Next: home vs MIAMI on Tuesday, Aug. 4 (off day Monday).
+// TUE AUG 4, HOMESTAND OPENS VS MIAMI: Atlanta is 67-45, first in the NL East and 8
+// up on Philadelphia, opening a three-game set with the Marlins tonight after an off
+// day Monday and Sunday's 4-2 win over Washington that completed a FOUR-GAME SWEEP, its
+// first four-game sweep since September 2025. The trade-deadline dust has settled: the
+// club reinstated C SEAN MURPHY (finger) and SS HA-SEONG KIM (finger) from the IL and
+// added LHP reliever BRENT SUTER (acquired from the Angels), while DFA'ing UT JORGE
+// MATEO and optioning RHP JAMES KARINCHAK and RHP JR RITCHIE to Triple-A Gwinnett. Those
+// followed the weekend adds of OF LANE THOMAS and LHP BAILEY FALTER from Kansas City and
+// RHP TYLER MAHLE from San Francisco. GM ALEX ANTHOPOULOS called the quiet deadline a
+// bet on a healthy roster for a deep October run. IL watch: REYNALDO LOPEZ on the 15-day
+// IL (left knee); SUAREZ (forearm), JIMENEZ (knee), WENTZ out; STRIDER (elbow) and
+// SCHWELLENBACH (elbow) not factoring in. GRANT HOLMES gets the ball tonight.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -292,10 +291,10 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 30, experience: 5,
     stats: { avg: .238, obp: .284, slg: .373, ops: .657, hr: 3, rbi: 6, sb: 3, bb: 2, so: 11, games: 22, runs: 14, doubles: 2 },
-    statNote: "STARTING AT SHORT, AND THE BAT HAS COOLED: Mateo drew the start at shortstop Saturday in St. Louis and went 0-for-2 before Jim Jarvis pinch hit for him in the 7th. The hot April is well behind him: the line is down to .238/.284/.373 across 22 games. The value is still the glove and the legs, and he covers shortstop and all three outfield spots while Kim works back from the finger.",
-    form: 8.6,
-    status: "active",
-    injuryNote: null,
+    statNote: "DFA'D AS THE ROSTER CRUNCH HITS: Mateo was designated for assignment Monday, the odd man out when Atlanta reinstated Ha-Seong Kim and Sean Murphy from the IL and added Brent Suter. The versatile glove covered shortstop and all three outfield spots in Kim's absence, but the bat never recovered from a hot April, finishing at .238/.284/.373 across 22 games. With Kim back at short, the depth infield job went away. Carried in data for historical reference.",
+    form: 0,
+    status: "departed",
+    injuryNote: "DFA'd Aug 3, 2026, the corresponding move as Kim and Murphy were activated and Brent Suter was added. Off the 40-man roster.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33832.png",
     assignment: "mlb",
     contract: { years: 1, total: 1000000, guaranteed: 1000000, apy: 1000000, throughYear: 2026 },
@@ -544,8 +543,8 @@ export const PLAYERS = [
     rotationSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
-    stats: { era: 3.80, whip: 1.29, ip: 87.0, k: 86, bb: 33, w: 6, l: 4, games: 17, starts: 17 },
-    statNote: "FIVE AND OUT, THE BULLPEN BAILS HIM OUT: Holmes gave up three runs with five strikeouts over five innings in Friday's series opener at Baltimore and left without a decision as Atlanta rallied for a 7-6, 10th-inning win. He has still not stretched deep enough to consistently save an overworked bullpen, the exact problem the front office is trying to solve before the Aug. 3 deadline, but Elieser Hernandez covered three scoreless behind him. With Chris Sale the anchor and the back of the rotation thin, Holmes's length remains a swing factor.",
+    stats: { era: 3.88, whip: 1.29, ip: 87.0, k: 87, bb: 33, w: 6, l: 4, games: 17, starts: 17 },
+    statNote: "HANDED THE BALL FOR THE HOMESTAND OPENER: Holmes (6-4, 3.88) draws the start Tuesday night against Miami as Atlanta opens a three-game set at Truist Park, its first game back from Monday's off day. Length has been the swing factor in his season, and with the rotation reshaped around Chris Sale and newcomer Tyler Mahle behind Reynaldo Lopez's IL stint, deeper outings from Holmes take pressure off a bullpen the front office just reinforced with Brent Suter. He carries 87 strikeouts over 17 starts.",
     form: 8.2,
     status: "active",
     injuryNote: null,
@@ -631,12 +630,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
     stats: { era: 5.02, whip: 1.53, ip: 40.1, k: 30, bb: 18, sv: 1, w: 1, l: 2, games: 9, starts: 7 },
-    statNote: "RECALLED FOR THE SPOT START: Ritchie was brought back from Triple-A Gwinnett on Sunday, the corresponding move for Reynaldo Lopez's IL placement, and took the ball in the finale against Washington. He was charged with both Nationals runs in the fourth, walking a man and plunking Andrés Chapparo on the helmet with a bases-loaded pitch to force one in, but left with the game close and the bullpen carried it to a 4-2 sweep-clinching win. The 22-year-old has bounced between the rotation, the bullpen, and Triple-A all year and stays central to a patched-together staff.",
+    statNote: "SPOT START, THEN BACK TO GWINNETT: Ritchie made Sunday's finale start against Washington after being recalled for Reynaldo Lopez's IL move, charged with both Nationals runs in the fourth (a walk and a bases-loaded HBP of Andrés Chapparo) before the bullpen carried it to a 4-2 sweep-clincher. He was optioned back to Triple-A Gwinnett on Monday, one of the moves that cleared roster space for the Kim and Murphy activations. The 22-year-old has bounced between the rotation, the bullpen, and Triple-A all year and stays first in line as rotation depth.",
     form: 5.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut Apr 23, 2026" },
@@ -783,12 +782,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 5,
     stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: 0, hold: null, games: 0, w: 0, l: 0 },
-    statNote: "SELECTED FROM GWINNETT: The former Cleveland strikeout artist gets his first big-league call since 2023, taking Kinley's bullpen spot. Karinchak signed a minor league deal in December and earned the look with a 2.45 ERA, 5 saves, and a 38:10 K:BB across 25.2 IP in 21 games at Gwinnett. Expect low-leverage innings at first while Weiss gauges whether the swing-and-miss stuff still plays at this level.",
+    statNote: "OPTIONED BACK TO GWINNETT: Karinchak was sent down Monday, one of the two arms (with JR Ritchie) optioned to Triple-A to open roster room for the Kim and Murphy activations and Brent Suter's addition. The former Cleveland strikeout artist gave Atlanta some low-leverage innings after his June call-up and stays on the 40-man as a swing-and-miss depth option. He earned the original look with a 2.45 ERA, 5 saves, and a 38:10 K:BB across 25.2 IP at Gwinnett.",
     form: 6.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/40715.png",
-    assignment: "mlb",
+    assignment: "aaa",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · selected Jun 10, 2026" },
@@ -992,6 +991,29 @@ export const PLAYERS = [
       { years: "2018–2023", team: "Miami Marlins", type: "MLB · debut 2018" },
     ],
   },
+  {
+    id: "suter-brent",
+    name: "Brent Suter",
+    number: 31,
+    position: "RP",
+    positionGroup: "pitcher",
+    bullpenRole: "lhp",
+    bats: "L", throws: "L",
+    nationality: "🇺🇸 USA", age: 36, experience: 10,
+    stats: { era: 4.12, whip: 1.32, ip: 63.1, k: 55, bb: 17, sv: 0, hold: null, games: 41, w: 1, l: 2 },
+    statNote: "DEADLINE BULLPEN ADD FROM THE ANGELS: Atlanta acquired the veteran lefty (with a second reliever) from Los Angeles on Monday for infield prospect Nacho Alvarez Jr., adding a durable multi-inning arm to a bullpen leaning hard on Raisel Iglesias and Dylan Lee with Robert Suarez on the IL. Suter is 1-2 with a 4.12 ERA over 41 appearances (three starts), striking out 55 and walking 17 across 63 1/3 innings this year. The Harvard product's soft-tossing, quick-tempo profile gives Walt Weiss length and a second left-handed look behind Lee.",
+    form: 6.5,
+    status: "active",
+    injuryNote: null,
+    image: "https://a.espncdn.com/i/headshots/mlb/players/full/36023.png",
+    assignment: "mlb",
+    contract: { years: 1, total: 2500000, guaranteed: 2500000, apy: 2500000, throughYear: 2026 },
+    career: [
+      { years: "2026", team: "Atlanta Braves", type: "MLB" },
+      { years: "2026", team: "Los Angeles Angels", type: "MLB" },
+      { years: "2016–2025", team: "Various (MIL, COL, CIN)", type: "MLB · debut 2016 (Harvard)" },
+    ],
+  },
 
   // ── TRIPLE-A DEPTH (recall candidates on 40-man, optioned to Gwinnett) ─────
   {
@@ -1071,12 +1093,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 7,
     stats: { avg: .071, obp: .071, slg: .071, ops: .143, hr: 0, rbi: 0, games: 4 },
-    statNote: "REHAB CLOCK NEARLY DONE, ACTIVATION IMMINENT: Murphy has looked the part on his Triple-A Gwinnett rehab, with multiple multi-hit games including a three-hit night while catching all seven innings of a win over Durham, and the club now points to activation in the first week of August. It would be his return from the fractured left middle finger that has kept him on the 60-day IL nearly all year, giving Atlanta a second catcher behind Drake Baldwin and easing the load Baldwin and Joey Bart have carried. Murphy's frozen big-league line: 1-for-14 (.071/.071/.071) across 4 G before the injury.",
-    form: 0,
-    status: "il-60",
-    injuryNote: "FRACTURED LEFT MIDDLE FINGER, on the 60-day IL. Originally clipped by Hyeseong Kim's bat on a May catcher's-interference play; re-imaging caught the fracture after an initial clean X-ray. ON A TRIPLE-A GWINNETT REHAB ASSIGNMENT since July 24 and swinging well, with multi-hit efforts in two of his first three games and a full seven innings caught. Activation looks likely in early August. Just 4 G into the season after offseason right hip surgery, a brutal 1-2 punch.",
+    statNote: "ACTIVATED, AND ATLANTA HAS ITS CATCHER BACK: Murphy was reinstated from the 60-day IL on Monday alongside Ha-Seong Kim, ending a season lost almost entirely to a fractured left middle finger. He hit well on the Triple-A Gwinnett rehab, with multiple multi-hit games including a three-hit night catching all seven innings against Durham, and now pairs with Drake Baldwin behind the plate for the stretch run, easing the load Baldwin and Joey Bart have carried since May. His frozen big-league line before the injury: 1-for-14 (.071/.071/.071) across 4 G.",
+    form: 5.5,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33557.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 6, total: 73000000, guaranteed: 73000000, apy: 12166666, throughYear: 2028 },
     career: [
       { years: "2023–", team: "Atlanta Braves", type: "MLB · 2023 NL All-Star · Gold Glove" },
@@ -1116,12 +1138,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇰🇷 South Korea", age: 30, experience: 5,
     stats: { avg: .068, obp: .140, slg: .068, ops: .208, hr: 0, rbi: 2, sb: 1, bb: 3, so: 14, games: 27 },
-    statNote: "MOVED UP TO GWINNETT ALONGSIDE ACUÑA: Kim's rehab assignment was transferred to Triple-A Gwinnett on Friday, July 17, the same announcement that moved Acuña up. He opened the rehab Monday with the FCL Braves and homered in his first plate appearance, finishing 2-for-3, the loudest swing he has taken all year. The big-league line is still 5-for-73 (.068) in 27 games with no hit since June 3, so the bar is low, but a healthy finger and a reset may be what the shortstop position needed.",
-    form: 2.5,
-    status: "il-10",
-    injuryNote: "RIGHT MIDDLE FINGER INFLAMMATION. Placed on the 10-day IL July 4, backdated to July 1, on the finger he had surgically repaired after a January fall. REHAB NOW AT TRIPLE-A GWINNETT: transferred up Friday, July 17 after opening July 13 with the rookie-level FCL Braves, where he went 2-for-3 with a home run in his first plate appearance. He has been IL-eligible since July 11, so activation is a roster decision more than a medical one.",
+    statNote: "REINSTATED FOR THE STRETCH RUN: Kim was activated from the 10-day IL on Monday alongside Sean Murphy, back from the right middle finger inflammation that cost him a month. He built the rehab up through Triple-A Gwinnett, homering in his first plate appearance with the rookie-level FCL Braves, and returns to a shortstop job that has been a patchwork of Jorge Mateo and Mauricio Dubon all year. The big-league line is still just 5-for-73 (.068) in 27 games, so a healthy finger and a reset are exactly what the position needed.",
+    form: 3.5,
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4089862.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 2, total: 24000000, guaranteed: 24000000, apy: 12000000, throughYear: 2027 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB" },
@@ -1433,10 +1455,10 @@ export const NEXT_GAME = {
   venue: "Truist Park · Atlanta, GA",
   tv: "FanDuel Sports Southeast",
   probables: {
-    atl: { pitcher: "TBD", record: "—", era: null },
+    atl: { pitcher: "Grant Holmes", record: "6-4", era: 3.88 },
     opp: { pitcher: "TBD", record: "—", era: null },
   },
-  note: "HOMESTAND OPENER VS MIAMI, AFTER THE SWEEP AND THE DEADLINE. Following Monday's off day and the 6 PM ET trade deadline, Atlanta opens a three-game set with the Marlins on Tuesday night at Truist Park. The Braves come in 67-45 and 8 up in the NL East, having just completed a four-game sweep of Washington with a 4-2 win Sunday behind Mike Yastrzemski's homer and two RBI, Matt Olson's 31st, and Raisel Iglesias's 24th save. The starter is TBD with the rotation reshuffled: newly acquired right-hander TYLER MAHLE (from San Francisco) is in line to slot in behind Chris Sale, and Reynaldo López is on the 15-day IL with left knee inflammation. Deadline reinforcements also brought outfielder LANE THOMAS and LHP BAILEY FALTER from Kansas City. SEAN MURPHY's activation off his Triple-A rehab is imminent. Still out: ROBERT SUAREZ (forearm), JOE JIMENEZ (knee), and the 60-day trio of SPENCER STRIDER, SPENCER SCHWELLENBACH, and JOEY WENTZ.",
+  note: "HOMESTAND OPENER VS MIAMI, DEADLINE DUST SETTLED. After Monday's off day, Atlanta opens a three-game set with the Marlins on Tuesday night at Truist Park. The Braves come in 67-45 and 8 up in the NL East, fresh off a four-game sweep of Washington that finished with a 4-2 win Sunday behind Mike Yastrzemski's homer and two RBI, Matt Olson's 31st, and Raisel Iglesias's 24th save. GRANT HOLMES (6-4, 3.88) gets the ball, with the rotation now built around Chris Sale and deadline pickup TYLER MAHLE while Reynaldo López sits on the 15-day IL (left knee). The lineup is deeper: SEAN MURPHY (finger) and HA-SEONG KIM (finger) were reinstated Monday, and LHP BRENT SUTER was added to the bullpen. Still out: ROBERT SUAREZ (forearm), JOE JIMENEZ (knee), and the 60-day trio of SPENCER STRIDER, SPENCER SCHWELLENBACH, and JOEY WENTZ.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1522,24 +1544,24 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-03T09:00:00-04:00",
+  generatedAt: "2026-08-04T09:00:00-04:00",
   summary:
-    "DEADLINE DAY, AND A SWEEP TO SET IT UP. Atlanta enters Monday's 6 PM ET trade deadline at 67-45, first in the NL East and eight games up on Philadelphia, one afternoon after completing a four-game sweep of Washington with a 4-2 win. Mike Yastrzemski homered and drove in two, Matt Olson hit his 31st, and Raisel Iglesias closed it for his 24th save in 24 tries. Alex Anthopoulos has already reinforced a battered roster: right-hander Tyler Mahle arrived from San Francisco (for reliever Anthony Molina) to patch a rotation missing Spencer Strider, Spencer Schwellenbach, and now Reynaldo Lopez, and outfielder Lane Thomas plus lefty Bailey Falter came over from Kansas City for two minor-league arms. Lopez landed on the 15-day IL with left knee inflammation, with JR Ritchie recalled to make Sunday's spot start. Sean Murphy's activation off his Triple-A rehab is imminent. The Braves are off Monday before opening a three-game set with Miami on Tuesday night.",
+    "DEADLINE DUST SETTLES, MIAMI COMES TO TOWN. Atlanta opens a three-game set with the Marlins on Tuesday night at 67-45, first in the NL East and eight games up on Philadelphia, after Monday's off day and a four-game sweep of Washington that ended with a 4-2 win. In the wake of the deadline, the club reinstated catcher Sean Murphy and shortstop Ha-Seong Kim from the injured list, added left-handed reliever Brent Suter (acquired from the Angels for infield prospect Nacho Alvarez Jr.), designated Jorge Mateo for assignment, and optioned James Karinchak and JR Ritchie to Triple-A Gwinnett. Those moves followed the weekend arrivals of outfielder Lane Thomas and lefty Bailey Falter from Kansas City and right-hander Tyler Mahle from San Francisco. GM Alex Anthopoulos defended a quiet deadline as a bet on a healthy roster for a deep October run. Reynaldo Lopez remains on the 15-day IL with left knee inflammation, and Grant Holmes gets the ball to open the Miami series.",
   keyTopics: [
-    { category: "transaction", title: "Braves land Tyler Mahle from the Giants", detail: "Atlanta acquired right-hander Tyler Mahle from San Francisco on Sunday for reliever Anthony Molina, adding a rotation arm to a staff without Strider, Schwellenbach, and now Lopez. Mahle carries a 5.13 ERA over 18 starts on the year but a 3.79 mark since returning June 24 from a hamstring strain, and he is a free agent after 2026.", recency: "today" },
-    { category: "transaction", title: "Lane Thomas, Bailey Falter arrive from Kansas City", detail: "The Braves got outfielder Lane Thomas and left-hander Bailey Falter from the Royals for minor-league pitchers Lucas Braun and Carter Holton. Thomas, a righty bat hitting .232 with 10 homers, projects into a left-field platoon with Mike Yastrzemski; Falter reports to Triple-A Gwinnett as rotation depth.", recency: "today" },
-    { category: "result", title: "Braves sweep Washington with a 4-2 finale", detail: "Atlanta completed a four-game sweep Sunday, its first four-game sweep since September 2025 and the first time the Nationals were ever swept in a four-game set in Atlanta. Mike Yastrzemski homered and drove in two, Matt Olson added his 31st, Dylan Dodd (3-1) got the win in relief of spot-starter JR Ritchie, and Iglesias closed it.", recency: "yesterday" },
-    { category: "injury", title: "Reynaldo Lopez to the 15-day IL, Ritchie recalled", detail: "Lopez was placed on the 15-day IL with left knee inflammation after being scratched Saturday, and JR Ritchie was recalled from Triple-A Gwinnett in the corresponding move and made Sunday's spot start. The injury sharpened Atlanta's deadline need for a starter, answered by the Mahle trade.", recency: "today" },
-    { category: "standings", title: "Braves 67-45, lead holds at 8", detail: "The sweep pushed Atlanta to 67-45 and kept it eight games clear of the Phillies (59-53) atop the NL East. Miami (56-54) sits 10 back, Washington (55-58) is 12.5 out after a fifth straight loss, and the Mets remain far behind. The Braves stay firmly in control of the East on deadline day.", recency: "today" },
-    { category: "milestone", title: "Olson reaches 31 homers", detail: "Matt Olson homered again Sunday for his 31st of the year, one day after his 30th topped his full-season totals from each of the last two seasons with two months still to play. He leads the Braves in homers (31) and RBI (67), and his consecutive-games streak keeps climbing, ninth all-time.", recency: "yesterday" },
-    { category: "milestone", title: "Iglesias a perfect 24-for-24 in saves", detail: "Raisel Iglesias recorded the final three outs Sunday for his 24th save in 24 chances, still the longest active save-conversion streak in the majors dating to 2025. With Robert Suarez out, he and Dylan Lee anchor the back of a bullpen the front office spent the weekend trying to reinforce.", recency: "yesterday" },
-    { category: "injury", title: "Sean Murphy's activation imminent", detail: "Murphy (fractured left middle finger, 60-day IL) has hit well on his Triple-A Gwinnett rehab, with multiple multi-hit games including a three-hit night behind the plate, and the club now points to activation in the first week of August. His return gives Atlanta a second catcher behind Drake Baldwin.", recency: "this-week" },
-    { category: "narrative", title: "A rotation reshaped by the deadline", detail: "With Strider (elbow) a long shot to return in 2026, Schwellenbach not yet building up, and Lopez now on the IL, the Braves reworked the back of their rotation around Chris Sale. Mahle slots in behind Sale, Martin Perez and Bryce Elder hold rotation spots, and Ritchie and AJ Smith-Shawver provide depth.", recency: "today" },
+    { category: "transaction", title: "Murphy and Kim reinstated from the injured list", detail: "Atlanta got healthier Monday, activating catcher Sean Murphy (fractured left middle finger) and shortstop Ha-Seong Kim (finger inflammation) from the IL. Murphy pairs with Drake Baldwin behind the plate and Kim reclaims shortstop, both after building up on Triple-A Gwinnett rehab stints. It is a lineup boost timed to the stretch run.", recency: "today" },
+    { category: "transaction", title: "Braves add lefty Brent Suter from the Angels", detail: "Atlanta acquired veteran left-hander Brent Suter (with a second reliever) from Los Angeles for infield prospect Nacho Alvarez Jr. Suter, 1-2 with a 4.12 ERA over 41 appearances and 63 1/3 innings, gives Walt Weiss a durable multi-inning arm and a second lefty look behind Dylan Lee while Robert Suarez is out.", recency: "today" },
+    { category: "transaction", title: "Mateo DFA'd, Karinchak and Ritchie optioned", detail: "To clear roster room for the Kim and Murphy activations and Suter's addition, the Braves designated utility man Jorge Mateo for assignment and optioned relievers James Karinchak and JR Ritchie to Triple-A Gwinnett. Mateo's versatile glove had covered shortstop in Kim's absence but the bat never recovered from a hot April.", recency: "today" },
+    { category: "narrative", title: "Anthopoulos defends a quiet deadline", detail: "GM Alex Anthopoulos said Monday he is confident in the roster's current state to make a deep postseason run, framing the low-key deadline as a bet on returning health rather than a splash. Atlanta's biggest additions were Tyler Mahle, Lane Thomas, Bailey Falter, and Brent Suter, plus the returns of Murphy and Kim.", recency: "today" },
+    { category: "transaction", title: "Mahle in from the Giants to patch the rotation", detail: "Atlanta acquired right-hander Tyler Mahle from San Francisco on Sunday for reliever Anthony Molina, adding a starter to a staff without Strider, Schwellenbach, and now Lopez. Mahle carries a 5.13 ERA over 18 starts but a 3.79 mark since returning June 24 from a hamstring strain, and he is a free agent after 2026.", recency: "yesterday" },
+    { category: "transaction", title: "Lane Thomas, Bailey Falter arrive from Kansas City", detail: "The Braves got outfielder Lane Thomas and left-hander Bailey Falter from the Royals for minor-league pitchers Lucas Braun and Carter Holton. Thomas, a righty bat hitting .232 with 10 homers, projects into a left-field platoon with Mike Yastrzemski; Falter reports to Triple-A Gwinnett as rotation depth.", recency: "this-week" },
+    { category: "result", title: "Braves sweep Washington with a 4-2 finale", detail: "Atlanta completed a four-game sweep Sunday, its first four-game sweep since September 2025 and the first time the Nationals were ever swept in a four-game set in Atlanta. Mike Yastrzemski homered and drove in two, Matt Olson added his 31st, Dylan Dodd (3-1) got the win in relief of spot-starter JR Ritchie, and Iglesias closed it.", recency: "this-week" },
+    { category: "standings", title: "Braves 67-45, lead holds at 8", detail: "Atlanta sits 67-45, eight games clear of the Phillies (59-53) atop the NL East. Miami (56-54) is 10 back and in town for three, Washington (55-58) is 12.5 out after a fifth straight loss, and the Mets remain far behind. The Braves stay firmly in control of the East.", recency: "today" },
+    { category: "milestone", title: "Olson reaches 31 homers", detail: "Matt Olson homered again Sunday for his 31st of the year, one day after his 30th topped his full-season totals from each of the last two seasons with two months still to play. He leads the Braves in homers (31) and RBI (67), and his consecutive-games streak keeps climbing, ninth all-time.", recency: "this-week" },
     { category: "milestone", title: "Sale at 12-6, Cy Young case keeps building", detail: "Chris Sale carries a 12-6 record and a 2.09 ERA over 20 starts and one of the loudest NL Cy Young cases in the league after his two-hit shutout at Citi Field. He continues to climb the career strikeout list, closing on Frank Tanana (2,773).", recency: "this-week" },
-    { category: "narrative", title: "Next up: Miami at Truist Park", detail: "After Monday's off day and the deadline, Atlanta opens a three-game set with the Marlins on Tuesday night. New arm Tyler Mahle is in line to slot into the rotation, and Chris Sale lines up for the middle game Wednesday as the Braves push their division lead deeper into August.", recency: "today" },
-    { category: "injury", title: "Strider, Suarez, Jimenez, and Wentz still out", detail: "Robert Suarez is on the IL with a right forearm issue, leaving Iglesias and Dylan Lee to carry the late innings. Spencer Strider (elbow) is a long shot to pitch again in 2026, Spencer Schwellenbach has not begun his build-up, and Joe Jimenez (knee) and Joey Wentz remain on the 60-day IL.", recency: "ongoing" },
+    { category: "narrative", title: "Next up: Miami at Truist Park", detail: "After Monday's off day and the deadline, Atlanta opens a three-game set with the Marlins on Tuesday night. Grant Holmes gets the ball in the opener, and Chris Sale lines up for the middle game as the Braves push their division lead deeper into August.", recency: "today" },
+    { category: "injury", title: "Lopez on the IL, Strider and Suarez still out", detail: "Reynaldo Lopez is on the 15-day IL with left knee inflammation, thinning a rotation now built around Sale and Mahle. Robert Suarez (forearm) leaves the late innings to Iglesias and Lee, Spencer Strider (elbow) is a long shot to pitch again in 2026, and Joe Jimenez (knee) and Joey Wentz remain on the 60-day IL.", recency: "ongoing" },
   ],
   sources: [
-    "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "MLB Trade Rumors", "Washington Times", "Yahoo Sports", "Baseball-Reference", "FanGraphs",
+    "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "MLB Trade Rumors", "Atlanta News First", "Yahoo Sports", "Baseball-Reference", "FanGraphs",
   ],
 };
