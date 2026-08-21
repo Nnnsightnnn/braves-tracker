@@ -1,18 +1,17 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated August 20, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 21, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// WED AUG 19, TWINS COMPLETE THE SWEEP IN MINNEAPOLIS: The Braves dropped the finale 6-4 at the
-// Minnesota Twins on Wednesday afternoon at Target Field, a third straight loss that pushed
-// Atlanta to 74-53 and trimmed the NL East lead to 4.5 games after Philadelphia (70-58) won
-// again. Making a spot start in a six-man rotation, AJ SMITH-SHAWVER kept it close before the
-// Twins broke a tie in the seventh on RBI singles by KODY CLEMENS and BROOKS LEE; Clemens drove
-// in three and KAELEN CULPEPPER added three hits. RONALD ACUÑA JR, LANE THOMAS, and OZZIE ALBIES
-// drove in the Atlanta runs, and YOENDRYS GOMEZ closed a 1-2-3 ninth for his 20th save, his
-// third in as many games. Atlanta has now lost five of six and heads to Chicago for a Thursday
-// makeup at the White Sox: GRANT HOLMES (7-5, 3.83) faces left-hander ANTHONY KAY (9-5, 4.01) at
-// Rate Field before a weekend at NL-best Milwaukee. IL watch, unchanged: REYNALDO LOPEZ (left
-// knee, MRI clean) is throwing bullpens toward a late-season return; ROBERT SUAREZ (forearm)
-// resumed throwing from 60 feet Aug 13; STRIDER (elbow), SCHWELLENBACH (elbow), JIMENEZ (knee),
-// and WENTZ (torn ACL) remain on the 60-day IL. No new roster moves.
+// THU AUG 20, HOLMES AND THE BULLPEN SHUT OUT CHICAGO: The Braves salvaged a weird road trip with a
+// 2-0 win at the Chicago White Sox on Thursday, a June 11 rainout makeup at Rate Field that ended a
+// three-game slide. GRANT HOLMES carried a no-hitter into the seventh before ANDREW BENINTENDI lined
+// a leadoff single, finishing six scoreless on 94 pitches with three walks and three strikeouts.
+// AUSTIN RILEY doubled and singled to drive in both runs, MAURICIO DUBON had three hits and scored,
+// DYLAN LEE spun a perfect eighth, and RAISEL IGLESIAS closed a 1-2-3 ninth for his 26th save to
+// complete a one-hitter. Atlanta improved to 75-53 and stayed comfortably atop the NL East. Next up:
+// a weekend at NL-best Milwaukee, CHRIS SALE (12-8, 2.17) opening Friday at 4:10 PM ET against
+// Brewers left-hander SHANE DROHAN (6-4, 3.87). IL watch, unchanged: REYNALDO LOPEZ (left knee, MRI
+// clean) is throwing bullpens toward a late-season return; ROBERT SUAREZ (forearm) resumed throwing
+// from 60 feet Aug 13; STRIDER (elbow), SCHWELLENBACH (elbow), JIMENEZ (knee), and WENTZ (torn ACL)
+// remain on the 60-day IL. No new roster moves.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -76,9 +75,9 @@ export const PLAYERS = [
     lineupSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 29, experience: 8,
-    stats: { avg: .223, obp: .301, slg: .390, ops: .691, hr: 15, rbi: 42, sb: 2, bb: 12, so: 51, games: 107 },
-    statNote: "3-FOR-4, AND A BACK-TO-BACK BOMB TO BREAK IT OPEN: Riley homered in a three-run 7th Wednesday, going deep right after Mike Yastrzemski in the 6-3 series-clinching win over the Mets, and finished 3-for-4 with two runs. It was his 15th of the year and a fitting cap to a strong second half for a hitter who ground through a .207, .618-OPS first half across 95 games before the All-Star break.",
-    form: 8.6,
+    stats: { avg: .225, obp: .302, slg: .392, ops: .694, hr: 15, rbi: 44, sb: 2, bb: 12, so: 52, games: 108 },
+    statNote: "BOTH RUNS ON A DOUBLE AND A SINGLE: Riley drove in all of Atlanta's offense Thursday at Rate Field, doubling and singling home the runs in the 2-0 win over the White Sox that backed Grant Holmes's no-hit bid. The two-RBI night nudged his second-half surge along after a .207, .618-OPS first half across 95 games before the break, and his bat keeps anchoring the middle of the order behind Matt Olson.",
+    form: 8.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/34982.png",
@@ -247,9 +246,9 @@ export const PLAYERS = [
     lineupSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇭🇳 Honduras", age: 31, experience: 8,
-    stats: { avg: .271, obp: .325, slg: .429, ops: .754, hr: 10, rbi: 55, sb: 0, bb: 10, so: 28, games: 56, triples: 1, doubles: 9 },
-    statNote: "TWO-RUN SINGLE IN A FIRST-INNING HOLE: Dubón punched a two-run single up the middle in the 1st Monday to cut into the Mets' early lead, but Atlanta could not climb all the way back in the 8-5 loss. He remains the most-used player on the roster, bouncing between shortstop, left field, and second base, and his RBI total trails only Olson among Braves.",
-    form: 8.4,
+    stats: { avg: .276, obp: .329, slg: .434, ops: .763, hr: 10, rbi: 55, sb: 0, bb: 10, so: 28, games: 57, triples: 1, doubles: 9 },
+    statNote: "THREE HITS AND A RUN IN THE SHUTOUT WIN: Dubón led the offense Thursday with three hits and a run scored in the 2-0 win at the White Sox, setting the table around Austin Riley's two RBI. He remains the most-used player on the roster, bouncing between shortstop, left field, and second base, and his RBI total still trails only Olson among Braves.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
@@ -544,9 +543,9 @@ export const PLAYERS = [
     rotationSpot: 3,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
-    stats: { era: 3.83, whip: 1.36, ip: 117.2, k: 96, bb: 50, w: 7, l: 5, games: 23, starts: 23 },
-    statNote: "SHORTEST START IN WEEKS AS ARIZONA POUNCED: Holmes (L, 7-5, 3.83) never got out of the 4th on Saturday, giving up two runs in the 1st, a two-run Nolan Arenado homer in the 3rd, and a stream of hard contact in the 10-3 loss. It was a rough turn for a pitcher who had quietly anchored the rotation behind Chris Sale while Reynaldo López sat on the IL, most recently holding the Yankees to three hits over six innings in the Bronx on Aug 9. His ERA climbed from 3.47 to 3.83.",
-    form: 5.5,
+    stats: { era: 3.64, whip: 1.33, ip: 123.2, k: 99, bb: 53, w: 8, l: 5, games: 24, starts: 24 },
+    statNote: "A NO-HITTER INTO THE SEVENTH TO END THE SLIDE: Holmes (W, 8-5, 3.64) was masterful Thursday at Rate Field, carrying a no-hit bid into the seventh before Andrew Benintendi lined a leadoff single to left. He finished six scoreless innings on 94 pitches with three walks and three strikeouts in the 2-0 win over the White Sox, and Dylan Lee and Raisel Iglesias completed the one-hitter. It was the kind of turn that snapped a three-game slide and pushed his ERA back under 3.65, and it steadied a rotation that has leaned on him behind Chris Sale all summer.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33840.png",
@@ -674,9 +673,9 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 36, experience: 11,
-    stats: { era: 2.10, whip: 0.87, ip: 30.0, k: 34, bb: 2, sv: 25, hold: null, games: 29, w: 0, l: 2 },
-    statNote: "25TH SAVE, WITH A LITTLE TRAFFIC: Iglesias closed out Sunday's 5-3 win over Arizona for his 25th save, allowing a run in the 9th before nailing down the finale that avoided the sweep. The one blemish nudged his ERA to 2.10, but the back end held when it mattered and Atlanta protected Matt Olson's go-ahead three-run homer. With Robert Suarez still on the IL, the Dylan Lee to Iglesias bridge remains central to every close game.",
-    form: 8.5,
+    stats: { era: 2.03, whip: 0.84, ip: 31.0, k: 35, bb: 2, sv: 26, hold: null, games: 30, w: 0, l: 2 },
+    statNote: "26TH SAVE CAPS A ONE-HITTER: Iglesias worked a 1-2-3 ninth Thursday to finish the 2-0 shutout of the White Sox, his 26th save, sealing the one-hitter Grant Holmes started and Dylan Lee bridged. The clean frame trimmed his ERA to 2.03 with a 0.84 WHIP and just two walks all year. With Robert Suarez still on the IL, the Dylan Lee to Iglesias bridge remains central to every close game.",
+    form: 9.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33618.png",
@@ -1439,21 +1438,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-08-20",
-  time: "2:10 PM ET",
-  opp: "CWS",
+  date: "2026-08-21",
+  time: "4:10 PM ET",
+  opp: "MIL",
   home: false,
-  venue: "Rate Field · Chicago, IL",
-  tv: "BravesVision / CHSN",
+  venue: "American Family Field · Milwaukee, WI",
+  tv: "BravesVision / FanDuel Sports Wisconsin",
   probables: {
-    atl: { pitcher: "Grant Holmes", record: "7-5", era: 3.83 },
-    opp: { pitcher: "Anthony Kay", record: "9-5", era: 4.01 },
+    atl: { pitcher: "Chris Sale", record: "12-8", era: 2.17 },
+    opp: { pitcher: "Shane Drohan", record: "6-4", era: 3.87 },
   },
-  note: "A QUICK MAKEUP STOP ON THE SOUTH SIDE. Swept in Minneapolis and down to 74-53, the Braves make up a June 11 rainout with a single game at the Chicago White Sox on Thursday, 2:10 PM ET at Rate Field, sending right-hander GRANT HOLMES (7-5, 3.83) against White Sox left-hander ANTHONY KAY (9-5, 4.01). Atlanta has lost five of its last six and seen its NL East lead trimmed to 4.5 games over Philadelphia (70-58), which keeps winning. MATT OLSON stays tied near the top of the majors in home runs at 36, and the middle of the order needs to wake up after the Minnesota trip produced just nine runs in three games. A weekend at NL-best Milwaukee follows, with CHRIS SALE lined up to open Friday night. On the mend: REYNALDO LOPEZ (left knee, MRI clean) is throwing bullpens toward a late-season return, and ROBERT SUAREZ (forearm) has resumed throwing from 60 feet; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
+  note: "ACE VS THE NL'S BEST TO OPEN THE WEEKEND. Fresh off Thursday's 2-0 shutout of the White Sox that ended a three-game slide, the Braves (75-53) open a weekend set at NL-best Milwaukee on Friday, 4:10 PM ET at American Family Field, with CHRIS SALE (12-8, 2.17) on the mound against Brewers left-hander SHANE DROHAN (6-4, 3.87). Sale keeps building one of the loudest NL Cy Young cases in the game at 160 strikeouts and a sub-2.20 ERA despite repeatedly thin run support. Atlanta stays comfortably atop the NL East, and MATT OLSON sits near the top of the majors in home runs at 36. On the mend: REYNALDO LOPEZ (left knee, MRI clean) is throwing bullpens toward a late-season return, and ROBERT SUAREZ (forearm) has resumed throwing from 60 feet; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-08-20", opp: "CWS", home: false, atlScore: 2, oppScore: 0, result: "W", note: "HOLMES CARRIES A NO-HITTER INTO THE SEVENTH, ATLANTA ENDS THE SLIDE: BRAVES 2, WHITE SOX 0. Grant Holmes (W, 8-5) was dominant Thursday at Rate Field, taking a no-hit bid into the seventh before Andrew Benintendi lined a leadoff single to left, finishing six scoreless on 94 pitches with three walks and three strikeouts in a June 11 rainout makeup. Austin Riley doubled and singled to drive in both Atlanta runs, and Mauricio Dubon had three hits and scored a run. Dylan Lee spun a perfect eighth and Raisel Iglesias closed a 1-2-3 ninth for his 26th save to complete the one-hitter and snap a three-game slide. The Braves improved to 75-53 and stayed comfortably atop the NL East ahead of a weekend at NL-best Milwaukee." },
   { date: "2026-08-19", opp: "MIN", home: false, atlScore: 4, oppScore: 6, result: "L", note: "TWINS FINISH THE SWEEP AS THE SEVENTH GETS AWAY: TWINS 6, BRAVES 4. Minnesota broke a tie in the bottom of the seventh Wednesday afternoon at Target Field, KODY CLEMENS and BROOKS LEE lining RBI singles to send Atlanta to a third straight loss and a series sweep. Clemens drove in three and KAELEN CULPEPPER collected three hits for the Twins. AJ SMITH-SHAWVER, up from Gwinnett for a spot start in the six-man rotation, kept the Braves within reach before the bullpen let it slip. RONALD ACUÑA JR, LANE THOMAS, and OZZIE ALBIES drove in the Atlanta runs, but the bats went quiet after the middle innings, and YOENDRYS GOMEZ closed a 1-2-3 ninth for his 20th save, his third in as many games. The Braves fell to 74-53 and, with Philadelphia winning again, the NL East lead trimmed to 4.5 games." },
   { date: "2026-08-18", opp: "MIN", home: false, atlScore: 1, oppScore: 4, result: "L", note: "BELL AND JEFFERS BURY ATLANTA AGAIN: TWINS 4, BRAVES 1. Minnesota jumped TYLER MAHLE (L, 4-10) in the first for the second straight night Tuesday at Target Field, RYAN JEFFERS lacing a two-out RBI double to right and JOSH BELL following with a two-run homer to right-center for a quick 3-0 lead. ZEBBY MATTHEWS (W, 7-8) held the Braves to one run over 5 2/3 innings, and YOENDRYS GOMEZ worked around a leadoff double by MICHAEL HARRIS II in the 9th for his 19th save. DRAKE BALDWIN's leadoff homer in the 6th, his 21st, was all Atlanta could muster. The Braves fell to 74-52 and, with Philadelphia beating Miami 6-4, the NL East lead trimmed to 5.5 games." },
   { date: "2026-08-17", opp: "MIN", home: false, atlScore: 2, oppScore: 4, result: "L", note: "BIG FIRST INNING SINKS ATLANTA IN THE OPENER: TWINS 4, BRAVES 2. Minnesota jumped MARTIN PEREZ (L, 8-7) for four runs in the bottom of the first Monday night at Target Field, the first six batters reaching and JOSH BELL lacing a two-run double to key the rally. Perez settled after that but was done after five innings on nine hits and four runs, snapping his 18-inning scoreless streak. RONALD ACUÑA JR singled home two runs to left in the 5th to cut it to 4-2, but the Braves could not get even against BAILEY OBER (W, 8-4), who allowed two runs over 4.1 innings, and the Minnesota bullpen. YOENDRYS GOMEZ worked a scoreless 9th for his 18th save. The Braves fell to 74-51, and with Philadelphia beating Miami 6-5, the NL East lead trimmed to 6.5 games." },
@@ -1463,16 +1463,15 @@ export const RESULTS = [
   { date: "2026-08-12", opp: "NYM", home: true, atlScore: 6, oppScore: 3, result: "W", note: "MAHLE AND THE BOMBS SECURE THE SERIES: BRAVES 6, METS 3. Atlanta took the rubber game Wednesday at Truist Park to win the set two games to one and send itself into a Thursday off day. TYLER MAHLE (W) gave the Braves length through the middle innings and kept New York down, and the offense supplied the power. LANE THOMAS opened the scoring with a solo homer in the 2nd, his first as a Brave, and MIKE YASTRZEMSKI and AUSTIN RILEY went back-to-back in a three-run 7th that broke the game open. Riley finished 3-for-4 with two runs, and RONALD ACUÑA JR added two hits, an RBI, and two runs. LUIS TORRENS and LUIS ROBERT JR homered for the Mets, the latter off DYLAN DODD, but it was not enough. The win moved Atlanta to 73-48 and, with the Phillies idle, pushed the NL East lead to 9.5 games." },
   { date: "2026-08-11", opp: "NYM", home: true, atlScore: 4, oppScore: 0, result: "W", note: "PÉREZ BLANKS THE METS, ALBIES AND OLSON GO DEEP: BRAVES 4, METS 0. Atlanta evened the series Tuesday night at Truist Park behind six scoreless innings from MARTÍN PÉREZ (W, 8-6), who allowed four hits and three walks with two strikeouts and stretched his scoreless streak to 18 innings, the third-longest active among big-league starters behind Drew Rasmussen and Sandy Alcantara. OZZIE ALBIES broke the ice with a solo homer off NOLAN McLEAN in the 5th, his 20th, and MATT OLSON drove a 423-foot, two-run shot to right in the 8th, his 35th, plenty on a night Atlanta managed just three hits. The bullpen closed out the shutout. The win moved the Braves to 72-48 and, with Philadelphia shut out 2-0 at St. Louis, pushed the NL East lead back to 8.5 games." },
   { date: "2026-08-10", opp: "NYM", home: true, atlScore: 5, oppScore: 8, result: "L", note: "BATY'S FIRST GRAND SLAM ENDS THE HOME STREAK: METS 8, BRAVES 5. New York jumped on BRYCE ELDER (L, 8-7) for four runs in the first, capped by BRETT BATY's first career grand slam, and never trailed as Atlanta's nine-game home winning streak came to an end Monday at Truist Park. Elder allowed season highs in runs and hits and gave up back-to-back homers to A.J. EWING and MARCUS SEMIEN to open the 5th, his first multi-homer start of the year. FRANCISCO LINDOR went 3-for-5 with a 420-foot homer (No. 11) and JARED YOUNG drove in two. Atlanta answered with a two-run MAURICIO DUBON single in the 1st and RBIs from DRAKE BALDWIN and RONALD ACUÑA JR, but the early hole was too deep. DANIEL DUARTE (W, 1-0) worked two scoreless in relief and KODAI SENGA finished the 9th for his first career save. The Braves fell to 71-48 but stayed 7.5 up in the NL East." },
-  { date: "2026-08-09", opp: "NYY", home: false, atlScore: 2, oppScore: 1, result: "W", note: "OLSON GOES DEEP, HARRIS WALKS THEM HOME IN THE 10TH: BRAVES 2, YANKEES 1 (10 INN). Atlanta salvaged the finale Sunday in the Bronx to avoid a sweep and take one of three. MATT OLSON turned on a 100-mph fastball from CAM SCHLITTLER for a solo homer in the 7th, his 34th, for a 1-0 lead, but TRENT GRISHAM tied it with a homer off DIDIER FUENTES in the 8th. In the 10th, Atlanta pushed across the go-ahead run against PAUL BLACKBURN when MICHAEL HARRIS II opened with an RBI single. GRANT HOLMES held New York to three hits over six innings, and Schlittler struck out 11 over seven. TYLER KINLEY struck out RYAN McMAHON to finish a perfect 10th for his first career save. The Braves improved to 71-47 and stayed comfortably atop the NL East." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 74, l: 53, pct: .583, gb: 0,    streak: "L3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 70, l: 58, pct: .547, gb: 4.5,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 64, l: 64, pct: .500, gb: 10.5, streak: "L1" },
-  { team: "WSH", name: "Washington Nationals",   w: 61, l: 67, pct: .477, gb: 13.5, streak: "W1" },
-  { team: "NYM", name: "New York Mets",          w: 58, l: 70, pct: .453, gb: 16.5, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 75, l: 53, pct: .586, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 70, l: 58, pct: .547, gb: 5.0,  streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 64, l: 64, pct: .500, gb: 11.0, streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 61, l: 67, pct: .477, gb: 14.0, streak: "W1" },
+  { team: "NYM", name: "New York Mets",          w: 58, l: 70, pct: .453, gb: 17.0, streak: "L1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1535,21 +1534,20 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-20T07:30:00-04:00",
+  generatedAt: "2026-08-21T07:30:00-04:00",
   summary:
-    "SWEPT IN MINNEAPOLIS, ATLANTA LIMPS INTO CHICAGO. The Braves (74-53) lost the finale 6-4 at the Minnesota Twins on Wednesday afternoon, a third straight defeat that completed a three-game sweep and cut the NL East lead to 4.5 games over Philadelphia (70-58). AJ Smith-Shawver, up from Gwinnett for a spot start in a six-man rotation, kept it close before the Twins pushed across the go-ahead runs in the seventh on RBI singles by Kody Clemens and Brooks Lee; Clemens drove in three and Kaelen Culpepper had three hits. Ronald Acuña Jr., Lane Thomas, and Ozzie Albies drove in the Atlanta runs, but the offense managed just nine runs across the series and has now scored in bunches only once in the last six games. Yoendrys Gomez closed a 1-2-3 ninth for his 20th save. Atlanta heads to the South Side for a Thursday makeup of a June 11 rainout, Grant Holmes (7-5, 3.83) opposite White Sox left-hander Anthony Kay (9-5, 4.01) at Rate Field, before a weekend at NL-best Milwaukee with Chris Sale lined up Friday. Matt Olson stays near the top of the majors in homers at 36. On the injury front, Reynaldo López (left knee, MRI clean) is throwing bullpens toward a late-season return and Robert Suarez (forearm) has resumed throwing from 60 feet; Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
+    "HOLMES AND THE BULLPEN SHUT OUT CHICAGO, THE SLIDE ENDS. The Braves (75-53) salvaged a strange road trip Thursday with a 2-0 win at the Chicago White Sox, a June 11 rainout makeup at Rate Field that snapped a three-game slide. Grant Holmes carried a no-hitter into the seventh before Andrew Benintendi lined a leadoff single, finishing six scoreless innings on 94 pitches with three walks and three strikeouts. Austin Riley doubled and singled to drive in both runs, Mauricio Dubon had three hits and scored, Dylan Lee spun a perfect eighth, and Raisel Iglesias closed a 1-2-3 ninth for his 26th save to complete a one-hitter. Atlanta stays comfortably atop the NL East, its lead over Philadelphia (70-58) back to 5.0 games with roughly six weeks to play. Chris Sale (12-8, 2.17) opens a weekend set at NL-best Milwaukee on Friday at 4:10 PM ET against Brewers left-hander Shane Drohan (6-4, 3.87). Matt Olson stays near the top of the majors in homers at 36. On the injury front, Reynaldo López (left knee, MRI clean) is throwing bullpens toward a late-season return and Robert Suarez (forearm) has resumed throwing from 60 feet; Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
   keyTopics: [
-    { category: "result", title: "Twins 6, Braves 4: a seventh-inning rally finishes the sweep", detail: "Kody Clemens and Brooks Lee lined RBI singles in the bottom of the seventh Wednesday to break a tie and send Atlanta to a third straight loss at Target Field. Clemens drove in three and Kaelen Culpepper had three hits as Minnesota completed a three-game sweep.", recency: "yesterday" },
-    { category: "standings", title: "NL East lead shrinks to 4.5 over Philadelphia", detail: "Atlanta fell to 74-53 and, with the Phillies (70-58) winning again, the division margin is down to 4.5 games, its slimmest in weeks. Miami (64-64) sits 10.5 back, the Nationals 13.5 out, and the Mets 16.5 behind with roughly six weeks to play.", recency: "today" },
-    { category: "narrative", title: "Bats go cold: nine runs in three games at Target Field", detail: "The Braves scored four, one, and four across the Minnesota sweep and have now lost five of their last six. Acuña, Lane Thomas, and Albies drove in Wednesday's runs, but the middle of the order has gone quiet at the worst time on the road trip.", recency: "yesterday" },
-    { category: "rotation", title: "Smith-Shawver keeps his spot start close", detail: "AJ Smith-Shawver, recalled from Gwinnett to fill the six-man rotation, gave Atlanta a competitive outing Wednesday before the bullpen surrendered the go-ahead runs in the seventh. The 23-year-old had gone 2-0 with a 1.66 ERA over five rehab starts following June 2025 Tommy John surgery.", recency: "yesterday" },
-    { category: "narrative", title: "A makeup stop on the South Side Thursday", detail: "Atlanta buses to Chicago to make up a June 11 rainout at the White Sox, a 2:10 PM ET single game at Rate Field. Grant Holmes (7-5, 3.83) faces White Sox left-hander Anthony Kay (9-5, 4.01) before the club heads to Milwaukee for the weekend.", recency: "today" },
-    { category: "rotation", title: "Sale lines up to open at NL-best Milwaukee on Friday", detail: "Chris Sale (12-8, 2.17) is set to start Friday night at Milwaukee, his NL Cy Young case still one of the loudest in the league at 160 strikeouts and a sub-2.20 ERA despite repeatedly thin run support.", recency: "this-week" },
-    { category: "milestone", title: "Olson stays near the MLB home run lead at 36", detail: "Matt Olson sits on 36 homers, among the majors' leaders, after carrying the Atlanta offense through August. His bat remains the steadiest source of power in a lineup that produced little on the Minnesota trip.", recency: "this-week" },
+    { category: "result", title: "Braves 2, White Sox 0: Holmes takes a no-hitter into the seventh", detail: "Grant Holmes carried a no-hit bid into the seventh Thursday at Rate Field before Andrew Benintendi lined a leadoff single, finishing six scoreless on 94 pitches. Dylan Lee and Raisel Iglesias completed the one-hitter as Atlanta snapped a three-game slide.", recency: "today" },
+    { category: "result", title: "Riley drives in both runs, Dubon collects three hits", detail: "Austin Riley doubled and singled home all of Atlanta's offense in the 2-0 win, and Mauricio Dubon set the table with a three-hit night and a run scored. It was the kind of bottom-of-the-order production the club lacked on the Minnesota trip.", recency: "today" },
+    { category: "standings", title: "NL East lead back to 5.0 over Philadelphia", detail: "Atlanta improved to 75-53 and, with the Phillies at 70-58, sits 5.0 games up in the division. Miami (64-64) is 11.0 back, the Nationals 14.0 out, and the Mets 17.0 behind with roughly six weeks to play.", recency: "today" },
+    { category: "rotation", title: "Iglesias closes his 26th, ERA down to 2.03", detail: "Raisel Iglesias worked a clean ninth for his 26th save and trimmed his ERA to 2.03 with a 0.84 WHIP and just two walks all season. With Robert Suarez still on the IL, the Lee-to-Iglesias bridge keeps anchoring the late innings.", recency: "today" },
+    { category: "rotation", title: "Sale opens at NL-best Milwaukee on Friday", detail: "Chris Sale (12-8, 2.17) is set to start Friday at 4:10 PM ET at American Family Field against Brewers left-hander Shane Drohan (6-4, 3.87). Sale's NL Cy Young case stays one of the loudest in the league at 160 strikeouts and a sub-2.20 ERA despite repeatedly thin run support.", recency: "today" },
+    { category: "milestone", title: "Olson stays near the MLB home run lead at 36", detail: "Matt Olson sits on 36 homers, among the majors' leaders, after carrying the Atlanta offense through August. His bat remains the steadiest source of power in the lineup as the club settles back in after a cold Minnesota trip.", recency: "this-week" },
+    { category: "narrative", title: "A weird road trip ends on a high note", detail: "Atlanta lost three straight in Minneapolis and produced just nine runs across the Twins sweep before the pitching-and-defense win in Chicago flipped the mood. The slide is snapped heading into the toughest test of the trip at Milwaukee.", recency: "today" },
     { category: "injury", title: "López throws bullpens, eyes a late-season return", detail: "Reynaldo López (left knee inflammation, MRI clean) has been throwing bullpen sessions and is building back up, with the club expecting he may need no more than one minor-league rehab start, if any. His return would hand a thin rotation a needed arm for the stretch run.", recency: "ongoing" },
     { category: "injury", title: "Suarez resumes throwing from 60 feet", detail: "Robert Suarez (right forearm inflammation) resumed throwing from 60 feet on Aug 13 with no discomfort, a step forward in his progression, though he is not yet built up for game action or a rehab assignment. The late innings stay with Iglesias and Dylan Lee until he returns.", recency: "ongoing" },
-    { category: "narrative", title: "The road trip has flipped a comfortable lead into a race", detail: "Atlanta carried a 7.5-game cushion into Minnesota and leaves the trip at 4.5 as Philadelphia keeps pace. The next four days at the White Sox and Milwaukee will test whether the slide is a blip or something the Phillies can exploit.", recency: "this-week" },
-    { category: "result", title: "Gomez saves his third in as many games", detail: "Twins closer Yoendrys Gomez worked a 1-2-3 ninth Wednesday for his 20th save, his third in three days, slamming the door on any late Atlanta comeback and punctuating a dominant series for Minnesota's bullpen.", recency: "yesterday" },
+    { category: "standings", title: "Braves hold a commanding division cushion", detail: "Even after the Minnesota sweep, Atlanta enters the weekend with a mid-single-digit lead in the NL East and the best record in the division. The Phillies have kept pace but have not closed the gap enough to make it a true race yet.", recency: "this-week" },
     { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is unlikely to pitch again in 2026, and Spencer Schwellenbach (elbow) has no firm timetable post-surgery. Joe Jiménez (knee) and Joey Wentz (torn ACL, out for the year) also remain on the 60-day injured list.", recency: "ongoing" },
   ],
   sources: [
