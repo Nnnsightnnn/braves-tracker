@@ -1,17 +1,17 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated August 24, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 25, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SUN AUG 23, HARRIS AND MAHLE SALVAGE A SPLIT AT THE LITTLE LEAGUE CLASSIC: The Braves closed the
-// Milwaukee weekend with a 4-2 win at Journey Bank Ballpark in Williamsport, PA, where TYLER MAHLE
-// (W) worked five strong innings and MICHAEL HARRIS II added a solo homer off Aaron Ashby in the 9th.
-// MAURICIO DUBON doubled home a run and SEAN MURPHY chipped in an RBI infield single. It followed a
-// flat 4-1 loss Saturday, when JAKE BAUERS clubbed a tiebreaking two-run homer and LOGAN HENDERSON
-// spun six strong for Milwaukee against MARTIN PEREZ (L). Atlanta improved to 76-55, still atop the
-// NL East, though a red-hot Philadelphia (W7, 14-5 in August) has pulled within 4.0 games. Monday is
-// an off day before the Dodgers visit Truist Park Tuesday: BRYCE ELDER (8-7, 3.92) draws Los Angeles
-// right-hander TYLER GLASNOW (3-0, 2.72). Roster/IL: REYNALDO LOPEZ (left knee) began a Triple-A
-// Gwinnett rehab assignment Sunday; TYLER KINLEY was DFA'd Aug 18 when AJ SMITH-SHAWVER was recalled;
-// ROBERT SUAREZ (forearm) keeps building his throwing program; STRIDER, SCHWELLENBACH, JIMENEZ, and
-// WENTZ remain on the 60-day IL.
+// TUE AUG 25, PHILADELPHIA'S SURGE TURNS THE NL EAST INTO A RACE: The Braves (76-55) sat idle on a
+// Monday off day and watched their division lead shrink to 3.0 games, the tightest it has been in
+// months, after PHILADELPHIA rallied for six runs in the ninth to beat St. Louis 6-4 and run its
+// winning streak to nine. KYLE SCHWARBER's walk-off two-run homer capped that comeback and pushed
+// him past MATT OLSON (36) for the outright MLB home run lead. Atlanta now opens a three-game
+// measuring stick with the NL West-leading Dodgers (80-51) at Truist Park: BRYCE ELDER (8-7, 3.92)
+// draws TYLER GLASNOW (3-0, 2.72) Tuesday, AJ SMITH-SHAWVER faces ROKI SASAKI Wednesday, and CHRIS
+// SALE (12-9, 2.20) meets YOSHINOBU YAMAMOTO (12-7, 2.61) Thursday. The weekend at the Little League
+// Classic ended in a split, salvaged Sunday behind TYLER MAHLE and a MICHAEL HARRIS II homer.
+// Roster/IL: REYNALDO LOPEZ (left knee) is on a Triple-A Gwinnett rehab assignment; ROBERT SUAREZ
+// (forearm) keeps building his throwing program; STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remain
+// on the 60-day IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -54,7 +54,7 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
     stats: { avg: .274, obp: .348, slg: .570, ops: .918, hr: 36, rbi: 75, sb: 0, bb: 24, so: 54, games: 77, doubles: 24 },
-    statNote: "THE HOMER THAT AVOIDED THE SWEEP: Olson turned a 3-0 pitch from Brandyn Garcia into a 437-foot, two-out, go-ahead three-run homer in the 7th on Sunday, his 36th, the difference in a 5-3 win over Arizona that salvaged the finale. It kept him among the majors' home run leaders, and he now sits one behind Philadelphia's Kyle Schwarber for the outright MLB lead at 36. He leads the Braves with 36 homers and 75 RBI, already past each of his last two full seasons with six weeks to play, and his ironman consecutive-games streak keeps climbing, now ninth all-time.",
+    statNote: "THE HOMER THAT AVOIDED THE SWEEP: Olson turned a 3-0 pitch from Brandyn Garcia into a 437-foot, two-out, go-ahead three-run homer in the 7th on Sunday, his 36th, the difference in a 5-3 win over Arizona that salvaged the finale. It kept him among the majors' home run leaders, and he now trails Philadelphia's Kyle Schwarber for the outright MLB lead after Schwarber's Monday walk-off, sitting on 36. He leads the Braves with 36 homers and 75 RBI, already past each of his last two full seasons with six weeks to play, and his ironman consecutive-games streak keeps climbing, now ninth all-time.",
     form: 9.9,
     status: "active",
     injuryNote: null,
@@ -1448,7 +1448,7 @@ export const NEXT_GAME = {
     atl: { pitcher: "Bryce Elder", record: "8-7", era: 3.92 },
     opp: { pitcher: "Tyler Glasnow", record: "3-0", era: 2.72 },
   },
-  note: "THE DODGERS COME TO TRUIST FOR A STRETCH-RUN MEASURING STICK. After a Monday off day, the first-place Braves (76-55) open a marquee series with Los Angeles on Tuesday at 7:15 PM ET, sending BRYCE ELDER (8-7, 3.92) against Dodgers right-hander TYLER GLASNOW (3-0, 2.72). Atlanta split the weekend at Milwaukee, salvaging a 4-2 win at the Little League Classic behind Tyler Mahle and a Michael Harris II homer, but a red-hot Philadelphia (W7) has trimmed the NL East lead to 4.0 games, so the bats need to stay hot at home. MATT OLSON sits one behind Kyle Schwarber for the MLB home run lead at 36. On the mend: REYNALDO LOPEZ (left knee) began a Triple-A Gwinnett rehab assignment Sunday, and ROBERT SUAREZ (forearm) keeps building his throwing program; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
+  note: "THE DODGERS COME TO TRUIST FOR A STRETCH-RUN MEASURING STICK. After a Monday off day, the first-place Braves (76-55) open a marquee three-game series with the NL West-leading Los Angeles Dodgers (80-51) on Tuesday at 7:15 PM ET, sending BRYCE ELDER (8-7, 3.92) against right-hander TYLER GLASNOW (3-0, 2.72). AJ SMITH-SHAWVER faces ROKI SASAKI Wednesday, and CHRIS SALE (12-9, 2.20) draws YOSHINOBU YAMAMOTO (12-7, 2.61) Thursday. The urgency is real: a red-hot Philadelphia has won nine straight and trimmed the NL East lead to 3.0 games, so the bats need to stay hot at home. MATT OLSON (36) now trails Kyle Schwarber for the MLB home run lead after Schwarber's Monday walk-off. On the mend: REYNALDO LOPEZ (left knee) is on a Triple-A Gwinnett rehab assignment, and ROBERT SUAREZ (forearm) keeps building his throwing program; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
@@ -1468,9 +1468,9 @@ export const RESULTS = [
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
   { team: "ATL", name: "Atlanta Braves",         w: 76, l: 55, pct: .580, gb: 0,    streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 72, l: 59, pct: .550, gb: 4.0,  streak: "W7" },
-  { team: "MIA", name: "Miami Marlins",          w: 65, l: 66, pct: .496, gb: 11.0, streak: "L1" },
-  { team: "WSH", name: "Washington Nationals",   w: 62, l: 69, pct: .473, gb: 14.0, streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 73, l: 58, pct: .557, gb: 3.0,  streak: "W9" },
+  { team: "MIA", name: "Miami Marlins",          w: 66, l: 66, pct: .500, gb: 10.5, streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 62, l: 70, pct: .470, gb: 14.5, streak: "L1" },
   { team: "NYM", name: "New York Mets",          w: 60, l: 71, pct: .458, gb: 16.0, streak: "L1" },
 ];
 
@@ -1534,20 +1534,20 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-24T09:00:00-04:00",
+  generatedAt: "2026-08-25T09:15:00-04:00",
   summary:
-    "HARRIS AND MAHLE SALVAGE A SPLIT AT THE LITTLE LEAGUE CLASSIC. The Braves (76-55) closed the Milwaukee weekend with a 4-2 win Sunday night at Journey Bank Ballpark in Williamsport, PA, where Tyler Mahle worked five strong innings and Michael Harris II added a solo homer off Aaron Ashby in the 9th, his 21st. Mauricio Dubon doubled home a run and Sean Murphy chipped in an RBI infield single, and Raisel Iglesias closed the 9th for his 27th save. It followed a flat 4-1 loss Saturday, when Jake Bauers clubbed a tiebreaking two-run homer and Logan Henderson spun six strong for Milwaukee against Martin Perez (L, 8-8). Atlanta stays atop the NL East, but a red-hot Philadelphia (winners of seven in a row, 14-5 in August) has pulled within 4.0 games. Monday is an off day before the Dodgers visit Truist Park on Tuesday, where Bryce Elder (8-7, 3.92) draws Los Angeles right-hander Tyler Glasnow (3-0, 2.72). Matt Olson sits one behind Kyle Schwarber for the MLB home run lead at 36. Roster and IL: Reynaldo López (left knee) began a Triple-A Gwinnett rehab assignment Sunday, Tyler Kinley was designated for assignment Aug 18 when AJ Smith-Shawver was recalled, and Robert Suarez (forearm) keeps building his throwing program; Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
+    "PHILADELPHIA'S SURGE TURNS THE NL EAST INTO A RACE. The Braves (76-55) sat idle on a Monday off day and watched their division lead shrink to 3.0 games, the tightest it has been in months, after Philadelphia rallied for six runs in the ninth to beat St. Louis 6-4 and run its winning streak to nine. Kyle Schwarber's walk-off two-run homer capped that comeback and pushed him past Matt Olson (36) for the outright MLB home run lead. Atlanta now opens a three-game measuring stick with the NL West-leading Dodgers (80-51) at Truist Park: Bryce Elder (8-7, 3.92) draws Tyler Glasnow (3-0, 2.72) on Tuesday, AJ Smith-Shawver faces Roki Sasaki on Wednesday, and Chris Sale (12-9, 2.20) meets Yoshinobu Yamamoto (12-7, 2.61) on Thursday. The weekend at the Little League Classic ended in a split, salvaged Sunday with a 4-2 win behind Tyler Mahle and a Michael Harris II homer. Roster and IL: Reynaldo López (left knee) is on a Triple-A Gwinnett rehab assignment, Robert Suarez (forearm) keeps building his throwing program, and Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
   keyTopics: [
-    { category: "result", title: "Braves 4, Brewers 2: Harris and Mahle win the Little League Classic", detail: "Atlanta salvaged a split of the weekend Sunday night in Williamsport, with Tyler Mahle working five strong innings and Michael Harris II adding a 9th-inning solo homer off Aaron Ashby. Mauricio Dubon and Sean Murphy drove in the other runs, and Raisel Iglesias closed it for his 27th save.", recency: "today" },
-    { category: "result", title: "Brewers 4, Braves 1: Bauers and Henderson handle Atlanta", detail: "Milwaukee took Saturday's middle game behind Jake Bauers's tiebreaking two-run homer and six strong innings from Logan Henderson. Martin Perez (L, 8-8) lasted just four innings and was charged with four runs as the Atlanta bats stayed cold.", recency: "yesterday" },
-    { category: "standings", title: "NL East lead down to 4.0 as Philadelphia surges", detail: "Atlanta (76-55) still leads the division, but a Phillies club winning seven straight and 14-5 in August has trimmed the cushion to 4.0 games. Miami is 11.0 back, the Nationals 14.0 out, and the Mets 16.0 behind with about five weeks to play.", recency: "today" },
-    { category: "injury", title: "López starts a rehab assignment at Triple-A Gwinnett", detail: "Reynaldo López (left knee inflammation) joined the Gwinnett Stripers on Sunday to begin a minor-league rehab assignment, the clearest step yet toward a late-season return. He was 4-3 with a 3.64 ERA in 24 games before the injury and would hand a thin rotation a needed arm.", recency: "today" },
-    { category: "transaction", title: "Kinley designated as Smith-Shawver returns", detail: "Atlanta designated reliever Tyler Kinley for assignment on Aug 18, the corresponding move when AJ Smith-Shawver was recalled from Triple-A Gwinnett. Kinley posted a 4.01 ERA with one save across 49 appearances; Smith-Shawver, back from 2025 Tommy John surgery, has stepped into spot-start duty.", recency: "this-week" },
-    { category: "rotation", title: "Elder opens the Dodgers series Tuesday", detail: "After a Monday off day, Bryce Elder (8-7, 3.92) draws the ball Tuesday at 7:15 PM ET against Los Angeles right-hander Tyler Glasnow (3-0, 2.72) at Truist Park. It launches a marquee home series that will measure Atlanta against one of the National League's heavyweights.", recency: "today" },
-    { category: "milestone", title: "Olson one behind Schwarber for the MLB home run lead", detail: "Matt Olson sits on 36 homers, one shy of Philadelphia's Kyle Schwarber for the outright major-league lead. He has already passed each of his last two full seasons in home runs and RBI with six weeks still to play.", recency: "this-week" },
-    { category: "narrative", title: "The offense is still streaky away from Truist", detail: "A single run Saturday followed a cold road trip through Minnesota, and only the Sunday finale kept the weekend from getting away. Getting Ronald Acuña Jr., Olson, and Harris II clicking together at home this week would steady a lineup that has run hot and cold in August.", recency: "today" },
+    { category: "standings", title: "Phillies win 9th straight, cut the NL East lead to 3.0", detail: "Atlanta (76-55) was off Monday and saw its cushion trimmed to 3.0 games, its smallest of the season, after Philadelphia scored six in the ninth to walk off St. Louis 6-4 for a ninth consecutive win. Miami is 10.5 back, Washington 14.5 out, and the Mets 16.0 behind with about five weeks to play.", recency: "today" },
+    { category: "milestone", title: "Schwarber's walk-off passes Olson for the MLB home run lead", detail: "Kyle Schwarber's two-run walk-off homer Monday nudged him ahead of Matt Olson (36) for the outright major-league home run lead. Olson has still already cleared each of his last two full seasons in homers and RBI with six weeks left to answer.", recency: "today" },
+    { category: "rotation", title: "A three-game measuring stick with the Dodgers", detail: "The NL West-leading Dodgers (80-51) visit Truist Park for three. Bryce Elder (8-7, 3.92) faces Tyler Glasnow (3-0, 2.72) Tuesday, AJ Smith-Shawver draws Roki Sasaki Wednesday, and Chris Sale (12-9, 2.20) meets Yoshinobu Yamamoto (12-7, 2.61) Thursday. All three first pitches are 7:15 PM ET.", recency: "today" },
+    { category: "result", title: "Braves 4, Brewers 2: Harris and Mahle win the Little League Classic", detail: "Atlanta salvaged a split of the weekend Sunday night in Williamsport, with Tyler Mahle working five strong innings and Michael Harris II adding a 9th-inning solo homer off Aaron Ashby, his 21st. Mauricio Dubon and Sean Murphy drove in the other runs, and Raisel Iglesias closed it for his 27th save.", recency: "this-week" },
+    { category: "narrative", title: "The offense needs to click at home", detail: "A single run in Saturday's loss followed a cold road trip through Minnesota, and only the Sunday finale kept the weekend from getting away. Getting Ronald Acuña Jr., Olson, and Harris II going together this week would steady a lineup that has run hot and cold in August, and it comes against premium arms.", recency: "today" },
+    { category: "injury", title: "López building up on a Triple-A Gwinnett rehab assignment", detail: "Reynaldo López (left knee inflammation) is with the Gwinnett Stripers on a minor-league rehab assignment, the clearest step yet toward a late-season return. He was 4-3 with a 3.64 ERA in 24 games before the injury and would hand a thin rotation a needed arm for the stretch.", recency: "this-week" },
+    { category: "rotation", title: "Sale draws Yamamoto in a Thursday ace matchup", detail: "Chris Sale (12-9, 2.20, 166 K) closes the series Thursday opposite Yoshinobu Yamamoto (12-7, 2.61). Sale's Cy Young-caliber season has repeatedly gone unrewarded by thin run support, so Atlanta's bats picking him up would be the difference in a marquee spot.", recency: "this-week" },
+    { category: "transaction", title: "Smith-Shawver in the rotation mix after Kinley DFA", detail: "AJ Smith-Shawver, recalled from Gwinnett on Aug 18 when Tyler Kinley was designated for assignment, starts Wednesday against the Dodgers. Back from 2025 Tommy John surgery, he carries a 6.23 ERA in limited work and gets a stiff test against a heavy Los Angeles lineup.", recency: "this-week" },
     { category: "injury", title: "Suarez keeps building his throwing program", detail: "Robert Suarez (right forearm inflammation) resumed throwing earlier this month with no discomfort and continues to progress, though he is not yet built up for game action or a rehab assignment. The late innings stay with Iglesias and Dylan Lee until he is back.", recency: "ongoing" },
-    { category: "rotation", title: "Iglesias steady in the ninth, now at 27 saves", detail: "Raisel Iglesias closed out Sunday's win for his 27th save, holding a 2.03 ERA with just two walks all season. The bridge from Dylan Lee to Iglesias keeps anchoring Atlanta's late innings while Suarez works back.", recency: "today" },
+    { category: "rotation", title: "Iglesias steady in the ninth, now at 27 saves", detail: "Raisel Iglesias closed out Sunday's win for his 27th save, holding a 2.03 ERA with just two walks all season. The bridge from Dylan Lee to Iglesias keeps anchoring Atlanta's late innings while Suarez works back.", recency: "this-week" },
     { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is unlikely to pitch again in 2026, and Spencer Schwellenbach (elbow) has no firm timetable post-surgery. Joe Jiménez (knee) and Joey Wentz (torn ACL, out for the year) also remain on the 60-day injured list.", recency: "ongoing" },
   ],
   sources: [
