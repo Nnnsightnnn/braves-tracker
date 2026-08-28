@@ -1,17 +1,16 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated August 26, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 28, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// WED AUG 26, ALBIES STRANDS THE STARS, BRAVES STEAL THE OPENER: Atlanta (77-55) beat the Dodgers
-// 4-3 Tuesday at Truist Park to snap Los Angeles's six-game winning streak and, with SEATTLE ending
-// Philadelphia's nine-game run the same night, pushed the NL East lead back to 4.0 games. OZZIE
-// ALBIES was the story: his first-inning sacrifice fly capped a three-run frame and set a franchise
-// single-season record (13th, passing HANK AARON and DEL CRANDALL), then his RBI single in the 8th
-// scored MATT OLSON for the go-ahead run. RAISEL IGLESIAS closed it for his 28th save, stranding
-// SHOHEI OHTANI at third after a leadoff triple, and DYLAN DODD (4-1) got the win in relief.
-// BRYCE ELDER gave six innings of three-run ball with no decision. Game two Wednesday sends
-// AJ SMITH-SHAWVER against ROKI SASAKI (5-5, 4.42) at 7:15 PM ET, with CHRIS SALE vs YOSHINOBU
-// YAMAMOTO to close the set Thursday. Roster/IL: REYNALDO LOPEZ (left knee) stays on a Triple-A
-// Gwinnett rehab assignment; ROBERT SUAREZ (forearm) keeps building his throwing program;
-// STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remain on the 60-day IL.
+// THU AUG 27, SALE SLAMS THE DOOR, BRAVES SWEEP THE DODGERS: Atlanta (79-55) beat Los Angeles 1-0
+// Thursday at Truist Park behind CHRIS SALE's five-hit, 11-strikeout shutout with no walks, finishing
+// a three-game sweep of the Dodgers and running the winning streak to four. DRAKE BALDWIN's leadoff
+// homer in the 2nd (his 22nd) off YOSHINOBU YAMAMOTO was the game's only run. It was Sale's fourth
+// double-digit-strikeout game of the year and the 95th of his career, seventh-most all time, dropping
+// his ERA to 2.06. With Philadelphia idle, the NL East lead is out to 5.0 games. Next: the last-place
+// Rockies (51-81) visit for the weekend, GRANT HOLMES (8-5, 3.64) vs TOMOYUKI SUGANO (12-7, 4.96)
+// Friday at 7:15 PM ET. Roster/IL: Atlanta claimed RHP RICKY VANASCO off waivers from Detroit and
+// optioned him to Gwinnett; REYNALDO LOPEZ (left knee) is set for another Gwinnett rehab start Friday;
+// ROBERT SUAREZ (forearm) is playing catch on the field with bullpens next; STRIDER, SCHWELLENBACH,
+// JIMENEZ, and WENTZ remain on the 60-day IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -159,9 +158,9 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .279, obp: .364, slg: .497, ops: .861, hr: 21, rbi: 58, sb: 2, bb: 18, so: 50, games: 65 },
-    statNote: "LONE ATLANTA RUN IN MINNEAPOLIS: Baldwin led off the 6th Tuesday with his 21st homer, to left-center, accounting for all of the offense in a 4-1 loss at Target Field. It extended a strong stretch that included his first career five-hit game, a 5-for-5, two-homer day against Texas that made him the first Braves catcher with five hits since Johnny Estrada in 2004. He splits the catching load with Sean Murphy back from the IL.",
-    form: 6.0,
+    stats: { avg: .280, obp: .365, slg: .501, ops: .866, hr: 22, rbi: 59, sb: 2, bb: 18, so: 50, games: 66 },
+    statNote: "THE ONLY RUN OF THE SWEEP-CLINCHER: Baldwin turned on a Yoshinobu Yamamoto pitch in the 2nd Thursday for a leadoff homer, his 22nd, the lone run behind Chris Sale's shutout in a 1-0 win that completed a three-game sweep of the Dodgers. The rookie catcher keeps producing in a load he splits with Sean Murphy, and the homer off one of the NL's best starters was the kind of big-stage swing that has defined his first full season.",
+    form: 8.4,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4810190.png",
@@ -498,9 +497,9 @@ export const PLAYERS = [
     rotationSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
-    stats: { era: 2.20, whip: 1.05, ip: 134.2, k: 166, bb: 23, hr: null, w: 12, l: 9, games: 23, starts: 23 },
-    statNote: "OUTDUELED BY THE ROOKIE FLAMETHROWER: Sale (L, 12-9, 2.20) matched Jacob Misiorowski deep into Friday's opener at Milwaukee and still lost, scattering eight hits with no walks and six strikeouts over six innings as the Brewers edged Atlanta 2-1. Misiorowski answered with six shutout frames, and the Braves scratched their only run off Antonio Senzatela in relief before Trevor Megill closed it. It was another strong turn undone by thin run support, the fourth straight quality start Atlanta has failed to win behind him, and his ERA still sits at a Cy Young-caliber 2.20 with 166 strikeouts on the year.",
-    form: 8.4,
+    stats: { era: 2.06, whip: 1.02, ip: 143.2, k: 177, bb: 23, hr: null, w: 13, l: 9, games: 24, starts: 24 },
+    statNote: "ELEVEN STRIKEOUTS, NO WALKS, A COMPLETE-GAME SHUTOUT: Sale (W, 13-9, 2.06) was overpowering Thursday night at Truist Park, spinning a five-hit shutout with 11 strikeouts and no walks to beat Yoshinobu Yamamoto and the Dodgers 1-0 and finish a three-game sweep. It was his fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time, and it finally gave a season of Cy Young-caliber pitching the run support it had lacked. Drake Baldwin's leadoff homer off Yamamoto in the 2nd was all the offense he needed.",
+    form: 9.9,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/30948.png",
@@ -525,7 +524,7 @@ export const PLAYERS = [
     statNote: "SCRATCHED PREGAME, HEADED FOR THE IL: López was pulled from his scheduled Saturday start about 35 minutes before first pitch after left knee inflammation flared during his warm-up routine, and Walt Weiss said afterward he will likely land on the 15-day IL pending an MRI. Martín Pérez took the ball and threw seven no-hit-into-the-7th innings in his place. It is a blow on deadline weekend: López had answered the length questions with 5 2/3 shutout innings in the Camden Yards clincher a week earlier, and Atlanta now leans harder on the rest of a thin rotation behind Chris Sale.",
     form: 6.0,
     status: "il-15",
-    injuryNote: "LEFT KNEE INFLAMMATION. Scratched about 35 minutes before his scheduled Aug 1 start when the knee flared during warm-ups, then placed on the 15-day IL (retro to July 30). The MRI showed no structural damage. He began a minor-league rehab assignment with Triple-A Gwinnett on Sunday, Aug 23, the last step toward a return in the closing weeks. He was 4-3 with a 3.64 ERA in 24 games (11 starts) before the injury. Martín Pérez, Tyler Mahle, and Grant Holmes have covered the innings behind Chris Sale.",
+    injuryNote: "LEFT KNEE INFLAMMATION. Scratched about 35 minutes before his scheduled Aug 1 start when the knee flared during warm-ups, then placed on the 15-day IL (retro to July 30). The MRI showed no structural damage. He is on a Triple-A Gwinnett rehab assignment and is lined up for another rehab start Friday, the last steps toward a return in the closing weeks. He was 4-3 with a 3.64 ERA in 24 games (11 starts) before the injury. Martín Pérez, Tyler Mahle, and Grant Holmes have covered the innings behind Chris Sale.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
     assignment: "rehab",
     contract: { years: 3, total: 30000000, guaranteed: 30000000, apy: 10000000, throughYear: 2026 },
@@ -698,7 +697,7 @@ export const PLAYERS = [
     statNote: "PLACED ON THE 15-DAY IL (SORE RIGHT FOREARM): The forearm soreness Suarez had been pitching through finally pushed him to the IL ahead of the Giants series, with Hurston Waldrep recalled in the corresponding move. The injury is being framed as precautionary rather than structural, but it removes the back-end's most consistent arm from a bullpen already leaning on Lee and Iglesias. Before the stint he was dominant: 5-0, 0.56 ERA, 0.81 WHIP, 17 K-to-2 BB across 16 IP and 17 G, with Atlanta undefeated when he appeared.",
     form: 8.6,
     status: "il-15",
-    injuryNote: "On the 15-day IL with right forearm inflammation (placed late June). The MRI showed no structural damage, and Suarez resumed throwing from 60 feet on Aug 13 with no discomfort, a step forward in his progression, but he is not yet built up for game action or a rehab assignment. Iglesias and Dylan Lee keep the late innings until he returns.",
+    injuryNote: "On the 15-day IL with right forearm inflammation (placed late June). The MRI showed no structural damage, and Suarez has progressed to playing catch on the field at Truist Park with no discomfort; bullpen sessions are the next step and he could return before the end of the season, though he is not yet on a rehab assignment. Iglesias and Dylan Lee keep the late innings until he is back.",
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4148749.png",
     assignment: "mlb",
     contract: { years: 3, total: 45000000, guaranteed: 45000000, apy: 15000000, throughYear: 2028 },
@@ -1413,26 +1412,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-08-27",
-    weekday: "Thu",
-    time: "7:15 PM ET",
-    opp: "LAD",
-    home: true,
-    venue: "Truist Park · Atlanta, GA",
-    atlSP: { id: "sale", name: "Chris Sale", record: "12-9", era: 2.20, daysRest: 6, hand: "L" },
-    oppSP: { name: "Yoshinobu Yamamoto", record: "12-7", era: 2.61, hand: "R" },
-    note: "Chris Sale (12-9, 2.20) goes for the sweep against Yoshinobu Yamamoto (12-7, 2.61), an ace matchup with both among the NL leaders in ERA and WHIP after Atlanta took the first two of the set.",
-  },
-  {
     date: "2026-08-28",
     weekday: "Fri",
     time: "7:15 PM ET",
     opp: "COL",
     home: true,
     venue: "Truist Park · Atlanta, GA",
-    atlSP: null,
-    oppSP: { name: "TBD", record: "", era: null, hand: "R" },
-    note: "The last-place Rockies (51-81) come to Truist Park to open a weekend series, a get-well spot for the Atlanta bats after the Dodgers set.",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "8-5", era: 3.64, daysRest: 8, hand: "R" },
+    oppSP: { name: "Tomoyuki Sugano", record: "12-7", era: 4.96, hand: "R" },
+    note: "Fresh off a sweep of the Dodgers, the first-place Braves open a weekend set with the last-place Rockies (51-81), sending Grant Holmes (8-5, 3.64) against Tomoyuki Sugano (12-7, 4.96), a get-well spot for the Atlanta bats.",
   },
   {
     date: "2026-08-29",
@@ -1442,8 +1430,8 @@ export const UPCOMING_SCHEDULE = [
     home: true,
     venue: "Truist Park · Atlanta, GA",
     atlSP: null,
-    oppSP: { name: "TBD", record: "", era: null, hand: "R" },
-    note: "Game two with Colorado, a Saturday matinee at Truist Park.",
+    oppSP: { name: "Ryan Feltner", record: "5-8", era: 6.08, hand: "R" },
+    note: "Game two with Colorado, a Saturday matinee at Truist Park, with Ryan Feltner (5-8, 6.08) on the mound for the Rockies.",
   },
   {
     date: "2026-08-30",
@@ -1453,28 +1441,29 @@ export const UPCOMING_SCHEDULE = [
     home: true,
     venue: "Truist Park · Atlanta, GA",
     atlSP: null,
-    oppSP: { name: "TBD", record: "", era: null, hand: "R" },
-    note: "The Braves close the homestand against the Rockies before the calendar turns to September.",
+    oppSP: { name: "Mason Adams", record: "0-0", era: 2.25, hand: "R" },
+    note: "The Braves close the homestand against the Rockies (Mason Adams on the bump) before the calendar turns to September.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-08-27",
+  date: "2026-08-28",
   time: "7:15 PM ET",
-  opp: "LAD",
+  opp: "COL",
   home: true,
   venue: "Truist Park · Atlanta, GA",
-  tv: "FS1 / BravesVision",
+  tv: "BravesVision",
   probables: {
-    atl: { pitcher: "Chris Sale", record: "12-9", era: 2.20 },
-    opp: { pitcher: "Yoshinobu Yamamoto", record: "12-7", era: 2.61 },
+    atl: { pitcher: "Grant Holmes", record: "8-5", era: 3.64 },
+    opp: { pitcher: "Tomoyuki Sugano", record: "12-7", era: 4.96 },
   },
-  note: "SWEEP ON THE LINE AS SALE DRAWS YAMAMOTO. The first-place Braves (78-55) have taken the first two of the series from the Dodgers, walking it off 6-5 Wednesday on Ha-Seong Kim's ninth-inning single, and Thursday at 7:15 PM ET they send CHRIS SALE (12-9, 2.20) against YOSHINOBU YAMAMOTO (12-7, 2.61) at Truist Park with a chance to sweep. It is an ace matchup, both pitchers among the NL leaders in ERA and WHIP, and Sale's thin run support has repeatedly gone unrewarded, so the bats picking him up would be the difference. The division cushion is out to 4.5 games over Philadelphia, with a soft landing to follow: the last-place Rockies (51-81) visit for the weekend. MATT OLSON (36) still trails Kyle Schwarber for the MLB home run lead. On the mend: REYNALDO LOPEZ (left knee) is on a Triple-A Gwinnett rehab assignment, and ROBERT SUAREZ (forearm) keeps building his throwing program; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
+  note: "A SWEEP OF THE DODGERS, NOW A SOFT LANDING. The first-place Braves (79-55) finished a three-game sweep of Los Angeles on Thursday, riding CHRIS SALE's 11-strikeout, five-hit shutout and DRAKE BALDWIN's leadoff homer to a 1-0 win, and now open a weekend series with the last-place Rockies (51-81) at Truist Park. Friday at 7:15 PM ET, GRANT HOLMES (8-5, 3.64) draws TOMOYUKI SUGANO (12-7, 4.96), a get-well spot for an Atlanta offense that scratched out just one run in the finale but has won four straight. The division cushion is out to 5.0 games over an idle Philadelphia. MATT OLSON (36) still chases Kyle Schwarber for the MLB home run lead. On the mend: REYNALDO LOPEZ (left knee) is lined up for another Triple-A Gwinnett rehab start Friday, and ROBERT SUAREZ (forearm) is playing catch on the field with bullpens next; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-08-27", opp: "LAD", home: true, atlScore: 1, oppScore: 0, result: "W", note: "SALE'S 11-K SHUTOUT COMPLETES THE SWEEP: BRAVES 1, DODGERS 0. Chris Sale (W, 13-9) was untouchable Thursday night at Truist Park, spinning a five-hit shutout with 11 strikeouts and no walks to beat Yoshinobu Yamamoto and sweep the three-game series from Los Angeles. It was Sale's fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time. Drake Baldwin's leadoff homer in the 2nd, his 22nd, off Yamamoto was the game's only run, and Atlanta's fourth straight win moved the Braves to 79-55 and pushed the NL East lead to 5.0 games over an idle Philadelphia." },
   { date: "2026-08-26", opp: "LAD", home: true, atlScore: 6, oppScore: 5, result: "W", note: "KIM WALKS IT OFF, ATLANTA TAKES THE FIRST TWO: BRAVES 6, DODGERS 5. Pinch-hitter Ha-Seong Kim singled home Lane Thomas with two outs in the bottom of the 9th on Wednesday at Truist Park, capping a comeback against Dodgers closer Tanner Scott (L) and handing Atlanta a third straight win in front of 37,227. Raisel Iglesias (W) worked a scoreless top of the 9th to set up the winning rally, his fingerprints on a second consecutive one-run decision over Los Angeles. AJ Smith-Shawver, in his second start since being recalled, gave the Braves enough length before the bullpen held it close. The win moved Atlanta to 78-55 and pushed the NL East lead to 4.5 games over Philadelphia, with a chance to sweep the Dodgers on Thursday." },
   { date: "2026-08-25", opp: "LAD", home: true, atlScore: 4, oppScore: 3, result: "W", note: "ALBIES STRANDS THE STARS, BRAVES STEAL THE OPENER: BRAVES 4, DODGERS 3. Atlanta jumped Tyler Glasnow, making his first start since May 6, for three runs in the 1st on Tuesday at Truist Park, capped by Ozzie Albies's sacrifice fly, a franchise single-season record 13th that passed Hank Aaron and Del Crandall. The Dodgers clawed even, but Matt Olson doubled to lead off the 8th and Albies singled him home for the go-ahead run. Bryce Elder gave six innings of three-run ball with no decision, Dylan Dodd (W, 4-1) worked a scoreless 8th, and Raisel Iglesias closed it for his 28th save, stranding Shohei Ohtani at third after a leadoff triple. The win moved the Braves to 77-55 and, with Seattle ending Philadelphia's nine-game streak, pushed the NL East lead back to 4.0 games." },
   { date: "2026-08-23", opp: "MIL", home: false, atlScore: 4, oppScore: 2, result: "W", note: "HARRIS AND MAHLE SALVAGE A SPLIT AT THE LITTLE LEAGUE CLASSIC: BRAVES 4, BREWERS 2. Atlanta closed the weekend with a win Sunday night at Journey Bank Ballpark in Williamsport, PA, the annual MLB Little League Classic. TYLER MAHLE (W) worked five strong innings, and the offense scratched enough across: MAURICIO DUBON doubled home a run in the 2nd, SEAN MURPHY drove in a run on an infield single in the 4th, and MICHAEL HARRIS II tacked on a solo homer off Aaron Ashby in the 9th, his 21st. RAISEL IGLESIAS closed the 9th for his 27th save. The win moved the Braves to 76-55 and kept them atop the NL East, 4.0 games clear of a surging Philadelphia." },
@@ -1484,16 +1473,15 @@ export const RESULTS = [
   { date: "2026-08-19", opp: "MIN", home: false, atlScore: 4, oppScore: 6, result: "L", note: "TWINS FINISH THE SWEEP AS THE SEVENTH GETS AWAY: TWINS 6, BRAVES 4. Minnesota broke a tie in the bottom of the seventh Wednesday afternoon at Target Field, KODY CLEMENS and BROOKS LEE lining RBI singles to send Atlanta to a third straight loss and a series sweep. Clemens drove in three and KAELEN CULPEPPER collected three hits for the Twins. AJ SMITH-SHAWVER, up from Gwinnett for a spot start in the six-man rotation, kept the Braves within reach before the bullpen let it slip. RONALD ACUÑA JR, LANE THOMAS, and OZZIE ALBIES drove in the Atlanta runs, but the bats went quiet after the middle innings, and YOENDRYS GOMEZ closed a 1-2-3 ninth for his 20th save, his third in as many games. The Braves fell to 74-53 and, with Philadelphia winning again, the NL East lead trimmed to 4.5 games." },
   { date: "2026-08-18", opp: "MIN", home: false, atlScore: 1, oppScore: 4, result: "L", note: "BELL AND JEFFERS BURY ATLANTA AGAIN: TWINS 4, BRAVES 1. Minnesota jumped TYLER MAHLE (L, 4-10) in the first for the second straight night Tuesday at Target Field, RYAN JEFFERS lacing a two-out RBI double to right and JOSH BELL following with a two-run homer to right-center for a quick 3-0 lead. ZEBBY MATTHEWS (W, 7-8) held the Braves to one run over 5 2/3 innings, and YOENDRYS GOMEZ worked around a leadoff double by MICHAEL HARRIS II in the 9th for his 19th save. DRAKE BALDWIN's leadoff homer in the 6th, his 21st, was all Atlanta could muster. The Braves fell to 74-52 and, with Philadelphia beating Miami 6-4, the NL East lead trimmed to 5.5 games." },
   { date: "2026-08-17", opp: "MIN", home: false, atlScore: 2, oppScore: 4, result: "L", note: "BIG FIRST INNING SINKS ATLANTA IN THE OPENER: TWINS 4, BRAVES 2. Minnesota jumped MARTIN PEREZ (L, 8-7) for four runs in the bottom of the first Monday night at Target Field, the first six batters reaching and JOSH BELL lacing a two-run double to key the rally. Perez settled after that but was done after five innings on nine hits and four runs, snapping his 18-inning scoreless streak. RONALD ACUÑA JR singled home two runs to left in the 5th to cut it to 4-2, but the Braves could not get even against BAILEY OBER (W, 8-4), who allowed two runs over 4.1 innings, and the Minnesota bullpen. YOENDRYS GOMEZ worked a scoreless 9th for his 18th save. The Braves fell to 74-51, and with Philadelphia beating Miami 6-5, the NL East lead trimmed to 6.5 games." },
-  { date: "2026-08-16", opp: "AZ", home: true, atlScore: 5, oppScore: 3, result: "W", note: "OLSON'S GO-AHEAD BLAST AVOIDS THE SWEEP: BRAVES 5, DIAMONDBACKS 3. Atlanta salvaged the finale Sunday at Truist Park behind Matt Olson's 437-foot, two-out, three-run homer off Brandyn Garcia in the 7th, his 36th of the year and the shot that kept him tied for the MLB home run lead. BRYCE ELDER answered Saturday's rout with six innings of one-run ball on four hits and one walk with five strikeouts, and DIDIER FUENTES (W, 5-1) got the decision despite giving up Ildemaro Vargas's game-tying solo homer in the 7th. RONALD ACUÑA JR doubled home the go-ahead run in the 5th to make it 2-1, and RAISEL IGLESIAS worked the 9th for his 25th save, allowing a run before closing it out. The win moved the Braves to 74-50 and kept them 7.5 up in the NL East as they head to Minnesota." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 78, l: 55, pct: .586, gb: 0,    streak: "W3" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 74, l: 60, pct: .552, gb: 4.5,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 67, l: 66, pct: .504, gb: 11.0, streak: "L2" },
-  { team: "WSH", name: "Washington Nationals",   w: 62, l: 72, pct: .463, gb: 16.5, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 60, l: 72, pct: .455, gb: 17.5, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 79, l: 55, pct: .590, gb: 0,    streak: "W4" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 74, l: 60, pct: .552, gb: 5.0,  streak: "W1" },
+  { team: "MIA", name: "Miami Marlins",          w: 67, l: 66, pct: .504, gb: 11.5, streak: "L2" },
+  { team: "WSH", name: "Washington Nationals",   w: 62, l: 72, pct: .463, gb: 17.0, streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 60, l: 72, pct: .455, gb: 18.0, streak: "W1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1503,11 +1491,11 @@ export const NL_EAST_STANDINGS = [
 // shows a broken image. The daily update refreshes this block whenever it
 // queues a new image request in ~/Vault/Notes/image-requests.md.
 export const COVER_PHOTO = {
-  date: "2026-08-26",
-  imageUrl: "/braves-tracker/assets/cover/2026-08-26-kim-walkoff.jpg",
-  fallbackPlayerId: "kim",
+  date: "2026-08-27",
+  imageUrl: "/braves-tracker/assets/cover/2026-08-27-sale-shutout.jpg",
+  fallbackPlayerId: "sale",
   cutline:
-    "Ha-Seong Kim is mobbed at home plate after his two-out, ninth-inning single scored Lane Thomas to beat the Dodgers 6-5 at Truist Park on Wednesday. The pinch-hit walk-off, in front of 37,227, was the Braves' third straight win and pushed the NL East lead to 4.5 games.",
+    "Chris Sale fires in the late innings of a five-hit, 11-strikeout shutout of the Dodgers at Truist Park on Thursday. The 1-0 win, backed only by Drake Baldwin's leadoff homer, completed a three-game sweep and pushed the NL East lead to 5.0 games.",
   credit: "THE TRACKER PHOTO DESK",
 };
 
@@ -1556,22 +1544,22 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-27T09:30:00-04:00",
+  generatedAt: "2026-08-28T09:30:00-04:00",
   summary:
-    "KIM WALKS IT OFF, AND ATLANTA HAS THE DODGERS ON THE ROPES. The first-place Braves (78-55) beat Los Angeles 6-5 Wednesday at Truist Park on Ha-Seong Kim's two-out, pinch-hit single in the 9th that scored Lane Thomas, a third straight win that has Atlanta up two games to none in the series and a chance to sweep the NL's second-best team. Raisel Iglesias worked a scoreless top of the 9th for the win, his second consecutive one-run decision over Los Angeles after saving Tuesday's 4-3 opener. AJ Smith-Shawver gave the Braves enough in his second start back before the comeback did the rest. With Philadelphia idle-adjacent in the chase, the NL East lead is out to 4.5 games. Thursday's finale is an ace duel, Chris Sale (12-9, 2.20) against Yoshinobu Yamamoto (12-7, 2.61) at 7:15 PM ET, before the last-place Rockies (51-81) come in for the weekend. Roster and IL: Reynaldo López (left knee) is on a Triple-A Gwinnett rehab assignment, Robert Suarez (forearm) keeps building his throwing program, and Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
+    "SALE SLAMS THE DOOR: A SHUTOUT, A SWEEP, A FIVE-GAME LEAD. Chris Sale spun a five-hit, 11-strikeout shutout with no walks Thursday night at Truist Park, beating Yoshinobu Yamamoto and the Dodgers 1-0 to finish a three-game sweep of Los Angeles and stretch Atlanta's winning streak to four. Drake Baldwin's leadoff homer in the 2nd, his 22nd, was the game's only run, all Sale needed on a night he logged his fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time. The Braves (79-55) now lead an idle Philadelphia by 5.0 games in the NL East, having taken three straight from one of the National League's best teams. Next comes a soft landing: the last-place Rockies (51-81) open a weekend series Friday at 7:15 PM ET, Grant Holmes (8-5, 3.64) against Tomoyuki Sugano (12-7, 4.96). Roster and IL: Atlanta claimed RHP Ricky Vanasco off waivers from Detroit and optioned him to Triple-A Gwinnett; Reynaldo López (left knee) is lined up for another Gwinnett rehab start Friday; Robert Suarez (forearm) is playing catch on the field with bullpens next; and Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
   keyTopics: [
-    { category: "result", title: "Braves 6, Dodgers 5: Kim's pinch-hit single ends it in the 9th", detail: "Ha-Seong Kim delivered a two-out, walk-off single that scored Lane Thomas on Wednesday, capping a comeback against Dodgers closer Tanner Scott in front of 37,227. It was Atlanta's third straight win and gave the Braves the first two games of the series.", recency: "today" },
-    { category: "narrative", title: "Atlanta pushes the Dodgers to the brink of a sweep", detail: "Back-to-back one-run wins over Los Angeles, one of the NL's best teams, have the Braves up 2-0 in the set and riding a three-game winning streak. A win Thursday would be a statement sweep of a likely October opponent with five weeks to play.", recency: "today" },
-    { category: "rotation", title: "Sale vs Yamamoto for the sweep Thursday", detail: "Chris Sale (12-9, 2.20) draws Yoshinobu Yamamoto (12-7, 2.61) in the finale at 7:15 PM ET, a matchup of two of the NL's ERA and WHIP leaders. Sale's excellent season has repeatedly gone unrewarded by thin run support, so the bats backing him would be the difference.", recency: "today" },
-    { category: "standings", title: "NL East lead out to 4.5 games", detail: "At 78-55 the Braves lead Philadelphia by 4.5 in the division. Miami sits 11.0 back, Washington 16.5 out, and the Mets 17.5 behind, leaving Atlanta with a comfortable cushion but plenty of runway to keep the pressure on the Phillies.", recency: "today" },
-    { category: "transaction", title: "Iglesias is the winning pitcher in the walk-off", detail: "Raisel Iglesias worked a scoreless top of the 9th and was the pitcher of record when Kim drove in the winner, his fingerprints on a second consecutive one-run decision over Los Angeles. He carries a 1.94 ERA, a 0.82 WHIP, and just two walks all year.", recency: "today" },
-    { category: "rotation", title: "Smith-Shawver holds up in his second start back", detail: "AJ Smith-Shawver kept Wednesday's game in reach and left with a no-decision as Atlanta rallied late. It was his third start since June 2025 Tommy John surgery, a matchup-dependent piece of the six-man rotation the Braves are leaning on down the stretch.", recency: "today" },
-    { category: "narrative", title: "Olson keeps chasing Schwarber for the HR lead", detail: "Matt Olson sits on 36 homers and 75 RBI, still trailing Philadelphia's Kyle Schwarber for the outright MLB home run lead. He has already cleared each of his last two full seasons with six weeks to play.", recency: "this-week" },
-    { category: "milestone", title: "Albies still owns the franchise sacrifice-fly record", detail: "Ozzie Albies's 13th sacrifice fly of the year, in Tuesday's opener, remains the most in a single season in Braves history, passing the 12 shared by Hank Aaron and Del Crandall since 1960. He added the go-ahead RBI single that night to headline the win.", recency: "this-week" },
-    { category: "narrative", title: "Rockies up next as a soft landing", detail: "After the Dodgers set, the last-place Colorado Rockies (51-81) visit Truist Park for a weekend series beginning Friday. It is a get-well spot for the Atlanta offense before the calendar turns to a September stretch run.", recency: "today" },
-    { category: "injury", title: "López building up on a Triple-A Gwinnett rehab assignment", detail: "Reynaldo López (left knee inflammation) is with the Gwinnett Stripers on a minor-league rehab assignment, the clearest step yet toward a late-season return. He was 4-3 with a 3.64 ERA in 24 games before the injury and would hand a thin rotation a needed arm for the stretch.", recency: "this-week" },
-    { category: "injury", title: "Suarez keeps building his throwing program", detail: "Robert Suarez (right forearm inflammation) resumed throwing this month with no discomfort and continues to progress, though he is not yet built up for game action or a rehab assignment. The late innings stay with Iglesias and Dylan Lee until he is back.", recency: "ongoing" },
-    { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is unlikely to pitch again in 2026, and Spencer Schwellenbach (elbow) is throwing bullpens but has not regained full velocity. Joe Jiménez (knee) and Joey Wentz also remain on the 60-day injured list.", recency: "ongoing" },
+    { category: "result", title: "Braves 1, Dodgers 0: Sale shuts out LA to finish the sweep", detail: "Chris Sale threw a five-hit shutout with 11 strikeouts and no walks Thursday, out-dueling Yoshinobu Yamamoto to complete a three-game sweep of the Dodgers. It was Atlanta's fourth straight win and one of the signature starts of his season.", recency: "today" },
+    { category: "milestone", title: "Sale's 95th career double-digit-strikeout game", detail: "The 11-strikeout night was Sale's fourth double-digit-strikeout game of 2026 and the 95th of his career, seventh-most in major-league history. His ERA dropped to 2.06 with 177 strikeouts, keeping him squarely in the NL Cy Young conversation.", recency: "today" },
+    { category: "narrative", title: "A statement sweep of a likely October opponent", detail: "Atlanta took all three from Los Angeles, one of the National League's best teams, by scores of 4-3, 6-5, and 1-0. The four-game winning streak comes at the right time, a message sent to the field with five weeks left in the regular season.", recency: "today" },
+    { category: "standings", title: "NL East lead out to 5.0 games", detail: "At 79-55 the Braves lead an idle Philadelphia by 5.0 games in the division. Miami sits 11.5 back, Washington 17.0 out, and the Mets 18.0 behind, giving Atlanta a comfortable cushion entering the final month.", recency: "today" },
+    { category: "narrative", title: "Baldwin's leadoff homer is the game's only run", detail: "Drake Baldwin turned on a Yamamoto pitch in the 2nd for his 22nd homer, the lone run of the 1-0 win. The rookie catcher continues to produce big swings on the biggest stages while splitting the workload with Sean Murphy.", recency: "today" },
+    { category: "rotation", title: "Holmes vs Sugano opens the Rockies series", detail: "Grant Holmes (8-5, 3.64) draws Tomoyuki Sugano (12-7, 4.96) on Friday at 7:15 PM ET as Atlanta opens a three-game home set with the last-place Rockies (51-81), a get-well spot for a lineup that managed just one run in the finale.", recency: "today" },
+    { category: "transaction", title: "Braves claim RHP Ricky Vanasco off waivers", detail: "Atlanta claimed right-hander Ricky Vanasco off waivers from the Tigers and optioned him to Triple-A Gwinnett, adding a power arm to the organizational depth pool without touching the active roster.", recency: "today" },
+    { category: "narrative", title: "Olson keeps chasing Schwarber for the HR lead", detail: "Matt Olson sits on 36 homers and 75 RBI, still trailing Philadelphia's Kyle Schwarber for the outright MLB home run lead. He has already cleared each of his last two full seasons with a month to play.", recency: "this-week" },
+    { category: "milestone", title: "Albies owns the franchise sacrifice-fly record", detail: "Ozzie Albies's 13th sacrifice fly of the year, in Tuesday's opener against the Dodgers, is the most in a single season in Braves history, passing the 12 shared by Hank Aaron and Del Crandall since 1960.", recency: "this-week" },
+    { category: "injury", title: "López lined up for another Gwinnett rehab start Friday", detail: "Reynaldo López (left knee inflammation) is on a Triple-A Gwinnett rehab assignment and is set for another rehab start Friday, the clearest step yet toward a late-season return. He was 4-3 with a 3.64 ERA in 24 games before the injury.", recency: "today" },
+    { category: "injury", title: "Suarez playing catch on the field, bullpens next", detail: "Robert Suarez (right forearm inflammation) has progressed to playing catch on the field at Truist Park with no discomfort, and bullpen sessions are the next step. He could return before the end of the season but is not yet on a rehab assignment.", recency: "this-week" },
+    { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is reported unlikely to pitch again in 2026, while Spencer Schwellenbach (elbow), Joe Jiménez (knee), and Joey Wentz also remain on the 60-day injured list with the postseason window shrinking.", recency: "ongoing" },
   ],
   sources: [
     "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "MLB Trade Rumors", "Yahoo Sports", "FOX Sports", "Baseball-Reference", "FanGraphs",
