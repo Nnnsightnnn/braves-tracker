@@ -1,13 +1,13 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated August 29, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated August 30, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI AUG 28, HARRIS HOMERS AND ACUÑA CLEANS UP, WINNING STREAK HITS FIVE: Atlanta (80-55) opened the
-// weekend series with the last-place Rockies with a 6-4 win Friday night at Truist Park. MICHAEL HARRIS II
-// drove in three on two hits, including a two-run homer (his 22nd) that chased TOMOYUKI SUGANO (L, 12-8)
-// to start the 5th. RONALD ACUÑA JR, hitting cleanup for the first time all season after a Thursday rest
-// day, went 3-for-4 with a walk and three runs. GRANT HOLMES (W, 9-5, 3.72) gave five innings of three-run
-// ball before the bullpen finished it. The win, Atlanta's fifth straight, held the NL East lead at 5.0
-// games over a Philadelphia club that beat the Angels 5-3. Next: game two Saturday at 4:10 PM ET, TYLER
-// MAHLE (5-10, 4.66) vs RYAN FELTNER (5-8, 6.08). Roster/IL: no new moves; REYNALDO LOPEZ (left knee) is
+// SAT AUG 29, HARRIS DOUBLES IT HOME IN THE 8TH, WINNING STREAK REACHES SIX: Atlanta (81-55) edged the
+// last-place Rockies 2-1 Saturday at Truist Park, taking the series behind a late rally. Colorado struck
+// first and led 1-0 into the 8th before MICHAEL HARRIS II laced a two-out, two-run double just past a
+// diving Cole Carrigg in left-center, scoring MATT OLSON and MAURICIO DUBON for the win. BRENT SUTER
+// (W, 2-2) worked 2 1/3 scoreless for his first Atlanta win, and DIDIER FUENTES retired Jake McCarthy to
+// close it out. The win, Atlanta's sixth straight, held the NL East lead at 5.5 games over Philadelphia.
+// Next: the Rockies-series finale Sunday at 1:35 PM ET, TYLER MAHLE (5-10, 4.66) vs MASON ADAMS (0-0,
+// 2.25), before the Giants come to town Monday. Roster/IL: no new moves; REYNALDO LOPEZ (left knee) is
 // working through Gwinnett rehab starts; ROBERT SUAREZ (forearm) is playing catch on the field with
 // bullpens next; STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remain on the 60-day IL.
 //
@@ -52,7 +52,7 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
     stats: { avg: .274, obp: .348, slg: .569, ops: .917, hr: 36, rbi: 75, sb: 0, bb: 24, so: 54, games: 78, doubles: 25 },
-    statNote: "THE DOUBLE THAT STARTED THE RALLY: Olson led off the 8th with a double Tuesday against the Dodgers and came around on Ozzie Albies's single for the go-ahead run in a 4-3 win. He sits on 36 homers, now trailing Philadelphia's Kyle Schwarber for the outright MLB lead, and leads the Braves with 36 homers and 75 RBI, already past each of his last two full seasons with six weeks to play. His ironman consecutive-games streak keeps climbing, now ninth all-time.",
+    statNote: "ON BASE FOR THE WINNING RALLY AGAIN: Olson singled and came around to score the tying run on Michael Harris II's two-out double in the 8th on Saturday, the swing that decided a 2-1 win over Colorado and pushed the streak to six. He sits on 36 homers, still trailing Philadelphia's Kyle Schwarber for the outright MLB lead, and leads the Braves with 36 homers and 75 RBI, already past each of his last two full seasons with a month to play. His ironman consecutive-games streak keeps climbing, now ninth all-time.",
     form: 9.7,
     status: "active",
     injuryNote: null,
@@ -137,8 +137,8 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
     stats: { avg: .307, obp: .341, slg: .518, ops: .859, hr: 22, rbi: 64, sb: 2, bb: 6, so: 29, games: 65, triples: 1 },
-    statNote: "THREE RBI TO OPEN THE ROCKIES SERIES: Harris II carried the offense Friday against Colorado, going 2-for-4 with a two-run homer, his 22nd, that chased Tomoyuki Sugano to start the 5th and drove in three in the 6-4 win. He keeps hitting better than .305 while playing center every day, exactly the two-way lift the middle of the order needs behind Matt Olson and Austin Riley down the stretch.",
-    form: 9.5,
+    statNote: "THE TWO-OUT DOUBLE THAT WON GAME TWO: Harris II broke a 1-1 tie Saturday with a two-out, two-run double just past a diving Cole Carrigg in the 8th, scoring Matt Olson and Mauricio Dubon in the 2-1 win over Colorado that ran the streak to six. It came a night after his two-run homer opened the series, and he keeps hitting better than .305 while playing center every day, exactly the two-way lift the middle of the order needs down the stretch.",
+    form: 9.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -606,8 +606,8 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
     stats: { era: 3.42, whip: 1.24, ip: 112.1, k: 76, bb: 37, w: 8, l: 8, games: 24, starts: 20 },
-    statNote: "SHORT NIGHT IN MILWAUKEE: Pérez (L, 8-8) lasted four innings Saturday at American Family Field, charged with four runs, the big blow a Jake Bauers tiebreaking two-run homer, as Logan Henderson and the Brewers handled Atlanta 4-1. It was a second straight rough turn after his August scoreless streak ended in Minneapolis, and the back of the rotation still leans on him for length down the stretch.",
-    form: 4.5,
+    statNote: "BOUNCE-BACK START, NO DECISION IN THE 2-1 WIN: Pérez gave Atlanta a steadying turn Saturday against Colorado, holding the last-place Rockies to a single run before the bullpen and Michael Harris II's 8th-inning double won it 2-1. It washed away a rough stretch of turns and kept the back of the rotation intact behind Chris Sale as the streak reached six.",
+    form: 6.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -845,9 +845,9 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "R", throws: "R",
     nationality: "🇨🇴 Colombia", age: 20, experience: 1,
-    stats: { era: 2.70, whip: 1.05, ip: 20.0, k: 22, bb: 3, sv: 1, hold: null, games: 11, starts: 1, w: 5, l: 1 },
-    statNote: "GAVE UP THE TYING SHOT, THEN GOT THE WIN: Fuentes (W, 5-1) surrendered Ildemaro Vargas's game-tying solo homer in the 7th on Sunday, but Matt Olson answered in the bottom half with a go-ahead three-run blast, and the 20-year-old walked off with his fifth win of the year in the 5-3 finale over Arizona. Even with the blemish he keeps passing the leverage tests Weiss hands him, a young multi-inning arm the Braves lean on in a thinned bullpen.",
-    form: 8.4,
+    stats: { era: 2.62, whip: 1.04, ip: 21.0, k: 23, bb: 3, sv: 3, hold: null, games: 12, starts: 1, w: 5, l: 1 },
+    statNote: "SLAMMED THE DOOR IN GAME TWO: Fuentes retired Jake McCarthy to end Saturday's 2-1 win over Colorado and pick up the save, the last out of a sixth straight victory. The 20-year-old keeps passing the leverage tests Weiss hands him, a young multi-inning arm the Braves lean on in a thinned bullpen behind Raisel Iglesias while Robert Suarez works his way back.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5291189.png",
@@ -1411,57 +1411,58 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-08-28",
-    weekday: "Fri",
-    time: "7:15 PM ET",
-    opp: "COL",
-    home: true,
-    venue: "Truist Park · Atlanta, GA",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "8-5", era: 3.64, daysRest: 8, hand: "R" },
-    oppSP: { name: "Tomoyuki Sugano", record: "12-7", era: 4.96, hand: "R" },
-    note: "Fresh off a sweep of the Dodgers, the first-place Braves open a weekend set with the last-place Rockies (51-81), sending Grant Holmes (8-5, 3.64) against Tomoyuki Sugano (12-7, 4.96), a get-well spot for the Atlanta bats.",
-  },
-  {
-    date: "2026-08-29",
-    weekday: "Sat",
-    time: "4:10 PM ET",
-    opp: "COL",
-    home: true,
-    venue: "Truist Park · Atlanta, GA",
-    atlSP: null,
-    oppSP: { name: "Ryan Feltner", record: "5-8", era: 6.08, hand: "R" },
-    note: "Game two with Colorado, a Saturday matinee at Truist Park, with Ryan Feltner (5-8, 6.08) on the mound for the Rockies.",
-  },
-  {
     date: "2026-08-30",
     weekday: "Sun",
     time: "1:35 PM ET",
     opp: "COL",
     home: true,
     venue: "Truist Park · Atlanta, GA",
-    atlSP: null,
+    atlSP: { id: "mahle-tyler", name: "Tyler Mahle", record: "5-10", era: 4.66, daysRest: 7, hand: "R" },
     oppSP: { name: "Mason Adams", record: "0-0", era: 2.25, hand: "R" },
-    note: "The Braves close the homestand against the Rockies (Mason Adams on the bump) before the calendar turns to September.",
+    note: "Riding a six-game winning streak, the Braves go for the sweep of the last-place Rockies in the homestand finale, sending Tyler Mahle (5-10, 4.66) against Colorado rookie Mason Adams (0-0, 2.25).",
+  },
+  {
+    date: "2026-08-31",
+    weekday: "Mon",
+    time: "7:20 PM ET",
+    opp: "SF",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
+    atlSP: { id: "sale", name: "Chris Sale", record: "13-9", era: 2.06, daysRest: 4, hand: "L" },
+    oppSP: { name: "TBD", record: null, era: null, hand: "R" },
+    note: "September opens at home against the Giants, with Chris Sale (13-9, 2.06) lined up to headline the series opener at Truist Park.",
+  },
+  {
+    date: "2026-09-01",
+    weekday: "Tue",
+    time: "7:20 PM ET",
+    opp: "SF",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "9-5", era: 3.72, daysRest: 4, hand: "R" },
+    oppSP: { name: "TBD", record: null, era: null, hand: "R" },
+    note: "Game two with San Francisco at Truist Park as the Braves push their winning streak deeper into September.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-08-29",
-  time: "4:10 PM ET",
+  date: "2026-08-30",
+  time: "1:35 PM ET",
   opp: "COL",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "BravesVision",
   probables: {
     atl: { pitcher: "Tyler Mahle", record: "5-10", era: 4.66 },
-    opp: { pitcher: "Ryan Feltner", record: "5-8", era: 6.08 },
+    opp: { pitcher: "Mason Adams", record: "0-0", era: 2.25 },
   },
-  note: "FIVE STRAIGHT, AND A CHANCE TO KEEP FEASTING. The first-place Braves (80-55) opened the weekend with a 6-4 win over the last-place Rockies (52-83) on Friday, MICHAEL HARRIS II driving in three on a two-run homer and RONALD ACUÑA JR going 3-for-4 in his first cleanup start of the year. Game two comes Saturday at 4:10 PM ET, TYLER MAHLE (5-10, 4.66) against RYAN FELTNER (5-8, 6.08), a matchup that favors an Atlanta club riding a five-game winning streak. The division cushion holds at 5.0 games over a Philadelphia team that beat the Angels 5-3. MATT OLSON (36) still chases Kyle Schwarber for the MLB home run lead. On the mend: REYNALDO LOPEZ (left knee) is working through Triple-A Gwinnett rehab starts, and ROBERT SUAREZ (forearm) is playing catch on the field with bullpens next; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out.",
+  note: "SIX STRAIGHT, AND A SUNDAY SWEEP IN REACH. The first-place Braves (81-55) edged the last-place Rockies (52-84) 2-1 on Saturday, MICHAEL HARRIS II lacing a two-out, two-run double in the 8th to break a 1-1 tie and take the series. Game three, the homestand finale, comes Sunday at 1:35 PM ET, TYLER MAHLE (5-10, 4.66) against Colorado rookie MASON ADAMS (0-0, 2.25), with a chance to sweep a Rockies club that has lost 84 times. The division cushion sits at 5.5 games over Philadelphia entering September. MATT OLSON (36) still chases Kyle Schwarber for the MLB home run lead. On the mend: REYNALDO LOPEZ (left knee) is working through Triple-A Gwinnett rehab starts, and ROBERT SUAREZ (forearm) is playing catch on the field with bullpens next; the 60-day group of STRIDER, SCHWELLENBACH, JIMENEZ, and WENTZ remains out. The Giants come to town Monday.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-08-29", opp: "COL", home: true, atlScore: 2, oppScore: 1, result: "W", note: "HARRIS DOUBLES IT HOME IN THE 8TH, ATLANTA MAKES IT SIX: BRAVES 2, ROCKIES 1. Colorado struck first and carried a 1-0 lead into the 8th on Saturday at Truist Park before MICHAEL HARRIS II laced a two-out, two-run double just past a diving Cole Carrigg in left-center, scoring MATT OLSON and MAURICIO DUBON to take the lead and the series. MARTIN PEREZ held the Rockies to a single run before handing it off, BRENT SUTER (W, 2-2) worked 2 1/3 scoreless for his first Atlanta win, and DIDIER FUENTES retired Jake McCarthy for the save. The win moved the Braves to 81-55, a sixth straight, and kept the NL East lead at 5.5 games over Philadelphia." },
   { date: "2026-08-28", opp: "COL", home: true, atlScore: 6, oppScore: 4, result: "W", note: "HARRIS HOMERS, ACUÑA CLEANS UP, ATLANTA MAKES IT FIVE: BRAVES 6, ROCKIES 4. Atlanta opened the weekend series with the last-place Rockies with a balanced win Friday night at Truist Park. MICHAEL HARRIS II drove in three on two hits, including a two-run homer, his 22nd, that chased TOMOYUKI SUGANO (L, 12-8) to start the 5th. RONALD ACUÑA JR, hitting cleanup for the first time all season after a Thursday rest day, went 3-for-4 with a walk and three runs scored. GRANT HOLMES (W, 9-5) gave five innings of three-run ball on eight hits before the bullpen closed it out. The win moved the Braves to 80-55 and, with Philadelphia beating the Angels, kept the NL East lead at 5.0 games." },
   { date: "2026-08-27", opp: "LAD", home: true, atlScore: 1, oppScore: 0, result: "W", note: "SALE'S 11-K SHUTOUT COMPLETES THE SWEEP: BRAVES 1, DODGERS 0. Chris Sale (W, 13-9) was untouchable Thursday night at Truist Park, spinning a five-hit shutout with 11 strikeouts and no walks to beat Yoshinobu Yamamoto and sweep the three-game series from Los Angeles. It was Sale's fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time. Drake Baldwin's leadoff homer in the 2nd, his 22nd, off Yamamoto was the game's only run, and Atlanta's fourth straight win moved the Braves to 79-55 and pushed the NL East lead to 5.0 games over an idle Philadelphia." },
   { date: "2026-08-26", opp: "LAD", home: true, atlScore: 6, oppScore: 5, result: "W", note: "KIM WALKS IT OFF, ATLANTA TAKES THE FIRST TWO: BRAVES 6, DODGERS 5. Pinch-hitter Ha-Seong Kim singled home Lane Thomas with two outs in the bottom of the 9th on Wednesday at Truist Park, capping a comeback against Dodgers closer Tanner Scott (L) and handing Atlanta a third straight win in front of 37,227. Raisel Iglesias (W) worked a scoreless top of the 9th to set up the winning rally, his fingerprints on a second consecutive one-run decision over Los Angeles. AJ Smith-Shawver, in his second start since being recalled, gave the Braves enough length before the bullpen held it close. The win moved Atlanta to 78-55 and pushed the NL East lead to 4.5 games over Philadelphia, with a chance to sweep the Dodgers on Thursday." },
@@ -1471,16 +1472,15 @@ export const RESULTS = [
   { date: "2026-08-21", opp: "MIL", home: false, atlScore: 1, oppScore: 2, result: "L", note: "MISIOROWSKI OUTDUELS SALE, MILWAUKEE TAKES THE OPENER: BREWERS 2, BRAVES 1. Brewers rookie right-hander JACOB MISIOROWSKI (W, 13-5) controlled Friday's opener at American Family Field, spinning six shutout innings on four hits with two walks and six strikeouts as Milwaukee edged Atlanta. CHRIS SALE (L, 12-9) matched him for stretches, scattering eight hits with no walks and six strikeouts over six innings, but the two runs he allowed were enough on a night the Braves managed just one. WILLIAM CONTRERAS went 4-for-4 for the Brewers. Atlanta scratched its lone run off ANTONIO SENZATELA in relief, and TREVOR MEGILL worked around a two-out single in the ninth for his 24th save. The Braves fell to 75-54 and, with Philadelphia winning, saw the NL East lead trimmed to 4.0 games." },
   { date: "2026-08-20", opp: "CWS", home: false, atlScore: 2, oppScore: 0, result: "W", note: "HOLMES CARRIES A NO-HITTER INTO THE SEVENTH, ATLANTA ENDS THE SLIDE: BRAVES 2, WHITE SOX 0. Grant Holmes (W, 8-5) was dominant Thursday at Rate Field, taking a no-hit bid into the seventh before Andrew Benintendi lined a leadoff single to left, finishing six scoreless on 94 pitches with three walks and three strikeouts in a June 11 rainout makeup. Austin Riley doubled and singled to drive in both Atlanta runs, and Mauricio Dubon had three hits and scored a run. Dylan Lee spun a perfect eighth and Raisel Iglesias closed a 1-2-3 ninth for his 26th save to complete the one-hitter and snap a three-game slide. The Braves improved to 75-53 and stayed comfortably atop the NL East ahead of a weekend at NL-best Milwaukee." },
   { date: "2026-08-19", opp: "MIN", home: false, atlScore: 4, oppScore: 6, result: "L", note: "TWINS FINISH THE SWEEP AS THE SEVENTH GETS AWAY: TWINS 6, BRAVES 4. Minnesota broke a tie in the bottom of the seventh Wednesday afternoon at Target Field, KODY CLEMENS and BROOKS LEE lining RBI singles to send Atlanta to a third straight loss and a series sweep. Clemens drove in three and KAELEN CULPEPPER collected three hits for the Twins. AJ SMITH-SHAWVER, up from Gwinnett for a spot start in the six-man rotation, kept the Braves within reach before the bullpen let it slip. RONALD ACUÑA JR, LANE THOMAS, and OZZIE ALBIES drove in the Atlanta runs, but the bats went quiet after the middle innings, and YOENDRYS GOMEZ closed a 1-2-3 ninth for his 20th save, his third in as many games. The Braves fell to 74-53 and, with Philadelphia winning again, the NL East lead trimmed to 4.5 games." },
-  { date: "2026-08-18", opp: "MIN", home: false, atlScore: 1, oppScore: 4, result: "L", note: "BELL AND JEFFERS BURY ATLANTA AGAIN: TWINS 4, BRAVES 1. Minnesota jumped TYLER MAHLE (L, 4-10) in the first for the second straight night Tuesday at Target Field, RYAN JEFFERS lacing a two-out RBI double to right and JOSH BELL following with a two-run homer to right-center for a quick 3-0 lead. ZEBBY MATTHEWS (W, 7-8) held the Braves to one run over 5 2/3 innings, and YOENDRYS GOMEZ worked around a leadoff double by MICHAEL HARRIS II in the 9th for his 19th save. DRAKE BALDWIN's leadoff homer in the 6th, his 21st, was all Atlanta could muster. The Braves fell to 74-52 and, with Philadelphia beating Miami 6-4, the NL East lead trimmed to 5.5 games." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 80, l: 55, pct: .593, gb: 0,    streak: "W5" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 75, l: 60, pct: .556, gb: 5.0,  streak: "W2" },
-  { team: "MIA", name: "Miami Marlins",          w: 67, l: 67, pct: .500, gb: 12.5, streak: "L3" },
-  { team: "WSH", name: "Washington Nationals",   w: 62, l: 73, pct: .459, gb: 18.0, streak: "L2" },
-  { team: "NYM", name: "New York Mets",          w: 61, l: 73, pct: .455, gb: 18.5, streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 81, l: 55, pct: .596, gb: 0,    streak: "W6" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 75, l: 60, pct: .556, gb: 5.5,  streak: "W2" },
+  { team: "MIA", name: "Miami Marlins",          w: 67, l: 68, pct: .496, gb: 13.5, streak: "L4" },
+  { team: "NYM", name: "New York Mets",          w: 62, l: 73, pct: .459, gb: 18.5, streak: "W2" },
+  { team: "WSH", name: "Washington Nationals",   w: 62, l: 74, pct: .456, gb: 19.0, streak: "L3" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1543,23 +1543,23 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-08-29T09:15:00-04:00",
+  generatedAt: "2026-08-30T09:30:00-04:00",
   summary:
-    "FIVE IN A ROW: HARRIS AND ACUÑA OPEN THE ROCKIES SERIES WITH A WIN. Atlanta made it five straight Friday night, beating the last-place Rockies 6-4 at Truist Park behind Michael Harris II, who drove in three on a two-run homer, his 22nd, that chased Tomoyuki Sugano to start the 5th. Ronald Acuña Jr, rested for Thursday's Sale shutout, hit cleanup for the first time all season and went 3-for-4 with a walk and three runs. Grant Holmes (W, 9-5) gave five innings of three-run ball before the bullpen closed it. The Braves (80-55) hold a 5.0-game NL East lead over a Philadelphia club that beat the Angels 5-3, having won five straight and eight of ten. Game two comes Saturday at 4:10 PM ET, Tyler Mahle (5-10, 4.66) against Ryan Feltner (5-8, 6.08). Roster and IL are quiet: no new moves, Reynaldo López (left knee) is working through Gwinnett rehab starts, Robert Suarez (forearm) is playing catch on the field with bullpens next, and Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
+    "SIX IN A ROW: HARRIS DOUBLES IT HOME TO TAKE THE ROCKIES SERIES. Atlanta made it six straight Saturday, edging the last-place Rockies 2-1 at Truist Park after trailing 1-0 into the 8th. Michael Harris II laced a two-out, two-run double just past a diving Cole Carrigg to score Matt Olson and Mauricio Dubon for the win. Martin Perez held Colorado to a single run before handing off, Brent Suter (2-2) worked 2 1/3 scoreless for his first Atlanta win, and Didier Fuentes closed it out. The Braves (81-55) hold a 5.5-game NL East lead over Philadelphia and go for the sweep Sunday at 1:35 PM ET, Tyler Mahle (5-10, 4.66) against Rockies rookie Mason Adams (0-0, 2.25), before the Giants visit Monday. Roster and IL are quiet: no new moves, Reynaldo López (left knee) is working through Gwinnett rehab starts, Robert Suarez (forearm) is playing catch on the field with bullpens next, and Strider, Schwellenbach, Jiménez, and Wentz remain on the 60-day IL.",
   keyTopics: [
-    { category: "result", title: "Braves 6, Rockies 4: Atlanta opens the series with a fifth straight win", detail: "Michael Harris II drove in three on a two-run homer and Ronald Acuña Jr went 3-for-4 as Atlanta beat Colorado 6-4 Friday at Truist Park. Grant Holmes gave five innings of three-run ball and the bullpen held it, running the winning streak to five.", recency: "today" },
-    { category: "narrative", title: "Harris drives in three to lead the offense", detail: "Michael Harris II went 2-for-4 with a two-run homer, his 22nd, that chased Tomoyuki Sugano to start the 5th and accounted for three of Atlanta's six runs. He is hitting better than .305 while playing center every day down the stretch.", recency: "today" },
-    { category: "narrative", title: "Acuña shines in his first cleanup start of the year", detail: "Rested Thursday, Ronald Acuña Jr hit fourth for the first time all season Friday and went 3-for-4 with a walk and three runs scored. It was one of his most productive nights since returning from a hamstring strain on July 27.", recency: "today" },
-    { category: "standings", title: "NL East lead holds at 5.0 games", detail: "At 80-55 the Braves lead Philadelphia, a 5-3 winner over the Angels, by 5.0 games in the division. Miami sits well back, Washington and the Mets further out still, leaving Atlanta a comfortable cushion entering September.", recency: "today" },
-    { category: "rotation", title: "Mahle vs Feltner in Saturday's game two", detail: "Tyler Mahle (5-10, 4.66) draws Colorado's Ryan Feltner (5-8, 6.08) on Saturday at 4:10 PM ET, a favorable matchup for an Atlanta club riding a five-game winning streak against a Rockies team that has lost 83 times.", recency: "today" },
-    { category: "result", title: "Holmes grinds through five for his ninth win", detail: "Grant Holmes (9-5, 3.72) was not at his sharpest Friday, allowing three runs on eight hits over five innings, but the Atlanta offense gave him room and the bullpen finished it. It came a week after his no-hit bid into the seventh at the White Sox.", recency: "today" },
-    { category: "narrative", title: "A statement sweep of the Dodgers still resonates", detail: "Atlanta took all three from Los Angeles by 4-3, 6-5, and 1-0 midweek, capped by Chris Sale's five-hit, 11-strikeout shutout Thursday. The sweep of a likely October opponent launched the current five-game run.", recency: "yesterday" },
-    { category: "milestone", title: "Sale's shutout keeps him in the Cy Young race", detail: "Chris Sale's Thursday shutout was his fourth double-digit-strikeout game of the year and the 95th of his career, seventh-most all time. His ERA sits at 2.06 with 177 strikeouts, squarely in the NL Cy Young conversation.", recency: "yesterday" },
+    { category: "result", title: "Braves 2, Rockies 1: Harris's 8th-inning double wins it for a sixth straight", detail: "Trailing 1-0 into the 8th, Michael Harris II lined a two-out, two-run double just past a diving Cole Carrigg to score Matt Olson and Mauricio Dubon on Saturday at Truist Park. The comeback took the series and pushed the winning streak to six.", recency: "today" },
+    { category: "narrative", title: "Harris delivers the go-ahead swing again", detail: "A night after his two-run homer opened the series, Michael Harris II provided the decisive blow in game two, a two-out, two-run double in the 8th. He keeps hitting better than .305 while playing center every day down the stretch.", recency: "today" },
+    { category: "rotation", title: "Perez steadies the back of the rotation", detail: "Martin Perez held the Rockies to a single run before turning it over, a bounce-back turn after a couple of rough outings. It kept Atlanta close until the offense broke through and preserved rotation stability behind Chris Sale.", recency: "today" },
+    { category: "narrative", title: "Suter and Fuentes finish it off", detail: "Deadline addition Brent Suter (2-2) worked 2 1/3 scoreless for his first win as a Brave, and 20-year-old Didier Fuentes retired Jake McCarthy for the save. The thinned bullpen keeps passing its leverage tests behind Raisel Iglesias.", recency: "today" },
+    { category: "standings", title: "NL East lead sits at 5.5 games entering September", detail: "At 81-55 the Braves lead Philadelphia by 5.5 games in the division. Miami, the Mets, and Washington are all well back, leaving Atlanta a comfortable cushion as the calendar turns to the season's final month.", recency: "today" },
+    { category: "rotation", title: "Mahle goes for the sweep Sunday", detail: "Tyler Mahle (5-10, 4.66) draws Colorado rookie Mason Adams (0-0, 2.25) in the homestand finale at 1:35 PM ET, a chance to complete a three-game sweep of a Rockies club that has lost 84 times.", recency: "today" },
+    { category: "narrative", title: "A statement sweep of the Dodgers launched the run", detail: "Atlanta took all three from Los Angeles by 4-3, 6-5, and 1-0 earlier in the week, capped by Chris Sale's five-hit, 11-strikeout shutout. The sweep of a likely October opponent kicked off the current six-game surge.", recency: "this-week" },
+    { category: "milestone", title: "Sale's shutout keeps him in the Cy Young race", detail: "Chris Sale's five-hit, 11-strikeout shutout of the Dodgers was his fourth double-digit-strikeout game of the year and the 95th of his career, seventh-most all time. His ERA sits at 2.06 with 177 strikeouts, squarely in the NL Cy Young conversation.", recency: "this-week" },
     { category: "narrative", title: "Olson keeps chasing Schwarber for the HR lead", detail: "Matt Olson sits on 36 homers and 75 RBI, still trailing Philadelphia's Kyle Schwarber for the outright MLB home run lead. He has already cleared each of his last two full seasons with a month to play.", recency: "this-week" },
-    { category: "milestone", title: "Albies owns the franchise sacrifice-fly record", detail: "Ozzie Albies's 13th sacrifice fly of the year, in Tuesday's opener against the Dodgers, is the most in a single season in Braves history, passing the 12 shared by Hank Aaron and Del Crandall since 1960.", recency: "this-week" },
+    { category: "milestone", title: "Albies owns the franchise sacrifice-fly record", detail: "Ozzie Albies's 13th sacrifice fly of the year, in the Dodgers series opener, is the most in a single season in Braves history, passing the 12 shared by Hank Aaron and Del Crandall since 1960.", recency: "this-week" },
     { category: "injury", title: "López working through Gwinnett rehab starts", detail: "Reynaldo López (left knee inflammation) continues to build up on a Triple-A Gwinnett rehab assignment, the clearest path yet toward a late-season return. He was 4-3 with a 3.64 ERA in 24 games before the injury.", recency: "this-week" },
     { category: "injury", title: "Suarez playing catch on the field, bullpens next", detail: "Robert Suarez (right forearm inflammation) has progressed to playing catch on the field at Truist Park with no discomfort, and bullpen sessions are the next step. He could return before the end of the season but is not yet on a rehab assignment.", recency: "this-week" },
-    { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is reported unlikely to pitch again in 2026, while Spencer Schwellenbach (elbow), Joe Jiménez (knee), and Joey Wentz also remain on the 60-day injured list with the postseason window shrinking.", recency: "ongoing" },
+    { category: "injury", title: "Strider and the 60-day group remain out", detail: "Spencer Strider (right elbow) stays on the 60-day IL and is reported unlikely to pitch again in 2026, while Spencer Schwellenbach (elbow), Joe Jiménez (knee), and Joey Wentz also remain on the 60-day injured list.", recency: "ongoing" },
   ],
   sources: [
     "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "MLB Trade Rumors", "Yahoo Sports", "FOX Sports", "Baseball-Reference", "FanGraphs",
