@@ -1,18 +1,15 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated September 4, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated September 5, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// FRI SEP 4, THE PHILADELPHIA SHOWDOWN OPENS TONIGHT: Atlanta (83-57) is four games clear in the NL East
-// as it opens a four-game set at Citizens Bank Park, tonight's 6:40 PM ET opener a likely NL Cy Young
-// preview, CHRIS SALE (13-9, 2.06) vs CRISTOPHER SÁNCHEZ (16-4, 2.52). An off-day Thursday followed the
-// road trip that ended with the WED SEP 2 statement win: Atlanta salvaged the Washington finale 9-0 at
-// Nationals Park (below), and RONALD ACUÑA JR. supplied the headline, his 200th career home run (a three-run shot
-// in the 7th) making him the fastest player ever to the 200-homer, 200-steal club after singling and
-// swiping his 20th base of 2026 an inning earlier. SEAN MURPHY broke a scoreless tie in the 6th with a
-// three-run homer, his third in five games, and drove in four. GRANT HOLMES was sharp in a rain-shortened,
-// scoreless outing before ELIESER HERNÁNDEZ and the bullpen finished a two-hit shutout; AUSTIN RILEY added
-// a two-run single in the 8th. With Arizona beating Philadelphia 1-0, the win restored a 4.0-game NL East
-// lead over the Phillies (79-61). Roster/IL: REYNALDO LÓPEZ (left knee) needs one more Gwinnett rehab
-// start; ROBERT SUAREZ was transferred to the 60-day IL on Sep 1 (right elbow) but keeps throwing bullpens
-// and still hopes to return this season; STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remain on the 60-day IL.
+// SAT SEP 5, SALE OUTDUELS SÁNCHEZ AND ATLANTA STRETCHES IT TO FIVE: the Braves (84-57) took the opener of
+// the four-game Philadelphia set 5-2 on Friday night at Citizens Bank Park, CHRIS SALE (14-9, 2.10) beating
+// CRISTOPHER SÁNCHEZ in a duel of NL Cy Young cases (six innings, two runs, seven strikeouts). RONALD ACUÑA
+// JR. had three hits and an RBI, MAURICIO DUBÓN broke it open with a two-run homer in the 8th off Orion
+// Kerkering, and RAISEL IGLESIAS pitched a 1-2-3 ninth for his 30th save. Atlanta has now won nine of 11.
+// Alec Bohm drove in both Phillies runs. The win pushed the NL East lead to 5.0 games over Philadelphia
+// (79-62). Next up, game two of the set Saturday: MARTÍN PÉREZ (8-8, 3.05) vs ZACK WHEELER (11-5, 3.31).
+// Roster/IL: REYNALDO LÓPEZ (left knee) needs one more Gwinnett rehab start; ROBERT SUAREZ was transferred
+// to the 60-day IL on Sep 1 (right elbow) but keeps throwing bullpens and still hopes to return this season;
+// STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remain on the 60-day IL.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -33,8 +30,8 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: .268, obp: .383, slg: .480, ops: .863, hr: 14, rbi: 37, sb: 20, bb: 27, so: 41, games: 66 },
-    statNote: "200-200, AND THE FASTEST THERE HAS EVER BEEN: Acuña made history Wednesday at Nationals Park, cracking his 200th career home run, a three-run shot in the 7th, to become the fastest player in major-league history to reach 200 homers and 200 steals. He had set it up in the 6th with a single and his 20th stolen base of 2026, and the milestone blow pushed a 9-0 rout comfortably out of reach. It was the exclamation point on a road day the offense had waited weeks for, and a reminder that the lineup's most dangerous bat is rounding into September form.",
+    stats: { avg: .270, obp: .384, slg: .480, ops: .864, hr: 14, rbi: 38, sb: 20, bb: 27, so: 42, games: 67 },
+    statNote: "THREE HITS AT THE TOP AS ATLANTA GRABBED GAME ONE: Acuña went 3-for-4 with an RBI Friday night at Citizens Bank Park, setting the table in the 5-2 win that opened the Philadelphia series and pushed the NL East lead to five games. It kept a red-hot week rolling for the leadoff man, who days earlier became the fastest player in major-league history to the 200-homer, 200-steal club, and it is another reminder that the lineup's most dangerous bat is rounding into peak September form.",
     form: 9.6,
     status: "active",
     injuryNote: null,
@@ -247,9 +244,9 @@ export const PLAYERS = [
     lineupSpot: 4,
     bats: "R", throws: "R",
     nationality: "🇭🇳 Honduras", age: 31, experience: 8,
-    stats: { avg: .276, obp: .329, slg: .434, ops: .763, hr: 10, rbi: 55, sb: 0, bb: 10, so: 28, games: 57, triples: 1, doubles: 9 },
-    statNote: "THREE HITS AND A RUN IN THE SHUTOUT WIN: Dubón led the offense Thursday with three hits and a run scored in the 2-0 win at the White Sox, setting the table around Austin Riley's two RBI. He remains the most-used player on the roster, bouncing between shortstop, left field, and second base, and his RBI total still trails only Olson among Braves.",
-    form: 9.0,
+    stats: { avg: .277, obp: .330, slg: .441, ops: .771, hr: 11, rbi: 57, sb: 0, bb: 10, so: 28, games: 58, triples: 1, doubles: 9 },
+    statNote: "THE TWO-RUN SHOT THAT BROKE IT OPEN: Dubón turned a one-run game into a comfortable one Friday night at Citizens Bank Park, driving a two-run homer off Orion Kerkering in the 8th to push Atlanta past Philadelphia 5-2 and stretch the NL East lead to five games. It was his 11th of the year, and the versatile everyday piece keeps producing in a role that has him bouncing between shortstop, left field, and second base, his RBI total trailing only Olson among Braves.",
+    form: 9.2,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/35304.png",
@@ -499,8 +496,8 @@ export const PLAYERS = [
     rotationSpot: 1,
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
-    stats: { era: 2.06, whip: 1.02, ip: 143.2, k: 177, bb: 23, hr: null, w: 13, l: 9, games: 24, starts: 24 },
-    statNote: "ELEVEN STRIKEOUTS, NO WALKS, A COMPLETE-GAME SHUTOUT: Sale (W, 13-9, 2.06) was overpowering Thursday night at Truist Park, spinning a five-hit shutout with 11 strikeouts and no walks to beat Yoshinobu Yamamoto and the Dodgers 1-0 and finish a three-game sweep. It was his fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time, and it finally gave a season of Cy Young-caliber pitching the run support it had lacked. Drake Baldwin's leadoff homer off Yamamoto in the 2nd was all the offense he needed.",
+    stats: { era: 2.10, whip: 1.02, ip: 149.2, k: 184, bb: 24, hr: null, w: 14, l: 9, games: 25, starts: 25 },
+    statNote: "HE OUTDUELED SÁNCHEZ TO OPEN PHILADELPHIA: Sale (W, 14-9, 2.10) won the marquee matchup Friday night at Citizens Bank Park, holding the Phillies to two runs over six innings with seven strikeouts and a walk to beat Cristopher Sánchez 5-2 and stretch the NL East lead to five games. He entered the night second in the NL in ERA, which ticked up only to 2.10, and the win kept a season of Cy Young-caliber pitching squarely in the awards conversation with a month to go. Alec Bohm's two-run damage was the only blemish.",
     form: 9.9,
     status: "active",
     injuryNote: null,
@@ -608,9 +605,9 @@ export const PLAYERS = [
     rotationSpot: 6,
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
-    stats: { era: 3.42, whip: 1.24, ip: 112.1, k: 76, bb: 37, w: 8, l: 8, games: 24, starts: 20 },
-    statNote: "BOUNCE-BACK START, NO DECISION IN THE 2-1 WIN: Pérez gave Atlanta a steadying turn Saturday against Colorado, holding the last-place Rockies to a single run before the bullpen and Michael Harris II's 8th-inning double won it 2-1. It washed away a rough stretch of turns and kept the back of the rotation intact behind Chris Sale as the streak reached six.",
-    form: 6.8,
+    stats: { era: 3.05, whip: 1.21, ip: 121.0, k: 91, bb: 37, w: 8, l: 8, games: 26, starts: 22 },
+    statNote: "DRAWS THE SATURDAY BALL IN PHILADELPHIA: Pérez lines up to start game two of the four-game set at Citizens Bank Park on Saturday, carrying an 8-8 record and a tidy 3.05 ERA into a matchup with Phillies ace Zack Wheeler. The veteran lefty has steadied the back of the rotation behind Chris Sale all summer, and a good turn here would let Atlanta press its five-game division lead in its closest pursuer's park.",
+    form: 7.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -674,9 +671,9 @@ export const PLAYERS = [
     bullpenRole: "closer",
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 36, experience: 11,
-    stats: { era: 1.94, whip: 0.82, ip: 34.0, k: 39, bb: 2, sv: 28, hold: null, games: 33, w: 1, l: 2 },
-    statNote: "WINNING PITCHER IN THE WALK-OFF: Iglesias worked a scoreless top of the 9th Wednesday and was the pitcher of record when Ha-Seong Kim singled home the winner in a 6-5 Braves victory, his second straight one-run decision over Los Angeles after closing Tuesday's opener for save No. 28 and stranding Shohei Ohtani at third. He is carrying a 1.94 ERA and a 0.82 WHIP with just two walks all year. With Robert Suarez still on the IL, the Dylan Lee to Iglesias bridge remains central to every close game.",
-    form: 9.4,
+    stats: { era: 1.90, whip: 0.81, ip: 36.0, k: 41, bb: 2, sv: 30, hold: null, games: 35, w: 1, l: 2 },
+    statNote: "A 1-2-3 NINTH FOR SAVE NUMBER 30: Iglesias slammed the door Friday night at Citizens Bank Park, retiring the side in order in the 9th to preserve a 5-2 win over the Phillies and reach 30 saves on the year. He is carrying a sub-2.00 ERA and an elite 0.81 WHIP with just two walks all season. With Robert Suarez on the 60-day IL, the Dylan Lee to Iglesias bridge remains central to every close game down the stretch.",
+    form: 9.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33618.png",
@@ -1450,21 +1447,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-09-04",
-  time: "6:40 PM ET",
+  date: "2026-09-05",
+  time: "6:05 PM ET",
   opp: "PHI",
   home: false,
   venue: "Citizens Bank Park · Philadelphia, PA",
   tv: "BravesVision",
   probables: {
-    atl: { pitcher: "Chris Sale", record: "13-9", era: 2.06 },
-    opp: { pitcher: "Cristopher Sánchez", record: "16-4", era: 2.52 },
+    atl: { pitcher: "Martín Pérez", record: "8-8", era: 3.05 },
+    opp: { pitcher: "Zack Wheeler", record: "11-5", era: 3.31 },
   },
-  note: "THE BIGGEST SERIES OF THE SEASON, AND TWO CY YOUNG CASES OPEN IT. Atlanta (83-57) heads to Philadelphia four games clear in the NL East after a 9-0 rout of Washington on Wednesday, in which RONALD ACUÑA JR. became the fastest player in history to the 200-homer, 200-steal club and SEAN MURPHY drove in four. An off-day Thursday sets up a four-game showdown at Citizens Bank Park against the second-place Phillies (79-61), who arrive off a 1-0 loss at Arizona. Friday's opener is a marquee matchup of likely NL Cy Young finalists: CHRIS SALE (13-9, 2.06), coming off a five-hit, 11-K shutout of the Dodgers, against Phillies lefty CRISTOPHER SÁNCHEZ (16-4, 2.52). MATT OLSON (36 HR) keeps chasing Kyle Schwarber for the MLB home run lead. On the mend: REYNALDO LÓPEZ (knee) needs one more Gwinnett rehab start and ROBERT SUAREZ (forearm) has begun bullpen sessions, while the 60-day group of STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remains out.",
+  note: "GAME TWO IN PHILADELPHIA, WITH A FIVE-GAME LEAD TO PRESS. Atlanta (84-57) opened the four-game set at Citizens Bank Park with a 5-2 win Friday, CHRIS SALE outdueling Cristopher Sánchez, MAURICIO DUBÓN launching a two-run homer in the 8th, and RAISEL IGLESIAS locking down his 30th save, and the Braves have now won nine of 11 to stretch the NL East lead to five games over the Phillies (79-62). Saturday sends veteran lefty MARTÍN PÉREZ (8-8, 3.05) against Philadelphia ace ZACK WHEELER (11-5, 3.31). RONALD ACUÑA JR. (three hits Friday) and MATT OLSON (36 HR, still chasing Kyle Schwarber for the MLB home run lead) anchor the lineup. On the mend: REYNALDO LÓPEZ (knee) needs one more Gwinnett rehab start and ROBERT SUAREZ (right elbow) keeps throwing bullpens on the 60-day IL, while STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remain out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-09-04", opp: "PHI", home: false, atlScore: 5, oppScore: 2, result: "W", note: "SALE OUTDUELS SÁNCHEZ, DUBÓN BREAKS IT OPEN: BRAVES 5, PHILLIES 2. Atlanta seized the opener of the four-game showdown Friday night at Citizens Bank Park, winning a marquee matchup of NL Cy Young cases. CHRIS SALE (W, 14-9) held the Phillies to two runs over six innings with seven strikeouts and a walk, outpitching CRISTOPHER SÁNCHEZ (16-5), who was stuck on 16 wins after allowing three runs in six. RONALD ACUÑA JR. had three hits and an RBI atop the order. With the game tight, MAURICIO DUBÓN launched a two-run homer in the 8th off Orion Kerkering, his 11th, and RAISEL IGLESIAS worked a 1-2-3 ninth for his 30th save. ALEC BOHM homered and doubled for both Phillies runs. The win, Atlanta's ninth in 11 games, moved the Braves to 84-57 and stretched the NL East lead to 5.0 games over Philadelphia." },
   { date: "2026-09-02", opp: "WSH", home: false, atlScore: 9, oppScore: 0, result: "W", note: "ACUÑA MAKES HISTORY, ATLANTA FINALLY BRINGS THE LUMBER ON THE ROAD: BRAVES 9, NATIONALS 0. Atlanta salvaged the series finale Wednesday at Nationals Park with its most complete road game in weeks. GRANT HOLMES was sharp in a rain-shortened, scoreless outing before ELIESER HERNÁNDEZ and the bullpen finished a two-hit shutout. The bats broke through in the 6th: RONALD ACUÑA JR. singled and stole his 20th base of 2026, and after an intentional walk to MICHAEL HARRIS II, SEAN MURPHY crushed a three-run homer, his third in five games. In the 7th, ACUÑA cracked his 200th career home run, a three-run shot that made him the fastest player ever to the 200-200 club and pushed it to 6-0. AUSTIN RILEY added a two-run single in the 8th and Murphy an RBI single for a four-RBI night. With Arizona beating Philadelphia 1-0, the win moved the Braves to 83-57 and restored a 4.0-game NL East lead heading into a weekend showdown at Citizens Bank Park." },
   { date: "2026-09-01", opp: "WSH", home: false, atlScore: 5, oppScore: 9, result: "L", note: "TWO ROOKIE DEBUTS SINK ATLANTA IN DC: NATIONALS 9, BRAVES 5. Washington spoiled the trip opener Tuesday at Nationals Park behind a pair of memorable major-league debuts. YOHANDY MORALES homered for his first big-league hit, a third-inning shot that made it 5-2, and JARED SIMPSON (W) no-hit the Braves across three scoreless relief innings in his own debut. A.J. SMITH-SHAWVER (L, 0-1) labored through four, charged with five runs on six hits and three walks; CJ ABRAMS singled in a run and BRADY HOUSE doubled home two in a four-run 2nd. OZZIE ALBIES (21st, solo) and MICHAEL HARRIS II (23rd, two-run) homered and HA-SEONG KIM went 3-for-3, but Atlanta stranded runners all night and a late push died at 9-5. The loss, Atlanta's second straight, dropped the Braves to 82-57 and trimmed the NL East lead to 3.0 games over Philadelphia." },
   { date: "2026-08-31", opp: "SF", home: true, atlScore: 3, oppScore: 7, result: "L", note: "GIANTS RAIN ON THE PARADE, THE STREAK ENDS AT SEVEN: GIANTS 7, BRAVES 3. San Francisco earned its first series sweep of 2026, closing out the June rainout makeup Monday at Truist Park and snapping Atlanta's season-long seven-game winning streak. Rafael Devers opened with his 30th homer, and after the Braves pulled even, three Giants rookies broke it open in the 6th: Osleivis Basabe led off with a solo shot, Turner Hill delivered a pinch-hit two-run double, and Bryce Eldridge singled home another. Jonah Cox added a bunt single and a ninth-inning solo homer. Former Brave Anthony Molina (2-0), acquired in the Aug 3 Tyler Mahle deal, held Atlanta to three runs over five. Bryce Elder (L, 8-8) was charged with all six runs on eight hits and three walks. The loss dropped the Braves to 82-56 but kept the NL East lead at 4.0 games over Philadelphia." },
@@ -1474,16 +1472,15 @@ export const RESULTS = [
   { date: "2026-08-27", opp: "LAD", home: true, atlScore: 1, oppScore: 0, result: "W", note: "SALE'S 11-K SHUTOUT COMPLETES THE SWEEP: BRAVES 1, DODGERS 0. Chris Sale (W, 13-9) was untouchable Thursday night at Truist Park, spinning a five-hit shutout with 11 strikeouts and no walks to beat Yoshinobu Yamamoto and sweep the three-game series from Los Angeles. It was Sale's fourth double-digit strikeout game of the year and the 95th of his career, seventh-most all time. Drake Baldwin's leadoff homer in the 2nd, his 22nd, off Yamamoto was the game's only run, and Atlanta's fourth straight win moved the Braves to 79-55 and pushed the NL East lead to 5.0 games over an idle Philadelphia." },
   { date: "2026-08-26", opp: "LAD", home: true, atlScore: 6, oppScore: 5, result: "W", note: "KIM WALKS IT OFF, ATLANTA TAKES THE FIRST TWO: BRAVES 6, DODGERS 5. Pinch-hitter Ha-Seong Kim singled home Lane Thomas with two outs in the bottom of the 9th on Wednesday at Truist Park, capping a comeback against Dodgers closer Tanner Scott (L) and handing Atlanta a third straight win in front of 37,227. Raisel Iglesias (W) worked a scoreless top of the 9th to set up the winning rally, his fingerprints on a second consecutive one-run decision over Los Angeles. AJ Smith-Shawver, in his second start since being recalled, gave the Braves enough length before the bullpen held it close. The win moved Atlanta to 78-55 and pushed the NL East lead to 4.5 games over Philadelphia, with a chance to sweep the Dodgers on Thursday." },
   { date: "2026-08-25", opp: "LAD", home: true, atlScore: 4, oppScore: 3, result: "W", note: "ALBIES STRANDS THE STARS, BRAVES STEAL THE OPENER: BRAVES 4, DODGERS 3. Atlanta jumped Tyler Glasnow, making his first start since May 6, for three runs in the 1st on Tuesday at Truist Park, capped by Ozzie Albies's sacrifice fly, a franchise single-season record 13th that passed Hank Aaron and Del Crandall. The Dodgers clawed even, but Matt Olson doubled to lead off the 8th and Albies singled him home for the go-ahead run. Bryce Elder gave six innings of three-run ball with no decision, Dylan Dodd (W, 4-1) worked a scoreless 8th, and Raisel Iglesias closed it for his 28th save, stranding Shohei Ohtani at third after a leadoff triple. The win moved the Braves to 77-55 and, with Seattle ending Philadelphia's nine-game streak, pushed the NL East lead back to 4.0 games." },
-  { date: "2026-08-23", opp: "MIL", home: false, atlScore: 4, oppScore: 2, result: "W", note: "HARRIS AND MAHLE SALVAGE A SPLIT AT THE LITTLE LEAGUE CLASSIC: BRAVES 4, BREWERS 2. Atlanta closed the weekend with a win Sunday night at Journey Bank Ballpark in Williamsport, PA, the annual MLB Little League Classic. TYLER MAHLE (W) worked five strong innings, and the offense scratched enough across: MAURICIO DUBON doubled home a run in the 2nd, SEAN MURPHY drove in a run on an infield single in the 4th, and MICHAEL HARRIS II tacked on a solo homer off Aaron Ashby in the 9th, his 21st. RAISEL IGLESIAS closed the 9th for his 27th save. The win moved the Braves to 76-55 and kept them atop the NL East, 4.0 games clear of a surging Philadelphia." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 83, l: 57, pct: .593, gb: 0,    streak: "W1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 79, l: 61, pct: .564, gb: 4.0,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 70, l: 69, pct: .504, gb: 12.5, streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 67, l: 75, pct: .472, gb: 17.0, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 62, l: 77, pct: .446, gb: 20.5, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 84, l: 57, pct: .596, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 79, l: 62, pct: .560, gb: 5.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 70, l: 69, pct: .504, gb: 13.0, streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 67, l: 75, pct: .472, gb: 17.5, streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 62, l: 77, pct: .446, gb: 21.0, streak: "L1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1546,21 +1543,21 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-04T09:15:00-04:00",
+  generatedAt: "2026-09-05T09:30:00-04:00",
   summary:
-    "THE BIGGEST SERIES OF THE YEAR OPENS TONIGHT IN PHILADELPHIA. The Braves (83-57) arrive at Citizens Bank Park four games clear in the NL East, up 5-1 in the season series, to begin a four-game set against the second-place Phillies (79-61), and Friday's 6:40 PM ET opener is a likely NL Cy Young preview: Chris Sale (13-9, 2.06), off a five-hit, 11-strikeout shutout of the Dodgers, against Phillies lefty Cristopher Sánchez (16-4, 2.52). Atlanta comes in on an 8-2 run over its last 10 after an off-day Thursday, still riding the statement Wednesday in Washington when it salvaged the trip with a 9-0 rout and Ronald Acuña Jr. supplied the headline: his 200th career home run, a three-run shot in the 7th, made him the fastest player in major-league history to the 200-homer, 200-steal club. Sean Murphy did the early damage that day with a three-run homer, his third in five games, on the way to a four-RBI night. On the mend: Reynaldo López (knee) needs one more Gwinnett rehab start, while Robert Suarez was moved to the 60-day IL on Sep 1 (right elbow) yet keeps throwing bullpens and still hopes to pitch again this season. Strider, Schwellenbach, Jiménez, and Wentz stay on the 60-day IL.",
+    "SALE OUTDUELS SÁNCHEZ AND ATLANTA STRETCHES IT TO FIVE. The Braves (84-57) opened the four-game Philadelphia showdown with a 5-2 win Friday night at Citizens Bank Park, Chris Sale (14-9, 2.10) beating Cristopher Sánchez in the marquee matchup of NL Cy Young cases with six innings of two-run ball and seven strikeouts. Ronald Acuña Jr. had three hits and an RBI at the top of the order, Mauricio Dubón broke the game open with a two-run homer in the 8th off Orion Kerkering, and Raisel Iglesias closed it out with a 1-2-3 ninth for his 30th save. Atlanta has now won nine of 11 and pushed its NL East lead to five games over the Phillies (79-62). Alec Bohm drove in both Philadelphia runs. Game two Saturday sends veteran lefty Martín Pérez (8-8, 3.05) against Phillies ace Zack Wheeler (11-5, 3.31). Earlier in the week Acuña became the fastest player in major-league history to the 200-homer, 200-steal club. On the mend: Reynaldo López (knee) needs one more Gwinnett rehab start, while Robert Suarez (right elbow) keeps throwing bullpens on the 60-day IL; Strider, Schwellenbach, Jiménez, and Wentz stay on the 60-day IL.",
   keyTopics: [
-    { category: "rotation", title: "Sale vs Sánchez opens the Philadelphia showdown tonight", detail: "The four-game set that could decide the NL East opens Friday at 6:40 PM ET at Citizens Bank Park with a marquee matchup of likely NL Cy Young finalists: Chris Sale (13-9, 2.06), off a five-hit, 11-strikeout shutout of the Dodgers, against Phillies lefty Cristopher Sánchez (16-4, 2.52). Atlanta leads the season series 5-1 and the division by four games.", recency: "today" },
-    { category: "milestone", title: "Acuña is the fastest ever to 200 HR and 200 SB", detail: "Ronald Acuña Jr. cracked his 200th career home run, a three-run shot in the 7th Wednesday at Nationals Park, to become the fastest player in major-league history to reach the 200-homer, 200-steal club. He had singled and swiped his 20th base of 2026 an inning earlier.", recency: "this-week" },
-    { category: "result", title: "Braves 9, Nationals 0: Atlanta brings the lumber on the road", detail: "Atlanta finally hammered an opponent away from Truist Park, salvaging the Washington finale with a two-hit shutout and a nine-run day. It snapped a rough road stretch for the bats and sent the Braves to Philadelphia with momentum.", recency: "this-week" },
-    { category: "milestone", title: "Murphy homers again, drives in four", detail: "Sean Murphy broke a scoreless tie in the 6th with a three-run homer, his third in five games since returning from the 60-day IL, then added an RBI single for a four-RBI night. The catcher has caught fire the moment his fractured finger healed.", recency: "this-week" },
-    { category: "rotation", title: "Holmes and the bullpen combine on a two-hitter", detail: "Grant Holmes was sharp in a rain-shortened, scoreless outing, and Elieser Hernández came up big again in multi-inning relief as Atlanta held Washington to two hits. Holmes settled for a no-decision with the game still 0-0 when he left.", recency: "this-week" },
-    { category: "standings", title: "NL East lead back to 4.0 games", detail: "Atlanta (83-57) restored a four-game cushion over Philadelphia (79-61) after Arizona beat the Phillies 1-0. The Braves have led the division all season and now get a chance to confirm it in their closest pursuer's park.", recency: "this-week" },
-    { category: "narrative", title: "Kim's switch flips: six hits in six games", detail: "Ha-Seong Kim has six hits in his last six games after five across his first 31 back from a finger injury. A productive Kim, the piece Atlanta built the roster around, makes an already deep lineup tougher to navigate down the stretch.", recency: "this-week" },
+    { category: "result", title: "Braves 5, Phillies 2: Sale outduels Sánchez in the opener", detail: "Atlanta seized game one of the four-game set at Citizens Bank Park, Chris Sale holding Philadelphia to two runs over six innings while Cristopher Sánchez took the tougher-luck no-decision. Ronald Acuña Jr. had three hits and an RBI, and it was Atlanta's ninth win in 11 games.", recency: "today" },
+    { category: "result", title: "Dubón's two-run homer breaks a tight game open", detail: "With the Braves clinging to a one-run lead, Mauricio Dubón drove a two-run shot off Orion Kerkering in the 8th, his 11th of the year, to give Atlanta the cushion in a 5-2 win. Raisel Iglesias then worked a 1-2-3 ninth for his 30th save.", recency: "today" },
+    { category: "standings", title: "NL East lead stretches to 5.0 games", detail: "The Friday win moved Atlanta to 84-57 and pushed the division cushion to five games over Philadelphia (79-62), with three more head-to-head games left in the set. The Braves have led the NL East all season.", recency: "today" },
+    { category: "rotation", title: "Pérez vs Wheeler in game two Saturday", detail: "Atlanta hands the ball to veteran lefty Martín Pérez (8-8, 3.05) opposite Phillies ace Zack Wheeler (11-5, 3.31) in the 6:05 PM ET game two at Citizens Bank Park. A win would let the Braves press their five-game lead in their closest pursuer's park.", recency: "today" },
+    { category: "milestone", title: "Sale's Cy Young case rides a 2.10 ERA", detail: "Chris Sale improved to 14-9 with the Friday win, his ERA ticking up only to 2.10, second-best in the NL. Coming off a five-hit, 11-strikeout shutout of the Dodgers his prior turn, he remains squarely in the NL Cy Young conversation with a month left.", recency: "today" },
+    { category: "milestone", title: "Acuña is the fastest ever to 200 HR and 200 SB", detail: "Ronald Acuña Jr. cracked his 200th career home run earlier this week at Nationals Park to become the fastest player in major-league history to reach the 200-homer, 200-steal club, then carried the hot bat into Philadelphia with a three-hit Friday.", recency: "this-week" },
+    { category: "milestone", title: "Murphy stays hot since his IL return", detail: "Sean Murphy homered again on Wednesday for his third in five games since returning from the 60-day IL, part of a four-RBI night in the 9-0 rout of Washington. The catcher has caught fire the moment his fractured finger healed.", recency: "this-week" },
+    { category: "narrative", title: "Kim's switch flips: hot bat back at short", detail: "Ha-Seong Kim, the piece Atlanta built the infield around, has surged with six hits in a recent six-game window after a slow reintroduction from a finger injury. A productive Kim makes an already deep lineup tougher to navigate down the stretch.", recency: "this-week" },
     { category: "injury", title: "Suarez moved to the 60-day IL", detail: "Atlanta transferred Robert Suarez (right elbow inflammation) to the 60-day injured list on Sep 1, opening a 40-man spot. He keeps throwing bullpen sessions and still hopes to be activated before the season ends, but the move narrows that window. Iglesias and Dylan Lee hold the late innings until he returns.", recency: "this-week" },
     { category: "injury", title: "López needs one more rehab start", detail: "Reynaldo López (left knee inflammation) has allowed four runs across nine innings in two Triple-A Gwinnett rehab starts and reached about 70 pitches Friday. Walt Weiss wants one more outing to stretch him back out as rotation insurance for the closing weeks.", recency: "this-week" },
     { category: "milestone", title: "Olson keeps chasing Schwarber for the HR lead", detail: "Matt Olson sits on 36 homers and 76 RBI, still trailing Philadelphia's Kyle Schwarber for the outright MLB home run lead. He has already cleared each of his last two full seasons with a month to play.", recency: "this-week" },
-    { category: "milestone", title: "Sale's Cy Young case rides on a 2.06 ERA", detail: "Chris Sale carries a 2.06 ERA into Friday's start, coming off a five-hit, 11-strikeout shutout of the Dodgers, his 95th career double-digit-strikeout game. He remains squarely in the NL Cy Young conversation with a month to pitch.", recency: "this-week" },
     { category: "injury", title: "Window shrinking for the 60-day group", detail: "Spencer Strider (right elbow) is reported unlikely to pitch again in 2026, and manager Walt Weiss has acknowledged the return window is closing for Strider and Spencer Schwellenbach (elbow), with Joe Jiménez (knee), Joey Wentz, and now Robert Suarez (elbow) also parked on the 60-day IL.", recency: "ongoing" },
   ],
   sources: [
