@@ -520,12 +520,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇩🇴 Dominican Republic", age: 32, experience: 10,
     stats: { era: 3.64, whip: 1.28, ip: 71.2, k: 61, bb: 18, hr: null, w: 4, l: 3, games: 15, starts: 11 },
-    statNote: "SCRATCHED PREGAME, HEADED FOR THE IL: López was pulled from his scheduled Saturday start about 35 minutes before first pitch after left knee inflammation flared during his warm-up routine, and Walt Weiss said afterward he will likely land on the 15-day IL pending an MRI. Martín Pérez took the ball and threw seven no-hit-into-the-7th innings in his place. It is a blow on deadline weekend: López had answered the length questions with 5 2/3 shutout innings in the Camden Yards clincher a week earlier, and Atlanta now leans harder on the rest of a thin rotation behind Chris Sale.",
+    statNote: "ACTIVATED TO START THE RAYS' MIDDLE GAME: López comes off the injured list Wednesday to start against Tampa Bay at Truist Park, his first big-league appearance since July 26 after six weeks lost to left knee inflammation. He draws Rays right-hander Griffin Jax (6-10, 3.82) and slots back in as the rotation's No. 2 behind Chris Sale. He built back up with a 2.57 ERA over 14 rehab innings at Triple-A Gwinnett and told reporters he faces no workload cap, giving a depth-thinned staff real length for the closing weeks of a division race the Braves lead by four.",
     form: 6.0,
-    status: "il-15",
-    injuryNote: "LEFT KNEE INFLAMMATION. Scratched about 35 minutes before his scheduled Aug 1 start when the knee flared during warm-ups, then placed on the 15-day IL (retro to July 30); the MRI showed no structural damage. The rehab is complete: manager Walt Weiss said López will be activated Wednesday to start the middle game of the Rays series at Truist Park, his first big-league appearance since July 26 and a boost to a rotation that needs length behind Chris Sale down the stretch. He posted a 2.57 ERA and 1.14 WHIP over 14 innings at Triple-A Gwinnett and was 4-3 with a 3.64 ERA in 24 games (11 starts) before the injury. Martín Pérez, Grant Holmes, and Bryce Elder covered the innings while he was out.",
+    status: "active",
+    injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33860.png",
-    assignment: "rehab",
+    assignment: "mlb",
     contract: { years: 3, total: 30000000, guaranteed: 30000000, apy: 10000000, throughYear: 2026 },
     career: [
       { years: "2024–", team: "Atlanta Braves", type: "MLB · 2024 NL All-Star" },
@@ -1179,9 +1179,9 @@ export const PLAYERS = [
     rotationSpot: null,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 23, experience: 3,
-    stats: { era: 7.13, whip: 1.76, ip: 17.2, k: 14, bb: 8, w: 0, l: 1, games: 4, starts: 4 },
-    statNote: "DRAWS THE RAYS OPENER AS ROTATION FILLER: Smith-Shawver (0-1, 7.13) is lined up to start Tuesday night's series opener against Tampa Bay at Truist Park, a back-end turn before Reynaldo López rejoins the rotation Wednesday. He last worked four innings in the Sep 1 loss at Washington, charged with five runs, and his ERA sits above 7 across a handful of uneven starts since his June 2025 Tommy John surgery. The 23-year-old profiles as depth insurance for the closing weeks rather than a fixture, with Atlanta counting on Chris Sale, Grant Holmes, and the returning López to anchor the stretch run.",
-    form: 3.0,
+    stats: { era: 8.14, whip: 1.81, ip: 21.0, k: 16, bb: 10, w: 0, l: 2, games: 5, starts: 5 },
+    statNote: "ROUGHED UP IN THE RAYS OPENER: Smith-Shawver (0-2) could not get out of the 4th in Tuesday's 7-1 loss to Tampa Bay at Truist Park, charged with the defeat after Junior Caminero, Yandy Díaz, and the Rays' order tagged him early. He gave the Braves just over three innings and pushed his ERA above 8 across five uneven starts since his June 2025 Tommy John surgery. The 23-year-old remains depth insurance rather than a fixture, and López's Wednesday return pushes him back toward the margins as Atlanta leans on Chris Sale, Grant Holmes, and Martín Pérez down the stretch.",
+    form: 2.0,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/4917640.png",
@@ -1412,46 +1412,47 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-09-07",
-    weekday: "Mon",
-    time: "1:05 PM ET",
-    opp: "PHI",
-    home: false,
-    venue: "Citizens Bank Park · Philadelphia, PA",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "9-5", era: 3.62, daysRest: 5, hand: "R" },
-    oppSP: { name: "Jesús Luzardo", record: "13-5", era: 3.02, hand: "L" },
-    note: "The finale of the pivotal Philadelphia set, Grant Holmes opposite Phillies lefty ace Jesús Luzardo (13-5, 3.02). A win clinches the series after Sunday's comeback pushed the NL East lead back to five.",
-  },
-  {
-    date: "2026-09-08",
-    weekday: "Tue",
+    date: "2026-09-09",
+    weekday: "Wed",
     time: "7:15 PM ET",
     opp: "TB",
     home: true,
     venue: "Truist Park · Atlanta, GA",
     atlSP: { id: "lopez", name: "Reynaldo López", record: "4-3", era: 3.64, daysRest: null, hand: "R" },
+    oppSP: { name: "Griffin Jax", record: "6-10", era: 3.82, hand: "R" },
+    note: "Reynaldo López is activated off the IL to start the middle game of the Rays set, his first big-league outing since July 26. Atlanta looks to answer Tuesday's 7-1 opener loss opposite Tampa Bay right-hander Griffin Jax.",
+  },
+  {
+    date: "2026-09-10",
+    weekday: "Thu",
+    time: "12:20 PM ET",
+    opp: "TB",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
+    atlSP: { id: "perez-martin", name: "Martín Pérez", record: "8-9", era: 3.26, daysRest: 5, hand: "L" },
     oppSP: { name: "TBD", record: null, era: null, hand: null },
-    note: "Atlanta returns home to open a three-game set with Tampa Bay. Reynaldo López is lined up to be activated off the IL for this start after a strong Gwinnett rehab, giving the rotation a boost for the closing weeks.",
+    note: "Getaway-day finale of the three-game Rays series before an off day. Martín Pérez is lined up to close out the set as Atlanta protects a four-game NL East lead with three weeks to play.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-09-08",
+  date: "2026-09-09",
   time: "7:15 PM ET",
   opp: "TB",
   home: true,
   venue: "Truist Park · Atlanta, GA",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "AJ Smith-Shawver", record: "0-1", era: 7.13 },
-    opp: { pitcher: "Freddy Peralta", record: "7-11", era: 4.96 },
+    atl: { pitcher: "Reynaldo López", record: "4-3", era: 3.64 },
+    opp: { pitcher: "Griffin Jax", record: "6-10", era: 3.82 },
   },
-  note: "HOME TO OPEN AGAINST TAMPA BAY, THE LEAD DOWN TO FOUR. Atlanta (85-59) returns to Truist Park having split the four-game showdown in Philadelphia, blanked 1-0 in Monday's finale by Jesús Luzardo's two-hit, 12-strikeout shutout. The NL East cushion sits at 4.0 games over the Phillies (81-63) with three weeks to play. AJ SMITH-SHAWVER (0-1, 7.13) draws the opener as back-end filler ahead of Reynaldo López's return Wednesday, opposite Tampa Bay's FREDDY PERALTA (7-11, 4.96). MATT OLSON (36 HR) and RONALD ACUÑA JR., fresh off his 1,000th career hit, anchor the lineup. On the mend: LÓPEZ (knee) is set to be activated Wednesday, while ROBERT SUAREZ (right elbow) throws bullpens on the 60-day IL; STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remain out.",
+  note: "LÓPEZ RETURNS TO STEADY A ROTATION AFTER A LOPSIDED OPENER. Atlanta (85-60) sends REYNALDO LÓPEZ back to the mound Wednesday, activated off the injured list for his first big-league start since July 26, needing an answer to Tuesday's 7-1 drubbing by Tampa Bay in which AJ Smith-Shawver could not escape the 4th and Junior Caminero, Yandy Díaz, and Raúl Palacios all went deep. The NL East lead holds at 4.0 games over the Phillies (81-64), who also lost, dropping a 6-5 decision at home to Houston. López (2.57 ERA over 14 rehab innings at Gwinnett) opposes Rays right-hander GRIFFIN JAX (6-10, 3.82). MATT OLSON (36 HR) and RONALD ACUÑA JR., fresh off his 1,000th career hit and 200-200 milestone, anchor the lineup. On the mend: ROBERT SUAREZ (right elbow) throws bullpens on the 60-day IL, while STRIDER, SCHWELLENBACH, JIMÉNEZ, and WENTZ remain out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-09-08", opp: "TB", home: true, atlScore: 1, oppScore: 7, result: "L", note: "FREDDY AND THE RAYS' BATS OVERPOWER ATLANTA IN THE HOMESTAND OPENER: RAYS 7, BRAVES 1. Tampa Bay spoiled the return to Truist Park on Tuesday night, jumping on AJ SMITH-SHAWVER (L, 0-2) early and never letting up. JUNIOR CAMINERO got it started in the 1st with his MLB-leading 39th home run, YANDY DÍAZ added a solo shot (his 22nd) and RAÚL PALACIOS a solo drive (his 9th) as the Rays piled on. FREDDY PERALTA held the Braves to a single run over six innings for the win. Atlanta's only offense came in the 1st, when DRAKE BALDWIN singled home a run after the Braves loaded the bases, but the lineup went quiet the rest of the way and stranded the early chance. Smith-Shawver could not get out of the 4th, and the loss dropped the Braves to 85-60. With Philadelphia falling 6-5 to Houston, the NL East lead held at 4.0 games." },
   { date: "2026-09-07", opp: "PHI", home: false, atlScore: 0, oppScore: 1, result: "L", note: "LUZARDO'S 12-K SHUTOUT SALVAGES A SPLIT FOR PHILADELPHIA: PHILLIES 1, BRAVES 0. Jesús Luzardo was untouchable in Monday's finale at Citizens Bank Park, throwing the first complete game of his career, a two-hit shutout with 12 strikeouts and no walk until the 9th, to beat Atlanta 1-0 and send the four-game set home even. GRANT HOLMES (L) matched him for six scoreless innings with six strikeouts, but the Braves managed just two hits and could not solve the Phillies lefty. KYLE SCHWARBER settled it in the 8th, leading off with his MLB-leading 43rd home run for the game's only run. The loss dropped Atlanta to 85-59 and trimmed the NL East lead to 4.0 games over Philadelphia (81-63) as the Braves head home to open a series with Tampa Bay." },
   { date: "2026-09-06", opp: "PHI", home: false, atlScore: 5, oppScore: 4, result: "W", note: "ACUÑA'S 1,000TH HIT TIES IT, RILEY WINS IT: BRAVES 5, PHILLIES 4. Atlanta erased a three-run deficit in the series' pivotal third game Sunday at Citizens Bank Park. Trailing 4-1 in the 8th, MIKE YASTRZEMSKI singled and DRAKE BALDWIN doubled ahead of RONALD ACUÑA JR., who turned a 100.5-mph Alex McFarlane fastball, the seventh straight triple-digit heater of the at-bat, into a game-tying three-run homer. It was Acuña's 16th of the year and his 1,000th career hit, making him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals. In the 9th, OZZIE ALBIES doubled off Phillies closer JHOAN DURAN (L, 2-5) and AUSTIN RILEY tripled him home for the winning run. DYLAN LEE (W, 6-0) worked in relief of Tyler Mahle and RAISEL IGLESIAS shut the door for his 31st save. The win moved the Braves to 85-58 and pushed the NL East lead back to 5.0 games over Philadelphia (80-63)." },
   { date: "2026-09-05", opp: "PHI", home: false, atlScore: 2, oppScore: 4, result: "L", note: "WHEELER STIFLES ATLANTA AS PÉREZ UNRAVELS EARLY: PHILLIES 4, BRAVES 2. Philadelphia leveled the four-game set Saturday night at Citizens Bank Park, and it was over almost before it started. Atlanta put its first three men on in the top of the 1st but scored nothing, and MARTÍN PÉREZ (L, 8-9) answered with four walks and a single in a three-run bottom of the inning, lasting just 3 2/3 innings and charged with four runs. ZACK WHEELER (W) was overpowering, striking out nine over six sharp innings, and KYLE SCHWARBER launched his MLB-leading 41st home run. Atlanta managed only five hits: solo shots from RONALD ACUÑA JR. (15th) and AUSTIN RILEY (16th) were the only damage. LUIS ARRAEZ had two hits and an RBI for the Phillies, who have won 16 of 20. The loss dropped the Braves to 84-58 and trimmed the NL East lead to 4.0 games over Philadelphia (80-62)." },
@@ -1461,16 +1462,15 @@ export const RESULTS = [
   { date: "2026-08-31", opp: "SF", home: true, atlScore: 3, oppScore: 7, result: "L", note: "GIANTS RAIN ON THE PARADE, THE STREAK ENDS AT SEVEN: GIANTS 7, BRAVES 3. San Francisco earned its first series sweep of 2026, closing out the June rainout makeup Monday at Truist Park and snapping Atlanta's season-long seven-game winning streak. Rafael Devers opened with his 30th homer, and after the Braves pulled even, three Giants rookies broke it open in the 6th: Osleivis Basabe led off with a solo shot, Turner Hill delivered a pinch-hit two-run double, and Bryce Eldridge singled home another. Jonah Cox added a bunt single and a ninth-inning solo homer. Former Brave Anthony Molina (2-0), acquired in the Aug 3 Tyler Mahle deal, held Atlanta to three runs over five. Bryce Elder (L, 8-8) was charged with all six runs on eight hits and three walks. The loss dropped the Braves to 82-56 but kept the NL East lead at 4.0 games over Philadelphia." },
   { date: "2026-08-30", opp: "COL", home: true, atlScore: 3, oppScore: 2, result: "W", note: "OLSON WALKS IT OFF IN THE 10TH, ATLANTA SWEEPS AND MAKES IT SEVEN: BRAVES 3, ROCKIES 2. Matt Olson lined a two-out single past first base in the bottom of the 10th on Sunday at Truist Park, scoring pinch-runner Brewer Hicklen from second to finish a three-game sweep of Colorado and run the winning streak to a season-long seven. Tyler Mahle set the tone with 6 2/3 innings of one-run ball on five hits and no walks, matching his season high with nine strikeouts, though he settled for a no-decision. Sean Murphy homered in his first big-league swings back from the IL, and Victor Mederos (4-1) worked a perfect 10th for the win. The victory moved the Braves to 82-55 and kept the NL East lead at 5.0 games over Philadelphia entering September." },
   { date: "2026-08-29", opp: "COL", home: true, atlScore: 2, oppScore: 1, result: "W", note: "HARRIS DOUBLES IT HOME IN THE 8TH, ATLANTA MAKES IT SIX: BRAVES 2, ROCKIES 1. Colorado struck first and carried a 1-0 lead into the 8th on Saturday at Truist Park before MICHAEL HARRIS II laced a two-out, two-run double just past a diving Cole Carrigg in left-center, scoring MATT OLSON and MAURICIO DUBON to take the lead and the series. MARTIN PEREZ held the Rockies to a single run before handing it off, BRENT SUTER (W, 2-2) worked 2 1/3 scoreless for his first Atlanta win, and DIDIER FUENTES retired Jake McCarthy for the save. The win moved the Braves to 81-55, a sixth straight, and kept the NL East lead at 5.5 games over Philadelphia." },
-  { date: "2026-08-28", opp: "COL", home: true, atlScore: 6, oppScore: 4, result: "W", note: "HARRIS HOMERS, ACUÑA CLEANS UP, ATLANTA MAKES IT FIVE: BRAVES 6, ROCKIES 4. Atlanta opened the weekend series with the last-place Rockies with a balanced win Friday night at Truist Park. MICHAEL HARRIS II drove in three on two hits, including a two-run homer, his 22nd, that chased TOMOYUKI SUGANO (L, 12-8) to start the 5th. RONALD ACUÑA JR, hitting cleanup for the first time all season after a Thursday rest day, went 3-for-4 with a walk and three runs scored. GRANT HOLMES (W, 9-5) gave five innings of three-run ball on eight hits before the bullpen closed it out. The win moved the Braves to 80-55 and, with Philadelphia beating the Angels, kept the NL East lead at 5.0 games." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 85, l: 59, pct: .590, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 81, l: 63, pct: .563, gb: 4.0,  streak: "W1" },
-  { team: "MIA", name: "Miami Marlins",          w: 72, l: 72, pct: .500, gb: 13.0, streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 67, l: 77, pct: .465, gb: 18.0, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 65, l: 78, pct: .455, gb: 19.5, streak: "L1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 85, l: 60, pct: .586, gb: 0,    streak: "L2" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 81, l: 64, pct: .559, gb: 4.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 72, l: 72, pct: .500, gb: 12.5, streak: "W1" },
+  { team: "WSH", name: "Washington Nationals",   w: 67, l: 77, pct: .465, gb: 17.5, streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 65, l: 78, pct: .455, gb: 19.0, streak: "L1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1533,17 +1533,16 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-08T09:30:00-04:00",
+  generatedAt: "2026-09-09T09:30:00-04:00",
   summary:
-    "LUZARDO'S SHUTOUT SALVAGES A SPLIT FOR PHILADELPHIA, TRIMMING THE LEAD TO FOUR. The Braves were blanked 1-0 in Monday's finale at Citizens Bank Park, sending the pivotal four-game set home even and cutting the NL East cushion to four games over the Phillies (81-63). Jesús Luzardo was overpowering, throwing the first complete game of his career, a two-hit shutout with 12 strikeouts and no walk until the 9th. Grant Holmes matched him for six scoreless innings but took the loss, and Kyle Schwarber settled it with a leadoff homer in the 8th, his MLB-leading 43rd, for the game's only run. Atlanta (85-59) comes home to open a series with Tampa Bay: AJ Smith-Shawver (0-1, 7.13) draws Tuesday's 7:15 PM ET opener opposite Freddy Peralta (7-11, 4.96), a back-end turn before Reynaldo López rejoins the rotation. On the mend: manager Walt Weiss said López (left knee) will be activated Wednesday to start the middle game against the Rays after a strong Gwinnett rehab, his first big-league outing since July 26. Robert Suarez (right elbow) keeps throwing bullpens on the 60-day IL, while Strider, Schwellenbach, Jiménez, and Wentz remain out.",
+    "THE RAYS' BATS FLATTEN ATLANTA IN THE HOMESTAND OPENER; LÓPEZ RETURNS TONIGHT. Tampa Bay rolled into Truist Park and won 7-1 on Tuesday, jumping on AJ Smith-Shawver early: Junior Caminero opened with his MLB-leading 39th home run, and Yandy Díaz and Raúl Palacios added solo shots as Freddy Peralta held the Braves to a single run over six innings. Atlanta's only offense came on a Drake Baldwin first-inning RBI single, and Smith-Shawver (0-2) could not get out of the 4th. The loss dropped the Braves to 85-60, but with Philadelphia also falling, 6-5 at home to Houston, the NL East lead held at 4.0 games over the Phillies (81-64) with three weeks to play. There is a lift coming Wednesday: Reynaldo López is activated off the injured list to start the middle game against the Rays, his first big-league outing since July 26 after six weeks lost to left knee inflammation. He built back with a 2.57 ERA over 14 rehab innings at Gwinnett and opposes Rays right-hander Griffin Jax (6-10, 3.82). Matt Olson (36 HR) and Ronald Acuña Jr., fresh off his 1,000th hit and 200-200 milestone, anchor the lineup. On the mend: Robert Suarez (right elbow) keeps throwing bullpens on the 60-day IL, while Strider, Schwellenbach, Jiménez, and Wentz remain out.",
   keyTopics: [
-    { category: "result", title: "Phillies 1, Braves 0: Luzardo throws a two-hit shutout", detail: "Jesús Luzardo needed just 78 strikes for the first complete game of his career Monday at Citizens Bank Park, striking out 12 and walking none until the 9th to blank Atlanta and even the four-game set. The Braves managed only two hits.", recency: "today" },
-    { category: "standings", title: "NL East lead trimmed to 4.0 games", detail: "The Monday loss dropped Atlanta to 85-59 and cut the division cushion to four games over Philadelphia (81-63), which split the four-game series in its own park. The Braves have led the NL East all season and come home with three weeks to play.", recency: "today" },
-    { category: "rotation", title: "Holmes deserved better in the finale", detail: "Grant Holmes was excellent in defeat, six scoreless innings with six strikeouts, but he was outdueled by Luzardo and got no run support. The steady right-hander has been Atlanta's most dependable arm behind Chris Sale all summer.", recency: "today" },
-    { category: "result", title: "Schwarber's 43rd decides it", detail: "Kyle Schwarber led off the 8th with a solo homer off the Atlanta bullpen, his MLB-leading 43rd, for the only run of a 1-0 Phillies win. The slugger keeps padding a home run lead that Matt Olson has chased all season.", recency: "today" },
-    { category: "rotation", title: "Smith-Shawver draws the Rays opener", detail: "AJ Smith-Shawver (0-1, 7.13) is lined up to start Tuesday night's opener against Tampa Bay at Truist Park, a back-end turn opposite the Rays' Freddy Peralta (7-11, 4.96). It is depth filler for one night before López returns to the rotation Wednesday.", recency: "today" },
-    { category: "injury", title: "López to be activated Wednesday to start vs Rays", detail: "Manager Walt Weiss said Reynaldo López (left knee inflammation) will come off the injured list Wednesday to start the middle game of the Rays series, his first big-league appearance since July 26. He posted a 2.57 ERA over 14 rehab innings at Triple-A Gwinnett and gives the rotation length for the closing weeks.", recency: "today" },
-    { category: "milestone", title: "Acuña's 1,000th hit was a game-tying bomb", detail: "Sunday's comeback win over Philadelphia turned on Ronald Acuña Jr.'s three-run homer off a 100.5-mph fastball, his 16th of the year and his 1,000th career hit. The blow made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "yesterday" },
+    { category: "result", title: "Rays 7, Braves 1: Tampa Bay's power sinks the opener", detail: "Junior Caminero led off the scoring with his MLB-leading 39th home run, and Yandy Díaz and Raúl Palacios each added solo shots as the Rays overpowered Atlanta on Tuesday at Truist Park. Freddy Peralta held the Braves to one run over six innings.", recency: "today" },
+    { category: "injury", title: "López activated to start the Rays' middle game", detail: "Reynaldo López (left knee inflammation) comes off the injured list Wednesday to start against Tampa Bay, his first big-league appearance since July 26. He posted a 2.57 ERA over 14 rehab innings at Triple-A Gwinnett and returns as the No. 2 starter behind Chris Sale, with no workload cap.", recency: "today" },
+    { category: "result", title: "Smith-Shawver can't escape the 4th", detail: "AJ Smith-Shawver (0-2) was charged with the loss after giving Atlanta only three-plus innings in the opener, his ERA climbing above 8 across five uneven starts since June 2025 Tommy John surgery. López's return pushes him back toward the margins of the staff.", recency: "today" },
+    { category: "standings", title: "NL East lead holds at 4.0 despite the loss", detail: "Atlanta slipped to 85-60 with a second straight defeat, but Philadelphia also lost, dropping a 6-5 decision at home to Houston, so the division cushion stayed at four games over the Phillies (81-64). The Braves have led the NL East all season.", recency: "today" },
+    { category: "rotation", title: "López vs Jax in the middle game", detail: "López (4-3, 3.64) draws Rays right-hander Griffin Jax (6-10, 3.82) in Wednesday's 7:15 PM ET matchup at Truist Park as Atlanta looks to answer the lopsided opener and steady a rotation that has leaned on its depth for six weeks.", recency: "today" },
+    { category: "milestone", title: "Acuña's 1,000th hit was a game-tying bomb", detail: "Sunday's comeback win over Philadelphia turned on Ronald Acuña Jr.'s three-run homer off a 100.5-mph fastball, his 16th of the year and his 1,000th career hit. The blow made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
     { category: "milestone", title: "Sale's Cy Young case rides a 2.10 ERA", detail: "Chris Sale is 14-9 with a 2.10 ERA, among the best in the NL, after last Friday's win over the Phillies. Coming off a five-hit, 11-strikeout shutout of the Dodgers, he remains squarely in the NL Cy Young conversation with a month to play.", recency: "this-week" },
     { category: "milestone", title: "Olson keeps chasing Schwarber for the HR lead", detail: "Matt Olson sits on 36 homers and 76 RBI, still trailing Schwarber, now at 43, for the outright MLB home run lead. Olson has already cleared each of his last two full seasons with three weeks to play.", recency: "this-week" },
     { category: "milestone", title: "Murphy stays hot since his IL return", detail: "Sean Murphy has homered repeatedly since returning from the 60-day IL, including a three-run shot in the 9-0 rout of Washington last week. The catcher caught fire the moment his fractured finger healed and has steadied the middle of the order.", recency: "this-week" },
