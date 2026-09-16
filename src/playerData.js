@@ -51,9 +51,9 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .274, obp: .348, slg: .573, ops: .921, hr: 39, rbi: 84, sb: 0, bb: 24, so: 56, games: 148, doubles: 26 },
-    statNote: "BACK-TO-BACK HOMER GAMES AS THE POWER RETURNS: Olson lifted his 39th of the year, a two-run shot off Tanner Banks in the ninth Sunday, one day after ending a two-week drought against Aaron Nola. The late blast was the only real answer to Philadelphia's seven-run eighth in a 9-4 loss, but it kept his line climbing: he still trails Kyle Schwarber for the outright MLB home run lead while pacing Atlanta in homers and RBI, already past each of his last two full seasons with just over two weeks to play, his ironman consecutive-games streak among the longest active in the game.",
-    form: 9.0,
+    stats: { avg: .275, obp: .349, slg: .577, ops: .926, hr: 40, rbi: 86, sb: 0, bb: 24, so: 57, games: 150, doubles: 26 },
+    statNote: "NUMBER 40 STOPS THE SKID: Olson reached the 40-homer mark Tuesday night at Wrigley, a two-run drive off Kevin Gausman in the fourth that put Atlanta ahead to stay in a 6-3 win over the Cubs. It was his signature stretch-run stat, a fourth 40-homer season, and it kept him within range of Kyle Schwarber for the MLB home run lead while pacing the Braves in homers and RBI. His ironman consecutive-games streak remains among the longest active in the game with just over two weeks to play.",
+    form: 9.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/32767.png",
@@ -605,9 +605,9 @@ export const PLAYERS = [
     rotationSpot: 6,
     bats: "L", throws: "L",
     nationality: "🇻🇪 Venezuela", age: 35, experience: 14,
-    stats: { era: 3.08, whip: 1.24, ip: 131.2, k: 96, bb: 43, w: 9, l: 9, games: 28, starts: 24 },
-    statNote: "SEVEN SCORELESS TO AVOID THE SWEEP: Pérez (W, 9-9, 3.08) spun the finest start of his Atlanta season Thursday at Truist Park, seven shutout innings on four hits and two walks to beat Tampa Bay 3-1 and deny the Rays a potential playoff clinch. The Rays loaded the bases with nobody out in the 1st, but Chandler Simpson hit into an inning-ending double play and the veteran lefty never allowed another man to reach until the 5th. The outing sliced his ERA from 3.26 to 3.08 and steadied a rotation leaning hard on Chris Sale.",
-    form: 9.0,
+    stats: { era: 3.07, whip: 1.23, ip: 137.2, k: 101, bb: 45, w: 10, l: 9, games: 29, starts: 25 },
+    statNote: "SIX STEADY TO STOP THE SKID: Pérez (W, 10-9, 3.07) snapped a two-game Atlanta slide Tuesday night at Wrigley, six innings of two-run ball on five hits, two walks and five strikeouts to even the series with Chicago. He handed a lead to the bullpen, and Raisel Iglesias closed the ninth for his 33rd save. Matt Olson's two-run homer, his 40th, off Kevin Gausman in the fourth was the difference. The veteran lefty has been Atlanta's most reliable arm behind Chris Sale down the stretch, holding a rotation together that is missing Strider, Schwellenbach, and Elder.",
+    form: 8.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/31098.png",
@@ -628,12 +628,12 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 22, experience: 0,
     stats: { era: 5.02, whip: 1.53, ip: 40.1, k: 30, bb: 18, sv: 1, w: 1, l: 2, games: 9, starts: 7 },
-    statNote: "SPOT START, THEN BACK TO GWINNETT: Ritchie made Sunday's finale start against Washington after being recalled for Reynaldo Lopez's IL move, charged with both Nationals runs in the fourth (a walk and a bases-loaded HBP of Andrés Chapparo) before the bullpen carried it to a 4-2 sweep-clincher. He was optioned back to Triple-A Gwinnett on Monday, one of the moves that cleared roster space for the Kim and Murphy activations. The 22-year-old has bounced between the rotation, the bullpen, and Triple-A all year and stays first in line as rotation depth.",
+    statNote: "RECALLED FOR THE WRIGLEY FINALE: Ritchie was brought back up from Triple-A Gwinnett to make the spot start in Wednesday night's series finale at Chicago, with the rotation still down Strider, Schwellenbach, and Elder. The 22-year-old draws Cubs left-hander Shota Imanaga and has bounced between the rotation, the bullpen, and Triple-A all year while staying first in line as depth. He carries a 5.02 ERA across nine appearances (seven starts).",
     form: 5.5,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/5080757.png",
-    assignment: "aaa",
+    assignment: "mlb",
     contract: { years: 1, total: 760000, guaranteed: 0, apy: 760000, throughYear: 2026 },
     career: [
       { years: "2026–", team: "Atlanta Braves", type: "MLB · MLB debut Apr 23, 2026" },
@@ -1412,37 +1412,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-09-14",
-    weekday: "Mon",
+    date: "2026-09-16",
+    weekday: "Wed",
     time: "7:40 PM ET",
     opp: "CHC",
     home: false,
     venue: "Wrigley Field · Chicago, IL",
-    atlSP: { id: "lopez", name: "Reynaldo López", record: "4-4", era: 4.06, daysRest: 5, hand: "R" },
-    oppSP: { name: "David Peterson", record: "7-8", era: 5.28, hand: "L" },
-    note: "Atlanta opens a three-game set at Wrigley the night after the Phillies snapped the sweep bid. Reynaldo López (4-4, 4.06) makes his second start back from the knee IL opposite Cubs lefty David Peterson (7-8, 5.28), with the Braves nursing a five-game NL East lead and a magic number of eight.",
-  },
-  {
-    date: "2026-09-15",
-    weekday: "Tue",
-    time: "TBD",
-    opp: "CHC",
-    home: false,
-    venue: "Wrigley Field · Chicago, IL",
-    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: "", era: null, hand: null },
-    note: "Game two of the three-game set at Wrigley Field. Probable pitchers to be announced.",
-  },
-  {
-    date: "2026-09-16",
-    weekday: "Wed",
-    time: "TBD",
-    opp: "CHC",
-    home: false,
-    venue: "Wrigley Field · Chicago, IL",
-    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: "", era: null, hand: null },
-    note: "Series finale at Wrigley before Atlanta travels to Houston. Probable pitchers to be announced.",
+    atlSP: { id: "ritchie", name: "JR Ritchie", record: "1-2", era: 5.02, daysRest: null, hand: "R" },
+    oppSP: { name: "Shota Imanaga", record: "10-10", era: 3.88, hand: "L" },
+    note: "Series finale at Wrigley. Rookie JR Ritchie (1-2, 5.02), recalled from Triple-A Gwinnett for the spot start, draws Cubs lefty Shota Imanaga (10-10, 3.88). Atlanta goes for the series win a night after Pérez and a 40th Olson homer stopped the skid, with the NL East lead at 4.5 and the magic number at seven.",
   },
   {
     date: "2026-09-18",
@@ -1455,25 +1433,37 @@ export const UPCOMING_SCHEDULE = [
     oppSP: { name: "TBA", record: "", era: null, hand: null },
     note: "After a Thursday travel day, the Braves open a weekend interleague set at Houston. Probable pitchers to be announced.",
   },
+  {
+    date: "2026-09-19",
+    weekday: "Sat",
+    time: "7:15 PM ET",
+    opp: "HOU",
+    home: false,
+    venue: "Daikin Park · Houston, TX",
+    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: null },
+    oppSP: { name: "TBA", record: "", era: null, hand: null },
+    note: "Game two of the weekend interleague set at Houston. Probable pitchers to be announced.",
+  },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-09-15",
+  date: "2026-09-16",
   time: "7:40 PM ET",
   opp: "CHC",
   home: false,
   venue: "Wrigley Field · Chicago, IL",
   tv: "Marquee Sports Network / BravesVision",
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "9-9", era: 3.08 },
-    opp: { pitcher: "Kevin Gausman", record: "9-12", era: 4.60 },
+    atl: { pitcher: "JR Ritchie", record: "1-2", era: 5.02 },
+    opp: { pitcher: "Shota Imanaga", record: "10-10", era: 3.88 },
   },
-  note: "LOOKING TO STOP THE SKID AT WRIGLEY. Atlanta (88-63) has dropped two in a row, the 9-4 finale loss to Philadelphia on Sunday and a 7-3 defeat at Chicago on Monday, and now sends its steadiest veteran to the mound for game two. MARTÍN PÉREZ (9-9, 3.08) is coming off seven scoreless innings against Tampa Bay and draws Cubs right-hander KEVIN GAUSMAN (9-12, 4.60). The NL East lead has slipped to 4.5 games over the Phillies, magic number eight, with just over two weeks to play, so the division is close but not clinched. MATT OLSON (39 HR, 84 RBI) paces the middle of the order and RONALD ACUÑA JR. remains the catalyst up top. On the mend: ROBERT SUAREZ (right elbow) remains on the 60-day IL; BRYCE ELDER (arthroscopic right knee surgery) targets a late-September or October return; STRIDER, SCHWELLENBACH, and JIMÉNEZ stay out.",
+  note: "GOING FOR THE SERIES WIN AT WRIGLEY. Atlanta (89-63) snapped a two-game skid Tuesday night behind Martín Pérez and a two-run Matt Olson homer, his 40th, and now sends rookie right-hander JR RITCHIE, recalled from Triple-A Gwinnett for the spot start, against Cubs left-hander SHOTA IMANAGA (10-10, 3.88) in Wednesday night's finale. The Braves are chasing the series before a Thursday travel day and a weekend interleague trip to Houston. The NL East lead sits at 4.5 games over the Phillies, magic number seven, with just over two weeks to play. MATT OLSON (40 HR, 86 RBI) anchors the middle of the order and RONALD ACUÑA JR. remains the catalyst up top. On the mend: ROBERT SUAREZ (right elbow) stays on the 60-day IL; BRYCE ELDER (arthroscopic right knee surgery) targets a late-September or October return; STRIDER, SCHWELLENBACH, and JIMÉNEZ remain out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-09-15", opp: "CHC", home: false, atlScore: 6, oppScore: 3, result: "W", note: "PÉREZ AND OLSON STOP THE SKID AT WRIGLEY: BRAVES 6, CUBS 3. Atlanta ended a two-game slide Tuesday night at Wrigley Field, evening the series behind six steady innings from MARTÍN PÉREZ. The veteran lefty (W, 10-9) scattered five hits, walked two and struck out five, handing a lead to the bullpen that held up the rest of the way. MATT OLSON supplied the difference in the fourth, a two-run homer off KEVIN GAUSMAN, his 40th of the year, and MICHAEL HARRIS II added an RBI double. Gausman (L, 9-13) took the loss for Chicago. RAISEL IGLESIAS worked a clean ninth for his 33rd save. The win moved the Braves to 89-63 and, with Philadelphia beating Washington to reach 84-67, held the NL East lead at 4.5 games with the magic number down to seven." },
   { date: "2026-09-14", opp: "CHC", home: false, atlScore: 3, oppScore: 7, result: "L", note: "CROW-ARMSTRONG AND THE CUBS BURY LÓPEZ AT WRIGLEY: CUBS 7, BRAVES 3. Atlanta opened its road trip flat Monday night at Wrigley Field, dropping a second straight game as Chicago jumped on Reynaldo López early. PETE CROW-ARMSTRONG did the bulk of the damage, going 4-for-5 with 4 RBI, a double and his 42nd home run. López could not escape the fourth, charged with five runs on six hits over three innings, and fell to 4-5 in his second start back from left-knee inflammation. DAVID PETERSON (W, 8-8) held the Braves to a single run over six innings. MIKE YASTRZEMSKI's 10th homer, a solo shot, was the only real answer, and Atlanta wasted a bases-loaded chance in the ninth to leave the tying run in the on-deck circle. The loss dropped the Braves to 88-63 and, with Philadelphia idle, trimmed the NL East lead to 4.5 games over the Phillies (83-67) with the magic number at eight." },
   { date: "2026-09-13", opp: "PHI", home: true, atlScore: 4, oppScore: 9, result: "L", note: "PHILADELPHIA AVOIDS THE SWEEP WITH A SEVEN-RUN EIGHTH: PHILLIES 9, BRAVES 4. Atlanta let a chance to bury the division rival slip away Sunday afternoon at Truist Park, when the Phillies erupted for seven runs in the eighth to turn a tie into a 9-4 loss and salvage the finale of the three-game set. Grant Holmes gave the Braves four innings of two-run ball with five hits and two walks but no strikeouts and no decision, and the game was even until the bullpen unraveled. DYLAN LEE (L, 6-1) surrendered a two-out, two-run double to ALEC BOHM that scored TREA TURNER and BRYCE HARPER, and after a BRYSON STOTT RBI single and a J.T. REALMUTO run-scoring single, KYLE SCHWARBER's two-run single off VICTOR MEDEROS blew it open. Realmuto finished with three hits and three RBI, including a two-run homer. MATT OLSON answered with a two-run homer, his 39th, off Tanner Banks in the ninth, but the rally never came. The loss dropped Atlanta to 88-62 and, with Philadelphia climbing to 83-67, trimmed the NL East lead to 5.0 games with the magic number at eight." },
   { date: "2026-09-12", opp: "PHI", home: true, atlScore: 12, oppScore: 2, result: "W", note: "ACUÑA IGNITES AN EIGHT-RUN FOURTH, MAHLE CRUISES, ATLANTA ROUTS PHILADELPHIA 12-2. The Braves buried the Phillies on Saturday night at Truist Park behind another gem from TYLER MAHLE, who allowed only a first-inning BRYCE HARPER homer over seven innings, scattering six hits with three strikeouts and no walks to improve to 3-1 with a 1.25 ERA in seven starts since the trade deadline. RONALD ACUÑA JR. went 3-for-3 with a solo homer, a run-scoring single, two RBI, a walk and two runs, and MICHAEL HARRIS II went 4-for-5 with a three-run homer. The game blew open in the fourth, when Atlanta plated eight runs, seven of them with two outs: MAURICIO DUBÓN delivered a two-run single, DRAKE BALDWIN doubled two more home off the wall, and a BRYSON STOTT throwing error on a routine play that should have ended the inning led to five unearned runs. The win moved the Braves to 88-61 and, with Philadelphia falling to 82-67, stretched the NL East lead to 6.0 games and all but ended the division race." },
@@ -1483,13 +1473,12 @@ export const RESULTS = [
   { date: "2026-09-08", opp: "TB", home: true, atlScore: 1, oppScore: 7, result: "L", note: "FREDDY AND THE RAYS' BATS OVERPOWER ATLANTA IN THE HOMESTAND OPENER: RAYS 7, BRAVES 1. Tampa Bay spoiled the return to Truist Park on Tuesday night, jumping on AJ SMITH-SHAWVER (L, 0-2) early and never letting up. JUNIOR CAMINERO got it started in the 1st with his MLB-leading 39th home run, YANDY DÍAZ added a solo shot (his 22nd) and RAÚL PALACIOS a solo drive (his 9th) as the Rays piled on. FREDDY PERALTA held the Braves to a single run over six innings for the win. Atlanta's only offense came in the 1st, when DRAKE BALDWIN singled home a run after the Braves loaded the bases, but the lineup went quiet the rest of the way and stranded the early chance. Smith-Shawver could not get out of the 4th, and the loss dropped the Braves to 85-60. With Philadelphia falling 6-5 to Houston, the NL East lead held at 4.0 games." },
   { date: "2026-09-07", opp: "PHI", home: false, atlScore: 0, oppScore: 1, result: "L", note: "LUZARDO'S 12-K SHUTOUT SALVAGES A SPLIT FOR PHILADELPHIA: PHILLIES 1, BRAVES 0. Jesús Luzardo was untouchable in Monday's finale at Citizens Bank Park, throwing the first complete game of his career, a two-hit shutout with 12 strikeouts and no walk until the 9th, to beat Atlanta 1-0 and send the four-game set home even. GRANT HOLMES (L) matched him for six scoreless innings with six strikeouts, but the Braves managed just two hits and could not solve the Phillies lefty. KYLE SCHWARBER settled it in the 8th, leading off with his MLB-leading 43rd home run for the game's only run. The loss dropped Atlanta to 85-59 and trimmed the NL East lead to 4.0 games over Philadelphia (81-63) as the Braves head home to open a series with Tampa Bay." },
   { date: "2026-09-06", opp: "PHI", home: false, atlScore: 5, oppScore: 4, result: "W", note: "ACUÑA'S 1,000TH HIT TIES IT, RILEY WINS IT: BRAVES 5, PHILLIES 4. Atlanta erased a three-run deficit in the series' pivotal third game Sunday at Citizens Bank Park. Trailing 4-1 in the 8th, MIKE YASTRZEMSKI singled and DRAKE BALDWIN doubled ahead of RONALD ACUÑA JR., who turned a 100.5-mph Alex McFarlane fastball, the seventh straight triple-digit heater of the at-bat, into a game-tying three-run homer. It was Acuña's 16th of the year and his 1,000th career hit, making him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals. In the 9th, OZZIE ALBIES doubled off Phillies closer JHOAN DURAN (L, 2-5) and AUSTIN RILEY tripled him home for the winning run. DYLAN LEE (W, 6-0) worked in relief of Tyler Mahle and RAISEL IGLESIAS shut the door for his 31st save. The win moved the Braves to 85-58 and pushed the NL East lead back to 5.0 games over Philadelphia (80-63)." },
-  { date: "2026-09-05", opp: "PHI", home: false, atlScore: 2, oppScore: 4, result: "L", note: "WHEELER STIFLES ATLANTA AS PÉREZ UNRAVELS EARLY: PHILLIES 4, BRAVES 2. Philadelphia leveled the four-game set Saturday night at Citizens Bank Park, and it was over almost before it started. Atlanta put its first three men on in the top of the 1st but scored nothing, and MARTÍN PÉREZ (L, 8-9) answered with four walks and a single in a three-run bottom of the inning, lasting just 3 2/3 innings and charged with four runs. ZACK WHEELER (W) was overpowering, striking out nine over six sharp innings, and KYLE SCHWARBER launched his MLB-leading 41st home run. Atlanta managed only five hits: solo shots from RONALD ACUÑA JR. (15th) and AUSTIN RILEY (16th) were the only damage. LUIS ARRAEZ had two hits and an RBI for the Phillies, who have won 16 of 20. The loss dropped the Braves to 84-58 and trimmed the NL East lead to 4.0 games over Philadelphia (80-62)." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 88, l: 63, pct: .583, gb: 0,    streak: "L2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 83, l: 67, pct: .553, gb: 4.5,  streak: "W1" },
+  { team: "ATL", name: "Atlanta Braves",         w: 89, l: 63, pct: .586, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 84, l: 67, pct: .556, gb: 4.5,  streak: "W1" },
   { team: "MIA", name: "Miami Marlins",          w: 73, l: 76, pct: .490, gb: 14.5, streak: "W1" },
   { team: "WSH", name: "Washington Nationals",   w: 70, l: 81, pct: .464, gb: 18.5, streak: "W3" },
   { team: "NYM", name: "New York Mets",          w: 69, l: 80, pct: .463, gb: 18.5, streak: "L1" },
@@ -1555,16 +1544,16 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-15T09:15:00-04:00",
+  generatedAt: "2026-09-16T09:15:00-04:00",
   summary:
-    "CROW-ARMSTRONG AND THE CUBS HAND ATLANTA A SECOND STRAIGHT LOSS, AND THE LEAD SLIPS TO 4.5. The Braves opened their road trip flat Monday night at Wrigley Field, falling 7-3 to Chicago a day after Philadelphia's seven-run eighth spoiled a sweep. Pete Crow-Armstrong carried the Cubs, going 4-for-5 with 4 RBI, a double and his 42nd home run. Reynaldo López could not escape the fourth in his second start back from left-knee inflammation, charged with five runs on six hits over three innings, and fell to 4-5 with his ERA climbing to 4.46. David Peterson held the Braves to a single run over six innings. Mike Yastrzemski's 10th homer, a solo shot, was the only real answer, and Atlanta wasted a bases-loaded chance in the ninth. The loss dropped the Braves to 88-63 and, with Philadelphia idle at 83-67, trimmed the NL East cushion to 4.5 games with the magic number still at eight. Atlanta sends Martín Pérez (9-9, 3.08) against Cubs right-hander Kevin Gausman (9-12, 4.60) in game two Tuesday night, looking to stop the skid. Robert Suarez (right elbow) stays on the 60-day IL, Bryce Elder (right knee surgery) targets a late-September or October return, and Strider, Schwellenbach, and Jiménez remain out.",
+    "PÉREZ AND OLSON STOP THE SKID AT WRIGLEY, AND THE LEAD HOLDS AT 4.5. The Braves ended a two-game slide Tuesday night at Wrigley Field, beating the Cubs 6-3 behind six steady innings from Martín Pérez and a two-run Matt Olson homer, his 40th of the year. Pérez (W, 10-9) scattered five hits with five strikeouts and handed the ball to the bullpen, and Raisel Iglesias closed the ninth for his 33rd save. Michael Harris II added an RBI double, and the win evened the series a night after Pete Crow-Armstrong's four-RBI game had buried Reynaldo López. Atlanta improved to 89-63 and, with Philadelphia beating Washington to reach 84-67, held the NL East cushion at 4.5 games with the magic number down to seven. The Braves go for the series win Wednesday night, sending recalled rookie JR Ritchie against Cubs left-hander Shota Imanaga (10-10, 3.88) before a Thursday travel day and a weekend trip to Houston. Robert Suarez (right elbow) stays on the 60-day IL, Bryce Elder (right knee surgery) targets a late-September or October return, and Strider, Schwellenbach, and Jiménez remain out.",
   keyTopics: [
-    { category: "result", title: "Cubs 7, Braves 3: Crow-Armstrong torches Atlanta at Wrigley", detail: "Atlanta dropped a second straight game Monday night, as Pete Crow-Armstrong went 4-for-5 with 4 RBI, a double and his 42nd home run to lead Chicago. Mike Yastrzemski's 10th homer was the Braves' only real answer.", recency: "today" },
-    { category: "rotation", title: "López jumped early, allows five in three innings", detail: "Reynaldo López could not get out of the fourth in his second start back from left-knee inflammation, charged with five runs on six hits over three innings. He fell to 4-5 with his ERA up to 4.46, a worrying trend for a No. 2 starter.", recency: "today" },
-    { category: "standings", title: "NL East lead trimmed to 4.5, magic number eight", detail: "The loss moved Atlanta to 88-63 while Philadelphia sat idle at 83-67, cutting the division cushion to 4.5 games. The magic number to clinch the NL East stays at eight with just over two weeks to play.", recency: "today" },
-    { category: "rotation", title: "Pérez gets the ball Tuesday to stop the skid", detail: "Martín Pérez (9-9, 3.08) starts game two at Wrigley on Tuesday night opposite Cubs right-hander Kevin Gausman (9-12, 4.60). Pérez is coming off seven scoreless innings against Tampa Bay and is Atlanta's steadiest arm behind Chris Sale.", recency: "today" },
-    { category: "narrative", title: "Bats go quiet, strand the bases loaded in the ninth", detail: "Atlanta managed just three runs and wasted a bases-loaded chance in the ninth, leaving the tying run in the on-deck circle. The two-game skid has cooled a lineup that had been rolling through the Phillies series at home.", recency: "today" },
-    { category: "milestone", title: "Olson stays hot: 39 homers, MLB HR lead in sight", detail: "Matt Olson homered in back-to-back games over the weekend, his 39th coming Sunday off Tanner Banks. He paces Atlanta in homers and RBI and trails only Kyle Schwarber for the MLB home run lead with two-plus weeks to play.", recency: "this-week" },
+    { category: "result", title: "Braves 6, Cubs 3: Pérez and Olson snap the skid", detail: "Atlanta ended a two-game slide Tuesday night at Wrigley, evening the series behind six innings of two-run ball from Martín Pérez and a two-run Matt Olson homer off Kevin Gausman. Michael Harris II added an RBI double and Raisel Iglesias nailed down the ninth.", recency: "today" },
+    { category: "milestone", title: "Olson reaches 40 home runs", detail: "Olson's fourth-inning drive off Gausman was his 40th of the year, a fourth career 40-homer season and the swing that put Atlanta ahead to stay. He keeps within range of Kyle Schwarber for the MLB home run lead while pacing the Braves in homers and RBI.", recency: "today" },
+    { category: "standings", title: "NL East lead holds at 4.5, magic number seven", detail: "The win moved Atlanta to 89-63 while Philadelphia beat Washington to reach 84-67, holding the division cushion at 4.5 games. The magic number to clinch the NL East drops to seven with just over two weeks to play.", recency: "today" },
+    { category: "rotation", title: "Ritchie recalled to start the finale", detail: "With the rotation still down Strider, Schwellenbach, and Elder, Atlanta brought rookie JR Ritchie (1-2, 5.02) up from Triple-A Gwinnett to make the spot start Wednesday night against Cubs lefty Shota Imanaga (10-10, 3.88).", recency: "today" },
+    { category: "rotation", title: "Iglesias closes it out for save 33", detail: "Raisel Iglesias worked a clean ninth Tuesday for his 33rd save, steadying a back end of the bullpen that has carried a rotation missing three arms. He remains Atlanta's anchor in the ninth down the stretch.", recency: "today" },
+    { category: "rotation", title: "López roughed up in return start", detail: "A night earlier, Reynaldo López could not get out of the fourth in his second start back from left-knee inflammation, charged with five runs on six hits over three innings in a 7-3 loss. He fell to 4-5 with his ERA up to 4.46.", recency: "yesterday" },
     { category: "milestone", title: "Acuña's 1,000th hit and the 200-200 club", detail: "Last week's comeback win in Philadelphia turned on Ronald Acuña Jr.'s game-tying three-run homer off a 100.5-mph fastball, his 1,000th career hit. It made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
     { category: "rotation", title: "Mahle keeps rolling since the deadline", detail: "Tyler Mahle allowed only a first-inning Bryce Harper homer over seven innings in Saturday's 12-2 rout, running his line since the trade deadline to 3-1 with a 1.25 ERA in seven starts. He has been one of the majors' best midseason pickups.", recency: "this-week" },
     { category: "milestone", title: "Sale's Cy Young case holds firm", detail: "Chris Sale carries an ERA near 2.10, among the best in the NL, and was dominant again in the Phillies opener apart from one bases-loaded double. He remains squarely in the NL Cy Young conversation with just over two weeks to play.", recency: "this-week" },
