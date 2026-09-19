@@ -1,15 +1,14 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated September 15, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated September 19, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// MON SEP 14, THE CUBS POUND LÓPEZ AND HAND ATLANTA A SECOND STRAIGHT LOSS, 7-3: the Braves (88-63) opened a
-// three-game set at Wrigley Field flat, as PETE CROW-ARMSTRONG went 4-for-5 with 4 RBI, a double and his 42nd
-// homer to lead Chicago. REYNALDO LÓPEZ lasted only three innings in his second start back from left-knee
-// inflammation, charged with five runs on six hits, and fell to 4-5. MIKE YASTRZEMSKI answered with a solo homer,
-// but the bats went quiet, and Atlanta loaded the bases in the ninth only to strand them. DAVID PETERSON (8-8)
-// held the Braves to a run over six for the Cubs. The loss, paired with the 9-4 finale defeat to Philadelphia
-// on Sunday, trimmed the NL East lead to 4.5 games over the Phillies (83-67), magic number still eight.
-// Up next, game two at Wrigley Tuesday: MARTÍN PÉREZ (9-9, 3.08) vs Cubs right-hander KEVIN GAUSMAN (9-12, 4.60),
-// 7:40 PM ET. Roster/IL: ROBERT SUAREZ (right elbow, 60-day IL); BRYCE ELDER (right knee surgery) targets a
-// late-September or October return; STRIDER, SCHWELLENBACH, and JIMÉNEZ remain out.
+// FRI SEP 18, ATLANTA PUNCHES ITS OCTOBER TICKET IN HOUSTON, 6-2: the Braves (90-64) clinched a playoff berth,
+// their eighth in nine years, behind two-run homers from MICHAEL HARRIS II, RONALD ACUÑA JR., and MATT OLSON and
+// six innings of one-run ball from TYLER MAHLE (7-10), who scattered three hits with six strikeouts. It secured
+// at least a wild card and dropped the NL East magic number to three over the idle-no-more Phillies (84-70), whose
+// loss stretched Atlanta's division lead to 6.0 games. The Braves can wrap up the division as soon as Sunday.
+// Up next, game two at Daikin Park Saturday: GRANT HOLMES (9-5, 3.66) vs Astros right-hander HAYDEN WESNESKI
+// (5-2, 3.70), 7:10 PM ET. Roster/IL: REYNALDO LÓPEZ (right shoulder, 15-day IL, likely done for the year);
+// ROBERT SUAREZ (right elbow, 60-day IL); BRYCE ELDER (right knee surgery) targets a late-September or October
+// return; JOE JIMÉNEZ rehabbing at Triple-A Gwinnett; STRIDER and SCHWELLENBACH remain out.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -30,8 +29,8 @@ export const PLAYERS = [
     lineupSpot: 1,
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
-    stats: { avg: .274, obp: .386, slg: .493, ops: .879, hr: 17, rbi: 44, sb: 20, bb: 28, so: 44, games: 70 },
-    statNote: "3-FOR-3 AND THE SPARK OF AN EIGHT-RUN FOURTH: Acuña opened the scoring for good Saturday against Philadelphia, lifting a solo homer just over the wall in front of the Phillies bullpen and later adding a run-scoring single in Atlanta's eight-run fourth of a 12-2 rout. He finished 3-for-3 with two RBI, a walk and two runs, days after his 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.",
+    stats: { avg: .274, obp: .386, slg: .496, ops: .882, hr: 18, rbi: 46, sb: 20, bb: 28, so: 44, games: 72 },
+    statNote: "A TWO-RUN SHOT ON CLINCH NIGHT: Acuña went deep for a two-run homer Friday in Houston, one of three Atlanta two-run blasts that carried the Braves to a 6-2 win and a clinched playoff berth, their eighth in nine years. The catalyst up top keeps setting the table down the stretch, weeks after his 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.",
     form: 9.6,
     status: "active",
     injuryNote: null,
@@ -51,8 +50,8 @@ export const PLAYERS = [
     lineupSpot: 2,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
-    stats: { avg: .275, obp: .349, slg: .577, ops: .926, hr: 40, rbi: 86, sb: 0, bb: 24, so: 57, games: 150, doubles: 26 },
-    statNote: "NUMBER 40 STOPS THE SKID: Olson reached the 40-homer mark Tuesday night at Wrigley, a two-run drive off Kevin Gausman in the fourth that put Atlanta ahead to stay in a 6-3 win over the Cubs. It was his signature stretch-run stat, a fourth 40-homer season, and it kept him within range of Kyle Schwarber for the MLB home run lead while pacing the Braves in homers and RBI. His ironman consecutive-games streak remains among the longest active in the game with just over two weeks to play.",
+    stats: { avg: .275, obp: .349, slg: .580, ops: .929, hr: 41, rbi: 88, sb: 0, bb: 24, so: 57, games: 152, doubles: 26 },
+    statNote: "NUMBER 41 ON THE NIGHT ATLANTA CLINCHED: Olson launched a two-run homer Friday in Houston, his 41st, part of a three-homer barrage that beat the Astros 6-2 and secured a playoff berth. The fourth 40-homer season of his career keeps him within range of Kyle Schwarber for the MLB home run lead while he paces the Braves in homers and RBI, his ironman consecutive-games streak still among the longest active in the game.",
     form: 9.5,
     status: "active",
     injuryNote: null,
@@ -136,8 +135,8 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .309, obp: .343, slg: .527, ops: .870, hr: 24, rbi: 69, sb: 2, bb: 6, so: 29, games: 67, triples: 1 },
-    statNote: "4-FOR-5 WITH A THREE-RUN BLAST IN THE ROUT: Harris II broke out Saturday against Philadelphia, going 4-for-5 with a three-run homer and an added run scored in a 12-2 win. It was his loudest night in weeks, lifting his average above .308 as the center fielder heats up down the stretch while playing every day in center.",
+    stats: { avg: .309, obp: .343, slg: .528, ops: .871, hr: 25, rbi: 71, sb: 2, bb: 6, so: 29, games: 69, triples: 1 },
+    statNote: "THE TWO-RUN HOMER THAT OPENED CLINCH NIGHT: Harris II went deep for a two-run shot Friday in Houston, the first of three Atlanta two-run blasts in a 6-2 win that clinched a playoff berth. The center fielder keeps producing down the stretch, hitting above .308 while playing every day in center for a Braves club headed back to October.",
     form: 8.9,
     status: "active",
     injuryNote: null,
@@ -497,7 +496,7 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
     stats: { era: 2.10, whip: 1.02, ip: 149.2, k: 184, bb: 24, hr: null, w: 14, l: 9, games: 25, starts: 25 },
-    statNote: "GETS THE BALL IN THE PHILLIES OPENER FRIDAY: Sale (14-9, 2.10) takes the mound Friday night at Truist Park to open a pivotal three-game set with Philadelphia, a rematch of last weekend's four-game showdown with the NL East lead at 4.0 games. He draws Phillies right-hander Aaron Nola (6-10, 4.76). Sale entered the series carrying one of the best ERAs in the league, his Cy Young-caliber season squarely in the awards conversation with three weeks to play.",
+    statNote: "NEXT START PUSHED BACK, LINED UP FOR SUNDAY: Sale (14-9, 2.10) did not open the Houston series as first projected, with the Braves pushing his turn back and handing the clinch-night start to Tyler Mahle. He is now lined up for the Sunday finale at Daikin Park, where a win could help wrap up the NL East. Sale carries one of the best ERAs in the league, his Cy Young-caliber season squarely in the awards conversation, and remains the anchor of Atlanta's postseason rotation.",
     form: 9.9,
     status: "active",
     injuryNote: null,
@@ -542,7 +541,7 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
     stats: { era: 3.66, whip: 1.34, ip: 137.2, k: 106, bb: 58, w: 9, l: 5, games: 27, starts: 27 },
-    statNote: "A SHORT SUNDAY, NO STRIKEOUTS, NO DECISION: Holmes gave Atlanta only four innings in the Phillies finale, charged with two runs on five hits and two walks and, for the first time all year, no strikeouts. He left with the game tied before the bullpen coughed up a seven-run eighth in a 9-4 loss. It was a rare off day for the steady right-hander, who at 9-5 with a 3.66 ERA remains Atlanta's most dependable arm behind Chris Sale and a candidate for a postseason start.",
+    statNote: "TAKES THE BALL IN HOUSTON WITH THE DIVISION IN REACH: Holmes (9-5, 3.66) starts Saturday's game two at Daikin Park against Astros right-hander Hayden Wesneski, a night after Atlanta clinched a playoff berth. With the NL East magic number down to three, the steady right-hander, Atlanta's most dependable arm behind Chris Sale, can push the Braves closer to the division crown and stake his own claim to a postseason start.",
     form: 7.5,
     status: "active",
     injuryNote: null,
@@ -1310,8 +1309,8 @@ export const PLAYERS = [
     rotationSpot: null,
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 31, experience: 9,
-    stats: { era: 4.35, whip: 1.24, ip: 136.1, k: 121, bb: 35, hr: null, w: 6, l: 10, games: 25, starts: 25 },
-    statNote: "SEVEN STRONG IN THE 12-2 ROUT: Mahle was superb again Saturday against Philadelphia, allowing only a first-inning Bryce Harper homer over seven innings, scattering six hits with three strikeouts and no walks in a 12-2 win. He is now 3-1 with a 1.25 ERA in seven starts since the deadline, one of the majors' best midseason acquisitions. Acquired from San Francisco on Aug 3 (for young righty Anthony Molina), he is a free agent after 2026.",
+    stats: { era: 4.24, whip: 1.22, ip: 142.1, k: 127, bb: 35, hr: null, w: 7, l: 10, games: 26, starts: 26 },
+    statNote: "THE CLINCH-NIGHT GEM IN HOUSTON: Mahle (W, 7-10) delivered again with the postseason on the line Friday, allowing a lone run on three hits with six strikeouts over six innings as Atlanta beat the Astros 6-2 to punch its playoff ticket. He has been one of the majors' best midseason pickups since the Aug 3 trade from San Francisco (for young righty Anthony Molina), and his steadiness has helped hold together a rotation missing Strider, Schwellenbach, and López. He is a free agent after 2026.",
     form: 8.6,
     status: "active",
     injuryNote: null,
@@ -1412,26 +1411,15 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-09-18",
-    weekday: "Fri",
-    time: "8:10 PM ET",
-    opp: "HOU",
-    home: false,
-    venue: "Daikin Park · Houston, TX",
-    atlSP: { id: "sale", name: "Chris Sale", record: "14-9", era: 2.18, daysRest: null, hand: "L" },
-    oppSP: { name: "Hunter Brown", record: "6-3", era: 3.43, hand: "R" },
-    note: "After a Thursday travel day, the Braves open a weekend interleague set at Houston, sending Chris Sale (14-9, 2.18) against Astros right-hander Hunter Brown. Sale carries one of the best ERAs in the National League into a start that could nudge the magic number lower.",
-  },
-  {
     date: "2026-09-19",
     weekday: "Sat",
     time: "7:10 PM ET",
     opp: "HOU",
     home: false,
     venue: "Daikin Park · Houston, TX",
-    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: null },
-    oppSP: { name: "TBA", record: "", era: null, hand: null },
-    note: "Game two of the weekend interleague set at Houston. Probable pitchers to be announced.",
+    atlSP: { id: "holmes", name: "Grant Holmes", record: "9-5", era: 3.66, daysRest: 5, hand: "R" },
+    oppSP: { name: "Hayden Wesneski", record: "5-2", era: 3.70, hand: "R" },
+    note: "Game two of the weekend interleague set at Houston, a day after Atlanta clinched a playoff berth. Grant Holmes (9-5, 3.66) draws Astros right-hander Hayden Wesneski, with the division magic number down to three.",
   },
   {
     date: "2026-09-20",
@@ -1440,29 +1428,41 @@ export const UPCOMING_SCHEDULE = [
     opp: "HOU",
     home: false,
     venue: "Daikin Park · Houston, TX",
+    atlSP: { id: "sale", name: "Chris Sale", record: "14-9", era: 2.18, daysRest: null, hand: "L" },
+    oppSP: { name: "TBA", record: "", era: null, hand: null },
+    note: "Series finale at Houston, where a Braves win (or a Phillies loss) could clinch the NL East. Chris Sale is lined up to return from a pushed-back start.",
+  },
+  {
+    date: "2026-09-22",
+    weekday: "Tue",
+    time: "7:15 PM ET",
+    opp: "CIN",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
     atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: null },
     oppSP: { name: "TBA", record: "", era: null, hand: null },
-    note: "Series finale at Houston before the Braves return home. Probable pitchers to be announced.",
+    note: "The Braves return home to open a three-game set with the Cincinnati Reds. Probable pitchers to be announced.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-09-18",
-  time: "8:10 PM ET",
+  date: "2026-09-19",
+  time: "7:10 PM ET",
   opp: "HOU",
   home: false,
   venue: "Daikin Park · Houston, TX",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Chris Sale", record: "14-9", era: 2.18 },
-    opp: { pitcher: "Hunter Brown", record: "6-3", era: 3.43 },
+    atl: { pitcher: "Grant Holmes", record: "9-5", era: 3.66 },
+    opp: { pitcher: "Hayden Wesneski", record: "5-2", era: 3.70 },
   },
-  note: "OPENING A WEEKEND AT HOUSTON WITH SALE ON THE MOUND. Atlanta (89-64) opens a three-game interleague set at Daikin Park on Friday night after picking up ground without lifting a bat: the Braves were idle on Thursday's travel day, and a Phillies loss pushed the NL East lead to 5.0 games and trimmed the division magic number to five. The number to clinch a playoff berth is down to one, so any Atlanta win, or one more result breaking its way, punches the October ticket. Ace CHRIS SALE (14-9, 2.18), squarely in the NL Cy Young conversation, draws Astros right-hander HUNTER BROWN (6-3, 3.43). MATT OLSON (40 HR) anchors the middle of the order and RONALD ACUÑA JR. remains the catalyst up top. On the mend: REYNALDO LÓPEZ landed on the 15-day IL with right shoulder inflammation, likely ending his season; JOE JIMÉNEZ is on a rehab assignment at Triple-A Gwinnett; ROBERT SUAREZ (right elbow) stays on the 60-day IL; BRYCE ELDER (right knee surgery) targets a late-September or October return; STRIDER and SCHWELLENBACH remain out.",
+  note: "POSTSEASON SECURED, NOW CHASING THE DIVISION. Atlanta (90-64) plays game two at Daikin Park on Saturday night a day after clinching a playoff berth, its eighth in nine years, with a 6-2 win over Houston. The NL East magic number is down to three over the Phillies (84-70), the division lead sits at 6.0 games, and the Braves can wrap up the crown as soon as Sunday. GRANT HOLMES (9-5, 3.66) takes the ball against Astros right-hander HAYDEN WESNESKI (5-2, 3.70). MATT OLSON (41 HR) anchors the middle of the order and RONALD ACUÑA JR. remains the catalyst up top. On the mend: REYNALDO LÓPEZ is on the 15-day IL with right shoulder inflammation, likely ending his season; JOE JIMÉNEZ is on a rehab assignment at Triple-A Gwinnett; ROBERT SUAREZ (right elbow) stays on the 60-day IL; BRYCE ELDER (right knee surgery) targets a late-September or October return; CHRIS SALE's next start has been pushed to next week; STRIDER and SCHWELLENBACH remain out.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-09-18", opp: "HOU", home: false, atlScore: 6, oppScore: 2, result: "W", note: "ATLANTA PUNCHES ITS PLAYOFF TICKET IN HOUSTON: BRAVES 6, ASTROS 2. The Braves clinched a postseason berth for the eighth time in nine years Friday night at Daikin Park, riding three two-run homers to a bounce-back win after dropping two of three at Wrigley. MICHAEL HARRIS II, RONALD ACUÑA JR., and MATT OLSON (his 41st) each went deep, and TYLER MAHLE (W, 7-10) was superb again, allowing a lone run on three hits with six strikeouts over six innings to run his post-deadline dominance forward. The bullpen finished it off to secure at least a wild card and drop the NL East magic number to three, with the division lead growing to 6.0 games after Philadelphia (84-70) lost. Atlanta can wrap up the division as soon as Sunday." },
   { date: "2026-09-16", opp: "CHC", home: false, atlScore: 4, oppScore: 8, result: "L", note: "CROW-ARMSTRONG'S RECORD NIGHT SINKS RITCHIE, CUBS TAKE THE FINALE 8-4. Atlanta let the Wrigley rubber game get away Wednesday night, missing a chance to clinch a playoff berth as PETE CROW-ARMSTRONG homered twice, his 43rd and 44th, to break Billy Williams' 1970 franchise record for home runs by a Cubs left-handed hitter. ALEX BREGMAN went 3-for-4 with a homer, a triple, a double and four RBI, and Crow-Armstrong added an RBI triple. Rookie JR RITCHIE (L, 1-3), recalled from Triple-A Gwinnett for the spot start, was charged with six runs on seven hits over 4 2/3 innings, while SHOTA IMANAGA (11-10) retired 11 straight after the second and struck out eight without a walk. RONALD ACUÑA JR. doubled and scored in the sixth, and Atlanta scratched two more across in the ninth, but the offense managed just four on a night a win would have punched its October ticket. The loss dropped the Braves to 89-64 and, with Philadelphia winning, trimmed the NL East lead to 4.5 games over the Phillies (84-68) with the magic number at six." },
   { date: "2026-09-15", opp: "CHC", home: false, atlScore: 6, oppScore: 3, result: "W", note: "PÉREZ AND OLSON STOP THE SKID AT WRIGLEY: BRAVES 6, CUBS 3. Atlanta ended a two-game slide Tuesday night at Wrigley Field, evening the series behind six steady innings from MARTÍN PÉREZ. The veteran lefty (W, 10-9) scattered five hits, walked two and struck out five, handing a lead to the bullpen that held up the rest of the way. MATT OLSON supplied the difference in the fourth, a two-run homer off KEVIN GAUSMAN, his 40th of the year, and MICHAEL HARRIS II added an RBI double. Gausman (L, 9-13) took the loss for Chicago. RAISEL IGLESIAS worked a clean ninth for his 33rd save. The win moved the Braves to 89-63 and, with Philadelphia beating Washington to reach 84-67, held the NL East lead at 4.5 games with the magic number down to seven." },
   { date: "2026-09-14", opp: "CHC", home: false, atlScore: 3, oppScore: 7, result: "L", note: "CROW-ARMSTRONG AND THE CUBS BURY LÓPEZ AT WRIGLEY: CUBS 7, BRAVES 3. Atlanta opened its road trip flat Monday night at Wrigley Field, dropping a second straight game as Chicago jumped on Reynaldo López early. PETE CROW-ARMSTRONG did the bulk of the damage, going 4-for-5 with 4 RBI, a double and his 42nd home run. López could not escape the fourth, charged with five runs on six hits over three innings, and fell to 4-5 in his second start back from left-knee inflammation. DAVID PETERSON (W, 8-8) held the Braves to a single run over six innings. MIKE YASTRZEMSKI's 10th homer, a solo shot, was the only real answer, and Atlanta wasted a bases-loaded chance in the ninth to leave the tying run in the on-deck circle. The loss dropped the Braves to 88-63 and, with Philadelphia idle, trimmed the NL East lead to 4.5 games over the Phillies (83-67) with the magic number at eight." },
@@ -1472,16 +1472,15 @@ export const RESULTS = [
   { date: "2026-09-10", opp: "TB", home: true, atlScore: 3, oppScore: 1, result: "W", note: "PÉREZ SPINS SEVEN SCORELESS, ATLANTA AVOIDS THE SWEEP AND DENIES THE RAYS A CLINCH: BRAVES 3, RAYS 1. Martín Pérez turned in the finest start of his Atlanta season Thursday at Truist Park, seven shutout innings on four hits and two walks to salvage the finale of the three-game series. Tampa Bay loaded the bases with nobody out in the 1st, but CHANDLER SIMPSON hit into an inning-ending double play and Pérez (W, 9-9) never allowed another baserunner until the 5th. The game stayed scoreless until the 8th, when OZZIE ALBIES led off with a pinch-hit triple and AUSTIN RILEY and HA-SEONG KIM followed with back-to-back RBI singles for a three-run frame. RAISEL IGLESIAS worked the 9th for his 32nd save, yielding only a VÍCTOR MESA JR. solo homer. The win, which denied the Rays a potential playoff clinch, moved Atlanta to 86-61, and with Philadelphia losing, pushed the NL East lead back to 4.0 games over the Phillies (82-65)." },
   { date: "2026-09-09", opp: "TB", home: true, atlScore: 2, oppScore: 7, result: "L", note: "JAX AND THE RAYS SPOIL LÓPEZ'S RETURN, ATLANTA DROPS A SECOND STRAIGHT: RAYS 7, BRAVES 2. Reynaldo López's first big-league start since July 26 unraveled in the middle innings Wednesday at Truist Park. VICTOR MESA JR. led off the scoring with a solo homer in the 2nd, and JORGE MATEO's two-run single made it 3-0 later in the frame. Tampa Bay piled on three more in the 4th on RBI singles by CEDRIC MULLINS and RAÚL PALACIOS and a YANDY DÍAZ sacrifice fly. GRIFFIN JAX (W, 7-10) held Atlanta to a single run over five innings. DRAKE BALDWIN's 419-foot homer to center in the 4th, his 23rd, and a MATT OLSON sacrifice fly in the 6th were the only offense in a three-hit night. López (L, 4-4) was charged with six runs over six innings. The loss dropped the Braves to 85-61 and, with Philadelphia winning, trimmed the NL East lead to 3.0 games." },
   { date: "2026-09-08", opp: "TB", home: true, atlScore: 1, oppScore: 7, result: "L", note: "FREDDY AND THE RAYS' BATS OVERPOWER ATLANTA IN THE HOMESTAND OPENER: RAYS 7, BRAVES 1. Tampa Bay spoiled the return to Truist Park on Tuesday night, jumping on AJ SMITH-SHAWVER (L, 0-2) early and never letting up. JUNIOR CAMINERO got it started in the 1st with his MLB-leading 39th home run, YANDY DÍAZ added a solo shot (his 22nd) and RAÚL PALACIOS a solo drive (his 9th) as the Rays piled on. FREDDY PERALTA held the Braves to a single run over six innings for the win. Atlanta's only offense came in the 1st, when DRAKE BALDWIN singled home a run after the Braves loaded the bases, but the lineup went quiet the rest of the way and stranded the early chance. Smith-Shawver could not get out of the 4th, and the loss dropped the Braves to 85-60. With Philadelphia falling 6-5 to Houston, the NL East lead held at 4.0 games." },
-  { date: "2026-09-07", opp: "PHI", home: false, atlScore: 0, oppScore: 1, result: "L", note: "LUZARDO'S 12-K SHUTOUT SALVAGES A SPLIT FOR PHILADELPHIA: PHILLIES 1, BRAVES 0. Jesús Luzardo was untouchable in Monday's finale at Citizens Bank Park, throwing the first complete game of his career, a two-hit shutout with 12 strikeouts and no walk until the 9th, to beat Atlanta 1-0 and send the four-game set home even. GRANT HOLMES (L) matched him for six scoreless innings with six strikeouts, but the Braves managed just two hits and could not solve the Phillies lefty. KYLE SCHWARBER settled it in the 8th, leading off with his MLB-leading 43rd home run for the game's only run. The loss dropped Atlanta to 85-59 and trimmed the NL East lead to 4.0 games over Philadelphia (81-63) as the Braves head home to open a series with Tampa Bay." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 89, l: 64, pct: .582, gb: 0,    streak: "L1" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 84, l: 69, pct: .549, gb: 5.0,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 75, l: 77, pct: .493, gb: 13.5, streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 71, l: 82, pct: .464, gb: 18.0, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 69, l: 83, pct: .454, gb: 19.5, streak: "L4" },
+  { team: "ATL", name: "Atlanta Braves",         w: 90, l: 64, pct: .584, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 84, l: 70, pct: .545, gb: 6.0,  streak: "L1" },
+  { team: "MIA", name: "Miami Marlins",          w: 75, l: 78, pct: .490, gb: 14.5, streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 71, l: 83, pct: .461, gb: 19.0, streak: "L1" },
+  { team: "NYM", name: "New York Mets",          w: 69, l: 84, pct: .451, gb: 20.5, streak: "L1" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1544,21 +1543,20 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-18T07:30:00-04:00",
+  generatedAt: "2026-09-19T09:30:00-04:00",
   summary:
-    "BRAVES GAIN A GAME ON AN IDLE THURSDAY, MAGIC NUMBER DOWN TO FIVE, AND SALE OPENS AT HOUSTON. Atlanta did not play Thursday, but a Philadelphia loss did the work anyway: the NL East lead grew to 5.0 games over the Phillies (84-69), and the division magic number fell to five with just under two weeks to play. The Braves (89-64) are also on the brink of October, their magic number to clinch a playoff berth down to one, so any win this weekend, or one more result breaking their way, punches the ticket. The road resumes Friday night at Daikin Park, where ace Chris Sale (14-9, 2.18) opens a three-game interleague set against Astros right-hander Hunter Brown (6-3, 3.43). The last time out, the Braves let the Wrigley finale get away Wednesday in an 8-4 Cubs loss, Pete Crow-Armstrong homering twice to break a franchise record, but the standings kept tilting Atlanta's way regardless. The rotation is stretched thin: Reynaldo López is on the 15-day IL with right shoulder inflammation, a move that likely ends his season, and JR Ritchie has stepped into a fuller role behind Sale, Grant Holmes, Martín Pérez, and Tyler Mahle. There was a lift too, as Joe Jiménez continues a rehab assignment at Triple-A Gwinnett, his first game action since October 2024. Robert Suarez (right elbow) stays on the 60-day IL, Bryce Elder (right knee surgery) targets a late-September or October return, and Strider and Schwellenbach remain out.",
+    "ATLANTA IS BACK IN OCTOBER: BRAVES CLINCH A PLAYOFF BERTH IN HOUSTON, DIVISION IN REACH. The Braves (90-64) punched their postseason ticket Friday night, their eighth in nine years, beating the Astros 6-2 behind two-run homers from Michael Harris II, Ronald Acuña Jr., and Matt Olson (his 41st) and six innings of one-run ball from Tyler Mahle (7-10). The win secured at least a wild card and dropped the NL East magic number to three, with a Phillies (84-70) loss stretching the division lead to 6.0 games. Atlanta can wrap up the division as soon as Sunday. Game two comes Saturday night at Daikin Park, where Grant Holmes (9-5, 3.66) draws Astros right-hander Hayden Wesneski (5-2, 3.70); Chris Sale, whose next start was pushed back, is now lined up for the Sunday finale. The rotation remains stretched: Reynaldo López is on the 15-day IL with right shoulder inflammation, a move that likely ends his season. There is a lift on the way back, as Joe Jiménez continues a rehab assignment at Triple-A Gwinnett, his first game action since October 2024. Robert Suarez (right elbow) stays on the 60-day IL, Bryce Elder (right knee surgery) targets a late-September or October return, and Strider and Schwellenbach remain out.",
   keyTopics: [
-    { category: "standings", title: "NL East lead grows to 5.0, magic number down to five", detail: "Atlanta was idle Thursday, but a Philadelphia loss stretched the division cushion to 5.0 games over the Phillies (84-69) and dropped the NL East magic number to five. The Braves sit at 89-64 with just under two weeks to play.", recency: "today" },
-    { category: "standings", title: "One away from clinching a playoff berth", detail: "The Braves' magic number to clinch a postseason spot is down to one. Any Atlanta win this weekend at Houston, or one more result breaking its way, punches the October ticket.", recency: "today" },
-    { category: "rotation", title: "Sale opens the Houston series Friday night", detail: "Chris Sale (14-9, 2.18) starts Friday's opener at Daikin Park against Astros right-hander Hunter Brown (6-3, 3.43). His NL-best-caliber ERA has anchored a rotation missing Strider, Schwellenbach, López, and Elder.", recency: "today" },
-    { category: "result", title: "Cubs 8, Braves 4: Crow-Armstrong sinks the finale", detail: "Atlanta dropped the Wrigley rubber game Wednesday as Pete Crow-Armstrong homered twice, his 43rd and 44th, and Alex Bregman drove in four. It was the Braves' last game before a Thursday travel day into Houston.", recency: "this-week" },
-    { category: "injury", title: "Reynaldo López to the IL, likely done for the year", detail: "López was placed on the 15-day injured list with right shoulder inflammation after his rough start at Wrigley, his second IL stint in about a month. The move is expected to end his season and leaves Atlanta short a fourth rotation arm behind Sale.", recency: "this-week" },
-    { category: "rotation", title: "Ritchie steps into a fuller rotation role", detail: "With López down, rookie JR Ritchie moves from swing depth into a regular turn behind Sale, Holmes, Pérez, and Mahle. He was roughed up for six runs in 4 2/3 innings in the Wrigley finale but remains first in line for the stretch run.", recency: "this-week" },
-    { category: "injury", title: "Jiménez continues his rehab at Gwinnett", detail: "Joe Jiménez threw a scoreless inning for Triple-A Gwinnett to open a rehab assignment, his first game action since October 2024 after two left-knee surgeries. Atlanta has not ruled out adding him to the bullpen before the end of the regular season if the knee holds up.", recency: "this-week" },
-    { category: "milestone", title: "Sale's Cy Young case holds firm", detail: "Sale carries a 2.18 ERA, among the best in the National League, and remains squarely in the NL Cy Young conversation with just under two weeks to play. He is the steadying force atop a patchwork rotation.", recency: "this-week" },
-    { category: "milestone", title: "Olson passes 40 home runs", detail: "Matt Olson reached his 40th homer this week at Wrigley, a fourth career 40-homer season, and keeps within range of Kyle Schwarber for the MLB home run lead while pacing the Braves in homers and RBI.", recency: "this-week" },
-    { category: "milestone", title: "Acuña's 1,000th hit and the 200-200 club", detail: "A comeback win in Philadelphia turned on Ronald Acuña Jr.'s game-tying three-run homer off a 100.5-mph fastball, his 1,000th career hit. It made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
-    { category: "rotation", title: "Mahle keeps rolling since the deadline", detail: "Tyler Mahle allowed only a first-inning Bryce Harper homer over seven innings in Saturday's 12-2 rout, running his line since the trade deadline to 3-1 with a 1.25 ERA in seven starts, one of the majors' best midseason pickups.", recency: "this-week" },
+    { category: "result", title: "Braves clinch a playoff berth with a 6-2 win at Houston", detail: "Atlanta secured its eighth postseason berth in nine years Friday night, beating the Astros 6-2 behind three two-run homers and a strong start from Tyler Mahle. The clinch locks up at least a wild card with the regular season winding down.", recency: "today" },
+    { category: "standings", title: "NL East magic number down to three, division in reach", detail: "The clinch, paired with a Philadelphia loss, dropped the division magic number to three and pushed Atlanta's NL East lead to 6.0 games over the Phillies (84-70). The Braves can wrap up the crown as soon as Sunday.", recency: "today" },
+    { category: "rotation", title: "Holmes starts game two Saturday at Daikin Park", detail: "Grant Holmes (9-5, 3.66) takes the ball Saturday night against Astros right-hander Hayden Wesneski (5-2, 3.70), with a chance to push Atlanta closer to the division title a night after the clinch.", recency: "today" },
+    { category: "milestone", title: "Three two-run homers: Harris, Acuña, Olson go deep", detail: "Michael Harris II, Ronald Acuña Jr., and Matt Olson each launched a two-run homer on clinch night in Houston. Olson's was his 41st of the year, a fourth career 40-homer season that keeps him in the MLB home run race.", recency: "today" },
+    { category: "rotation", title: "Mahle delivers the clinch-night gem", detail: "Tyler Mahle (7-10) allowed a lone run on three hits with six strikeouts over six innings on Friday, continuing one of the majors' best post-deadline runs and steadying a rotation missing Strider, Schwellenbach, and López.", recency: "today" },
+    { category: "rotation", title: "Sale's start pushed to Sunday", detail: "Chris Sale did not open the Houston series as first projected; the Braves pushed his turn back and are now lining him up for Sunday's finale, where a win could help wrap up the NL East. His 2.10 ERA keeps him in the NL Cy Young conversation.", recency: "today" },
+    { category: "injury", title: "Reynaldo López to the IL, likely done for the year", detail: "López was placed on the 15-day injured list with right shoulder inflammation after his rough start at Wrigley, his second IL stint in about a month. The move is expected to end his season and leaves Atlanta short a rotation arm.", recency: "this-week" },
+    { category: "injury", title: "Jiménez continues his rehab at Gwinnett", detail: "Joe Jiménez threw a scoreless inning for Triple-A Gwinnett to open a rehab assignment, his first game action since October 2024 after two left-knee surgeries. Atlanta has not ruled out adding him to the bullpen before the season ends.", recency: "this-week" },
+    { category: "milestone", title: "Acuña's 1,000th hit and the 200-200 club", detail: "A comeback win in Philadelphia turned on Ronald Acuña Jr.'s game-tying three-run homer, his 1,000th career hit. It made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
+    { category: "result", title: "Cubs 8, Braves 4: Crow-Armstrong sinks the finale", detail: "Atlanta dropped the Wrigley rubber game Wednesday as Pete Crow-Armstrong homered twice, his 43rd and 44th, and Alex Bregman drove in four. The Braves bounced back with the clinch in Houston two days later.", recency: "this-week" },
     { category: "injury", title: "Suarez on 60-day IL, Elder eyes a return", detail: "Robert Suarez (right elbow) remains on the 60-day injured list, while Bryce Elder is working back from arthroscopic right knee surgery with a late-September or early-October target and a possible playoff role.", recency: "ongoing" },
     { category: "injury", title: "Strider and Schwellenbach still out", detail: "Spencer Strider (elbow) is not expected back before season's end, and the return window is closing for Strider and Spencer Schwellenbach (elbow) as Atlanta manages a rotation stretched thin down the stretch.", recency: "ongoing" },
   ],
