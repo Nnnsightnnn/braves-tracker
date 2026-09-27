@@ -1,14 +1,16 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated September 26, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated September 27, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// THU SEP 25, EURY PÉREZ ONE-HITS ATLANTA IN MIAMI, 3-0: the Braves (93-67) managed a lone Sean Murphy single
-// in the sixth as Marlins right-hander EURY PÉREZ (8-11) spun a complete-game shutout, eight strikeouts on one
-// walk and 105 pitches, the first complete game of his 68-start career. GRANT HOLMES (10-6) took the loss, and
-// Miami solo homers from JOE MACK (14th) and GRIFFIN CONINE supplied the runs. With the NL East long clinched and
-// the No. 3 seed in hand, the result was just seeding: Atlanta opens the wild card round at home. Good news too,
-// RONALD ACUÑA JR. is back and playing after his left shin bruise. Up next, game two of the finale set at
-// loanDepot park Saturday: MARTÍN PÉREZ (10-9, 3.07) vs Marlins ace SANDY ALCÁNTARA (13-11, 3.89), 4:10 PM ET.
-// Roster/IL: REYNALDO LÓPEZ (right shoulder, likely done for the year); BRYCE ELDER (right knee surgery) eyes an
-// early-October return; JOE JIMÉNEZ rehabbing at Triple-A Gwinnett; STRIDER and SCHWELLENBACH remain out.
+// SAT SEP 26, ATLANTA ROLLS MIAMI 8-3: the Braves (94-67) broke out for eight runs behind a four-hit night from
+// MICHAEL HARRIS II, a two-run homer from DOMINIC SMITH in the second, and a two-run shot from DRAKE BALDWIN (25th)
+// in the ninth. BRENT SUTER opened with three innings of one-hit ball and three strikeouts, VICTOR MEDEROS (6-1)
+// worked two scoreless for the win, and JACK RALSTON (0-3) took the loss as Miami's opener. RONALD ACUÑA JR. robbed
+// Heriberto Hernández of a homer with a leaping catch at the right-field wall in the first. With the NL East long
+// clinched and the No. 3 seed set, Atlanta closes the regular season Sunday at loanDepot park, JR RITCHIE (1-4, 4.79)
+// vs Marlins right-hander JANSON JUNK (6-9, 4.31), 3:10 PM ET, then hosts the No. 6 Phillies in a best-of-three wild
+// card series starting Tuesday, Sept. 29 at Truist Park.
+// Roster/IL: ROBERT SUAREZ back off the IL and building rhythm for October; REYNALDO LÓPEZ (right shoulder, likely
+// done for the year); BRYCE ELDER (right knee surgery) eyes an early-October return; JOE JIMÉNEZ rehabbing at Triple-A
+// Gwinnett; STRIDER and SCHWELLENBACH remain out.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -30,7 +32,7 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇻🇪 Venezuela", age: 28, experience: 8,
     stats: { avg: .275, obp: .389, slg: .503, ops: .892, hr: 19, rbi: 50, sb: 20, bb: 30, so: 44, games: 75 },
-    statNote: "BACK IN THE LINEUP FOR OCTOBER: Acuña has returned from the left shin bruise that cost him a couple of games, going 2-for-5 in Thursday's home finale before playing the weekend series in Miami. Atlanta held him out purely as a precaution with the NL East already clinched, and he is set for the wild card round, weeks after his 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.",
+    statNote: "HEALTHY AND FLASHING THE GLOVE FOR OCTOBER: Acuña robbed Heriberto Hernández of a homer with a leaping catch at the right-field wall in the first inning of Saturday’s 8-3 win at Miami, fully past the left shin bruise that briefly sidelined him. He is set for the home wild card series against the Phillies, weeks after his 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.",
     form: 9.7,
     status: "active",
     injuryNote: null,
@@ -135,8 +137,8 @@ export const PLAYERS = [
     lineupSpot: 6,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
-    stats: { avg: .309, obp: .343, slg: .528, ops: .871, hr: 25, rbi: 71, sb: 2, bb: 6, so: 29, games: 69, triples: 1 },
-    statNote: "THE TWO-RUN HOMER THAT OPENED CLINCH NIGHT: Harris II went deep for a two-run shot Friday in Houston, the first of three Atlanta two-run blasts in a 6-2 win that clinched a playoff berth. The center fielder keeps producing down the stretch, hitting above .308 while playing every day in center for a Braves club headed back to October.",
+    stats: { avg: .311, obp: .344, slg: .530, ops: .874, hr: 25, rbi: 71, sb: 2, bb: 6, so: 29, games: 70, triples: 1 },
+    statNote: "FOUR HITS IN THE MIAMI ROMP: Harris II went 4-for-4 with a double in Saturday’s 8-3 win over the Marlins, the kind of line that has defined his September. The center fielder is hitting above .310 and playing every day in center for a Braves club that opens a home wild card series against the Phillies on Tuesday.",
     form: 8.9,
     status: "active",
     injuryNote: null,
@@ -156,8 +158,8 @@ export const PLAYERS = [
     lineupSpot: 7,
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 2,
-    stats: { avg: .277, obp: .362, slg: .500, ops: .862, hr: 23, rbi: 72, sb: 2, bb: 18, so: 51, games: 115, doubles: 25 },
-    statNote: "THE WALK-OFF THAT PUSHED THE LEAD BACK TO FIVE: Baldwin ended a wild 11-inning night Friday, hooking a Brooks Raley sweeper into the right-center gap for a walk-off double that scored Ha-Seong Kim and beat Philadelphia 6-5. The rookie-of-the-year favorite is hitting .277 with 23 homers and 72 RBI, still splitting the catching load with Sean Murphy and steadying the middle of the order into the stretch run.",
+    stats: { avg: .278, obp: .363, slg: .506, ops: .869, hr: 25, rbi: 74, sb: 2, bb: 18, so: 51, games: 116, doubles: 25 },
+    statNote: "TWO-RUN SHOT TO CAP THE ROUT IN MIAMI: Baldwin drove a two-run homer in the ninth Saturday at loanDepot park, his 25th, the finishing touch on an 8-3 win over the Marlins. The rookie-of-the-year favorite is hitting .278 with 25 homers and 74 RBI, still splitting the catching load with Sean Murphy and steadying the middle of the order into October.",
     form: 8.0,
     status: "active",
     injuryNote: null,
@@ -952,8 +954,8 @@ export const PLAYERS = [
     bullpenRole: "long",
     bats: "R", throws: "R",
     nationality: "🇨🇺 Cuba", age: 24, experience: 1,
-    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: 1, hold: null, w: 5, l: 1, games: null },
-    statNote: "THE CLINCHER'S WINNING PITCHER: Mederos (5-1) entered with the bases loaded and one out in the fifth Sunday in Houston, struck out Jose Altuve and got Yainer Díaz to ground out, then handed the lead to the offense in a 4-2 division-clinching win. The 24-year-old keeps making the case to stick as a multi-inning arm a worn bullpen has leaned on, a role he has grown into after opening the year as Triple-A depth.",
+    stats: { era: null, whip: null, ip: null, k: null, bb: null, sv: 1, hold: null, w: 6, l: 1, games: null },
+    statNote: "TWO MORE SCORELESS FOR THE WIN IN MIAMI: Mederos (6-1) followed opener Brent Suter with two scoreless innings Saturday to earn the win in an 8-3 rout of the Marlins. The 24-year-old keeps making the case to stick as a multi-inning arm a worn bullpen has leaned on, a role he has grown into after opening the year as Triple-A depth.",
     form: 9.5,
     status: "active",
     injuryNote: null,
@@ -1436,21 +1438,22 @@ export const UPCOMING_SCHEDULE = [
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-09-26",
-  time: "4:10 PM ET",
+  date: "2026-09-27",
+  time: "3:10 PM ET",
   opp: "MIA",
   home: false,
   venue: "loanDepot park · Miami, FL",
   tv: "FanDuel Sports Network Southeast",
   probables: {
-    atl: { pitcher: "Martín Pérez", record: "10-9", era: 3.07 },
-    opp: { pitcher: "Sandy Alcántara", record: "13-11", era: 3.89 },
+    atl: { pitcher: "JR Ritchie", record: "1-4", era: 4.79 },
+    opp: { pitcher: "Janson Junk", record: "6-9", era: 4.31 },
   },
-  note: "PÉREZ FACES ALCÁNTARA IN THE MIDDLE GAME AT MIAMI. Atlanta (93-67) plays the second game of its season-ending series Saturday afternoon at loanDepot park, a day after Eury Pérez one-hit the Braves 3-0. Left-hander MARTÍN PÉREZ (10-9, 3.07) is lined up opposite Marlins ace SANDY ALCÁNTARA (13-11, 3.89) as manager WALT WEISS keeps balancing rest against rhythm with the NL East long clinched and the No. 3 seed locked in. RONALD ACUÑA JR. is back in the lineup after his left shin bruise, and MATT OLSON (42 HR) anchors the order. Still out: REYNALDO LÓPEZ (right shoulder, likely done for the year), JOE JIMÉNEZ (rehab at Triple-A Gwinnett), BRYCE ELDER (right knee surgery, early-October target), plus STRIDER and SCHWELLENBACH.",
+  note: "RITCHIE CLOSES THE REGULAR SEASON AT MIAMI. Atlanta (94-67) plays its 162nd game Sunday afternoon at loanDepot park, a day after an 8-3 win, with rookie right-hander JR RITCHIE (1-4, 4.79) opposite Marlins right-hander JANSON JUNK (6-9, 4.31). With the NL East long clinched and the No. 3 seed set, manager WALT WEISS is using the finale to set his October alignment behind CHRIS SALE and TYLER MAHLE while keeping regulars fresh. The real business starts Tuesday, Sept. 29, when the Braves host the No. 6 PHILADELPHIA PHILLIES in a best-of-three wild card series at Truist Park. ROBERT SUAREZ is back in the bullpen off the IL, RONALD ACUÑA JR. is healthy after his shin bruise, and MATT OLSON (42 HR) anchors the order. Still out: REYNALDO LÓPEZ (right shoulder, likely done for the year), JOE JIMÉNEZ (rehab at Triple-A Gwinnett), BRYCE ELDER (right knee surgery, early-October target), plus STRIDER and SCHWELLENBACH.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-09-26", opp: "MIA", home: false, atlScore: 8, oppScore: 3, result: "W", note: "ATLANTA ROLLS MIAMI 8-3 BEHIND HARRIS’ FOUR HITS. The Braves broke out for their biggest offensive night of the road trip Saturday at loanDepot park, backing an opener-and-bullpen plan with a balanced attack. MICHAEL HARRIS II went 4-for-4 with a double, DOMINIC SMITH launched a two-run homer in the second, and DRAKE BALDWIN capped it with a two-run shot in the ninth, his 25th. BRENT SUTER opened with three innings of one-hit ball and three strikeouts, and VICTOR MEDEROS (W, 6-1) followed with two scoreless. JACK RALSTON (L, 0-3), Miami’s opener, was tagged for three runs on three hits in 1 1/3 innings. RONALD ACUÑA JR. flashed the glove too, robbing Heriberto Hernández of a homer with a leaping catch at the right-field wall in the first. The win moved Atlanta to 94-67 with the No. 3 seed set, a day before the regular-season finale." },
   { date: "2026-09-25", opp: "MIA", home: false, atlScore: 0, oppScore: 3, result: "L", note: "EURY PÉREZ ONE-HITS ATLANTA: MARLINS 3, BRAVES 0. The Braves managed a single hit Friday night at loanDepot park, a Sean Murphy single to left in the sixth, as Miami right-hander Eury Pérez (8-11) spun a complete-game shutout in the opener of the season-ending series. Pérez struck out eight, walked one, and needed 105 pitches for the first complete game of his 68-start career. Grant Holmes (L, 10-6) was the tough-luck loser, undone by solo homers from Joe Mack (his 14th) in the seventh and Griffin Conine in the eighth. With the NL East long clinched and the No. 3 seed set, the loss was cosmetic, dropping Atlanta to 93-67 as the Marlins (79-81) snapped a six-game skid against the Braves." },
   { date: "2026-09-24", opp: "CIN", home: true, atlScore: 6, oppScore: 7, result: "L", note: "REDS RALLY PAST ATLANTA 7-6 TO TAKE THE SERIES IN THE HOME FINALE. The Braves let a fast start slip away Thursday night at Truist Park, dropping their last home game of the regular season to the eliminated Reds. Atlanta jumped ahead 4-1 in the first, DRAKE BALDWIN just missing a grand slam, and AUSTIN RILEY added a 421-foot solo homer in the fourth, his 19th and second straight game deep. MIKE YASTRZEMSKI's RBI single in the fifth pushed the lead to 6-5. But TYLER MAHLE was tagged for five runs over five innings, ELLY DE LA CRUZ (his 30th) and rookie CARLOS JORGE (first career) homered, and EUGENIO SUÁREZ singled home two. AJ SMITH-SHAWVER (L, 0-3) then served up a go-ahead two-run homer to HÉCTOR RODRÍGUEZ in the sixth. PHILLIPS (2-0) got the win and PAGÁN (25) closed it, while DYLAN DODD tossed two perfect innings with three strikeouts in relief. The loss dropped Atlanta to 93-66 with only seeding, long settled at the No. 3 seed, left to play for." },
   { date: "2026-09-23", opp: "CIN", home: true, atlScore: 3, oppScore: 2, result: "W", note: "SALE HITS 200 K, DUBÓN WALKS IT OFF IN THE 10TH: BRAVES 3, REDS 2. Atlanta answered Tuesday's shutout with a taut extra-inning win Wednesday night at Truist Park, sending CHRIS SALE into October on a high note. Sale reached 200 strikeouts for the season, fanning 10 over 5 2/3 innings and allowing a lone run on four hits after JUAN BRITO led off the game with a homer to center. MATT OLSON (his 42nd) and AUSTIN RILEY (his 18th) supplied solo shots to keep pace, and the game went to extras tied at 2. BRENT SUTER (W, 3-2) worked a scoreless 10th, and MAURICIO DUBÓN delivered the winning RBI single to finish it. RONALD ACUÑA JR. sat with a shin bone bruise as a precaution. The win moved Atlanta to 93-65 with the No. 3 seed and a home wild card series already secured." },
@@ -1460,16 +1463,15 @@ export const RESULTS = [
   { date: "2026-09-18", opp: "HOU", home: false, atlScore: 6, oppScore: 2, result: "W", note: "ATLANTA PUNCHES ITS PLAYOFF TICKET IN HOUSTON: BRAVES 6, ASTROS 2. The Braves clinched a postseason berth for the eighth time in nine years Friday night at Daikin Park, riding three two-run homers to a bounce-back win after dropping two of three at Wrigley. MICHAEL HARRIS II, RONALD ACUÑA JR., and MATT OLSON (his 41st) each went deep, and TYLER MAHLE (W, 7-10) was superb again, allowing a lone run on three hits with six strikeouts over six innings to run his post-deadline dominance forward. The bullpen finished it off to secure at least a wild card and drop the NL East magic number to three, with the division lead growing to 6.0 games after Philadelphia (84-70) lost. Atlanta can wrap up the division as soon as Sunday." },
   { date: "2026-09-16", opp: "CHC", home: false, atlScore: 4, oppScore: 8, result: "L", note: "CROW-ARMSTRONG'S RECORD NIGHT SINKS RITCHIE, CUBS TAKE THE FINALE 8-4. Atlanta let the Wrigley rubber game get away Wednesday night, missing a chance to clinch a playoff berth as PETE CROW-ARMSTRONG homered twice, his 43rd and 44th, to break Billy Williams' 1970 franchise record for home runs by a Cubs left-handed hitter. ALEX BREGMAN went 3-for-4 with a homer, a triple, a double and four RBI, and Crow-Armstrong added an RBI triple. Rookie JR RITCHIE (L, 1-3), recalled from Triple-A Gwinnett for the spot start, was charged with six runs on seven hits over 4 2/3 innings, while SHOTA IMANAGA (11-10) retired 11 straight after the second and struck out eight without a walk. RONALD ACUÑA JR. doubled and scored in the sixth, and Atlanta scratched two more across in the ninth, but the offense managed just four on a night a win would have punched its October ticket. The loss dropped the Braves to 89-64 and, with Philadelphia winning, trimmed the NL East lead to 4.5 games over the Phillies (84-68) with the magic number at six." },
   { date: "2026-09-15", opp: "CHC", home: false, atlScore: 6, oppScore: 3, result: "W", note: "PÉREZ AND OLSON STOP THE SKID AT WRIGLEY: BRAVES 6, CUBS 3. Atlanta ended a two-game slide Tuesday night at Wrigley Field, evening the series behind six steady innings from MARTÍN PÉREZ. The veteran lefty (W, 10-9) scattered five hits, walked two and struck out five, handing a lead to the bullpen that held up the rest of the way. MATT OLSON supplied the difference in the fourth, a two-run homer off KEVIN GAUSMAN, his 40th of the year, and MICHAEL HARRIS II added an RBI double. Gausman (L, 9-13) took the loss for Chicago. RAISEL IGLESIAS worked a clean ninth for his 33rd save. The win moved the Braves to 89-63 and, with Philadelphia beating Washington to reach 84-67, held the NL East lead at 4.5 games with the magic number down to seven." },
-  { date: "2026-09-14", opp: "CHC", home: false, atlScore: 3, oppScore: 7, result: "L", note: "CROW-ARMSTRONG AND THE CUBS BURY LÓPEZ AT WRIGLEY: CUBS 7, BRAVES 3. Atlanta opened its road trip flat Monday night at Wrigley Field, dropping a second straight game as Chicago jumped on Reynaldo López early. PETE CROW-ARMSTRONG did the bulk of the damage, going 4-for-5 with 4 RBI, a double and his 42nd home run. López could not escape the fourth, charged with five runs on six hits over three innings, and fell to 4-5 in his second start back from left-knee inflammation. DAVID PETERSON (W, 8-8) held the Braves to a single run over six innings. MIKE YASTRZEMSKI's 10th homer, a solo shot, was the only real answer, and Atlanta wasted a bases-loaded chance in the ninth to leave the tying run in the on-deck circle. The loss dropped the Braves to 88-63 and, with Philadelphia idle, trimmed the NL East lead to 4.5 games over the Phillies (83-67) with the magic number at eight." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
 export const NL_EAST_STANDINGS = [
-  { team: "ATL", name: "Atlanta Braves",         w: 93, l: 67, pct: .581, gb: 0,    streak: "L2" },
-  { team: "PHI", name: "Philadelphia Phillies",  w: 87, l: 72, pct: .547, gb: 5.5,  streak: "L1" },
-  { team: "MIA", name: "Miami Marlins",          w: 79, l: 81, pct: .494, gb: 14.0, streak: "W1" },
-  { team: "WSH", name: "Washington Nationals",   w: 75, l: 84, pct: .472, gb: 17.5, streak: "L1" },
-  { team: "NYM", name: "New York Mets",          w: 73, l: 86, pct: .459, gb: 19.5, streak: "L2" },
+  { team: "ATL", name: "Atlanta Braves",         w: 94, l: 67, pct: .584, gb: 0,    streak: "W1" },
+  { team: "PHI", name: "Philadelphia Phillies",  w: 87, l: 73, pct: .544, gb: 6.5,  streak: "L3" },
+  { team: "MIA", name: "Miami Marlins",          w: 79, l: 82, pct: .491, gb: 15.0, streak: "L1" },
+  { team: "WSH", name: "Washington Nationals",   w: 76, l: 84, pct: .475, gb: 17.5, streak: "W3" },
+  { team: "NYM", name: "New York Mets",          w: 73, l: 87, pct: .456, gb: 20.5, streak: "L2" },
 ];
 
 // ─── COVER PHOTO — the day's front-page photograph on the Braves Beat ──────────
@@ -1532,23 +1534,22 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-09-26T05:00:00-04:00",
+  generatedAt: "2026-09-27T04:45:00-04:00",
   summary:
-    "EURY PÉREZ ONE-HITS ATLANTA AS THE BRAVES COAST TOWARD OCTOBER. Miami right-hander Eury Pérez spun a complete-game one-hitter Friday night at loanDepot park, striking out eight and walking one over 105 pitches to beat the Braves 3-0, the first complete game of his 68-start career and just the 11th complete-game shutout in the majors this year. Sean Murphy's sixth-inning single to left was Atlanta's only hit, and Grant Holmes (10-6) took the hard-luck loss, undone by solo homers from Joe Mack and Griffin Conine. With the NL East long clinched and the No. 3 seed locked in, the result was pure seeding noise: the Braves (93-67) will open the playoffs at home in a best-of-three wild card round. The better news came from the lineup card, where Ronald Acuña Jr. is back after the left shin bruise that briefly sidelined him, going 2-for-5 in Thursday's home finale before playing the weekend in Miami. Manager Walt Weiss keeps managing rest over these final two games, with Martín Pérez lined up Saturday against Marlins ace Sandy Alcántara and the season finale set for Sunday. The rotation stays stretched behind Chris Sale and Tyler Mahle: Reynaldo López (right shoulder) is likely done for the year, Bryce Elder (right knee surgery) targets an early-October return, Joe Jiménez keeps rehabbing at Triple-A Gwinnett, and Strider and Schwellenbach remain out. Weiss has already delivered the franchise's seventh NL East title in nine years in his debut season.",
+    "ATLANTA ROLLS MIAMI 8-3 WITH ONE GAME LEFT BEFORE OCTOBER. The Braves (94-67) broke out for their best offensive night of the road trip Saturday at loanDepot park, riding a four-hit game from Michael Harris II, a two-run homer from Dominic Smith in the second, and a two-run shot from Drake Baldwin, his 25th, in the ninth. Brent Suter opened with three innings of one-hit ball and three strikeouts, Victor Mederos (6-1) worked two scoreless for the win, and Ronald Acuña Jr. robbed Heriberto Hernández of a homer with a leaping catch at the right-field wall. With the NL East long clinched and the No. 3 seed set, the only business left is Sunday’s finale, JR Ritchie (1-4, 4.79) against Marlins right-hander Janson Junk (6-9, 4.31) at 3:10 PM ET, before the games start counting again Tuesday. Atlanta hosts the No. 6 Philadelphia Phillies in a best-of-three wild card series at Truist Park beginning Sept. 29, a division rematch that pits Walt Weiss’s first-year champions against the club they beat out by six games. The bullpen got a boost with Robert Suarez back off the injured list and building rhythm, and Acuña is healthy after his shin scare. The rotation stays stretched behind Chris Sale and Tyler Mahle: Reynaldo López (right shoulder) is likely done for the year, Bryce Elder (right knee surgery) targets an early-October return, Joe Jiménez keeps rehabbing at Triple-A Gwinnett, and Strider and Schwellenbach remain out.",
   keyTopics: [
-    { category: "result", title: "Eury Pérez one-hits the Braves 3-0", detail: "Miami right-hander Eury Pérez threw a complete-game one-hitter Friday night at loanDepot park, fanning eight and walking one over 105 pitches to beat Atlanta 3-0. It was the first complete game of his 68-start career and just the 11th complete-game shutout in the majors this season.", recency: "today" },
-    { category: "injury", title: "Acuña back in the lineup after shin bruise", detail: "Ronald Acuña Jr. is playing again after a left shin bruise briefly sidelined him, going 2-for-5 in Thursday's home finale before suiting up for the weekend series in Miami. Atlanta held him out purely as a precaution with the division clinched, and he is set for the wild card round.", recency: "today" },
-    { category: "rotation", title: "Martín Pérez faces Alcántara in game two", detail: "Left-hander Martín Pérez (10-9, 3.07) is lined up Saturday afternoon against Marlins ace Sandy Alcántara (13-11, 3.89) in the middle game of the finale set, one of Atlanta's last tune-ups before October.", recency: "today" },
-    { category: "narrative", title: "Holmes takes a hard-luck loss", detail: "Grant Holmes fell to 10-6 despite matching Pérez for much of the night, undone by solo homers from Joe Mack and Griffin Conine on an evening Atlanta managed only a Sean Murphy single. He still profiles as a postseason rotation option behind Sale and Mahle.", recency: "yesterday" },
-    { category: "standings", title: "93-67, the No. 3 seed and a home wild card", detail: "Atlanta sits at 93-67, well clear of the Phillies in the already-decided East and holding the National League's No. 3 seed. The Braves will open the playoffs at home in a best-of-three wild card round rather than earning a first-round bye.", recency: "this-week" },
-    { category: "narrative", title: "Two regular-season games left, then October", detail: "With only Saturday and Sunday in Miami remaining, the games are about rest and rhythm, not standings. Walt Weiss is setting his October rotation and lineup while keeping his regulars fresh for the wild card round at Truist Park.", recency: "today" },
-    { category: "result", title: "Braves clinched the NL East, swept the Astros", detail: "Atlanta wrapped its seventh division title in nine years last Sunday in Houston, completing a sweep on Mike Yastrzemski's go-ahead three-run homer in a four-run sixth. Dylan Dodd struck out the side in the ninth for the save.", recency: "this-week" },
-    { category: "narrative", title: "Weiss delivers a title in year one", detail: "First-year manager Walt Weiss led the Braves back to the top of the NL East after last season's fourth-place finish, the club's first division crown since 2023. Atlanta has now won the East 19 times in 32 seasons.", recency: "this-week" },
-    { category: "milestone", title: "Olson at 42 homers into October", detail: "Matt Olson's 42 homers keep his fourth career 40-homer season near the top of the majors, and Ronald Acuña Jr.'s recent 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
-    { category: "milestone", title: "Riley homers in back-to-back games", detail: "Austin Riley crushed his 19th homer, a 421-foot solo shot, in Thursday's home finale, going deep in consecutive games. His bat keeps anchoring the middle of the order behind Matt Olson heading into the playoffs.", recency: "yesterday" },
-    { category: "injury", title: "Reynaldo López likely done for the year", detail: "López remains on the injured list with right shoulder inflammation after a rough start at Wrigley, his second IL stint in about a month, and the move is expected to end his season. It leaves Atlanta short a rotation arm heading into October.", recency: "ongoing" },
+    { category: "result", title: "Braves rout Marlins 8-3", detail: "Atlanta broke out for eight runs Saturday at loanDepot park behind a four-hit game from Michael Harris II, a two-run homer from Dominic Smith in the second, and a two-run shot from Drake Baldwin in the ninth. Brent Suter opened with three innings of one-hit ball and Victor Mederos (6-1) worked two scoreless for the win.", recency: "today" },
+    { category: "milestone", title: "Baldwin’s 25th caps the win", detail: "Drake Baldwin drove his 25th homer, a two-run shot in the ninth, to put an exclamation point on the rout. The rookie-of-the-year favorite is up to 25 homers and 74 RBI while splitting the catching load with Sean Murphy heading into October.", recency: "today" },
+    { category: "narrative", title: "Acuña robs a homer at the wall", detail: "Ronald Acuña Jr. leaped at the right-field wall in the first inning to rob Heriberto Hernández of a home run, a reminder that he is fully past the left shin bruise that briefly sidelined him. He is set for the wild card round.", recency: "today" },
+    { category: "rotation", title: "Ritchie closes the regular season", detail: "Rookie right-hander JR Ritchie (1-4, 4.79) draws the start in Sunday’s finale at Miami against Marlins right-hander Janson Junk (6-9, 4.31), first pitch 3:10 PM ET. Walt Weiss is using the last game to set his October alignment behind Chris Sale and Tyler Mahle.", recency: "today" },
+    { category: "standings", title: "94-67, the No. 3 seed and a home wild card", detail: "Atlanta sits at 94-67, the runaway NL East champion and the National League’s No. 3 seed. The Braves will open the playoffs at home in a best-of-three wild card round rather than earning a first-round bye.", recency: "today" },
+    { category: "narrative", title: "Wild card set: Phillies at Braves on Tuesday", detail: "The Braves host the No. 6 Philadelphia Phillies in a best-of-three wild card series at Truist Park beginning Tuesday, Sept. 29, a division rematch against the club Atlanta beat out by six games. All three games, if needed, run through Thursday, Oct. 1.", recency: "today" },
+    { category: "transaction", title: "Suarez back in the bullpen for October", detail: "Robert Suarez has been activated off the injured list and is building rhythm for the postseason, Atlanta optioning Owen Murphy in the corresponding move. Out since June with right elbow and forearm inflammation, he gives the bullpen a high-leverage arm behind Raisel Iglesias and Dylan Lee.", recency: "yesterday" },
+    { category: "milestone", title: "Olson at 42 homers into October", detail: "Matt Olson’s 42 homers keep his fourth career 40-homer season near the top of the majors, and Ronald Acuña Jr.’s recent 1,000th career hit made him the only Brave besides Hank Aaron with 1,000 hits, 200 homers, and 200 steals.", recency: "this-week" },
+    { category: "injury", title: "Reynaldo López likely done for the year", detail: "López remains on the injured list with right shoulder inflammation, his second IL stint in about a month, and the move is expected to end his season. It leaves Atlanta short a rotation arm heading into October.", recency: "ongoing" },
     { category: "injury", title: "Elder eyes an early-October return", detail: "Bryce Elder is working back from arthroscopic right knee surgery with an early-October target and a possible playoff role, throwing off the mound in recent days. His return would firm up the rotation and bullpen depth for the wild card round.", recency: "ongoing" },
-    { category: "injury", title: "Jiménez rehabs at Gwinnett; Strider and Schwellenbach still out", detail: "Joe Jiménez continues a rehab assignment at Triple-A Gwinnett, his first game action since October 2024 after two knee surgeries, and Atlanta has not ruled out adding him before the postseason. Spencer Strider and Spencer Schwellenbach (both elbow) remain out.", recency: "ongoing" },
+    { category: "injury", title: "Jiménez rehabs at Gwinnett; Strider and Schwellenbach out", detail: "Joe Jiménez continues a rehab assignment at Triple-A Gwinnett, his first game action since October 2024 after two knee surgeries, and Atlanta has not ruled out adding him before the postseason. Spencer Strider and Spencer Schwellenbach (both elbow) remain out.", recency: "ongoing" },
+    { category: "narrative", title: "Weiss delivers a title in year one", detail: "First-year manager Walt Weiss led the Braves back to the top of the NL East after last season’s fourth-place finish, the club’s first division crown since 2023. Atlanta has now won the East 19 times in 32 seasons.", recency: "this-week" },
   ],
   sources: [
     "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "Braves Today", "MLB Trade Rumors", "Yahoo Sports", "FOX Sports", "Baseball-Reference", "FanGraphs",
