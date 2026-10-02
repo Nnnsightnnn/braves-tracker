@@ -1,16 +1,14 @@
-// ─── Atlanta Braves Player Data (2026 Season · Updated September 27, 2026) ────────
+// ─── Atlanta Braves Player Data (2026 Season · Updated October 2, 2026) ────────
 // Single source of truth for roster, games, standings, digest, and RSS feeds.
-// SAT SEP 26, ATLANTA ROLLS MIAMI 8-3: the Braves (94-67) broke out for eight runs behind a four-hit night from
-// MICHAEL HARRIS II, a two-run homer from DOMINIC SMITH in the second, and a two-run shot from DRAKE BALDWIN (25th)
-// in the ninth. BRENT SUTER opened with three innings of one-hit ball and three strikeouts, VICTOR MEDEROS (6-1)
-// worked two scoreless for the win, and JACK RALSTON (0-3) took the loss as Miami's opener. RONALD ACUÑA JR. robbed
-// Heriberto Hernández of a homer with a leaping catch at the right-field wall in the first. With the NL East long
-// clinched and the No. 3 seed set, Atlanta closes the regular season Sunday at loanDepot park, JR RITCHIE (1-4, 4.79)
-// vs Marlins right-hander JANSON JUNK (6-9, 4.31), 3:10 PM ET, then hosts the No. 6 Phillies in a best-of-three wild
-// card series starting Tuesday, Sept. 29 at Truist Park.
-// Roster/IL: ROBERT SUAREZ back off the IL and building rhythm for October; REYNALDO LÓPEZ (right shoulder, likely
-// done for the year); BRYCE ELDER (right knee surgery) eyes an early-October return; JOE JIMÉNEZ rehabbing at Triple-A
-// Gwinnett; STRIDER and SCHWELLENBACH remain out.
+// THU OCT 1, BRAVES 6, PHILLIES 2: ATLANTA WINS THE NL WILD CARD SERIES 2-1. MICHAEL HARRIS II hit a three-run homer
+// off AARON NOLA in the first, OZZIE ALBIES added a two-run shot off ZACK WHEELER in the fourth, and MATT OLSON
+// homered in the seventh in the winner-take-all Game 3 at Truist Park (41,731). Opener RAY KERR threw 3 1/3 scoreless
+// innings, GRANT HOLMES (W) allowed one run over two, and CHRIS SALE closed the final two innings for the save two days
+// after starting Game 1. Nola (L) lasted 1 2/3 innings. It is Atlanta's first postseason series win since the 2021
+// World Series and its first ever over Philadelphia. Next: NLDS at the two-time defending champion Dodgers, Game 1
+// Saturday, Oct. 3 at 4:00 PM ET on FOX; Yoshinobu Yamamoto is expected to start for LA, Atlanta's starter is TBA.
+// Roster/IL: no changes this run. MARTÍN PÉREZ (back), LANE THOMAS (intercostal), BRYCE ELDER (knee) and REYNALDO
+// LÓPEZ (shoulder) remain out; STRIDER and SCHWELLENBACH remain out.
 //
 // Statuses: "active" | "day-to-day" | "questionable" | "il-10" | "il-15" | "il-60" | "suspended" | "departed"
 // Assignments: "mlb" | "aaa" | "aa" | "rehab"  (org-level location, orthogonal to injury status)
@@ -53,7 +51,7 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 32, experience: 10,
     stats: { avg: .275, obp: .349, slg: .582, ops: .931, hr: 42, rbi: 89, sb: 0, bb: 24, so: 57, games: 153, doubles: 26 },
-    statNote: "THE SAC FLY THAT MADE IT 3-1: Olson lifted a seventh-inning sacrifice fly in Wild Card Game 2 Wednesday to stretch Atlanta's lead to 3-1, a lead the bullpen gave back in a 4-3, 10-inning loss to Philadelphia. He finished the regular season with 42 homers and 89 RBI, leading the Braves in both.",
+    statNote: "SOLO SHOT SEALS THE SERIES: Olson homered to center in the seventh inning of Wild Card Game 3 Thursday, making it 6-0 in Atlanta's 6-2 series-clinching win over Philadelphia. He also walked ahead of Michael Harris II's first-inning three-run homer. He finished the regular season with 42 homers and 89 RBI, leading the Braves in both.",
     form: 9.5,
     status: "active",
     injuryNote: null,
@@ -117,8 +115,8 @@ export const PLAYERS = [
     bats: "S", throws: "R",
     nationality: "🇨🇼 Curaçao", age: 29, experience: 9,
     stats: { avg: .275, obp: .327, slg: .461, ops: .788, hr: 21, rbi: 62, sb: 0, bb: 10, so: 32, games: 73, triples: 1, wOBA: .333, iso: .185 },
-    statNote: "THE GO-AHEAD TRIPLE, THEN THE HIT-BY-PITCH: Albies drove a ball off the wall that deflected off a leaping Derek Hill for an RBI triple against the Phillies bullpen in Game 1, putting Atlanta up 2-1. In the eighth he was hit by a pitch from Jhoan Duran to put two aboard for Austin Riley's winning three-run homer.",
-    form: 8.2,
+    statNote: "TWO-RUN HOMER OFF WHEELER: Albies took Zack Wheeler deep to right in the fourth inning of Wild Card Game 3 Thursday, stretching the lead to 5-0 in a 6-2 clincher over Philadelphia. In Game 1 he had a go-ahead RBI triple and was hit by a pitch ahead of Austin Riley's winning homer.",
+    form: 8.6,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33783.png",
@@ -138,8 +136,8 @@ export const PLAYERS = [
     bats: "L", throws: "R",
     nationality: "🇺🇸 USA", age: 25, experience: 5,
     stats: { avg: .311, obp: .344, slg: .530, ops: .874, hr: 25, rbi: 71, sb: 2, bb: 6, so: 29, games: 70, triples: 1 },
-    statNote: "THREE HITS IN GAME 1: Harris II collected three hits in the Wild Card opener Tuesday, including a soft infield single off Jhoan Duran to start the eighth-inning rally that ended with Austin Riley's three-run homer in a 5-3 win over Philadelphia.",
-    form: 8.9,
+    statNote: "REDEMPTION IN GAME 3: A day after grounding into two double plays in the Game 2 loss, Harris II crushed a three-run homer off Aaron Nola in the first inning of Wild Card Game 3 Thursday, after walks to Ronald Acuña Jr. and Matt Olson. It set the tone for a 6-2 series-clinching win and sent Atlanta to the NLDS.",
+    form: 9.3,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/42470.png",
@@ -520,7 +518,7 @@ export const PLAYERS = [
     bats: "L", throws: "L",
     nationality: "🇺🇸 USA", age: 37, experience: 15,
     stats: { era: 2.16, whip: 1.02, ip: 155.1, k: 200, bb: 24, hr: null, w: 14, l: 9, games: 26, starts: 26 },
-    statNote: "NINE STRIKEOUTS IN THE WILD CARD OPENER: Sale struck out nine and held Philadelphia to a first-inning Alec Bohm RBI double into the seventh inning of Game 1, touching 100 mph at age 37. He left with two on and a 2-1 lead, and both runners scored on J.T. Realmuto's triple off Didier Fuentes, costing him the decision before Austin Riley's eighth-inning homer won it 5-3.",
+    statNote: "THE CLOSER ON TWO DAYS' REST: Two days after striking out nine in the Game 1 start, Sale came out of the bullpen in Wild Card Game 3 Thursday, struck out Bryce Harper to end the eighth and closed out the ninth for the save in a 6-2 series clincher. Walt Weiss said he has run out of superlatives for him.",
     form: 9.9,
     status: "active",
     injuryNote: null,
@@ -565,8 +563,8 @@ export const PLAYERS = [
     bats: "R", throws: "R",
     nationality: "🇺🇸 USA", age: 30, experience: 3,
     stats: { era: 3.66, whip: 1.34, ip: 150.0, k: 110, bb: 58, w: 10, l: 6, games: 29, starts: 29 },
-    statNote: "WIN-OR-GO-HOME ASSIGNMENT: Holmes is expected to handle the bulk innings in Wild Card Game 3 Thursday night at Truist Park, possibly behind a left-handed opener such as Ray Kerr or Brent Suter, in his postseason debut. The steady right-hander finished the regular season 10-6 with a 3.66 ERA over 29 starts.",
-    form: 7.5,
+    statNote: "THE WIN IN THE CLINCHER: Holmes followed opener Ray Kerr in Wild Card Game 3 Thursday and allowed one run over two innings to earn the win in Atlanta's 6-2 victory over Philadelphia, his postseason debut. The steady right-hander finished the regular season 10-6 with a 3.66 ERA over 29 starts.",
+    form: 7.8,
     status: "active",
     injuryNote: null,
     image: "https://a.espncdn.com/i/headshots/mlb/players/full/33840.png",
@@ -1435,46 +1433,69 @@ export const TEAM_LOGOS = {
 // render; use null for true TBAs. daysRest is calendar days since last MLB start.
 export const UPCOMING_SCHEDULE = [
   {
-    date: "2026-10-01",
-    weekday: "Thu",
-    time: "8:00 PM ET",
-    opp: "PHI",
-    home: true,
-    venue: "Truist Park · Atlanta, GA",
-    atlSP: { id: "holmes", name: "Grant Holmes", record: "10-6", era: 3.66, daysRest: 6, hand: "R" },
-    oppSP: { name: "Aaron Nola (probable)", record: "", era: null, hand: "R" },
-    note: "Wild Card Series Game 3, winner take all, series tied 1-1. Grant Holmes is expected to work the bulk innings for Atlanta, possibly behind a left-handed opener (Ray Kerr or Brent Suter) aimed at Kyle Schwarber and Bryce Harper. Aaron Nola is Philadelphia's planned starter, with Zack Wheeler possible on short rest. It is the only MLB game of the day, flexed to prime time on NBC and Peacock.",
-  },
-  {
     date: "2026-10-03",
     weekday: "Sat",
-    time: "TBD",
+    time: "4:00 PM ET",
     opp: "LAD",
     home: false,
     venue: "Dodger Stadium · Los Angeles, CA",
     atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: "R" },
+    oppSP: { name: "Yoshinobu Yamamoto (probable)", record: "", era: null, hand: "R" },
+    note: "NLDS Game 1 on FOX. Atlanta has not named a starter after using an opener and bulk plan in Wild Card Game 3; Chris Sale (relief Thursday) and Tyler Mahle (Game 2 start Wednesday) are lined up for later in the series. Yamamoto, the 2025 World Series MVP, is expected to start for Los Angeles.",
+  },
+  {
+    date: "2026-10-04",
+    weekday: "Sun",
+    time: "8:00 PM ET",
+    opp: "LAD",
+    home: false,
+    venue: "Dodger Stadium · Los Angeles, CA",
+    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: "R" },
+    oppSP: { name: "TBA (Snell or Skubal)", record: "", era: null, hand: "L" },
+    note: "NLDS Game 2 on FS1. Reports differ on whether Blake Snell or Tarik Skubal follows Yamamoto for the Dodgers.",
+  },
+  {
+    date: "2026-10-06",
+    weekday: "Tue",
+    time: "6:00 PM ET",
+    opp: "LAD",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
+    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: "R" },
+    oppSP: { name: "TBA", record: "", era: null, hand: "L" },
+    note: "NLDS Game 3 on FS1, the series shifts to Atlanta.",
+  },
+  {
+    date: "2026-10-07",
+    weekday: "Wed",
+    time: "6:00 PM ET",
+    opp: "LAD",
+    home: true,
+    venue: "Truist Park · Atlanta, GA",
+    atlSP: { id: null, name: "TBA", record: "", era: null, daysRest: null, hand: "R" },
     oppSP: { name: "TBA", record: "", era: null, hand: "R" },
-    note: "NLDS Game 1, only if Atlanta wins Game 3. The two-time defending champion Dodgers host Games 1 and 2 (Saturday and Sunday) on FOX/FS1.",
+    note: "NLDS Game 4 on FS1, if necessary. A Game 5 would be Friday, Oct. 9 at 8:00 PM ET at Dodger Stadium on FOX.",
   },
 ];
 
 // ─── NEXT GAME ──────────────────────────────────────────────────────────────────
 export const NEXT_GAME = {
-  date: "2026-10-01",
-  time: "8:00 PM ET",
-  opp: "PHI",
-  home: true,
-  venue: "Truist Park · Atlanta, GA",
-  tv: "NBC / Peacock",
+  date: "2026-10-03",
+  time: "4:00 PM ET",
+  opp: "LAD",
+  home: false,
+  venue: "Dodger Stadium · Los Angeles, CA",
+  tv: "FOX",
   probables: {
-    atl: { pitcher: "Grant Holmes", record: "10-6", era: 3.66 },
-    opp: { pitcher: "Aaron Nola (probable)", record: "", era: null },
+    atl: { pitcher: "TBA", record: "", era: null },
+    opp: { pitcher: "Yoshinobu Yamamoto (probable)", record: "", era: null },
   },
-  note: "WINNER TAKE ALL: PHILLIES AT BRAVES, WILD CARD GAME 3. The best-of-three NL Wild Card Series is tied 1-1 after Philadelphia won Game 2 4-3 in 10 innings Wednesday on Alec Bohm's two-out homer off Didier Fuentes. Game 3 is Thursday, Oct. 1 at 8:00 PM ET at Truist Park on NBC and Peacock, flexed to prime time as the only game on the schedule after the other three Wild Card Series ended in sweeps. GRANT HOLMES (10-6, 3.66) is expected to carry the bulk innings for Atlanta, possibly after a left-handed opener such as RAY KERR or BRENT SUTER. The Phillies plan to start AARON NOLA, with ZACK WHEELER possible on three days' rest, and closer JHOAN DURAN should be available after sitting out Game 2. Both managers expect all hands on deck. The winner opens the NLDS at the Los Angeles Dodgers on Saturday.",
+  note: "NLDS GAME 1: BRAVES AT DODGERS. Fresh off a 6-2 Wild Card Game 3 win over Philadelphia, Atlanta opens the best-of-five Division Series against the two-time defending champion Dodgers on Saturday, Oct. 3 at 4:00 PM ET (1:00 PM PT) at Dodger Stadium on FOX. Los Angeles is expected to start YOSHINOBU YAMAMOTO, the 2025 World Series MVP. Atlanta has not named a starter: CHRIS SALE closed Game 3 on Thursday and TYLER MAHLE started Game 2 on Wednesday, so another opener and bulk plan is possible. The Braves went 5-1 against the Dodgers in the regular season. Game 2 is Sunday at 8:00 PM ET on FS1, then the series moves to Truist Park for Game 3 on Tuesday.",
 };
 
 // ─── RECENT RESULTS ─────────────────────────────────────────────────────────────
 export const RESULTS = [
+  { date: "2026-10-01", opp: "PHI", home: true, atlScore: 6, oppScore: 2, result: "W", note: "HARRIS, ALBIES, OLSON GO DEEP AS ATLANTA ADVANCES: BRAVES 6, PHILLIES 2. The Braves won the winner-take-all Wild Card Game 3 Thursday night before a sellout 41,731 at Truist Park, their first postseason series win since the 2021 World Series and their first ever over Philadelphia. After walks to RONALD ACUÑA JR. and MATT OLSON in the first, MICHAEL HARRIS II, who had hit into two double plays in Game 2, launched a three-run homer off AARON NOLA (L), who lasted 1 2/3 innings. OZZIE ALBIES hit a two-run homer off ZACK WHEELER in the fourth, and Olson's solo shot in the seventh made it 6-0. Opener RAY KERR, a 32-year-old Tommy John survivor making his fourth career start, threw 3 1/3 scoreless innings on one hit. GRANT HOLMES (W) allowed one run over two innings, and CHRIS SALE, two days after starting Game 1, struck out BRYCE HARPER to end the eighth and closed out the ninth. Philadelphia scored on an Alec Bohm groundout in the sixth and a Trea Turner sacrifice fly in the eighth." },
   { date: "2026-09-30", opp: "PHI", home: true, atlScore: 3, oppScore: 4, result: "L", note: "BOHM'S 10TH-INNING HOMER FORCES GAME 3: PHILLIES 4, BRAVES 3. One out from the NLDS late, Atlanta let Wild Card Game 2 slip away Wednesday at Truist Park. TYLER MAHLE was superb in his postseason debut, allowing one run on six hits over seven innings, and the Braves took a 3-1 lead in the seventh when DRAKE BALDWIN's double, a ball BRYCE HARPER misplayed in right, scored SEAN MURPHY and MATT OLSON followed with a sacrifice fly. But KYLE SCHWARBER (447 feet) and Harper (418 feet) hit back-to-back homers off DYLAN LEE in the eighth to tie it. ALEC BOHM's two-out, opposite-field solo shot off DIDIER FUENTES (L) in the 10th won it. ANDREW PAINTER (W, 1-0) threw three scoreless innings in relief of CRISTOPHER SANCHEZ (6 2/3 IP, 3 R, 5 BB) and ended it by striking out DOMINIC SMITH with two on via a successful ABS challenge, the first postseason game to end that way. Atlanta grounded into double plays with the bases loaded in the sixth and after a leadoff walk in the ninth." },
   { date: "2026-09-29", opp: "PHI", home: true, atlScore: 5, oppScore: 3, result: "W", note: "RILEY'S EIGHTH-INNING BLAST WINS GAME 1: BRAVES 5, PHILLIES 3. Austin Riley ambushed the first pitch he saw from Phillies closer JHOAN DURAN in the eighth inning Tuesday and hit a three-run homer over the right-field wall, flipping a 3-2 deficit and giving Atlanta a 1-0 lead in the best-of-three NL Wild Card Series before 30,127 at Truist Park. CHRIS SALE struck out nine and allowed only a first-inning RBI double to Alec Bohm into the seventh, touching 100 mph at 37, while JESUS LUZARDO held Atlanta to one run over five innings. OZZIE ALBIES put the Braves ahead 2-1 with a triple that glanced off a leaping Derek Hill, but DIDIER FUENTES, relieving Sale with two on, gave up a two-run triple to J.T. REALMUTO that Ronald Acuna Jr. misplayed in the right-field corner. In the eighth, MICHAEL HARRIS II (three hits) beat out a soft grounder and Albies was hit by a pitch before Riley's swing. DYLAN LEE (W, 1-0) threw a scoreless eighth, RAISEL IGLESIAS closed it for the save, and Duran (L, 0-1) was charged with the blown save. Atlanta's top three hitters went 0-for-11." },
   { date: "2026-09-27", opp: "MIA", home: false, atlScore: 3, oppScore: 5, result: "L", note: "MARLINS EDGE ATLANTA 5-3 IN THE REGULAR-SEASON FINALE. The Braves closed the 162-game slate Sunday afternoon at loanDepot park with a patchwork lineup and dropped the finale to Miami, finishing 94-68 as the No. 3 seed. MAURICIO DUBÓN provided the highlight, a solo homer in the third, his 12th, and added an RBI single, while SEAN MURPHY collected two hits. Rookie JR RITCHIE (L) allowed four runs over nearly six innings, and AJ SMITH-SHAWVER served up a solo shot to GRIFFIN CONINE in the seventh. HERIBERTO HERNÁNDEZ went deep for his 25th, JANSON JUNK (W) worked into the fifth, and SANDY ALCÁNTARA closed it for his third save while leading the majors with 213 innings pitched. With seeding long settled, WALT WEISS rested regulars ahead of Tuesday's wild card opener." },
@@ -1484,7 +1505,6 @@ export const RESULTS = [
   { date: "2026-09-23", opp: "CIN", home: true, atlScore: 3, oppScore: 2, result: "W", note: "SALE HITS 200 K, DUBÓN WALKS IT OFF IN THE 10TH: BRAVES 3, REDS 2. Atlanta answered Tuesday's shutout with a taut extra-inning win Wednesday night at Truist Park, sending CHRIS SALE into October on a high note. Sale reached 200 strikeouts for the season, fanning 10 over 5 2/3 innings and allowing a lone run on four hits after JUAN BRITO led off the game with a homer to center. MATT OLSON (his 42nd) and AUSTIN RILEY (his 18th) supplied solo shots to keep pace, and the game went to extras tied at 2. BRENT SUTER (W, 3-2) worked a scoreless 10th, and MAURICIO DUBÓN delivered the winning RBI single to finish it. RONALD ACUÑA JR. sat with a shin bone bruise as a precaution. The win moved Atlanta to 93-65 with the No. 3 seed and a home wild card series already secured." },
   { date: "2026-09-22", opp: "CIN", home: true, atlScore: 0, oppScore: 4, result: "L", note: "REDS SPOIL THE HOMECOMING, BLANK ATLANTA 4-0. The NL East champions came home flat Tuesday night at Truist Park, shut out by the eliminated Reds in the opener of the final homestand. Cincinnati left-hander BRANDON WILLIAMSON, back from the injured list in early September, was the story, spinning six sharp innings to quiet an Atlanta lineup that Walt Weiss is increasingly resting down the stretch. ELLY DE LA CRUZ kept inching toward a 30-30 season atop the Reds order, and the Braves never solved Cincinnati's staff, managing just a handful of hits with the postseason rotation already lined up behind this one. The loss dropped Atlanta to 92-65 with nothing but seeding left to play for; the division has been in hand since Sunday." },
   { date: "2026-09-20", opp: "HOU", home: false, atlScore: 4, oppScore: 2, result: "W", note: "NL EAST CHAMPS: BRAVES 4, ASTROS 2, AND THE SPACE CITY SWEEP SEALS THE DIVISION. Atlanta clinched its seventh NL East title in nine years Sunday afternoon at Daikin Park, completing a three-game sweep of Houston and setting off a champagne-and-cigar celebration in the visitors' clubhouse. Jose Altuve's solo homer in the fourth put the Astros up 1-0, but OZZIE ALBIES tied it with an RBI single in the sixth before MIKE YASTRZEMSKI turned on a Bryan King pitch for a three-run homer to break it open, the crown of a four-run frame. MARTÍN PÉREZ settled for a no-decision (one run over 4 1/3), and VÍCTOR MEDEROS (W, 5-1) escaped a bases-loaded jam in the fifth, striking out Altuve and getting Yainer Díaz to ground out. Díaz homered in the eighth to make it 4-2, but DYLAN DODD struck out the side in the ninth for his second save to finish it. The win, Atlanta's first division title since 2023 under first-year manager Walt Weiss, moved the Braves to 92-64, the third-best record in the NL." },
-  { date: "2026-09-19", opp: "HOU", home: false, atlScore: 6, oppScore: 3, result: "W", note: "ACUÑA'S GO-AHEAD GRAND SLAM PUTS THE DIVISION WITHIN ONE: BRAVES 6, ASTROS 3. Atlanta moved to the brink of the NL East title Saturday night at Daikin Park, taking game two behind a seventh-inning grand slam from RONALD ACUÑA JR. ISAAC PAREDES had staked Houston to an early lead with a two-out solo homer in the first, his 22nd, but GRANT HOLMES (W, 10-5) settled in for six innings of two-run ball on eight hits with four strikeouts. With the game tight, Acuña turned on a Bryan Abreu fastball and drove it 411 feet to left-center for a 5-2 lead, finishing 2-for-3 with two walks. RAISEL IGLESIAS worked a clean ninth for his 34th save. The win moved the Braves to 91-64 and, paired with a Phillies loss, dropped the NL East magic number to one, setting up a chance to clinch the division in Sunday's finale." },
 ];
 
 // ─── NL EAST STANDINGS ──────────────────────────────────────────────────────────
@@ -1556,21 +1576,21 @@ export const ACTION_PHOTOS = {
 // to point `art` at a not-yet-generated file. Generated covers are rendered
 // through the navy->cream duotone (App.jsx BeatDuotoneFilter) to match.
 export const NEWS_DIGEST = {
-  generatedAt: "2026-10-01T05:15:00-04:00",
+  generatedAt: "2026-10-02T04:48:00-04:00",
   summary:
-    "WINNER TAKE ALL TONIGHT. Philadelphia evened the NL Wild Card Series 1-1 on Wednesday, beating Atlanta 4-3 in 10 innings at Truist Park when ALEC BOHM hit a two-out, opposite-field homer off DIDIER FUENTES. The Braves were six outs from the NLDS with a 3-1 lead after seven brilliant innings from TYLER MAHLE (one run, six hits, six strikeouts), but KYLE SCHWARBER and BRYCE HARPER hit back-to-back homers off DYLAN LEE in the eighth to tie it. ANDREW PAINTER threw three scoreless innings for the win and finished it by striking out DOMINIC SMITH with two on via an ABS challenge, the first postseason game ever to end that way. Game 3 is Thursday at 8:00 PM ET on NBC and Peacock, the only game on the MLB schedule: GRANT HOLMES is expected to carry the bulk innings for Atlanta, possibly behind a left-handed opener, against AARON NOLA, with ZACK WHEELER possible on short rest. The winner opens the NLDS at the Dodgers on Saturday. MARTIN PEREZ (back), LANE THOMAS (intercostal), BRYCE ELDER (knee), and REYNALDO LOPEZ (shoulder) remain out.",
+    "ON TO LOS ANGELES. Atlanta beat Philadelphia 6-2 in the winner-take-all Wild Card Game 3 on Thursday night at Truist Park, winning the series 2-1 for its first postseason series victory since the 2021 World Series and its first ever over the Phillies. MICHAEL HARRIS II hit a three-run homer off AARON NOLA in the first, OZZIE ALBIES took ZACK WHEELER deep for two in the fourth, and MATT OLSON homered in the seventh. Opener RAY KERR threw 3 1/3 scoreless innings, GRANT HOLMES got the win with two innings of one-run relief, and CHRIS SALE, two days after starting Game 1, closed the final two innings. The NLDS against the two-time defending champion Dodgers opens Saturday at 4:00 PM ET at Dodger Stadium on FOX, with YOSHINOBU YAMAMOTO expected to start for Los Angeles and Atlanta's starter still TBA. The Braves went 5-1 against the Dodgers in the regular season. MARTIN PEREZ (back), LANE THOMAS (intercostal), BRYCE ELDER (knee), and REYNALDO LOPEZ (shoulder) remain out.",
   keyTopics: [
-    { category: "result", title: "Bohm's 10th-inning homer forces Game 3", detail: "Alec Bohm lined a two-out, opposite-field solo homer off Didier Fuentes in the 10th inning Wednesday, giving Philadelphia a 4-3 win and squaring the best-of-three series at a game apiece.", recency: "yesterday" },
-    { category: "narrative", title: "Schwarber and Harper go back-to-back in the eighth", detail: "Dylan Lee, the Game 1 winner, entered with a 3-1 lead and gave up consecutive homers to Kyle Schwarber (447 feet) and Bryce Harper (418 feet), erasing the lead six outs from the NLDS.", recency: "yesterday" },
-    { category: "rotation", title: "Mahle dominant in his postseason debut", detail: "Tyler Mahle, pitching in October for the first time in his career, allowed one run on six hits over seven innings with six strikeouts and one walk. He left in line for the win and got a no-decision.", recency: "yesterday" },
-    { category: "rotation", title: "Holmes vs. Nola in Game 3 tonight", detail: "Grant Holmes (10-6, 3.66) is expected to handle the bulk innings, possibly after a left-handed opener such as Ray Kerr or Brent Suter aimed at Schwarber and Harper. Philadelphia plans to start Aaron Nola, with Zack Wheeler available on three days' rest.", recency: "today" },
-    { category: "standings", title: "Prime time, winner meets the Dodgers", detail: "Game 3 is Thursday at 8:00 PM ET on NBC and Peacock, flexed to night as the only game left in the Wild Card round after the Yankees, White Sox, and Padres all swept. The winner opens the NLDS at Los Angeles on Saturday.", recency: "today" },
-    { category: "milestone", title: "A first: the game ended on an ABS challenge", detail: "Andrew Painter (W, three scoreless innings) froze Dominic Smith with two on in the 10th, and Philadelphia's challenge of the ball call was overturned to strike three. It was the first postseason game ever to end on an Automated Ball-Strike challenge.", recency: "yesterday" },
-    { category: "lineup", title: "Two double-play balls stall the offense", detail: "Atlanta loaded the bases with one out in the sixth, but Michael Harris II hit into a 3-2-3 double play, and he grounded into another after Austin Riley's leadoff walk in the ninth. Cristopher Sanchez walked five in 6 2/3 innings yet allowed only three runs.", recency: "yesterday" },
-    { category: "result", title: "Harper's misplay opened the seventh", detail: "Drake Baldwin's double, a ball Harper misplayed in right field, scored Sean Murphy for a 2-1 lead, and Matt Olson's sacrifice fly made it 3-1. Ronald Acuna Jr. stole second and third in the first as Atlanta answered Harper's RBI single.", recency: "yesterday" },
-    { category: "narrative", title: "Duran rested for Philadelphia", detail: "Phillies closer Jhoan Duran, who allowed Austin Riley's go-ahead homer in Game 1, sat out Game 2 and should be available tonight. Phillies infielder Edmundo Sosa left Game 2 with a right leg injury and his status is uncertain.", recency: "today" },
-    { category: "narrative", title: "Fuentes and the bullpen under scrutiny", detail: "Didier Fuentes has allowed the decisive damage in both games: Realmuto's two-run triple in Game 1 and Bohm's homer in Game 2. Both managers say their full bullpens will be available for the decider.", recency: "today" },
-    { category: "injury", title: "Perez, Thomas, Elder, Lopez still out", detail: "Martin Perez (lower back) and Lane Thomas (intercostal strain) are off the Wild Card roster, Bryce Elder (knee) could factor in only in a later round, and Reynaldo Lopez (shoulder), Spencer Strider and Spencer Schwellenbach (elbow) remain out.", recency: "ongoing" },
+    { category: "result", title: "Braves win the Wild Card Series, 6-2 in Game 3", detail: "Atlanta beat Philadelphia 6-2 before a sellout 41,731 at Truist Park on Thursday night, taking the best-of-three series 2-1. It is the club's first postseason series win since the 2021 World Series and its first ever against the Phillies.", recency: "yesterday" },
+    { category: "narrative", title: "Harris answers with a first-inning blast", detail: "A day after grounding into two double plays in Game 2, Michael Harris II followed walks to Ronald Acuña Jr. and Matt Olson with a three-run homer off Aaron Nola, who was pulled after 1 2/3 innings.", recency: "yesterday" },
+    { category: "result", title: "Albies and Olson add on", detail: "Ozzie Albies hit a two-run homer off Zack Wheeler, who entered in relief, in the fourth for a 5-0 lead, and Matt Olson's solo shot to center in the seventh made it 6-0. Philadelphia scored only on an Alec Bohm groundout and a Trea Turner sacrifice fly.", recency: "yesterday" },
+    { category: "rotation", title: "Ray Kerr, the unlikely opener", detail: "Ray Kerr, a 32-year-old lefty who had Tommy John surgery in 2024 and was recalled in August, threw 3 1/3 scoreless innings on one hit in his postseason debut and only his fourth career start. Walt Weiss said he looked like a 10-year veteran.", recency: "yesterday" },
+    { category: "milestone", title: "Sale closes on two days' rest", detail: "Chris Sale, who started Game 1 on Tuesday, pitched the final two innings, striking out Bryce Harper to end the eighth and finishing the ninth for the save. Grant Holmes earned the win with two innings of one-run relief.", recency: "yesterday" },
+    { category: "standings", title: "NLDS vs. Dodgers opens Saturday", detail: "Game 1 is Saturday at 4:00 PM ET at Dodger Stadium on FOX, Game 2 is Sunday at 8:00 PM ET on FS1, and Games 3 and 4 are at Truist Park on Tuesday and Wednesday at 6:00 PM ET. A Game 5 would be Friday, Oct. 9 in Los Angeles.", recency: "today" },
+    { category: "rotation", title: "Yamamoto for LA, Atlanta's Game 1 starter TBA", detail: "Los Angeles is expected to open with Yoshinobu Yamamoto, with Blake Snell and Tarik Skubal to follow in some order. Atlanta has not named a Game 1 starter, with Sale and Tyler Mahle both pitching in the Wild Card round, so another opener and bulk plan is possible.", recency: "today" },
+    { category: "narrative", title: "Atlanta owned the season series", detail: "The Braves went 5-1 against the Dodgers in 2026, sweeping a series at Truist Park and taking two of three in Los Angeles. Oddsmakers still favor the Dodgers to win the series.", recency: "this-week" },
+    { category: "narrative", title: "Ohtani questions in the Dodgers camp", detail: "Shohei Ohtani was recently activated, has hit .238 over five games, and sat out a team workout ahead of the series, raising questions about his readiness.", recency: "this-week" },
+    { category: "result", title: "Game 2 recap: Bohm's homer forced the decider", detail: "Philadelphia evened the series Wednesday with a 4-3, 10-inning win on Alec Bohm's two-out homer off Didier Fuentes, after Kyle Schwarber and Bryce Harper went back-to-back off Dylan Lee in the eighth.", recency: "this-week" },
+    { category: "injury", title: "Perez, Thomas, Elder, Lopez still out", detail: "Martin Perez (lower back) is not eligible before NLDS Game 3, Lane Thomas (intercostal strain) remains out, Bryce Elder (knee) is working back from surgery, and Reynaldo Lopez (shoulder), Spencer Strider and Spencer Schwellenbach (elbow) remain out.", recency: "ongoing" },
   ],
   sources: [
     "AP", "MLB.com", "AJC", "ESPN", "The Athletic", "CBS Sports", "NBC Sports", "Battery Power", "Braves Today", "MLB Trade Rumors", "Yahoo Sports", "FOX Sports", "Baseball-Reference", "FanGraphs",
