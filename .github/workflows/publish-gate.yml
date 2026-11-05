@@ -1,0 +1,75 @@
+# Publish gate: the daily scheduled run pushes to `publish`, never to main.
+# This workflow moves main forward only when the new commits are a clean
+# fast-forward, touch nothing but the daily-update data files, and build.
+# Anything else stays on `publish` for Kenny to review.
+name: Publish gate
+
+on:
+  push:
+    branches: [publish, main]
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: publish-gate
+  cancel-in-progress: false
+
+env:
+  MAIN: main
+  ALLOWED: '^src/playerData\.js$'
+
+jobs:
+  promote:
+    if: github.ref_name == 'publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Must be a fast-forward of main
+        run: |
+          git fetch origin "$MAIN"
+          git merge-base --is-ancestor "origin/$MAIN" "$GITHUB_SHA" \
+            || { echo "::error::publish is not a fast-forward of $MAIN; held for review"; exit 1; }
+      - name: Only daily-update files
+        run: |
+          bad=$(git diff --name-only "origin/$MAIN" "$GITHUB_SHA" | grep -Ev "$ALLOWED" || true)
+          if [ -n "$bad" ]; then
+            echo "::error::held for review, outside the daily-update files:"; echo "$bad"; exit 1
+          fi
+          git diff --stat "origin/$MAIN" "$GITHUB_SHA"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Promote to main and deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git push origin "$GITHUB_SHA:refs/heads/$MAIN"
+          # A push made with this token starts no workflows, so ask for the deploy.
+          gh workflow run pages.yml --ref "$MAIN"
+
+  sync:
+    # Kenny pushed to main by hand: carry publish along so tomorrow's run
+    # starts from the same tip (the publish helper insists on that).
+    if: github.ref_name != 'publish'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: |
+          if git fetch origin publish 2>/dev/null; then
+            if git merge-base --is-ancestor origin/publish "$GITHUB_SHA"; then
+              git push origin "$GITHUB_SHA:refs/heads/publish"
+            else
+              echo "::warning::publish holds commits not on $MAIN; left for review"
+            fi
+          else
+            git push origin "$GITHUB_SHA:refs/heads/publish"
+          fi
